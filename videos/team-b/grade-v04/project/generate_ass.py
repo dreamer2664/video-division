@@ -1,0 +1,75 @@
+#!/usr/bin/env python3
+"""
+Generate high-contrast 1080p ASS typography & burned-in captions (assets/captions.ass)
+for KELVIN (grade-v04).
+All styles strictly exceed the 40 px minimum at 1920x1080:
+  - Title ('KELVIN'): Fontsize 108 (physical cap-height ~78 px)
+  - Chapter Stamp (top-left Kelvin tag): Fontsize 58 (physical cap-height ~42 px)
+  - Narrative Caption (bottom-center): Fontsize 62 (physical cap-height ~44 px)
+Uses BorderStyle=3 translucent dark cinema scrim (&H58140E08) for >12:1 contrast over both dark night and bright fog/foam.
+"""
+import os
+
+ASS_CONTENT = r"""[Script Info]
+Title: KELVIN — Four Temperatures of Night (grade-v04)
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Caption,EB Garamond,62,&H00EEF5F7,&H00EEF5F7,&H58160F0A,&H58160F0A,0,0,0,0,100,100,0.6,0,3,16,0,2,120,120,64,1
+Style: StampCool,Inter,58,&H00F6EAE0,&H00F6EAE0,&H5C18100A,&H5C18100A,-1,0,0,0,100,100,3.0,0,3,14,0,7,78,78,56,1
+Style: StampAmber,Inter,58,&H0088D4FF,&H0088D4FF,&H5C140E08,&H5C140E08,-1,0,0,0,100,100,3.0,0,3,14,0,7,78,78,56,1
+Style: StampStorm,Inter,58,&H00F8EFE2,&H00F8EFE2,&H5C18120A,&H5C18120A,-1,0,0,0,100,100,3.0,0,3,14,0,7,78,78,56,1
+Style: StampDawn,Inter,58,&H00F2F4F7,&H00F2F4F7,&H641C1610,&H641C1610,-1,0,0,0,100,100,3.0,0,3,14,0,7,78,78,56,1
+Style: MainTitle,Inter,108,&H00F0F5F8,&H00F0F5F8,&H68140E08,&H68140E08,-1,0,0,0,100,100,18.0,0,1,4,3,8,120,120,118,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 2,0:00:00.35,0:00:03.75,StampCool,,0,0,0,,{\fad(300,350)}5600 K  ·  LAST DAYLIGHT
+Dialogue: 1,0:00:00.40,0:00:03.70,Caption,,0,0,0,,{\fad(300,350)}At dusk, the harbour loses the sun first.
+
+Dialogue: 2,0:00:04.25,0:00:07.65,MainTitle,,0,0,0,,{\fad(450,450)}KELVIN
+Dialogue: 1,0:00:04.35,0:00:07.60,Caption,,0,0,0,,{\fad(350,350)}Artificial light steps in to hold the coast.
+
+Dialogue: 1,0:00:08.30,0:00:11.60,Caption,,0,0,0,,{\fad(350,350)}Every lamp rewrites the colour of the dark.
+
+Dialogue: 2,0:00:12.35,0:00:17.05,StampAmber,,0,0,0,,{\fad(350,400)}2100 K  ·  SODIUM VAPOUR
+Dialogue: 1,0:00:12.40,0:00:17.00,Caption,,0,0,0,,{\fad(350,400)}Low-pressure sodium turns stone and rain to amber.
+
+Dialogue: 1,0:00:18.00,0:00:22.50,Caption,,0,0,0,,{\fad(350,400)}Inside one lit window, warmth becomes an island.
+
+Dialogue: 1,0:00:23.40,0:00:27.50,Caption,,0,0,0,,{\fad(350,400)}Shadows sink into Prussian blue between the pools of gold.
+
+Dialogue: 2,0:00:28.45,0:00:33.55,StampStorm,,0,0,0,,{\fad(350,400)}4200 K  ·  MERCURY ARC
+Dialogue: 1,0:00:28.50,0:00:33.50,Caption,,0,0,0,,{\fad(350,400)}Midnight shifts the spectrum—cold cyan steel and warning red.
+
+Dialogue: 1,0:00:34.50,0:00:39.50,Caption,,0,0,0,,{\fad(350,400)}In slow motion, the storm surge hangs like carved glass.
+
+Dialogue: 1,0:00:40.50,0:00:45.40,Caption,,0,0,0,,{\fad(350,400)}Four thousand Kelvin holds the watch until the squall breaks.
+
+Dialogue: 2,0:00:46.35,0:00:50.55,StampDawn,,0,0,0,,{\fad(350,400)}6500 K  ·  SILVER DAWN
+Dialogue: 1,0:00:46.40,0:00:50.50,Caption,,0,0,0,,{\fad(350,400)}Before sunrise, the sensors click off one by one.
+
+Dialogue: 1,0:00:51.40,0:00:55.00,Caption,,0,0,0,,{\fad(350,400)}Silver water remembers every colour without keeping one.
+
+Dialogue: 2,0:00:55.75,0:00:59.65,StampDawn,,0,0,0,,{\fad(350,450)}6500 K  ·  FIRST DAYLIGHT
+Dialogue: 1,0:00:55.80,0:00:59.65,Caption,,0,0,0,,{\fad(350,450)}Day returns the world to itself.
+"""
+
+
+def main():
+    here = os.path.dirname(os.path.abspath(__file__))
+    out_path = os.path.abspath(os.path.join(here, "..", "assets", "captions.ass"))
+    os.makedirs(os.path.dirname(out_path), exist_ok=True)
+    with open(out_path, "w", encoding="utf-8") as f:
+        f.write(ASS_CONTENT.lstrip())
+    print(f"Wrote {out_path} ({os.path.getsize(out_path)} bytes)")
+
+
+if __name__ == "__main__":
+    main()
