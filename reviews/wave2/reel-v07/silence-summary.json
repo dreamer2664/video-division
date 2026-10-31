@@ -1,0 +1,127 @@
+{
+  "silence_threshold": "-40dBFS, min0.3s",
+  "intervals": [
+    {
+      "end": 0.380271,
+      "duration": 0.380271
+    },
+    {
+      "end": 2.27125,
+      "duration": 0.313562
+    },
+    {
+      "end": 4.994792,
+      "duration": 0.619208
+    },
+    {
+      "end": 7.187729,
+      "duration": 0.650146
+    },
+    {
+      "end": 8.721479,
+      "duration": 0.659104
+    },
+    {
+      "end": 9.765375,
+      "duration": 0.375583
+    },
+    {
+      "end": 11.144312,
+      "duration": 0.305146
+    },
+    {
+      "end": 13.228646,
+      "duration": 0.655292
+    },
+    {
+      "end": 15.083104,
+      "duration": 0.626271
+    },
+    {
+      "end": 17.197563,
+      "duration": 0.613708
+    },
+    {
+      "end": 18.922354,
+      "duration": 0.660104
+    },
+    {
+      "end": 22.002292,
+      "duration": 0.683
+    },
+    {
+      "end": 23.419562,
+      "duration": 0.626646
+    },
+    {
+      "end": 24.515375,
+      "duration": 0.415729
+    },
+    {
+      "end": 26.111042,
+      "duration": 0.656312
+    },
+    {
+      "end": 28.333917,
+      "duration": 0.627604
+    },
+    {
+      "end": 29.822458,
+      "duration": 0.633188
+    },
+    {
+      "end": 31.226,
+      "duration": 0.675187
+    },
+    {
+      "end": 34.525021,
+      "duration": 0.660542
+    },
+    {
+      "end": 36.883688,
+      "duration": 0.635604
+    },
+    {
+      "end": 38.951563,
+      "duration": 0.641437
+    },
+    {
+      "end": 43.610146,
+      "duration": 3.239646
+    },
+    {
+      "end": 45.486521,
+      "duration": 0.628687
+    },
+    {
+      "end": 48.009583,
+      "duration": 0.643771
+    },
+    {
+      "end": 49.707958,
+      "duration": 0.619083
+    },
+    {
+      "end": 51.582187,
+      "duration": 0.713604
+    },
+    {
+      "end": 53.557083,
+      "duration": 0.650604
+    },
+    {
+      "end": 56.205771,
+      "duration": 0.630437
+    },
+    {
+      "end": 57.706187,
+      "duration": 0.315146
+    },
+    {
+      "end": 59.815667,
+      "duration": 1.004167
+    }
+  ],
+  "longest_silence": 3.239646,
+  "notice": "Natural breaths and pre-reveal pause are not picture freezes. Other intervals remain above threshold, not a semantic speech recognizer."
+}

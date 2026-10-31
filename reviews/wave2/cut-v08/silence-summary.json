@@ -1,0 +1,107 @@
+{
+  "silence_threshold": "-40dBFS, min0.3s",
+  "intervals": [
+    {
+      "end": 2.69925,
+      "duration": 1.451625
+    },
+    {
+      "end": 5.0415,
+      "duration": 1.124083
+    },
+    {
+      "end": 7.5055,
+      "duration": 1.809708
+    },
+    {
+      "end": 9.839042,
+      "duration": 1.561292
+    },
+    {
+      "end": 12.294125,
+      "duration": 1.367917
+    },
+    {
+      "end": 14.634375,
+      "duration": 1.507792
+    },
+    {
+      "end": 17.046208,
+      "duration": 1.338833
+    },
+    {
+      "end": 19.421958,
+      "duration": 1.795583
+    },
+    {
+      "end": 21.855042,
+      "duration": 1.766208
+    },
+    {
+      "end": 24.261625,
+      "duration": 1.434542
+    },
+    {
+      "end": 26.6785,
+      "duration": 1.349292
+    },
+    {
+      "end": 29.07775,
+      "duration": 1.500208
+    },
+    {
+      "end": 31.422375,
+      "duration": 1.001708
+    },
+    {
+      "end": 33.913625,
+      "duration": 1.760458
+    },
+    {
+      "end": 36.286542,
+      "duration": 1.149
+    },
+    {
+      "end": 38.699208,
+      "duration": 1.161167
+    },
+    {
+      "end": 41.054167,
+      "duration": 1.076667
+    },
+    {
+      "end": 43.437375,
+      "duration": 1.360125
+    },
+    {
+      "end": 46.04325,
+      "duration": 1.956875
+    },
+    {
+      "end": 48.279292,
+      "duration": 0.966833
+    },
+    {
+      "end": 50.664708,
+      "duration": 1.09975
+    },
+    {
+      "end": 53.076542,
+      "duration": 1.178292
+    },
+    {
+      "end": 55.488875,
+      "duration": 1.479042
+    },
+    {
+      "end": 57.863125,
+      "duration": 1.132375
+    },
+    {
+      "end": 60.0,
+      "duration": 1.162667
+    }
+  ],
+  "longest_silence": 1.956875,
+  "notice": "Natural breaths and pre-reveal pause are not picture freezes. Other intervals remain above threshold, not a semantic speech recognizer."
+}

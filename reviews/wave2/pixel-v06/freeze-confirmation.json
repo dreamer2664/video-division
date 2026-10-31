@@ -1,0 +1,9 @@
+{
+  "file": "video-landscape.mp4",
+  "start": 15.0666667,
+  "duration": 1.3,
+  "sampled_decoded_frames": 39,
+  "mean_adjacent_abs_gray_difference_0_255": 0.16984222709551658,
+  "max_adjacent_abs_gray_difference": 0.17777777777777778,
+  "note": "Detector is a near-freeze threshold, not proof of byte-identical frames. There is slight pixel motion; inspect/revise meaningful motion in flagged derivative interval rather than claiming an exact repeated frame."
+}

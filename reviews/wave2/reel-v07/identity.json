@@ -1,0 +1,60 @@
+{
+  "head": "f4ba4ea2a03b177d7aee58bc2dac765f0fb1ad9f",
+  "files": {
+    "video-landscape.mp4": {
+      "bytes": 5725007,
+      "sha256": "0f9a6ff8511b080d6393a9bdf25c5279d73d19347af228e9752a59b317fb7cf3",
+      "atoms": [
+        [
+          "ftyp",
+          0,
+          32
+        ],
+        [
+          "moov",
+          32,
+          67435
+        ],
+        [
+          "free",
+          67467,
+          8
+        ],
+        [
+          "mdat",
+          67475,
+          5657532
+        ]
+      ]
+    },
+    "video.mp4": {
+      "bytes": 9589223,
+      "sha256": "89942ed1d0717940ad9f83f743ef76918ae3282e2c5e4e29e29b20900e914d85",
+      "atoms": [
+        [
+          "ftyp",
+          0,
+          32
+        ],
+        [
+          "moov",
+          32,
+          67431
+        ],
+        [
+          "free",
+          67463,
+          8
+        ],
+        [
+          "mdat",
+          67471,
+          9521752
+        ]
+      ]
+    }
+  },
+  "audio_assets": [
+    "assets/narration.flac"
+  ]
+}
