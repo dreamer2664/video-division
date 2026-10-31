@@ -92,7 +92,7 @@ def draw_monitor(d,phase=0.0,mode=0):
   xx=390+j*8; amp=8+int(30*abs(math.sin(j*.73+phase*math.tau)))
   d.line((xx,840-amp,xx,840+amp),fill=(85,197,148),width=3)
  if mode>=2:
-  d.text((380,910),'SOUNDS  2 / 3',font=font(31),fill=(216,223,214))
+  d.text((520,950),'SOUNDS  2 / 3',font=font(27),fill=(216,223,214))
  # Receiver LED.
  d.ellipse((680,450,700,470),fill=GREEN if math.sin(phase*math.tau)>0 else (24,74,58))
 
@@ -234,6 +234,13 @@ def draw_caption(im,i,t,cues):
  if i==24 and t>59.54:
   d.text((W-355,1620),'HALL MIC: LIVE',font=font(26,True),fill=GREEN)
 
+def draw_recording_marker(im,local):
+ # A visible REC indicator glides along the camera HUD in every shot; it preserves motion even in quiet compositions.
+ d=ImageDraw.Draw(im); x=900+int(105*local); y=166
+ d.ellipse((x-24,y-24,x+24,y+24),outline=(110,48,58),width=3)
+ d.ellipse((x-12,y-12,x+12,y+12),fill=(226,69,60))
+
+
 def main():
  ap=argparse.ArgumentParser(); ap.add_argument('--ffmpeg',default='ffmpeg'); ap.add_argument('--out',default='/tmp/cut-v08-build/picture.mp4'); ap.add_argument('--cues',default='project/voice_cues.csv'); args=ap.parse_args()
  cues=read_cues(args.cues); pathlib.Path(args.out).parent.mkdir(parents=True,exist_ok=True)
@@ -246,6 +253,7 @@ def main():
   cw,ch=int(W/zoom),int(H/zoom); left=(W-cw)//2; top=(H-ch)//2
   frame=base.crop((left,top,left+cw,top+ch)).resize((W,H),Image.Resampling.LANCZOS)
   draw_caption(frame,i,t,cues)
+  draw_recording_marker(frame,local)
   # Fine, restrained deterministic night-vision sensor noise, never a static/noisy stock texture.
   if n%2==0:
    d=ImageDraw.Draw(frame); seed=(n*2654435761)&0xffffffff
