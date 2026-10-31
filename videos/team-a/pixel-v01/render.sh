@@ -20,7 +20,9 @@ if ! command -v ffmpeg >/dev/null || ! command -v ffprobe >/dev/null; then
   mkdir -p "$HOME/bin" && cp "$FFDIR/ffmpeg" "$FFDIR/ffprobe" "$HOME/bin/" && chmod +x "$HOME/bin/ffmpeg" "$HOME/bin/ffprobe"
   cd ../..
 fi
-ffmpeg -hide_banner -encoders 2>/dev/null | grep -q libx264 || { echo "ERROR: ffmpeg lacks libx264"; exit 1; }
+# (capture first: `grep -q` on the pipe + pipefail = SIGPIPE false negative — found on first run)
+ENCODERS=$(ffmpeg -hide_banner -encoders 2>/dev/null)
+grep -q libx264 <<<"$ENCODERS" || { echo "ERROR: ffmpeg lacks libx264"; exit 1; }
 ffmpeg -version | head -1
 
 # 1. frames + audio + captions (deterministic; asserts every fact on screen at startup)
