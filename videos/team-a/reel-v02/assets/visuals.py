@@ -113,12 +113,17 @@ def background(idx):
 
 def backdrop_motion(d, idx, t):
     # Large, slowly moving graphic accents keep even the quiet shots alive.
-    c = MUTED_PAPER if LIGHT[idx] else MUTED_DARK
+    # Bands move visibly enough to register as motion even in quiet diagram
+    # sections after H.264 compression; they remain behind the text/graphics.
     if idx == 4:
-        c = (225, 109, 80)
+        c = (210, 94, 70)
+    elif LIGHT[idx]:
+        c = (196, 211, 190)
+    else:
+        c = (44, 80, 76)
     for k in range(5):
-        x = (int(t*44) + k*410) % 2320 - 200
-        d.line((x, 150, x+260, 910), fill=c, width=5)
+        x = (int(t*220) + k*410) % 2320 - 200
+        d.line((x, 150, x+260, 910), fill=c, width=6)
 
 
 def header(d, idx):
