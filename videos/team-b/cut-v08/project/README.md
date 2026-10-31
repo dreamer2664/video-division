@@ -1,6 +1,6 @@
 # v08 render project
 
-`../render.sh` is the full build command. Requirements: FFmpeg with libx264/AAC; Python 3; packages in `requirements.txt`; the DejaVu Sans Condensed fonts at `/usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-Bold.ttf` and `DejaVuSansCondensed.ttf`. In a clean environment: `python3 -m pip install -r project/requirements.txt`, then `FFMPEG=/path/to/ffmpeg ./render.sh`.
+`../render.sh` is the full build command. Requirements: FFmpeg with libx264/AAC; Python 3; packages in `requirements.txt`; the DejaVu Sans fonts at `/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf` and `DejaVuSans.ttf`; captions render at 82 px and are horizontally compressed as needed to fit the safe area.. In a clean environment: `python3 -m pip install -r project/requirements.txt`, then `FFMPEG=/path/to/ffmpeg ./render.sh`.
 
 The committed `../assets/narration.wav` is the 60-second, mono 24 kHz, frame-aligned neural narration stem. It makes the default build reproducible offline. `voice.py` can regenerate it from `voice_lines.txt` using Edge TTS; it writes temporary MP3 beat clips only under `/tmp/cut-v08-build/voice-clips`, time-aligns them to `voice_cues.csv`, and never stores intermediates in the repo. Exact voice identity/settings and the measured effective speaking rate are documented in `../QA.md`.
 

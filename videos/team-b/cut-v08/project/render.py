@@ -8,8 +8,8 @@ W,H,FPS,SECONDS=1080,1920,30,60
 SLOT=SECONDS/25
 NAVY=(11,16,32); BLUE=(14,21,38); AMBER=(245,197,66); CAP_AMBER=(245,209,78)
 WHITE=(245,244,238); RED=(226,69,60); GREEN=(124,242,156); SKIN=(226,163,138)
-BOLD='/usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-Bold.ttf'
-REG='/usr/share/fonts/truetype/dejavu/DejaVuSansCondensed.ttf'
+BOLD='/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'
+REG='/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'
 CAPTIONS=[
  '2:13 A.M. NURSERY','PARENT CHECKS MONITOR','BABY SLEEPS','YOU COUNT WHAT YOU HEAR',
  'ONE: RADIATOR TICKS','PARENT HEARS IT','TWO: CRIB GROANS','HEARD THAT, TOO',
@@ -216,17 +216,20 @@ def draw_caption(im,i,t,cues):
  # first shot has separate time stamp at upper third
  if i==0:
   d.text((85,250),'2:13 A.M.',font=font(78,True),fill=AMBER,stroke_width=2,stroke_fill=(43,32,22))
- # Fit one-row phrase to central safe area with minimum 60 px condensed type.
- size=78
- while size>60 and d.textbbox((0,0),caption,font=font(size,True))[2]>860: size-=2
- f=font(size,True); widths=[d.textbbox((0,0),w,font=f)[2] for w in words]
- gap=int(size*.24); total=sum(widths)+gap*(len(words)-1); x=(W-total)//2; y=1470
- box=(86,1430,994,1585)
- d.rounded_rectangle(box,radius=28,fill=(3,7,16),outline=(53,67,86,170),width=2)
+ # Draw at 82 px, then compress horizontally into the central 84% safe width.
+ # This keeps tall caption glyphs while giving the sans face a condensed treatment.
+ size=82; f=font(size,True); widths=[f.getlength(w) for w in words]
+ gap=int(size*.22); total=sum(widths)+gap*(len(words)-1)
+ line=Image.new('RGBA',(int(total)+8,112),(0,0,0,0)); ld=ImageDraw.Draw(line); x=4
  for j,w in enumerate(words):
   color=col if j==active else WHITE
-  d.text((x,y),w,font=f,fill=color,stroke_width=1,stroke_fill=(4,7,12))
+  ld.text((int(x),0),w,font=f,fill=color,stroke_width=1,stroke_fill=(4,7,12))
   x+=widths[j]+gap
+ scale=min(1.0,860/line.width)
+ if scale<1: line=line.resize((860,112),Image.Resampling.LANCZOS)
+ box=(86,1430,994,1585)
+ d.rounded_rectangle(box,radius=28,fill=(3,7,16),outline=(53,67,86),width=2)
+ im.paste(line,((W-line.width)//2,1452),line)
  # The sequel hook is a tiny visual-only indicator after the last spoken phrase.
  if i==24 and t>59.54:
   d.text((W-355,1620),'HALL MIC: LIVE',font=font(26,True),fill=GREEN)
