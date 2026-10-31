@@ -65,7 +65,7 @@ def process_part(name, folder):
 
 def main():
     p=argparse.ArgumentParser();p.add_argument('--reuse-dir',type=Path,help='folder of previously synthesised pre/post-final.mp3 and .json');args=p.parse_args()
-    with tempfile.TemporaryDirectory(prefix='reel-v07-voice-') as td:
+    with tempfile.TemporaryDirectory(prefix='reel-v08-voice-') as td:
         folder=args.reuse_dir or Path(td)
         if not args.reuse_dir: asyncio.run(generate(folder))
         pre, pw, pc=process_part('pre',folder);post, qw, qc=process_part('post',folder)

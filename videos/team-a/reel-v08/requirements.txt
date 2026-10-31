@@ -1,0 +1,4 @@
+numpy==2.3.5
+Pillow==12.3.0
+# Optional only for regenerating the committed narration stem:
+# edge-tts==7.3.1
