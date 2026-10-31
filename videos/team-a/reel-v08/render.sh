@@ -20,7 +20,7 @@ FILTER="[0:v]fps=30,zoompan=z='$Z':x='iw/2-iw/(2*zoom)':y='ih/2-ih/(2*zoom)':d=1
 ffmpeg -hide_banner -loglevel warning -y -threads 2 -filter_complex_threads 2 \
   -f concat -safe 0 -i "$BUILD/shots.ffconcat" -i "$BUILD/mix.m4a" \
   -filter_complex "$FILTER" -map '[v]' -map 1:a:0 -frames:v 1800 -t 60 \
-  -c:v libx264 -preset veryfast -crf 19 -threads 2 -pix_fmt yuv420p -r 30 \
+  -c:v libx264 -preset veryfast -crf 23 -threads 2 -pix_fmt yuv420p -r 30 \
   -c:a copy -movflags +faststart -metadata title='Ward Ten' video.mp4
 
 # Landscape is a true reframe: the central 1080-square story picture is preserved
@@ -30,6 +30,6 @@ LFILTER="[0:v]format=yuv420p[bg];[1:v]crop=1080:1080:0:300,setsar=1[fg];[bg][fg]
 ffmpeg -hide_banner -loglevel warning -y -threads 2 -filter_complex_threads 2 \
   -loop 1 -framerate 30 -i "$BUILD/landscape-bg.png" -i video.mp4 \
   -filter_complex "$LFILTER" -map '[v]' -map 1:a:0 -frames:v 1800 -t 60 \
-  -c:v libx264 -preset veryfast -crf 19 -threads 2 -pix_fmt yuv420p -r 30 \
+  -c:v libx264 -preset veryfast -crf 23 -threads 2 -pix_fmt yuv420p -r 30 \
   -c:a copy -movflags +faststart -metadata title='Ward Ten — landscape reframe' video-landscape.mp4
 printf 'Rendered video.mp4 and video-landscape.mp4.\n'
