@@ -6,7 +6,7 @@
 
 ## Narration script
 
-At two thirteen a.m. The parent checks the monitor. The baby sleeps. Count what you hear. One: the radiator ticks. The parent hears it. Two: the crib groans. Heard that too. Two sounds happened. The monitor reports three. Three: the latch turns. The door stays shut. The baby's left hand opens. One finger curls. She turns to the lens. Now it names the parent. Their thumb covers the glass. The parent stands outside. The lens faces the child. **[1.25-second pause]** But the voice isn't inside. It stands by the reflection. It is on this side of glass. Not the child's side. The parent reaches for the plug. The monitor goes quiet.
+At two thirteen a.m. The parent checks the monitor. The baby sleeps. Count what you hear. One: the radiator ticks. The parent hears it. Two: the crib groans. Heard that too. Two sounds happened. The monitor reports three. Three: the latch turns. The door stays shut. The baby's left hand opens. One finger curls. She turns to the lens. Now it names the parent. Their thumb covers the glass. The parent stands outside. The lens faces the child. **[1.25-second pause]** But the voice isn't inside. It stands by the reflection. On this side of glass. Not the child's side. Parent reaches for the plug. The monitor goes quiet.
 
 ## Timed shot list / captions
 
@@ -35,9 +35,9 @@ Hard cuts every 2.4 seconds. Each shot is a slow eased 1.00→1.06 push-in with 
 | 19 | 00:43.2–00:45.6 | Lens remains on child; waveform recedes, then pauses | `LENS FACES THE CHILD` | The lens faces the child. **[pause after this line]** |
 | 20 | 00:45.6–00:48 | Reflection occupies screen; red pulse begins | `VOICE ISN'T INSIDE` | But the voice isn't inside. |
 | 21 | 00:48–00:50.4 | Parent silhouette resolves beside the glass | `BESIDE THE REFLECTION` | It stands by the reflection. |
-| 22 | 00:50.4–00:52.8 | Lens boundary glows; parent side turns amber | `ON THIS SIDE OF GLASS` | It is on this side of glass. |
+| 22 | 00:50.4–00:52.8 | Lens boundary glows; parent side turns amber | `ON THIS SIDE OF GLASS` | On this side of glass. |
 | 23 | 00:52.8–00:55.2 | Child remains still; blue boundary stays in room | `NOT THE CHILD'S SIDE` | Not the child's side. |
-| 24 | 00:55.2–00:57.6 | Parent reaches toward plug; one tiny spark | `REACH FOR THE PLUG` | The parent reaches for the plug. |
+| 24 | 00:55.2–00:57.6 | Parent reaches toward plug; one tiny spark | `REACH FOR THE PLUG` | Parent reaches for the plug. |
 | 25 | 00:57.6–01:00 | Waveform collapses; post-line hook: `HALL MIC: LIVE` | `THE MONITOR GOES QUIET` | The monitor goes quiet. |
 
 ## Picture and typography direction
