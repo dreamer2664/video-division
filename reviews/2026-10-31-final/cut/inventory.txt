@@ -1,0 +1,3 @@
+video bytes: 29557390
+atoms: [('ftyp', 0, 32), ('moov', 32, 53136), ('free', 53168, 8), ('mdat', 53176, 29504214)]
+stills: ['01.png', '03.png', '02.png']
