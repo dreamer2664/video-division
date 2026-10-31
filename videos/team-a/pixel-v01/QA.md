@@ -6,6 +6,127 @@ no stock assets, no external audio. The only external material in the repo is tw
 
 ---
 
+## 0. Audit of the pushed deliverable (fresh clone, 2026-10-31)
+
+Manager B's audit ran before the final render landed on the branch, so this section exists to make
+the claim checkable from the remote alone rather than from my working tree. Everything below was
+produced by cloning `pixel/v01` into an empty directory, deleting nothing, and running the spec's
+commands against the `video.mp4` that came down the wire.
+
+```
+$ git clone --branch pixel/v01 https://github.com/dreamer2664/video-division.git audit-v01
+$ cd audit-v01/videos/team-a/pixel-v01
+$ git rev-parse HEAD
+dd7f11200b68768c3e22fcb59758cc6a1f56ddba
+$ ls -l video.mp4
+-rw-r--r-- 1 user user 57948410 ... video.mp4
+$ sha256sum video.mp4
+1fd7c715fd1c5a2ad2fb4b0f97a74f15df307ea0fa9545bf9775c53d4f937b53  video.mp4
+```
+
+**Spec command 1, verbatim, against the freshly cloned file:**
+
+```
+$ ffprobe -v error -show_entries format=duration,size:stream=codec_name,width,height,r_frame_rate,codec_type -of default=noprint_wrappers=1 video.mp4
+codec_name=h264
+codec_type=video
+width=1920
+height=1080
+r_frame_rate=30/1
+codec_name=aac
+codec_type=audio
+r_frame_rate=0/0
+duration=60.000000
+size=57948410
+```
+
+**Spec command 2, verbatim:**
+
+```
+$ ffmpeg -v error -i video.mp4 -af loudnorm=print_format=summary -f null -
+[exit code: 0]
+```
+
+Empty output — see §2 for why, and for the same filter run at a verbosity that does not suppress it:
+
+```
+$ ffmpeg -v info -i video.mp4 -af loudnorm=print_format=summary -f null -
+Input Integrated:    -16.1 LUFS
+Input True Peak:      -1.4 dBTP
+Input LRA:             4.2 LU
+Input Threshold:     -26.3 LUFS
+```
+
+(The `Output …` lines that follow in loudnorm's block are its *simulated second-pass target*,
+−24.2 LUFS, not the file's loudness — anyone reading this summary quickly should know that. The
+independent `ebur128` meter below is the number that matters.)
+
+**Independent checks, same cloned file:**
+
+```
+$ ffmpeg -v info -i video.mp4 -af ebur128=peak=true -f null -
+    I:         -16.0 LUFS
+    LRA:         4.3 LU
+    Peak:       -1.4 dBFS
+
+$ ffmpeg -v info -i video.mp4 -vf blackdetect=d=0.5 -an -f null -
+none
+
+$ ffmpeg -v info -i video.mp4 -vf freezedetect=n=-60dB:d=0.5 -an -f null -
+none
+
+$ ffmpeg -v info -i video.mp4 -af silencedetect=n=-50dB:d=1.0 -f null -
+none
+
+$ ffprobe -v error -count_frames -select_streams v:0 -show_entries stream=nb_read_frames,avg_frame_rate,pix_fmt,profile -of default=nw=1 video.mp4
+profile=High
+pix_fmt=yuv420p
+avg_frame_rate=30/1
+nb_read_frames=1800
+
+$ ffprobe -v error -select_streams a:0 -show_entries stream=codec_name,sample_rate,channels,bit_rate -of default=nw=1 video.mp4
+codec_name=aac
+sample_rate=48000
+channels=2
+bit_rate=201050
+
+moov@36 mdat@67465 faststart=True
+captions.srt: 21 cues
+FULL_DECODE_OK
+```
+
+**Re-render from that clone, after deleting the shipped `video.mp4`:** `render.sh` regenerated all
+1800 frames, the 60.000 s master, the captions and the stills, and the output came back
+**byte-identical** to the file that was on the remote:
+
+```
+$ sha256sum video.mp4            # re-rendered from nothing
+1fd7c715fd1c5a2ad2fb4b0f97a74f15df307ea0fa9545bf9775c53d4f937b53  video.mp4
+$ sha256sum shipped-v01.mp4      # the file as delivered, saved aside before the re-render
+1fd7c715fd1c5a2ad2fb4b0f97a74f15df307ea0fa9545bf9775c53d4f937b53  shipped-v01.mp4
+$ cmp -s video.mp4 shipped-v01.mp4 && echo BYTE-IDENTICAL
+BYTE-IDENTICAL
+```
+
+**Edge frames and type size, checked directly in this clone:**
+
+| frame | mean luma | pixels below black threshold (25.5) |
+|---|---|---|
+| n=0 (t=0.000) | 44.0 | 0.03 % |
+| n=29 (t=0.967) | 47.8 | 0.01 % |
+| n=1770 (t=59.000) | 51.1 | 0.00 % |
+| n=1799 (t=59.967) | 51.4 | 0.00 % |
+
+First frame is the two counters at zero with the seconds bar at its origin; last frame is the end
+card with the seconds bar at its terminus. Nothing black, nothing frozen.
+
+Type sizes across the renderer, extracted mechanically rather than asserted: the smallest size in
+use is **44 px**, and `fit()` refuses to shrink any line below `min_size=44`. The 44 px instances are
+the caption-grade labels (`seconds`, `79 years`, the `0`/`60 s` bar labels, the end-card credit); all
+body and headline type is 48–168 px.
+
+---
+
 ## 1. Verdict against the spec
 
 | Requirement | Target | Measured | Pass |
@@ -287,12 +408,12 @@ $ ffmpeg -v error -i video.mp4 -map 0 -c copy -f streamhash -hash sha256 -
 tested that path with an empty `HOME` and a `PATH` with no ffmpeg/ffprobe:
 
 ```
-$ env HOME=/tmp/fakehome PATH=/usr/local/bin:/usr/bin:/bin sh -c 'command -v ffmpeg || echo "ffmpeg: not on PATH"'
+$ env HOME=/home/user/fakehome PATH=/usr/local/bin:/usr/bin:/bin sh -c 'command -v ffmpeg || echo "ffmpeg: not on PATH"'
 ffmpeg: not on PATH
-$ env HOME=/tmp/fakehome PATH=/usr/local/bin:/usr/bin:/bin ./render.sh
+$ env HOME=/home/user/fakehome PATH=/usr/local/bin:/usr/bin:/bin ./render.sh
 ffmpeg missing — bootstrapping static build into work/tools ...
 ...
-$ /tmp/fakehome/bin/ffmpeg -version | head -1
+$ /home/user/fakehome/bin/ffmpeg -version | head -1
 ffmpeg version 7.0.2-static https://johnvansickle.com/ffmpeg/  Copyright (c) 2000-2024 the FFmpeg developers
 ```
 
