@@ -2,21 +2,21 @@
 
 Integration owner: **lux (Manager B)**; reports to Manager A. No publishing.
 
-Observed 2026-10-31T14:40:18Z: remote main `b025e47`; no worker branches visible yet. Workers are deployed per handoff; deployment is not evidence of progress. Credentials pending; remote write access not yet verified.
+Observed 2026-10-31T14:50Z: ownership branch pushed; worker branches fetched and checked. No completed video submitted. cut and grade are working locally per Manager A/user handoff; no remote branches yet.
 
-| task | owner | team | status | branch (expected) | last observed | next step |
+| task | owner | team | status | branch | last observed | next step |
 |---|---|---|---|---|---|---|
-| v01 — first programmatic 60s | pixel | A | claimed; remote checkpoint pending | pixel/v01 | 2026-10-31T14:40Z: branch absent | Push script checkpoint, then render independently |
-| v02 — second programmatic 60s | reel | A | claimed; remote checkpoint pending | reel/v02 | 2026-10-31T14:40Z: branch absent | Push script checkpoint, then render independently |
-| v03 — first visual 60s | cut | B | claimed; remote checkpoint pending | cut/v03 | 2026-10-31T14:40Z: branch absent | Checkpoint actual editor feasibility, script and project |
-| v04 — second visual 60s | grade | B | claimed; remote checkpoint pending | grade/v04 | 2026-10-31T14:40Z: branch absent | Checkpoint actual editor feasibility, script and project |
+| v01 — first programmatic 60s | pixel | A | building; checkpoint reviewed, not accepted | pixel/v01 | 14:50Z head `3bf11ee2`: script only | Complete own renderer/output, QA/probe/loudness, captions and ≥3 stills; see initial review |
+| v02 — second programmatic 60s | reel | A | building; checkpoint reviewed, not accepted | reel/v02 | 14:50Z head `941b9870` (after `6bfadb77`): script, renderer/assets/captions | Push own output, QA/probe/loudness and ≥3 stills; see initial review |
+| v03 — first visual 60s | cut | B | building locally (reported); remote checkpoint pending | cut/v03 (expected) | channel progress 14:44:04Z; remote absent at 14:50Z | Push existing script/tool-feasibility checkpoint, continue own visual workflow |
+| v04 — second visual 60s | grade | B | building locally (reported); remote checkpoint pending | grade/v04 (expected) | channel start 14:46:13Z; remote absent at 14:50Z | Push existing script/tool-feasibility checkpoint, continue own visual workflow |
 
 ## Supervision and integration
-- Next branch/channel inspection due approximately 15:00Z; while a manager run is active inspect every ~20 min. This is a schedule, not a claim that an unattended monitor exists.
-- No reliable worker last-contact times supplied. Baseline observation 14:40Z; do not invent earlier silence. If no subsequent contact/checkpoint by after 15:25Z, mark silence >45 min and reassign within team: pixel ↔ reel, cut ↔ grade. Account for later channel messages and pushes before reassignment.
+- Next branch/channel inspection due approximately 15:10Z; while a manager run is active inspect every ~20 min. This is a schedule, not a claim that an unattended monitor exists.
+- Latest channel contact observed: pixel 14:46:22Z; reel 14:48:38Z; cut 14:44:04Z; grade 14:46:13Z. No worker is >45 min silent. Use later contact/push if available; if silence exceeds 45 min, reassign within team pixel ↔ reel or cut ↔ grade and preserve old branches.
 - Workers own their branches; lux alone integrates to main. Never delete their branches or force-push.
-- Checkpoint and push management changes at least every 30 min once credentials permit. Pending authentication is a blocker, not a completed push.
-- No sample is done without independent verification of its exact commit and real QA evidence. No sample has been reviewed or accepted yet.
+- Checkpoint and push management changes at least every 30 min once credentials permit. Authentication verified through ownership-branch push; secrets remain outside repos (private askpass, clean HTTPS remote).
+- No sample is done without independent verification of its exact commit and real QA evidence. Initial checkpoint reviews and failed missing-input verification logs: `reviews/2026-10-31-initial/`. No sample accepted; no visual inspection possible without stills/output.
 - HQ CURRENT and roster are stale relative to handoff; notify A and register lux when authenticated.
 
 ## QA gate

@@ -40,3 +40,5 @@ Training completion: all exercises reviewed by lux against their evidence; one c
 
 ## Run checkpoint
 2026-10-31T14:40Z: required onboarding complete; start announcement delivered. Only main exists remotely; no sample evidence available. BOARD and this plan drafted locally. Credentials promised in next user message; no push claimed. No ffmpeg/ffprobe executable found on PATH during initial check; install/verify tools before reviewing a submission. Next active inspection due ~15:00Z. This document does not imply continuous operation between turns.
+
+2026-10-31T14:50Z continuation: ownership branch pushed successfully. FFmpeg/ffprobe 7.1.5 installed and used independently; both available worker checkpoints lack video/QA/stills, so commands fail for missing input, not a measured media defect. See initial review logs. cut/grade still local; no stale-worker reassignment warranted. Next active check ~15:10Z.
