@@ -41,7 +41,7 @@ states the film was made entirely with code. It is not an impersonation of any r
 | audio | 48 kHz stereo AAC | **aac LC, 48000 Hz, 2 ch** | ✔ |
 | integrated loudness | −16 LUFS ±0.5 | **−16.5 LUFS** (ebur128) | ✔ |
 | true peak | ≤ −1 dBTP | **−1.2 dBFS** (ebur128 peak=true) | ✔ |
-| size | < 90 MB | **58,849,240 B** | ✔ |
+| size | < 90 MB | **58,850,750 B (56.1 MiB)** | ✔ |
 | black frames | none > 0.5 s | **none** | ✔ |
 | frozen frames | none > 0.5 s | **none** (`freezedetect d=0.5`) | ✔ |
 | on-screen type | ≥ 40 px at 1080p | smallest **40 px** (timecode labels); captions 88 px | ✔ |
@@ -64,7 +64,7 @@ codec_name=aac
 codec_type=audio
 r_frame_rate=0/0
 duration=60.000000
-size=58849240
+size=58850750
 ```
 
 ```
@@ -99,7 +99,7 @@ freezedetect d=0.5     -> none
 silencedetect d=1.0    -> none
 frames                 -> nb_read_frames=1800, avg_frame_rate=30/1, pix_fmt=yuv420p, profile=High
 faststart              -> moov before mdat (verified by atom offset)
-sha256(video.mp4)      -> c41f99e21de7e9014372030bc928645df235cc499029ad4fe4188295c09bbe46
+sha256(video.mp4)      -> 3bc92fab751a2cb49fc791d184530e90178618e90ce5a02e03029e0dd3c7fb2c
 ```
 
 ### Captions vs speech — the two timelines interleaved
@@ -189,6 +189,11 @@ All found by measuring output, not by reading a plan.
    caption is drawn below y=1300 once captions begin.
 9. **Shot 19 and 20 were the same artwork for 8 s** under two captions. Fix: shot 19 is now its
    own composition — the ring dims to nothing while the room stays lit.
+10. **The name revealed letter by letter and so read "DANIE" for a third of its shot** (and a
+    blinking cursor flush against the "L" read as another character). Fix: the name now arrives as
+    a whole word in a short scale-in, with the cursor separated by a measured gap. Caught only by
+    looking at the *encoded* frame rather than the rendering code — a good argument for inspecting
+    frames from the delivered file rather than trusting the source.
 
 ---
 

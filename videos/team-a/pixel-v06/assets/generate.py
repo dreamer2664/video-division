@@ -312,16 +312,20 @@ def s_ring(img, t, lt, dur):
 def s_name(img, t, lt, dur):
     dr = ImageDraw.Draw(img, "RGBA")
     draw_speaker(img, 300, 1180, 96, ring=1.0, listening=1.0)
-    f = font("Anton-Regular.ttf", 118)
+    # The name arrives as a whole word, not letter by letter: a half-typed proper noun reads as
+    # a truncated word ("DANIE"), which I shipped twice before catching it. The scale-in plus the
+    # cursor blink and the listening ring give the shot its motion.
     name = "DANIEL"
-    reveal = ease_out((lt - 0.15) / 0.55)
-    n = max(0, min(len(name), int(len(name) * reveal + 0.001)))
-    full_w = dr.textlength(name, font=f)
-    x0 = 700 - full_w / 2
-    if n:
-        dr.text((x0, 1130), name[:n], font=f, fill=GREEN + (255,), anchor="lm")
-    if reveal >= 1.0 and int(t * 2) % 2 == 0:
-        dr.rectangle([x0 + full_w + 8, 1088, x0 + full_w + 18, 1172], fill=GREEN + (200,))
+    reveal = ease_out((lt - 0.12) / 0.30)
+    if reveal > 0.01:
+        size = int(118 * (0.94 + 0.06 * reveal))
+        f = font("Anton-Regular.ttf", size)
+        full_w = dr.textlength(name, font=f)
+        x0 = 700 - full_w / 2
+        dr.text((x0, 1130), name, font=f, fill=GREEN + (int(255 * reveal),), anchor="lm")
+        if int(t * 2) % 2 == 0:
+            dr.rectangle([x0 + full_w + 26, 1088, x0 + full_w + 36, 1172],
+                         fill=GREEN + (int(200 * reveal),))
     dr.text((700, 1215), "NEVER TOLD TO IT", font=font("BarlowCondensed-SemiBold.ttf", 46),
             fill=(150, 166, 190, 200), anchor="mm")
 
