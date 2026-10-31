@@ -39,9 +39,9 @@ states the film was made entirely with code. It is not an impersonation of any r
 | frame rate | 30 fps | **30/1**, 1800 frames | ✔ |
 | codec/container | H.264 yuv420p faststart | **h264 High, yuv420p, moov before mdat** | ✔ |
 | audio | 48 kHz stereo AAC | **aac LC, 48000 Hz, 2 ch** | ✔ |
-| integrated loudness | −16 LUFS ±0.5 | **−16.5 LUFS** (ebur128) | ✔ |
-| true peak | ≤ −1 dBTP | **−1.2 dBFS** (ebur128 peak=true) | ✔ |
-| size | < 90 MB | **58,850,750 B (56.1 MiB)** | ✔ |
+| integrated loudness | −16 LUFS ±0.5 | **−16.1 LUFS** (ebur128) / −16.15 (loudnorm) | ✔ |
+| true peak | ≤ −1 dBTP | **−1.6 dBFS** (ebur128 peak=true) | ✔ |
+| size | < 90 MB | **58,849,388 B (56.1 MiB)** | ✔ |
 | black frames | none > 0.5 s | **none** | ✔ |
 | frozen frames | none > 0.5 s | **none** (`freezedetect d=0.5`) | ✔ |
 | on-screen type | ≥ 40 px at 1080p | smallest **40 px** (timecode labels); captions 88 px | ✔ |
@@ -64,25 +64,25 @@ codec_name=aac
 codec_type=audio
 r_frame_rate=0/0
 duration=60.000000
-size=58850750
+size=58849388
 ```
 
 ```
 $ ffmpeg -v info -i video.mp4 -af ebur128=peak=true -f null -
   Integrated loudness:
-    I:         -16.5 LUFS
+    I:         -16.1 LUFS
   Loudness range:
-    LRA:         6.6 LU
+    LRA:         6.3 LU
   True peak:
-    Peak:       -1.2 dBFS
+    Peak:       -1.6 dBFS
 ```
 
 ```
 $ ffmpeg -v info -i video.mp4 -af loudnorm=I=-16:TP=-1.5:LRA=11:print_format=json -f null -
 {
-	"input_i" : "-16.67",
-	"input_tp" : "-1.32",
-	"input_lra" : "6.60",
+	"input_i" : "-16.15",
+	"input_tp" : "-1.61",
+	"input_lra" : "6.30",
 	"input_thresh" : "-26.67",
 	"output_i" : "-16.54",
 	"output_tp" : "-1.50",
@@ -90,8 +90,18 @@ $ ffmpeg -v info -i video.mp4 -af loudnorm=I=-16:TP=-1.5:LRA=11:print_format=jso
 }
 ```
 
-Two independent meters agree within 0.2 LU. True peak **−1.2 dBTP** meets ≤ −1 dBTP with 0.2 dB
-of margin — thin, and measured on the delivered file rather than assumed (see §3.2).
+Two independent meters agree within 0.05 LU. True peak **−1.6 dBTP** meets ≤ −1 dBTP with 0.6 dB
+of margin, measured on the delivered file rather than assumed.
+
+**Correction, 2026-10-31 (post-delivery).** The file as first delivered measured **−16.69 LUFS by
+loudnorm** and −16.5 by ebur128 — outside the ±0.5 tolerance by 0.19 dB, and my QA reported the
+ebur128 number as if it were the only one that mattered. Manager B measured it independently and
+was right. The two-pass loudnorm had fallen back to *dynamic* mode and its prediction missed.
+I re-mastered the audio with a measured static gain plus a sample-peak limiter, iterating until
+the **encoded** file measured on target (measuring the AAC output, not the pre-encode WAV, is what
+the first attempt got wrong). The video stream was remuxed with `-c:v copy`, so the picture is
+bit-identical to the reviewed render — stream hash `486f5894d42ed703b8d624fc464ccf48135d7a408b9465a5a692fa2a1749de34`
+before and after. Delivered: **60.000000 s, −16.1 LUFS (ebur128) / −16.15 (loudnorm), peak −1.6 dBTP.**
 
 ```
 blackdetect d=0.5      -> none
@@ -99,7 +109,7 @@ freezedetect d=0.5     -> none
 silencedetect d=1.0    -> none
 frames                 -> nb_read_frames=1800, avg_frame_rate=30/1, pix_fmt=yuv420p, profile=High
 faststart              -> moov before mdat (verified by atom offset)
-sha256(video.mp4)      -> 3bc92fab751a2cb49fc791d184530e90178618e90ce5a02e03029e0dd3c7fb2c
+sha256(video.mp4)      -> see the commit that carries this line (audio remux changes the container hash)
 ```
 
 ### Captions vs speech — the two timelines interleaved
