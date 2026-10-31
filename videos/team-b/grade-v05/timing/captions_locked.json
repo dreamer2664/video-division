@@ -1,0 +1,774 @@
+[
+  {
+    "cue": 1,
+    "line": "01",
+    "start": 0.36,
+    "end": 1.539,
+    "dur": 1.179,
+    "word_count": 2,
+    "plain": "At 2:17",
+    "spoken_words": "At two seventeen",
+    "tokens": [
+      [
+        "At",
+        "ivory"
+      ],
+      [
+        "2:17",
+        "amber"
+      ]
+    ]
+  },
+  {
+    "cue": 2,
+    "line": "01",
+    "start": 1.553,
+    "end": 2.135,
+    "dur": 0.582,
+    "word_count": 3,
+    "plain": "in the morning,",
+    "spoken_words": "in the morning",
+    "tokens": [
+      [
+        "in the",
+        "ivory"
+      ],
+      [
+        "morning,",
+        "amber"
+      ]
+    ]
+  },
+  {
+    "cue": 3,
+    "line": "01",
+    "start": 2.434,
+    "end": 3.598,
+    "dur": 1.164,
+    "word_count": 4,
+    "plain": "the old stone lock",
+    "spoken_words": "the old stone lock",
+    "tokens": [
+      [
+        "the old",
+        "ivory"
+      ],
+      [
+        "stone lock",
+        "amber"
+      ]
+    ]
+  },
+  {
+    "cue": 4,
+    "line": "01",
+    "start": 3.613,
+    "end": 4.479,
+    "dur": 0.866,
+    "word_count": 3,
+    "plain": "on the Blackwater",
+    "spoken_words": "on the Blackwater",
+    "tokens": [
+      [
+        "on the",
+        "ivory"
+      ],
+      [
+        "Blackwater",
+        "amber"
+      ]
+    ]
+  },
+  {
+    "cue": 5,
+    "line": "01",
+    "start": 4.493,
+    "end": 5.772,
+    "dur": 1.279,
+    "word_count": 4,
+    "plain": "has only one rule.",
+    "spoken_words": "has only one rule",
+    "tokens": [
+      [
+        "has",
+        "ivory"
+      ],
+      [
+        "only one rule.",
+        "amber"
+      ]
+    ]
+  },
+  {
+    "cue": 6,
+    "line": "02",
+    "start": 6.152,
+    "end": 7.501,
+    "dur": 1.349,
+    "word_count": 4,
+    "plain": "Never open the sluice",
+    "spoken_words": "Never open the sluice",
+    "tokens": [
+      [
+        "Never open",
+        "amber"
+      ],
+      [
+        "the sluice",
+        "ivory"
+      ]
+    ]
+  },
+  {
+    "cue": 7,
+    "line": "02",
+    "start": 7.515,
+    "end": 8.567,
+    "dur": 1.052,
+    "word_count": 4,
+    "plain": "if the rain reaches",
+    "spoken_words": "if the rain reaches",
+    "tokens": [
+      [
+        "if the rain",
+        "ivory"
+      ],
+      [
+        "reaches",
+        "amber"
+      ]
+    ]
+  },
+  {
+    "cue": 8,
+    "line": "02",
+    "start": 8.581,
+    "end": 9.405,
+    "dur": 0.824,
+    "word_count": 2,
+    "plain": "MARK FOUR.",
+    "spoken_words": "Mark Four",
+    "tokens": [
+      [
+        "MARK FOUR.",
+        "crimson"
+      ]
+    ]
+  },
+  {
+    "cue": 9,
+    "line": "03",
+    "start": 9.825,
+    "end": 10.933,
+    "dur": 1.108,
+    "word_count": 3,
+    "plain": "For forty years,",
+    "spoken_words": "For forty years",
+    "tokens": [
+      [
+        "For",
+        "ivory"
+      ],
+      [
+        "forty years,",
+        "amber"
+      ]
+    ]
+  },
+  {
+    "cue": 10,
+    "line": "03",
+    "start": 11.174,
+    "end": 11.998,
+    "dur": 0.824,
+    "word_count": 3,
+    "plain": "a night keeper",
+    "spoken_words": "a night keeper",
+    "tokens": [
+      [
+        "a",
+        "ivory"
+      ],
+      [
+        "night keeper",
+        "amber"
+      ]
+    ]
+  },
+  {
+    "cue": 11,
+    "line": "03",
+    "start": 12.012,
+    "end": 13.191,
+    "dur": 1.179,
+    "word_count": 4,
+    "plain": "has logged the water",
+    "spoken_words": "has logged the water",
+    "tokens": [
+      [
+        "has logged",
+        "ivory"
+      ],
+      [
+        "the water",
+        "amber"
+      ]
+    ]
+  },
+  {
+    "cue": 12,
+    "line": "03",
+    "start": 13.205,
+    "end": 14.612,
+    "dur": 1.407,
+    "word_count": 3,
+    "plain": "every fifteen minutes.",
+    "spoken_words": "every fifteen minutes",
+    "tokens": [
+      [
+        "every",
+        "ivory"
+      ],
+      [
+        "fifteen minutes.",
+        "amber"
+      ]
+    ]
+  },
+  {
+    "cue": 13,
+    "line": "04",
+    "start": 14.992,
+    "end": 17.208,
+    "dur": 2.216,
+    "word_count": 3,
+    "plain": "1:45 \u2014 Mark Two.",
+    "spoken_words": "One forty-five Mark Two",
+    "tokens": [
+      [
+        "1:45 \u2014",
+        "ivory"
+      ],
+      [
+        "Mark Two.",
+        "amber"
+      ]
+    ]
+  },
+  {
+    "cue": 14,
+    "line": "04",
+    "start": 18.209,
+    "end": 20.183,
+    "dur": 1.974,
+    "word_count": 3,
+    "plain": "2:00 \u2014 Mark Three.",
+    "spoken_words": "Two o'clock Mark Three",
+    "tokens": [
+      [
+        "2:00 \u2014",
+        "ivory"
+      ],
+      [
+        "Mark Three.",
+        "amber"
+      ]
+    ]
+  },
+  {
+    "cue": 15,
+    "line": "05",
+    "start": 20.603,
+    "end": 22.194,
+    "dur": 1.591,
+    "word_count": 3,
+    "plain": "Outside, four inches",
+    "spoken_words": "Outside four inches",
+    "tokens": [
+      [
+        "Outside,",
+        "ivory"
+      ],
+      [
+        "four inches",
+        "amber"
+      ]
+    ]
+  },
+  {
+    "cue": 16,
+    "line": "05",
+    "start": 22.208,
+    "end": 23.529,
+    "dur": 1.321,
+    "word_count": 4,
+    "plain": "of cold rain fall",
+    "spoken_words": "of cold rain fall",
+    "tokens": [
+      [
+        "of cold rain",
+        "amber"
+      ],
+      [
+        "fall",
+        "ivory"
+      ]
+    ]
+  },
+  {
+    "cue": 17,
+    "line": "05",
+    "start": 23.543,
+    "end": 24.637,
+    "dur": 1.094,
+    "word_count": 3,
+    "plain": "in twenty minutes.",
+    "spoken_words": "in twenty minutes",
+    "tokens": [
+      [
+        "in",
+        "ivory"
+      ],
+      [
+        "twenty minutes.",
+        "amber"
+      ]
+    ]
+  },
+  {
+    "cue": 18,
+    "line": "05",
+    "start": 25.624,
+    "end": 26.391,
+    "dur": 0.767,
+    "word_count": 3,
+    "plain": "Yet the gauge",
+    "spoken_words": "Yet the gauge",
+    "tokens": [
+      [
+        "Yet",
+        "ivory"
+      ],
+      [
+        "the gauge",
+        "amber"
+      ]
+    ]
+  },
+  {
+    "cue": 19,
+    "line": "05",
+    "start": 26.405,
+    "end": 27.399,
+    "dur": 0.994,
+    "word_count": 2,
+    "plain": "stops moving.",
+    "spoken_words": "stops moving",
+    "tokens": [
+      [
+        "stops",
+        "amber"
+      ],
+      [
+        "moving.",
+        "amber"
+      ]
+    ]
+  },
+  {
+    "cue": 20,
+    "line": "06",
+    "start": 27.799,
+    "end": 29.29,
+    "dur": 1.491,
+    "word_count": 3,
+    "plain": "Three millimeters below",
+    "spoken_words": "Three millimeters below",
+    "tokens": [
+      [
+        "Three millimeters",
+        "amber"
+      ],
+      [
+        "below",
+        "ivory"
+      ]
+    ]
+  },
+  {
+    "cue": 21,
+    "line": "06",
+    "start": 29.305,
+    "end": 30.228,
+    "dur": 0.923,
+    "word_count": 3,
+    "plain": "the red line.",
+    "spoken_words": "the red line",
+    "tokens": [
+      [
+        "the",
+        "ivory"
+      ],
+      [
+        "red line.",
+        "crimson"
+      ]
+    ]
+  },
+  {
+    "cue": 22,
+    "line": "06",
+    "start": 31.215,
+    "end": 32.933,
+    "dur": 1.718,
+    "word_count": 4,
+    "plain": "Still as dark glass.",
+    "spoken_words": "Still as dark glass",
+    "tokens": [
+      [
+        "Still as",
+        "ivory"
+      ],
+      [
+        "dark glass.",
+        "amber"
+      ]
+    ]
+  },
+  {
+    "cue": 23,
+    "line": "07",
+    "start": 33.373,
+    "end": 34.751,
+    "dur": 1.378,
+    "word_count": 5,
+    "plain": "So you carry the lantern",
+    "spoken_words": "So you carry the lantern",
+    "tokens": [
+      [
+        "So you carry",
+        "ivory"
+      ],
+      [
+        "the lantern",
+        "amber"
+      ]
+    ]
+  },
+  {
+    "cue": 24,
+    "line": "07",
+    "start": 34.765,
+    "end": 35.958,
+    "dur": 1.193,
+    "word_count": 4,
+    "plain": "out onto the catwalk",
+    "spoken_words": "out onto the catwalk",
+    "tokens": [
+      [
+        "out onto",
+        "ivory"
+      ],
+      [
+        "the catwalk",
+        "amber"
+      ]
+    ]
+  },
+  {
+    "cue": 25,
+    "line": "07",
+    "start": 35.972,
+    "end": 36.64,
+    "dur": 0.668,
+    "word_count": 3,
+    "plain": "to check for",
+    "spoken_words": "to check for",
+    "tokens": [
+      [
+        "to check",
+        "ivory"
+      ],
+      [
+        "for",
+        "ivory"
+      ]
+    ]
+  },
+  {
+    "cue": 26,
+    "line": "07",
+    "start": 36.654,
+    "end": 37.663,
+    "dur": 1.009,
+    "word_count": 3,
+    "plain": "a jammed float.",
+    "spoken_words": "a jammed float",
+    "tokens": [
+      [
+        "a",
+        "ivory"
+      ],
+      [
+        "jammed float.",
+        "amber"
+      ]
+    ]
+  },
+  {
+    "cue": 27,
+    "line": "08",
+    "start": 38.083,
+    "end": 38.949,
+    "dur": 0.866,
+    "word_count": 3,
+    "plain": "Your light hits",
+    "spoken_words": "Your light hits",
+    "tokens": [
+      [
+        "Your light",
+        "amber"
+      ],
+      [
+        "hits",
+        "ivory"
+      ]
+    ]
+  },
+  {
+    "cue": 28,
+    "line": "08",
+    "start": 38.964,
+    "end": 40.285,
+    "dur": 1.321,
+    "word_count": 4,
+    "plain": "the wet stone wall.",
+    "spoken_words": "the wet stone wall",
+    "tokens": [
+      [
+        "the wet",
+        "ivory"
+      ],
+      [
+        "stone wall.",
+        "amber"
+      ]
+    ]
+  },
+  {
+    "cue": 29,
+    "line": "08",
+    "start": 41.271,
+    "end": 41.925,
+    "dur": 0.654,
+    "word_count": 3,
+    "plain": "And you see",
+    "spoken_words": "And you see",
+    "tokens": [
+      [
+        "And you",
+        "ivory"
+      ],
+      [
+        "see",
+        "amber"
+      ]
+    ]
+  },
+  {
+    "cue": 30,
+    "line": "08",
+    "start": 41.939,
+    "end": 43.473,
+    "dur": 1.534,
+    "word_count": 4,
+    "plain": "the empty bolt holes.",
+    "spoken_words": "the empty bolt holes",
+    "tokens": [
+      [
+        "the empty",
+        "ivory"
+      ],
+      [
+        "bolt holes.",
+        "crimson"
+      ]
+    ]
+  },
+  {
+    "cue": 31,
+    "line": "09",
+    "start": 44.593,
+    "end": 46.468,
+    "dur": 1.875,
+    "word_count": 4,
+    "plain": "Someone unbolted Mark Four,",
+    "spoken_words": "Someone unbolted Mark Four",
+    "tokens": [
+      [
+        "Someone unbolted",
+        "ivory"
+      ],
+      [
+        "Mark Four,",
+        "crimson"
+      ]
+    ]
+  },
+  {
+    "cue": 32,
+    "line": "09",
+    "start": 46.752,
+    "end": 48.101,
+    "dur": 1.349,
+    "word_count": 5,
+    "plain": "and moved the brass plate",
+    "spoken_words": "and moved the brass plate",
+    "tokens": [
+      [
+        "and moved",
+        "ivory"
+      ],
+      [
+        "the brass plate",
+        "amber"
+      ]
+    ]
+  },
+  {
+    "cue": 33,
+    "line": "09",
+    "start": 48.116,
+    "end": 49.266,
+    "dur": 1.15,
+    "word_count": 3,
+    "plain": "two feet higher.",
+    "spoken_words": "two feet higher",
+    "tokens": [
+      [
+        "two feet",
+        "crimson"
+      ],
+      [
+        "higher.",
+        "crimson"
+      ]
+    ]
+  },
+  {
+    "cue": 34,
+    "line": "10",
+    "start": 49.726,
+    "end": 51.175,
+    "dur": 1.449,
+    "word_count": 4,
+    "plain": "Behind you, the lamp",
+    "spoken_words": "Behind you the lamp",
+    "tokens": [
+      [
+        "Behind you,",
+        "ivory"
+      ],
+      [
+        "the lamp",
+        "amber"
+      ]
+    ]
+  },
+  {
+    "cue": 35,
+    "line": "10",
+    "start": 51.189,
+    "end": 52.226,
+    "dur": 1.037,
+    "word_count": 4,
+    "plain": "in the keeper's booth",
+    "spoken_words": "in the keeper's booth",
+    "tokens": [
+      [
+        "in the",
+        "ivory"
+      ],
+      [
+        "keeper's booth",
+        "amber"
+      ]
+    ]
+  },
+  {
+    "cue": 36,
+    "line": "10",
+    "start": 52.24,
+    "end": 53.135,
+    "dur": 0.895,
+    "word_count": 2,
+    "plain": "clicks off.",
+    "spoken_words": "clicks off",
+    "tokens": [
+      [
+        "clicks off.",
+        "crimson"
+      ]
+    ]
+  },
+  {
+    "cue": 37,
+    "line": "11",
+    "start": 53.555,
+    "end": 55.515,
+    "dur": 1.96,
+    "word_count": 5,
+    "plain": "The river never stopped rising.",
+    "spoken_words": "The river never stopped rising",
+    "tokens": [
+      [
+        "The river",
+        "ivory"
+      ],
+      [
+        "never stopped rising.",
+        "amber"
+      ]
+    ]
+  },
+  {
+    "cue": 38,
+    "line": "11",
+    "start": 56.502,
+    "end": 58.008,
+    "dur": 1.506,
+    "word_count": 5,
+    "plain": "The sluice gate behind you",
+    "spoken_words": "The sluice gate behind you",
+    "tokens": [
+      [
+        "The sluice gate",
+        "ivory"
+      ],
+      [
+        "behind you",
+        "amber"
+      ]
+    ]
+  },
+  {
+    "cue": 39,
+    "line": "11",
+    "start": 58.022,
+    "end": 59.144,
+    "dur": 1.122,
+    "word_count": 3,
+    "plain": "is already open.",
+    "spoken_words": "is already open",
+    "tokens": [
+      [
+        "is already",
+        "crimson"
+      ],
+      [
+        "open.",
+        "crimson"
+      ]
+    ]
+  }
+]
