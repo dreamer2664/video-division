@@ -179,9 +179,11 @@ def draw_dynamic(im,i,local):
  elif i==6:
   d.line((290,1010,290+int(35*pulse),1010),fill=(235,206,152),width=5)
  elif i==10:
-  d.ellipse((710-r,898-r,710+r,898+r),fill=(226,207,158))
+  # False latch report: a reflected glint travels along the latch while the door stays closed.
+  xx=690+int(72*local); d.ellipse((xx-13,885,xx+13,911),fill=(226,207,158))
  elif i==11:
-  d.line((368,1070,368+int(10*pulse),1070),fill=(123,150,189),width=5)
+  # A thin under-door light sweeps sideways; the nursery door itself never opens.
+  xx=370+int(270*local); d.rectangle((xx,1442,xx+78,1454),fill=(218,169,82))
  elif i==12:
   d.ellipse((790-r,1150-r,790+r,1150+r),fill=(230,185,157))
  elif i==13:
@@ -202,7 +204,9 @@ def draw_dynamic(im,i,local):
  elif i==22:
   d.ellipse((500-r,1020-r,500+r,1020+r),outline=(93,153,171),width=4)
  elif i==23:
-  d.ellipse((425-r,1050-r,425+r,1050+r),fill=(245,209,78))
+  # A small amber plug-contact spark travels as the parent reaches to disconnect power.
+  xx=390+int(180*local); d.line((390,1050,xx,1050),fill=(245,209,78),width=8)
+  d.ellipse((xx-15,1035,xx+15,1065),fill=(245,209,78))
 
 
 def draw_caption(im,i,t,cues):
