@@ -27,8 +27,8 @@ duration=60.000000
 size=29557390
 ```
 
-## Required loudness verification
-The spec's literal `ffmpeg -v error ... loudnorm=print_format=summary ...` command emits no text because `-v error` suppresses the summary. Re-ran without that suppression; the reported **Input** values below are the file's measured levels (the `Output` lines are what a hypothetical normalization pass would produce, not this file's levels):
+## Required loudness verification (re-run against fresh remote checkout)
+The spec's literal `ffmpeg -v error -i video.mp4 -af loudnorm=print_format=summary -f null - 2>&1 | tail -12` emitted **no text**: `-v error` suppresses the summary on this FFmpeg build. I ran the same analysis without `-v error` and captured the filter's measured input and resulting summary. The **Input** lines describe the committed file; the **Output** lines describe what a hypothetical normalization pass would produce, not this file's levels.
 
 ```text
 Input Integrated:    -16.0 LUFS
@@ -45,10 +45,19 @@ Normalization Type:   Dynamic
 Target Offset:        +0.2 LU
 ```
 
+Additional audio check: `astats=metadata=1:reset=0` measured peak levels of −3.35 / −3.30 dBFS for the channels (consistent with loudnorm true peak −3.3 dBTP). `silencedetect=noise=-50dB:d=0.5` returned no events; the intentional middle dip is not dead air. FFmpeg `blackdetect=d=0.5:pix_th=0.02,freezedetect=n=-50dB:d=0.5` also returned no events.
+
+## Picture / edit checks (fresh remote checkout)
+I extracted and inspected frames at 0.2 s and 59.8 s: both show an animated graphic and legible title, not black/frozen frames. The three committed stills at 2.3, 25.3, and 45.3 s show the hook, development, and later progression. Story text is visibly burned in with a dark backing, high contrast, and 40–58 px font sizes (minimum glyph height varies by font; configured sizes are 40 px and up). At 100% in the extracted 1920×1080 stills the copy is readable. There is no voice-over; all spoken-word captions are therefore inapplicable. The displayed story copy is burned in. This check is still a spot-check, not a human real-time watch-through of all 60 seconds.
+
 ## Blunt self-review
 What works: the pulse-to-network idea reads cleanly; the warm beacon against a restrained midnight palette gives a clear visual anchor; the mid-piece dropout/reconnection creates a legible turn; the ending resolves without going to black. The typography is large and contrast-backed. The motion and score are original and deterministic.
 
 What is weak: this is procedural motion design, not live-action conventional-editor footage. The city is an abstract grid rather than a richly observed place; some shots rely on the same visual grammar, and the synth score is simple and slightly repetitive. The supposed accelerated cutting is mainly animated change and shifting density, not a dense montage of distinct photographed shots. It is a complete short piece, but not a polished agency commercial. No full real-time watch-through or physical laptop legibility test was possible here; stills and automated full-clip checks are evidence, not substitutes for a human screening.
 
-## Tool/environment map
-See `project/README.md` for exact editor/browser checks, observed availability, limits, baseline memory, and render time. No Kdenlive/Shotcut/Xvfb/browser editing test could be run because the executables/display were absent. System FFmpeg was absent; the static binary workflow did successfully render at full required resolution. No 720p fallback was needed.
+## Toolchain map (observed, not inferred)
+- **Kdenlive / Shotcut under Xvfb+VNC:** `command -v kdenlive shotcut Xvfb x11vnc` found none; `$DISPLAY`/Wayland were unset. These apps were **not launched**; there was no crash to report. The stated limitation is unavailable GUI/editor prerequisites, not an editor failure.
+- **Browser editors:** no Chromium/Chrome binary or desktop session. Only HTTP HEAD reachability was checked: Kapwing 200, Clipchamp 302 redirect to `/en/`, Canva 403. No browser editor UI, editing, or export was exercised; no claim that any browser editor worked or crashed.
+- **CLI compositing:** Python 3 + OpenCV + Pillow generated 1,800 full-HD animated frames piped to a downloaded FFmpeg 7.0.2 static binary; FFmpeg libx264 encoded the picture, then AAC muxed the original synthesized score. This **worked** and `render.sh` exited 0 on reproduction. No 720p fallback.
+- **Memory:** the recorded pre-render `free -h` snapshot was 1.9 GiB total, 488 MiB used, 1.3 GiB free, 1.5 GiB available, zero swap. Peak RSS of the renderer/editor processes was **not measured**, so this is a baseline only—not a peak or a claimed memory ceiling.
+- **Fresh verification:** this QA revision was made after cloning `cut/v03` fresh from origin at `e20082d3798fe0a2ec7ef5e4f43a3255cc1501f`; ffprobe/loudnorm and picture/audio checks were rerun on that clone. Detailed availability notes and observed network statuses are in `project/README.md`.
