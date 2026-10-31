@@ -166,108 +166,137 @@ def clock(d, cx, cy, r, t, color, accent, track):
     circle(d,cx,cy,13, fill=color)
 
 
+def animated_text(draw, xy, content, size, color, t, delay=0.0, style='bold', anchor='lt'):
+    """Staggered kinetic entrance; copy remains readable after settling."""
+    if t < delay:
+        return
+    a = ease((t-delay)/.72)
+    x,y = xy
+    text(draw, (x-56*(1-a), y+20*(1-a)), content, size, color, style, anchor)
+
+
 def shot_hook(d, t):
-    x = 100 - 40*(1-ease(t/1.0))
-    text(d, (x, 190), 'WHY DOES', 70, YELLOW)
-    text(d, (x, 292), 'WAITING', 175, CREAM)
-    text(d, (x, 483), 'EXPLODE?', 155, CORAL)
+    animated_text(d, (100, 190), 'WHY DOES', 70, YELLOW, t, .0)
+    animated_text(d, (100, 292), 'WAITING', 175, CREAM, t, .10)
+    animated_text(d, (100, 483), 'EXPLODE?', 155, CORAL, t, .35)
     cx,cy,r = 1500,450,225
     clock(d, cx,cy,r,t,CREAM,YELLOW,(56,87,80))
-    for i in range(6):
-        xx = 1190 + i*108 + (t*25)%108
-        yy = 760 + 11*math.sin(t*2.1+i*.7)
-        token(d, xx, yy, 30, CORAL if i < 4 else YELLOW)
-    arrow(d, 1165, 830, 1780, 830, MINT, 7, 22)
+    # Tokens feed a distinct bottleneck rather than orbiting in place.
+    arrow(d, 1150, 832, 1775, 832, MINT, 7, 22)
+    d.rounded_rectangle((1735, 695, 1795, 799), radius=14, fill=CORAL, outline=CREAM, width=4)
+    for i in range(7):
+        xx = 1170 + ((t*92+i*100) % 548)
+        yy = 752 + 7*math.sin(t*3.0+i*.6)
+        token(d, xx, yy, 28, CORAL if i < 4 else YELLOW)
 
 
 def shot_server(d, t):
-    x = 100 - 40*(1-ease(t/.8))
-    text(d, (x, 230), 'ONE ORDER', 128, INK)
-    text(d, (x, 390), 'A MINUTE', 128, TEAL)
-    text(d, (x, 582), 'ONE SERVER.', 66, INK, 'mono')
+    animated_text(d, (100, 230), 'ONE ORDER', 128, INK, t, .0)
+    animated_text(d, (100, 390), 'A MINUTE', 128, TEAL, t, .22)
+    animated_text(d, (100, 582), 'ONE SERVER.', 66, INK, t, .8, 'mono')
     d.rounded_rectangle((1120, 208, 1790, 835), radius=48, fill=PALE, outline=INK, width=7)
     d.rounded_rectangle((1180, 267, 1730, 770), radius=28, fill=PAPER, outline=TEAL, width=5)
-    clock(d,1455,445,155,t,INK,CORAL,(194,214,193))
-    text(d,(1455,667),'1 ORDER / MIN',58,INK,'mono','mm')
-    pos = 1230 + (t*155)%440
-    token(d,pos,745,23,CORAL)
+    clock(d,1455,414,125,t,INK,CORAL,(194,214,193))
+    animated_text(d, (1232, 570), 'SERVICE', 58, INK, t, 1.0, 'mono')
+    # A continuous flow crosses one service gate; this is an illustration, not a simulation.
+    arrow(d, 1225, 690, 1690, 690, TEAL, 8, 22)
+    d.rounded_rectangle((1427, 625, 1483, 754), radius=12, fill=TEAL, outline=INK, width=4)
+    for i in range(5):
+        x = 1220 + ((t*125+i*105)%470)
+        token(d,x,690,22,CORAL if i%2 == 0 else YELLOW)
 
 
 def shot_variation(d, t):
-    x = 100 - 40*(1-ease(t/.8))
-    text(d, (x, 223), 'REAL LIFE', 135, CREAM)
-    text(d, (x, 388), "ISN’T EVEN.", 122, YELLOW)
-    text(d, (x, 565), 'VARIATION', 66, MINT, 'mono')
-    text(d, (1055, 248), 'INCOMING', 59, CREAM, 'mono')
-    # The flow is intentionally bunched; it illustrates rather than simulates the model.
-    arrow(d, 1040, 503, 1774, 503, MINT, 8, 24)
-    offsets = [0,55,120,320,380,560,620,675]
-    for i,off in enumerate(offsets):
-        xx = 1065 + ((t*138+off)%680)
-        yy = 485 + 5*math.sin(t*3+i)
-        token(d,xx,yy,29, YELLOW if i%3 else CORAL)
-    d.rounded_rectangle((1735, 390, 1810, 620), radius=20, fill=CORAL, outline=CREAM, width=5)
-    text(d, (1055, 702), 'LITTLE RUSHES', 59, MINT, 'mono')
+    animated_text(d, (100, 223), 'REAL LIFE', 135, CREAM, t, .0)
+    animated_text(d, (100, 388), "ISN’T EVEN.", 122, YELLOW, t, .25)
+    animated_text(d, (100, 565), 'VARIATION', 66, MINT, t, .9, 'mono')
+    # Show the causal contrast: evenly spaced arrivals versus a clumped rush.
+    animated_text(d,(1055,235),'EVEN FLOW',58,CREAM,t,.2,'mono')
+    arrow(d,1045,365,1770,365,MINT,8,24)
+    for i in range(6):
+        xx=1065+((t*150+i*115)%670)
+        token(d,xx,365,25,MINT)
+    d.rounded_rectangle((1730,292,1800,430),radius=16,fill=TEAL,outline=CREAM,width=4)
+    animated_text(d,(1055,525),'LITTLE RUSHES',58,YELLOW,t,1.0,'mono')
+    arrow(d,1045,670,1770,670,MINT,8,24)
+    for i,off in enumerate([0,55,110,345,400,455,510]):
+        xx=1065+((t*150+off)%670)
+        token(d,xx,670,28,CORAL if i%3 == 0 else YELLOW)
+    d.rounded_rectangle((1730,596,1800,740),radius=16,fill=CORAL,outline=CREAM,width=4)
 
 
 def gauge(d, cx, cy, r, value, t, bg, track, accent, color):
     circle(d,cx,cy,r,fill=bg,outline=track,width=32)
-    p = value*ease((t+.1)/1.3)
+    # The 90% comparison continues from the prior 50% rather than starting over.
+    initial = .5 if value == .9 else 0.0
+    p = initial+(value-initial)*ease((t+.05)/1.8)
     d.arc((cx-r,cy-r,cx+r,cy+r), -90, -90+360*p, fill=accent, width=32)
-    text(d, (cx, cy-30), f'{int(value*100)}%', 130, color, 'bold', 'mm')
+    text(d, (cx, cy-30), f'{round(p*100)}%', 130, color, 'bold', 'mm')
     text(d, (cx, cy+93), 'BUSY', 61, color, 'mono', 'mm')
-    # The orbital marker stays outside the ring, so it cannot obscure the digits.
     a = t*2.0
     circle(d,cx+math.cos(a)*(r+27),cy+math.sin(a)*(r+27),11,fill=accent)
 
 
 def shot_compare(d, t, busy):
     c = INK
-    text(d, (100, 170), 'SIMPLE RANDOM QUEUE MODEL', 55, c, 'mono')
-    gauge_bg = PAPER if busy == .5 else (249, 166, 134)
+    animated_text(d,(100,170),'SIMPLE RANDOM QUEUE MODEL',55,c,t,.0,'mono')
+    gauge_bg = PAPER if busy == .5 else (249,166,134)
     accent = TEAL if busy == .5 else INK
-    gauge(d, 414, 520, 205, busy, t, gauge_bg, (160,196,168) if busy == .5 else (220,105,78), accent, c)
-    text(d, (900, 273), 'AVERAGE WAIT', 65, c, 'mono')
+    gauge(d,414,520,205,busy,t,gauge_bg,(160,196,168) if busy == .5 else (220,105,78),accent,c)
+    animated_text(d,(900,273),'AVERAGE WAIT',65,c,t,.6,'mono')
     number = '1' if busy == .5 else '9'
     unit = 'MINUTE' if busy == .5 else 'MINUTES'
-    text(d, (903, 368), number, 250, c)
-    text(d, (1100, 453), unit, 100, c)
-    text(d, (904, 608), 'BEFORE SERVICE', 58, c, 'mono')
+    animated_text(d,(903,368),number,250,c,t,1.0)
+    animated_text(d,(1100,453),unit,100,c,t,1.2)
+    animated_text(d,(904,608),'BEFORE SERVICE',58,c,t,1.35,'mono')
     for i in range(9):
-        x1 = 905+i*87
-        filled = i < (1 if busy == .5 else 9) and t > i*.20
-        d.rounded_rectangle((x1, 710, x1+69, 780), radius=10,
+        x1=905+i*87
+        reveal=1.55+(i*.63 if busy == .9 else 0)
+        filled=i < (1 if busy == .5 else 9) and t >= reveal
+        d.rounded_rectangle((x1,710,x1+69,780),radius=10,
                             fill=(TEAL if busy == .5 else INK) if filled else None,
-                            outline=c, width=5)
+                            outline=c,width=5)
+    # A moving marker progresses along the same time ruler as it is built.
+    if t >= 1.55:
+        width = 69 if busy == .5 else 8*87+69
+        duration = 1.4 if busy == .5 else 5.7
+        xp = 905 + width*clamp((t-1.55)/duration)
+        circle(d,xp,797,10,fill=TEAL if busy == .5 else INK)
     if busy == .9:
-        text(d, (905, 815), '9× THE WAIT', 58, c, 'mono')
+        animated_text(d,(905,815),'9× THE WAIT',58,c,t,7.2,'mono')
+    else:
+        animated_text(d,(905,815),'ROOM TO RECOVER',58,c,t,3.5,'mono')
 
 
 def shot_curve(d, t):
-    text(d, (100, 169), 'THE WAITING CURVE', 96, CREAM)
-    text(d, (100, 284), 'AVG WAIT', 55, MINT, 'mono')
-    left,right,top,bottom = 315,1605,342,770
-    d.line((left,top,left,bottom,right,bottom), fill=MINT, width=5)
+    animated_text(d,(100,169),'THE WAITING CURVE',96,CREAM,t,.0)
+    animated_text(d,(100,284),'AVG WAIT',55,MINT,t,.3,'mono')
+    left,right,top,bottom=315,1605,342,770
+    d.line((left,top,left,bottom,right,bottom),fill=MINT,width=5)
     for w in [1,5,9]:
-        y = bottom - (w/10)*(bottom-top)
-        d.line((left, y, right, y), fill=(41,76,72), width=3)
+        y=bottom-(w/10)*(bottom-top)
+        d.line((left,y,right,y),fill=(41,76,72),width=3)
     def point(u):
-        wait = u/(1-u)  # μ = 1 order/minute; expected queue wait in minutes
-        return (left+(u/.9)*(right-left), bottom-(wait/10)*(bottom-top))
+        wait=u/(1-u)  # μ = 1 order/minute; expected queue wait in minutes
+        return (left+(u/.9)*(right-left),bottom-(wait/10)*(bottom-top))
     for u in (.5,.9):
-        px,py = point(u)
+        px,py=point(u)
         d.line((px,py,px,bottom),fill=(64,101,90),width=4)
-    amount = ease((t-.25)/4.0)
-    n = max(2, int(160*amount)+1)
-    coords = [point(.9*amount*i/(n-1)) for i in range(n)]
-    d.line(coords, fill=CORAL, width=13, joint='curve')
+    # Linear reveal makes the comparison emerge over most of the shot, rather than in 2 s.
+    amount=clamp((t-.35)/6.7)
+    n=max(2,int(200*amount)+1)
+    coords=[point(.9*amount*i/(n-1)) for i in range(n)]
+    if amount > .005:
+        d.polygon([(left,bottom)]+coords+[(coords[-1][0],bottom)],fill=(24,61,58))
+        d.line(coords,fill=CORAL,width=13,joint='curve')
     ex,ey=coords[-1]
-    circle(d, ex, ey, 14+2*math.sin(t*5), fill=YELLOW)
+    d.line((ex,ey,ex,bottom),fill=(92,125,104),width=4)
+    circle(d,ex,ey,16+2*math.sin(t*5),fill=YELLOW)
     if amount >= .5/.9:
         x,y=point(.5); circle(d,x,y,16,fill=YELLOW)
         d.line((x,y,x-105,y-74),fill=YELLOW,width=5)
         text(d,(x-380,y-145),'50% = 1 MIN',58,CREAM,'mono')
-    if amount >= .985:
+    if amount >= .995:
         x,y=point(.9); circle(d,x,y,16,fill=YELLOW)
         d.line((x,y,x-78,y-42),fill=YELLOW,width=5)
         text(d,(x-450,y-115),'90% = 9 MIN',58,CREAM,'mono')
@@ -278,30 +307,31 @@ def shot_curve(d, t):
 
 
 def shot_buffer(d, t):
-    x = 100 - 40*(1-ease(t/.8))
-    text(d,(x,190),'LEAVE ROOM',130,INK)
-    text(d,(x,355),'FOR THE RUSH.',120,TEAL)
-    text(d,(102,555),'CAPACITY',58,INK,'mono')
+    animated_text(d,(100,190),'LEAVE ROOM',130,INK,t,.0)
+    animated_text(d,(100,355),'FOR THE RUSH.',120,TEAL,t,.25)
+    animated_text(d,(102,555),'CAPACITY',58,INK,t,.5,'mono')
+    filled_count=9 if t < 2.0 else 8 if t < 3.25 else 7
+    text(d,(1445,555),f'{filled_count} / 10',58,INK,'mono')
     for i in range(10):
-        bx = 105+i*160
-        # A gradual release from a 90%-full to a 70%-full capacity strip.
-        filled = i < (9 if t < .5 else 8 if t < 1.05 else 7)
+        bx=105+i*160
         d.rounded_rectangle((bx,648,bx+132,752),radius=15,
-                            fill=TEAL if filled else PAPER, outline=INK,width=5)
-    text(d,(1225,802),'BUFFER',58,INK,'mono')
-    for i in range(3):
-        token(d, 1240+i*145+24*math.sin(t*1.8-i*.5), 700, 22, YELLOW)
+                            fill=TEAL if i < filled_count else PAPER,outline=INK,width=5)
+    if t >= 2.0:
+        animated_text(d,(1225,802),'BUFFER',58,INK,t,2.0,'mono')
+        # Orders move into the newly open room instead of stopping at a full strip.
+        for i in range(3):
+            xx=1220+((t-2.0)*118+i*130)%440
+            token(d,xx,700,22,YELLOW)
 
 
 def shot_end(d, t):
-    x = 100 - 40*(1-ease(t/.8))
-    text(d,(x,223),"SPACE ISN’T WASTE.",120,CREAM)
-    text(d,(x,400),"IT’S RESILIENCE.",132,YELLOW)
-    text(d,(x,665),'MAKE ROOM FOR SURPRISES',62,MINT,'mono')
-    for i in range(5):
-        px=1300+i*105+20*math.sin(t*1.8-i*.55)
-        token(d,px,796,27,CORAL if i<3 else YELLOW)
+    animated_text(d,(100,223),"SPACE ISN’T WASTE.",120,CREAM,t,.0)
+    animated_text(d,(100,400),"IT’S RESILIENCE.",132,YELLOW,t,.45)
+    animated_text(d,(100,665),'MAKE ROOM FOR SURPRISES',62,MINT,t,1.15,'mono')
     arrow(d,1270,856,1795,856,MINT,6,20)
+    for i in range(5):
+        px=1290+((t*90+i*104)%500)
+        token(d,px,796,27,CORAL if i<3 else YELLOW)
 
 
 def frame_at(frame):

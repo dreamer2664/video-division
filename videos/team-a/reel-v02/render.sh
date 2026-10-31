@@ -27,7 +27,7 @@ printf '%s\n' '3/3 Drawing 1800 frames and encoding H.264/AAC...'
 python3 assets/visuals.py | ffmpeg -hide_banner -loglevel warning -y \
   -f rawvideo -pixel_format rgb24 -video_size 1920x1080 -framerate 30 -i pipe:0 \
   -i "$TMP/score.wav" -map 0:v:0 -map 1:a:0 -af "$FILTER" \
-  -frames:v 1800 -c:v libx264 -preset veryfast -crf 18 -pix_fmt yuv420p \
+  -frames:v 1800 -c:v libx264 -preset veryfast -b:v 4M -maxrate 6M -bufsize 8M -pix_fmt yuv420p \
   -x264-params 'threads=2:lookahead_threads=1' -g 60 -r 30 \
   -c:a aac -b:a 192k -ar 48000 -ac 2 -movflags +faststart \
   -map_metadata -1 -fflags +bitexact -flags:v +bitexact -flags:a +bitexact \

@@ -1,6 +1,6 @@
 # Waiting has a curve
 
-A 60-second, text-led explainer about why queueing delays rise as a variable system approaches capacity. Open `video.mp4`; captions are burned in, and `captions.srt` is also provided. The score is original synthesized music, with no spoken narration.
+A 60-second, text-led explainer about why queueing delays rise as a variable system approaches capacity. Open `video.mp4`; captions are burned in, and `captions.srt` is also provided. The score is original synthesized music, with no spoken narration. The revised animation develops each comparison over time; the video encoder targets 4 Mb/s rather than padding the file to a particular size.
 
 - `script.md` — shot timings, exact copy, and model assumptions, written before rendering.
 - `assets/` — generated visual/audio source code, fonts, and licence notices.

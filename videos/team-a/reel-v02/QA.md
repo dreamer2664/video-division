@@ -156,3 +156,5 @@ size=7524354
 ```
 
 The exact `-v error` loudnorm command again produced zero bytes; corrected verbosity measured **−16.0 LUFS / −4.4 dBTP** for the committed original. This headless environment again could not open X11 or an ALSA sound device for subjective playback; sampled visual frames and measurements are not a substitute for a human watch/listen.
+
+The scripted revision is now implemented with staged type, paired arrival streams, progressive wait blocks, a curve that is drawn over time, and an opening capacity buffer. The previous `video.mp4` is still the old render at this WIP checkpoint; rerender and verification are pending.
