@@ -33,7 +33,7 @@ NF = int(DUR * FPS)
 BG = (10, 14, 28)
 WALL = (17, 23, 40)
 WALL2 = (13, 18, 33)
-FLOOR = (21, 17, 24)
+FLOOR = (27, 22, 31)
 WOOD = (46, 33, 26)
 WOOD2 = (60, 43, 33)
 AMBER = (245, 209, 78)
@@ -147,7 +147,7 @@ def init_layers():
     dy = (y - H / 2) / (H / 2)
     r = np.sqrt(dx * dx + dy * dy) / 1.4
     # strong vignette (reference look) but never so dark that blackdetect calls it black
-    VIG = np.clip(1.0 - 0.62 * r ** 1.8, 0.30, 1.0)
+    VIG = np.clip(1.0 - 0.46 * r ** 1.8, 0.55, 1.0)
     rng = np.random.default_rng(23)
     GRAIN = []
     for _ in range(12):
@@ -288,7 +288,14 @@ def room_window(img, t, lt, dur, variant):
                 fill=(38, 62, 52, 255), width=5)
     # floor + rug, foreground
     dr.rectangle([0, 1330, W, H], fill=FLOOR + (255,))
-    dr.ellipse([120, 1420, 960, 1780], fill=(28, 22, 32, 255))
+    for i in range(5):
+        dr.line([0, 1350 + i * 116, W, 1346 + i * 116], fill=(34, 28, 38, 255), width=2)
+    dr.ellipse([150, 1390, 930, 1880], fill=(44, 30, 32, 255))
+    dr.ellipse([196, 1430, 884, 1840], outline=(62, 42, 42, 255), width=6)
+    dr.ellipse([250, 1480, 830, 1790], outline=(56, 38, 40, 255), width=3)
+    # sofa arm, foreground bottom-left, cropped by the frame
+    dr.rounded_rectangle([-60, 1560, 300, 1920], radius=40, fill=(38, 33, 44, 255))
+    dr.rounded_rectangle([-60, 1520, 300, 1600], radius=34, fill=(48, 42, 55, 255))
     dr.line([0, 1330, W, 1330], fill=(38, 46, 66, 255), width=4)
 
 
@@ -608,12 +615,18 @@ def room_corridor(img, t, lt, dur, variant):
         if on:
             # the lit room beyond, seen through the opening
             if openness > 0:
-                lx = (ib[0] - ia[0]) * openness
-                dr.polygon([ia, (ib[0] - lx * 0.0, ib[1]), ic, idd], fill=tone[:3] + (150,))
-                dr.polygon([(ia[0] + (ib[0] - ia[0]) * 0.15, ia[1]),
-                            (ib[0] - lx * 0.15, ib[1]),
-                            (ic[0] - lx * 0.15, ic[1]),
-                            (idd[0] + (ib[0] - ia[0]) * 0.15, idd[1])], fill=tone[:3] + (190,))
+                # an open door shows a dim room, not a lit panel: dark interior, one warm far wall
+                dr.polygon([ia, ib, ic, idd], fill=(19, 23, 36, 255))
+                h = (ic[1] - ia[1])
+                dr.polygon([(ia[0] + (ib[0] - ia[0]) * 0.55, ia[1] + h * 0.10),
+                            ib, ic,
+                            (idd[0] + (ib[0] - ia[0]) * 0.55, idd[1] - h * 0.12)],
+                           fill=(sum(tone[:3]) // 3, int(sum(tone[:3]) / 3 * 0.84),
+                                 int(sum(tone[:3]) / 3 * 0.62), 132))
+                # the door slab itself, standing open against the frame
+                dr.polygon([ia, (ia[0] + (ib[0] - ia[0]) * 0.22, ia[1]),
+                            (idd[0] + (ib[0] - ia[0]) * 0.22, idd[1]), idd],
+                           fill=(70, 58, 46, 255))
             # a shut door with the light leaking under it
             dr.line([(idd[0], idd[1] - 4), (ic[0], ic[1] - 4)],
                     fill=(255, 219, 158, 240), width=max(3, int(10 * sc(z0))))
@@ -649,18 +662,37 @@ def room_corridor(img, t, lt, dur, variant):
     dr.line([64, 1120, 92, 1760], fill=(28, 24, 22, 255), width=10)
     dr.polygon([[20, 1160], [110, 1160], [132, 1560], [0, 1560]], fill=(34, 30, 38, 255))
     dr.polygon([[34, 1180], [96, 1180], [112, 1400], [22, 1400]], fill=(27, 24, 30, 255))
-    # the speaker stands clear of the rack, in front of the runner
-    draw_speaker(img, 300, 1580, 104, ring=0.30 + 0.26 * math.sin(t * 0.9), listening=1.0)
+    # the speaker stands clear of the rack, in front of the runner, above the caption band
+    draw_speaker(img, 300, 1330, 100, ring=0.30 + 0.26 * math.sin(t * 0.9), listening=1.0)
 
 
 def room_hook(img, t, lt, dur, variant):
-    """End card over the darkened flat, not a black rectangle."""
+    """End card. Not a black rectangle: the darkened flat stays visible underneath and the type
+    sits over it, so the last thing the viewer sees is still the place."""
     room_corridor(img, t, lt, dur, "dark_room")
-    # darken what is beneath
-    ov = Image.new("RGBA", (W, H), (6, 8, 16, 0))
-    ImageDraw.Draw(ov).rectangle([0, 0, W, H], fill=(6, 8, 16, 210))
-    img.alpha_composite(ov) if img.mode == "RGBA" else img.paste(
-        Image.alpha_composite(img.convert("RGBA"), ov).convert("RGB"), (0, 0))
+    ov = Image.new("RGBA", (W, H), (7, 10, 20, 0))
+    ImageDraw.Draw(ov).rectangle([0, 0, W, H], fill=(7, 10, 20, 132))
+    img.paste(Image.alpha_composite(img.convert("RGBA"), ov).convert("RGB"), (0, 0))
+
+    dr = ImageDraw.Draw(img, "RGBA")
+    rise = ease_out(lt / 0.9)
+    # the series mark
+    f_small = font("BarlowCondensed-SemiBold.ttf", 44)
+    dr.text((W / 2, 470 + 26 * (1 - rise)), "NIGHT  TWO",
+            font=f_small, fill=AMBER + (int(232 * rise),), anchor="mm")
+    # the title
+    f_big = font("Anton-Regular.ttf", 132)
+    dr.text((W / 2, 616 + 30 * (1 - rise)), "IT ANSWERED",
+            font=f_big, fill=WHITE + (int(255 * rise),), anchor="mm")
+    dr.line([W / 2 - 190 * rise, 720, W / 2 + 190 * rise, 720], fill=RED + (int(220 * rise),), width=4)
+    # the hook — my words, not the reference's
+    f_hook = font("Anton-Regular.ttf", 76)
+    y = 1400
+    for line in ("TOMORROW,", "THE QUIET", "ANSWERS."):
+        w = text_width(f_hook, line)
+        dr.text(((W - w) / 2 + 6, y + 30 + 6), line, font=f_hook, fill=(0, 0, 0, int(210 * rise)))
+        dr.text(((W - w) / 2, y + 30), line, font=f_hook, fill=AMBER + (int(250 * rise),))
+        y += 92
 
 
 ROOMS = {
@@ -748,6 +780,8 @@ def render_frame(t):
     draw_clock(img, t, alpha=1.0 if room != "hook" else 0.35)
 
     for (cs, ce, text, col) in CAPTIONS:
+        if room == "hook" and cs > 55.0:
+            break                      # the end card sets this line itself
         if cs <= t < ce:
             draw_caption(img, text, {"a": AMBER, "w": WHITE, "r": RED}[col],
                          ease_out((t - cs) / 0.16) * clamp((ce - t) / 0.16), room, variant)
