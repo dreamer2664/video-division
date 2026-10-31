@@ -7,7 +7,7 @@ At 02:13, a night guard watches four security feeds. Every feed carries a millis
 
 ## Narration copy
 
-Two thirteen, eight seconds. Four cameras, one control room. The wall clock is live. Every feed is stamped four seconds ahead. Check it yourself. Corridor: door shut here. On camera one, it opens four seconds later. The guard waits. The door opens here. Exactly four seconds after the picture. He writes the offset in the log. Plus four. No dropped frames. No clock drift. Camera four shows this room. At 02:13:53.600, the guard's hand is still closed on the desk. On the feed, his palm is open against the lens. He hasn't moved. Don't look away. Four seconds pass. The hand opens. At 02:14:01.600, a fifth feed comes online. The building has four cameras. The new view shows someone sitting behind him.
+Two thirteen, eight seconds. Four cameras. One control room. The wall clock is live. Every feed runs four seconds ahead. Check it yourself. Corridor door is shut here. Camera one shows it opening. The guard waits. Now the door opens here. Exactly four seconds later. He writes it in the log. Plus four. No drift. No dropped frames. Camera four shows this room. Same sleeve. Same hand. Watch the timecode. He hasn't moved. Don't look away. Four seconds. Exact. Fifty-three point six. Closed here. Four seconds later. Open. The clock turns. Two fourteen. Feed five. The building has four cameras. Someone is sitting behind him.
 
 ## Planned hero frame — written before rendering
 
