@@ -6,7 +6,7 @@
 
 ## Narration script
 
-At two thirteen a.m. The parent checks the monitor. The baby sleeps. Count what you hear. One: the radiator ticks. The parent hears it. Two: the crib groans. Heard that too. Two sounds happened. The monitor reports three. Three: the latch turns. The door stays shut. The baby's left hand opens. One finger curls. She turns to the lens. Now it names the parent. Their thumb covers the glass. The parent stands outside. The lens faces the child. **[1.25-second pause]** But the voice isn't inside. It stands by the reflection. On this side of glass. Not the child's side. Parent reaches for the plug. The monitor goes quiet.
+At two thirteen a.m. The parent checks the monitor. The baby sleeps. Count what you hear. One: the radiator ticks. The parent hears it. Two: the crib groans. Heard that too. Two sounds happened. The monitor reports three. Three: the latch turns. The door stays shut. The baby's left hand opens. One finger curls. She turns to the lens. Now it names the parent. Their thumb covers the glass. The parent stands outside. Lens faces her. **[1.25-second pause]** But the voice isn't inside. It stands by the reflection. On this side of glass. Not the child's side. Parent reaches for the plug. The monitor goes quiet.
 
 ## Timed shot list / captions
 
@@ -32,7 +32,7 @@ Hard cuts every 2.4 seconds. Each shot is a slow eased 1.00→1.06 push-in with 
 | 16 | 00:36–00:38.4 | Dark monitor glass; reflection begins to form | `NOW IT NAMES THE PARENT` | Now it names the parent. |
 | 17 | 00:38.4–00:40.8 | Reflected thumb drifts over lens highlight | `THEIR THUMB COVERS GLASS` | Their thumb covers the glass. |
 | 18 | 00:40.8–00:43.2 | Split view: sleeping child / parent outside | `PARENT STANDS OUTSIDE` | The parent stands outside. |
-| 19 | 00:43.2–00:45.6 | Lens remains on child; waveform recedes, then pauses | `LENS FACES THE CHILD` | The lens faces the child. **[pause after this line]** |
+| 19 | 00:43.2–00:45.6 | Lens remains on child; waveform recedes, then pauses | `LENS FACES THE CHILD` | Lens faces her. **[pause after this line]** |
 | 20 | 00:45.6–00:48 | Reflection occupies screen; red pulse begins | `VOICE ISN'T INSIDE` | But the voice isn't inside. |
 | 21 | 00:48–00:50.4 | Parent silhouette resolves beside the glass | `BESIDE THE REFLECTION` | It stands by the reflection. |
 | 22 | 00:50.4–00:52.8 | Lens boundary glows; parent side turns amber | `ON THIS SIDE OF GLASS` | On this side of glass. |
