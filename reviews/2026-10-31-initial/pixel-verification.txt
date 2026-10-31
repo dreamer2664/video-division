@@ -1,0 +1,19 @@
+$ ffprobe -v error -show_entries format=duration,size:stream=codec_name,width,height,r_frame_rate,codec_type -of default=noprint_wrappers=1 video.mp4
+video.mp4: No such file or directory
+exit_status=1
+
+$ ffmpeg -v error -i video.mp4 -af loudnorm=print_format=summary -f null - 2>&1 | tail -12
+[in#0 @ 0x557c402abf40] Error opening input: No such file or directory
+Error opening input file video.mp4.
+Error opening input files: No such file or directory
+exit_status=254
+
+$ ffmpeg -hide_banner -nostats -i video.mp4 -af loudnorm=print_format=summary -f null -
+[in#0 @ 0x56427346bf80] Error opening input: No such file or directory
+Error opening input file video.mp4.
+Error opening input files: No such file or directory
+exit_status=254
+
+Stills inventory: []
+QA.md present: False
+video.mp4 present: False
