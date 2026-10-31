@@ -4,6 +4,8 @@
 **Format:** 60.0 s · 1920×1080 · 30 fps · typographic / data-driven film, 100% code-generated
 (Python renders every frame; FFmpeg encodes; all sound synthesized in code)
 **Written:** 2026-10-31, *before any rendering*. Any change after first render will be logged in QA.md.
+**Amendment (2026-10-31, still pre-render):** grid geometry 100×100 → 200×50 so the dot fabric fits 16:9
+with copy above it. Dot count (10,000) and every number in the fact box are unchanged.
 **Narration:** none spoken. This is a typographic film — the on-screen copy below *is* the narration,
 timed to music. `captions.srt` ships with the video and mirrors every on-screen line verbatim.
 Rationale: the spec permits designed synthetic narration but does not require it; type timed to a
@@ -17,7 +19,7 @@ before farming itself. The film counts them, exactly, one dot at a time.
 
 ## The one idea (why only code can make this)
 
-A grid of **100 × 100 = 10,000 dots**, each drawn and counted by the program. In Act 1 each dot is
+A grid of **200 × 50 = 10,000 dots**, each drawn and counted by the program. In Act 1 each dot is
 100 seconds, so the full grid is a million seconds. In Act 2 *the identical picture* is re-legended:
 each dot is now 100,000 seconds — the same image holds a billion. In Act 3: 100,000,000 seconds per
 dot — a trillion. The number changes meaning while the picture doesn't; the audience *feels* ×1,000
@@ -42,7 +44,7 @@ tracks the film's own 60 seconds, which the ending calls back.
 | # | Time | Dur | On-screen copy (verbatim) | Visual / motion | Audio cue |
 |---|------|-----|---------------------------|-----------------|-----------|
 | S1 HOOK | 0.0–6.0 | 6.0 | `1,000,000` vs `1,000,000,000` · "A million. A billion." · "They sound like neighbours." | Both numbers count up fast (mono, ease-out) and settle side by side; the zeros (6 vs 9) flash amber in sequence. | Near-silence, one soft tick/sec; low pad fades in (Am). |
-| S2 PREMISE | 6.0–12.0 | 6.0 | "Let's count them in seconds." · "One dot = 100 seconds." | Seconds counter starts at 0, accelerates; 100×100 grid fades in empty; first dots land in time with ticks. | Ticks accelerate into a shimmer; pad → F. |
+| S2 PREMISE | 6.0–12.0 | 6.0 | "Let's count them in seconds." · "One dot = 100 seconds." | Seconds counter starts at 0, accelerates; 200×50 grid fades in empty; first dots land in time with ticks. | Ticks accelerate into a shimmer; pad → F. |
 | S3 MILLION | 12.0–22.0 | 10.0 | Counter → `1,000,000` · "= 11½ days" · "11 days, 13 hours, 46 minutes." · "You can remember 11 days ago." | Grid fills completely (10,000 dots × 100 s); on completion, punch-in + a strip of 11½ day-blocks fills beneath. | Fill = rising tick density; warm resolve (C) on the reveal. |
 | S4 TURN | 22.0–28.0 | 6.0 | "Now keep the same picture." · "One dot = 100,000 seconds." · "Same dots. ×1,000 more time." | Grid empties; only the legend flips; giant `×1,000` slams in amber; grid outline pulses once. | Pad drops a fifth, sub-boom (55 Hz) under ×1,000. |
 | S5 BILLION | 28.0–40.0 | 12.0 | Counter → `1,000,000,000` · "= 31.7 years" · "A billion seconds ago was 1995." · "Someone born then is 31." · "A billion seconds is a generation." | Grid refills at the new scale (10,000 × 100,000); a year-ruler sweeps 1995 → 2026 under the counter; punch-in on 31.7 years. | Bigger chord (G→Am), sparse heartbeat begins under the year sweep. |
@@ -68,14 +70,16 @@ across the film: 30,000 (three full grids) — each one placed by the same loop 
 
 - 1,000,000 s ÷ 86,400 = 11.574 days = **11 d 13 h 46 m 40 s** → on screen: "11½ days" + exact line.
 - 1,000,000,000 s ÷ 31,557,600 s/yr (365.25 d) = **31.69 years** → "31.7 years".
-  2026-10-31 minus 10⁹ s (11,574 days) = **March 1995** → "was 1995"; a person born then is **31**.
+  2026-10-31 minus 10⁹ s (11,574 days) = **21 February 1995** → "was 1995"; a person born then is **31**.
+  (Build-time assertion in `generate.py` caught an earlier "March" slip in this line; on-screen copy
+  only ever claimed "1995" and "31", both correct.)
 - 1,000,000,000,000 s = **31,688 years** → ≈ 29,660 BCE: before farming (~10,000 BCE), before
   cities, before writing (~3,400 BCE); woolly mammoths still extant (mainland extinction ~8,000 BCE).
 - True-scale bars: billion = 1,600 px ⇒ million = 1,600⁄1,000 = **1.6 px** ("under 2 pixels");
   trillion = 1,600 × 1,000 = 1,600,000 px ÷ 1,920 px/screen = **833 screens**.
 - Lifetime: 79 years × 31,557,600 s = **2.49 × 10⁹ s ≈ 2½ billion** (79-year assumption stated here
   and in QA.md; on screen it is correctly hedged as "about").
-- Grid: 100 × 100 = 10,000 dots; ×100 = 10⁶ ✓ · ×100,000 = 10⁹ ✓ · ×100,000,000 = 10¹² ✓.
+- Grid: 200 × 50 = 10,000 dots; ×100 = 10⁶ ✓ · ×100,000 = 10⁹ ✓ · ×100,000,000 = 10¹² ✓.
 
 ## Structure check (against "must be a piece")
 
