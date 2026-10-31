@@ -4,19 +4,19 @@
 
 ## Narration
 
-At two forty-one in the morning, the night lift stops at floor thirteen.  
-Your tower has only twelve floors.  
-You're the guard. The lift protocol is simple.  
-Every time the doors open, count the people who get out.  
-Write the number in your log. Never count the people going in.
+At two forty-one a.m., the lift stops at floor thirteen.  
+Your tower has twelve.  
+You're the guard. Your rule:  
+when the doors open, count the people who get out.  
+Write it in your log. Never count who goes in.
 
 One steps out. The arrival camera shows an empty car.  
 You write one.  
-At the next stop, two step out. The car is empty again.  
+Next stop, two step out. The car is empty again.  
 You write two.  
-Then three. Your log fills in your handwriting.  
-But your pen is still on the desk.  
-You check the building plan. There is no guard booth.
+Then three. The log writes itself, in your handwriting.  
+Your pen is still on the desk.  
+You check the floor plan. There is no guard booth.
 
 *[A deliberate, extended pause before the betrayal.]*
 
