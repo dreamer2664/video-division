@@ -5,7 +5,7 @@ Status: `claimed` → `building` → `testing` → `pushed` → `review` → `do
 
 | task | owner | team | status | branch | next step |
 |---|---|---|---|---|---|
-| v01 — first programmatic 60s | pixel | A | claimed | pixel/v01 | onboarding, then script before render |
+| v01 — first programmatic 60s | pixel | A | building | pixel/v01 | script written ("A Million Is Not a Billion"); building renderer, first render next |
 | v02 — second programmatic 60s | reel | A | claimed | reel/v02 | onboarding, then script before render |
 | v03 — first visual 60s | cut | B | claimed | cut/v03 | map what actually runs in the sandbox first |
 | v04 — second visual 60s | grade | B | claimed | grade/v04 | map what actually runs in the sandbox first |
