@@ -67,14 +67,16 @@ def elevator(im,open_door=False,red=True):
     return d
 
 def people(d,count,base_y=1148,scale=1.0):
-    step=145 if count<=3 else 125; xs=[540+(i-(count-1)/2)*step for i in range(count)]
+    step=156 if count<=3 else 132; xs=[540+(i-(count-1)/2)*step for i in range(count)]
+    # Cool faceless silhouettes are legible against the near-black car, without hands or faces.
+    body=(58,73,76,255); edge=(143,162,151,255)
     for x in xs:
         r=int(34*scale); top=int(base_y-230*scale)
-        d.ellipse((x-r,top-r,x+r,top+r),fill=(7,12,19,255),outline=(53,67,68,255),width=3)
+        d.ellipse((x-r,top-r,x+r,top+r),fill=body,outline=edge,width=4)
         d.polygon([(x-43*scale,top+42*scale),(x+43*scale,top+42*scale),
-                   (x+58*scale,base_y),(x-58*scale,base_y)],fill=(8,14,21,255),outline=(53,67,68,255))
-        d.line((x-40*scale,base_y,x-52*scale,base_y+38*scale),fill=(8,14,21,255),width=int(24*scale))
-        d.line((x+40*scale,base_y,x+52*scale,base_y+38*scale),fill=(8,14,21,255),width=int(24*scale))
+                   (x+58*scale,base_y),(x-58*scale,base_y)],fill=body,outline=edge)
+        d.line((x-40*scale,base_y,x-52*scale,base_y+38*scale),fill=body,width=int(24*scale))
+        d.line((x+40*scale,base_y,x+52*scale,base_y+38*scale),fill=body,width=int(24*scale))
 
 def ledger(im,count=0,next_shift=False):
     d=ImageDraw.Draw(im,'RGBA');glow(im,540,820,330,AMBER,38);d=ImageDraw.Draw(im,'RGBA')
@@ -237,7 +239,10 @@ def draw_scene(i):
     elif i==6:elevator(im,True)
     elif i==7:ledger(im,0)
     elif i in (8,11,22):
-        elevator(im,True);d=ImageDraw.Draw(im,'RGBA');people(d,{8:1,11:2,22:4}[i]);ctext(d,540,1120,f'{ {8:1,11:2,22:4}[i]:02}  /  EXITS',43,AMBER)
+        elevator(im,True);d=ImageDraw.Draw(im,'RGBA')
+        count={8:1,11:2,22:4}[i]
+        people(d,count,scale={1:1.35,2:1.2,4:1.0}[count])
+        ctext(d,540,554,f'{count:02}  /  EXITS',52,AMBER)
     elif i in (9,12):camera(im,i==12)
     elif i==10:ledger(im,1)
     elif i==13:ledger(im,2)
