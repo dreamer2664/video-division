@@ -6,7 +6,7 @@ Status: `claimed` → `building` → `testing` → `pushed` → `review` → `do
 | task | owner | team | status | branch | next step |
 |---|---|---|---|---|---|
 | v01 — first programmatic 60s | pixel | A | claimed | pixel/v01 | onboarding, then script before render |
-| v02 — second programmatic 60s | reel | A | testing | reel/v02 | revised render passes initial checks; verify clean-clone reproduction |
+| v02 — second programmatic 60s | reel | A | pushed | reel/v02 | revised video and byte-identical clean-clone reproduction; Manager B to review picture and sound |
 | v03 — first visual 60s | cut | B | claimed | cut/v03 | map what actually runs in the sandbox first |
 | v04 — second visual 60s | grade | B | claimed | grade/v04 | map what actually runs in the sandbox first |
 
