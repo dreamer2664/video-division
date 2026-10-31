@@ -84,7 +84,7 @@ SHOTS = [
         "zp_z": "1.02 + 0.13*(on/{N})",
         "zp_x": "(iw - iw/zoom)*0.50",
         "zp_y": "(ih - ih/zoom)*(0.54 - 0.08*(on/{N}))",
-        "curves": "r='0/0.01 0.25/0.22 0.62/0.72 1/0.99':g='0/0.02 0.25/0.19 0.62/0.58 1/0.93':b='0/0.05 0.25/0.20 0.62/0.38 1/0.78'",
+        "curves": "r='0/0.028 0.25/0.25 0.62/0.72 1/0.99':g='0/0.032 0.25/0.22 0.62/0.58 1/0.93':b='0/0.058 0.25/0.23 0.62/0.39 1/0.78'",
         "overlay": "ov_rain_slow.mp4",
         "blend_mode": "screen",
         "blend_op": 0.24,
@@ -98,7 +98,7 @@ SHOTS = [
         "zp_z": "1.05 + 0.08*(on/{N})",
         "zp_x": "(iw - iw/zoom)*(0.32 + 0.34*(on/{N}))",
         "zp_y": "(ih - ih/zoom)*(0.50 - 0.06*(on/{N}))",
-        "curves": "r='0/0.01 0.22/0.18 0.65/0.74 1/0.99':g='0/0.02 0.22/0.19 0.65/0.63 1/0.95':b='0/0.05 0.22/0.25 0.65/0.46 1/0.82'",
+        "curves": "r='0/0.025 0.22/0.21 0.65/0.74 1/0.99':g='0/0.030 0.22/0.22 0.65/0.63 1/0.95':b='0/0.058 0.22/0.27 0.65/0.47 1/0.82'",
         "overlay": "ov_rain_slow.mp4",
         "blend_mode": "screen",
         "blend_op": 0.21,
@@ -259,11 +259,11 @@ def render_single_shot(shot, base_dir, build_dir):
     ov_chain = f"[1:v]trim=0:{dur},setpts=PTS-STARTPTS,format=gbrp[ov];"
     post_filters = ["scale=out_color_matrix=bt709:out_range=tv", "format=yuv420p", "vignette=PI/5.6", "noise=c0s=3:c0f=t+u"]
     if shot.get("extra_fade_in"):
-        # 0.28s gentle rise (strictly < 0.5s, never black)
-        post_filters.append("fade=t=in:st=0:d=0.28:color=#0a1018")
+        # 0.18s gentle rise (5 frames, strictly < 0.5s, never black)
+        post_filters.append("fade=t=in:st=0:d=0.18:color=#121a26")
     if shot.get("extra_fade_out"):
-        # 0.28s gentle twilight settle at very tail (strictly < 0.5s, never black/frozen)
-        post_filters.append(f"fade=t=out:st={dur - 0.28:.2f}:d=0.28:color=#101620")
+        # 0.18s gentle twilight settle at very tail (5 frames, strictly < 0.5s, never black/frozen)
+        post_filters.append(f"fade=t=out:st={dur - 0.18:.2f}:d=0.18:color=#16202e")
 
     full_graph = (
         grade_chain

@@ -8,7 +8,7 @@ Status: `claimed` → `building` → `testing` → `pushed` → `review` → `do
 | v01 — first programmatic 60s | pixel | A | claimed | pixel/v01 | onboarding, then script before render |
 | v02 — second programmatic 60s | reel | A | claimed | reel/v02 | onboarding, then script before render |
 | v03 — first visual 60s | cut | B | claimed | cut/v03 | map what actually runs in the sandbox first |
-| v04 — second visual 60s | grade | B | pushed | grade/v04 | complete: video.mp4 (60.000s, 1080p30, -16.0 LUFS, 44.8MB) + QA.md verified & pushed; ready for lux integration |
+| v04 — second visual 60s | grade | B | pushed | grade/v04 | complete: video.mp4 (60.000s, 1080p30, -16.0 LUFS, 41.7MB, 12/12 first-party plates) + QA.md audited & pushed; ready for lux integration |
 
 ## Notes
 - All four run in parallel, independently. A failure in one never blocks the others.

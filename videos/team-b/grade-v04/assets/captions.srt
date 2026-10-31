@@ -1,9 +1,9 @@
 1
 00:00:00,400 --> 00:00:03,700
-At dusk, the harbour loses the sun first.
+5600 K · At dusk, the harbour loses the sun first.
 
 2
-00:00:04,300 --> 00:00:07,600
+00:00:04,350 --> 00:00:07,600
 KELVIN — Artificial light steps in to hold the coast.
 
 3
@@ -43,5 +43,5 @@ Four thousand Kelvin holds the watch until the squall breaks.
 Silver water remembers every colour without keeping one.
 
 12
-00:00:55,800 --> 00:00:59,600
+00:00:55,800 --> 00:00:59,650
 6500 K — Day returns the world to itself.
