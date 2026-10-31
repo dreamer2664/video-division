@@ -1,0 +1,37 @@
+1
+00:00:00,000 --> 00:00:06,000
+[Original electronic instrumental music]
+Why does waiting explode before a system is full?
+
+2
+00:00:06,000 --> 00:00:13,000
+One barista finishes one order a minute, on average.
+
+3
+00:00:13,000 --> 00:00:21,000
+But arrivals and service times vary.
+Little rushes make a queue.
+
+4
+00:00:21,000 --> 00:00:29,000
+At 50% busy, this model predicts
+a 1-minute average wait.
+
+5
+00:00:29,000 --> 00:00:39,000
+At 90% busy, the average wait is
+9 minutes—before service.
+
+6
+00:00:39,000 --> 00:00:49,000
+In this random queue model,
+waiting rises nonlinearly.
+
+7
+00:00:49,000 --> 00:00:56,000
+Spare capacity absorbs the unexpected
+instead of passing it on as delay.
+
+8
+00:00:56,000 --> 00:01:00,000
+Leave room for the rush.
