@@ -1,0 +1,431 @@
+[
+  {
+    "cue": 1,
+    "start": 0.36,
+    "end": 1.539,
+    "word_span": [
+      0.36,
+      1.539
+    ],
+    "plain": "At 2:17",
+    "words": "At two seventeen"
+  },
+  {
+    "cue": 2,
+    "start": 1.553,
+    "end": 2.135,
+    "word_span": [
+      1.553,
+      2.135
+    ],
+    "plain": "in the morning,",
+    "words": "in the morning"
+  },
+  {
+    "cue": 3,
+    "start": 2.434,
+    "end": 3.598,
+    "word_span": [
+      2.434,
+      3.598
+    ],
+    "plain": "the old stone lock",
+    "words": "the old stone lock"
+  },
+  {
+    "cue": 4,
+    "start": 3.613,
+    "end": 4.479,
+    "word_span": [
+      3.613,
+      4.479
+    ],
+    "plain": "on the Blackwater",
+    "words": "on the Blackwater"
+  },
+  {
+    "cue": 5,
+    "start": 4.493,
+    "end": 5.772,
+    "word_span": [
+      4.493,
+      5.772
+    ],
+    "plain": "has only one rule.",
+    "words": "has only one rule"
+  },
+  {
+    "cue": 6,
+    "start": 6.152,
+    "end": 7.501,
+    "word_span": [
+      6.152,
+      7.501
+    ],
+    "plain": "Never open the sluice",
+    "words": "Never open the sluice"
+  },
+  {
+    "cue": 7,
+    "start": 7.515,
+    "end": 8.567,
+    "word_span": [
+      7.515,
+      8.567
+    ],
+    "plain": "if the rain reaches",
+    "words": "if the rain reaches"
+  },
+  {
+    "cue": 8,
+    "start": 8.581,
+    "end": 9.405,
+    "word_span": [
+      8.581,
+      9.405
+    ],
+    "plain": "MARK FOUR.",
+    "words": "Mark Four"
+  },
+  {
+    "cue": 9,
+    "start": 9.825,
+    "end": 10.933,
+    "word_span": [
+      9.825,
+      10.933
+    ],
+    "plain": "For forty years,",
+    "words": "For forty years"
+  },
+  {
+    "cue": 10,
+    "start": 11.174,
+    "end": 11.998,
+    "word_span": [
+      11.174,
+      11.998
+    ],
+    "plain": "a night keeper",
+    "words": "a night keeper"
+  },
+  {
+    "cue": 11,
+    "start": 12.012,
+    "end": 13.191,
+    "word_span": [
+      12.012,
+      13.191
+    ],
+    "plain": "has logged the water",
+    "words": "has logged the water"
+  },
+  {
+    "cue": 12,
+    "start": 13.205,
+    "end": 14.612,
+    "word_span": [
+      13.205,
+      14.612
+    ],
+    "plain": "every fifteen minutes.",
+    "words": "every fifteen minutes"
+  },
+  {
+    "cue": 13,
+    "start": 14.992,
+    "end": 17.208,
+    "word_span": [
+      14.992,
+      17.208
+    ],
+    "plain": "1:45 \u2014 Mark Two.",
+    "words": "One forty-five Mark Two"
+  },
+  {
+    "cue": 14,
+    "start": 18.209,
+    "end": 20.183,
+    "word_span": [
+      18.209,
+      20.183
+    ],
+    "plain": "2:00 \u2014 Mark Three.",
+    "words": "Two o'clock Mark Three"
+  },
+  {
+    "cue": 15,
+    "start": 20.603,
+    "end": 22.194,
+    "word_span": [
+      20.603,
+      22.194
+    ],
+    "plain": "Outside, four inches",
+    "words": "Outside four inches"
+  },
+  {
+    "cue": 16,
+    "start": 22.208,
+    "end": 23.529,
+    "word_span": [
+      22.208,
+      23.529
+    ],
+    "plain": "of cold rain fall",
+    "words": "of cold rain fall"
+  },
+  {
+    "cue": 17,
+    "start": 23.543,
+    "end": 24.637,
+    "word_span": [
+      23.543,
+      24.637
+    ],
+    "plain": "in twenty minutes.",
+    "words": "in twenty minutes"
+  },
+  {
+    "cue": 18,
+    "start": 25.624,
+    "end": 26.391,
+    "word_span": [
+      25.624,
+      26.391
+    ],
+    "plain": "Yet the gauge",
+    "words": "Yet the gauge"
+  },
+  {
+    "cue": 19,
+    "start": 26.405,
+    "end": 27.399,
+    "word_span": [
+      26.405,
+      27.399
+    ],
+    "plain": "stops moving.",
+    "words": "stops moving"
+  },
+  {
+    "cue": 20,
+    "start": 27.799,
+    "end": 29.29,
+    "word_span": [
+      27.799,
+      29.29
+    ],
+    "plain": "Three millimeters below",
+    "words": "Three millimeters below"
+  },
+  {
+    "cue": 21,
+    "start": 29.305,
+    "end": 30.228,
+    "word_span": [
+      29.305,
+      30.228
+    ],
+    "plain": "the red line.",
+    "words": "the red line"
+  },
+  {
+    "cue": 22,
+    "start": 31.215,
+    "end": 32.933,
+    "word_span": [
+      31.215,
+      32.933
+    ],
+    "plain": "Still as dark glass.",
+    "words": "Still as dark glass"
+  },
+  {
+    "cue": 23,
+    "start": 33.373,
+    "end": 34.751,
+    "word_span": [
+      33.373,
+      34.751
+    ],
+    "plain": "So you carry the lantern",
+    "words": "So you carry the lantern"
+  },
+  {
+    "cue": 24,
+    "start": 34.765,
+    "end": 35.958,
+    "word_span": [
+      34.765,
+      35.958
+    ],
+    "plain": "out onto the catwalk",
+    "words": "out onto the catwalk"
+  },
+  {
+    "cue": 25,
+    "start": 35.972,
+    "end": 36.64,
+    "word_span": [
+      35.972,
+      36.64
+    ],
+    "plain": "to check for",
+    "words": "to check for"
+  },
+  {
+    "cue": 26,
+    "start": 36.654,
+    "end": 37.663,
+    "word_span": [
+      36.654,
+      37.663
+    ],
+    "plain": "a jammed float.",
+    "words": "a jammed float"
+  },
+  {
+    "cue": 27,
+    "start": 38.083,
+    "end": 38.949,
+    "word_span": [
+      38.083,
+      38.949
+    ],
+    "plain": "Your light hits",
+    "words": "Your light hits"
+  },
+  {
+    "cue": 28,
+    "start": 38.964,
+    "end": 40.285,
+    "word_span": [
+      38.964,
+      40.285
+    ],
+    "plain": "the wet stone wall.",
+    "words": "the wet stone wall"
+  },
+  {
+    "cue": 29,
+    "start": 41.271,
+    "end": 41.925,
+    "word_span": [
+      41.271,
+      41.925
+    ],
+    "plain": "And you see",
+    "words": "And you see"
+  },
+  {
+    "cue": 30,
+    "start": 41.939,
+    "end": 43.473,
+    "word_span": [
+      41.939,
+      43.473
+    ],
+    "plain": "the empty bolt holes.",
+    "words": "the empty bolt holes"
+  },
+  {
+    "cue": 31,
+    "start": 44.593,
+    "end": 46.468,
+    "word_span": [
+      44.593,
+      46.468
+    ],
+    "plain": "Someone unbolted Mark Four,",
+    "words": "Someone unbolted Mark Four"
+  },
+  {
+    "cue": 32,
+    "start": 46.752,
+    "end": 48.101,
+    "word_span": [
+      46.752,
+      48.101
+    ],
+    "plain": "and moved the brass plate",
+    "words": "and moved the brass plate"
+  },
+  {
+    "cue": 33,
+    "start": 48.116,
+    "end": 49.266,
+    "word_span": [
+      48.116,
+      49.266
+    ],
+    "plain": "two feet higher.",
+    "words": "two feet higher"
+  },
+  {
+    "cue": 34,
+    "start": 49.726,
+    "end": 51.175,
+    "word_span": [
+      49.726,
+      51.175
+    ],
+    "plain": "Behind you, the lamp",
+    "words": "Behind you the lamp"
+  },
+  {
+    "cue": 35,
+    "start": 51.189,
+    "end": 52.226,
+    "word_span": [
+      51.189,
+      52.226
+    ],
+    "plain": "in the keeper's booth",
+    "words": "in the keeper's booth"
+  },
+  {
+    "cue": 36,
+    "start": 52.24,
+    "end": 53.135,
+    "word_span": [
+      52.24,
+      53.135
+    ],
+    "plain": "clicks off.",
+    "words": "clicks off"
+  },
+  {
+    "cue": 37,
+    "start": 53.555,
+    "end": 55.515,
+    "word_span": [
+      53.555,
+      55.515
+    ],
+    "plain": "The river never stopped rising.",
+    "words": "The river never stopped rising"
+  },
+  {
+    "cue": 38,
+    "start": 56.502,
+    "end": 58.008,
+    "word_span": [
+      56.502,
+      58.008
+    ],
+    "plain": "The sluice gate behind you",
+    "words": "The sluice gate behind you"
+  },
+  {
+    "cue": 39,
+    "start": 58.022,
+    "end": 59.144,
+    "word_span": [
+      58.022,
+      59.144
+    ],
+    "plain": "is already open.",
+    "words": "is already open"
+  }
+]

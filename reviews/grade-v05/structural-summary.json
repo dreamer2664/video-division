@@ -1,0 +1,42 @@
+{
+  "v04_video_sha256": "90d4fdde94fbaf56a57f34ef69da5ac0fc53633d55db63c91aa413c1993ae270",
+  "v05_video_sha256": "141f3939848bf2970d993b421f6f227de54ea5e89f09e563c078c1a3f8545858",
+  "v05_asset_count_compared": 22,
+  "identical_v04_asset_matches": [],
+  "caption_cues": 39,
+  "cue_min_start": 0.36,
+  "cue_max_end": 59.144,
+  "cues_without_word_span": 0,
+  "max_structural_word_boundary_drift_s": 0.0,
+  "speech_band_300_4000Hz_mix_RMS_per_10s_dBFS": [
+    [
+      0.0,
+      -23.45112
+    ],
+    [
+      10.0,
+      -23.194567
+    ],
+    [
+      20.0,
+      -23.438673
+    ],
+    [
+      30.0,
+      -23.232283
+    ],
+    [
+      40.0,
+      -24.016614
+    ],
+    [
+      50.0,
+      -23.717431
+    ],
+    [
+      60.0,
+      -84.186462
+    ]
+  ],
+  "warning": "Mixture-band activity is not proof of speech, intelligibility, or speech-to-music margin. No stem available. Structural JSON equality is not independently observed spoken-word alignment."
+}

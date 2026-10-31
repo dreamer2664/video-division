@@ -1,0 +1,670 @@
+$ ffmpeg -hide_banner -nostats -i video.mp4 -vn -af highpass=f=300,lowpass=f=4000,asetnsamples=n=480000:p=0,astats=metadata=1:reset=1,ametadata=print:file=- -f null -
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'video.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf61.7.103
+  Duration: 00:01:00.00, start: 0.000000, bitrate: 4186 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080, 3984 kb/s, 30 fps, 30 tbr, 15360 tbn (default)
+      Metadata:
+        handler_name    : VideoHandler
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.19.101 libx264
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 192 kb/s (default)
+      Metadata:
+        handler_name    : SoundHandler
+        vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:1 -> #0:0 (aac (native) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, null, to 'pipe:':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf61.7.103
+  Stream #0:0(und): Audio: pcm_s16le, 48000 Hz, stereo, s16, 1536 kb/s (default)
+      Metadata:
+        handler_name    : SoundHandler
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.19.101 pcm_s16le
+frame:0    pts:0       pts_time:0
+lavfi.astats.1.DC_offset=0.000001
+lavfi.astats.1.Min_level=-0.537929
+lavfi.astats.1.Max_level=0.412721
+lavfi.astats.1.Min_difference=0.000000
+lavfi.astats.1.Max_difference=0.230450
+lavfi.astats.1.Mean_difference=0.006480
+lavfi.astats.1.RMS_difference=0.012054
+lavfi.astats.1.Peak_level=-5.385494
+lavfi.astats.1.RMS_level=-23.460240
+lavfi.astats.1.RMS_peak=-15.792231
+lavfi.astats.1.RMS_trough=-52.605586
+lavfi.astats.1.Crest_factor=8.011932
+lavfi.astats.1.Flat_factor=0.000000
+lavfi.astats.1.Peak_count=1.000000
+lavfi.astats.1.Noise_floor=-37.923838
+lavfi.astats.1.Noise_floor_count=5.000000
+lavfi.astats.1.Entropy=0.757181
+lavfi.astats.1.Bit_depth=31.000000
+lavfi.astats.1.Bit_depth2=32.000000
+lavfi.astats.1.Bit_depth3=32.000000
+lavfi.astats.1.Bit_depth4=32.000000
+lavfi.astats.1.Dynamic_range=140.873375
+lavfi.astats.1.Zero_crossings=29690.000000
+lavfi.astats.1.Zero_crossings_rate=0.061854
+lavfi.astats.1.Number of NaNs=0.000000
+lavfi.astats.1.Number of Infs=0.000000
+lavfi.astats.1.Number of denormals=0.000000
+lavfi.astats.2.DC_offset=0.000001
+lavfi.astats.2.Min_level=-0.548878
+lavfi.astats.2.Max_level=0.428982
+lavfi.astats.2.Min_difference=0.000000
+lavfi.astats.2.Max_difference=0.234145
+lavfi.astats.2.Mean_difference=0.006493
+lavfi.astats.2.RMS_difference=0.012065
+lavfi.astats.2.Peak_level=-5.210488
+lavfi.astats.2.RMS_level=-23.442020
+lavfi.astats.2.RMS_peak=-15.807715
+lavfi.astats.2.RMS_trough=-53.910367
+lavfi.astats.2.Crest_factor=8.157866
+lavfi.astats.2.Flat_factor=0.000000
+lavfi.astats.2.Peak_count=1.000000
+lavfi.astats.2.Noise_floor=-41.729779
+lavfi.astats.2.Noise_floor_count=10.000000
+lavfi.astats.2.Entropy=0.757637
+lavfi.astats.2.Bit_depth=31.000000
+lavfi.astats.2.Bit_depth2=32.000000
+lavfi.astats.2.Bit_depth3=32.000000
+lavfi.astats.2.Bit_depth4=32.000000
+lavfi.astats.2.Dynamic_range=148.708387
+lavfi.astats.2.Zero_crossings=29567.000000
+lavfi.astats.2.Zero_crossings_rate=0.061598
+lavfi.astats.2.Number of NaNs=0.000000
+lavfi.astats.2.Number of Infs=0.000000
+lavfi.astats.2.Number of denormals=0.000000
+lavfi.astats.Overall.DC_offset=0.000001
+lavfi.astats.Overall.Min_level=-0.548878
+lavfi.astats.Overall.Max_level=0.428982
+lavfi.astats.Overall.Min_difference=0.000000
+lavfi.astats.Overall.Max_difference=0.234145
+lavfi.astats.Overall.Mean_difference=0.006487
+lavfi.astats.Overall.RMS_difference=0.012059
+lavfi.astats.Overall.Peak_level=-5.210488
+lavfi.astats.Overall.RMS_level=-23.451120
+lavfi.astats.Overall.RMS_peak=-15.792231
+lavfi.astats.Overall.RMS_trough=-53.910367
+lavfi.astats.Overall.Flat_factor=0.000000
+lavfi.astats.Overall.Peak_count=2.000000
+lavfi.astats.Overall.Abs_Peak_count=1.000000
+lavfi.astats.Overall.Noise_floor=-37.923838
+lavfi.astats.Overall.Noise_floor_count=7.500000
+lavfi.astats.Overall.Entropy=0.757409
+lavfi.astats.Overall.Bit_depth=31.000000
+lavfi.astats.Overall.Bit_depth2=32.000000
+lavfi.astats.Overall.Bit_depth3=32.000000
+lavfi.astats.Overall.Bit_depth4=32.000000
+lavfi.astats.Overall.Number_of_samples=480000.000000
+lavfi.astats.Number of NaNs=0.000000
+lavfi.astats.Number of Infs=0.000000
+lavfi.astats.Number of denormals=0.000000
+frame:1    pts:480000  pts_time:10
+lavfi.astats.1.DC_offset=-0.000002
+lavfi.astats.1.Min_level=-0.697590
+lavfi.astats.1.Max_level=0.486269
+lavfi.astats.1.Min_difference=0.000000
+lavfi.astats.1.Max_difference=0.152047
+lavfi.astats.1.Mean_difference=0.005353
+lavfi.astats.1.RMS_difference=0.009125
+lavfi.astats.1.Peak_level=-3.127997
+lavfi.astats.1.RMS_level=-23.183160
+lavfi.astats.1.RMS_peak=-15.808316
+lavfi.astats.1.RMS_trough=-41.461424
+lavfi.astats.1.Crest_factor=10.063710
+lavfi.astats.1.Flat_factor=0.000000
+lavfi.astats.1.Peak_count=1.000000
+lavfi.astats.1.Noise_floor=-34.651070
+lavfi.astats.1.Noise_floor_count=39.000000
+lavfi.astats.1.Entropy=0.738733
+lavfi.astats.1.Bit_depth=31.000000
+lavfi.astats.1.Bit_depth2=32.000000
+lavfi.astats.1.Bit_depth3=32.000000
+lavfi.astats.1.Bit_depth4=32.000000
+lavfi.astats.1.Dynamic_range=173.968175
+lavfi.astats.1.Zero_crossings=30417.000000
+lavfi.astats.1.Zero_crossings_rate=0.063369
+lavfi.astats.1.Number of NaNs=0.000000
+lavfi.astats.1.Number of Infs=0.000000
+lavfi.astats.1.Number of denormals=0.000000
+lavfi.astats.2.DC_offset=-0.000002
+lavfi.astats.2.Min_level=-0.698986
+lavfi.astats.2.Max_level=0.469918
+lavfi.astats.2.Min_difference=0.000000
+lavfi.astats.2.Max_difference=0.148924
+lavfi.astats.2.Mean_difference=0.005345
+lavfi.astats.2.RMS_difference=0.009113
+lavfi.astats.2.Peak_level=-3.110631
+lavfi.astats.2.RMS_level=-23.206004
+lavfi.astats.2.RMS_peak=-15.903190
+lavfi.astats.2.RMS_trough=-41.260406
+lavfi.astats.2.Crest_factor=10.110407
+lavfi.astats.2.Flat_factor=0.000000
+lavfi.astats.2.Peak_count=1.000000
+lavfi.astats.2.Noise_floor=-33.538456
+lavfi.astats.2.Noise_floor_count=505.000000
+lavfi.astats.2.Entropy=0.738667
+lavfi.astats.2.Bit_depth=31.000000
+lavfi.astats.2.Bit_depth2=32.000000
+lavfi.astats.2.Bit_depth3=32.000000
+lavfi.astats.2.Bit_depth4=32.000000
+lavfi.astats.2.Dynamic_range=150.272809
+lavfi.astats.2.Zero_crossings=30308.000000
+lavfi.astats.2.Zero_crossings_rate=0.063142
+lavfi.astats.2.Number of NaNs=0.000000
+lavfi.astats.2.Number of Infs=0.000000
+lavfi.astats.2.Number of denormals=0.000000
+lavfi.astats.Overall.DC_offset=-0.000002
+lavfi.astats.Overall.Min_level=-0.698986
+lavfi.astats.Overall.Max_level=0.486269
+lavfi.astats.Overall.Min_difference=0.000000
+lavfi.astats.Overall.Max_difference=0.152047
+lavfi.astats.Overall.Mean_difference=0.005349
+lavfi.astats.Overall.RMS_difference=0.009119
+lavfi.astats.Overall.Peak_level=-3.110631
+lavfi.astats.Overall.RMS_level=-23.194567
+lavfi.astats.Overall.RMS_peak=-15.808316
+lavfi.astats.Overall.RMS_trough=-41.461424
+lavfi.astats.Overall.Flat_factor=0.000000
+lavfi.astats.Overall.Peak_count=2.000000
+lavfi.astats.Overall.Abs_Peak_count=1.000000
+lavfi.astats.Overall.Noise_floor=-33.538456
+lavfi.astats.Overall.Noise_floor_count=272.000000
+lavfi.astats.Overall.Entropy=0.738700
+lavfi.astats.Overall.Bit_depth=31.000000
+lavfi.astats.Overall.Bit_depth2=32.000000
+lavfi.astats.Overall.Bit_depth3=32.000000
+lavfi.astats.Overall.Bit_depth4=32.000000
+lavfi.astats.Overall.Number_of_samples=480000.000000
+lavfi.astats.Number of NaNs=0.000000
+lavfi.astats.Number of Infs=0.000000
+lavfi.astats.Number of denormals=0.000000
+frame:2    pts:960000  pts_time:20
+lavfi.astats.1.DC_offset=0.000000
+lavfi.astats.1.Min_level=-0.753897
+lavfi.astats.1.Max_level=0.467062
+lavfi.astats.1.Min_difference=0.000000
+lavfi.astats.1.Max_difference=0.207842
+lavfi.astats.1.Mean_difference=0.006154
+lavfi.astats.1.RMS_difference=0.011496
+lavfi.astats.1.Peak_level=-2.453763
+lavfi.astats.1.RMS_level=-23.446231
+lavfi.astats.1.RMS_peak=-16.274119
+lavfi.astats.1.RMS_trough=-39.778337
+lavfi.astats.1.Crest_factor=11.210460
+lavfi.astats.1.Flat_factor=0.000000
+lavfi.astats.1.Peak_count=1.000000
+lavfi.astats.1.Noise_floor=-30.641840
+lavfi.astats.1.Noise_floor_count=1278.000000
+lavfi.astats.1.Entropy=0.748438
+lavfi.astats.1.Bit_depth=31.000000
+lavfi.astats.1.Bit_depth2=32.000000
+lavfi.astats.1.Bit_depth3=32.000000
+lavfi.astats.1.Bit_depth4=32.000000
+lavfi.astats.1.Dynamic_range=189.182384
+lavfi.astats.1.Zero_crossings=30933.000000
+lavfi.astats.1.Zero_crossings_rate=0.064444
+lavfi.astats.1.Number of NaNs=0.000000
+lavfi.astats.1.Number of Infs=0.000000
+lavfi.astats.1.Number of denormals=0.000000
+lavfi.astats.2.DC_offset=0.000000
+lavfi.astats.2.Min_level=-0.754102
+lavfi.astats.2.Max_level=0.451848
+lavfi.astats.2.Min_difference=0.000000
+lavfi.astats.2.Max_difference=0.205045
+lavfi.astats.2.Mean_difference=0.006140
+lavfi.astats.2.RMS_difference=0.011489
+lavfi.astats.2.Peak_level=-2.451395
+lavfi.astats.2.RMS_level=-23.431127
+lavfi.astats.2.RMS_peak=-16.250787
+lavfi.astats.2.RMS_trough=-39.590584
+lavfi.astats.2.Crest_factor=11.194033
+lavfi.astats.2.Flat_factor=0.000000
+lavfi.astats.2.Peak_count=1.000000
+lavfi.astats.2.Noise_floor=-30.291393
+lavfi.astats.2.Noise_floor_count=87.000000
+lavfi.astats.2.Entropy=0.748647
+lavfi.astats.2.Bit_depth=31.000000
+lavfi.astats.2.Bit_depth2=32.000000
+lavfi.astats.2.Bit_depth3=32.000000
+lavfi.astats.2.Bit_depth4=32.000000
+lavfi.astats.2.Dynamic_range=152.200459
+lavfi.astats.2.Zero_crossings=30937.000000
+lavfi.astats.2.Zero_crossings_rate=0.064452
+lavfi.astats.2.Number of NaNs=0.000000
+lavfi.astats.2.Number of Infs=0.000000
+lavfi.astats.2.Number of denormals=0.000000
+lavfi.astats.Overall.DC_offset=0.000000
+lavfi.astats.Overall.Min_level=-0.754102
+lavfi.astats.Overall.Max_level=0.467062
+lavfi.astats.Overall.Min_difference=0.000000
+lavfi.astats.Overall.Max_difference=0.207842
+lavfi.astats.Overall.Mean_difference=0.006147
+lavfi.astats.Overall.RMS_difference=0.011492
+lavfi.astats.Overall.Peak_level=-2.451395
+lavfi.astats.Overall.RMS_level=-23.438673
+lavfi.astats.Overall.RMS_peak=-16.250787
+lavfi.astats.Overall.RMS_trough=-39.778337
+lavfi.astats.Overall.Flat_factor=0.000000
+lavfi.astats.Overall.Peak_count=2.000000
+lavfi.astats.Overall.Abs_Peak_count=1.000000
+lavfi.astats.Overall.Noise_floor=-30.291393
+lavfi.astats.Overall.Noise_floor_count=682.500000
+lavfi.astats.Overall.Entropy=0.748543
+lavfi.astats.Overall.Bit_depth=31.000000
+lavfi.astats.Overall.Bit_depth2=32.000000
+lavfi.astats.Overall.Bit_depth3=32.000000
+lavfi.astats.Overall.Bit_depth4=32.000000
+lavfi.astats.Overall.Number_of_samples=480000.000000
+lavfi.astats.Number of NaNs=0.000000
+lavfi.astats.Number of Infs=0.000000
+lavfi.astats.Number of denormals=0.000000
+frame:3    pts:1440000 pts_time:30
+lavfi.astats.1.DC_offset=-0.000001
+lavfi.astats.1.Min_level=-0.604112
+lavfi.astats.1.Max_level=0.562634
+lavfi.astats.1.Min_difference=0.000000
+lavfi.astats.1.Max_difference=0.194824
+lavfi.astats.1.Mean_difference=0.006951
+lavfi.astats.1.RMS_difference=0.012607
+lavfi.astats.1.Peak_level=-4.377647
+lavfi.astats.1.RMS_level=-23.221438
+lavfi.astats.1.RMS_peak=-15.739572
+lavfi.astats.1.RMS_trough=-40.103331
+lavfi.astats.1.Crest_factor=8.753658
+lavfi.astats.1.Flat_factor=0.000000
+lavfi.astats.1.Peak_count=1.000000
+lavfi.astats.1.Noise_floor=-31.657710
+lavfi.astats.1.Noise_floor_count=982.000000
+lavfi.astats.1.Entropy=0.748734
+lavfi.astats.1.Bit_depth=31.000000
+lavfi.astats.1.Bit_depth2=32.000000
+lavfi.astats.1.Bit_depth3=32.000000
+lavfi.astats.1.Bit_depth4=32.000000
+lavfi.astats.1.Dynamic_range=162.260950
+lavfi.astats.1.Zero_crossings=33436.000000
+lavfi.astats.1.Zero_crossings_rate=0.069658
+lavfi.astats.1.Number of NaNs=0.000000
+lavfi.astats.1.Number of Infs=0.000000
+lavfi.astats.1.Number of denormals=0.000000
+lavfi.astats.2.DC_offset=-0.000003
+lavfi.astats.2.Min_level=-0.597480
+lavfi.astats.2.Max_level=0.566446
+lavfi.astats.2.Min_difference=0.000000
+lavfi.astats.2.Max_difference=0.193661
+lavfi.astats.2.Mean_difference=0.006953
+lavfi.astats.2.RMS_difference=0.012604
+lavfi.astats.2.Peak_level=-4.473530
+lavfi.astats.2.RMS_level=-23.243155
+lavfi.astats.2.RMS_peak=-15.747145
+lavfi.astats.2.RMS_trough=-40.278894
+lavfi.astats.2.Crest_factor=8.679231
+lavfi.astats.2.Flat_factor=0.000000
+lavfi.astats.2.Peak_count=1.000000
+lavfi.astats.2.Noise_floor=-32.034369
+lavfi.astats.2.Noise_floor_count=52.000000
+lavfi.astats.2.Entropy=0.748551
+lavfi.astats.2.Bit_depth=31.000000
+lavfi.astats.2.Bit_depth2=32.000000
+lavfi.astats.2.Bit_depth3=32.000000
+lavfi.astats.2.Bit_depth4=32.000000
+lavfi.astats.2.Dynamic_range=148.631195
+lavfi.astats.2.Zero_crossings=33584.000000
+lavfi.astats.2.Zero_crossings_rate=0.069967
+lavfi.astats.2.Number of NaNs=0.000000
+lavfi.astats.2.Number of Infs=0.000000
+lavfi.astats.2.Number of denormals=0.000000
+lavfi.astats.Overall.DC_offset=-0.000003
+lavfi.astats.Overall.Min_level=-0.604112
+lavfi.astats.Overall.Max_level=0.566446
+lavfi.astats.Overall.Min_difference=0.000000
+lavfi.astats.Overall.Max_difference=0.194824
+lavfi.astats.Overall.Mean_difference=0.006952
+lavfi.astats.Overall.RMS_difference=0.012606
+lavfi.astats.Overall.Peak_level=-4.377647
+lavfi.astats.Overall.RMS_level=-23.232283
+lavfi.astats.Overall.RMS_peak=-15.739572
+lavfi.astats.Overall.RMS_trough=-40.278894
+lavfi.astats.Overall.Flat_factor=0.000000
+lavfi.astats.Overall.Peak_count=2.000000
+lavfi.astats.Overall.Abs_Peak_count=1.000000
+lavfi.astats.Overall.Noise_floor=-31.657710
+lavfi.astats.Overall.Noise_floor_count=517.000000
+lavfi.astats.Overall.Entropy=0.748642
+lavfi.astats.Overall.Bit_depth=31.000000
+lavfi.astats.Overall.Bit_depth2=32.000000
+lavfi.astats.Overall.Bit_depth3=32.000000
+lavfi.astats.Overall.Bit_depth4=32.000000
+lavfi.astats.Overall.Number_of_samples=480000.000000
+lavfi.astats.Number of NaNs=0.000000
+lavfi.astats.Number of Infs=0.000000
+lavfi.astats.Number of denormals=0.000000
+frame:4    pts:1920000 pts_time:40
+lavfi.astats.1.DC_offset=0.000003
+lavfi.astats.1.Min_level=-0.582742
+lavfi.astats.1.Max_level=0.530251
+lavfi.astats.1.Min_difference=0.000000
+lavfi.astats.1.Max_difference=0.191360
+lavfi.astats.1.Mean_difference=0.006826
+lavfi.astats.1.RMS_difference=0.011873
+lavfi.astats.1.Peak_level=-4.690472
+lavfi.astats.1.RMS_level=-24.004693
+lavfi.astats.1.RMS_peak=-15.736057
+lavfi.astats.1.RMS_trough=-37.312738
+lavfi.astats.1.Crest_factor=9.240832
+lavfi.astats.1.Flat_factor=0.000000
+lavfi.astats.1.Peak_count=1.000000
+lavfi.astats.1.Noise_floor=-28.658519
+lavfi.astats.1.Noise_floor_count=354.000000
+lavfi.astats.1.Entropy=0.748694
+lavfi.astats.1.Bit_depth=31.000000
+lavfi.astats.1.Bit_depth2=32.000000
+lavfi.astats.1.Bit_depth3=32.000000
+lavfi.astats.1.Bit_depth4=32.000000
+lavfi.astats.1.Dynamic_range=175.927525
+lavfi.astats.1.Zero_crossings=33273.000000
+lavfi.astats.1.Zero_crossings_rate=0.069319
+lavfi.astats.1.Number of NaNs=0.000000
+lavfi.astats.1.Number of Infs=0.000000
+lavfi.astats.1.Number of denormals=0.000000
+lavfi.astats.2.DC_offset=0.000004
+lavfi.astats.2.Min_level=-0.589627
+lavfi.astats.2.Max_level=0.503158
+lavfi.astats.2.Min_difference=0.000000
+lavfi.astats.2.Max_difference=0.190736
+lavfi.astats.2.Mean_difference=0.006808
+lavfi.astats.2.RMS_difference=0.011867
+lavfi.astats.2.Peak_level=-4.588454
+lavfi.astats.2.RMS_level=-24.028568
+lavfi.astats.2.RMS_peak=-15.807332
+lavfi.astats.2.RMS_trough=-37.301538
+lavfi.astats.2.Crest_factor=9.375743
+lavfi.astats.2.Flat_factor=0.000000
+lavfi.astats.2.Peak_count=1.000000
+lavfi.astats.2.Noise_floor=-28.211851
+lavfi.astats.2.Noise_floor_count=371.000000
+lavfi.astats.2.Entropy=0.748237
+lavfi.astats.2.Bit_depth=31.000000
+lavfi.astats.2.Bit_depth2=32.000000
+lavfi.astats.2.Bit_depth3=32.000000
+lavfi.astats.2.Bit_depth4=32.000000
+lavfi.astats.2.Dynamic_range=143.564557
+lavfi.astats.2.Zero_crossings=33475.000000
+lavfi.astats.2.Zero_crossings_rate=0.069740
+lavfi.astats.2.Number of NaNs=0.000000
+lavfi.astats.2.Number of Infs=0.000000
+lavfi.astats.2.Number of denormals=0.000000
+lavfi.astats.Overall.DC_offset=0.000004
+lavfi.astats.Overall.Min_level=-0.589627
+lavfi.astats.Overall.Max_level=0.530251
+lavfi.astats.Overall.Min_difference=0.000000
+lavfi.astats.Overall.Max_difference=0.191360
+lavfi.astats.Overall.Mean_difference=0.006817
+lavfi.astats.Overall.RMS_difference=0.011870
+lavfi.astats.Overall.Peak_level=-4.588454
+lavfi.astats.Overall.RMS_level=-24.016614
+lavfi.astats.Overall.RMS_peak=-15.736057
+lavfi.astats.Overall.RMS_trough=-37.312738
+lavfi.astats.Overall.Flat_factor=0.000000
+lavfi.astats.Overall.Peak_count=2.000000
+lavfi.astats.Overall.Abs_Peak_count=1.000000
+lavfi.astats.Overall.Noise_floor=-28.211851
+lavfi.astats.Overall.Noise_floor_count=362.500000
+lavfi.astats.Overall.Entropy=0.748465
+lavfi.astats.Overall.Bit_depth=31.000000
+lavfi.astats.Overall.Bit_depth2=32.000000
+lavfi.astats.Overall.Bit_depth3=32.000000
+lavfi.astats.Overall.Bit_depth4=32.000000
+lavfi.astats.Overall.Number_of_samples=480000.000000
+lavfi.astats.Number of NaNs=0.000000
+lavfi.astats.Number of Infs=0.000000
+lavfi.astats.Number of denormals=0.000000
+frame:5    pts:2400000 pts_time:50
+lavfi.astats.1.DC_offset=0.000000
+lavfi.astats.1.Min_level=-0.619701
+lavfi.astats.1.Max_level=0.485646
+lavfi.astats.1.Min_difference=0.000000
+lavfi.astats.1.Max_difference=0.210574
+lavfi.astats.1.Mean_difference=0.007145
+lavfi.astats.1.RMS_difference=0.012488
+lavfi.astats.1.Peak_level=-4.156362
+lavfi.astats.1.RMS_level=-23.721753
+lavfi.astats.1.RMS_peak=-16.107680
+lavfi.astats.1.RMS_trough=-46.444574
+lavfi.astats.1.Crest_factor=9.511950
+lavfi.astats.1.Flat_factor=0.000000
+lavfi.astats.1.Peak_count=1.000000
+lavfi.astats.1.Noise_floor=-41.305406
+lavfi.astats.1.Noise_floor_count=255.000000
+lavfi.astats.1.Entropy=0.751535
+lavfi.astats.1.Bit_depth=31.000000
+lavfi.astats.1.Bit_depth2=32.000000
+lavfi.astats.1.Bit_depth3=32.000000
+lavfi.astats.1.Bit_depth4=32.000000
+lavfi.astats.1.Dynamic_range=138.356261
+lavfi.astats.1.Zero_crossings=34268.000000
+lavfi.astats.1.Zero_crossings_rate=0.071392
+lavfi.astats.1.Number of NaNs=0.000000
+lavfi.astats.1.Number of Infs=0.000000
+lavfi.astats.1.Number of denormals=0.000000
+lavfi.astats.2.DC_offset=0.000000
+lavfi.astats.2.Min_level=-0.646496
+lavfi.astats.2.Max_level=0.484385
+lavfi.astats.2.Min_difference=0.000000
+lavfi.astats.2.Max_difference=0.201717
+lavfi.astats.2.Mean_difference=0.007136
+lavfi.astats.2.RMS_difference=0.012478
+lavfi.astats.2.Peak_level=-3.788690
+lavfi.astats.2.RMS_level=-23.713113
+lavfi.astats.2.RMS_peak=-16.171704
+lavfi.astats.2.RMS_trough=-46.208789
+lavfi.astats.2.Crest_factor=9.913367
+lavfi.astats.2.Flat_factor=0.000000
+lavfi.astats.2.Peak_count=1.000000
+lavfi.astats.2.Noise_floor=-39.946443
+lavfi.astats.2.Noise_floor_count=277.000000
+lavfi.astats.2.Entropy=0.751509
+lavfi.astats.2.Bit_depth=31.000000
+lavfi.astats.2.Bit_depth2=32.000000
+lavfi.astats.2.Bit_depth3=32.000000
+lavfi.astats.2.Bit_depth4=32.000000
+lavfi.astats.2.Dynamic_range=141.420898
+lavfi.astats.2.Zero_crossings=34441.000000
+lavfi.astats.2.Zero_crossings_rate=0.071752
+lavfi.astats.2.Number of NaNs=0.000000
+lavfi.astats.2.Number of Infs=0.000000
+lavfi.astats.2.Number of denormals=0.000000
+lavfi.astats.Overall.DC_offset=0.000000
+lavfi.astats.Overall.Min_level=-0.646496
+lavfi.astats.Overall.Max_level=0.485646
+lavfi.astats.Overall.Min_difference=0.000000
+lavfi.astats.Overall.Max_difference=0.210574
+lavfi.astats.Overall.Mean_difference=0.007141
+lavfi.astats.Overall.RMS_difference=0.012483
+lavfi.astats.Overall.Peak_level=-3.788690
+lavfi.astats.Overall.RMS_level=-23.717431
+lavfi.astats.Overall.RMS_peak=-16.107680
+lavfi.astats.Overall.RMS_trough=-46.444574
+lavfi.astats.Overall.Flat_factor=0.000000
+lavfi.astats.Overall.Peak_count=2.000000
+lavfi.astats.Overall.Abs_Peak_count=1.000000
+lavfi.astats.Overall.Noise_floor=-39.946443
+lavfi.astats.Overall.Noise_floor_count=266.000000
+lavfi.astats.Overall.Entropy=0.751522
+lavfi.astats.Overall.Bit_depth=31.000000
+lavfi.astats.Overall.Bit_depth2=32.000000
+lavfi.astats.Overall.Bit_depth3=32.000000
+lavfi.astats.Overall.Bit_depth4=32.000000
+lavfi.astats.Overall.Number_of_samples=480000.000000
+lavfi.astats.Number of NaNs=0.000000
+lavfi.astats.Number of Infs=0.000000
+lavfi.astats.Number of denormals=0.000000
+frame:6    pts:2880000 pts_time:60
+lavfi.astats.1.DC_offset=0.000001
+lavfi.astats.1.Min_level=-0.000243
+lavfi.astats.1.Max_level=0.000265
+lavfi.astats.1.Min_difference=0.000000
+lavfi.astats.1.Max_difference=0.000082
+lavfi.astats.1.Mean_difference=0.000011
+lavfi.astats.1.RMS_difference=0.000019
+lavfi.astats.1.Peak_level=-71.540842
+lavfi.astats.1.RMS_level=-83.977999
+lavfi.astats.1.RMS_peak=-83.977999
+lavfi.astats.1.RMS_trough=-83.977999
+lavfi.astats.1.Crest_factor=4.186565
+lavfi.astats.1.Flat_factor=0.000000
+lavfi.astats.1.Peak_count=1.000000
+lavfi.astats.1.Noise_floor=nan
+lavfi.astats.1.Noise_floor_count=0.000000
+lavfi.astats.1.Entropy=0.063920
+lavfi.astats.1.Bit_depth=20.000000
+lavfi.astats.1.Bit_depth2=32.000000
+lavfi.astats.1.Bit_depth3=32.000000
+lavfi.astats.1.Bit_depth4=32.000000
+lavfi.astats.1.Dynamic_range=96.321324
+lavfi.astats.1.Zero_crossings=52.000000
+lavfi.astats.1.Zero_crossings_rate=0.101562
+lavfi.astats.1.Number of NaNs=0.000000
+lavfi.astats.1.Number of Infs=0.000000
+lavfi.astats.1.Number of denormals=0.000000
+lavfi.astats.2.DC_offset=0.000011
+lavfi.astats.2.Min_level=-0.000141
+lavfi.astats.2.Max_level=0.000271
+lavfi.astats.2.Min_difference=0.000000
+lavfi.astats.2.Max_difference=0.000082
+lavfi.astats.2.Mean_difference=0.000010
+lavfi.astats.2.RMS_difference=0.000017
+lavfi.astats.2.Peak_level=-71.356605
+lavfi.astats.2.RMS_level=-84.405438
+lavfi.astats.2.RMS_peak=-84.405438
+lavfi.astats.2.RMS_trough=-84.405438
+lavfi.astats.2.Crest_factor=4.492019
+lavfi.astats.2.Flat_factor=0.000000
+lavfi.astats.2.Peak_count=1.000000
+lavfi.astats.2.Noise_floor=nan
+lavfi.astats.2.Noise_floor_count=0.000000
+lavfi.astats.2.Entropy=0.062209
+lavfi.astats.2.Bit_depth=20.000000
+lavfi.astats.2.Bit_depth2=32.000000
+lavfi.astats.2.Bit_depth3=32.000000
+lavfi.astats.2.Bit_depth4=32.000000
+lavfi.astats.2.Dynamic_range=79.711760
+lavfi.astats.2.Zero_crossings=53.000000
+lavfi.astats.2.Zero_crossings_rate=0.103516
+lavfi.astats.2.Number of NaNs=0.000000
+lavfi.astats.2.Number of Infs=0.000000
+lavfi.astats.2.Number of denormals=0.000000
+lavfi.astats.Overall.DC_offset=0.000011
+lavfi.astats.Overall.Min_level=-0.000243
+lavfi.astats.Overall.Max_level=0.000271
+lavfi.astats.Overall.Min_difference=0.000000
+lavfi.astats.Overall.Max_difference=0.000082
+lavfi.astats.Overall.Mean_difference=0.000011
+lavfi.astats.Overall.RMS_difference=0.000018
+lavfi.astats.Overall.Peak_level=-71.356605
+lavfi.astats.Overall.RMS_level=-84.186462
+lavfi.astats.Overall.RMS_peak=-83.977999
+lavfi.astats.Overall.RMS_trough=-84.405438
+lavfi.astats.Overall.Flat_factor=0.000000
+lavfi.astats.Overall.Peak_count=2.000000
+lavfi.astats.Overall.Abs_Peak_count=1.000000
+lavfi.astats.Overall.Noise_floor=nan
+lavfi.astats.Overall.Noise_floor_count=0.000000
+lavfi.astats.Overall.Entropy=0.063064
+lavfi.astats.Overall.Bit_depth=20.000000
+lavfi.astats.Overall.Bit_depth2=32.000000
+lavfi.astats.Overall.Bit_depth3=32.000000
+lavfi.astats.Overall.Bit_depth4=32.000000
+lavfi.astats.Overall.Number_of_samples=512.000000
+lavfi.astats.Number of NaNs=0.000000
+lavfi.astats.Number of Infs=0.000000
+lavfi.astats.Number of denormals=0.000000
+[Parsed_astats_3 @ 0x7fcbbc002c40] Channel: 1
+[Parsed_astats_3 @ 0x7fcbbc002c40] DC offset: 0.000001
+[Parsed_astats_3 @ 0x7fcbbc002c40] Min level: -0.000243
+[Parsed_astats_3 @ 0x7fcbbc002c40] Max level: 0.000265
+[Parsed_astats_3 @ 0x7fcbbc002c40] Min difference: 0.000000
+[Parsed_astats_3 @ 0x7fcbbc002c40] Max difference: 0.000082
+[Parsed_astats_3 @ 0x7fcbbc002c40] Mean difference: 0.000011
+[Parsed_astats_3 @ 0x7fcbbc002c40] RMS difference: 0.000019
+[Parsed_astats_3 @ 0x7fcbbc002c40] Peak level dB: -71.540842
+[Parsed_astats_3 @ 0x7fcbbc002c40] RMS level dB: -83.977999
+[Parsed_astats_3 @ 0x7fcbbc002c40] RMS peak dB: -83.977999
+[Parsed_astats_3 @ 0x7fcbbc002c40] RMS trough dB: -83.977999
+[Parsed_astats_3 @ 0x7fcbbc002c40] Crest factor: 4.186565
+[Parsed_astats_3 @ 0x7fcbbc002c40] Flat factor: 0.000000
+[Parsed_astats_3 @ 0x7fcbbc002c40] Peak count: 2
+[Parsed_astats_3 @ 0x7fcbbc002c40] Abs Peak count: 1
+[Parsed_astats_3 @ 0x7fcbbc002c40] Noise floor dB: nan
+[Parsed_astats_3 @ 0x7fcbbc002c40] Noise floor count: 0
+[Parsed_astats_3 @ 0x7fcbbc002c40] Entropy: 0.063920
+[Parsed_astats_3 @ 0x7fcbbc002c40] Bit depth: 20/32/32/32
+[Parsed_astats_3 @ 0x7fcbbc002c40] Dynamic range: 96.321324
+[Parsed_astats_3 @ 0x7fcbbc002c40] Zero crossings: 52
+[Parsed_astats_3 @ 0x7fcbbc002c40] Zero crossings rate: 0.101562
+[Parsed_astats_3 @ 0x7fcbbc002c40] Number of NaNs: 0
+[Parsed_astats_3 @ 0x7fcbbc002c40] Number of Infs: 0
+[Parsed_astats_3 @ 0x7fcbbc002c40] Number of denormals: 0
+[Parsed_astats_3 @ 0x7fcbbc002c40] Channel: 2
+[Parsed_astats_3 @ 0x7fcbbc002c40] DC offset: 0.000011
+[Parsed_astats_3 @ 0x7fcbbc002c40] Min level: -0.000141
+[Parsed_astats_3 @ 0x7fcbbc002c40] Max level: 0.000271
+[Parsed_astats_3 @ 0x7fcbbc002c40] Min difference: 0.000000
+[Parsed_astats_3 @ 0x7fcbbc002c40] Max difference: 0.000082
+[Parsed_astats_3 @ 0x7fcbbc002c40] Mean difference: 0.000010
+[Parsed_astats_3 @ 0x7fcbbc002c40] RMS difference: 0.000017
+[Parsed_astats_3 @ 0x7fcbbc002c40] Peak level dB: -71.356605
+[Parsed_astats_3 @ 0x7fcbbc002c40] RMS level dB: -84.405438
+[Parsed_astats_3 @ 0x7fcbbc002c40] RMS peak dB: -84.405438
+[Parsed_astats_3 @ 0x7fcbbc002c40] RMS trough dB: -84.405438
+[Parsed_astats_3 @ 0x7fcbbc002c40] Crest factor: 4.492019
+[Parsed_astats_3 @ 0x7fcbbc002c40] Flat factor: 0.000000
+[Parsed_astats_3 @ 0x7fcbbc002c40] Peak count: 2
+[Parsed_astats_3 @ 0x7fcbbc002c40] Abs Peak count: 1
+[Parsed_astats_3 @ 0x7fcbbc002c40] Noise floor dB: nan
+[Parsed_astats_3 @ 0x7fcbbc002c40] Noise floor count: 0
+[Parsed_astats_3 @ 0x7fcbbc002c40] Entropy: 0.062209
+[Parsed_astats_3 @ 0x7fcbbc002c40] Bit depth: 20/32/32/32
+[Parsed_astats_3 @ 0x7fcbbc002c40] Dynamic range: 79.711760
+[Parsed_astats_3 @ 0x7fcbbc002c40] Zero crossings: 53
+[Parsed_astats_3 @ 0x7fcbbc002c40] Zero crossings rate: 0.103516
+[Parsed_astats_3 @ 0x7fcbbc002c40] Number of NaNs: 0
+[Parsed_astats_3 @ 0x7fcbbc002c40] Number of Infs: 0
+[Parsed_astats_3 @ 0x7fcbbc002c40] Number of denormals: 0
+[Parsed_astats_3 @ 0x7fcbbc002c40] Overall
+[Parsed_astats_3 @ 0x7fcbbc002c40] DC offset: 0.000011
+[Parsed_astats_3 @ 0x7fcbbc002c40] Min level: -0.000243
+[Parsed_astats_3 @ 0x7fcbbc002c40] Max level: 0.000271
+[Parsed_astats_3 @ 0x7fcbbc002c40] Min difference: 0.000000
+[Parsed_astats_3 @ 0x7fcbbc002c40] Max difference: 0.000082
+[Parsed_astats_3 @ 0x7fcbbc002c40] Mean difference: 0.000011
+[Parsed_astats_3 @ 0x7fcbbc002c40] RMS difference: 0.000018
+[Parsed_astats_3 @ 0x7fcbbc002c40] Peak level dB: -71.356605
+[Parsed_astats_3 @ 0x7fcbbc002c40] RMS level dB: -84.186462
+[Parsed_astats_3 @ 0x7fcbbc002c40] RMS peak dB: -83.977999
+[Parsed_astats_3 @ 0x7fcbbc002c40] RMS trough dB: -84.405438
+[Parsed_astats_3 @ 0x7fcbbc002c40] Flat factor: 0.000000
+[Parsed_astats_3 @ 0x7fcbbc002c40] Peak count: 2.000000
+[Parsed_astats_3 @ 0x7fcbbc002c40] Abs Peak count: 1.000000
+[Parsed_astats_3 @ 0x7fcbbc002c40] Noise floor dB: nan
+[Parsed_astats_3 @ 0x7fcbbc002c40] Noise floor count: 0.000000
+[Parsed_astats_3 @ 0x7fcbbc002c40] Entropy: 0.063064
+[Parsed_astats_3 @ 0x7fcbbc002c40] Bit depth: 20/32/32/32
+[Parsed_astats_3 @ 0x7fcbbc002c40] Number of samples: 512
+[Parsed_astats_3 @ 0x7fcbbc002c40] Number of NaNs: 0.000000
+[Parsed_astats_3 @ 0x7fcbbc002c40] Number of Infs: 0.000000
+[Parsed_astats_3 @ 0x7fcbbc002c40] Number of denormals: 0.000000
+[out#0/null @ 0x55ced8494300] video:0KiB audio:11252KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+size=N/A time=00:01:00.01 bitrate=N/A speed= 178x    
+
+exit_status=0

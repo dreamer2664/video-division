@@ -1,0 +1,3 @@
+Tracked v05 WAV/MP3/FLAC stems: []
+QA cited /tmp/grade_v05_build/narration/narration_stem_48k.wav: absent on independent checkout/sandbox
+No isolated narration or bed available: stem probe, stem silencedetect and actual stem-to-delivered-mix comparison cannot be run. No TTS regeneration or video rerender performed.
