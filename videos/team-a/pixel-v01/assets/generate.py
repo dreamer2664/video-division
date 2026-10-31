@@ -269,8 +269,8 @@ def fill_s5(lt):   return NDOTS * ease_in_out((lt - 0.3) / 5.7)
 def fill_s6(lt):   return NDOTS * ease_out_cubic((lt - 0.8) / 3.0)
 
 def shot2(dr, ov, lt, t):
-    text_c(dr, COPY["s2_head"], "s", 84, 150, INK, a=fade(lt, 0.0, 0.6) * (1 - fade(lt, 2.6, 3.2)))
-    legend(dr, 100, 150, a=fade(lt, 2.6, 3.2))
+    text_c(dr, COPY["s2_head"], "s", 84, 150, INK, a=fade(lt, 0.0, 0.6) * (1 - fade(lt, 2.45, 2.85)))
+    legend(dr, 100, 150, a=fade(lt, 2.85, 3.25))
     ga = fade(lt, 1.2, 2.2)
     if ga > 0: draw_grid(ov, fill_s2(lt), alpha=ga)
     counter_block(dr, max(fill_s2(lt), 0) * 100, a=fade(lt, 0.8, 1.4))
@@ -280,10 +280,10 @@ def shot3(dr, ov, lt, t):
     dim = fade(lt, 6.0, 6.6)
     draw_grid(ov, f, alpha=1 - 0.45 * dim)
     counter_block(dr, f * 100)
-    top = 1 - fade(lt, 6.0, 6.5)
+    top = 1 - fade(lt, 6.0, 6.38)
     legend(dr, 100, 150, a=top)
-    text_c(dr, COPY["s3_exact"], "s", 60, 150, INK, a=fade(lt, 6.3, 6.9) * (1 - fade(lt, 8.0, 8.5)), stroke=6)
-    text_c(dr, COPY["s3_mem"], "s", 60, 150, INK, a=fade(lt, 8.2, 8.8), stroke=6)
+    text_c(dr, COPY["s3_exact"], "s", 60, 150, INK, a=fade(lt, 6.4, 6.8) * (1 - fade(lt, 7.95, 8.35)), stroke=6)
+    text_c(dr, COPY["s3_mem"], "s", 60, 150, INK, a=fade(lt, 8.4, 8.9), stroke=6)
     punch(dr, COPY["s3_punch"], lt, 6.05)
     # 11.5 day-blocks under the punch
     if lt > 6.5:
@@ -316,8 +316,8 @@ def shot5(dr, ov, lt, t):
     draw_grid(ov, f, alpha=1 - 0.5 * dim)
     counter_block(dr, f * 100_000)
     legend(dr, 100_000, 150, a=1 - fade(lt, 6.1, 6.6))
-    text_c(dr, COPY["s5_1995"], "s", 60, 150, INK, a=fade(lt, 6.9, 7.5) * (1 - fade(lt, 9.3, 9.8)), stroke=6)
-    text_c(dr, COPY["s5_31"], "s", 60, 150, INK, a=fade(lt, 9.6, 10.2), stroke=6)
+    text_c(dr, COPY["s5_1995"], "s", 60, 150, INK, a=fade(lt, 6.9, 7.5) * (1 - fade(lt, 9.2, 9.55)), stroke=6)
+    text_c(dr, COPY["s5_31"], "s", 60, 150, INK, a=fade(lt, 9.55, 10.0), stroke=6)
     if lt < 10.3:
         punch(dr, COPY["s5_punch"], lt, 6.1)
     # year ruler 1995 -> 2026, on a dark panel so it stays legible over the dots
@@ -343,8 +343,8 @@ def shot6(dr, ov, lt, t):
         dim = fade(lt, 3.9, 4.4)
         draw_grid(ov, f, alpha=1 - 0.45 * dim)
         counter_block(dr, f * 100_000_000, size=104)
-        text_c(dr, COPY["s6_more"], "s", 64, 150, INK, a=fade(lt, 0.0, 0.5) * (1 - fade(lt, 0.9, 1.4)), stroke=6)
-        legend(dr, 100_000_000, 150, a=fade(lt, 1.0, 1.5) * (1 - fade(lt, 4.0, 4.5)))
+        text_c(dr, COPY["s6_more"], "s", 64, 150, INK, a=fade(lt, 0.0, 0.5) * (1 - fade(lt, 0.85, 1.2)), stroke=6)
+        legend(dr, 100_000_000, 150, a=fade(lt, 1.2, 1.6) * (1 - fade(lt, 4.0, 4.5)))
         punch(dr, COPY["s6_punch"], lt, 3.95)
     elif lt < 7.4:
         draw_grid(ov, NDOTS, alpha=0.16 * (1 - fade(lt, 6.9, 7.4)))
