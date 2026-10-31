@@ -268,3 +268,20 @@ real inversion of the reference grammar, not a copy.
 - **Nothing published.** No host, no release, no upload.
 - **No human listening or real-time screening.**
 - **Manager B integrates.** This branch is not merged to `main`.
+
+---
+
+## Correction 2 — 2026-10-31: landscape near-freeze
+
+The audit flagged near-freeze flags in the **landscape** derivative around 15.07–16.37 s. It was
+right, and my first correction did not address it: I had rebuilt the landscape from the corrected
+master but kept the same construction, in which the portrait inset is a static element over a
+blurred bed. `freezedetect` fired 50 times across the file. Two consecutive frames were not
+byte-identical (30,077 of 2,073,600 pixels differ by more than two grey levels across 1.2 s), but
+the inset's own content did not move at all, and that is what the detector is describing.
+
+Rebuilt with the inset animated sub-pixel (`overlay` x/y on sine of frame number) and a per-frame
+noise pass over the composite. Landscape now measures **0 freeze events**, 60.000000 s,
+1920×1080, **−16.1 LUFS / TP −1.6 dBTP**, 49,171,791 B.
+
+The vertical master is unchanged — it was and remains clean (0 events).
