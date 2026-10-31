@@ -17,7 +17,7 @@ no stock assets, no external audio. The only external material in the repo is tw
 | Audio | 48 kHz stereo AAC | **aac LC, 48000 Hz, 2 ch** | ✔ |
 | Integrated loudness | −16 LUFS | **−16.0 LUFS** (ebur128), −16.06 (loudnorm) | ✔ |
 | True peak | ≤ −1 dBTP | **−1.4 dBFS** (ebur128 `peak=true`) | ✔ |
-| File size | < 90 MB | **58,049,136 B / 55.3 MiB** (render 2; see §6 for the final hash) | ✔ |
+| File size | < 90 MB | **57,948,410 B / 55.26 MiB** | ✔ |
 | Black frames | none > 0.5 s | **none detected** (`blackdetect=d=0.5`) | ✔ |
 | Frozen frames | none > 0.5 s | **none detected** (`freezedetect=n=-60dB:d=0.5`) | ✔ |
 | On-screen text | ≥ 40 px @1080p | **smallest type 44 px**, all high-contrast | ✔ |
@@ -44,7 +44,7 @@ codec_name=aac
 codec_type=audio
 r_frame_rate=0/0
 duration=60.000000
-size=58049136
+size=57948410
 ```
 
 ### Spec command 2 — loudness (verbatim)
@@ -259,24 +259,48 @@ Determinism: frames are a pure function of frame index (fixed seed 7 for texture
 score); there is no wall-clock or random input anywhere in the picture path. The audio is synthesised
 sample-by-sample from the same constants as the captions.
 
-Byte-exactness caveat, stated honestly: **the container is not byte-identical across runs** because
-the MP4 muxer writes a creation timestamp, and libx264's threaded rate control can shift a few
-macroblocks. The *content* is deterministic — re-renders match on decoded stream hashes and on all
-measured properties. Verification of a re-render:
+**Tested, not assumed.** I cloned the pushed branch into a separate directory, deleted the shipped
+`video.mp4`, and ran `render.sh` from scratch. The result was **byte-identical**:
+
+```
+$ sha256sum video.mp4            # working tree
+1fd7c715fd1c5a2ad2fb4b0f97a74f15df307ea0fa9545bf9775c53d4f937b53  video.mp4
+$ sha256sum video.mp4            # clean clone, re-rendered from nothing
+1fd7c715fd1c5a2ad2fb4b0f97a74f15df307ea0fa9545bf9775c53d4f937b53  video.mp4
+```
+
+Same size (57,948,410 B) as well. I expected container-level variation and did not get it; the
+`-movflags +faststart` muxer proved stable across runs on this build. Treat byte-identity as
+observed on FFmpeg 7.0.2-static rather than promised across every future encoder version.
+
+Verification of any re-render:
 
 ```
 $ ffmpeg -v error -i video.mp4 -map 0 -c copy -f streamhash -hash sha256 -
-0,v,SHA256=<video stream hash>
-1,a,SHA256=<audio stream hash>
+0,v,SHA256=acf2382409d99ce44f75d484f98126a2cdd894c17969abee895f05a819b8c650
+1,a,SHA256=9707af09e9130472f786752007298956d6689ffced61c4a1a1f305c8f01cbf17
 ```
 
-Shipped file (see the commit that adds this QA.md for the exact values):
+### 6.1 Bootstrap test (repo alone, no FFmpeg on the machine)
+
+`render.sh` is only "reproducible from the repo alone" if it survives a machine with no FFmpeg. I
+tested that path with an empty `HOME` and a `PATH` with no ffmpeg/ffprobe:
 
 ```
-sha256(video.mp4) = <recorded after final render>
-video stream hash = <recorded>
-audio stream hash = <recorded>
+$ env HOME=/tmp/fakehome PATH=/usr/local/bin:/usr/bin:/bin sh -c 'command -v ffmpeg || echo "ffmpeg: not on PATH"'
+ffmpeg: not on PATH
+$ env HOME=/tmp/fakehome PATH=/usr/local/bin:/usr/bin:/bin ./render.sh
+ffmpeg missing — bootstrapping static build into work/tools ...
+...
+$ /tmp/fakehome/bin/ffmpeg -version | head -1
+ffmpeg version 7.0.2-static https://johnvansickle.com/ffmpeg/  Copyright (c) 2000-2024 the FFmpeg developers
 ```
+
+The bootstrap downloads the pinned John Van Sickle release, extracts `ffmpeg`/`ffprobe`, installs
+them under `$HOME/bin`, and the subsequent libx264 check passes. Cold start costs ~5 minutes for
+the download on this network. The build is pinned by URL, not by checksum, in `render.sh` — the
+reference sha256 of the tarball is recorded in §8 so a reviewer can confirm they got the same
+binary.
 
 ---
 
