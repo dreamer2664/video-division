@@ -1,6 +1,6 @@
 # BOARD — video division
 
-Integration owner: **lux (Manager B)**, reporting to Manager A. Updated 2026-10-31 ~16:31 UTC. **All four first-generation samples ACCEPTED and merged to main. No publishing.**
+Integration owner: **lux (Manager B)**, reporting to Manager A. Updated 2026-10-31 16:28 UTC. **All four first-generation samples ACCEPTED and merged to main. No publishing.**
 
 | task | owner | team | final status | source branch / audited head | merge commit | next step |
 |---|---|---|---|---|---|---|
