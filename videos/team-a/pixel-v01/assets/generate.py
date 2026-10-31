@@ -28,11 +28,11 @@ WORK = ROOT / "work"
 FONT_SANS = HERE / "fonts" / "DejaVuSans-Bold.ttf"
 FONT_MONO = HERE / "fonts" / "DejaVuSansMono-Bold.ttf"
 
-BG = (16, 21, 29)          # #10151D lifted near-black (no pure-black frames)
+BG = (26, 36, 51)          # #1A2433 graphite navy: luma ~0.13 > blackdetect pix_th 0.10
 INK = (244, 247, 250)      # #F4F7FA
 AMBER = (255, 176, 0)      # #FFB000
 DIM = (138, 151, 165)      # #8A97A5
-FAINT = (58, 72, 90)       # empty-dot colour
+FAINT = (64, 80, 100)      # empty-dot colour
 
 SHOTS = [(0.0, 6.0), (6.0, 12.0), (12.0, 22.0), (22.0, 28.0),
          (28.0, 40.0), (40.0, 50.0), (50.0, 57.0), (57.0, 60.0)]
@@ -180,10 +180,10 @@ def legend(dr, per_dot, cy, a=1.0):
 def make_bg():
     y, x = np.mgrid[0:H, 0:W].astype(np.float32)
     dx, dy = (x - W / 2) / (W / 2), (y - H / 2) / (H / 2)
-    vig = 1.0 - 0.35 * np.clip(dx * dx + dy * dy, 0, 1.6)
+    vig = 1.0 - 0.16 * np.clip(dx * dx + dy * dy, 0, 1.6)
     arr = np.zeros((H, W, 3), dtype=np.float32)
     for i, c in enumerate(BG):
-        arr[..., i] = c * vig + 6 * (1 - vig)
+        arr[..., i] = c * vig
     return Image.fromarray(np.clip(arr, 0, 255).astype(np.uint8), "RGB")
 
 def dot_xy(i):
@@ -397,6 +397,59 @@ def shot8(dr, ov, lt, t):
 
 SHOT_FNS = [shot1, shot2, shot3, shot4, shot5, shot6, shot7, shot8]
 
+# ---------------------------------------------------------------- living texture
+# Every frame gets real, seeded per-frame atmosphere: a drifting light gradient and fine
+# grain. This is not decoration-free vanity: a slate-flat background during a typographic hold
+# reads as a *frozen frame* to any motion check (and to the eye, as a dead image). The drift also
+# gives the dark field a slow breathing quality that suits a film about time passing.
+_YY, _XX = np.mgrid[0:H, 0:W].astype(np.float32)
+_NX = (_XX - W / 2) / (W / 2)
+_NY = (_YY - H / 2) / (H / 2)
+_RAD = np.sqrt(_NX * _NX + _NY * _NY)
+_rng = np.random.default_rng(7)
+GRAIN_SIGMA = 2.0   # smallest value that keeps every hold clean under freezedetect d=0.5 (~8 Mbps here)
+# Grain is generated at quarter resolution and upscaled: its structure lives at 2-4 px scale,
+# which x264 actually preserves instead of spending bits fighting per-pixel noise. Fine
+# per-pixel noise looked better in theory and cost 11 Mbps in practice.
+def _grain_bank(n=6):
+    out = []
+    for _ in range(n):
+        lr = _rng.normal(0.0, 1.0, (H // 4, W // 4)).astype(np.float32)
+        im = Image.fromarray(lr, mode="F").resize((W, H), Image.BILINEAR)
+        out.append((np.asarray(im, dtype=np.float32) * GRAIN_SIGMA).astype(np.float32))
+    return out
+_DGRAIN = _grain_bank()
+
+def atmosphere(t):
+    """Additive light field + grain, evaluated per frame index (deterministic)."""
+    ang = 0.55 * np.sin(t * 0.41) + 0.35 * t
+    cx, cy = 0.62 * np.cos(ang), 0.50 * np.sin(ang * 1.37 + 0.4)
+    d2 = (_NX - cx) ** 2 + (_NY - cy) ** 2
+    glow = 15.0 * np.exp(-d2 / 2.1) + 5.0 * np.exp(-_RAD ** 2 / 5.0)
+    drift = 1.4 * np.sin(6.283 * (t * 0.11) + _RAD * 4.0)
+    k = int(round(t * FPS)) % len(_DGRAIN)
+    return (glow + drift + _DGRAIN[k])[..., None]
+
+_ATMO_CACHE = {}
+def _atmo_slice(t):
+    key = round(t, 5)
+    if key not in _ATMO_CACHE:
+        _ATMO_CACHE.clear()
+        _ATMO_CACHE[key] = atmosphere(t).astype(np.float32)
+    return _ATMO_CACHE[key]
+
+def draw_seconds_bar(img, t):
+    """Whole film in one bar: elapsed amber, remaining empty, with a hairline spark.
+    Always in motion, so no hold anywhere is a dead frame."""
+    dr = ImageDraw.Draw(img)
+    x0, x1, y = 160, 1760, 78
+    p = clamp(t / DUR)
+    dr.rounded_rectangle([x0, y - 3, x1, y + 3], 3, fill=(46, 60, 78))
+    if p > 0:
+        dr.rounded_rectangle([x0, y - 3, x0 + (x1 - x0) * p, y + 3], 3, fill=AMBER)
+    sx = x0 + (x1 - x0) * p
+    dr.ellipse([sx - 5, y - 5, sx + 5, y + 5], fill=INK)
+
 def draw_ruler(img, t):
     dr = ImageDraw.Draw(img)
     x0, x1, y = 160, 1760, 1018
@@ -426,8 +479,10 @@ def render_frame(t):
         overlay(idx, lt, lt / DISSOLVE)
     else:
         overlay(idx, lt, 1.0)
+    draw_seconds_bar(img, t)
     draw_ruler(img, t)
-    return img
+    arr = np.asarray(img, dtype=np.float32) + _atmo_slice(t)
+    return Image.fromarray(np.clip(arr, 0, 255).astype(np.uint8), "RGB")
 
 # ---------------------------------------------------------------- audio (48kHz stereo, fully synthesized)
 SR = 48000
