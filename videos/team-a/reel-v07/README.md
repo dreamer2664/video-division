@@ -4,7 +4,7 @@ A self-contained, original 60-second rule-horror short. `video.mp4` is the 1080Ã
 
 ## Re-render offline
 
-Requirements: Python 3.10+, NumPy and Pillow (`python3 -m pip install -r requirements.txt`), and FFmpeg/ffprobe with `libx264`, `libass`, AAC and FLAC. From this directory:
+Requirements: Python 3.10+, NumPy and Pillow (`python3 -m pip install -r requirements.txt`), and FFmpeg/ffprobe with `libx264`, `libass`, `drawtext`/FreeType, AAC and FLAC. From this directory:
 
 ```bash
 ./render.sh

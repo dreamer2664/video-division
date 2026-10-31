@@ -266,10 +266,12 @@ def landscape_bg(path):
     d.line((90,135,570,135),fill=(96,118,122,155),width=2);d.line((1350,135,1830,135),fill=(96,118,122,155),width=2)
     txt(d,(100,180),'NIGHT SHIFT',47,(*DIM,255));txt(d,(100,285),'ARRIVAL',96,(*PALE,255));txt(d,(100,391),'LOG',96,(*PALE,255))
     d.rectangle((100,535,430,543),fill=(*AMBER,180));txt(d,(100,590),'SECURITY  /  02:41',42,(132,153,148,255))
-    txt(d,(1394,180),'EXIT COUNT',50,(*DIM,255))
+    txt(d,(1394,180),'EXIT REGISTER',50,(*DIM,255))
     for i in range(4):
-        y0=310+i*133;txt(d,(1394,y0),f'0{i+1}',75,(*(AMBER if i<3 else RED),220));d.line((1500,y0+60,1790,y0+60),fill=(80,101,101,140),width=3)
-    txt(d,(1394,904),'FLOOR  /  13',47,(145,153,135,255));im.save(path,optimize=True)
+        y0=330+i*133
+        d.rectangle((1394,y0,1420,y0+26),outline=(116,141,132,200),width=3)
+        d.line((1460,y0+22,1790,y0+22),fill=(80,101,101,140),width=3)
+    txt(d,(1394,904),'ACCESS  /  CONTROL',47,(145,153,135,255));im.save(path,optimize=True)
 
 def main():
     p=argparse.ArgumentParser();p.add_argument('--out',type=Path,required=True);a=p.parse_args();a.out.mkdir(parents=True,exist_ok=True)
@@ -277,9 +279,6 @@ def main():
         draw_scene(i).save(a.out/f'shot{i:02}.png',optimize=True)
         print('art',i,'/25',flush=True)
     landscape_bg(a.out/'landscape-bg.png')
-    # One restrained animated detail per shot: a moving live-camera cursor.
-    dot=Image.new('RGBA',(70,70));d=ImageDraw.Draw(dot)
-    d.ellipse((12,12,58,58),outline=(245,197,66,100),width=3);d.ellipse((27,27,43,43),fill=(245,197,66,225));dot.save(a.out/'cursor.png')
     with (a.out/'shots.ffconcat').open('w') as f:
         f.write('ffconcat version 1.0\n')
         for i in range(1,26):f.write(f"file '{(a.out/f'shot{i:02}.png').resolve()}'\nduration 2.4\n")
