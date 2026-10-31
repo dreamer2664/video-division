@@ -249,7 +249,7 @@ def main():
  for n in range(FPS*SECONDS):
   t=n/FPS; i=min(24,int(t/SLOT)); local=(t-i*SLOT)/SLOT
   base=base_scene(i,local); draw_dynamic(base,i,local)
-  ease=(1-math.cos(math.pi*local))/2; zoom=1+0.06*ease
+  ease=1-(1-local)**2; zoom=1+0.06*ease
   cw,ch=int(W/zoom),int(H/zoom); left=(W-cw)//2; top=(H-ch)//2
   frame=base.crop((left,top,left+cw,top+ch)).resize((W,H),Image.Resampling.LANCZOS)
   draw_caption(frame,i,t,cues)
