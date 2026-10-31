@@ -1,0 +1,49 @@
+{
+  "PRs": [
+    {
+      "PR": 1,
+      "state": "open",
+      "merged": false,
+      "head": "047e32219512984ada13356e5a2dcaf77fde49b1",
+      "merge_commit_sha": "ed400ffc113af37db371939c62618a2d39d015d2"
+    },
+    {
+      "PR": 2,
+      "state": "closed",
+      "merged": true,
+      "head": "f4ba4ea2a03b177d7aee58bc2dac765f0fb1ad9f",
+      "merge_commit_sha": "85ddc2421bd2d7ffab1f1bb084b3084e58c1c371"
+    },
+    {
+      "PR": 3,
+      "state": "open",
+      "merged": false,
+      "head": "6dbf2847b9f394eb733274df4bc3e5bd47d3f875",
+      "merge_commit_sha": "c0c754c3f43c8c2407574cd0f1d93d23f2edfc3e"
+    },
+    {
+      "PR": 4,
+      "state": "open",
+      "merged": false,
+      "head": "f52a0377ed4e20769e14e052fe1b319645a9594a",
+      "merge_commit_sha": "67947e55b9279ad7d8cb97fbd607d032de5a9b65"
+    }
+  ],
+  "accepted_media_on_remote_main": [
+    {
+      "file": "videos/team-a/reel-v07/video.mp4",
+      "blob": "7efd89d06d28b67d7221e69972a5c03f5342df36",
+      "audited_blob_matches_main": true,
+      "sha256": "89942ed1d0717940ad9f83f743ef76918ae3282e2c5e4e29e29b20900e914d85"
+    },
+    {
+      "file": "videos/team-a/reel-v07/video-landscape.mp4",
+      "blob": "81ef813a7bcc6f14982696ac65c13040875d5a0c",
+      "audited_blob_matches_main": true,
+      "sha256": "0f9a6ff8511b080d6393a9bdf25c5279d73d19347af228e9752a59b317fb7cf3"
+    }
+  ],
+  "main_after_video_merge": "85ddc2421bd2d7ffab1f1bb084b3084e58c1c371",
+  "all_four_audited": true,
+  "unaudited_PRs": []
+}

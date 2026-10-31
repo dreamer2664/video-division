@@ -1,0 +1,48 @@
+$ ffmpeg -hide_banner -nostats -i video.mp4 -vn -af loudnorm=print_format=json -f null -
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'video.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf61.7.103
+  Duration: 00:01:00.00, start: 0.000000, bitrate: 4186 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080, 3984 kb/s, 30 fps, 30 tbr, 15360 tbn (default)
+      Metadata:
+        handler_name    : VideoHandler
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.19.101 libx264
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 192 kb/s (default)
+      Metadata:
+        handler_name    : SoundHandler
+        vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:1 -> #0:0 (aac (native) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, null, to 'pipe:':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf61.7.103
+  Stream #0:0(und): Audio: pcm_s16le, 192000 Hz, stereo, s16, 6144 kb/s (default)
+      Metadata:
+        handler_name    : SoundHandler
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.19.101 pcm_s16le
+[Parsed_loudnorm_0 @ 0x7f8c50001b80] 
+{
+	"input_i" : "-16.04",
+	"input_tp" : "-1.65",
+	"input_lra" : "1.90",
+	"input_thresh" : "-26.29",
+	"output_i" : "-24.15",
+	"output_tp" : "-9.75",
+	"output_lra" : "1.80",
+	"output_thresh" : "-34.40",
+	"normalization_type" : "dynamic",
+	"target_offset" : "0.15"
+}
+[out#0/null @ 0x56383b468300] video:0KiB audio:45008KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+size=N/A time=00:01:00.10 bitrate=N/A speed=36.8x    
+
+exit_status=0

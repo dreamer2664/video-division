@@ -1,0 +1,464 @@
+{
+  "stem": "assets/narration.flac",
+  "stem_samples_48000": 2871152,
+  "stem_duration_s": 59.815666666666665,
+  "crosscorrelation_lag_samples": 0,
+  "crosscorrelation_lag_seconds": 0.0,
+  "windows": [
+    {
+      "start": 0,
+      "voice_active_fraction_above_minus40dBFS_20ms": 0.584,
+      "voice_rms_dbfs": -23.03267189014097,
+      "fitted_voice_to_residual_db": 4.350856345961376
+    },
+    {
+      "start": 10,
+      "voice_active_fraction_above_minus40dBFS_20ms": 0.622,
+      "voice_rms_dbfs": -22.746260998964615,
+      "fitted_voice_to_residual_db": 7.696454725793885
+    },
+    {
+      "start": 20,
+      "voice_active_fraction_above_minus40dBFS_20ms": 0.536,
+      "voice_rms_dbfs": -23.760738067980377,
+      "fitted_voice_to_residual_db": 5.21270448487355
+    },
+    {
+      "start": 30,
+      "voice_active_fraction_above_minus40dBFS_20ms": 0.612,
+      "voice_rms_dbfs": -22.535065346795164,
+      "fitted_voice_to_residual_db": 9.336365785118758
+    },
+    {
+      "start": 40,
+      "voice_active_fraction_above_minus40dBFS_20ms": 0.404,
+      "voice_rms_dbfs": -24.631032777728073,
+      "fitted_voice_to_residual_db": 1.7078740166628963
+    },
+    {
+      "start": 50,
+      "voice_active_fraction_above_minus40dBFS_20ms": 0.5519348268839104,
+      "voice_rms_dbfs": -23.335968330896108,
+      "fitted_voice_to_residual_db": 4.958778478791299
+    }
+  ],
+  "per_second_fits": [
+    {
+      "time": 0.0,
+      "gain": 1.5113134735770233,
+      "correlation": 0.8720510941505091,
+      "speech_power": 0.005610607428196607,
+      "residual_power": 0.0017671779904452679
+    },
+    {
+      "time": 1.0,
+      "gain": 1.5321695001388693,
+      "correlation": 0.9231022415873226,
+      "speech_power": 0.018615592988465223,
+      "residual_power": 0.0032306753505114056
+    },
+    {
+      "time": 2.0,
+      "gain": 1.5152900614384948,
+      "correlation": 0.8772533054004485,
+      "speech_power": 0.012617200399677283,
+      "residual_power": 0.003777858246292152
+    },
+    {
+      "time": 3.0,
+      "gain": 1.5547380318637662,
+      "correlation": 0.7957652447297171,
+      "speech_power": 0.00804610563642071,
+      "residual_power": 0.004660097537824892
+    },
+    {
+      "time": 4.0,
+      "gain": 1.6283407932600034,
+      "correlation": 0.513947177719578,
+      "speech_power": 0.0023289004483137937,
+      "residual_power": 0.006487959726405491
+    },
+    {
+      "time": 5.0,
+      "gain": 1.5808103846310506,
+      "correlation": 0.8822540805304749,
+      "speech_power": 0.01868833419995081,
+      "residual_power": 0.0053211726871802995
+    },
+    {
+      "time": 6.0,
+      "gain": 1.5895080505083334,
+      "correlation": 0.6971735017920041,
+      "speech_power": 0.005063298674035776,
+      "residual_power": 0.005353920513359565
+    },
+    {
+      "time": 7.0,
+      "gain": 1.5690675164668055,
+      "correlation": 0.8928860281290146,
+      "speech_power": 0.01990704359075989,
+      "residual_power": 0.005062736243466282
+    },
+    {
+      "time": 8.0,
+      "gain": 1.5735021095030666,
+      "correlation": 0.8429540555838593,
+      "speech_power": 0.011135719723522026,
+      "residual_power": 0.004535777232660895
+    },
+    {
+      "time": 9.0,
+      "gain": 1.5430218411305163,
+      "correlation": 0.906951199543911,
+      "speech_power": 0.01806849885570755,
+      "residual_power": 0.00389766573788052
+    },
+    {
+      "time": 10.0,
+      "gain": 1.5498225547582587,
+      "correlation": 0.9058222172276527,
+      "speech_power": 0.015419696874396628,
+      "residual_power": 0.0033730342139149036
+    },
+    {
+      "time": 11.0,
+      "gain": 1.5598472711457296,
+      "correlation": 0.8725063112680942,
+      "speech_power": 0.009148336119026667,
+      "residual_power": 0.002868910071935961
+    },
+    {
+      "time": 12.0,
+      "gain": 1.5699146894120453,
+      "correlation": 0.8469106669930649,
+      "speech_power": 0.006249628795783103,
+      "residual_power": 0.0024635979686505206
+    },
+    {
+      "time": 13.0,
+      "gain": 1.5039412965582748,
+      "correlation": 0.9539756212038638,
+      "speech_power": 0.020020365750440257,
+      "residual_power": 0.001978356392971458
+    },
+    {
+      "time": 14.0,
+      "gain": 1.540126100176553,
+      "correlation": 0.8809801665403677,
+      "speech_power": 0.0059143607093537194,
+      "residual_power": 0.0017060002875624776
+    },
+    {
+      "time": 15.0,
+      "gain": 1.5360626567513695,
+      "correlation": 0.9572437530627408,
+      "speech_power": 0.016985783037368644,
+      "residual_power": 0.0015512613891143102
+    },
+    {
+      "time": 16.0,
+      "gain": 1.5396867830842893,
+      "correlation": 0.8838214604635345,
+      "speech_power": 0.008261323942519534,
+      "residual_power": 0.0023146547390976357
+    },
+    {
+      "time": 17.0,
+      "gain": 1.5016877026537514,
+      "correlation": 0.9603580776465497,
+      "speech_power": 0.017867652722729117,
+      "residual_power": 0.0015055362912945462
+    },
+    {
+      "time": 18.0,
+      "gain": 1.5249020072986579,
+      "correlation": 0.869504084851486,
+      "speech_power": 0.004747739648382987,
+      "residual_power": 0.0015320289714381573
+    },
+    {
+      "time": 19.0,
+      "gain": 1.5092751729322063,
+      "correlation": 0.957324668755754,
+      "speech_power": 0.01919189525813467,
+      "residual_power": 0.0017491986557677966
+    },
+    {
+      "time": 20.0,
+      "gain": 1.526885190414107,
+      "correlation": 0.8929063996437431,
+      "speech_power": 0.007816689130465845,
+      "residual_power": 0.001987483939535891
+    },
+    {
+      "time": 21.0,
+      "gain": 1.5220861194969217,
+      "correlation": 0.7162785201648181,
+      "speech_power": 0.0024102231305889897,
+      "residual_power": 0.0022875646576518906
+    },
+    {
+      "time": 22.0,
+      "gain": 1.535688663869728,
+      "correlation": 0.9178257542189279,
+      "speech_power": 0.014084520730187122,
+      "residual_power": 0.002634914132009694
+    },
+    {
+      "time": 23.0,
+      "gain": 1.5226009070166089,
+      "correlation": 0.9078142790056861,
+      "speech_power": 0.013132846970738375,
+      "residual_power": 0.0028026225781523314
+    },
+    {
+      "time": 24.0,
+      "gain": 1.5264281991235578,
+      "correlation": 0.8489751961491133,
+      "speech_power": 0.009858855565774304,
+      "residual_power": 0.0038195822433950343
+    },
+    {
+      "time": 25.0,
+      "gain": 1.5800546033990739,
+      "correlation": 0.7056652363258537,
+      "speech_power": 0.0031284912375232356,
+      "residual_power": 0.0031540810874539993
+    },
+    {
+      "time": 26.0,
+      "gain": 1.5568410155143886,
+      "correlation": 0.9110844957042609,
+      "speech_power": 0.015410067031243277,
+      "residual_power": 0.003154602191603396
+    },
+    {
+      "time": 27.0,
+      "gain": 1.5469516194712838,
+      "correlation": 0.833036186390757,
+      "speech_power": 0.007057576315647995,
+      "residual_power": 0.0031125851635165442
+    },
+    {
+      "time": 28.0,
+      "gain": 1.5599776967486554,
+      "correlation": 0.9304388037839428,
+      "speech_power": 0.018460550936560967,
+      "residual_power": 0.0028634665219723333
+    },
+    {
+      "time": 29.0,
+      "gain": 1.5531473774860254,
+      "correlation": 0.818421670528785,
+      "speech_power": 0.008823717025162499,
+      "residual_power": 0.004349666361179346
+    },
+    {
+      "time": 30.0,
+      "gain": 1.568509270177381,
+      "correlation": 0.8880481830912933,
+      "speech_power": 0.008333322544533788,
+      "residual_power": 0.0022335174567907567
+    },
+    {
+      "time": 31.0,
+      "gain": 1.5057971256096867,
+      "correlation": 0.9573754949516521,
+      "speech_power": 0.020705452903150925,
+      "residual_power": 0.001884749411593158
+    },
+    {
+      "time": 32.0,
+      "gain": 1.5434070117855478,
+      "correlation": 0.9181314032112551,
+      "speech_power": 0.008276580301300974,
+      "residual_power": 0.0015418316319940088
+    },
+    {
+      "time": 33.0,
+      "gain": 1.556334988778928,
+      "correlation": 0.9458565156354309,
+      "speech_power": 0.01116089664047356,
+      "residual_power": 0.0013143335090905924
+    },
+    {
+      "time": 34.0,
+      "gain": 1.528641239425263,
+      "correlation": 0.9537536811921539,
+      "speech_power": 0.011879058991962222,
+      "residual_power": 0.0011799308677695975
+    },
+    {
+      "time": 35.0,
+      "gain": 1.534451338215429,
+      "correlation": 0.9747297606151981,
+      "speech_power": 0.020597380358114356,
+      "residual_power": 0.0010818338441615622
+    },
+    {
+      "time": 36.0,
+      "gain": 1.5309292569419235,
+      "correlation": 0.94093957542474,
+      "speech_power": 0.008946990649273796,
+      "residual_power": 0.0011584094540415218
+    },
+    {
+      "time": 37.0,
+      "gain": 1.5300728551205525,
+      "correlation": 0.9566078909821889,
+      "speech_power": 0.013793379023517117,
+      "residual_power": 0.0012797269379636194
+    },
+    {
+      "time": 38.0,
+      "gain": 1.5376990067660377,
+      "correlation": 0.8390869550829156,
+      "speech_power": 0.0036851197147839128,
+      "residual_power": 0.001548927816175034
+    },
+    {
+      "time": 39.0,
+      "gain": 1.5262404220617631,
+      "correlation": 0.959515738708712,
+      "speech_power": 0.023483960410844242,
+      "residual_power": 0.00202349487748955
+    },
+    {
+      "time": 40.0,
+      "gain": 1.517238926118767,
+      "correlation": 0.6702134752080011,
+      "speech_power": 0.00304656787315191,
+      "residual_power": 0.0037358500538734584
+    },
+    {
+      "time": 43.0,
+      "gain": 1.5696264589192148,
+      "correlation": 0.7331712648335689,
+      "speech_power": 0.007432830815846778,
+      "residual_power": 0.0063946599450783745
+    },
+    {
+      "time": 44.0,
+      "gain": 1.5885910322226626,
+      "correlation": 0.7487842303500256,
+      "speech_power": 0.008480457628648653,
+      "residual_power": 0.006644908974727086
+    },
+    {
+      "time": 45.0,
+      "gain": 1.5386694830592018,
+      "correlation": 0.8012974390373845,
+      "speech_power": 0.014621841549483986,
+      "residual_power": 0.008150860492569991
+    },
+    {
+      "time": 46.0,
+      "gain": 1.543946901983613,
+      "correlation": 0.8175967680557034,
+      "speech_power": 0.015490991747222994,
+      "residual_power": 0.007683002269574166
+    },
+    {
+      "time": 47.0,
+      "gain": 1.6361665027398498,
+      "correlation": 0.4357366569998649,
+      "speech_power": 0.0018750521222940027,
+      "residual_power": 0.008000585610446788
+    },
+    {
+      "time": 48.0,
+      "gain": 1.536102281318808,
+      "correlation": 0.8585889738048216,
+      "speech_power": 0.021675561949403777,
+      "residual_power": 0.007727986986328922
+    },
+    {
+      "time": 49.0,
+      "gain": 1.5312633324045275,
+      "correlation": 0.7572869099510171,
+      "speech_power": 0.009765854497188291,
+      "residual_power": 0.00726315350481935
+    },
+    {
+      "time": 50.0,
+      "gain": 1.5718086937605245,
+      "correlation": 0.8150525530845544,
+      "speech_power": 0.012928827604823862,
+      "residual_power": 0.006533192651389695
+    },
+    {
+      "time": 51.0,
+      "gain": 1.4505911415398551,
+      "correlation": 0.7839997778116649,
+      "speech_power": 0.010651998246310353,
+      "residual_power": 0.006678027465534723
+    },
+    {
+      "time": 52.0,
+      "gain": 1.5441654487787166,
+      "correlation": 0.8447048265787491,
+      "speech_power": 0.011681997039731438,
+      "residual_power": 0.0046902066980018245
+    },
+    {
+      "time": 53.0,
+      "gain": 1.5055349698193603,
+      "correlation": 0.8493443647261976,
+      "speech_power": 0.010024309294686083,
+      "residual_power": 0.0038715957832757063
+    },
+    {
+      "time": 54.0,
+      "gain": 1.5506707390456784,
+      "correlation": 0.9259811036822329,
+      "speech_power": 0.01877353330882788,
+      "residual_power": 0.003121306351281288
+    },
+    {
+      "time": 55.0,
+      "gain": 1.5399736838847113,
+      "correlation": 0.8288688489205931,
+      "speech_power": 0.005606330303220067,
+      "residual_power": 0.002553986982166709
+    },
+    {
+      "time": 56.0,
+      "gain": 1.5429959545404535,
+      "correlation": 0.949209509230997,
+      "speech_power": 0.019221072271528163,
+      "residual_power": 0.002112002274915827
+    },
+    {
+      "time": 57.0,
+      "gain": 1.5351725276994779,
+      "correlation": 0.8937714908397423,
+      "speech_power": 0.012102548221859705,
+      "residual_power": 0.0030478422662297017
+    },
+    {
+      "time": 58.0,
+      "gain": 1.5524710868996707,
+      "correlation": 0.8911895445679044,
+      "speech_power": 0.006111197160081266,
+      "residual_power": 0.0015834042855552364
+    }
+  ],
+  "timing": {
+    "word_count": 123,
+    "caption_count": 38,
+    "words_covered_within_1frame": 123,
+    "first_word": {
+      "word": "At",
+      "start": 0.25683333333333336,
+      "end": 0.5125,
+      "part": "pre"
+    },
+    "last_word": {
+      "word": "thirteen",
+      "start": 58.02408333333333,
+      "end": 58.833749999999995,
+      "part": "post"
+    }
+  },
+  "method": "Least-squares scaled actual committed voice versus delivered AAC, per 1-second block. Residual includes all nonvoice plus codec/nonlinear errors, not a separately delivered music stem. Voice dominance relative to residual is a conservative empirical proxy for voice-above-bed, not an isolated music LUFS measurement or perceptual guarantee. No human listened; no speech recognition performed. Zero-lag waveform correlation ties committed speech source to the delivered mix; timing metadata is not independent word recognition."
+}
