@@ -256,6 +256,11 @@ def main():
   ease=1-(1-local)**2; zoom=1+0.06*ease
   cw,ch=int(W/zoom),int(H/zoom); left=(W-cw)//2; top=(H-ch)//2
   frame=base.crop((left,top,left+cw,top+ch)).resize((W,H),Image.Resampling.LANCZOS)
+  if i==11:
+   # Door-frame night-vision auto-exposure breath: ~5 luma steps at 2 Hz; a visible subtle motion, not a frozen hold.
+   a=np.asarray(frame).copy(); delta=5.0*math.sin(4*math.pi*t)
+   roi=a[350:1450,330:780].astype(np.float32); a[350:1450,330:780]=np.clip(roi+delta,0,255).astype(np.uint8)
+   frame=Image.fromarray(a,'RGB')
   draw_caption(frame,i,t,cues)
   draw_recording_marker(frame,local)
   # Fine, restrained deterministic night-vision sensor noise, never a static/noisy stock texture.
