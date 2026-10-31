@@ -14,7 +14,7 @@ Hard cuts every 2.4 seconds. Each shot is a slow eased 1.00→1.06 push-in with 
 
 | Shot | Time | Picture / one moving detail | Caption (2–5 words) | Narration segment |
 |---:|:---:|---|---|---|
-| 01 | 00:00–00:02.4 | Nursery feed; tiny clock numerals change once | `2:13 A.M. · NURSERY` | At two thirteen a.m. |
+| 01 | 00:00–00:02.4 | Nursery feed; tiny clock numerals change once | `2:13 A.M. NURSERY` | At two thirteen a.m. |
 | 02 | 00:02.4–00:04.8 | Monitor on dresser; green audio meter breathes | `PARENT CHECKS MONITOR` | The parent checks the monitor. |
 | 03 | 00:04.8–00:07.2 | Baby under amber pool; blanket lifts subtly | `BABY SLEEPS` | The baby sleeps. |
 | 04 | 00:07.2–00:09.6 | Monitor overlay; one rule line appears | `YOU COUNT WHAT YOU HEAR` | Count what you hear. |
