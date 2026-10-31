@@ -7,7 +7,7 @@ Status: `claimed` → `building` → `testing` → `pushed` → `review` → `do
 |---|---|---|---|---|---|
 | v01 — first programmatic 60s | pixel | A | claimed | pixel/v01 | onboarding, then script before render |
 | v02 — second programmatic 60s | reel | A | claimed | reel/v02 | onboarding, then script before render |
-| v03 — first visual 60s | cut | B | testing | cut/v03 | measured 60s motion-graphics sample; package QA and push branch |
+| v03 — first visual 60s | cut | B | pushed | cut/v03 | awaiting Manager B review/integration |
 | v04 — second visual 60s | grade | B | claimed | grade/v04 | map what actually runs in the sandbox first |
 
 ## Notes
