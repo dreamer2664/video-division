@@ -40,8 +40,8 @@ states the film was made entirely with code. It is not an impersonation of any r
 | codec/container | H.264 yuv420p faststart | **h264 High, yuv420p, moov before mdat** | ✔ |
 | audio | 48 kHz stereo AAC | **aac LC, 48000 Hz, 2 ch** | ✔ |
 | integrated loudness | −16 LUFS ±0.5 | **−16.5 LUFS** (ebur128) | ✔ |
-| true peak | ≤ −1 dBTP | **−1.3 dBFS** (ebur128 peak=true) | ✔ |
-| size | < 90 MB | **58,713,423 B** | ✔ |
+| true peak | ≤ −1 dBTP | **−1.2 dBFS** (ebur128 peak=true) | ✔ |
+| size | < 90 MB | **58,849,240 B** | ✔ |
 | black frames | none > 0.5 s | **none** | ✔ |
 | frozen frames | none > 0.5 s | **none** (`freezedetect d=0.5`) | ✔ |
 | on-screen type | ≥ 40 px at 1080p | smallest **40 px** (timecode labels); captions 88 px | ✔ |
@@ -64,7 +64,7 @@ codec_name=aac
 codec_type=audio
 r_frame_rate=0/0
 duration=60.000000
-size=58713423
+size=58849240
 ```
 
 ```
@@ -74,7 +74,7 @@ $ ffmpeg -v info -i video.mp4 -af ebur128=peak=true -f null -
   Loudness range:
     LRA:         6.6 LU
   True peak:
-    Peak:       -1.3 dBFS
+    Peak:       -1.2 dBFS
 ```
 
 ```
@@ -90,16 +90,16 @@ $ ffmpeg -v info -i video.mp4 -af loudnorm=I=-16:TP=-1.5:LRA=11:print_format=jso
 }
 ```
 
-Two independent meters agree within 0.2 LU. True peak **−1.3 dBTP** meets ≤ −1 dBTP with 0.3 dB
-of margin — thin, and measured rather than assumed (see §3.2).
+Two independent meters agree within 0.2 LU. True peak **−1.2 dBTP** meets ≤ −1 dBTP with 0.2 dB
+of margin — thin, and measured on the delivered file rather than assumed (see §3.2).
 
 ```
 blackdetect d=0.5      -> none
 freezedetect d=0.5     -> none
 silencedetect d=1.0    -> none
 frames                 -> nb_read_frames=1800, avg_frame_rate=30/1, pix_fmt=yuv420p, profile=High
-faststart              -> moov@36 mdat@67566 (moov before mdat)
-sha256(video.mp4)      -> 3e13a796caa0c800e579a137caf4b9b35b1f651252dc51879f12d6656b907c48
+faststart              -> moov before mdat (verified by atom offset)
+sha256(video.mp4)      -> c41f99e21de7e9014372030bc928645df235cc499029ad4fe4188295c09bbe46
 ```
 
 ### Captions vs speech — the two timelines interleaved
@@ -172,7 +172,7 @@ All found by measuring output, not by reading a plan.
    7.7 Mbps (~57 MB projected, inside the 90 MB cap).
 2. **True peak −0.1 dBFS, breaching ≤ −1 dBTP.** Two-pass loudnorm predicted −1.50 exactly, but
    AAC pushed the delivered peak to −0.1. Fix: normalise to −2.5 dBTP so codec overshoot has
-   somewhere to go; delivered file re-measured at **−1.3 dBTP**.
+   somewhere to go; delivered file re-measured at **−1.2 dBTP**.
 3. **`render.sh` reported "no loudnorm" on a build that has loudnorm.** SIGPIPE again:
    `ffmpeg -filters | grep -q` under `set -e -o pipefail` dies 141 the instant grep matches. Fixed
    by capturing the list before testing. I had already fixed this exact bug in v01 and reintroduced
