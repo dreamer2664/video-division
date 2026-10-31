@@ -3,3 +3,5 @@ __pycache__/
 .deps/
 */.deps/
 assets/voice-tmp/
+
+**/assets/voice-tmp/
