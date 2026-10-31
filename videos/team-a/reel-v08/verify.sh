@@ -2,7 +2,7 @@
 # Numeric/structural QA. Does not pretend to listen or judge acting.
 set -euo pipefail
 cd "$(dirname "$0")"
-Q="${1:-$(mktemp -d "${TMPDIR:-/tmp}/reel-v07-qa.XXXXXX")}"
+Q="${1:-$(mktemp -d "${TMPDIR:-/tmp}/reel-v08-qa.XXXXXX")}"
 mkdir -p "$Q"
 for f in video.mp4 video-landscape.mp4; do
   echo "Analyzing $f"

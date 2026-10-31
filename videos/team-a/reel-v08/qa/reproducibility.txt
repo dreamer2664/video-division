@@ -1,0 +1,9 @@
+Offline independent rebuild in /tmp/reel-v08-repro-check compared to delivered masters:
+dc76f5fb7204316f2d920831b938dc896631da50970f08e3a35b2143f351c70b  video.mp4
+dc76f5fb7204316f2d920831b938dc896631da50970f08e3a35b2143f351c70b  /tmp/reel-v08-repro-check/video.mp4
+video.mp4 byte-identical
+b15e0135bc07246ee2d2ded2a94e4a43b842884cd2e0cf7bf5b3da10aedff4df  video-landscape.mp4
+b15e0135bc07246ee2d2ded2a94e4a43b842884cd2e0cf7bf5b3da10aedff4df  /tmp/reel-v08-repro-check/video-landscape.mp4
+video-landscape.mp4 byte-identical
+ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers
+Python 3.13.16 NumPy 2.3.5 Pillow 12.3.0

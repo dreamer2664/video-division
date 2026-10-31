@@ -32,7 +32,7 @@ It is asking for the next nurse.
 
 ## Timed picture plan, committed before picture generation
 
-30 hard-cut shots: a repeating 54/60/66 frames (1.8/2.0/2.2 s), **2.000 s average**, faster than v07's 2.4 s. Each has a slow eased push plus one small moving UI indicator. Shots 14–15 use genuine one-point depth, not only flat cards. Story-to-shot assignment may be adjusted to measured speech boundaries before final render, without changing the 1,800-frame total.
+30 hard-cut shots: a repeating 54/60/66 frames (1.8/2.0/2.2 s), **2.000 s average**, faster than v07's 2.4 s. Each has a slow eased push plus one small moving UI indicator. Shots 14–15 use genuine one-point depth, not only flat cards. The pre-picture plan is in commit `dc75c013a054e3ed78ddab559cbda4d5d6d2f60d`; the descriptions below were reconciled to the finished imagery during QA without changing the timing or narration.
 
 | Shot | Time (s) | Composition / purpose |
 |---:|---:|---|
@@ -40,7 +40,7 @@ It is asking for the next nurse.
 | 02 | 1.800–3.800 | Handover bed board: capacity reads TEN BEDS. |
 | 03 | 3.800–6.000 | Occupied-bed tiles: ten lit slots, all accounted for. |
 | 04 | 6.000–7.800 | Observation chart: TEN PATIENTS with ten numbered lines. |
-| 05 | 7.800–9.800 | Chart close-up, ten patient rows and a slowly sweeping marker. |
+| 05 | 7.800–9.800 | Second chart view: ten patient rows and a lit marker. |
 | 06 | 9.800–12.000 | Call-bell log: ELEVEN BELLS; the total contradicts both screens. |
 | 07 | 12.000–13.800 | Log isolates an eleventh call from BED 11. |
 | 08 | 13.800–15.800 | Admission search for Bed 11 returns NO ADMISSION. |
@@ -48,11 +48,11 @@ It is asking for the next nurse.
 | 10 | 18.000–19.800 | Handover protocol: answer every call before signing. |
 | 11 | 19.800–21.800 | Board recheck: ten beds are occupied. |
 | 12 | 21.800–24.000 | Observation chart recheck: ten names. |
-| 13 | 24.000–25.800 | Call-bell pulse graph and the unassigned eleventh entry. |
+| 13 | 24.000–25.800 | Call-bell log returns to the unassigned eleventh entry. |
 | 14 | 25.800–27.800 | Depth shot: one-point hospital corridor recedes to an unmarked open door. |
 | 15 | 27.800–30.000 | The open unmarked doorway draws nearer through a receding corridor. |
 | 16 | 30.000–31.800 | Doorway view: an empty bed inside, drawn in one-point perspective. |
-| 17 | 31.800–33.800 | A closer view of the empty bed; observation chart is glimpsed. |
+| 17 | 31.800–33.800 | A second empty-bed view with a short rail highlight; the chart follows. |
 | 18 | 33.800–36.000 | Observation chart still totals ten as the printer wakes. |
 | 19 | 36.000–37.800 | Discharge printer feeds a new form. |
 | 20 | 37.800–39.800 | Printer form specifies Bed 11; identity is not yet revealed. |
@@ -65,7 +65,7 @@ It is asking for the next nurse.
 | 27 | 51.800–54.000 | At shift change the handover board refreshes. |
 | 28 | 54.000–55.800 | The eleventh bell log pulses again. |
 | 29 | 55.800–57.800 | Next-shift board: one call is waiting. |
-| 30 | 57.800–60.000 | Call-bell destination reads NEXT NURSE. |
+| 30 | 57.800–60.000 | Handover destination reads NEXT NURSE. |
 
 ## Sound and caption plan
 

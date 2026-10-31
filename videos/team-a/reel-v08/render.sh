@@ -31,5 +31,9 @@ ffmpeg -hide_banner -loglevel warning -y -threads 2 -filter_complex_threads 2 \
   -loop 1 -framerate 30 -i "$BUILD/landscape-bg.png" -i video.mp4 \
   -filter_complex "$LFILTER" -map '[v]' -map 1:a:0 -frames:v 1800 -t 60 \
   -c:v libx264 -preset veryfast -crf 23 -threads 2 -pix_fmt yuv420p -r 30 \
-  -c:a copy -movflags +faststart -metadata title='Ward Ten — landscape reframe' video-landscape.mp4
+  -c:a copy -movflags +faststart -metadata title='Ward Ten — landscape reframe' "$BUILD/landscape-encoded.mp4"
+# Set explicit square-pixel/16:9 container metadata without recompressing. The
+# encoded H.264 VUI has no aspect-ratio override; image and AAC packets are copied.
+ffmpeg -hide_banner -loglevel error -y -i "$BUILD/landscape-encoded.mp4" -map 0 -c copy \
+  -aspect 16:9 -movflags +faststart video-landscape.mp4
 printf 'Rendered video.mp4 and video-landscape.mp4.\n'
