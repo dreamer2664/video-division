@@ -36,6 +36,12 @@ def build(ass_path):
         if ci==len(GROUPS)-1:end=59.84
         text=' '.join(label(words[i],i) for i in range(a,b+1))
         cues.append({'start':start,'end':max(end,start+.15),'text':text,'a':a,'b':b})
+    # Validate the source timing rather than silently accepting a late or truncated cue.
+    # One video frame is the explicit tolerance; speech audio itself is not modified.
+    overhang=max(max(0, cue['start']-words[i]['start'], words[i]['end']-cue['end'])
+                 for cue in cues for i in range(cue['a'],cue['b']+1))
+    if overhang > 1/30:
+        raise ValueError(f'Caption/speech boundary mismatch: {overhang:.3f}s')
     srt='\n'.join(f'{i+1}\n{stamp(c["start"])} --> {stamp(c["end"])}\n{c["text"]}\n' for i,c in enumerate(cues))
     (HERE/'captions.srt').write_text(srt)
     header='''[Script Info]
@@ -56,6 +62,8 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
     for cue in cues:
         a,b=cue['a'],cue['b'];text=cue['text'];size=94
         while size>60 and ImageFont.truetype(fontpath,size).getlength(text)>875:size-=2
+        if ImageFont.truetype(fontpath,size).getlength(text)>875:
+            raise ValueError(f'Caption exceeds safe width at 60 px: {text}')
         threat=(97<=a<=108)
         style=f'{{\\fs{size}'+('\\1c&H3C45E2&' if threat else '')+'}'
         chunks=[]
