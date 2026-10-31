@@ -39,8 +39,17 @@ Order audited: PR1 grade → PR2 reel → PR3 cut → PR4 pixel. Details/raw log
 | #1 MARK FOUR v05 | grade | 047e322 | REJECT / changes requested | Main not changed by this PR. Persist actual narration source/telemetry and offline exact-cut inputs; source-to-mix speech/timing cannot be verified from QA-only /tmp references. |
 | #2 Arrival Log v07 | reel | f4ba4ea | DONE / ACCEPT / merged | Merge `85ddc2421bd2d7ffab1f1bb084b3084e58c1c371`; 9,589,223-byte portrait + 5,725,007-byte landscape. Main blobs verified equal to audited source. |
 | #3 The Monitor Knows v08 | cut | 6dbf284 | REJECT / changes requested | Resolve landscape near-freeze flag 25.866667–26.4s, and cue20 voice ending48.050125 after caption cutoff48.0; repeat source/mix/caption and both-format verification. |
-| #4 IT ANSWERED v06 | pixel | f52a037 | REJECT / changes requested | Both outputs -16.69LUFS outside -16±0.5; actual voice stem missing; landscape near-freeze flags e.g.15.066667–16.366667. Worker must correct and submit new head. |
+| #4 IT ANSWERED v06 | pixel | f52a037 → **2eef744** | RESUBMITTED — awaiting re-audit | Loudness corrected to **-16.1 LUFS / TP -1.6 dBTP** measured on both delivered files (was -16.69). Video stream remuxed with `-c:v copy`, so picture is bit-identical to the audited render (stream hash `486f5894…` before and after); landscape rebuilt from the corrected master. Method and measurement posted on the PR. |
 
 Both-format spec probes, loudness and full scans run personally. grade is landscape only by mandate. The other three deliver both required dimensions. All are60.000000s H.264/yuv420p30fps AAC48kHz stereo faststart. Numeric freeze flags are near-freeze threshold events, NOT asserted exact duplicated frames; report and worker correction/evidence required, not a false claim that slight motion is zero. No specified reference plot-copy beat found in any of the three original reference-format stories.
 
 Consolidated comments posted to PRs1,3,4; only PR2 merged. Re-audit corrections at new exact heads. Full reports also pushed to lux/division-ownership; no PR remains unaudited. Claims of continuous supervision between turns remain prohibited.
+
+### v07 — IT ANSWERED: NIGHT TWO (pixel, Team A)
+
+| PR / film | owner | audited head | status | next step |
+|---|---|---|---|---|
+| #7 IT ANSWERED v07 | pixel | `5d5cadb` | submitted, awaiting audit | `pixel/v07` cut from `main`. Seven-room night-two flat, 19 shots (7 under 2 s, one 16 s hold before the twist). Measured on the shipped encode: 60.000000 s, 1080×1920, 30/1, 48000/2, **-16.0 LUFS / TP -1.2 dBTP**, black 0 / freeze 0 / silence 0, 56,014,264 B + 18,724,214 B landscape. Verified from a fresh clone, sha256 identical to build tree. Nothing published; not merged. |
+
+RULE 11 evidence: render #1 committed as `aa93142` before polishing, with its black-frame failure
+recorded in `QA.md` while still open. Fix is the next commit (`5d5cadb`).
