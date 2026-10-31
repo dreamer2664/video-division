@@ -33,14 +33,14 @@ def bg_image(w,h):
     a=(a*vign[:,:,None]).astype(np.uint8)
     return Image.fromarray(a,'RGB')
 
-CAPTIONS=[
- '02:13:08.000','FOUR CAMERAS. ONE ROOM.','WALL CLOCK: LIVE','FEEDS: PLUS FOUR',
- 'CHECK IT YOURSELF','CORRIDOR. DOOR SHUT.','CAM ONE: IT OPENS','NOW IT OPENS HERE',
- 'FOUR SECONDS LATER','SAME EVENT. +4.000','OFFSET: PLUS FOUR','NO DRIFT',
- 'NO DROPPED FRAMES','CAM FOUR: THIS ROOM','SAME SLEEVE. SAME HAND.',
- 'LOOK AT THE TIME','IT HASN’T MOVED','FOUR SECONDS. EXACT.',
- 'WAIT FOR THE MATCH',"HIS HAND ISN'T OPEN YET",'NOW. EXACTLY.','THE CLOCK TURNS',
- 'THERE ARE FOUR CAMERAS','WHO IS BEHIND HIM?','CAM FIVE HAS NO KEY']
+CAP_EVENTS=[]
+RED_CAPS={"HIS HAND ISN'T OPEN YET",'NOW. EXACTLY.','FEED FIVE: ONLINE','WHO IS BEHIND HIM?','CAM FIVE HAS NO KEY'}
+def caption_at(t):
+    value='02:13:08.000'
+    for onset,caption in CAP_EVENTS:
+        if onset>t: break
+        value=caption
+    return value
 
 # Camera scene cards are generated from the same integer-frame clock as their burn-ins.
 def corridor(d,b,t):
@@ -189,8 +189,8 @@ def compose(frame,orientation,bg):
                 # CAM 05 is an unconfigured, fifth view, first visible at its live appearance.
                 camera_card(d,(30,782,W-30,842),5,frame_ms,elapsed+4,13)
         # caption system sits below picture; one current word is amber-karaoke highlighted.
-        cap=CAPTIONS[idx]
-        color=RED if idx in (19,22,23,24) else TEXT
+        cap=caption_at(elapsed)
+        color=RED if cap in RED_CAPS else TEXT
         fitted_text(d,(W*.5,H*.914),cap,24,W*.91,color,True)
         d.text((W*.5,H*.964),'FRAME TIME BASE  30/1   ·   NO DROPPED FRAMES',font=font(12,True),fill=(96,119,132),anchor='mm')
     else:
@@ -208,7 +208,7 @@ def compose(frame,orientation,bg):
                 camera_card(d,(xx,yy,xx+cw,yy+ch),cam,frame_ms,elapsed+4,16)
             room_panel(d,(590,92,935,422),frame_ms,elapsed)
             if elapsed>=53.6: camera_card(d,(590,432,935,490),5,frame_ms,elapsed+4,11)
-        cap=CAPTIONS[idx]; color=RED if idx in (19,22,23,24) else TEXT
+        cap=caption_at(elapsed); color=RED if cap in RED_CAPS else TEXT
         fitted_text(d,(W*.5,H*.89),cap,32,W*.9,color,True)
         d.text((W*.5,H*.955),'LIVE WALL CLOCK  /  FOUR-SECOND FORECAST',font=font(17,True),fill=(96,119,132),anchor='mm')
     # eased 1.00→1.025 push for the full shot; output crops symmetrically.
@@ -239,6 +239,9 @@ def render_one(orientation,outfile,still_dir,ffmpeg):
     if code: raise SystemExit(f'FFmpeg encode returned {code}')
 
 def main():
+    global CAP_EVENTS
+    with open(ROOT/'project'/'caption_cues.csv',newline='') as f:
+        CAP_EVENTS=[(float(r['caption_start_s']),r['caption']) for r in csv.DictReader(f)]
     ffmpeg=os.environ.get('FFMPEG','ffmpeg')
     render_one('v',ROOT/'video.mp4',ROOT/'stills',ffmpeg)
     render_one('h',ROOT/'video-landscape.mp4',ROOT/'stills',ffmpeg)

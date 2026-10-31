@@ -7,7 +7,7 @@ At 02:13, a night guard watches four security feeds. Every feed carries a millis
 
 ## Narration copy
 
-Two thirteen, eight seconds. Four cameras. One control room. The wall clock is live. Every feed runs four seconds ahead. Check it yourself. Corridor door is shut here. Camera one shows it opening. The guard waits. Now the door opens here. Exactly four seconds later. He writes it in the log. Plus four. No drift. No dropped frames. Camera four shows this room. Same sleeve. Same hand. Watch the timecode. He hasn't moved. Don't look away. Four seconds. Exact. Fifty-three point six. Closed here. Four seconds later. Open. The clock turns. Two fourteen. Feed five. The building has four cameras. Someone is sitting behind him.
+Two thirteen, eight seconds. Four cameras, one control room. The wall clock is live. Every feed runs four seconds ahead. Check it yourself. Corridor door is shut here. Camera one shows it opening. The guard waits. Now the door opens here. Exactly four seconds later. He writes it in the log. Plus four, no drift. No dropped frames. Camera four shows this room. Same sleeve, same hand. Watch the timecode. He hasn't moved. Don't look away. Four seconds. Fifty-three point six: still closed. Now. Open. The clock turns. Feed five. Four cameras. Someone behind.
 
 ## Planned hero frame — written before rendering
 
@@ -15,7 +15,7 @@ Two thirteen, eight seconds. Four cameras. One control room. The wall clock is l
 
 ## Timed shot list
 
-25 hard-cut shots, 2.4 s each. Feed timecodes are generated from integer frame indices; for every frame `feed_ms - wall_ms = 4000`, including the minute rollover. Every panel carries its camera ID and a burned-in millisecond timestamp. Slow eased push-ins are applied to held compositions; one small motion detail per shot. Captions use 2–5 words, amber/white narration and red on the anomaly. Voice cue boundaries are aligned to the shot grid.
+25 hard-cut shots, 2.4 s each. Feed timecodes are generated from integer frame indices; for every frame `feed_ms - wall_ms = 4000`, including the minute rollover. Every panel carries its camera ID and a burned-in millisecond timestamp. Slow eased 1.00→1.06 push-ins are applied to held compositions; one small motion detail per shot. Captions use 2–5 words, amber/white narration and red on the anomaly. Caption changes follow the timed voice cues and can carry across a hard cut; the exact starts and silent visual beats are committed in `project/caption_cues.csv`. The 45.600s hero and 49.600s movement are locked to wall-clock frame boundaries.
 
 | # | Time | Picture / motion detail | Caption | Narration |
 |---:|:---:|---|---|---|
@@ -30,20 +30,20 @@ Two thirteen, eight seconds. Four cameras. One control room. The wall clock is l
 | 09 | 00:19.2–00:21.6 | Match composition, physical door swings | `FOUR SECONDS LATER` | The door opens here. |
 | 10 | 00:21.6–00:24.0 | Feed/timecode pair side by side | `SAME EVENT. +4.000` | Exactly four seconds after the picture. |
 | 11 | 00:24.0–00:26.4 | Guard writes in ruled paper log | `OFFSET: PLUS FOUR` | He writes the offset in the log. |
-| 12 | 00:26.4–00:28.8 | Four timecodes compare, decimal digits align | `NO DRIFT` | Plus four. No dropped frames. |
-| 13 | 00:28.8–00:31.2 | Minimal sync grid; one green checkmark | `NO DROPPED FRAMES` | No clock drift. |
+| 12 | 00:26.4–00:28.8 | Four timecodes compare, decimal digits align | `NO DRIFT` | Plus four, no drift. |
+| 13 | 00:28.8–00:31.2 | Minimal sync grid; one green checkmark | `NO DROPPED FRAMES` | No dropped frames. |
 | 14 | 00:31.2–00:33.6 | CAM 04 marked CONTROL ROOM; chair, desk, guard | `CAM FOUR: THIS ROOM` | Camera four shows this room. |
-| 15 | 00:33.6–00:36.0 | Current hand closed on keyboard; feed hand approaches | `SAME SLEEVE. SAME HAND.` | At 02:13:53.600, the guard's hand is still closed on the desk. |
-| 16 | 00:36.0–00:38.4 | Timecode ticks; future palm starts to open | `LOOK AT THE TIME` | On the feed, his palm is open against the lens. |
+| 15 | 00:33.6–00:36.0 | Current hand closed on keyboard; feed hand approaches | `SAME SLEEVE. SAME HAND.` | Same sleeve, same hand. |
+| 16 | 00:36.0–00:38.4 | Timecode ticks; future hand remains closed | `LOOK AT THE TIME` | Watch the timecode. |
 | 17 | 00:38.4–00:40.8 | Current hand remains closed; single cursor blink | `IT HASN'T MOVED` | He hasn't moved. |
-| 18 | 00:40.8–00:43.2 | Four feeds plus actual-room strip, precise timecodes | `FOUR SECONDS. EXACT.` | Don't look away. |
-| 19 | 00:43.2–00:45.6 | Countdown to timecode :57.600, red dot steadies | `WAIT FOR THE MATCH` | Four seconds pass. |
-| 20 | 00:45.6–00:48.0 | **HERO-01** exact split composition, pre-movement hand comparison | `HIS HAND ISN'T OPEN YET` | The hand opens. |
-| 21 | 00:48.0–00:50.4 | At wall :57.600 the real fingers begin to spread | `NOW. EXACTLY.` | (breath; no words) |
-| 22 | 00:50.4–00:52.8 | Wall reaches 02:14:01.600; four-feed wall, chair still occupied | `THE CLOCK TURNS` | At 02:14:01.600, a fifth feed comes online. |
-| 23 | 00:52.8–00:55.2 | CAM 05 tile boots; a second chair silhouette appears | `THERE ARE FOUR CAMERAS` | The building has four cameras. |
-| 24 | 00:55.2–00:57.6 | New view behind guard; other four timecodes still +4s | `WHO IS BEHIND HIM?` | The new view shows someone sitting behind him. |
-| 25 | 00:57.6–01:00 | CAM 05 timestamp +4.000; silhouette shifts one inch | `CAM FIVE HAS NO KEY` | (drone only; final visual hook) |
+| 18 | 00:40.8–00:43.2 | Four feeds plus actual-room strip, precise timecodes | `DON'T LOOK AWAY` | Don't look away. |
+| 19 | 00:43.2–00:45.6 | Countdown to timecode :57.600, red dot steadies | `FOUR SECONDS. EXACT.` | Four seconds. |
+| 20 | 00:45.6–00:48.0 | **HERO-01** exact split composition, pre-movement hand comparison | `HIS HAND ISN'T OPEN YET` | Fifty-three point six: still closed. |
+| 21 | 00:48.0–00:50.4 | At wall :57.600 the real fingers begin to spread | `NOW. EXACTLY.` | Now. Open. (cue begins at 00:49.600) |
+| 22 | 00:50.4–00:52.8 | Wall clock reaches 02:14:00.000; four feeds remain synchronized | `THE CLOCK TURNS` | (silent caption beat at 00:52.000) |
+| 23 | 00:52.8–00:55.2 | CAM 05 tile boots at 02:14:01.600; a second chair silhouette appears | `FEED FIVE: ONLINE` | Feed five. (cue begins at 00:53.600) |
+| 24 | 00:55.2–00:57.6 | New view behind guard; other four timecodes still +4s | `THERE ARE FOUR CAMERAS` | Four cameras. |
+| 25 | 00:57.6–01:00 | CAM 05 timestamp +4.000; silhouette shifts one inch | `WHO IS BEHIND HIM?` then `CAM FIVE HAS NO KEY` | Someone behind. (final caption takes over at 00:59.400) |
 
 ## Picture / audio direction
 
