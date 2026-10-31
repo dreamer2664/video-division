@@ -238,13 +238,18 @@ def render_single_shot(shot, base_dir, build_dir):
         f"setsar=1,format=gbrp"
     )
 
+    inputs = ["-i", plate_path, "-i", ov_path]
+
     if shot.get("dynamic_wipe"):
-        # Shot 07: Live diagonal colourist wipe from flat ungraded silver log mist -> 4200K mercury storm grade
+        # Shot 07: SIMD maskedmerge live diagonal colourist wipe from flat log mist -> 4200K mercury storm grade
+        matte_path = os.path.join(build_dir, "overlays", "ov_wipe_matte.mp4")
+        inputs.extend(["-i", matte_path])
         grade_chain = (
             f"{zp_chain},split=2[raw_a][raw_b];"
             f"[raw_a]lut3d=file='{lut_path}',curves={shot['curves']},format=gbrp[graded];"
             f"[raw_b]curves=all='0/0.07 0.5/0.52 1/0.90',format=gbrp[logflat];"
-            f"[logflat][graded]blend=all_expr='A*(1-clip((T-0.55)/2.75-(X/W)*0.35,0,1))+B*clip((T-0.55)/2.75-(X/W)*0.35,0,1)'[pre_ov];"
+            f"[2:v]trim=0:{dur},setpts=PTS-STARTPTS,format=gbrp[matte];"
+            f"[logflat][graded][matte]maskedmerge[pre_ov];"
         )
     else:
         grade_chain = (
@@ -252,7 +257,7 @@ def render_single_shot(shot, base_dir, build_dir):
         )
 
     ov_chain = f"[1:v]trim=0:{dur},setpts=PTS-STARTPTS,format=gbrp[ov];"
-    post_filters = ["format=yuv420p", "vignette=PI/5.6", "noise=c0s=3:c0f=t+u"]
+    post_filters = ["scale=out_color_matrix=bt709:out_range=tv", "format=yuv420p", "vignette=PI/5.6", "noise=c0s=3:c0f=t+u"]
     if shot.get("extra_fade_in"):
         # 0.28s gentle rise (strictly < 0.5s, never black)
         post_filters.append("fade=t=in:st=0:d=0.28:color=#0a1018")
@@ -270,12 +275,12 @@ def render_single_shot(shot, base_dir, build_dir):
 
     cmd = [
         "ffmpeg", "-y", "-hide_banner", "-loglevel", "error",
-        "-i", plate_path,
-        "-i", ov_path,
+        *inputs,
         "-filter_complex", full_graph,
         "-map", "[vout]",
         "-r", str(FPS),
-        "-c:v", "libx264", "-preset", "medium", "-crf", "13", "-pix_fmt", "yuv420p",
+        "-c:v", "libx264", "-preset", "veryfast", "-crf", "12",
+        "-pix_fmt", "yuv420p", "-color_range", "tv", "-colorspace", "bt709",
         out_clip,
     ]
     dt, _ = run_cmd(cmd, f"Shot {sid}")
@@ -312,7 +317,8 @@ def xfade_group(clips, durs, out_path, transitions=None):
         "-filter_complex", ";".join(fc_parts),
         "-map", prev_label,
         "-r", str(FPS),
-        "-c:v", "libx264", "-preset", "medium", "-crf", "13", "-pix_fmt", "yuv420p",
+        "-c:v", "libx264", "-preset", "veryfast", "-crf", "12",
+        "-pix_fmt", "yuv420p", "-color_range", "tv", "-colorspace", "bt709",
         out_path,
     ]
     dt, _ = run_cmd(cmd, f"xfade -> {os.path.basename(out_path)}")
@@ -374,9 +380,10 @@ def main():
         "ffmpeg", "-y", "-hide_banner", "-loglevel", "error",
         "-i", master_unsub,
         "-i", audio_wav,
-        "-vf", f"ass=filename='{ass_path}',format=yuv420p",
-        "-c:v", "libx264", "-preset", "slow", "-crf", "18",
-        "-profile:v", "high", "-level", "4.1", "-pix_fmt", "yuv420p",
+        "-vf", f"ass=filename='{ass_path}',scale=out_color_matrix=bt709:out_range=tv,format=yuv420p",
+        "-c:v", "libx264", "-preset", "medium", "-crf", "18",
+        "-profile:v", "high", "-level", "4.1",
+        "-pix_fmt", "yuv420p", "-color_range", "tv", "-colorspace", "bt709", "-color_primaries", "bt709", "-color_trc", "bt709",
         "-r", str(FPS),
         "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-ac", "2",
         "-t", "60.000",

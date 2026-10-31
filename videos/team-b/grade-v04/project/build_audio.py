@@ -297,7 +297,7 @@ def build_score_and_motifs():
     add_stereo(music, crane_bow, 28.00, pan=-0.10, gain=0.24)
 
     # 46.1s: Morning crystalline bell chime (D5 + A5) opening silver dawn
-    dawn_chime = synth_felt_piano_note(74, 4.5, vel=0.85) + 0.55 * synth_felt_piano_note(81, 4.2, vel=0.75)
+    dawn_chime = synth_felt_piano_note(74, 4.5, vel=0.85) + 0.55 * synth_felt_piano_note(81, 4.5, vel=0.75)
     add_stereo(music, dawn_chime, 46.12, pan=0.12, gain=0.22)
 
     # Warm pad harmonic progression matching the 4 Kelvin acts:

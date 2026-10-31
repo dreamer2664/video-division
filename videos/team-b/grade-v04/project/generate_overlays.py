@@ -138,6 +138,24 @@ def gen_water_shimmer(rng, w=480, h=270):
         yield np.clip(rgb, 0, 255)
 
 
+def gen_wipe_matte(rng, w=480, h=270):
+    """Smooth diagonal colourist wipe matte (0 -> 255) for Shot 07 live grade transformation."""
+    yy, xx = np.meshgrid(
+        np.linspace(0.0, 1.0, h, dtype=np.float32),
+        np.linspace(0.0, 1.0, w, dtype=np.float32),
+        indexing="ij",
+    )
+    diag = 0.85 * xx + 0.15 * yy
+    for f in range(FRAMES):
+        t = f / FPS
+        # Sweeps smoothly across frame between t=0.55s and t=3.65s
+        prog = (t - 0.55) / 2.65
+        alpha = np.clip((prog - diag * 0.42) / 0.22, 0.0, 1.0)
+        alpha = alpha * alpha * (3.0 - 2.0 * alpha) * 255.0
+        rgb = np.stack([alpha, alpha, alpha], axis=-1)
+        yield rgb
+
+
 def main():
     out_dir = sys.argv[1] if len(sys.argv) > 1 else "/tmp/grade_v04_build/overlays"
     rng = np.random.default_rng(20261031)
@@ -146,6 +164,7 @@ def main():
         ("ov_mist_drift.mp4", 320, 180, gen_mist_drift),
         ("ov_warm_halation.mp4", 320, 180, gen_warm_halation),
         ("ov_water_shimmer.mp4", 480, 270, gen_water_shimmer),
+        ("ov_wipe_matte.mp4", 480, 270, gen_wipe_matte),
     ]
     for fname, w, h, fn in jobs:
         out_path = os.path.join(out_dir, fname)
