@@ -216,9 +216,9 @@ def gauge(d, cx, cy, r, value, t, bg, track, accent, color):
     d.arc((cx-r,cy-r,cx+r,cy+r), -90, -90+360*p, fill=accent, width=32)
     text(d, (cx, cy-30), f'{int(value*100)}%', 130, color, 'bold', 'mm')
     text(d, (cx, cy+93), 'BUSY', 61, color, 'mono', 'mm')
-    # A tiny inner orbit creates continuous meaningful motion even after the gauge settles.
+    # The orbital marker stays outside the ring, so it cannot obscure the digits.
     a = t*2.0
-    circle(d,cx+math.cos(a)*(r-57),cy+math.sin(a)*(r-57),9,fill=accent)
+    circle(d,cx+math.cos(a)*(r+27),cy+math.sin(a)*(r+27),11,fill=accent)
 
 
 def shot_compare(d, t, busy):
