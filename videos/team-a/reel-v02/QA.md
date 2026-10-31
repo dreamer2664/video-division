@@ -135,3 +135,24 @@ The wait numbers are the expected **queue wait before service** in the specified
 ## Blunt self-review
 
 The causal comparison, labels and graph are readable, and the piece has a hook, development and payoff. The 50% and 90% comparisons hold their layouts for a long time; some motion is decorative rather than explanatory, so the pacing is less polished than a strong commissioned motion-design piece. The word-led, unvoiced treatment may feel clinical, and a real café need not match this simple queue model. The music has only been checked by measurements, not heard on speakers or headphones, so its balance and subjective quality remain unverified. Manager B should review the full video and sound before treating it as presentation-ready.
+
+## Fresh-checkout audit and revision checkpoint (WIP)
+
+The original, committed 7,524,354-byte video was freshly cloned and retested before revision. Its video bitrate was **787,644 bit/s** (container **1,003,247 bit/s**). Its CRF 18 encode was efficient for mostly flat graphics: eight original/decoded frame comparisons averaged **38.08 dB RGB PSNR** and **0.99927 half-resolution luma SSIM**. This does not establish perceptual excellence, but it argues against major compression damage in those samples. The more important problem was **thin visual content**: long comparison/graph holds and mostly decorative motion. The replacement shot plan was written above in `script.md` before rendering. More narrative motion and a higher-bitrate encode are in progress; do not treat this checkpoint as replacement QA.
+
+Fresh spec ffprobe output for the original was:
+
+```text
+codec_name=h264
+codec_type=video
+width=1920
+height=1080
+r_frame_rate=30/1
+codec_name=aac
+codec_type=audio
+r_frame_rate=0/0
+duration=60.000000
+size=7524354
+```
+
+The exact `-v error` loudnorm command again produced zero bytes; corrected verbosity measured **−16.0 LUFS / −4.4 dBTP** for the committed original. This headless environment again could not open X11 or an ALSA sound device for subjective playback; sampled visual frames and measurements are not a substitute for a human watch/listen.

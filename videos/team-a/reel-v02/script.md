@@ -24,3 +24,20 @@ A single-server M/M/1 queue, FIFO, steady state, independent Poisson arrivals, e
 ## Sound, captioning, and pacing
 
 A soft, original, code-synthesized electronic score advances continuously, with small percussive accents and a closing cadence. There is no stock footage, voice, commercial library, or music sample. All graphics and sound are generated in-repo; bundled fonts retain their own licence. The caption bar is part of the render, and `captions.srt` provides the same editorial text plus the music description. Shots have animated entrances and continuously moving diagrams, not static slides.
+
+## Motion revision — written before the replacement render
+
+The fresh audit found that the earlier piece was visually sparse and held some comparisons for too long. Keep the same exact story, model, timing, captions, colours, and original music; replace decorative holding with progressive, explanatory movement. The eight original time ranges remain the governing shot timings above.
+
+| Time | Revised within-shot development |
+|---|---|
+| 00:00–00:06 | Stagger the kinetic title; a clock and a row of order tokens build towards a visible bottleneck instead of presenting a single static title card. |
+| 00:06–00:13 | Introduce the average rate, then visibly move several tokens through a single service station; the service meter cycles as each token crosses. |
+| 00:13–00:21 | Contrast an even stream with a bunched stream on two moving tracks; the server gate makes the rush and variability visible. |
+| 00:21–00:29 | Draw the 50% gauge and reveal the one-minute ruler; then show a token traversing that short wait and reveal the room-to-recover idea. |
+| 00:29–00:39 | Draw the 90% gauge and build the nine-minute ruler progressively across the shot, then land the nine-times comparison; the result remains before service. |
+| 00:39–00:49 | Trace the actual queueing curve over most of the shot, deliberately revealing 50% / 1 minute first and 90% / 9 minutes near the end. |
+| 00:49–00:56 | Reduce a nine-tenths-full capacity strip gradually to seven-tenths while moving the burst into the newly empty buffer; keep this conceptual, not an empirical simulation. |
+| 00:56–01:00 | Stagger the payoff lines and let the tokens exit cleanly; retain the complete ending and fade of the original score. |
+
+The replacement uses a higher average-bitrate encode as well as more substantive visual development; a larger file alone is not treated as a quality improvement. Do not add unlicensed source material or change the model assumptions.
