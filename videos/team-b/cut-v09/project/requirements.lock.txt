@@ -1,1 +1,0 @@
-# Recorded versions in QA at build time; install with requirements.txt for compatibility.
