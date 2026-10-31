@@ -9,17 +9,16 @@ The handover board says ten beds.
 The observation chart says ten patients.  
 The call-bell log says eleven bells.  
 The extra bell comes from Bed Eleven.  
-There is no admission for that bed.  
+No one was admitted to that bed.  
 Your rule: answer every bell before you sign.
 
-You check the board. Ten beds, all occupied.  
-You check the chart. Ten names.  
-The eleventh bell rings again.  
+Ten beds are occupied. Ten names on the chart.  
+Then the eleventh bell rings again.  
 Down the corridor, an unmarked door stands open.  
-An empty bed is waiting inside.  
+An empty bed waits inside.  
 The chart still says ten.  
-Then the discharge printer starts.  
-The form is for Bed Eleven.
+The discharge printer starts.  
+The form says Bed Eleven.
 
 *[Long, deliberate pause before the betrayal.]*
 
@@ -27,7 +26,7 @@ The patient's name is yours.
 The ward isn't admitting anyone.  
 It is discharging you.  
 Your staff badge goes blank.  
-The chart still says ten.  
+The patient count stays ten.  
 At shift change, the eleventh bell rings again.  
 It is asking for the next nurse.
 
@@ -45,28 +44,28 @@ It is asking for the next nurse.
 | 06 | 9.800–12.000 | Call-bell log: ELEVEN BELLS; the total contradicts both screens. |
 | 07 | 12.000–13.800 | Log isolates an eleventh call from BED 11. |
 | 08 | 13.800–15.800 | Admission search for Bed 11 returns NO ADMISSION. |
-| 09 | 15.800–18.000 | Handover protocol: answer every call before signing. |
-| 10 | 18.000–19.800 | Board recheck: ten beds marked occupied. |
-| 11 | 19.800–21.800 | Observation chart recheck: ten names. |
-| 12 | 21.800–24.000 | Call log: entry eleven pulses again. |
-| 13 | 24.000–25.800 | Call-bell pulse graph and the unassigned Bed 11 row. |
+| 09 | 15.800–18.000 | Admission search completes; no one was admitted to Bed 11. |
+| 10 | 18.000–19.800 | Handover protocol: answer every call before signing. |
+| 11 | 19.800–21.800 | Board recheck: ten beds are occupied. |
+| 12 | 21.800–24.000 | Observation chart recheck: ten names. |
+| 13 | 24.000–25.800 | Call-bell pulse graph and the unassigned eleventh entry. |
 | 14 | 25.800–27.800 | Depth shot: one-point hospital corridor recedes to an unmarked open door. |
-| 15 | 27.800–30.000 | Doorway view: an empty bed inside the room, drawn with perspective. |
-| 16 | 30.000–31.800 | Observation chart still totals ten. |
-| 17 | 31.800–33.800 | Close-up of the unassigned call-bell entry. |
-| 18 | 33.800–36.000 | Discharge printer wakes at the station. |
-| 19 | 36.000–37.800 | Printer draws a discharge form for Bed 11. |
-| 20 | 37.800–39.800 | Staff badge beside the unsigned handover page. |
-| 21 | 39.800–42.000 | Quiet held image and the deliberate pause before the reveal. |
-| 22 | 42.000–43.800 | Discharge form reveals the patient name: YOU. |
-| 23 | 43.800–45.800 | The ward action changes to DISCHARGE, not admission. |
-| 24 | 45.800–48.000 | The nurse badge is erased from the staff display. |
-| 25 | 48.000–49.800 | Close-up: YOU / DISCHARGED. |
+| 15 | 27.800–30.000 | The open unmarked doorway draws nearer through a receding corridor. |
+| 16 | 30.000–31.800 | Doorway view: an empty bed inside, drawn in one-point perspective. |
+| 17 | 31.800–33.800 | A closer view of the empty bed; observation chart is glimpsed. |
+| 18 | 33.800–36.000 | Observation chart still totals ten as the printer wakes. |
+| 19 | 36.000–37.800 | Discharge printer feeds a new form. |
+| 20 | 37.800–39.800 | Printer form specifies Bed 11; identity is not yet revealed. |
+| 21 | 39.800–42.000 | Unrevealed form and a quiet hold for the deliberate pause. |
+| 22 | 42.000–43.800 | Close discharge form: patient field remains obscured at first. |
+| 23 | 43.800–45.800 | The form identifies its patient as YOU. |
+| 24 | 45.800–48.000 | The ward action changes to DISCHARGE, not admission. |
+| 25 | 48.000–49.800 | The staff badge is erased from the display. |
 | 26 | 49.800–51.800 | Patient chart still counts ten. |
-| 27 | 51.800–54.000 | At shift change the bell register pulses again. |
-| 28 | 54.000–55.800 | Unmarked doorway, now darker and deeper. |
-| 29 | 55.800–57.800 | Next-shift board: one call remains waiting. |
-| 30 | 57.800–60.000 | Call-bell log points the waiting call at the next nurse. |
+| 27 | 51.800–54.000 | At shift change the handover board refreshes. |
+| 28 | 54.000–55.800 | The eleventh bell log pulses again. |
+| 29 | 55.800–57.800 | Next-shift board: one call is waiting. |
+| 30 | 57.800–60.000 | Call-bell destination reads NEXT NURSE. |
 
 ## Sound and caption plan
 
