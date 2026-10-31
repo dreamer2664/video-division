@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mlt LC_NUMERIC="C" version="7.30.0" title="KELVIN — Four Temperatures of Night (grade-v04)" producer="main_bin">
+  <profile description="HD 1080p 30 fps" width="1920" height="1080" progressive="1" sample_aspect_num="1" sample_aspect_den="1" display_aspect_num="16" display_aspect_den="9" frame_rate_num="30" frame_rate_den="1" colorspace="709"/>
+  <producer id="prod_shot_01" in="0" out="134">
+    <property name="resource">../assets/plates/shot_01_raw.jpg</property>
+    <property name="length">135</property>
+    <filter id="lut_shot_01">
+      <property name="mlt_service">avfilter.lut3d</property>
+      <property name="av.file">../assets/luts/01_cold_slate_dusk.cube</property>
+    </filter>
+  </producer>
+  <producer id="prod_shot_02" in="0" out="134">
+    <property name="resource">../assets/plates/shot_02_raw.jpg</property>
+    <property name="length">135</property>
+    <filter id="lut_shot_02">
+      <property name="mlt_service">avfilter.lut3d</property>
+      <property name="av.file">../assets/luts/01_cold_slate_dusk.cube</property>
+    </filter>
+  </producer>
+  <producer id="prod_shot_03" in="0" out="134">
+    <property name="resource">../assets/plates/shot_03_raw.jpg</property>
+    <property name="length">135</property>
+    <filter id="lut_shot_03">
+      <property name="mlt_service">avfilter.lut3d</property>
+      <property name="av.file">../assets/luts/01_cold_slate_dusk.cube</property>
+    </filter>
+  </producer>
+  <producer id="prod_shot_04" in="0" out="179">
+    <property name="resource">../assets/plates/shot_04_raw.jpg</property>
+    <property name="length">180</property>
+    <filter id="lut_shot_04">
+      <property name="mlt_service">avfilter.lut3d</property>
+      <property name="av.file">../assets/luts/02_sodium_amber.cube</property>
+    </filter>
+  </producer>
+  <producer id="prod_shot_05" in="0" out="179">
+    <property name="resource">../assets/plates/shot_05_raw.jpg</property>
+    <property name="length">180</property>
+    <filter id="lut_shot_05">
+      <property name="mlt_service">avfilter.lut3d</property>
+      <property name="av.file">../assets/luts/02_sodium_amber.cube</property>
+    </filter>
+  </producer>
+  <producer id="prod_shot_06" in="0" out="164">
+    <property name="resource">../assets/plates/shot_06_raw.jpg</property>
+    <property name="length">165</property>
+    <filter id="lut_shot_06">
+      <property name="mlt_service">avfilter.lut3d</property>
+      <property name="av.file">../assets/luts/02_sodium_amber.cube</property>
+    </filter>
+  </producer>
+  <producer id="prod_shot_07" in="0" out="194">
+    <property name="resource">../assets/plates/shot_07_raw.jpg</property>
+    <property name="length">195</property>
+    <filter id="lut_shot_07">
+      <property name="mlt_service">avfilter.lut3d</property>
+      <property name="av.file">../assets/luts/03_mercury_storm.cube</property>
+    </filter>
+  </producer>
+  <producer id="prod_shot_08" in="0" out="194">
+    <property name="resource">../assets/plates/shot_08_raw.jpg</property>
+    <property name="length">195</property>
+    <filter id="lut_shot_08">
+      <property name="mlt_service">avfilter.lut3d</property>
+      <property name="av.file">../assets/luts/03_mercury_storm.cube</property>
+    </filter>
+  </producer>
+  <producer id="prod_shot_09" in="0" out="194">
+    <property name="resource">../assets/plates/shot_09_raw.jpg</property>
+    <property name="length">195</property>
+    <filter id="lut_shot_09">
+      <property name="mlt_service">avfilter.lut3d</property>
+      <property name="av.file">../assets/luts/03_mercury_storm.cube</property>
+    </filter>
+  </producer>
+  <producer id="prod_shot_10" in="0" out="164">
+    <property name="resource">../assets/plates/shot_10_raw.jpg</property>
+    <property name="length">165</property>
+    <filter id="lut_shot_10">
+      <property name="mlt_service">avfilter.lut3d</property>
+      <property name="av.file">../assets/luts/04_silver_dawn.cube</property>
+    </filter>
+  </producer>
+  <producer id="prod_shot_11" in="0" out="149">
+    <property name="resource">../assets/plates/shot_11_raw.jpg</property>
+    <property name="length">150</property>
+    <filter id="lut_shot_11">
+      <property name="mlt_service">avfilter.lut3d</property>
+      <property name="av.file">../assets/luts/04_silver_dawn.cube</property>
+    </filter>
+  </producer>
+  <producer id="prod_shot_12" in="0" out="134">
+    <property name="resource">../assets/plates/shot_12_raw.jpg</property>
+    <property name="length">135</property>
+    <filter id="lut_shot_12">
+      <property name="mlt_service">avfilter.lut3d</property>
+      <property name="av.file">../assets/luts/04_silver_dawn.cube</property>
+    </filter>
+  </producer>
+  <playlist id="video_track_main">
+    <entry producer="prod_shot_01" in="0" out="119"/>
+    <entry producer="prod_shot_02" in="0" out="119"/>
+    <entry producer="prod_shot_03" in="0" out="119"/>
+    <entry producer="prod_shot_04" in="0" out="164"/>
+    <entry producer="prod_shot_05" in="0" out="164"/>
+    <entry producer="prod_shot_06" in="0" out="149"/>
+    <entry producer="prod_shot_07" in="0" out="179"/>
+    <entry producer="prod_shot_08" in="0" out="179"/>
+    <entry producer="prod_shot_09" in="0" out="179"/>
+    <entry producer="prod_shot_10" in="0" out="149"/>
+    <entry producer="prod_shot_11" in="0" out="134"/>
+    <entry producer="prod_shot_12" in="0" out="134"/>
+  </playlist>
+  <tractor id="main_bin" in="0" out="1799">
+    <track producer="video_track_main"/>
+  </tractor>
+</mlt>
