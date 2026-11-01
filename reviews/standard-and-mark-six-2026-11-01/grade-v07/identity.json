@@ -1,0 +1,50 @@
+{
+  "head": "bdffeaca1d81e2bd96758a21474f3349622676eb",
+  "files": {
+    "video.mp4": {
+      "bytes": 30609478,
+      "sha256": "632cdfeb024630d568f20d6105fc7a73dde3d6e508e1c80984b529ba6214a5f5",
+      "atoms": [
+        [
+          "ftyp",
+          0,
+          32
+        ],
+        [
+          "moov",
+          32,
+          67504
+        ],
+        [
+          "free",
+          67536,
+          8
+        ],
+        [
+          "mdat",
+          67544,
+          30541934
+        ]
+      ]
+    }
+  },
+  "audio_assets": [
+    "videos/team-b/grade-v07/audio/bed_ducked_48k.flac",
+    "videos/team-b/grade-v07/audio/dialogue_stem_48k.flac",
+    "videos/team-b/grade-v07/audio/tts_turns/turn_01_A.mp3",
+    "videos/team-b/grade-v07/audio/tts_turns/turn_02_B.mp3",
+    "videos/team-b/grade-v07/audio/tts_turns/turn_03_C.mp3",
+    "videos/team-b/grade-v07/audio/tts_turns/turn_04_B.mp3",
+    "videos/team-b/grade-v07/audio/tts_turns/turn_05_C.mp3",
+    "videos/team-b/grade-v07/audio/tts_turns/turn_06_A.mp3",
+    "videos/team-b/grade-v07/audio/tts_turns/turn_07_B.mp3",
+    "videos/team-b/grade-v07/audio/tts_turns/turn_08_C.mp3",
+    "videos/team-b/grade-v07/audio/tts_turns/turn_09_A.mp3",
+    "videos/team-b/grade-v07/audio/tts_turns/turn_10_C.mp3",
+    "videos/team-b/grade-v07/audio/tts_turns/turn_11_B.mp3",
+    "videos/team-b/grade-v07/audio/tts_turns/turn_12_A.mp3",
+    "videos/team-b/grade-v07/audio/voice_A_reel_48k.flac",
+    "videos/team-b/grade-v07/audio/voice_B_line_48k.flac",
+    "videos/team-b/grade-v07/audio/voice_C_horn_48k.flac"
+  ]
+}

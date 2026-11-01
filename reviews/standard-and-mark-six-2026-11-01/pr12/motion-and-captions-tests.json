@@ -1,0 +1,19 @@
+{
+  "motion_fixture": "actual committed MARK FIVE photographic shot05, not Gaussian fallback",
+  "rendered_frames": 30,
+  "fps": 30,
+  "seconds": 1,
+  "size": 4964731,
+  "sha256": "0ea31140a82bf6365f1fb76dfa85c2f3cb5a09732d9e0f86e7edd3ed73bb9eb8",
+  "caption_group_test_lengths_2_through_40_failures": [],
+  "caption_patch_position": [
+    713,
+    910
+  ],
+  "caption_patch_shape": [
+    116,
+    493,
+    4
+  ],
+  "no_production_film_rerender": true
+}

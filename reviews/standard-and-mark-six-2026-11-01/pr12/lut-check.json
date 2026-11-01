@@ -1,0 +1,30 @@
+[
+  {
+    "name": "house_cold_cyan_6500k.cube",
+    "bytes": 970391,
+    "committed_sha256": "9141297761d175969ffbbe422b071e3f75d7a35e7fc168d3c8cc80c4ee70e710",
+    "regenerated_sha256": "9141297761d175969ffbbe422b071e3f75d7a35e7fc168d3c8cc80c4ee70e710",
+    "identical": true
+  },
+  {
+    "name": "house_amber_practical.cube",
+    "bytes": 970391,
+    "committed_sha256": "e96643ea116b0de186981691dfc49fea1c34b5d099d927e9d7bc5e04f685634a",
+    "regenerated_sha256": "e96643ea116b0de186981691dfc49fea1c34b5d099d927e9d7bc5e04f685634a",
+    "identical": true
+  },
+  {
+    "name": "house_obsidian_500t.cube",
+    "bytes": 970389,
+    "committed_sha256": "4614b8f47266095e517b572995dfea34b20d3f68e678019a2052f2eb74a8bf76",
+    "regenerated_sha256": "4614b8f47266095e517b572995dfea34b20d3f68e678019a2052f2eb74a8bf76",
+    "identical": true
+  },
+  {
+    "name": "house_storm_searchlight_7000k.cube",
+    "bytes": 970399,
+    "committed_sha256": "7100c371e6c0e9286ca185c4ff6f7287895655f5e099293c366a100ec1f1c467",
+    "regenerated_sha256": "7100c371e6c0e9286ca185c4ff6f7287895655f5e099293c366a100ec1f1c467",
+    "identical": true
+  }
+]

@@ -1,0 +1,35 @@
+ffmpeg -hide_banner -nostats -i /home/user/mark-six/videos/team-b/grade-v07/audio/voice_C_horn_48k.flac -af silencedetect=n=-40dB:d=0.3 -f null -
+Input #0, flac, from '/home/user/mark-six/videos/team-b/grade-v07/audio/voice_C_horn_48k.flac':
+  Metadata:
+    encoder         : Lavf61.7.103
+  Duration: 00:01:00.00, start: 0.000000, bitrate: 78 kb/s
+  Stream #0:0: Audio: flac, 48000 Hz, stereo, s16
+Stream mapping:
+  Stream #0:0 -> #0:0 (flac (native) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, null, to 'pipe:':
+  Metadata:
+    encoder         : Lavf61.7.103
+  Stream #0:0: Audio: pcm_s16le, 48000 Hz, stereo, s16, 1536 kb/s
+      Metadata:
+        encoder         : Lavc61.19.101 pcm_s16le
+[silencedetect @ 0x7f099c001d00] silence_start: 0
+[silencedetect @ 0x7f099c001d00] silence_end: 12.625125 | silence_duration: 12.625125
+[silencedetect @ 0x7f099c001d00] silence_start: 14.147
+[silencedetect @ 0x7f099c001d00] silence_end: 14.468417 | silence_duration: 0.321417
+[silencedetect @ 0x7f099c001d00] silence_start: 16.006812
+[silencedetect @ 0x7f099c001d00] silence_end: 16.352333 | silence_duration: 0.345521
+[silencedetect @ 0x7f099c001d00] silence_start: 18.178771
+[silencedetect @ 0x7f099c001d00] silence_end: 24.465771 | silence_duration: 6.287
+[silencedetect @ 0x7f099c001d00] silence_start: 26.862208
+[silencedetect @ 0x7f099c001d00] silence_end: 27.180625 | silence_duration: 0.318417
+[silencedetect @ 0x7f099c001d00] silence_start: 29.27775
+[silencedetect @ 0x7f099c001d00] silence_end: 38.666438 | silence_duration: 9.388687
+[silencedetect @ 0x7f099c001d00] silence_start: 43.672604
+[silencedetect @ 0x7f099c001d00] silence_end: 50.544687 | silence_duration: 6.872083
+[silencedetect @ 0x7f099c001d00] silence_start: 52.162104
+[silencedetect @ 0x7f099c001d00] silence_end: 60 | silence_duration: 7.837896
+[out#0/null @ 0x55ee101c1580] video:0KiB audio:11250KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+size=N/A time=00:01:00.00 bitrate=N/A speed=1.5e+03x    
+
+exit_status=0

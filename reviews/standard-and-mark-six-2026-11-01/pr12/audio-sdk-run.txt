@@ -1,0 +1,38 @@
+[
+  {
+    "fixture": "committed MARK FIVE dialogue FLAC, decoded; NOT online synthesized demo",
+    "seconds": 6,
+    "gmap_master_sha256": "6a4a3c75a7caedda84240ad7756b0c2454e564360b69978fd14196c0afd5f176",
+    "actual_master_sha256": "6a4a3c75a7caedda84240ad7756b0c2454e564360b69978fd14196c0afd5f176",
+    "fresh_directory_offline_repro_sha256": "6a4a3c75a7caedda84240ad7756b0c2454e564360b69978fd14196c0afd5f176",
+    "bit_exact_offline": true,
+    "measured_loudness": {
+      "wav": {
+        "LUFS": "-16.23",
+        "TP_dBTP": "-2.19"
+      },
+      "aac": {
+        "LUFS": "-16.29",
+        "TP_dBTP": "-1.89"
+      }
+    }
+  },
+  {
+    "fixture": "committed MARK FIVE dialogue FLAC, decoded; NOT online synthesized demo",
+    "seconds": 60,
+    "gmap_master_sha256": "c23a5322ee4c3384b2095b3732d337c49229d71c70d6a8b5e1c83227d1e3b723",
+    "actual_master_sha256": "c23a5322ee4c3384b2095b3732d337c49229d71c70d6a8b5e1c83227d1e3b723",
+    "fresh_directory_offline_repro_sha256": "c23a5322ee4c3384b2095b3732d337c49229d71c70d6a8b5e1c83227d1e3b723",
+    "bit_exact_offline": true,
+    "measured_loudness": {
+      "wav": {
+        "LUFS": "-16.10",
+        "TP_dBTP": "-2.16"
+      },
+      "aac": {
+        "LUFS": "-16.15",
+        "TP_dBTP": "-1.91"
+      }
+    }
+  }
+]

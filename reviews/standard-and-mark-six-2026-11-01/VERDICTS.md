@@ -1,0 +1,54 @@
+# lux — House Look SDK / MARK SIX / withdrawn cut-v09 audit
+
+## Scope and final decisions
+- PR12 `grade/house-look` @90394d8411185519fdc360f4c0ea26d0dc3f2822: **REJECT pending runnable quickstart**. Genuine executable components pass several independent tests; the documented end-to-end path does not pass. Do not label this all-prose or pretend its actual LUT/audio work failed.
+- PR10 `grade/v07` @bdffeaca1d81e2bd96758a21474f3349622676eb: **REJECT under directive §5 story rule**, not technical/speech failure. Full requested speech and visual house-look tests completed and pass. No new-story waiver has been given to MARK SIX; the earlier exception/approval was for named reference MARK FIVE.
+- PR8 `cut/v09`: **CLOSED, not merged**, superseded by `DIRECTIVE-2026-11-01-house-look.md`; branch preserved. Old film is not re-audited as a possible new target.
+- cut/v10: no PR in both initial and post-audit API snapshots. Wait for the worker's corrected final mix/PR, then personally measure loudness FIRST; reject immediately outside[-16.5,-15.5]LUFS, before spending a full audit. Do not copy the user's earlier-22.22 measurement as if lux measured a new submitted master. Pixel/reel cinematic work is next round, not falsely marked reviewed.
+
+All identities/individual-file bytes/SHA256 and Git blobs: `identities.json`. Raw executed media probes/loudness/full scans, immutable speech hashes, pitch/pan/coverage/timing and frame samples committed here. FFmpeg7.1.5, Python3.13; PR12 tested in a fresh isolated venv with exactly its pinned NumPy2.2.4/SciPy1.15.2/Pillow11.1.0/edge-tts7.2.8 and installed Inter/EB Garamond/Liberation fonts. No human listened. Numeric verification is not ASR or subjective intelligibility. No production film re-render; SDK smoke/component outputs and offline audio reconstructions are QA experiments only.
+
+## PR12 — SDK is real, but not yet a verified standard
+
+### Tests that PASS
+1. Actual new remote clone of `grade/house-look`, exact90394d8, clean tracked files; no worker-local ignored paths or /tmp leftovers used as SDK inputs. Package manifest lists all delivered look/ files with exact hashes, not just filenames.
+2. All **four committed33³ LUTs** regenerate **byte-for-byte** using `python -B look/generate_luts.py --out-dir <empty directory>`; raw results `pr12/lut-check.json`. Trilinear grading, halation, parallax rain/mist and camera motion are actual Python implementations, not promised future code.
+3. A **1s/30-frame1920×1080** SDK motion component renders from an actual committed MARK FIVE photographic plate and finishes with no black/freeze events. This is explicitly a component test using an approved-main fixture, NOT a substituted pass of the default end-to-end demo. Caption patch renders; word grouper passes all tested input lengths2–40 without1-word or>5-word groups. `motion-and-captions-tests.json`.
+4. **Audio-chain tests really run:** actual approved-main dialogue source decoded as a QA fixture, SDK rain/sub bed, persisted FLACs/gain map, normalization+limiter, AAC192k encode, independent loudness measurement.6s WAV **-16.23LUFS/-2.19dBTP**,AAC **-16.29/-1.89**;60s WAV **-16.10/-2.16**,AAC **-16.15/-1.91**. Both within gate, not a fabricated exactly-16.00 claim. Fresh-directory offline reproduction is bit-exact at both lengths; exact WAV hashes in `audio-chain-tests.json`. These pass the helper's gain chain, not the failed online demo as a whole.
+5. Photographic plate recipes **are actually included**: HOUSE-LOOK §1.2 five-layer prompt framework and §1.3 three full literal architectural/instrument/exterior prompts, plus four real LUT assets. Do not falsely request already-present recipes/LUTs or demand generated photographic inference be implemented as local NumPy code. New photos still require an agent's image-generation tool and visual inspection.
+
+### Specific consolidated fixes / reason no merge
+1. **QUICKSTART Step1 sparse checkout fails exactly as printed** (with placeholders filled to a valid team/slug): `git sparse-checkout set specs DIRECTIVE-2026-11-01-house-look.md look videos/team-a/lux-test` exits**128**: directive filename is not a directory. Cone mode includes root files automatically: use a tested directory-only sparse set (or a correctly documented non-cone variant), put clone/sparse setup before installing missing look/requirements from a genuinely sparse clone, and test the literal published sequence from a clean main checkout. `pr12/sparse-quickstart.txt`.
+2. **Step2 pinned clean-clone demo exits1 at online speech**: `WSServerHandshakeError403`. No demo MP4, complete timeline, or end-to-end normalized output is produced. Provider response is an observed external/protocol dependency failure, NOT proof all local audio code is wrong; helper tests above are green. Pin/test a supported online synthesis path and document its network prerequisite. Include a small licensed committed speech+word-telemetry fixture and an explicit offline smoke option so the reusable grading/motion/caption/audio pipeline can be verified without cloud availability. Do not label SDK component tests a successful run of the default quickstart. Raw traceback provider URL sanitized; no credentials committed.
+3. Make the photographic smoke path copy/pasteable: default fallback is a NumPy Gaussian lighting target, not a photographed place. Label it a numerical target, and demonstrate the runnable smoke using an included or approved-main photographic plate path. This is not a demand to commit a new full film. The SDK has no offline fixture mode at this head (`demo_shot.py` only exposes --plate/--out-dir and always calls live TTS).
+4. Documentation currently names **MARK SIX as a reference film** before acceptance; keep approved references MARK FOUR/MARK FIVE until the directive §5 conflict below is resolved. The reusable palette/photographic prompt recipes remain useful; do not teach a flood-mark sequel as the required new-story pattern.
+
+No manager edits to worker SDK, no dependency upgrades silently substituted for the declared pin, no passed quickstart invented. Grade owns the small concrete corrections; return one corrected exact head, not a claim of 'READY FOR MERGE'.
+
+## PR10 — MARK SIX full audit, numeric gates PASS; story gate REJECT
+
+**Exact master30,609,478 bytes**, SHA256 **632cdfeb024630d568f20d6105fc7a73dde3d6e508e1c80984b529ba6214a5f5**.
+
+### Format and picture
+60.000000s,1920×1080 landscape,30/1fps,H.264/yuv420p,faststart,AAC48kHz stereo,under90MB. Independently measured **-16.15LUFS/-1.88dBTP** — user numbers corroborated. Full decode/black/freezedetect scan clean. Actual chronological decoded pictures, first/last second, supplied instrument/vault/reveal stills and clean wall frame inspected. Physical wet architecture, night plates, warm practicals/cold weather light, actual four33³ LUTs/trilinear application, rain/mist/camera/source animation are present. No portrait/vector rejection. Script/timing/actual sources committed64e067e before render checkpoint6854ce8 and upgraded picture6520626: script-first/RULE11 history checked.
+
+### Actual speech, not QA-only claims
+- All **five60.000s,48kHz stereo FLACs** and **12 raw turn MP3 hashes** verified. A+B+C equals dialogue exactly. Every pair **AB/AC/BC has0 overlapping samples above one16-bit LSB**.
+- Isolated processed-stem autocorrelation F0 estimates: **A108.11Hz,B205.13Hz,C170.21Hz**; source pans **+5.739,-5.739,0.000dB L-minus-R**. Original source engines/rates/filter paths retained. All12 actual delivered-mix speech-band segments corroborate the scheduled A/B/C positions: A+5.23…+5.53dB,B-5.70…-5.63dB,C-0.009…+0.006dB. Not just a metadata interleave table.
+- Six10s20ms/-40dBFS activity fractions:**59.8,59.8,60.4,63.4,66.0,52.0%**; voice throughout body. Declared speech-turn duty85.427%; measured actual source dialogue/committed bed during those turns **+10.631dB**, within8–12dB target. High-energy20ms subset yields11.06–12.87dB; masks are explicitly different, not falsely identical loudness measures.
+- Source→finalAAC fitted lag**144samples/3ms**,joint dialogue+bed correlation **0.996340**,residual**-40.98dBFS**. Independent offline default builder executed with the committed stems (no live TTS), exact master WAV hash **cd260ea6100f3f796c69c5b2b1277be9991e8ebe13ecbf9c29cdb87359594209**, matching persisted gain map. This does not regenerate a different voice to validate an older cut.
+- **162 words/42 cues**,3–5 words per cue; cue word-span endpoint drift **0.000s**. Original per-turn WordBoundary→locked timeline max translation rounding drift **0.0005s**;3ms audio latency is below one30fps frame. Structural telemetry is tied to the actual source/mix by waveform match, not treated as independent phonetic ASR. Burned captions/speaker edge coding present in real images.
+
+### Specific story conflict with DIRECTIVE §5
+Directive explicitly says **"No KELVIN plot copies: not the lock, not the marks, not the bolted plate, not the keeper's booth"** and **"New story, new place, same weather."** MARK FIVE was expressly approved as the existing reference, not a blanket future-marker-series waiver.
+
+MARK SIX's actual script calls itself the MARK FOUR→MARK FIVE→MARK SIX finale, sets a dam/spillway/control-vault flood story, counts the outside water marks, announces no sixth mark outside (turn05), discovers **"Mark Six is stenciled inside, behind the three empty chairs"** (turn08), then reveals the control room is a surge chamber that floods (turn09). This repeats the forbidden marks/inside-water-threshold reveal, not merely the shared palette, camera or three-voice technique. Rendered reveal image corroborates the script. Good three-voice execution and a new room do not remove the repeated plot mechanism.
+
+**One consolidated return:** preserve the verified technical work and house-look treatment; submit a genuinely new premise/place/turn not based on lock/dam/numbered water marks/interior-threshold revelation, or obtain an explicit changed story directive before accepting this sequel. Do not ask for pointless gain/stem/caption repairs: those gates pass. Lux is not inventing a missing-stem defect or silently overriding the Director's story prohibition. No merge at this head.
+
+## PR8 withdrawal identities
+
+- `82ba387f0b4f384645878a816f1d3a465c1708e1` · `videos/team-b/cut-v09/video-landscape.mp4` · **13,696,888bytes** · SHA256`6cbf0ae58d57c6fab211db120869720c127ed3369cdb4374a1c10ae334033f4a`.
+- `82ba387f0b4f384645878a816f1d3a465c1708e1` · `videos/team-b/cut-v09/video.mp4` · **13,806,883bytes** · SHA256`71a443426d0bc89cdbcdeb55a7b31f60f4494bbcf1ea72342f8936b4d3c252c3`.
+
+Closure/comment stored in `pr8-closure.json`; cut/v09 retained, no force push or branch deletion. All three requested PRs have determinate dispositions. cut/v10 has no submitted PR as of the recorded API snapshots; that conditional audit remains pending delivery, not claimed complete.

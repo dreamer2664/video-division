@@ -1,0 +1,5 @@
+Generated 4 House Look 33x33x33 .cube LUTs in /home/user/look-lut-test:
+  - /home/user/look-lut-test/house_obsidian_500t.cube
+  - /home/user/look-lut-test/house_amber_practical.cube
+  - /home/user/look-lut-test/house_cold_cyan_6500k.cube
+  - /home/user/look-lut-test/house_storm_searchlight_7000k.cube

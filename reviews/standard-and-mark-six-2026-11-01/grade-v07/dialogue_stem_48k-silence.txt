@@ -1,0 +1,57 @@
+ffmpeg -hide_banner -nostats -i /home/user/mark-six/videos/team-b/grade-v07/audio/dialogue_stem_48k.flac -af silencedetect=n=-40dB:d=0.3 -f null -
+Input #0, flac, from '/home/user/mark-six/videos/team-b/grade-v07/audio/dialogue_stem_48k.flac':
+  Metadata:
+    encoder         : Lavf61.7.103
+  Duration: 00:01:00.00, start: 0.000000, bitrate: 308 kb/s
+  Stream #0:0: Audio: flac, 48000 Hz, stereo, s16
+Stream mapping:
+  Stream #0:0 -> #0:0 (flac (native) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, null, to 'pipe:':
+  Metadata:
+    encoder         : Lavf61.7.103
+  Stream #0:0: Audio: pcm_s16le, 48000 Hz, stereo, s16, 1536 kb/s
+      Metadata:
+        encoder         : Lavc61.19.101 pcm_s16le
+[silencedetect @ 0x7f8ba4001d00] silence_start: 0
+[silencedetect @ 0x7f8ba4001d00] silence_end: 0.514833 | silence_duration: 0.514833
+[silencedetect @ 0x7f8ba4001d00] silence_start: 6.560875
+[silencedetect @ 0x7f8ba4001d00] silence_end: 7.2675 | silence_duration: 0.706625
+[silencedetect @ 0x7f8ba4001d00] silence_start: 9.463875
+[silencedetect @ 0x7f8ba4001d00] silence_end: 9.77525 | silence_duration: 0.311375
+[silencedetect @ 0x7f8ba4001d00] silence_start: 11.881917
+[silencedetect @ 0x7f8ba4001d00] silence_end: 12.625125 | silence_duration: 0.743208
+[silencedetect @ 0x7f8ba4001d00] silence_start: 14.147
+[silencedetect @ 0x7f8ba4001d00] silence_end: 14.468417 | silence_duration: 0.321417
+[silencedetect @ 0x7f8ba4001d00] silence_start: 16.006812
+[silencedetect @ 0x7f8ba4001d00] silence_end: 16.352333 | silence_duration: 0.345521
+[silencedetect @ 0x7f8ba4001d00] silence_start: 18.178771
+[silencedetect @ 0x7f8ba4001d00] silence_end: 18.747479 | silence_duration: 0.568708
+[silencedetect @ 0x7f8ba4001d00] silence_start: 19.147208
+[silencedetect @ 0x7f8ba4001d00] silence_end: 19.472792 | silence_duration: 0.325583
+[silencedetect @ 0x7f8ba4001d00] silence_start: 23.728479
+[silencedetect @ 0x7f8ba4001d00] silence_end: 24.465771 | silence_duration: 0.737292
+[silencedetect @ 0x7f8ba4001d00] silence_start: 26.862208
+[silencedetect @ 0x7f8ba4001d00] silence_end: 27.180625 | silence_duration: 0.318417
+[silencedetect @ 0x7f8ba4001d00] silence_start: 29.27775
+[silencedetect @ 0x7f8ba4001d00] silence_end: 29.900875 | silence_duration: 0.623125
+[silencedetect @ 0x7f8ba4001d00] silence_start: 34.163375
+[silencedetect @ 0x7f8ba4001d00] silence_end: 34.815167 | silence_duration: 0.651792
+[silencedetect @ 0x7f8ba4001d00] silence_start: 37.93375
+[silencedetect @ 0x7f8ba4001d00] silence_end: 38.666438 | silence_duration: 0.732687
+[silencedetect @ 0x7f8ba4001d00] silence_start: 43.672604
+[silencedetect @ 0x7f8ba4001d00] silence_end: 44.858333 | silence_duration: 1.185729
+[silencedetect @ 0x7f8ba4001d00] silence_start: 46.725771
+[silencedetect @ 0x7f8ba4001d00] silence_end: 47.078458 | silence_duration: 0.352687
+[silencedetect @ 0x7f8ba4001d00] silence_start: 49.843979
+[silencedetect @ 0x7f8ba4001d00] silence_end: 50.544687 | silence_duration: 0.700708
+[silencedetect @ 0x7f8ba4001d00] silence_start: 52.162104
+[silencedetect @ 0x7f8ba4001d00] silence_end: 52.719458 | silence_duration: 0.557354
+[silencedetect @ 0x7f8ba4001d00] silence_start: 55.379292
+[silencedetect @ 0x7f8ba4001d00] silence_end: 56.364021 | silence_duration: 0.984729
+[silencedetect @ 0x7f8ba4001d00] silence_start: 58.788979
+[silencedetect @ 0x7f8ba4001d00] silence_end: 60 | silence_duration: 1.211021
+[out#0/null @ 0x55dda9574f80] video:0KiB audio:11250KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+size=N/A time=00:01:00.00 bitrate=N/A speed= 711x    
+
+exit_status=0

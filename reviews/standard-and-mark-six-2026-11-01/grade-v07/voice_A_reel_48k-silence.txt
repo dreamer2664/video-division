@@ -1,0 +1,31 @@
+ffmpeg -hide_banner -nostats -i /home/user/mark-six/videos/team-b/grade-v07/audio/voice_A_reel_48k.flac -af silencedetect=n=-40dB:d=0.3 -f null -
+Input #0, flac, from '/home/user/mark-six/videos/team-b/grade-v07/audio/voice_A_reel_48k.flac':
+  Metadata:
+    encoder         : Lavf61.7.103
+  Duration: 00:01:00.00, start: 0.000000, bitrate: 149 kb/s
+  Stream #0:0: Audio: flac, 48000 Hz, stereo, s16
+Stream mapping:
+  Stream #0:0 -> #0:0 (flac (native) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, null, to 'pipe:':
+  Metadata:
+    encoder         : Lavf61.7.103
+  Stream #0:0: Audio: pcm_s16le, 48000 Hz, stereo, s16, 1536 kb/s
+      Metadata:
+        encoder         : Lavc61.19.101 pcm_s16le
+[silencedetect @ 0x7f10e8001d00] silence_start: 0
+[silencedetect @ 0x7f10e8001d00] silence_end: 0.514833 | silence_duration: 0.514833
+[silencedetect @ 0x7f10e8001d00] silence_start: 6.560875
+[silencedetect @ 0x7f10e8001d00] silence_end: 29.900875 | silence_duration: 23.34
+[silencedetect @ 0x7f10e8001d00] silence_start: 34.163375
+[silencedetect @ 0x7f10e8001d00] silence_end: 44.858333 | silence_duration: 10.694958
+[silencedetect @ 0x7f10e8001d00] silence_start: 46.725771
+[silencedetect @ 0x7f10e8001d00] silence_end: 47.078458 | silence_duration: 0.352687
+[silencedetect @ 0x7f10e8001d00] silence_start: 49.843979
+[silencedetect @ 0x7f10e8001d00] silence_end: 56.364021 | silence_duration: 6.520042
+[silencedetect @ 0x7f10e8001d00] silence_start: 58.788979
+[silencedetect @ 0x7f10e8001d00] silence_end: 60 | silence_duration: 1.211021
+[out#0/null @ 0x55639de01f80] video:0KiB audio:11250KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+size=N/A time=00:01:00.00 bitrate=N/A speed=1.14e+03x    
+
+exit_status=0

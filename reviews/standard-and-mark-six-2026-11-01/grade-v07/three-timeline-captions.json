@@ -1,0 +1,85 @@
+{
+  "cue_count": 42,
+  "word_count": 162,
+  "cue_word_endpoint_max_drift_s": 0.0,
+  "word_count_range_per_cue": [
+    3,
+    5
+  ],
+  "actual_mixed_turn_pan": [
+    {
+      "turn": "01",
+      "speaker": "A",
+      "mix_L_minus_R_dB": 5.529991023387804
+    },
+    {
+      "turn": "02",
+      "speaker": "B",
+      "mix_L_minus_R_dB": -5.697091699771279
+    },
+    {
+      "turn": "03",
+      "speaker": "C",
+      "mix_L_minus_R_dB": -0.0037009437961611413
+    },
+    {
+      "turn": "04",
+      "speaker": "B",
+      "mix_L_minus_R_dB": -5.6302992819644695
+    },
+    {
+      "turn": "05",
+      "speaker": "C",
+      "mix_L_minus_R_dB": -0.008572097116671198
+    },
+    {
+      "turn": "06",
+      "speaker": "A",
+      "mix_L_minus_R_dB": 5.527745326468319
+    },
+    {
+      "turn": "07",
+      "speaker": "B",
+      "mix_L_minus_R_dB": -5.690350362138731
+    },
+    {
+      "turn": "08",
+      "speaker": "C",
+      "mix_L_minus_R_dB": -0.0041158646891655114
+    },
+    {
+      "turn": "09",
+      "speaker": "A",
+      "mix_L_minus_R_dB": 5.496174206156602
+    },
+    {
+      "turn": "10",
+      "speaker": "C",
+      "mix_L_minus_R_dB": 0.006303053605630713
+    },
+    {
+      "turn": "11",
+      "speaker": "B",
+      "mix_L_minus_R_dB": -5.63182541958836
+    },
+    {
+      "turn": "12",
+      "speaker": "A",
+      "mix_L_minus_R_dB": 5.227070430307985
+    }
+  ],
+  "metadata_speaker_sequence": [
+    "A",
+    "B",
+    "C",
+    "B",
+    "C",
+    "A",
+    "B",
+    "C",
+    "A",
+    "C",
+    "B",
+    "A"
+  ]
+}

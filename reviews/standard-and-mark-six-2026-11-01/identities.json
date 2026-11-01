@@ -1,0 +1,407 @@
+{
+  "PR12": {
+    "head": "90394d8411185519fdc360f4c0ea26d0dc3f2822",
+    "files": [
+      {
+        "path": "look/HOUSE-LOOK.md",
+        "git_blob": "0086f132105007a8d1596e4f1df8a6787529f072",
+        "bytes": 17724,
+        "sha256": "30f0a9c28dbabb25c3883b101045fa39e4493a16c3bc1d00a15aea7d5be2f9fb"
+      },
+      {
+        "path": "look/QUICKSTART.md",
+        "git_blob": "695302bbe15a170d127e3f0e999d0aa9164645b9",
+        "bytes": 7292,
+        "sha256": "e0b3200553025b9a8d2d1ead11e96e88eee0de3a0cc129ef678bcfd6f76c5565"
+      },
+      {
+        "path": "look/__init__.py",
+        "git_blob": "6345c4d11ed9c58214dbb6eb28160453d0fcd0dd",
+        "bytes": 558,
+        "sha256": "31bb6a736096a040c52282ca308e15b151d888321ce4bf9fe5277d4ef06942c4"
+      },
+      {
+        "path": "look/demo_shot.py",
+        "git_blob": "8a609dfa8e3549354f08bf3e2738905923443cb2",
+        "bytes": 6997,
+        "sha256": "82048708cdee0320f25816f529795c21ba831dff9387ce1319583381693dc867"
+      },
+      {
+        "path": "look/generate_luts.py",
+        "git_blob": "eabda40c0adcc948b1bdd46dc85c557bb77a8c9f",
+        "bytes": 7342,
+        "sha256": "d90b2585d878c02fe16a4dce9f3d6d1a09b05f20bdcc0c2730463a6b686b0e37"
+      },
+      {
+        "path": "look/house_audio.py",
+        "git_blob": "041a7e8c3a1abb8496dadbcfb9684bed92fa7df1",
+        "bytes": 11829,
+        "sha256": "1c77ba494ec74a81520254a5b8043324b97beed84c247392d1f1b4f855637668"
+      },
+      {
+        "path": "look/house_captions.py",
+        "git_blob": "f66107cbad5f1a692b98578552f98ad3a116e852",
+        "bytes": 6456,
+        "sha256": "0581895c3d9188ea9c80e43c0b121d34f1a85dffd9248adb4dbba861b25f116c"
+      },
+      {
+        "path": "look/house_motion.py",
+        "git_blob": "3104294fe31955481ae843a72cc95caa1a551a8b",
+        "bytes": 10338,
+        "sha256": "1c795928c087bc1887f7d73d11d41763d08d7d21b281f005abf4a4cf5b4f5f70"
+      },
+      {
+        "path": "look/luts/house_amber_practical.cube",
+        "git_blob": "4d23e4a629ab5ce8a49fdbe3ad4c3566f0b753c8",
+        "bytes": 970391,
+        "sha256": "e96643ea116b0de186981691dfc49fea1c34b5d099d927e9d7bc5e04f685634a"
+      },
+      {
+        "path": "look/luts/house_cold_cyan_6500k.cube",
+        "git_blob": "fc86dafe3eae731271c8f4fa051c805ffa73640c",
+        "bytes": 970391,
+        "sha256": "9141297761d175969ffbbe422b071e3f75d7a35e7fc168d3c8cc80c4ee70e710"
+      },
+      {
+        "path": "look/luts/house_obsidian_500t.cube",
+        "git_blob": "4ef5e1e2a3d40ea1e4abc8d05a2bddc4503ba793",
+        "bytes": 970389,
+        "sha256": "4614b8f47266095e517b572995dfea34b20d3f68e678019a2052f2eb74a8bf76"
+      },
+      {
+        "path": "look/luts/house_storm_searchlight_7000k.cube",
+        "git_blob": "8ce063ad0a2250051a82af7973b46181b8fc0f93",
+        "bytes": 970399,
+        "sha256": "7100c371e6c0e9286ca185c4ff6f7287895655f5e099293c366a100ec1f1c467"
+      },
+      {
+        "path": "look/requirements.txt",
+        "git_blob": "6b923b6b6315395fe4cafec32bacf45cd0992f23",
+        "bytes": 58,
+        "sha256": "7029dd0a842bd3759920add4fe086fe1cc92521369c1aecf3d3d2527881dbacc"
+      }
+    ]
+  },
+  "PR10": {
+    "head": "bdffeaca1d81e2bd96758a21474f3349622676eb",
+    "files": [
+      {
+        "path": "videos/team-b/grade-v07/QA.md",
+        "git_blob": "a58b37f1d35dd48f8aa3233babd2fe339c1d03b6",
+        "bytes": 22561,
+        "sha256": "c80994507adf92de1d6d85e7e55760be3fcc178b9f3e1bb28506e3d65ffd48d1"
+      },
+      {
+        "path": "videos/team-b/grade-v07/audio/bed_ducked_48k.flac",
+        "git_blob": "25394d6189ef9f11be1185f972c8fcb3372614f8",
+        "bytes": 5411186,
+        "sha256": "3d51658788297007efcadf849be68e20fe9f6df7f256208ab9a5fa17c87627cb"
+      },
+      {
+        "path": "videos/team-b/grade-v07/audio/dialogue_stem_48k.flac",
+        "git_blob": "f33946b6d5d89cec04762aa7ede347f12a8d86fd",
+        "bytes": 2317138,
+        "sha256": "fb471ddf06f07b3cd1a0bed3b065e36d5ed4b40e4804fa22418528f424e4df12"
+      },
+      {
+        "path": "videos/team-b/grade-v07/audio/gain_mapping.json",
+        "git_blob": "e32f572080a0daf9f13491652f1b7590ad8c4e63",
+        "bytes": 4146,
+        "sha256": "4e12b95dba932f353f02591db74a67f70bd0a44d4237c19770a6a2830395a762"
+      },
+      {
+        "path": "videos/team-b/grade-v07/audio/tts_turns/turn_01_A.mp3",
+        "git_blob": "16410f43e789e7555fa0e48d24e36f06cb44e1ff",
+        "bytes": 43488,
+        "sha256": "ceda2a8f73ab5bf18506ddc284293c447dd08e2dcb4b3413b53f0b6e4dfe1cb8"
+      },
+      {
+        "path": "videos/team-b/grade-v07/audio/tts_turns/turn_02_B.mp3",
+        "git_blob": "af4810596875b42d1d526dc6860f92df82f2b269",
+        "bytes": 31104,
+        "sha256": "1abea18ca7616864128c4d80b7055c00d3f9bc2b6d51e25b5271eef133884e14"
+      },
+      {
+        "path": "videos/team-b/grade-v07/audio/tts_turns/turn_03_C.mp3",
+        "git_blob": "ece1ea07cd900a20910dd80fc8e937a0a498cd96",
+        "bytes": 39744,
+        "sha256": "131732c4c3c777002f0dab10e34c5f75eb3672c5e18d69327559563b4ca43bdd"
+      },
+      {
+        "path": "videos/team-b/grade-v07/audio/tts_turns/turn_04_B.mp3",
+        "git_blob": "4aed93c7cbdacef4952d751c49a4ec99c84916aa",
+        "bytes": 33120,
+        "sha256": "eac73b22890ce33a020d15eb56eb76c0002fc638fa52df62511818a837ca51e1"
+      },
+      {
+        "path": "videos/team-b/grade-v07/audio/tts_turns/turn_05_C.mp3",
+        "git_blob": "c53f618a51634add08ccb9dae7c6339b96d5e1e7",
+        "bytes": 35424,
+        "sha256": "aafd49b8e1a1665d66e0cdbf6d1a7d303c3137c6c379c215e22031e749985fa6"
+      },
+      {
+        "path": "videos/team-b/grade-v07/audio/tts_turns/turn_06_A.mp3",
+        "git_blob": "d6d55861131482abaced9a94ca2c635c048f5d58",
+        "bytes": 32832,
+        "sha256": "5814f3c925416ea2e3ecf8afee326a891e01057cd16305764a83a22a2fdd1641"
+      },
+      {
+        "path": "videos/team-b/grade-v07/audio/tts_turns/turn_07_B.mp3",
+        "git_blob": "08948ab78effc55c8f710a24edc63306b79ca403",
+        "bytes": 22032,
+        "sha256": "079015b847c0fdf31802b12ade6a8a5991daa76dad12446bb642b4e82d473b86"
+      },
+      {
+        "path": "videos/team-b/grade-v07/audio/tts_turns/turn_08_C.mp3",
+        "git_blob": "cf6d7cc2b305c36cf3d9afa7f74272e91636fe98",
+        "bytes": 36576,
+        "sha256": "54a8ccf1a60c9ab02ccd1209ad1d0cfb4911ae55131d9cd3b4f8ecdbe39d68b0"
+      },
+      {
+        "path": "videos/team-b/grade-v07/audio/tts_turns/turn_09_A.mp3",
+        "git_blob": "232b96b4816feec39060df08881d081c26c1e638",
+        "bytes": 37008,
+        "sha256": "eb602f83e42bc8aa556ac85b8c21a3f91d790e41e6f9a2066af43c93f649176c"
+      },
+      {
+        "path": "videos/team-b/grade-v07/audio/tts_turns/turn_10_C.mp3",
+        "git_blob": "40881b4630bf7f84b522958960e4f2f1696b5fe2",
+        "bytes": 15984,
+        "sha256": "d8c8a8ac81017be0e3a783de7256fd7545206458ae37d4b8cd7a3c52d8dcdcb0"
+      },
+      {
+        "path": "videos/team-b/grade-v07/audio/tts_turns/turn_11_B.mp3",
+        "git_blob": "af38e4b3982c5e2096945d63cfae0934a2fb98d0",
+        "bytes": 20448,
+        "sha256": "2c49cae6d3f619feac8287b2c9bb532e7be4b63a9c531f7efc248ddf652d9725"
+      },
+      {
+        "path": "videos/team-b/grade-v07/audio/tts_turns/turn_12_A.mp3",
+        "git_blob": "bf033566c2b0cea82c60b0038631f1a06d5e84ab",
+        "bytes": 21744,
+        "sha256": "ed3a2d2589805689dda66791c0762ca79141ade75981d2c14825ddc0d503b7ab"
+      },
+      {
+        "path": "videos/team-b/grade-v07/audio/voice_A_reel_48k.flac",
+        "git_blob": "f6672261cff176adfb5cd38a88ef1cd4991ae0dc",
+        "bytes": 1121010,
+        "sha256": "3e4f9652fb0c6daf011bdbaa0eeea832cfc28570fba18cb929d4f79f14227664"
+      },
+      {
+        "path": "videos/team-b/grade-v07/audio/voice_B_line_48k.flac",
+        "git_blob": "199d4fd5e63ef6c417b5de58cdeeac616e3dbea1",
+        "bytes": 644511,
+        "sha256": "e8fcdf275d63a3de3e98675a0e383f9ded00a4a467a3959b14b717e9818a5302"
+      },
+      {
+        "path": "videos/team-b/grade-v07/audio/voice_C_horn_48k.flac",
+        "git_blob": "c169a1afe7dc05d12030dd49e391b4fa99afed5a",
+        "bytes": 586683,
+        "sha256": "f0c65e52ac5a71fdd858b5e9368580076eddcabe5fe94fa4de413244a0a6aaf7"
+      },
+      {
+        "path": "videos/team-b/grade-v07/build_audio_v07.py",
+        "git_blob": "9a05253a82e11f9501d0a742a57a10b9a0ebb9e1",
+        "bytes": 23284,
+        "sha256": "4c7066529df90cd04fd851c2a31abc664323b9026ee6c0ca71613ff65b1b528f"
+      },
+      {
+        "path": "videos/team-b/grade-v07/build_v07.py",
+        "git_blob": "dd4c4106b49490e479ffc371fef877794536e870",
+        "bytes": 521,
+        "sha256": "5ca046890411998c87931f433081777605e5e80ce2c47c66167fad62290aa889"
+      },
+      {
+        "path": "videos/team-b/grade-v07/generate_luts.py",
+        "git_blob": "2ee5517679c90b5c1d59987971fba286a85a4c34",
+        "bytes": 4787,
+        "sha256": "7db37c6d95585e3f6ff61a1807a2c048b245562bc3d85407b4df2e6eeba902ed"
+      },
+      {
+        "path": "videos/team-b/grade-v07/luts/amber_oxide_reel.cube",
+        "git_blob": "78f0fa81f983c24cfd9e9c5d5e5e08f0eb4ca27f",
+        "bytes": 970396,
+        "sha256": "f1636365805dc8b07cbcf7252df273bc17aa2431ef31b1abf7978aad1c088d99"
+      },
+      {
+        "path": "videos/team-b/grade-v07/luts/copper_cord_cyan.cube",
+        "git_blob": "8e3daaba7b90f42e3f7d7599fd5d6e13078e40d8",
+        "bytes": 970397,
+        "sha256": "cb661612b799de5a470f1252863ec949b8d245237becbc613cb5ac4f5119bd25"
+      },
+      {
+        "path": "videos/team-b/grade-v07/luts/surge_breach_7000k.cube",
+        "git_blob": "a363db8a14dc247addf374be4069e25f60f5b82a",
+        "bytes": 970398,
+        "sha256": "7779e130fd4402eceab97b0b93e727faa1e4c5e4651975dcb3e0129011e1e8a9"
+      },
+      {
+        "path": "videos/team-b/grade-v07/luts/vault_slate_4300k.cube",
+        "git_blob": "9d8ecafb39a68aa1cc2efa8eab515ae508296fdb",
+        "bytes": 970396,
+        "sha256": "b488736913e6cb3cdd835dd7b4ff41eeae1dd779333506e842e4370c6f7cb919"
+      },
+      {
+        "path": "videos/team-b/grade-v07/plates/shot_01.jpg",
+        "git_blob": "d44dd01ae572935a58613534cc20a566df07dc6a",
+        "bytes": 186092,
+        "sha256": "a90c3ecba2689d85ccd6a7ae35eca51fba39fbf0ae6359df6e90aa22dff89f84"
+      },
+      {
+        "path": "videos/team-b/grade-v07/plates/shot_02.jpg",
+        "git_blob": "7e708f2af7464a35764a1d3921e4a979b63ade5c",
+        "bytes": 222682,
+        "sha256": "25222ba14c4cb6940990b9d912dce2b3319acd1ce37c7655bcc9a63bd98cbaf0"
+      },
+      {
+        "path": "videos/team-b/grade-v07/plates/shot_03.jpg",
+        "git_blob": "4855ee77f0b6decc43a24ee26eec77fa55ab96f6",
+        "bytes": 263974,
+        "sha256": "645a7180d0589a65e204757257adeefc84a3690b067ab1d8ebcca31c824db6bd"
+      },
+      {
+        "path": "videos/team-b/grade-v07/plates/shot_04.jpg",
+        "git_blob": "a279793fdb43748edcb76b44acb05dfb014acb84",
+        "bytes": 188133,
+        "sha256": "9e6e92a8955dbce73f91de277970fac6d31208480e2f8db079c3b4ae184535d5"
+      },
+      {
+        "path": "videos/team-b/grade-v07/plates/shot_05.jpg",
+        "git_blob": "1d2a4ee6d9511910851a2bb03690b24ed3ac71f3",
+        "bytes": 172663,
+        "sha256": "4051732030b9499fc8b7674bcb4b02de4b1c03da7e524844cdaf682be869b2e4"
+      },
+      {
+        "path": "videos/team-b/grade-v07/plates/shot_06.jpg",
+        "git_blob": "0f8fd5dce94622e84ab15b48d870022d0ec0c132",
+        "bytes": 197175,
+        "sha256": "89ae0e2423e18310769bf23f7b2c211cc03f7dcf51fa5cfaa40e713e928f4f10"
+      },
+      {
+        "path": "videos/team-b/grade-v07/plates/shot_07.jpg",
+        "git_blob": "bac9e994f0f23746deaaf66ccfc7d16dffbd904b",
+        "bytes": 165379,
+        "sha256": "89632b91dc97a02959d42495ccde1b6c78d781613daada1e1adae0f0a2b89256"
+      },
+      {
+        "path": "videos/team-b/grade-v07/plates/shot_08.jpg",
+        "git_blob": "fc1b6418d2527d58d214c13db25b2aa235797517",
+        "bytes": 190692,
+        "sha256": "e0dbe4c20871d6dfec659128cf22c805002c6f07f91661cea36093dfd3d40a68"
+      },
+      {
+        "path": "videos/team-b/grade-v07/plates/shot_09.jpg",
+        "git_blob": "d8174b0f2ddfbf2bdec5b7e838f1aca93eb481e1",
+        "bytes": 195804,
+        "sha256": "5cbf8b3ea69590dd6c8ca664585f946a8dca3f44052a38cf762b85ed04d01e05"
+      },
+      {
+        "path": "videos/team-b/grade-v07/plates/shot_10.jpg",
+        "git_blob": "66aa9e7767b497d118bbf976153e557e325ff5e8",
+        "bytes": 238973,
+        "sha256": "b0bfaae0a9eafde88119ba8e28a184de7a434bbdba8b833eeb2a4a679680bc5c"
+      },
+      {
+        "path": "videos/team-b/grade-v07/render_v07.py",
+        "git_blob": "fb4da5deeddcd7744795a03684ac997866bbacca",
+        "bytes": 23629,
+        "sha256": "7f003901d79852af2c0c40ecc6400d0df65d175ec3442260efe110a71b3cf3c1"
+      },
+      {
+        "path": "videos/team-b/grade-v07/requirements.txt",
+        "git_blob": "6b923b6b6315395fe4cafec32bacf45cd0992f23",
+        "bytes": 58,
+        "sha256": "7029dd0a842bd3759920add4fe086fe1cc92521369c1aecf3d3d2527881dbacc"
+      },
+      {
+        "path": "videos/team-b/grade-v07/script.md",
+        "git_blob": "3460f9f688877ac50c575077a306bea0a3ad8de6",
+        "bytes": 7720,
+        "sha256": "ebf9ff64bd968f5a699efc00cc90f3f32dabc0dafbd0151e24fa496aacdb5ab1"
+      },
+      {
+        "path": "videos/team-b/grade-v07/stills/01_vault_three_chairs.png",
+        "git_blob": "6db677c87b469d8405e95abf1261346df985b834",
+        "bytes": 2379540,
+        "sha256": "24c23341fd3aeb6b30073733d8ab64ca00d95f3fb2166102861bfb3cf6e601f0"
+      },
+      {
+        "path": "videos/team-b/grade-v07/stills/02_dangling_handset_line.png",
+        "git_blob": "82d971c2f8930b00f1d137538d48ff146d9f6acc",
+        "bytes": 2887855,
+        "sha256": "1e5c1367b70a65bfdbd3e5208a7a3b80b6f9382189b13abfca2e7cedee0460aa"
+      },
+      {
+        "path": "videos/team-b/grade-v07/stills/03_ceiling_vhf_horn.png",
+        "git_blob": "66c34ee3d9e6c8cfe6aec9320513ad0379b0af9a",
+        "bytes": 3392105,
+        "sha256": "393018d349bc9055750b36eb15a42bfd6b6ba7e4f603c6bc2cece870fc849e41"
+      },
+      {
+        "path": "videos/team-b/grade-v07/stills/04_oxide_reel_room_mic.png",
+        "git_blob": "97875764e0815c23939a5c9b6c0cb71db06ed8e4",
+        "bytes": 2564078,
+        "sha256": "7ca22ea65e8135b0c7036938d72b3547c83249494e89c98212dc277f6c355bfd"
+      },
+      {
+        "path": "videos/team-b/grade-v07/stills/05_mark_six_interior_stencil.png",
+        "git_blob": "a0e3a72e4c66292aff2a6a6a4c2d6c8c4cb904c4",
+        "bytes": 2634935,
+        "sha256": "3a69f735f9c13d7a1c480a4f2389ede1cd7d6229f0821a6786f081b78dd61112"
+      },
+      {
+        "path": "videos/team-b/grade-v07/stills/wall_frame_mark_six_clean.png",
+        "git_blob": "d040b0825aca60f0db6e9a5e026cacabd5442b77",
+        "bytes": 2214608,
+        "sha256": "f9212b94f4f3cc775cd00f2229d33f159666f23593bb09848a552cafe58843ed"
+      },
+      {
+        "path": "videos/team-b/grade-v07/timing/captions.srt",
+        "git_blob": "3c8d95c57cd0740a66b6680f27069af144a3be80",
+        "bytes": 2436,
+        "sha256": "e9139e481c74c7afc6b1383c529c3be9dc493b139380603e61950f585a2d2d37"
+      },
+      {
+        "path": "videos/team-b/grade-v07/timing/captions_locked.json",
+        "git_blob": "2de6dc3165e54a77e84d8b746eb92dbc79f6aac3",
+        "bytes": 6571,
+        "sha256": "02261487f9d3b4c0a8ef6020a80a89b8573a2ec46529ea4aad8fdefb3c91ad0d"
+      },
+      {
+        "path": "videos/team-b/grade-v07/timing/timeline_locked.json",
+        "git_blob": "16a8f67a42fb3a847fb7fbd885faafafb2ef03a5",
+        "bytes": 32849,
+        "sha256": "1a0a5d8987e3c4b611525d11bf69f844fd16840f6ac3ae4bf108579fc16a537e"
+      },
+      {
+        "path": "videos/team-b/grade-v07/timing/tts_source_manifest.json",
+        "git_blob": "2e246e3b5179b09e1647b8b3cb071e9cf674ab6d",
+        "bytes": 23134,
+        "sha256": "1451a26946824255f5e6b4b03a8e66e4b07c2f48c84094e45deba66401c6ffcb"
+      },
+      {
+        "path": "videos/team-b/grade-v07/video.mp4",
+        "git_blob": "628ece585eefbef388bd0f23639ec5c78156f5c0",
+        "bytes": 30609478,
+        "sha256": "632cdfeb024630d568f20d6105fc7a73dde3d6e508e1c80984b529ba6214a5f5"
+      }
+    ]
+  },
+  "PR8": {
+    "head": "82ba387f0b4f384645878a816f1d3a465c1708e1",
+    "files": [
+      {
+        "path": "videos/team-b/cut-v09/video-landscape.mp4",
+        "git_blob": "80abd45176f0cf31b019a79214dd593f79a767fc",
+        "bytes": 13696888,
+        "sha256": "6cbf0ae58d57c6fab211db120869720c127ed3369cdb4374a1c10ae334033f4a"
+      },
+      {
+        "path": "videos/team-b/cut-v09/video.mp4",
+        "git_blob": "4f030aa096779fd92ce1b3a176372d7e01c43ea1",
+        "bytes": 13806883,
+        "sha256": "71a443426d0bc89cdbcdeb55a7b31f60f4494bbcf1ea72342f8936b4d3c252c3"
+      }
+    ]
+  }
+}

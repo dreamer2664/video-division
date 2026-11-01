@@ -1,0 +1,17 @@
+[
+  {
+    "pr": 12,
+    "branch": "grade/house-look",
+    "head": "90394d8411185519fdc360f4c0ea26d0dc3f2822"
+  },
+  {
+    "pr": 10,
+    "branch": "grade/v07",
+    "head": "bdffeaca1d81e2bd96758a21474f3349622676eb"
+  },
+  {
+    "pr": 4,
+    "branch": "pixel/v06",
+    "head": "18b0c89e5a8eca70fd83678cb468edeaa41615e1"
+  }
+]

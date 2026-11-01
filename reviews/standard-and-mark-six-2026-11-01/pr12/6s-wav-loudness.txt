@@ -1,0 +1,31 @@
+ffmpeg -hide_banner -nostats -i /home/user/standard-audio-test/6/master.wav -af loudnorm=print_format=json -f null -
+[aist#0:0/pcm_s16le @ 0x557dca403740] Guessed Channel Layout: stereo
+Input #0, wav, from '/home/user/standard-audio-test/6/master.wav':
+  Metadata:
+    encoder         : Lavf61.7.103
+  Duration: 00:00:06.00, bitrate: 1536 kb/s
+  Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s16, 1536 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (pcm_s16le (native) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, null, to 'pipe:':
+  Metadata:
+    encoder         : Lavf61.7.103
+  Stream #0:0: Audio: pcm_s16le, 192000 Hz, stereo, s16, 6144 kb/s
+      Metadata:
+        encoder         : Lavc61.19.101 pcm_s16le
+[Parsed_loudnorm_0 @ 0x7f0764001b80] 
+{
+	"input_i" : "-16.23",
+	"input_tp" : "-2.19",
+	"input_lra" : "1.10",
+	"input_thresh" : "-26.23",
+	"output_i" : "-24.36",
+	"output_tp" : "-10.43",
+	"output_lra" : "1.20",
+	"output_thresh" : "-34.36",
+	"normalization_type" : "dynamic",
+	"target_offset" : "0.36"
+}
+[out#0/null @ 0x557dca403900] video:0KiB audio:4500KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+size=N/A time=00:00:06.00 bitrate=N/A speed=  28x    

@@ -1,0 +1,69 @@
+$ python3 -B look/demo_shot.py --out-dir [empty test directory]
+Traceback (most recent call last):
+  File "/home/user/.venv-look/lib/python3.13/site-packages/edge_tts/communicate.py", line 588, in stream
+    async for message in self.__stream():
+        yield message
+  File "/home/user/.venv-look/lib/python3.13/site-packages/edge_tts/communicate.py", line 465, in __stream
+    ) as session, session.ws_connect(
+                  ~~~~~~~~~~~~~~~~~~^
+        f"{WSS_URL}&ConnectionId={connect_id()}"
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        ssl=_SSL_CTX,
+        ^^^^^^^^^^^^^
+    ) as websocket:
+    ^
+  File "/home/user/.venv-look/lib/python3.13/site-packages/aiohttp/client.py", line 1756, in __aenter__
+    self._resp: _RetType_co = await self._coro
+                              ^^^^^^^^^^^^^^^^
+  File "/home/user/.venv-look/lib/python3.13/site-packages/aiohttp/client.py", line 1329, in _ws_connect
+    raise WSServerHandshakeError(
+    ...<5 lines>...
+    )
+aiohttp.client_exceptions.WSServerHandshakeError: 403, message='Invalid response status', url='[provider URL redacted]'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/user/look-clean/look/demo_shot.py", line 162, in <module>
+    main()
+    ~~~~^^
+  File "/home/user/look-clean/look/demo_shot.py", line 87, in main
+    turns, manifest = asyncio.run(synthesize_lines_with_telemetry(lines, tts_dir, start_cursor_s=0.35))
+                      ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/asyncio/runners.py", line 196, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "/usr/local/lib/python3.13/asyncio/runners.py", line 119, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/local/lib/python3.13/asyncio/base_events.py", line 726, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/home/user/look-clean/look/house_audio.py", line 71, in synthesize_lines_with_telemetry
+    async for ch in comm.stream():
+    ...<5 lines>...
+            words_raw.append({"text": ch["text"], "start": round(ws, 4), "end": round(ws + wd, 4)})
+  File "/home/user/.venv-look/lib/python3.13/site-packages/edge_tts/communicate.py", line 596, in stream
+    async for message in self.__stream():
+        yield message
+  File "/home/user/.venv-look/lib/python3.13/site-packages/edge_tts/communicate.py", line 465, in __stream
+    ) as session, session.ws_connect(
+                  ~~~~~~~~~~~~~~~~~~^
+        f"{WSS_URL}&ConnectionId={connect_id()}"
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        ssl=_SSL_CTX,
+        ^^^^^^^^^^^^^
+    ) as websocket:
+    ^
+  File "/home/user/.venv-look/lib/python3.13/site-packages/aiohttp/client.py", line 1756, in __aenter__
+    self._resp: _RetType_co = await self._coro
+                              ^^^^^^^^^^^^^^^^
+  File "/home/user/.venv-look/lib/python3.13/site-packages/aiohttp/client.py", line 1329, in _ws_connect
+    raise WSServerHandshakeError(
+    ...<5 lines>...
+    )
+aiohttp.client_exceptions.WSServerHandshakeError: 403, message='Invalid response status', url='[provider URL redacted]'
+
+exit_status=1
