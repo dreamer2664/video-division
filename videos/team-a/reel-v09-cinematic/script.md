@@ -22,8 +22,6 @@ Now the arrivals balance.
 At six, the wake-up call connects to the unlet room.  
 No one is left at reception to hear who answers.
 
-The committed narration stem measures 52.924 s with 124 Edge word events; the last spoken word ends at 51.934 s. The pre-reveal gap from “four” to “Two guests” is 2.683 s. The remaining time is an intentional weather/telephone landing rather than sped-up speech. The script matches the committed word-event text.
-
 ## Picture and sound plan — locked to measured speech
 
 Ten original 16:9 photo plates, zero people and no invented legible lettering: physical hotel locations and objects, not illustration or a dashboard. Use the published House Look's trilinear 33³ LUT, floating-point subpixel camera motion, two-depth rain through soft window masks, restrained lamp halation and temporal grain. The numerical boundaries below are multiples of 1/30 s.
