@@ -1,0 +1,6 @@
+[0 llvmpipe (LLVM 19.1.7, 256 bits)]  queueC=0[1]  queueG=0[1]  queueT=0[1]
+[0 llvmpipe (LLVM 19.1.7, 256 bits)]  bugsbn1=0  bugbilz=0  bugcopc=0  bugihfa=0
+[0 llvmpipe (LLVM 19.1.7, 256 bits)]  fp16-p/s/a=1/1/1  int8-p/s/a=1/1/1
+[0 llvmpipe (LLVM 19.1.7, 256 bits)]  subgroup=8  basic=1  vote=1  ballot=1  shuffle=1
+
+Inference terminated at 90 seconds, exit 124, with no output on 96x96 probe.
