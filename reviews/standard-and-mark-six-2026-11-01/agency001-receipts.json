@@ -1,0 +1,72 @@
+[
+  {
+    "pr": 12,
+    "status": "REJECT",
+    "message": "[MANAGER-B] lux \u00b7 decision \u00b7 PR12 REJECT: House Look @90394d8: four LUTs regenerate byte-identically; real motion/caption/audio code passes,6s/60sAAC-16.29/-16.15LUFS,offline bit-exact. Default clean-clone quickstart FAILS: sparse command exits128,file-as-dir; pinned TTS403 and no offline/photo smoke path. Consolidated fixes: https://github.com/dreamer2664/video-division/pull/12#issuecomment-6557724899 . No merge. Evidence+BOARD mainbbd4acc, reviews/standard-and-mark-six-2026-11-01. No human listened; no publishing.",
+    "receipt": {
+      "id": "BuLkKDoVhRxa",
+      "time": 1793535200,
+      "expires": 1793578400,
+      "event": "message",
+      "topic": "agency001",
+      "title": "lux PR12 REJECT",
+      "message": "[MANAGER-B] lux \u00b7 decision \u00b7 PR12 REJECT: House Look @90394d8: four LUTs regenerate byte-identically; real motion/caption/audio code passes,6s/60sAAC-16.29/-16.15LUFS,offline bit-exact. Default clean-clone quickstart FAILS: sparse command exits128,file-as-dir; pinned TTS403 and no offline/photo smoke path. Consolidated fixes: https://github.com/dreamer2664/video-division/pull/12#issuecomment-6557724899 . No merge. Evidence+BOARD mainbbd4acc, reviews/standard-and-mark-six-2026-11-01. No human listened; no publishing."
+    }
+  },
+  {
+    "pr": 10,
+    "status": "REJECT",
+    "message": "[MANAGER-B] lux \u00b7 decision \u00b7 PR10 REJECT: MARK SIX @bdffeaca: full photographic/LUT/weather/actual5stem3voice/caption gates PASS,-16.15LUFS/-1.88TP,zero scans. REJECT under directive5: outside water marks -> Mark Six stenciled inside -> flood chamber repeats prohibited mark plot; approved MARK FIVE reference is not a sequel waiver. https://github.com/dreamer2664/video-division/pull/10#issuecomment-6557725210 Evidence+BOARD mainbbd4acc, reviews/standard-and-mark-six-2026-11-01. No human listened; no publishing.",
+    "receipt": {
+      "id": "btWndhbgXxSy",
+      "time": 1793535200,
+      "expires": 1793578400,
+      "event": "message",
+      "topic": "agency001",
+      "title": "lux PR10 REJECT",
+      "message": "[MANAGER-B] lux \u00b7 decision \u00b7 PR10 REJECT: MARK SIX @bdffeaca: full photographic/LUT/weather/actual5stem3voice/caption gates PASS,-16.15LUFS/-1.88TP,zero scans. REJECT under directive5: outside water marks -> Mark Six stenciled inside -> flood chamber repeats prohibited mark plot; approved MARK FIVE reference is not a sequel waiver. https://github.com/dreamer2664/video-division/pull/10#issuecomment-6557725210 Evidence+BOARD mainbbd4acc, reviews/standard-and-mark-six-2026-11-01. No human listened; no publishing."
+    }
+  },
+  {
+    "pr": 8,
+    "status": "CLOSED",
+    "message": "[MANAGER-B] lux \u00b7 decision \u00b7 PR8 CLOSED: FOUR SECONDS AHEAD closed, not merged: superseded by DIRECTIVE-2026-11-01-house-look.md, withdrawn old vertical target. cut/v09 branch preserved. https://github.com/dreamer2664/video-division/pull/8#issuecomment-6557689848 Evidence+BOARD mainbbd4acc, reviews/standard-and-mark-six-2026-11-01. No human listened; no publishing.",
+    "receipt": {
+      "id": "X2i4O9LRSV30",
+      "time": 1793535200,
+      "expires": 1793578400,
+      "event": "message",
+      "topic": "agency001",
+      "title": "lux PR8 CLOSED",
+      "message": "[MANAGER-B] lux \u00b7 decision \u00b7 PR8 CLOSED: FOUR SECONDS AHEAD closed, not merged: superseded by DIRECTIVE-2026-11-01-house-look.md, withdrawn old vertical target. cut/v09 branch preserved. https://github.com/dreamer2664/video-division/pull/8#issuecomment-6557689848 Evidence+BOARD mainbbd4acc, reviews/standard-and-mark-six-2026-11-01. No human listened; no publishing."
+    }
+  },
+  {
+    "pr": 13,
+    "status": "REJECT",
+    "message": "[MANAGER-B] lux \u00b7 decision \u00b7 PR13 REJECT: Late cut/v10 TWO LIGHTS @f003213 fully audited after arrival: loudness fix VERIFIED-16.27LUFS/-1.41TP,clean scans,photographic/source/captions good. Remaining source voice/bed opening+5.87dB and30-40s+7.38 vs8-12target. Audio-only duck/rebalance+renormalize/remux; no picture rerender. https://github.com/dreamer2664/video-division/pull/13#issuecomment-6557772149 Evidence+BOARD mainbbd4acc, reviews/standard-and-mark-six-2026-11-01. No human listened; no publishing.",
+    "receipt": {
+      "id": "t1NSvv0sQZ0J",
+      "time": 1793535200,
+      "expires": 1793578400,
+      "event": "message",
+      "topic": "agency001",
+      "title": "lux PR13 REJECT",
+      "message": "[MANAGER-B] lux \u00b7 decision \u00b7 PR13 REJECT: Late cut/v10 TWO LIGHTS @f003213 fully audited after arrival: loudness fix VERIFIED-16.27LUFS/-1.41TP,clean scans,photographic/source/captions good. Remaining source voice/bed opening+5.87dB and30-40s+7.38 vs8-12target. Audio-only duck/rebalance+renormalize/remux; no picture rerender. https://github.com/dreamer2664/video-division/pull/13#issuecomment-6557772149 Evidence+BOARD mainbbd4acc, reviews/standard-and-mark-six-2026-11-01. No human listened; no publishing."
+    }
+  },
+  {
+    "pr": 14,
+    "status": "NEXT ROUND",
+    "message": "[MANAGER-B] lux \u00b7 decision \u00b7 PR14 NEXT ROUND: Hotel reel/v09-cinematic now open,latest observed d913dff. Recorded, NOT audited/accepted/merged; user placed hotel/pixel cinematic next round. Pixel cinematic has no PR in last queue snapshot. Evidence+BOARD mainbbd4acc, reviews/standard-and-mark-six-2026-11-01. No human listened; no publishing.",
+    "receipt": {
+      "id": "XoRhRwucwom1",
+      "time": 1793535201,
+      "expires": 1793578401,
+      "event": "message",
+      "topic": "agency001",
+      "title": "lux PR14 NEXT ROUND",
+      "message": "[MANAGER-B] lux \u00b7 decision \u00b7 PR14 NEXT ROUND: Hotel reel/v09-cinematic now open,latest observed d913dff. Recorded, NOT audited/accepted/merged; user placed hotel/pixel cinematic next round. Pixel cinematic has no PR in last queue snapshot. Evidence+BOARD mainbbd4acc, reviews/standard-and-mark-six-2026-11-01. No human listened; no publishing."
+    }
+  }
+]
