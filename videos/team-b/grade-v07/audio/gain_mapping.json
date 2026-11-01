@@ -1,0 +1,127 @@
+{
+  "stems_sha256": {
+    "voice_A_reel_48k.flac": "3e4f9652fb0c6daf011bdbaa0eeea832cfc28570fba18cb929d4f79f14227664",
+    "voice_B_line_48k.flac": "e8fcdf275d63a3de3e98675a0e383f9ded00a4a467a3959b14b717e9818a5302",
+    "voice_C_horn_48k.flac": "f0c65e52ac5a71fdd858b5e9368580076eddcabe5fe94fa4de413244a0a6aaf7",
+    "dialogue_stem_48k.flac": "fb471ddf06f07b3cd1a0bed3b065e36d5ed4b40e4804fa22418528f424e4df12",
+    "bed_ducked_48k.flac": "3d51658788297007efcadf849be68e20fe9f6df7f256208ab9a5fa17c87627cb"
+  },
+  "master_wav_sha256": "cd260ea6100f3f796c69c5b2b1277be9991e8ebe13ecbf9c29cdb87359594209",
+  "pre_scale": 1.0,
+  "loudnorm_pass1_stats": {
+    "input_i": "-22.26",
+    "input_tp": "-6.08",
+    "input_lra": "2.90",
+    "input_thresh": "-32.51",
+    "output_i": "-16.18",
+    "output_tp": "-2.20",
+    "output_lra": "2.60",
+    "output_thresh": "-26.44",
+    "normalization_type": "dynamic",
+    "target_offset": "0.18"
+  },
+  "loudnorm_filter": "loudnorm=I=-16.0:TP=-2.2:LRA=9.0:measured_I=-22.26:measured_LRA=2.90:measured_TP=-6.08:measured_thresh=-32.51:offset=0.18:linear=true:print_format=summary,alimiter=limit=0.775:attack=3:release=40:level=false,aresample=48000",
+  "voice_separation": {
+    "overlap_samples_AB": 0,
+    "overlap_samples_AC": 0,
+    "overlap_samples_BC": 0,
+    "overlap_seconds_total": 0.0,
+    "voice_A_reel": {
+      "engine": "en-US-ChristopherNeural",
+      "rate": "-10%",
+      "pitch": "-6Hz",
+      "band_hz": "75-8000",
+      "median_f0_hz": 107.4,
+      "spectral_centroid_hz": 1078.8,
+      "pan_LR_db": 5.74
+    },
+    "voice_C_horn": {
+      "engine": "en-IE-ConnorNeural",
+      "rate": "+2%",
+      "pitch": "+6Hz",
+      "band_hz": "850-6800",
+      "median_f0_hz": 156.9,
+      "spectral_centroid_hz": 2182.6,
+      "pan_LR_db": 0.0
+    },
+    "voice_B_line": {
+      "engine": "en-GB-SoniaNeural",
+      "rate": "+5%",
+      "pitch": "+4Hz",
+      "band_hz": "340-3100",
+      "median_f0_hz": 204.3,
+      "spectral_centroid_hz": 640.3,
+      "pan_LR_db": -5.74
+    }
+  },
+  "active_speech_duty_pct": 88.83,
+  "active_window_dialogue_rms_dbfs": -25.74,
+  "active_window_bed_rms_dbfs": -36.16,
+  "active_speech_to_bed_margin_db": 10.43,
+  "body_windows_10s": [
+    {
+      "window_s": "00-10s",
+      "speech_duty_pct": 91.9,
+      "voice_A_rms_dbfs": -27.22,
+      "voice_B_rms_dbfs": -32.92,
+      "voice_C_rms_dbfs": -240.0,
+      "dialogue_stem_rms_dbfs": -26.19,
+      "bed_ducked_rms_dbfs": -36.51,
+      "mp4_mix_rms_dbfs": -19.69
+    },
+    {
+      "window_s": "10-20s",
+      "speech_duty_pct": 91.8,
+      "voice_A_rms_dbfs": -240.0,
+      "voice_B_rms_dbfs": -29.93,
+      "voice_C_rms_dbfs": -28.54,
+      "dialogue_stem_rms_dbfs": -26.17,
+      "bed_ducked_rms_dbfs": -36.04,
+      "mp4_mix_rms_dbfs": -19.57
+    },
+    {
+      "window_s": "20-30s",
+      "speech_duty_pct": 91.6,
+      "voice_A_rms_dbfs": -43.92,
+      "voice_B_rms_dbfs": -30.41,
+      "voice_C_rms_dbfs": -29.06,
+      "dialogue_stem_rms_dbfs": -26.59,
+      "bed_ducked_rms_dbfs": -36.18,
+      "mp4_mix_rms_dbfs": -20.05
+    },
+    {
+      "window_s": "30-40s",
+      "speech_duty_pct": 91.8,
+      "voice_A_rms_dbfs": -29.01,
+      "voice_B_rms_dbfs": -29.97,
+      "voice_C_rms_dbfs": -34.51,
+      "dialogue_stem_rms_dbfs": -25.82,
+      "bed_ducked_rms_dbfs": -35.93,
+      "mp4_mix_rms_dbfs": -19.26
+    },
+    {
+      "window_s": "40-50s",
+      "speech_duty_pct": 89.5,
+      "voice_A_rms_dbfs": -27.83,
+      "voice_B_rms_dbfs": -240.0,
+      "voice_C_rms_dbfs": -30.37,
+      "dialogue_stem_rms_dbfs": -25.91,
+      "bed_ducked_rms_dbfs": -34.77,
+      "mp4_mix_rms_dbfs": -19.29
+    },
+    {
+      "window_s": "50-60s",
+      "speech_duty_pct": 76.3,
+      "voice_A_rms_dbfs": -30.61,
+      "voice_B_rms_dbfs": -31.26,
+      "voice_C_rms_dbfs": -33.92,
+      "dialogue_stem_rms_dbfs": -26.94,
+      "bed_ducked_rms_dbfs": -33.52,
+      "mp4_mix_rms_dbfs": -19.92
+    }
+  ],
+  "delivered_mp4_sha256": "30d7c9e9facc00bb4e49072d0b871289046ddc771ffcbca7d72e95a33b6ad806",
+  "mp4_stereo_LR_correlation": 0.8307,
+  "master_to_mp4_aac_correlation_r": 0.998834,
+  "master_to_mp4_aac_residual_dbfs": -45.88
+}
