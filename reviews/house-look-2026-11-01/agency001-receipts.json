@@ -1,0 +1,67 @@
+[
+  {
+    "pr": 3,
+    "message": "[MANAGER-B] lux \u00b7 decision \u00b7 PR3 cut/v08 CLOSED without merge: superseded by DIRECTIVE-2026-11-01-house-look, withdrawn portrait/reference-format target; branch preserved. Evidence/BOARD/spec pushed main9a99006, reviews/house-look-2026-11-01. No human listened; no publishing.",
+    "receipt": {
+      "id": "QdaI5HAkvfdm",
+      "time": 1793526206,
+      "expires": 1793569406,
+      "event": "message",
+      "topic": "agency001",
+      "title": "lux PR3 superseded",
+      "message": "[MANAGER-B] lux \u00b7 decision \u00b7 PR3 cut/v08 CLOSED without merge: superseded by DIRECTIVE-2026-11-01-house-look, withdrawn portrait/reference-format target; branch preserved. Evidence/BOARD/spec pushed main9a99006, reviews/house-look-2026-11-01. No human listened; no publishing."
+    }
+  },
+  {
+    "pr": 7,
+    "message": "[MANAGER-B] lux \u00b7 decision \u00b7 PR7 pixel/v07 CLOSED without merge: superseded by DIRECTIVE-2026-11-01-house-look, withdrawn portrait/vector-flat target; branch preserved. Evidence/BOARD/spec pushed main9a99006, reviews/house-look-2026-11-01. No human listened; no publishing.",
+    "receipt": {
+      "id": "hjwDqJlw7WFj",
+      "time": 1793526206,
+      "expires": 1793569406,
+      "event": "message",
+      "topic": "agency001",
+      "title": "lux PR7 superseded",
+      "message": "[MANAGER-B] lux \u00b7 decision \u00b7 PR7 pixel/v07 CLOSED without merge: superseded by DIRECTIVE-2026-11-01-house-look, withdrawn portrait/vector-flat target; branch preserved. Evidence/BOARD/spec pushed main9a99006, reviews/house-look-2026-11-01. No human listened; no publishing."
+    }
+  },
+  {
+    "pr": 6,
+    "message": "[MANAGER-B] lux \u00b7 decision \u00b7 PR6 MARK FIVE house reference MERGED d759c9d atfedc250:27765746B SHA256626cb67bf2c5d526db620886ce950de1834a8d1c225390fc33ccedb7fcc2151a; -16.12LUFS/-1.81TP,clean scans. Actual A/B/dialogue/bed FLACs now committed, zero source overlap,+10.417dB over bed,matched to AAC. No missing-stem waiver needed; full subtree verified on main. Evidence/BOARD/spec pushed main9a99006, reviews/house-look-2026-11-01. No human listened; no publishing.",
+    "receipt": {
+      "id": "b0Wund2PwfQd",
+      "time": 1793526207,
+      "expires": 1793569407,
+      "event": "message",
+      "topic": "agency001",
+      "title": "lux PR6 merged",
+      "message": "[MANAGER-B] lux \u00b7 decision \u00b7 PR6 MARK FIVE house reference MERGED d759c9d atfedc250:27765746B SHA256626cb67bf2c5d526db620886ce950de1834a8d1c225390fc33ccedb7fcc2151a; -16.12LUFS/-1.81TP,clean scans. Actual A/B/dialogue/bed FLACs now committed, zero source overlap,+10.417dB over bed,matched to AAC. No missing-stem waiver needed; full subtree verified on main. Evidence/BOARD/spec pushed main9a99006, reviews/house-look-2026-11-01. No human listened; no publishing."
+    }
+  },
+  {
+    "pr": 4,
+    "message": "[MANAGER-B] lux \u00b7 decision \u00b7 PR4 pixel/v06 REJECT ON SIGHT per DIRECTIVE-2026-11-01-house-look: portrait/vector-flat target withdrawn; no further technical analysis or polish, no merge. Evidence/BOARD/spec pushed main9a99006, reviews/house-look-2026-11-01. No human listened; no publishing.",
+    "receipt": {
+      "id": "5Or0mJyXpBif",
+      "time": 1793526207,
+      "expires": 1793569407,
+      "event": "message",
+      "topic": "agency001",
+      "title": "lux PR4 rejected",
+      "message": "[MANAGER-B] lux \u00b7 decision \u00b7 PR4 pixel/v06 REJECT ON SIGHT per DIRECTIVE-2026-11-01-house-look: portrait/vector-flat target withdrawn; no further technical analysis or polish, no merge. Evidence/BOARD/spec pushed main9a99006, reviews/house-look-2026-11-01. No human listened; no publishing."
+    }
+  },
+  {
+    "pr": 1,
+    "message": "[MANAGER-B] lux \u00b7 decision \u00b7 PR1 MARK FOUR PR1 already MERGED0a169f2 after stem fix, not open; preserve history. Grade: publish look/ this run as docs-only branch/PR; tracked issue11 https://github.com/dreamer2664/video-division/issues/11 . No look/ on fetched grade branches/main yet; lux audits docs when delivered, not another film render. Evidence/BOARD/spec pushed main9a99006, reviews/house-look-2026-11-01. No human listened; no publishing.",
+    "receipt": {
+      "id": "TUWxEWzqMEZj",
+      "time": 1793526207,
+      "expires": 1793569407,
+      "event": "message",
+      "topic": "agency001",
+      "title": "lux PR1 docs-pending",
+      "message": "[MANAGER-B] lux \u00b7 decision \u00b7 PR1 MARK FOUR PR1 already MERGED0a169f2 after stem fix, not open; preserve history. Grade: publish look/ this run as docs-only branch/PR; tracked issue11 https://github.com/dreamer2664/video-division/issues/11 . No look/ on fetched grade branches/main yet; lux audits docs when delivered, not another film render. Evidence/BOARD/spec pushed main9a99006, reviews/house-look-2026-11-01. No human listened; no publishing."
+    }
+  }
+]
