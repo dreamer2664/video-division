@@ -1,0 +1,128 @@
+[
+  {
+    "pr": 5,
+    "path": "videos/team-a/reel-v08/video.mp4",
+    "source_head": "46acb2132b5cca71c24966b5e9df0ee05101e30e",
+    "own_merge_commit": "d4e4acb2281994ecc2a4dd8028351a81205b43a9",
+    "merge_parents": [
+      "3b1df809f424a96d59a86273a6ff81730a4e470a",
+      "46acb2132b5cca71c24966b5e9df0ee05101e30e"
+    ],
+    "source_merge_and_main_blob": "389c8390b5afe205b4dd3fae3b8e3f9ae94b5679",
+    "bytes": 8220423,
+    "sha256": "dc76f5fb7204316f2d920831b938dc896631da50970f08e3a35b2143f351c70b",
+    "verified_equal": true
+  },
+  {
+    "pr": 5,
+    "path": "videos/team-a/reel-v08/video-landscape.mp4",
+    "source_head": "46acb2132b5cca71c24966b5e9df0ee05101e30e",
+    "own_merge_commit": "d4e4acb2281994ecc2a4dd8028351a81205b43a9",
+    "merge_parents": [
+      "3b1df809f424a96d59a86273a6ff81730a4e470a",
+      "46acb2132b5cca71c24966b5e9df0ee05101e30e"
+    ],
+    "source_merge_and_main_blob": "0f3548cf4db4280bbc0e9286b0988b9734457456",
+    "bytes": 6675877,
+    "sha256": "b15e0135bc07246ee2d2ded2a94e4a43b842884cd2e0cf7bf5b3da10aedff4df",
+    "verified_equal": true
+  },
+  {
+    "pr": 5,
+    "path": "videos/team-a/reel-v08/assets/narration.flac",
+    "source_head": "46acb2132b5cca71c24966b5e9df0ee05101e30e",
+    "own_merge_commit": "d4e4acb2281994ecc2a4dd8028351a81205b43a9",
+    "merge_parents": [
+      "3b1df809f424a96d59a86273a6ff81730a4e470a",
+      "46acb2132b5cca71c24966b5e9df0ee05101e30e"
+    ],
+    "source_merge_and_main_blob": "b8584b513a40157cc71a88bc35952aeceb165739",
+    "bytes": 1789587,
+    "sha256": "a98815d984df20229cdc01895b2b655a3a48775d7dd7ba69ad015020a07a481e",
+    "verified_equal": true
+  },
+  {
+    "pr": 5,
+    "path": "videos/team-a/reel-v08/assets/word_timings.json",
+    "source_head": "46acb2132b5cca71c24966b5e9df0ee05101e30e",
+    "own_merge_commit": "d4e4acb2281994ecc2a4dd8028351a81205b43a9",
+    "merge_parents": [
+      "3b1df809f424a96d59a86273a6ff81730a4e470a",
+      "46acb2132b5cca71c24966b5e9df0ee05101e30e"
+    ],
+    "source_merge_and_main_blob": "17f2a815b9c4f2b8ef289888287b05372489344e",
+    "bytes": 15757,
+    "sha256": "d25d46df6cb252356fc80dfb53542d4759380e8476999829e40ab81e1d57c3db",
+    "verified_equal": true
+  },
+  {
+    "pr": 5,
+    "path": "videos/team-a/reel-v08/captions.srt",
+    "source_head": "46acb2132b5cca71c24966b5e9df0ee05101e30e",
+    "own_merge_commit": "d4e4acb2281994ecc2a4dd8028351a81205b43a9",
+    "merge_parents": [
+      "3b1df809f424a96d59a86273a6ff81730a4e470a",
+      "46acb2132b5cca71c24966b5e9df0ee05101e30e"
+    ],
+    "source_merge_and_main_blob": "53cb75f051f4098eb250b6344edac4e6d295dc55",
+    "bytes": 2227,
+    "sha256": "266e0ba433fbf9e382e3a27bbec3e0c930580b3fcadaf58678368022a47bebeb",
+    "verified_equal": true
+  },
+  {
+    "pr": 1,
+    "path": "videos/team-b/grade-v05/video.mp4",
+    "source_head": "1929efbfdc7742b9a986f45b6828579f21f60872",
+    "own_merge_commit": "0a169f267982c74bede5f8421ad279df6b3e11ea",
+    "merge_parents": [
+      "d4e4acb2281994ecc2a4dd8028351a81205b43a9",
+      "1929efbfdc7742b9a986f45b6828579f21f60872"
+    ],
+    "source_merge_and_main_blob": "ea1f457fe5d182c19410d3429c5b9a04e91c6429",
+    "bytes": 31397177,
+    "sha256": "1070d8654ad5e24763b71aa9c2f3d96b8c120b18d5094fda5efe9f2d94b6a1f0",
+    "verified_equal": true
+  },
+  {
+    "pr": 1,
+    "path": "videos/team-b/grade-v05/audio/narration_stem_48k.flac",
+    "source_head": "1929efbfdc7742b9a986f45b6828579f21f60872",
+    "own_merge_commit": "0a169f267982c74bede5f8421ad279df6b3e11ea",
+    "merge_parents": [
+      "d4e4acb2281994ecc2a4dd8028351a81205b43a9",
+      "1929efbfdc7742b9a986f45b6828579f21f60872"
+    ],
+    "source_merge_and_main_blob": "bc28ee0e3f73448692ba46a97b530375151ff8c4",
+    "bytes": 2880234,
+    "sha256": "a4f2f8a84bc1130d72310d54f85e34b5e245028e83ced695f1cd809b6f8cb661",
+    "verified_equal": true
+  },
+  {
+    "pr": 1,
+    "path": "videos/team-b/grade-v05/audio/bed_ducked_48k.flac",
+    "source_head": "1929efbfdc7742b9a986f45b6828579f21f60872",
+    "own_merge_commit": "0a169f267982c74bede5f8421ad279df6b3e11ea",
+    "merge_parents": [
+      "d4e4acb2281994ecc2a4dd8028351a81205b43a9",
+      "1929efbfdc7742b9a986f45b6828579f21f60872"
+    ],
+    "source_merge_and_main_blob": "2f53080874cbf9236a1f6a665cef343c02e3d62e",
+    "bytes": 6201420,
+    "sha256": "41352ef69704701255ef595136458a9f2a82121cb5d12a26f586cfcd1475174e",
+    "verified_equal": true
+  },
+  {
+    "pr": 1,
+    "path": "videos/team-b/grade-v05/timing/tts_source_manifest.json",
+    "source_head": "1929efbfdc7742b9a986f45b6828579f21f60872",
+    "own_merge_commit": "0a169f267982c74bede5f8421ad279df6b3e11ea",
+    "merge_parents": [
+      "d4e4acb2281994ecc2a4dd8028351a81205b43a9",
+      "1929efbfdc7742b9a986f45b6828579f21f60872"
+    ],
+    "source_merge_and_main_blob": "d19d622d6cb3f811b8683d79de271b31c60fc660",
+    "bytes": 20208,
+    "sha256": "f86c0fa6cfb1131873c5a50d98e5e6dac9b3c54d814abf7c63461184cabcef33",
+    "verified_equal": true
+  }
+]

@@ -1,0 +1,116 @@
+{
+  "audited_head": "6cac51ede1f213b000ed610d727cb2926bdbdbcd",
+  "stem_duration_s": 60,
+  "stems_sha256_verified": {
+    "bed_ducked_48k.flac": "41352ef69704701255ef595136458a9f2a82121cb5d12a26f586cfcd1475174e",
+    "narration_stem_48k.flac": "a4f2f8a84bc1130d72310d54f85e34b5e245028e83ced695f1cd809b6f8cb661"
+  },
+  "body_windows": [
+    {
+      "start": 0,
+      "voice_active_fraction_20ms_above_minus40dBFS": 0.752,
+      "voice_over_bed_db_whole_window": 9.687896924603924,
+      "voice_over_bed_db_active_blocks": 11.590864122922541
+    },
+    {
+      "start": 10,
+      "voice_active_fraction_20ms_above_minus40dBFS": 0.67,
+      "voice_over_bed_db_whole_window": 9.462794592673589,
+      "voice_over_bed_db_active_blocks": 11.600294964600904
+    },
+    {
+      "start": 20,
+      "voice_active_fraction_20ms_above_minus40dBFS": 0.688,
+      "voice_over_bed_db_whole_window": 10.22857275759517,
+      "voice_over_bed_db_active_blocks": 12.949943990726014
+    },
+    {
+      "start": 30,
+      "voice_active_fraction_20ms_above_minus40dBFS": 0.674,
+      "voice_over_bed_db_whole_window": 9.941470620651993,
+      "voice_over_bed_db_active_blocks": 12.155074577249245
+    },
+    {
+      "start": 40,
+      "voice_active_fraction_20ms_above_minus40dBFS": 0.594,
+      "voice_over_bed_db_whole_window": 6.315204657427119,
+      "voice_over_bed_db_active_blocks": 10.300135102749623
+    },
+    {
+      "start": 50,
+      "voice_active_fraction_20ms_above_minus40dBFS": 0.632,
+      "voice_over_bed_db_whole_window": 7.268641852673996,
+      "voice_over_bed_db_active_blocks": 10.51836811439782
+    }
+  ],
+  "voice_to_actual_mix_lag_samples": 0,
+  "joint_voice_bed_to_final_mix_fit_gains": [
+    1.0611390876984839,
+    1.0482183786341073
+  ],
+  "joint_prediction_correlation_to_final_AAC": 0.9989302774671103,
+  "joint_fit_residual_dbfs": -45.55936220828049,
+  "longest_source_gap_s": 1.227208,
+  "cue_count": 39,
+  "word_count": 137,
+  "maximum_cue_word_endpoint_drift_s": 0.0,
+  "maximum_original_telemetry_to_timeline_translation_drift_s": 7.105427357601002e-15,
+  "original_mp3_hashes_verified": [
+    {
+      "path": "audio/tts_lines/line_01.mp3",
+      "sha256": "7f3c3a30c7c71e30df5c3ca4f3ff711cffe66396a105bba10f084ff3c1de56d8",
+      "verified": true
+    },
+    {
+      "path": "audio/tts_lines/line_02.mp3",
+      "sha256": "54a7eeb9837228a516f04b8e23b14a04d087f509148d5e2ff9caca33ba338a31",
+      "verified": true
+    },
+    {
+      "path": "audio/tts_lines/line_03.mp3",
+      "sha256": "54757f6b7000e1a186d213b715d1a6a38ccaff4a718c4781bf0dcee2c8aa3a08",
+      "verified": true
+    },
+    {
+      "path": "audio/tts_lines/line_04.mp3",
+      "sha256": "b12d5be9208bcdf0ea1594918b75b089f014c94daac2dbd5c3f31c92e19b1424",
+      "verified": true
+    },
+    {
+      "path": "audio/tts_lines/line_05.mp3",
+      "sha256": "da8059d6c1e4b4f670fbfea7be3f58c997e6c6cbcd4df29d88dc46daedf4a2fc",
+      "verified": true
+    },
+    {
+      "path": "audio/tts_lines/line_06.mp3",
+      "sha256": "b602cdb86d086b90bec0eeee0d126afa9a561125119e79e702c371da1526b1b3",
+      "verified": true
+    },
+    {
+      "path": "audio/tts_lines/line_07.mp3",
+      "sha256": "d594f3ddbf50ff27812ddd663cbfc4bd100e7ba01b30fb656b1def1d9cf64b6c",
+      "verified": true
+    },
+    {
+      "path": "audio/tts_lines/line_08.mp3",
+      "sha256": "feddd487320b2895953fda2400415e300c9d06b71db7665375793982dc19cbe0",
+      "verified": true
+    },
+    {
+      "path": "audio/tts_lines/line_09.mp3",
+      "sha256": "9326184187a4a9aa70cb4ef519d8a521f1ca128e63e17420bc8416dcba631ded",
+      "verified": true
+    },
+    {
+      "path": "audio/tts_lines/line_10.mp3",
+      "sha256": "3cdb7ff39f7a0a4e6b6785b5f8511b5c54f059398864d3e22a2948b2578a3241",
+      "verified": true
+    },
+    {
+      "path": "audio/tts_lines/line_11.mp3",
+      "sha256": "f0b3970ea78d39acac9ecaad3f493633dd1699c36e12cb9fabe3e54ff1eda8bd",
+      "verified": true
+    }
+  ],
+  "note": "Immutable sources compared to actual final AAC; no production rebuild, no new TTS. Global linear least-squares reconstruction is an analysis-only model, not a claim of byte-identical AAC or subjective intelligibility. No human listened."
+}

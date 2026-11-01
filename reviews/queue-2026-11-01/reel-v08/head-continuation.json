@@ -1,0 +1,62 @@
+{
+  "measured_head": "8d7b84f3e85da4bcafe5279c30b81a2529af549b",
+  "current_head": "46acb2132b5cca71c24966b5e9df0ee05101e30e",
+  "identical_audited_inputs_and_outputs": [
+    {
+      "path": "videos/team-a/reel-v08/video.mp4",
+      "blob": "389c8390b5afe205b4dd3fae3b8e3f9ae94b5679",
+      "unchanged": true
+    },
+    {
+      "path": "videos/team-a/reel-v08/video-landscape.mp4",
+      "blob": "0f3548cf4db4280bbc0e9286b0988b9734457456",
+      "unchanged": true
+    },
+    {
+      "path": "videos/team-a/reel-v08/assets/narration.flac",
+      "blob": "b8584b513a40157cc71a88bc35952aeceb165739",
+      "unchanged": true
+    },
+    {
+      "path": "videos/team-a/reel-v08/assets/word_timings.json",
+      "blob": "17f2a815b9c4f2b8ef289888287b05372489344e",
+      "unchanged": true
+    },
+    {
+      "path": "videos/team-a/reel-v08/captions.srt",
+      "blob": "53cb75f051f4098eb250b6344edac4e6d295dc55",
+      "unchanged": true
+    },
+    {
+      "path": "videos/team-a/reel-v08/captions.py",
+      "blob": "8675f6648413019e63313e50346b9cd4a90c9626",
+      "unchanged": true
+    },
+    {
+      "path": "videos/team-a/reel-v08/make_art.py",
+      "blob": "8440b264b0372d8b4edd19728269e80db22afddf",
+      "unchanged": true
+    },
+    {
+      "path": "videos/team-a/reel-v08/make_sound.py",
+      "blob": "9ec77234d67c52363a39afbc9c7f6b6ed69485df",
+      "unchanged": true
+    },
+    {
+      "path": "videos/team-a/reel-v08/mix_audio.py",
+      "blob": "e91e9bee598a4586e28ae5235337343d1747103a",
+      "unchanged": true
+    },
+    {
+      "path": "videos/team-a/reel-v08/render.sh",
+      "blob": "24647ccd1c25637aa4e9ebced285b6193f436a85",
+      "unchanged": true
+    },
+    {
+      "path": "videos/team-a/reel-v08/script.md",
+      "blob": "2161ae93aee1c48c7c58a414b06d177ba2d29731",
+      "unchanged": true
+    }
+  ],
+  "new_files_reviewed": "QA README requirements, audit_narration.py and its JSON/hash log only; no production input or output changes."
+}

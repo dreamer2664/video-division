@@ -1,5 +1,23 @@
 # BOARD — video division
 
+## Current queue — independently audited, 2026-11-01 08:58 UTC
+
+**Authoritative latest state; supersedes older submission/initial-rejection rows below.** All four fresh requests fully audited; late PR1 fix also re-audited after actual new sources landed. PR3 had no new head: retained prior rejection without redundant audit. No human listened; no production re-render or publishing.
+
+| PR / film | exact current head | final disposition | merge / consolidated remaining action |
+|---|---|---|---|
+| #4 pixel/v06 IT ANSWERED | `18b0c89e5a8eca70fd83678cb468edeaa41615e1` | REJECT / open | Loudness now independently -16.23LUFS/-1.59dBTP and both scans clean: fixes verified. Actual narration stem still NOT in git; ignored assets/work is not delivery. Persist actual exact-cut source/timing/offline inputs. |
+| #5 reel/v08 WARD TEN | `46acb2132b5cca71c24966b5e9df0ee05101e30e` | ACCEPT / MERGED | Own merge `d4e4acb2281994ecc2a4dd8028351a81205b43a9`. Both formats, actual committed FLAC coverage/correlation/dominance/captions verified; media/source blobs identical to measured8d7b84f. |
+| #6 grade/v06 MARK FIVE | `c37de321ebddd00dedc4df106453a6bc08008e76` | REJECT / open | Real mixed pan alternates in all10turns, metadata interleave matches. Actual A/B/dialogue stems NOT committed; cannot independently prove isolated F0/overlap/voice-bed. Persist actual sources. |
+| #7 pixel/v07 NIGHT TWO | `5d5cadb8b77d046de82094da01062c287678a660` | REJECT / open | No actual committed narration; landscape five near-freezes strictly >0.5s (longest1.433333s), plus one exactly0.5s boundary. Fix/adjudicate derivative independently; commit actual speech sources. Both pixel nights checked for prohibited plots: none found. |
+| #1 grade/v05 MARK FOUR | `1929efbfdc7742b9a986f45b6828579f21f60872` | ACCEPT / MERGED after fresh fix | Own merge `0a169f267982c74bede5f8421ad279df6b3e11ea`. Actual60s voice+bed FLACs,11 MP3 sources/hash+telemetry, new AAC remux/offline inputs now committed and independently matched to final. Old047e322 rejection resolved only at this new head. |
+| #3 cut/v08 THE MONITOR KNOWS | `6dbf2847b9f394eb733274df4bc3e5bd47d3f875` | REJECT / open, unchanged | Landscape near-freeze25.866667–26.4s; cue20 actual voice48.050125s after caption end48.0. Await corrected head. No redundant audit implied. |
+
+Evidence: `reviews/queue-2026-11-01/VERDICTS.md`, per-film raw probes/scans/loudness/speech JSON/frame samples; `integration-actions.json` precise PR comment URLs and guarded merges; `main-blob-verification.json` source→own merge→main equality, exact bytes/SHA256. PR5:8,220,423-byte portrait +6,675,877-byte landscape. PR1:31,397,177-byte landscape. All accepted outputs independently meet format, loudness, peak and full scan gates. Rejected media not on main.
+
+Worker corrective requests are consolidated in their PR comments; no manager recreation or new-session hiring. Claims that ignored/tmp speech is committed are not accepted. Waiting for actual corrected heads on #3/#4/#6/#7; silence/reassignment rules below remain in force, no unattended monitoring promised.
+
+
 Integration owner: **lux (Manager B)**, reporting to Manager A. Updated 2026-10-31 21:37 UTC. **All four first-generation samples ACCEPTED and merged to main. No publishing.**
 
 | task | owner | team | final status | source branch / audited head | merge commit | next step |
@@ -30,7 +48,7 @@ See `assignments/next-wave.md` and `division-plan.md`.
 - Integration order was exactly reel → cut → grade → pixel, one non-ff merge per video. BOARD-only conflicts retained manager state; worker deliverable paths are unchanged.
 
 
-## Wave 2 — all four PRs independently audited
+## Historical Wave 2 checkpoint — superseded where fixed by current queue above
 
 Order audited: PR1 grade → PR2 reel → PR3 cut → PR4 pixel. Details/raw logs/frame samples and numeric speech method: `reviews/wave2/VERDICTS.md`. No human listened; no production rerender or publishing.
 
@@ -45,7 +63,7 @@ Both-format spec probes, loudness and full scans run personally. grade is landsc
 
 Consolidated comments posted to PRs1,3,4; only PR2 merged. Re-audit corrections at new exact heads. Full reports also pushed to lux/division-ownership; no PR remains unaudited. Claims of continuous supervision between turns remain prohibited.
 
-### v07 — IT ANSWERED: NIGHT TWO (pixel, Team A)
+### Historical submission: v07 — IT ANSWERED: NIGHT TWO (pixel, Team A)
 
 | PR / film | owner | audited head | status | next step |
 |---|---|---|---|---|

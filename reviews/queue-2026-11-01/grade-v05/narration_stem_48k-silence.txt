@@ -1,0 +1,55 @@
+$ ffmpeg -hide_banner -nostats -i audio/narration_stem_48k.flac -af silencedetect=n=-40dB:d=0.3 -f null -
+Input #0, flac, from 'audio/narration_stem_48k.flac':
+  Metadata:
+    encoder         : Lavf61.7.103
+  Duration: 00:01:00.00, start: 0.000000, bitrate: 384 kb/s
+  Stream #0:0: Audio: flac, 48000 Hz, stereo, s16
+Stream mapping:
+  Stream #0:0 -> #0:0 (flac (native) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, null, to 'pipe:':
+  Metadata:
+    encoder         : Lavf61.7.103
+  Stream #0:0: Audio: pcm_s16le, 48000 Hz, stereo, s16, 1536 kb/s
+      Metadata:
+        encoder         : Lavc61.19.101 pcm_s16le
+[silencedetect @ 0x7f708c001d00] silence_start: 0
+[silencedetect @ 0x7f708c001d00] silence_end: 0.4855 | silence_duration: 0.4855
+[silencedetect @ 0x7f708c001d00] silence_start: 2.213
+[silencedetect @ 0x7f708c001d00] silence_end: 2.524583 | silence_duration: 0.311583
+[silencedetect @ 0x7f708c001d00] silence_start: 5.739292
+[silencedetect @ 0x7f708c001d00] silence_end: 6.269875 | silence_duration: 0.530583
+[silencedetect @ 0x7f708c001d00] silence_start: 9.382042
+[silencedetect @ 0x7f708c001d00] silence_end: 9.955479 | silence_duration: 0.573437
+[silencedetect @ 0x7f708c001d00] silence_start: 14.626
+[silencedetect @ 0x7f708c001d00] silence_end: 15.101042 | silence_duration: 0.475042
+[silencedetect @ 0x7f708c001d00] silence_start: 17.195833
+[silencedetect @ 0x7f708c001d00] silence_end: 18.313292 | silence_duration: 1.117458
+[silencedetect @ 0x7f708c001d00] silence_start: 20.167542
+[silencedetect @ 0x7f708c001d00] silence_end: 20.713812 | silence_duration: 0.546271
+[silencedetect @ 0x7f708c001d00] silence_start: 24.63925
+[silencedetect @ 0x7f708c001d00] silence_end: 25.729062 | silence_duration: 1.089813
+[silencedetect @ 0x7f708c001d00] silence_start: 27.426875
+[silencedetect @ 0x7f708c001d00] silence_end: 27.946917 | silence_duration: 0.520042
+[silencedetect @ 0x7f708c001d00] silence_start: 30.262521
+[silencedetect @ 0x7f708c001d00] silence_end: 31.341167 | silence_duration: 1.078646
+[silencedetect @ 0x7f708c001d00] silence_start: 32.936729
+[silencedetect @ 0x7f708c001d00] silence_end: 33.495729 | silence_duration: 0.559
+[silencedetect @ 0x7f708c001d00] silence_start: 37.678604
+[silencedetect @ 0x7f708c001d00] silence_end: 38.216021 | silence_duration: 0.537417
+[silencedetect @ 0x7f708c001d00] silence_start: 40.251958
+[silencedetect @ 0x7f708c001d00] silence_end: 41.381333 | silence_duration: 1.129375
+[silencedetect @ 0x7f708c001d00] silence_start: 43.49575
+[silencedetect @ 0x7f708c001d00] silence_end: 44.722958 | silence_duration: 1.227208
+[silencedetect @ 0x7f708c001d00] silence_start: 49.21925
+[silencedetect @ 0x7f708c001d00] silence_end: 49.84 | silence_duration: 0.62075
+[silencedetect @ 0x7f708c001d00] silence_start: 53.110021
+[silencedetect @ 0x7f708c001d00] silence_end: 53.697521 | silence_duration: 0.5875
+[silencedetect @ 0x7f708c001d00] silence_start: 55.498458
+[silencedetect @ 0x7f708c001d00] silence_end: 56.634542 | silence_duration: 1.136083
+[silencedetect @ 0x7f708c001d00] silence_start: 59.11875
+[silencedetect @ 0x7f708c001d00] silence_end: 60 | silence_duration: 0.88125
+[out#0/null @ 0x56241b32ef40] video:0KiB audio:11250KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+size=N/A time=00:01:00.00 bitrate=N/A speed= 815x    
+
+exit_status=0
