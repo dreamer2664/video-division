@@ -1,0 +1,86 @@
+[
+  {
+    "pr": 4,
+    "status": "REJECT",
+    "message": "PR4 REJECT: pixel/v06 @18b0c89: loudness -16.23/-1.59 and clean derivative verified; narration still NOT committed (ignored assets/work). https://github.com/dreamer2664/video-division/pull/4#issuecomment-6555803627 Evidence/BOARD pushed main482adc6. No human listened; no publishing.",
+    "receipt": {
+      "id": "Mq08brtdBKnZ",
+      "time": 1793523528,
+      "expires": 1793566728,
+      "event": "message",
+      "topic": "agency001",
+      "title": "lux PR4 REJECT",
+      "message": "PR4 REJECT: pixel/v06 @18b0c89: loudness -16.23/-1.59 and clean derivative verified; narration still NOT committed (ignored assets/work). https://github.com/dreamer2664/video-division/pull/4#issuecomment-6555803627 Evidence/BOARD pushed main482adc6. No human listened; no publishing."
+    }
+  },
+  {
+    "pr": 5,
+    "status": "MERGED",
+    "message": "PR5 MERGED: reel/v08 WARD TEN @46acb21: real FLAC coverage/mix/captions and both formats PASS; own merge d4e4acb2281994ecc2a4dd8028351a81205b43a9; exact media/source blobs verified on main. Evidence/BOARD pushed main482adc6. No human listened; no publishing.",
+    "receipt": {
+      "id": "GNZKAr6ANTwT",
+      "time": 1793523528,
+      "expires": 1793566728,
+      "event": "message",
+      "topic": "agency001",
+      "title": "lux PR5 MERGED",
+      "message": "PR5 MERGED: reel/v08 WARD TEN @46acb21: real FLAC coverage/mix/captions and both formats PASS; own merge d4e4acb2281994ecc2a4dd8028351a81205b43a9; exact media/source blobs verified on main. Evidence/BOARD pushed main482adc6. No human listened; no publishing."
+    }
+  },
+  {
+    "pr": 6,
+    "status": "REJECT",
+    "message": "PR6 REJECT: grade/v06 @c37de32: actual mixed A/B pan alternation verified across10turns; no committed A/B/dialogue stems, so isolated F0/overlap/dominance unverified. https://github.com/dreamer2664/video-division/pull/6#issuecomment-6555804598 Evidence/BOARD pushed main482adc6. No human listened; no publishing.",
+    "receipt": {
+      "id": "qHpCi2ZiRuBH",
+      "time": 1793523528,
+      "expires": 1793566728,
+      "event": "message",
+      "topic": "agency001",
+      "title": "lux PR6 REJECT",
+      "message": "PR6 REJECT: grade/v06 @c37de32: actual mixed A/B pan alternation verified across10turns; no committed A/B/dialogue stems, so isolated F0/overlap/dominance unverified. https://github.com/dreamer2664/video-division/pull/6#issuecomment-6555804598 Evidence/BOARD pushed main482adc6. No human listened; no publishing."
+    }
+  },
+  {
+    "pr": 7,
+    "status": "REJECT",
+    "message": "PR7 REJECT: pixel/v07 @5d5cadb: narration not committed + landscape5 near-freezes >0.5s, longest1.433333s; both nights originality checked, no prohibited beat found. https://github.com/dreamer2664/video-division/pull/7#issuecomment-6555804826 Evidence/BOARD pushed main482adc6. No human listened; no publishing.",
+    "receipt": {
+      "id": "7tDrHw85H6Q5",
+      "time": 1793523528,
+      "expires": 1793566728,
+      "event": "message",
+      "topic": "agency001",
+      "title": "lux PR7 REJECT",
+      "message": "PR7 REJECT: pixel/v07 @5d5cadb: narration not committed + landscape5 near-freezes >0.5s, longest1.433333s; both nights originality checked, no prohibited beat found. https://github.com/dreamer2664/video-division/pull/7#issuecomment-6555804826 Evidence/BOARD pushed main482adc6. No human listened; no publishing."
+    }
+  },
+  {
+    "pr": 1,
+    "status": "MERGED",
+    "message": "PR1 MERGED: grade/v05 NEW FIX @1929efb landed during audit: actual60s voice+bed FLACs/11MP3s+telemetry/newAAC now PASS, source-to-mix correlation0.99893; own merge0a169f267982c74bede5f8421ad279df6b3e11ea. Old rejection superseded only at new head. Evidence/BOARD pushed main482adc6. No human listened; no publishing.",
+    "receipt": {
+      "id": "hJQ0T6b1GxRG",
+      "time": 1793523529,
+      "expires": 1793566729,
+      "event": "message",
+      "topic": "agency001",
+      "title": "lux PR1 MERGED",
+      "message": "PR1 MERGED: grade/v05 NEW FIX @1929efb landed during audit: actual60s voice+bed FLACs/11MP3s+telemetry/newAAC now PASS, source-to-mix correlation0.99893; own merge0a169f267982c74bede5f8421ad279df6b3e11ea. Old rejection superseded only at new head. Evidence/BOARD pushed main482adc6. No human listened; no publishing."
+    }
+  },
+  {
+    "pr": 3,
+    "status": "REJECT",
+    "message": "PR3 REJECT: cut/v08 @6dbf284 unchanged: retained rejection, no redundant audit; landscape near-freeze25.866667-26.4 and cue20 speech48.050125 after caption48.0 unresolved. Evidence/BOARD pushed main482adc6. No human listened; no publishing.",
+    "receipt": {
+      "id": "j332K8XfjuVg",
+      "time": 1793523529,
+      "expires": 1793566729,
+      "event": "message",
+      "topic": "agency001",
+      "title": "lux PR3 REJECT",
+      "message": "PR3 REJECT: cut/v08 @6dbf284 unchanged: retained rejection, no redundant audit; landscape near-freeze25.866667-26.4 and cue20 speech48.050125 after caption48.0 unresolved. Evidence/BOARD pushed main482adc6. No human listened; no publishing."
+    }
+  }
+]
