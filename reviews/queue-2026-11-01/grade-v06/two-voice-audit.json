@@ -1,0 +1,93 @@
+{
+  "actual_mixed_audio_turn_pan": [
+    {
+      "turn": "01",
+      "speaker": "A",
+      "start": 0.4,
+      "end": 9.929,
+      "mix_speechband_L_minus_R_dB": 3.8955948589223848
+    },
+    {
+      "turn": "02",
+      "speaker": "B",
+      "start": 10.749,
+      "end": 15.388,
+      "mix_speechband_L_minus_R_dB": -4.020579798611776
+    },
+    {
+      "turn": "03",
+      "speaker": "A",
+      "start": 16.068,
+      "end": 21.524,
+      "mix_speechband_L_minus_R_dB": 3.9736275078653156
+    },
+    {
+      "turn": "04",
+      "speaker": "B",
+      "start": 22.204,
+      "end": 26.539,
+      "mix_speechband_L_minus_R_dB": -4.048817335244047
+    },
+    {
+      "turn": "05",
+      "speaker": "A",
+      "start": 27.159,
+      "end": 31.126,
+      "mix_speechband_L_minus_R_dB": 3.854036192010599
+    },
+    {
+      "turn": "06",
+      "speaker": "B",
+      "start": 31.806,
+      "end": 35.196,
+      "mix_speechband_L_minus_R_dB": -4.0512781967154385
+    },
+    {
+      "turn": "07",
+      "speaker": "A",
+      "start": 35.876,
+      "end": 41.163,
+      "mix_speechband_L_minus_R_dB": 3.878443670368461
+    },
+    {
+      "turn": "08",
+      "speaker": "B",
+      "start": 42.443,
+      "end": 50.17,
+      "mix_speechband_L_minus_R_dB": -4.024877796116876
+    },
+    {
+      "turn": "09",
+      "speaker": "A",
+      "start": 50.95,
+      "end": 55.886,
+      "mix_speechband_L_minus_R_dB": 3.9147674656150313
+    },
+    {
+      "turn": "10",
+      "speaker": "B",
+      "start": 56.766,
+      "end": 58.833,
+      "mix_speechband_L_minus_R_dB": -4.036346739640233
+    }
+  ],
+  "metadata_turn_count": 10,
+  "metadata_alternates_A_B": true,
+  "metadata_overlap_s": 0,
+  "gaps_s": [
+    0.82,
+    0.68,
+    0.68,
+    0.62,
+    0.68,
+    0.68,
+    1.28,
+    0.78,
+    0.88
+  ],
+  "cue_count": 40,
+  "max_structural_word_cue_endpoint_drift_s": 0.0,
+  "cues_without_word_span": 0,
+  "stem_files_present": [],
+  "limitations": "Actual mix speech-band pan reversals can corroborate speaker-turn timing, but absent A/B source stems prevent independent stem silencedetect, source-versus-bed/mix comparison, immutable acoustic F0 claims (105.5/206Hz) and actual zero-overlap proof. Metadata overlap=0 is not measured waveform source overlap. No human listened."
+}

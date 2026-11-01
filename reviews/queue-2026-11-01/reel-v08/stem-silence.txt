@@ -1,0 +1,65 @@
+$ ffmpeg -hide_banner -nostats -i "/home/user/q-reel-v08/videos/team-a/reel-v08/assets/narration.flac" -af silencedetect=n=-40dB:d=0.3 -f null -
+Input #0, flac, from '/home/user/q-reel-v08/videos/team-a/reel-v08/assets/narration.flac':
+  Metadata:
+    encoder         : Lavf61.7.103
+  Duration: 00:00:59.22, start: 0.000000, bitrate: 241 kb/s
+  Stream #0:0: Audio: flac, 48000 Hz, stereo, s16
+Stream mapping:
+  Stream #0:0 -> #0:0 (flac (native) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, null, to 'pipe:':
+  Metadata:
+    encoder         : Lavf61.7.103
+  Stream #0:0: Audio: pcm_s16le, 48000 Hz, stereo, s16, 1536 kb/s
+      Metadata:
+        encoder         : Lavc61.19.101 pcm_s16le
+[silencedetect @ 0x7f36cc001d00] silence_start: 0
+[silencedetect @ 0x7f36cc001d00] silence_end: 0.382708 | silence_duration: 0.382708
+[silencedetect @ 0x7f36cc001d00] silence_start: 3.733375
+[silencedetect @ 0x7f36cc001d00] silence_end: 4.127104 | silence_duration: 0.393729
+[silencedetect @ 0x7f36cc001d00] silence_start: 6.470979
+[silencedetect @ 0x7f36cc001d00] silence_end: 6.841479 | silence_duration: 0.3705
+[silencedetect @ 0x7f36cc001d00] silence_start: 9.5315
+[silencedetect @ 0x7f36cc001d00] silence_end: 9.915437 | silence_duration: 0.383937
+[silencedetect @ 0x7f36cc001d00] silence_start: 12.306125
+[silencedetect @ 0x7f36cc001d00] silence_end: 12.681583 | silence_duration: 0.375458
+[silencedetect @ 0x7f36cc001d00] silence_start: 14.894062
+[silencedetect @ 0x7f36cc001d00] silence_end: 15.287125 | silence_duration: 0.393062
+[silencedetect @ 0x7f36cc001d00] silence_start: 17.080646
+[silencedetect @ 0x7f36cc001d00] silence_end: 17.498479 | silence_duration: 0.417833
+[silencedetect @ 0x7f36cc001d00] silence_start: 20.469917
+[silencedetect @ 0x7f36cc001d00] silence_end: 20.84175 | silence_duration: 0.371833
+[silencedetect @ 0x7f36cc001d00] silence_start: 22.485917
+[silencedetect @ 0x7f36cc001d00] silence_end: 22.871813 | silence_duration: 0.385896
+[silencedetect @ 0x7f36cc001d00] silence_start: 24.232563
+[silencedetect @ 0x7f36cc001d00] silence_end: 24.605896 | silence_duration: 0.373333
+[silencedetect @ 0x7f36cc001d00] silence_start: 26.615646
+[silencedetect @ 0x7f36cc001d00] silence_end: 27.016292 | silence_duration: 0.400646
+[silencedetect @ 0x7f36cc001d00] silence_start: 30.424167
+[silencedetect @ 0x7f36cc001d00] silence_end: 30.813396 | silence_duration: 0.389229
+[silencedetect @ 0x7f36cc001d00] silence_start: 32.687188
+[silencedetect @ 0x7f36cc001d00] silence_end: 33.080417 | silence_duration: 0.393229
+[silencedetect @ 0x7f36cc001d00] silence_start: 34.733646
+[silencedetect @ 0x7f36cc001d00] silence_end: 35.112458 | silence_duration: 0.378812
+[silencedetect @ 0x7f36cc001d00] silence_start: 36.945792
+[silencedetect @ 0x7f36cc001d00] silence_end: 37.337479 | silence_duration: 0.391687
+[silencedetect @ 0x7f36cc001d00] silence_start: 39.011458
+[silencedetect @ 0x7f36cc001d00] silence_end: 42.263188 | silence_duration: 3.251729
+[silencedetect @ 0x7f36cc001d00] silence_start: 44.006312
+[silencedetect @ 0x7f36cc001d00] silence_end: 44.388375 | silence_duration: 0.382062
+[silencedetect @ 0x7f36cc001d00] silence_start: 46.218958
+[silencedetect @ 0x7f36cc001d00] silence_end: 46.595208 | silence_duration: 0.37625
+[silencedetect @ 0x7f36cc001d00] silence_start: 47.910729
+[silencedetect @ 0x7f36cc001d00] silence_end: 48.329125 | silence_duration: 0.418396
+[silencedetect @ 0x7f36cc001d00] silence_start: 50.224896
+[silencedetect @ 0x7f36cc001d00] silence_end: 50.599125 | silence_duration: 0.374229
+[silencedetect @ 0x7f36cc001d00] silence_start: 52.433896
+[silencedetect @ 0x7f36cc001d00] silence_end: 52.800208 | silence_duration: 0.366312
+[silencedetect @ 0x7f36cc001d00] silence_start: 55.899958
+[silencedetect @ 0x7f36cc001d00] silence_end: 56.277771 | silence_duration: 0.377812
+[silencedetect @ 0x7f36cc001d00] silence_start: 58.205458
+[silencedetect @ 0x7f36cc001d00] silence_end: 59.222208 | silence_duration: 1.01675
+[out#0/null @ 0x55a3e20e1f80] video:0KiB audio:11104KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+size=N/A time=00:00:59.22 bitrate=N/A speed= 791x    
+
+exit_status=0
