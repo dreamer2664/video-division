@@ -1,0 +1,77 @@
+{
+  "voice_stem": {
+    "input_i": "-19.75",
+    "input_tp": "-4.96",
+    "input_lra": "2.90",
+    "input_thresh": "-30.30",
+    "output_i": "-15.85",
+    "output_tp": "-2.00",
+    "output_lra": "2.50",
+    "output_thresh": "-26.34",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.15"
+  },
+  "music_raw": {
+    "input_i": "-30.11",
+    "input_tp": "-19.89",
+    "input_lra": "5.30",
+    "input_thresh": "-40.15",
+    "output_i": "-15.87",
+    "output_tp": "-5.62",
+    "output_lra": "5.20",
+    "output_thresh": "-25.89",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.13"
+  },
+  "foley_raw": {
+    "input_i": "-41.48",
+    "input_tp": "-20.24",
+    "input_lra": "13.10",
+    "input_thresh": "-51.75",
+    "output_i": "-19.36",
+    "output_tp": "-2.00",
+    "output_lra": "10.20",
+    "output_thresh": "-29.71",
+    "normalization_type": "dynamic",
+    "target_offset": "3.36"
+  },
+  "music_gain_db": 0.36,
+  "foley_gain_db": 6.73,
+  "voice_minus_music_lu_before_global_normalization": 10.0,
+  "mix_first_pass": {
+    "input_i": "-19.94",
+    "input_tp": "-4.30",
+    "input_lra": "3.50",
+    "input_thresh": "-30.28",
+    "output_i": "-16.11",
+    "output_tp": "-2.00",
+    "output_lra": "3.00",
+    "output_thresh": "-26.34",
+    "normalization_type": "dynamic",
+    "target_offset": "0.11"
+  },
+  "mix_second_pass": {
+    "input_i": "-19.94",
+    "input_tp": "-4.30",
+    "input_lra": "3.50",
+    "input_thresh": "-30.28",
+    "output_i": "-16.01",
+    "output_tp": "-2.00",
+    "output_lra": "3.00",
+    "output_thresh": "-26.24",
+    "normalization_type": "dynamic",
+    "target_offset": "0.01"
+  },
+  "final_aac_analysis": {
+    "input_i": "-16.10",
+    "input_tp": "-1.92",
+    "input_lra": "3.40",
+    "input_thresh": "-26.44",
+    "output_i": "-16.08",
+    "output_tp": "-2.00",
+    "output_lra": "2.90",
+    "output_thresh": "-26.31",
+    "normalization_type": "dynamic",
+    "target_offset": "0.08"
+  }
+}
