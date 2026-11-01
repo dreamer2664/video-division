@@ -95,7 +95,7 @@ def ledger(im):
 
 def metric(im,mode=0):
     d=shell(im,'HANDLING TIME')
-    text(d,(215,526),'AVERAGE',49,(*DIM,255))
+    if mode in (0,1,2):text(d,(215,526),'AVERAGE',49,(*DIM,255))
     if mode==0:
         text(d,(215,606),'00:40',125,(*AMBER,255));text(d,(215,795),'TARGET MET',53,(*CYAN,255))
         text(d,(215,915),'CALLS  /  RESOLVED',46,(*DIM,255))
