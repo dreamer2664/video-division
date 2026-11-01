@@ -1,0 +1,18 @@
+{
+  "voice_source_mp3": "audio/narration_source.mp3",
+  "voice_source_sha256": "b1067678d7badda3731c1bdd922960d55015e7c80468ddcfc3323755b2f9345a",
+  "narration_stem": "audio/narration_stem_48k.flac",
+  "narration_stem_sha256": "e4819d5ed6e6e2166040f963b0e63e12d603dece3d96741f17a664e417564e4a",
+  "bed_stem": "audio/bed_stem_48k.flac",
+  "bed_stem_sha256": "d6ea651500176062d4ab0f67c4f22f148d3195d274322b9c35fef50c47b51caf",
+  "mix": "audio/master_audio_48k.wav",
+  "mix_sha256": "257f79de296f9476158ce49a1674dca62a4d506aafb4b76cc29e50feca5ab369",
+  "sample_rate_hz": 48000,
+  "channels": 2,
+  "duration_s": 60.0,
+  "mix_peak_dbfs": -5.7477439054188215,
+  "narration_rms_dbfs": -24.6770163923737,
+  "bed_rms_dbfs": -30.072935919158923,
+  "sidechain_duck_db": -4.0,
+  "bed_generator_seed": 1101
+}

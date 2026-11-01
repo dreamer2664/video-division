@@ -1,0 +1,5 @@
+numpy>=2.0
+Pillow>=10.0
+scipy>=1.12
+soundfile>=0.12
+edge-tts>=7.0  # only for synthesize_voiceover.py; render_v10.py is offline
