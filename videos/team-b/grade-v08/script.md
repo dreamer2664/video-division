@@ -15,20 +15,20 @@
 
 ---
 
-## 2. Locked Ten-Turn Ridge-to-Town Script (`0.420 s – 58.880 s`, Zero Gaps `> 1.14 s`)
+## 2. Locked Ten-Turn Ridge-to-Town Script (`0.440 s – 58.920 s`, Zero Gaps `> 1.18 s`)
 
 | Turn | Spk | Start (`s`) | End (`s`) | Gap (`s`) | Spoken Line |
 | :---: | :---: | :---: | :---: | :---: | :--- |
-| **01** | **`A` (`CREST`)** | `0.420` | `6.865` | `0.725` | *"Three fourteen, thirty-seven minutes after Vault Six flooded inside the dam, and the gorge is full."* |
-| **02** | **`B` (`LEVEE`)** | `7.590` | `13.722` | `0.725` | *"Lowgate levee, two miles downstream, every house is empty, and black water is across the rail yard."* |
-| **03** | **`A` (`CREST`)** | `14.447` | `20.512` | `0.725` | *"All four spillway gates are wide open, and the canyon crest is passing the railway bridge now."* |
-| **04** | **`B` (`LEVEE`)** | `21.237` | `26.431` | `0.725` | *"White water is hitting the steel girders on the bridge, and backing slow water down Main Street."* |
-| **05** | **`A` (`CREST`)** | `27.156` | `32.267` | `0.725` | *"Marks One through Five are on the dam, Six was the vault, where is Mark Seven?"* |
-| **06** | **`B` (`LEVEE`)** | `32.992` | `37.850` | `0.725` | *"Not on the dam, they stenciled Mark Seven on the iron streetlamp in the town square."* |
-| **07** | **`A` (`CREST`)** | `38.575` | `40.947` | `0.725` | *"Tell me where the water is on that post."* |
-| **08** | **`B` (`LEVEE`)** | `41.672` | `46.350` | **`1.137`** | *"The amber lamp is still burning, and the river just stopped two inches below Mark Seven."* |
-| **09** | **`A` (`CREST`)** | `47.487` | `52.780` | `0.725` | *"Drowning one concrete room inside the dam took two inches off a three-mile river."* |
-| **10** | **`B` (`LEVEE`)** | `53.505` | `58.880` | `1.120` *(tail)* | *"Four thousand people left their keys on the counter, and their town is still standing at Mark Seven."* |
+| **01** | **`A` (`CREST`)** | `0.440` | `6.885` | `0.755` | *"Three fourteen, thirty-seven minutes after Vault Six flooded inside the dam, and the gorge is full."* |
+| **02** | **`B` (`LEVEE`)** | `7.640` | `13.772` | `0.755` | *"Lowgate levee, two miles downstream, every house is empty, and black water is across the rail yard."* |
+| **03** | **`A` (`CREST`)** | `14.527` | `20.592` | `0.755` | *"All four spillway gates are wide open, and the canyon crest is passing the railway bridge now."* |
+| **04** | **`B` (`LEVEE`)** | `21.347` | `26.541` | `0.755` | *"White water is hitting the steel girders on the bridge, and backing slow water down Main Street."* |
+| **05** | **`A` (`CREST`)** | `27.296` | `32.407` | `0.755` | *"Marks One through Five are on the dam, Six was the vault, where is Mark Seven?"* |
+| **06** | **`B` (`LEVEE`)** | `33.162` | `38.020` | `0.755` | *"Not on the dam, they stenciled Mark Seven on the iron streetlamp in the town square."* |
+| **07** | **`A` (`CREST`)** | `38.775` | `41.147` | `0.755` | *"Tell me where the water is on that post."* |
+| **08** | **`B` (`LEVEE`)** | `41.902` | `46.580` | **`0.917`** | *"The amber lamp is still burning, and the river just stopped two inches below Mark Seven."* |
+| **09** | **`A` (`CREST`)** | `47.497` | `52.790` | `0.755` | *"Drowning one concrete room inside the dam took two inches off a three-mile river."* |
+| **10** | **`B` (`LEVEE`)** | `53.545` | `58.920` | `1.080` *(tail)* | *"Four thousand people left their keys on the counter, and their town is still standing at Mark Seven."* |
 
 ---
 

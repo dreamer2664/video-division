@@ -97,8 +97,8 @@
           "end": 6.441
         }
       ],
-      "timeline_start_s": 0.42,
-      "timeline_end_s": 6.865
+      "timeline_start_s": 0.44,
+      "timeline_end_s": 6.885
     },
     {
       "turn": "02",
@@ -202,8 +202,8 @@
           "end": 6.132
         }
       ],
-      "timeline_start_s": 7.59,
-      "timeline_end_s": 13.722
+      "timeline_start_s": 7.64,
+      "timeline_end_s": 13.772
     },
     {
       "turn": "03",
@@ -307,8 +307,8 @@
           "end": 6.061
         }
       ],
-      "timeline_start_s": 14.447,
-      "timeline_end_s": 20.512
+      "timeline_start_s": 14.527,
+      "timeline_end_s": 20.592
     },
     {
       "turn": "04",
@@ -407,8 +407,8 @@
           "end": 5.218
         }
       ],
-      "timeline_start_s": 21.237,
-      "timeline_end_s": 26.431
+      "timeline_start_s": 21.347,
+      "timeline_end_s": 26.541
     },
     {
       "turn": "05",
@@ -507,8 +507,8 @@
           "end": 5.107
         }
       ],
-      "timeline_start_s": 27.156,
-      "timeline_end_s": 32.267
+      "timeline_start_s": 27.296,
+      "timeline_end_s": 32.407
     },
     {
       "turn": "06",
@@ -607,8 +607,8 @@
           "end": 4.87
         }
       ],
-      "timeline_start_s": 32.992,
-      "timeline_end_s": 37.85
+      "timeline_start_s": 33.162,
+      "timeline_end_s": 38.02
     },
     {
       "turn": "07",
@@ -672,8 +672,8 @@
           "end": 2.368
         }
       ],
-      "timeline_start_s": 38.575,
-      "timeline_end_s": 40.947
+      "timeline_start_s": 38.775,
+      "timeline_end_s": 41.147
     },
     {
       "turn": "08",
@@ -772,8 +772,8 @@
           "end": 4.702
         }
       ],
-      "timeline_start_s": 41.672,
-      "timeline_end_s": 46.35
+      "timeline_start_s": 41.902,
+      "timeline_end_s": 46.58
     },
     {
       "turn": "09",
@@ -862,8 +862,8 @@
           "end": 5.289
         }
       ],
-      "timeline_start_s": 47.487,
-      "timeline_end_s": 52.78
+      "timeline_start_s": 47.497,
+      "timeline_end_s": 52.79
     },
     {
       "turn": "10",
@@ -972,8 +972,8 @@
           "end": 5.399
         }
       ],
-      "timeline_start_s": 53.505,
-      "timeline_end_s": 58.88
+      "timeline_start_s": 53.545,
+      "timeline_end_s": 58.92
     }
   ]
 }
