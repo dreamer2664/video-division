@@ -150,6 +150,7 @@ def render_moving_shot_clip(
     mist_tile: Optional[np.ndarray] = None,
     rain_mask: Optional[np.ndarray] = None,
     frame_hook: Optional[Callable[[np.ndarray, int, float], np.ndarray]] = None,
+    crf: int = 20,
 ) -> None:
     """
     Grade a 1920x1080 plate through `lut` + 500T halation, animate continuous sub-pixel camera motion +
@@ -177,7 +178,7 @@ def render_moving_shot_clip(
         "-s", f"{w}x{h}", "-pix_fmt", "rgb24", "-r", str(fps),
         "-i", "-",
         "-vf", "noise=alls=4:allf=t+u",
-        "-c:v", "libx264", "-preset", "fast", "-crf", "14",
+        "-c:v", "libx264", "-preset", "fast", "-crf", str(crf),
         "-x264-params", "rc-lookahead=12:threads=2",
         "-pix_fmt", "yuv420p", "-r", str(fps),
         out_clip_mp4,
