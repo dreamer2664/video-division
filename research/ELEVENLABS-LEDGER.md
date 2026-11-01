@@ -52,6 +52,27 @@ Round cap: **1,500 text characters**. No credentials stored in this ledger or re
 |---|---|---|---:|---|---|---|
 | 2026-11-01 | vox | `eleven_multilingual_v2` | 363 | Brian (`nPczCjzI2devNBz1zQrb`) | HTTP 200; request `stQbcWe7ivsFwScMJLca` | Original phone-battery explainer narration; stability 0.35, similarity 0.78, style 0.18, speed 0.95; word/character timestamps returned before animation. |
 
+## tally
+
+# ElevenLabs API ledger — tally voice generation
+
+Round limit: **1500 text characters maximum.** Reserve characters before each POST and count every attempted synthesis against the limit, even if the server result is ambiguous. No credentials belong in this file.
+
+
+| UTC | Request | Characters reserved | Status | Notes |
+|---|---|---:|---|---|
+| 2026-11-01T17:36:00+00:00 | GET /v1/voices | 0 | 200 | Discover available voices with tally key (21 voices) |
+| 2026-11-01T17:37:00+00:00 | POST /v1/text-to-speech/CwhRBWXzGAHq8TQ4Fs17/with-timestamps | 108 | 200 | Exploratory synthesis to determine response format (superseded) |
+| 2026-11-01T17:37:30+00:00 | POST /v1/text-to-speech/CwhRBWXzGAHq8TQ4Fs17/with-timestamps | 108 | 200 | Exploratory synthesis to determine response format (superseded) |
+| 2026-11-01T17:37:33+00:00 | GET /v1/voices | 0 | 200 | Re-discover voices for clean generation |
+| 2026-11-01T17:37:34+00:00 | POST /v1/text-to-speech/CwhRBWXzGAHq8TQ4Fs17/with-timestamps | 108 | 200 | 15s proof script; output used (`audio/15s_proof/voice.mp3` + `word_timestamps.json`), model eleven_multilingual_v2, stability 0.35, voice Roger |
+
+**Total reserved this round (tally): 432 / 1,500.** Four synthesis calls at 108 chars each; every attempted synthesis counted per division rule. Remaining: 1,068 characters. No API key committed or logged.
+
+**Manager note (2026-11-01):** `/v1/user/subscription` on tally's key reads **540 / 10,000** billed, not 432. The 108-character discrepancy is one uncounted call in tally's own log — the ledger under-counts by 108 characters. Corrected total for the round: **540**.
+
+---
+
 ---
 
 ## cut
