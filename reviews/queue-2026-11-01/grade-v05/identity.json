@@ -1,0 +1,46 @@
+{
+  "head": "6cac51ede1f213b000ed610d727cb2926bdbdbcd",
+  "files": {
+    "video.mp4": {
+      "bytes": 31397177,
+      "sha256": "1070d8654ad5e24763b71aa9c2f3d96b8c120b18d5094fda5efe9f2d94b6a1f0",
+      "atoms": [
+        [
+          "ftyp",
+          0,
+          32
+        ],
+        [
+          "moov",
+          32,
+          67492
+        ],
+        [
+          "free",
+          67524,
+          8
+        ],
+        [
+          "mdat",
+          67532,
+          31329645
+        ]
+      ]
+    }
+  },
+  "audio_assets": [
+    "audio/bed_ducked_48k.flac",
+    "audio/narration_stem_48k.flac",
+    "audio/tts_lines/line_11.mp3",
+    "audio/tts_lines/line_07.mp3",
+    "audio/tts_lines/line_04.mp3",
+    "audio/tts_lines/line_02.mp3",
+    "audio/tts_lines/line_03.mp3",
+    "audio/tts_lines/line_06.mp3",
+    "audio/tts_lines/line_05.mp3",
+    "audio/tts_lines/line_01.mp3",
+    "audio/tts_lines/line_10.mp3",
+    "audio/tts_lines/line_08.mp3",
+    "audio/tts_lines/line_09.mp3"
+  ]
+}
