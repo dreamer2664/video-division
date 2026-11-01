@@ -120,7 +120,7 @@
       "mp4_mix_rms_dbfs": -19.92
     }
   ],
-  "delivered_mp4_sha256": "30d7c9e9facc00bb4e49072d0b871289046ddc771ffcbca7d72e95a33b6ad806",
+  "delivered_mp4_sha256": "632cdfeb024630d568f20d6105fc7a73dde3d6e508e1c80984b529ba6214a5f5",
   "mp4_stereo_LR_correlation": 0.8307,
   "master_to_mp4_aac_correlation_r": 0.998834,
   "master_to_mp4_aac_residual_dbfs": -45.88
