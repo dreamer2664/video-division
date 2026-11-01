@@ -13,7 +13,7 @@
 ## Post-render evidence
 
 - Reproducible offline render command: `python3 videos/team-b/cut-v10/render_v10.py` (requires Python dependencies in `requirements.txt`, `ffmpeg`, and `ffprobe`; no network call during render).
-- Rendered file: `video.mp4` (35387386 bytes; SHA-256 `6ae4575ed74e722a12188b4ea9891506a13be3751d62a37ef3fc6f9524d40611`).
+- Rendered file: `video.mp4` (35393400 bytes; SHA-256 `898ebc313f1ed32a07f9449260fb67b8097769f9bfd6ae00c0bc16330c60a60e`).
 - Narration source: `audio/narration_source.mp3`; committed lossless stem `audio/narration_stem_48k.flac`; captured telemetry `timing/word_telemetry.json` (84 WordBoundary events); locked captions `timing/captions_locked.json` (28 cues, 2–5 words per cue, boundary-derived).
 - Audio: 48 kHz stereo AAC final; deterministic procedural bed `audio/bed_stem_48k.flac`; lossless mix `audio/master_audio_48k.wav`; voice RMS -24.68 dBFS, bed RMS -30.07 dBFS, mix peak -5.75 dBFS.
 - Planned hero captured at `stills/HERO-01-two-lights-in-the-window.png` (00:56.700 / frame 1701).
@@ -56,7 +56,7 @@
       "start_time": "0.000000",
       "duration_ts": 921600,
       "duration": "60.000000",
-      "bit_rate": "4516267",
+      "bit_rate": "4517069",
       "bits_per_raw_sample": "8",
       "nb_frames": "1800",
       "extradata_size": 47,
@@ -148,8 +148,8 @@
     "format_long_name": "QuickTime / MOV",
     "start_time": "0.000000",
     "duration": "60.000000",
-    "size": "35387386",
-    "bit_rate": "4718318",
+    "size": "35393400",
+    "bit_rate": "4719120",
     "probe_score": 100,
     "tags": {
       "major_brand": "isom",
@@ -170,8 +170,8 @@ Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/tmp/cut-v09/videos/team-b/cut-v10/vide
     minor_version   : 512
     compatible_brands: isomiso2avc1mp41
     encoder         : Lavf61.1.100
-  Duration: 00:01:00.00, start: 0.000000, bitrate: 4718 kb/s
-  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080, 4516 kb/s, 30 fps, 30 tbr, 15360 tbn (default)
+  Duration: 00:01:00.00, start: 0.000000, bitrate: 4719 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080, 4517 kb/s, 30 fps, 30 tbr, 15360 tbn (default)
       Metadata:
         handler_name    : VideoHandler
         vendor_id       : [0][0][0][0]
@@ -194,22 +194,22 @@ Output #0, null, to 'pipe:':
         handler_name    : VideoHandler
         vendor_id       : [0][0][0][0]
         encoder         : Lavc61.3.100 wrapped_avframe
-frame=   83 fps=0.0 q=-0.0 size=N/A time=00:00:02.76 bitrate=N/A speed=5.53x    
-frame=  172 fps=172 q=-0.0 size=N/A time=00:00:05.73 bitrate=N/A speed=5.72x    
+frame=   78 fps=0.0 q=-0.0 size=N/A time=00:00:02.60 bitrate=N/A speed=5.19x    
+frame=  168 fps=168 q=-0.0 size=N/A time=00:00:05.60 bitrate=N/A speed=5.59x    
 frame=  248 fps=165 q=-0.0 size=N/A time=00:00:08.26 bitrate=N/A speed= 5.5x    
-frame=  328 fps=164 q=-0.0 size=N/A time=00:00:10.93 bitrate=N/A speed=5.46x    
-frame=  453 fps=181 q=-0.0 size=N/A time=00:00:15.10 bitrate=N/A speed=6.03x    
-frame=  570 fps=190 q=-0.0 size=N/A time=00:00:19.00 bitrate=N/A speed=6.33x    
-frame=  706 fps=202 q=-0.0 size=N/A time=00:00:23.53 bitrate=N/A speed=6.72x    
-frame=  829 fps=207 q=-0.0 size=N/A time=00:00:27.63 bitrate=N/A speed= 6.9x    
-frame=  942 fps=209 q=-0.0 size=N/A time=00:00:31.40 bitrate=N/A speed=6.97x    
-frame= 1029 fps=206 q=-0.0 size=N/A time=00:00:34.30 bitrate=N/A speed=6.85x    
-frame= 1118 fps=203 q=-0.0 size=N/A time=00:00:37.26 bitrate=N/A speed=6.77x    
-frame= 1235 fps=206 q=-0.0 size=N/A time=00:00:41.16 bitrate=N/A speed=6.85x    
-frame= 1364 fps=210 q=-0.0 size=N/A time=00:00:45.46 bitrate=N/A speed=6.99x    
-frame= 1485 fps=212 q=-0.0 size=N/A time=00:00:49.50 bitrate=N/A speed=7.06x    
-frame= 1618 fps=216 q=-0.0 size=N/A time=00:00:53.93 bitrate=N/A speed=7.18x    
-frame= 1738 fps=217 q=-0.0 size=N/A time=00:00:57.93 bitrate=N/A speed=7.23x    
-[out#0/null @ 0x2bd25c40] video:773KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
-frame= 1800 fps=218 q=-0.0 Lsize=N/A time=00:01:00.00 bitrate=N/A speed=7.28x
+frame=  324 fps=162 q=-0.0 size=N/A time=00:00:10.80 bitrate=N/A speed=5.39x    
+frame=  445 fps=178 q=-0.0 size=N/A time=00:00:14.83 bitrate=N/A speed=5.93x    
+frame=  563 fps=187 q=-0.0 size=N/A time=00:00:18.76 bitrate=N/A speed=6.25x    
+frame=  695 fps=198 q=-0.0 size=N/A time=00:00:23.16 bitrate=N/A speed=6.61x    
+frame=  821 fps=205 q=-0.0 size=N/A time=00:00:27.36 bitrate=N/A speed=6.83x    
+frame=  936 fps=208 q=-0.0 size=N/A time=00:00:31.20 bitrate=N/A speed=6.93x    
+frame= 1031 fps=206 q=-0.0 size=N/A time=00:00:34.36 bitrate=N/A speed=6.87x    
+frame= 1117 fps=203 q=-0.0 size=N/A time=00:00:37.23 bitrate=N/A speed=6.76x    
+frame= 1233 fps=205 q=-0.0 size=N/A time=00:00:41.10 bitrate=N/A speed=6.84x    
+frame= 1353 fps=208 q=-0.0 size=N/A time=00:00:45.10 bitrate=N/A speed=6.93x    
+frame= 1471 fps=210 q=-0.0 size=N/A time=00:00:49.03 bitrate=N/A speed=   7x    
+frame= 1594 fps=212 q=-0.0 size=N/A time=00:00:53.13 bitrate=N/A speed=7.08x    
+frame= 1718 fps=215 q=-0.0 size=N/A time=00:00:57.26 bitrate=N/A speed=7.15x    
+[out#0/null @ 0x7479c40] video:773KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame= 1800 fps=216 q=-0.0 Lsize=N/A time=00:01:00.00 bitrate=N/A speed=7.21x
 ```

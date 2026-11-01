@@ -231,7 +231,7 @@ def render():
             # Final story reveal: the headlights are now reflected inside the room glass.
             if fidx>=1620:
                 reveal=min(1.0,max(0.0,(fidx-1620)/(FPS*1.1)))
-                blend_patch(frame,reflection,308,214,reveal)
+                blend_patch(frame,reflection,100,178,reveal)
             # Captions are exactly 3 source words per beat and use the captured WordBoundary start/end.
             t=fidx/FPS
             while active_caption<len(captions) and t>captions[active_caption]["end"]:
