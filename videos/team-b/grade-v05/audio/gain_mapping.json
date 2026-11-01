@@ -1,0 +1,75 @@
+{
+  "previous_scratch_mp4_sha256_disclosed": "141f3939848bf2970d993b421f6f227de54ea5e89f09e563c078c1a3f8545858",
+  "delivered_mp4_sha256": "1070d8654ad5e24763b71aa9c2f3d96b8c120b18d5094fda5efe9f2d94b6a1f0",
+  "narration_stem_flac": "audio/narration_stem_48k.flac",
+  "narration_stem_sha256": "a4f2f8a84bc1130d72310d54f85e34b5e245028e83ced695f1cd809b6f8cb661",
+  "bed_ducked_flac": "audio/bed_ducked_48k.flac",
+  "bed_ducked_sha256": "41352ef69704701255ef595136458a9f2a82121cb5d12a26f586cfcd1475174e",
+  "master_wav_sha256": "abf875b254ec6422cc686b33dbdb63d4f32716b65e2f1022264be920c2912e7c",
+  "pre_loudnorm_sum_formula": "raw_mix = (int16(narration_stem_48k.flac)/32767.0 + int16(bed_ducked_48k.flac)/32767.0) * pre_scale",
+  "pre_scale": 1.0,
+  "loudnorm_pass1_stats": {
+    "input_i": "-16.55",
+    "input_tp": "-2.59",
+    "input_lra": "1.90",
+    "input_thresh": "-26.78",
+    "output_i": "-16.14",
+    "output_tp": "-2.19",
+    "output_lra": "1.90",
+    "output_thresh": "-26.36",
+    "normalization_type": "dynamic",
+    "target_offset": "0.14"
+  },
+  "loudnorm_filter": "loudnorm=I=-16.0:TP=-1.5:LRA=9.0:measured_I=-16.55:measured_LRA=1.90:measured_TP=-2.59:measured_thresh=-26.78:offset=0.14:linear=true:print_format=summary,aresample=48000",
+  "active_speech_duty_pct": 82.73,
+  "active_window_narration_rms_dbfs": -19.11,
+  "active_window_bed_rms_dbfs": -29.44,
+  "active_speech_to_bed_margin_db": 10.33,
+  "pause_window_bed_rms_dbfs": -25.77,
+  "master_to_mp4_aac_correlation_r": 0.998922,
+  "master_to_mp4_aac_residual_dbfs": -45.47,
+  "body_windows_10s": [
+    {
+      "window_s": "00-10s",
+      "speech_duty_pct": 88.8,
+      "narration_stem_rms_dbfs": -19.64,
+      "bed_ducked_rms_dbfs": -29.32,
+      "mp4_mix_rms_dbfs": -18.68
+    },
+    {
+      "window_s": "10-20s",
+      "speech_duty_pct": 85.4,
+      "narration_stem_rms_dbfs": -19.97,
+      "bed_ducked_rms_dbfs": -29.43,
+      "mp4_mix_rms_dbfs": -18.99
+    },
+    {
+      "window_s": "20-30s",
+      "speech_duty_pct": 83.4,
+      "narration_stem_rms_dbfs": -19.72,
+      "bed_ducked_rms_dbfs": -29.95,
+      "mp4_mix_rms_dbfs": -18.81
+    },
+    {
+      "window_s": "30-40s",
+      "speech_duty_pct": 84.5,
+      "narration_stem_rms_dbfs": -20.0,
+      "bed_ducked_rms_dbfs": -29.94,
+      "mp4_mix_rms_dbfs": -19.06
+    },
+    {
+      "window_s": "40-50s",
+      "speech_duty_pct": 75.5,
+      "narration_stem_rms_dbfs": -20.3,
+      "bed_ducked_rms_dbfs": -26.62,
+      "mp4_mix_rms_dbfs": -18.88
+    },
+    {
+      "window_s": "50-60s",
+      "speech_duty_pct": 78.8,
+      "narration_stem_rms_dbfs": -19.99,
+      "bed_ducked_rms_dbfs": -27.25,
+      "mp4_mix_rms_dbfs": -18.74
+    }
+  ]
+}
