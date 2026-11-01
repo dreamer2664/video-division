@@ -19,7 +19,7 @@ A footprint appears behind the desk.
 The ledger changes to four.  
 Two guests, the clerk, and whoever is standing behind him.  
 Now the arrivals balance.  
-At six, the wake-up call to room four hundred and eight connects.  
+At six, the wake-up call connects to the unlet room.  
 No one is left at reception to hear who answers.
 
 The spoken script may be tightened after measuring the specified voice and pauses; that change must be committed before picture generation. The story must retain the counted escalation, the unlet-room wake-up call, the uncalled lift, the physical footprints, and the ending.
@@ -30,7 +30,7 @@ All pictures will be original, generated as **photographic** 16:9 hotel location
 
 1. Exterior through the rain under a wet awning; the one brass reception lamp glows through glass. Rain and distant hotel hum.
 2. **Wall frame: THE FOURTH ARRIVAL / THE UNCOUNTED GUEST.** From the entrance, look across wet marble footprints into a dark-wood lobby; the solitary brass desk lamp anchors the reception on one side, an empty lift recedes behind it, and rain beads on the glass and awning. Strong foreground, middle and deep space. No person or overlay is needed for the clean wall frame.
-3. Close physical ledger and key rack under the single warm desk lamp; missing keys suggested without requiring AI-generated legible text. Pencil, damp paper and dark wood are tangible.
+3. Over the night clerk's shoulder to the physical ledger and key rack under the single warm desk lamp; missing keys suggested without requiring AI-generated legible text. Pencil, damp paper and dark wood are tangible.
 4. The unlet-room wake-up request: close dark Bakelite reception handset and ledger in the same lamp pool; no fake readable graphics.
 5. An original hotel corridor and closed room door in cool window light; wet air and one motivated warm source, not an isolated object.
 6. The handset at reception as the call returns; close dry ring against room tone.
