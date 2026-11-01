@@ -1,0 +1,7 @@
+{
+  "timestamp_utc": "2026-11-01T14:39:18+00:00",
+  "method": "POST",
+  "endpoint": "/v1/text-to-speech/{voice_id}/with-timestamps",
+  "characters_reserved": 201,
+  "status": "200"
+}

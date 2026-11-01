@@ -6,6 +6,6 @@ Round limit: **1,200 text characters maximum**. Reserve characters before each P
 |---|---|---:|---|---|
 | 2026-11-01T14:38:44+00:00 | GET `/v1/voices` | 0 | 200 | Discover an available premade reference voice. |
 
-| 2026-11-01 | POST `/v1/text-to-speech/{voice_id}/with-timestamps` | 201 | planned | One benchmark passage, model `eleven_multilingual_v2`, premade male Roger; the reservation is counted even if the outcome is unknown. |
+| 2026-11-01T14:39:18+00:00 | POST `/v1/text-to-speech/{voice_id}/with-timestamps` | 201 | 200 | One benchmark passage, model `eleven_multilingual_v2`, premade male Roger; the reservation is counted even if the outcome is unknown. |
 
 **Total reserved this round: 201 / 1,200.** Account monthly usage is shared with others and is not assumed to be exclusively available to this experiment.
