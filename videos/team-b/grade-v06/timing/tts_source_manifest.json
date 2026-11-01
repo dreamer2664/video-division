@@ -1,0 +1,859 @@
+{
+  "turns": [
+    {
+      "turn": "01",
+      "speaker": "A",
+      "rel_mp3": "audio/tts_turns/turn_01_A.mp3",
+      "sha256": "e648f8952a3074dc0171128dff751aa362f156a8e3c22873d8685a72b053662e",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-11%",
+      "pitch": "-5Hz",
+      "text": "At two twenty-four, seven minutes after the upper lock breached, the copper wall phone rings. A line dead since nineteen eighty-nine.",
+      "raw_dur_s": 10.608,
+      "first_word_offset_s": 0.106,
+      "last_word_end_s": 9.635,
+      "trim_in_s": 0.061,
+      "trim_out_s": 9.765,
+      "timeline_start_s": 0.4,
+      "timeline_end_s": 9.929,
+      "words_raw": [
+        {
+          "start": 0.106,
+          "end": 0.373,
+          "text": "At"
+        },
+        {
+          "start": 0.387,
+          "end": 0.626,
+          "text": "two"
+        },
+        {
+          "start": 0.64,
+          "end": 1.398,
+          "text": "twenty-four"
+        },
+        {
+          "start": 1.679,
+          "end": 2.101,
+          "text": "seven"
+        },
+        {
+          "start": 2.115,
+          "end": 2.48,
+          "text": "minutes"
+        },
+        {
+          "start": 2.494,
+          "end": 2.789,
+          "text": "after"
+        },
+        {
+          "start": 2.803,
+          "end": 2.915,
+          "text": "the"
+        },
+        {
+          "start": 2.929,
+          "end": 3.238,
+          "text": "upper"
+        },
+        {
+          "start": 3.252,
+          "end": 3.589,
+          "text": "lock"
+        },
+        {
+          "start": 3.603,
+          "end": 4.137,
+          "text": "breached"
+        },
+        {
+          "start": 4.348,
+          "end": 4.474,
+          "text": "the"
+        },
+        {
+          "start": 4.488,
+          "end": 4.91,
+          "text": "copper"
+        },
+        {
+          "start": 4.924,
+          "end": 5.204,
+          "text": "wall"
+        },
+        {
+          "start": 5.219,
+          "end": 5.584,
+          "text": "phone"
+        },
+        {
+          "start": 5.598,
+          "end": 6.188,
+          "text": "rings"
+        },
+        {
+          "start": 7.163,
+          "end": 7.289,
+          "text": "A"
+        },
+        {
+          "start": 7.303,
+          "end": 7.683,
+          "text": "line"
+        },
+        {
+          "start": 7.697,
+          "end": 8.076,
+          "text": "dead"
+        },
+        {
+          "start": 8.09,
+          "end": 8.413,
+          "text": "since"
+        },
+        {
+          "start": 8.427,
+          "end": 8.904,
+          "text": "nineteen"
+        },
+        {
+          "start": 8.919,
+          "end": 9.635,
+          "text": "eighty-nine"
+        }
+      ]
+    },
+    {
+      "turn": "02",
+      "speaker": "B",
+      "rel_mp3": "audio/tts_turns/turn_02_B.mp3",
+      "sha256": "e571cb8df55b9ae949abf835d47a20aa675ac7293bbe7a68a16ef81e374924e2",
+      "voice": "en-GB-SoniaNeural",
+      "rate": "+4%",
+      "pitch": "+2Hz",
+      "text": "Lower Tower, come in. Confirm your water is still below Mark Five.",
+      "raw_dur_s": 5.112,
+      "first_word_offset_s": 0.11,
+      "last_word_end_s": 4.749,
+      "trim_in_s": 0.065,
+      "trim_out_s": 4.879,
+      "timeline_start_s": 10.749,
+      "timeline_end_s": 15.388,
+      "words_raw": [
+        {
+          "start": 0.11,
+          "end": 0.435,
+          "text": "Lower"
+        },
+        {
+          "start": 0.447,
+          "end": 0.939,
+          "text": "Tower"
+        },
+        {
+          "start": 1.168,
+          "end": 1.36,
+          "text": "come"
+        },
+        {
+          "start": 1.372,
+          "end": 1.661,
+          "text": "in"
+        },
+        {
+          "start": 2.009,
+          "end": 2.501,
+          "text": "Confirm"
+        },
+        {
+          "start": 2.513,
+          "end": 2.622,
+          "text": "your"
+        },
+        {
+          "start": 2.634,
+          "end": 3.138,
+          "text": "water"
+        },
+        {
+          "start": 3.151,
+          "end": 3.319,
+          "text": "is"
+        },
+        {
+          "start": 3.331,
+          "end": 3.583,
+          "text": "still"
+        },
+        {
+          "start": 3.595,
+          "end": 3.908,
+          "text": "below"
+        },
+        {
+          "start": 3.92,
+          "end": 4.196,
+          "text": "Mark"
+        },
+        {
+          "start": 4.208,
+          "end": 4.749,
+          "text": "Five"
+        }
+      ]
+    },
+    {
+      "turn": "03",
+      "speaker": "A",
+      "rel_mp3": "audio/tts_turns/turn_03_A.mp3",
+      "sha256": "8b757ff6a7f5419f9258f7eb5f5a7f59a4346bce7b10e2b29c2156ae78d5df50",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-11%",
+      "pitch": "-5Hz",
+      "text": "I check the spillway wall outside. Four inches below the red five.",
+      "raw_dur_s": 6.528,
+      "first_word_offset_s": 0.106,
+      "last_word_end_s": 5.562,
+      "trim_in_s": 0.061,
+      "trim_out_s": 5.692,
+      "timeline_start_s": 16.068,
+      "timeline_end_s": 21.524,
+      "words_raw": [
+        {
+          "start": 0.106,
+          "end": 0.303,
+          "text": "I"
+        },
+        {
+          "start": 0.317,
+          "end": 0.64,
+          "text": "check"
+        },
+        {
+          "start": 0.654,
+          "end": 0.766,
+          "text": "the"
+        },
+        {
+          "start": 0.78,
+          "end": 1.314,
+          "text": "spillway"
+        },
+        {
+          "start": 1.328,
+          "end": 1.665,
+          "text": "wall"
+        },
+        {
+          "start": 1.679,
+          "end": 2.41,
+          "text": "outside"
+        },
+        {
+          "start": 3.385,
+          "end": 3.652,
+          "text": "Four"
+        },
+        {
+          "start": 3.666,
+          "end": 4.101,
+          "text": "inches"
+        },
+        {
+          "start": 4.115,
+          "end": 4.508,
+          "text": "below"
+        },
+        {
+          "start": 4.522,
+          "end": 4.663,
+          "text": "the"
+        },
+        {
+          "start": 4.677,
+          "end": 4.93,
+          "text": "red"
+        },
+        {
+          "start": 4.944,
+          "end": 5.562,
+          "text": "five"
+        }
+      ]
+    },
+    {
+      "turn": "04",
+      "speaker": "B",
+      "rel_mp3": "audio/tts_turns/turn_04_B.mp3",
+      "sha256": "f8bb697ba447842cdec8f7a5f68bd3eab1762796b4f8d07480336ba3893aef63",
+      "voice": "en-GB-SoniaNeural",
+      "rate": "+4%",
+      "pitch": "+2Hz",
+      "text": "Good. Whatever you hear on the roof, do not draw the spillway pins.",
+      "raw_dur_s": 4.8,
+      "first_word_offset_s": 0.1,
+      "last_word_end_s": 4.435,
+      "trim_in_s": 0.055,
+      "trim_out_s": 4.565,
+      "timeline_start_s": 22.204,
+      "timeline_end_s": 26.539,
+      "words_raw": [
+        {
+          "start": 0.1,
+          "end": 0.58,
+          "text": "Good"
+        },
+        {
+          "start": 0.962,
+          "end": 1.37,
+          "text": "Whatever"
+        },
+        {
+          "start": 1.382,
+          "end": 1.55,
+          "text": "you"
+        },
+        {
+          "start": 1.562,
+          "end": 1.791,
+          "text": "hear"
+        },
+        {
+          "start": 1.803,
+          "end": 1.923,
+          "text": "on"
+        },
+        {
+          "start": 1.935,
+          "end": 2.019,
+          "text": "the"
+        },
+        {
+          "start": 2.031,
+          "end": 2.44,
+          "text": "roof"
+        },
+        {
+          "start": 2.692,
+          "end": 2.812,
+          "text": "do"
+        },
+        {
+          "start": 2.825,
+          "end": 3.065,
+          "text": "not"
+        },
+        {
+          "start": 3.077,
+          "end": 3.329,
+          "text": "draw"
+        },
+        {
+          "start": 3.341,
+          "end": 3.449,
+          "text": "the"
+        },
+        {
+          "start": 3.462,
+          "end": 3.894,
+          "text": "spillway"
+        },
+        {
+          "start": 3.906,
+          "end": 4.435,
+          "text": "pins"
+        }
+      ]
+    },
+    {
+      "turn": "05",
+      "speaker": "A",
+      "rel_mp3": "audio/tts_turns/turn_05_A.mp3",
+      "sha256": "007abe5bcd4f089146789482ff5713eff090e6f28aa8e6666425274ff66a5c7e",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-11%",
+      "pitch": "-5Hz",
+      "text": "Wait. How do you know something is walking on the roof?",
+      "raw_dur_s": 5.04,
+      "first_word_offset_s": 0.106,
+      "last_word_end_s": 4.073,
+      "trim_in_s": 0.061,
+      "trim_out_s": 4.203,
+      "timeline_start_s": 27.159,
+      "timeline_end_s": 31.126,
+      "words_raw": [
+        {
+          "start": 0.106,
+          "end": 0.682,
+          "text": "Wait"
+        },
+        {
+          "start": 1.643,
+          "end": 1.854,
+          "text": "How"
+        },
+        {
+          "start": 1.868,
+          "end": 1.952,
+          "text": "do"
+        },
+        {
+          "start": 1.966,
+          "end": 2.079,
+          "text": "you"
+        },
+        {
+          "start": 2.093,
+          "end": 2.289,
+          "text": "know"
+        },
+        {
+          "start": 2.303,
+          "end": 2.753,
+          "text": "something"
+        },
+        {
+          "start": 2.767,
+          "end": 2.879,
+          "text": "is"
+        },
+        {
+          "start": 2.893,
+          "end": 3.343,
+          "text": "walking"
+        },
+        {
+          "start": 3.357,
+          "end": 3.469,
+          "text": "on"
+        },
+        {
+          "start": 3.483,
+          "end": 3.567,
+          "text": "the"
+        },
+        {
+          "start": 3.581,
+          "end": 4.073,
+          "text": "roof"
+        }
+      ]
+    },
+    {
+      "turn": "06",
+      "speaker": "B",
+      "rel_mp3": "audio/tts_turns/turn_06_B.mp3",
+      "sha256": "7a05b101674ecd10391c2d7d68d4f30e7ddfeebce5dfee61beeefaea77b5a745",
+      "voice": "en-GB-SoniaNeural",
+      "rate": "+4%",
+      "pitch": "+2Hz",
+      "text": "Follow the copper telephone wire down beneath your window sill.",
+      "raw_dur_s": 3.864,
+      "first_word_offset_s": 0.122,
+      "last_word_end_s": 3.512,
+      "trim_in_s": 0.077,
+      "trim_out_s": 3.642,
+      "timeline_start_s": 31.806,
+      "timeline_end_s": 35.196,
+      "words_raw": [
+        {
+          "start": 0.122,
+          "end": 0.507,
+          "text": "Follow"
+        },
+        {
+          "start": 0.519,
+          "end": 0.651,
+          "text": "the"
+        },
+        {
+          "start": 0.663,
+          "end": 0.976,
+          "text": "copper"
+        },
+        {
+          "start": 0.988,
+          "end": 1.504,
+          "text": "telephone"
+        },
+        {
+          "start": 1.516,
+          "end": 1.841,
+          "text": "wire"
+        },
+        {
+          "start": 1.853,
+          "end": 2.225,
+          "text": "down"
+        },
+        {
+          "start": 2.237,
+          "end": 2.598,
+          "text": "beneath"
+        },
+        {
+          "start": 2.61,
+          "end": 2.706,
+          "text": "your"
+        },
+        {
+          "start": 2.718,
+          "end": 3.079,
+          "text": "window"
+        },
+        {
+          "start": 3.091,
+          "end": 3.512,
+          "text": "sill"
+        }
+      ]
+    },
+    {
+      "turn": "07",
+      "speaker": "A",
+      "rel_mp3": "audio/tts_turns/turn_07_A.mp3",
+      "sha256": "17a869962dc84a0d525b58458f79be54c069b97a3194057f0b7e87df699e0114",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-11%",
+      "pitch": "-5Hz",
+      "text": "My lamp hits the wet stone floor. The wire is cut clean through.",
+      "raw_dur_s": 6.36,
+      "first_word_offset_s": 0.106,
+      "last_word_end_s": 5.393,
+      "trim_in_s": 0.061,
+      "trim_out_s": 5.523,
+      "timeline_start_s": 35.876,
+      "timeline_end_s": 41.163,
+      "words_raw": [
+        {
+          "start": 0.106,
+          "end": 0.317,
+          "text": "My"
+        },
+        {
+          "start": 0.331,
+          "end": 0.71,
+          "text": "lamp"
+        },
+        {
+          "start": 0.724,
+          "end": 1.047,
+          "text": "hits"
+        },
+        {
+          "start": 1.061,
+          "end": 1.188,
+          "text": "the"
+        },
+        {
+          "start": 1.202,
+          "end": 1.412,
+          "text": "wet"
+        },
+        {
+          "start": 1.426,
+          "end": 1.848,
+          "text": "stone"
+        },
+        {
+          "start": 1.862,
+          "end": 2.41,
+          "text": "floor"
+        },
+        {
+          "start": 3.385,
+          "end": 3.539,
+          "text": "The"
+        },
+        {
+          "start": 3.553,
+          "end": 4.003,
+          "text": "wire"
+        },
+        {
+          "start": 4.017,
+          "end": 4.185,
+          "text": "is"
+        },
+        {
+          "start": 4.199,
+          "end": 4.508,
+          "text": "cut"
+        },
+        {
+          "start": 4.522,
+          "end": 4.902,
+          "text": "clean"
+        },
+        {
+          "start": 4.916,
+          "end": 5.393,
+          "text": "through"
+        }
+      ]
+    },
+    {
+      "turn": "08",
+      "speaker": "B",
+      "rel_mp3": "audio/tts_turns/turn_08_B.mp3",
+      "sha256": "a8a6b6a94dbff83b99e530433e2d066c9d4f3d188674f8fadf55b86f9423c2d9",
+      "voice": "en-GB-SoniaNeural",
+      "rate": "+4%",
+      "pitch": "+2Hz",
+      "text": "I'm not calling from Basin Control. I'm on your roof, clipped to the stub. And Mark Five wasn't painted to measure the river.",
+      "raw_dur_s": 8.208,
+      "first_word_offset_s": 0.134,
+      "last_word_end_s": 7.861,
+      "trim_in_s": 0.089,
+      "trim_out_s": 7.991,
+      "timeline_start_s": 42.443,
+      "timeline_end_s": 50.17,
+      "words_raw": [
+        {
+          "start": 0.134,
+          "end": 0.29,
+          "text": "I'm"
+        },
+        {
+          "start": 0.302,
+          "end": 0.543,
+          "text": "not"
+        },
+        {
+          "start": 0.555,
+          "end": 1.012,
+          "text": "calling"
+        },
+        {
+          "start": 1.024,
+          "end": 1.228,
+          "text": "from"
+        },
+        {
+          "start": 1.24,
+          "end": 1.637,
+          "text": "Basin"
+        },
+        {
+          "start": 1.649,
+          "end": 2.237,
+          "text": "Control"
+        },
+        {
+          "start": 2.62,
+          "end": 2.8,
+          "text": "I'm"
+        },
+        {
+          "start": 2.812,
+          "end": 2.957,
+          "text": "on"
+        },
+        {
+          "start": 2.969,
+          "end": 3.089,
+          "text": "your"
+        },
+        {
+          "start": 3.101,
+          "end": 3.594,
+          "text": "roof"
+        },
+        {
+          "start": 3.834,
+          "end": 4.183,
+          "text": "clipped"
+        },
+        {
+          "start": 4.195,
+          "end": 4.279,
+          "text": "to"
+        },
+        {
+          "start": 4.291,
+          "end": 4.387,
+          "text": "the"
+        },
+        {
+          "start": 4.399,
+          "end": 4.82,
+          "text": "stub"
+        },
+        {
+          "start": 5.204,
+          "end": 5.337,
+          "text": "And"
+        },
+        {
+          "start": 5.349,
+          "end": 5.637,
+          "text": "Mark"
+        },
+        {
+          "start": 5.649,
+          "end": 6.094,
+          "text": "Five"
+        },
+        {
+          "start": 6.106,
+          "end": 6.43,
+          "text": "wasn't"
+        },
+        {
+          "start": 6.442,
+          "end": 6.887,
+          "text": "painted"
+        },
+        {
+          "start": 6.899,
+          "end": 6.995,
+          "text": "to"
+        },
+        {
+          "start": 7.007,
+          "end": 7.308,
+          "text": "measure"
+        },
+        {
+          "start": 7.32,
+          "end": 7.428,
+          "text": "the"
+        },
+        {
+          "start": 7.44,
+          "end": 7.861,
+          "text": "river"
+        }
+      ]
+    },
+    {
+      "turn": "09",
+      "speaker": "A",
+      "rel_mp3": "audio/tts_turns/turn_09_A.mp3",
+      "sha256": "50ac27862510f29e46b6d7c5fd27a17403fc1ed3f8476c2d8361d243de395dd0",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-11%",
+      "pitch": "-5Hz",
+      "text": "I raise the lamp. Mark Five is stenciled across the ceiling.",
+      "raw_dur_s": 6.024,
+      "first_word_offset_s": 0.106,
+      "last_word_end_s": 5.042,
+      "trim_in_s": 0.061,
+      "trim_out_s": 5.172,
+      "timeline_start_s": 50.95,
+      "timeline_end_s": 55.886,
+      "words_raw": [
+        {
+          "start": 0.106,
+          "end": 0.317,
+          "text": "I"
+        },
+        {
+          "start": 0.331,
+          "end": 0.724,
+          "text": "raise"
+        },
+        {
+          "start": 0.738,
+          "end": 0.865,
+          "text": "the"
+        },
+        {
+          "start": 0.879,
+          "end": 1.412,
+          "text": "lamp"
+        },
+        {
+          "start": 2.388,
+          "end": 2.781,
+          "text": "Mark"
+        },
+        {
+          "start": 2.795,
+          "end": 3.216,
+          "text": "Five"
+        },
+        {
+          "start": 3.23,
+          "end": 3.357,
+          "text": "is"
+        },
+        {
+          "start": 3.371,
+          "end": 3.862,
+          "text": "stenciled"
+        },
+        {
+          "start": 3.876,
+          "end": 4.312,
+          "text": "across"
+        },
+        {
+          "start": 4.326,
+          "end": 4.452,
+          "text": "the"
+        },
+        {
+          "start": 4.466,
+          "end": 5.042,
+          "text": "ceiling"
+        }
+      ]
+    },
+    {
+      "turn": "10",
+      "speaker": "B",
+      "rel_mp3": "audio/tts_turns/turn_10_B.mp3",
+      "sha256": "223e1b8f0e9b9b1dd55f40227902da4b9d73ac2ad11052229832ba7673d58f9f",
+      "voice": "en-GB-SoniaNeural",
+      "rate": "+4%",
+      "pitch": "+2Hz",
+      "text": "It marks how high your tower fills.",
+      "raw_dur_s": 2.568,
+      "first_word_offset_s": 0.134,
+      "last_word_end_s": 2.201,
+      "trim_in_s": 0.089,
+      "trim_out_s": 2.331,
+      "timeline_start_s": 56.766,
+      "timeline_end_s": 58.833,
+      "words_raw": [
+        {
+          "start": 0.134,
+          "end": 0.302,
+          "text": "It"
+        },
+        {
+          "start": 0.314,
+          "end": 0.687,
+          "text": "marks"
+        },
+        {
+          "start": 0.699,
+          "end": 0.867,
+          "text": "how"
+        },
+        {
+          "start": 0.879,
+          "end": 1.12,
+          "text": "high"
+        },
+        {
+          "start": 1.132,
+          "end": 1.288,
+          "text": "your"
+        },
+        {
+          "start": 1.3,
+          "end": 1.649,
+          "text": "tower"
+        },
+        {
+          "start": 1.661,
+          "end": 2.201,
+          "text": "fills"
+        }
+      ]
+    }
+  ]
+}

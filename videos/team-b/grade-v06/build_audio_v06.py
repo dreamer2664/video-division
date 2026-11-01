@@ -366,10 +366,59 @@ def build_score_and_foley(t: np.ndarray) -> np.ndarray:
     return np.column_stack([bed_l, bed_r]).astype(np.float32)
 
 
+def _decode_flac_f32(path: str) -> np.ndarray:
+    tmp_wav = f"/tmp/grade_v06_build/_dec_{os.path.basename(path)}.wav"
+    subprocess.run(
+        ["ffmpeg", "-y", "-hide_banner", "-loglevel", "error", "-i", path, "-ar", str(SR), "-ac", "2", "-c:a", "pcm_s16le", tmp_wav],
+        check=True,
+    )
+    _, pcm = wavfile.read(tmp_wav)
+    os.remove(tmp_wav)
+    return pcm.astype(np.float32) / 32767.0
+
+
 def main():
+    import argparse
+    import hashlib
+
+    parser = argparse.ArgumentParser(description="Build MARK FIVE (v06) 48 kHz two-voice master audio.")
+    parser.add_argument(
+        "--regenerate-tts",
+        action="store_true",
+        help="Re-query online edge-tts instead of consuming the committed lossless FLAC stems.",
+    )
+    args = parser.parse_args()
+
+    repo_dir = os.path.dirname(os.path.abspath(__file__))
+    audio_dir = os.path.join(repo_dir, "audio")
+    va_flac = os.path.join(audio_dir, "voice_A_narrator_48k.flac")
+    vb_flac = os.path.join(audio_dir, "voice_B_responder_48k.flac")
+    vd_flac = os.path.join(audio_dir, "dialogue_stem_48k.flac")
+    bed_flac = os.path.join(audio_dir, "bed_ducked_48k.flac")
+    gmap_json = os.path.join(audio_dir, "gain_mapping.json")
+
     build_dir = "/tmp/grade_v06_build"
     narr_dir = os.path.join(build_dir, "narration")
     os.makedirs(narr_dir, exist_ok=True)
+
+    if not args.regenerate_tts and all(os.path.exists(p) for p in [va_flac, vb_flac, vd_flac, bed_flac, gmap_json]):
+        print("Reproducing exact v06 master audio OFFLINE from committed lossless FLAC stems...")
+        gmap = json.load(open(gmap_json))
+        stereo_A = _decode_flac_f32(va_flac)
+        stereo_B = _decode_flac_f32(vb_flac)
+        dialogue_stereo = _decode_flac_f32(vd_flac)
+        bed_ducked = _decode_flac_f32(bed_flac)
+        raw_mix = (stereo_A + stereo_B + bed_ducked) * float(gmap.get("pre_scale", 1.0))
+        pre_wav = os.path.join(build_dir, "mix_pre_loudnorm_48k.wav")
+        master_wav = os.path.join(build_dir, "master_audio_48k.wav")
+        wavfile.write(pre_wav, SR, np.clip(np.round(raw_mix * 32767.0), -32768, 32767).astype(np.int16))
+        subprocess.run(
+            ["ffmpeg", "-y", "-hide_banner", "-loglevel", "error", "-i", pre_wav, "-af", gmap["loudnorm_filter"], "-ar", "48000", "-ac", "2", "-c:a", "pcm_s16le", master_wav],
+            check=True,
+        )
+        m_sha = hashlib.sha256(open(master_wav, "rb").read()).hexdigest()
+        print(f"Offline master_audio_48k.wav SHA256: {m_sha}")
+        return
 
     manifest = asyncio.run(ensure_tts_turns(narr_dir))
     stereo_A, stereo_B, dialogue_stereo, active_gate, sep_stats = build_two_voice_stems(manifest, narr_dir)
