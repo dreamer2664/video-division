@@ -1,0 +1,47 @@
+{
+  "head": "fedc25079c7bb79d9ade52ea9c95293fe3f58d86",
+  "files": {
+    "video.mp4": {
+      "bytes": 27765746,
+      "sha256": "626cb67bf2c5d526db620886ce950de1834a8d1c225390fc33ccedb7fcc2151a",
+      "atoms": [
+        [
+          "ftyp",
+          0,
+          32
+        ],
+        [
+          "moov",
+          32,
+          67484
+        ],
+        [
+          "free",
+          67516,
+          8
+        ],
+        [
+          "mdat",
+          67524,
+          27698222
+        ]
+      ]
+    }
+  },
+  "audio_assets": [
+    "audio/voice_A_narrator_48k.flac",
+    "audio/dialogue_stem_48k.flac",
+    "audio/voice_B_responder_48k.flac",
+    "audio/bed_ducked_48k.flac",
+    "audio/tts_turns/turn_04_B.mp3",
+    "audio/tts_turns/turn_06_B.mp3",
+    "audio/tts_turns/turn_08_B.mp3",
+    "audio/tts_turns/turn_07_A.mp3",
+    "audio/tts_turns/turn_03_A.mp3",
+    "audio/tts_turns/turn_09_A.mp3",
+    "audio/tts_turns/turn_01_A.mp3",
+    "audio/tts_turns/turn_02_B.mp3",
+    "audio/tts_turns/turn_05_A.mp3",
+    "audio/tts_turns/turn_10_B.mp3"
+  ]
+}

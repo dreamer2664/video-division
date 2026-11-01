@@ -1,0 +1,53 @@
+{
+  "3": {
+    "head": "3930e2cdbeac07145b3118fba881fc5fc706e4c4",
+    "files": [
+      {
+        "path": "videos/team-b/cut-v08/video.mp4",
+        "bytes": 37717528,
+        "sha256": "368c1f55bede9f924f995344dc2c45aa371e6200c1e65f34649b53b44cdb8926",
+        "git_blob": "b4d9512271ed3021d788eafc3114c3f0f696e53b"
+      },
+      {
+        "path": "videos/team-b/cut-v08/video-landscape.mp4",
+        "bytes": 5861026,
+        "sha256": "3fd494f85622fd905fed147202428153f0b69d52a16354ec1e3fbfc3b604f510",
+        "git_blob": "aaab43fd2a972d0fc6ca919f94533f5a554a792b"
+      }
+    ]
+  },
+  "7": {
+    "head": "5d5cadb8b77d046de82094da01062c287678a660",
+    "files": [
+      {
+        "path": "videos/team-a/pixel-v07/video.mp4",
+        "bytes": 56014264,
+        "sha256": "cdeb190e7a472a53c052efc9b1364d015c9b885df2908349506068041485ac00",
+        "git_blob": "b5411b3b459f0e3aa25bff5789a4bc32c33219e8"
+      },
+      {
+        "path": "videos/team-a/pixel-v07/video-landscape.mp4",
+        "bytes": 18724214,
+        "sha256": "2bac7853763fdcf1c93536a2f0e1a79521468efb9cbe4bc4b14e3182d1dcab56",
+        "git_blob": "00dbaca201d24109c2b16dcfb01d383d0a7891e4"
+      }
+    ]
+  },
+  "4": {
+    "head": "18b0c89e5a8eca70fd83678cb468edeaa41615e1",
+    "files": [
+      {
+        "path": "videos/team-a/pixel-v06/video.mp4",
+        "bytes": 58849388,
+        "sha256": "af3c39932cf2b06d707bd5ab9204ef8eb85688f53d796136588d21c198f2d189",
+        "git_blob": "a910fbb79f1d56bcc0428c5ecbe09ca2e40dd296"
+      },
+      {
+        "path": "videos/team-a/pixel-v06/video-landscape.mp4",
+        "bytes": 49171791,
+        "sha256": "2362f0f0926864722462573b1538dedc374c65d0b1aee94de9cf48f4e958dbce",
+        "git_blob": "ab7cce6fa279dcf9da267a2998fc7bba946a86c0"
+      }
+    ]
+  }
+}

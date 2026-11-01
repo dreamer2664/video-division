@@ -1,0 +1,113 @@
+{
+  "head": "fedc25079c7bb79d9ade52ea9c95293fe3f58d86",
+  "verified_source_hashes": {
+    "voice_A_narrator_48k.flac": "e1f7e794645caf77e2af8e89e01747c330632f48028882e71e9844dd4ef1645b",
+    "voice_B_responder_48k.flac": "60751c800e216675f019b90091b020f395a4d5f2cb1ebc8f5a0e778911e1f989",
+    "dialogue_stem_48k.flac": "f61f0d0793068066219c1ee551cfb6336eb09a662033b652f51ebc73785ac61f",
+    "bed_ducked_48k.flac": "701079cc55f2a8ddb56cb198d16e0b9043637d1edef5bb1ccaf3ebe52766cce8"
+  },
+  "source_durations_s": {
+    "voice_A_narrator_48k.flac": 60.0,
+    "voice_B_responder_48k.flac": 60.0,
+    "dialogue_stem_48k.flac": 60.0,
+    "bed_ducked_48k.flac": 60.0
+  },
+  "verified_raw_turn_mp3s": [
+    {
+      "path": "audio/tts_turns/turn_01_A.mp3",
+      "sha256": "e648f8952a3074dc0171128dff751aa362f156a8e3c22873d8685a72b053662e"
+    },
+    {
+      "path": "audio/tts_turns/turn_02_B.mp3",
+      "sha256": "e571cb8df55b9ae949abf835d47a20aa675ac7293bbe7a68a16ef81e374924e2"
+    },
+    {
+      "path": "audio/tts_turns/turn_03_A.mp3",
+      "sha256": "8b757ff6a7f5419f9258f7eb5f5a7f59a4346bce7b10e2b29c2156ae78d5df50"
+    },
+    {
+      "path": "audio/tts_turns/turn_04_B.mp3",
+      "sha256": "f8bb697ba447842cdec8f7a5f68bd3eab1762796b4f8d07480336ba3893aef63"
+    },
+    {
+      "path": "audio/tts_turns/turn_05_A.mp3",
+      "sha256": "007abe5bcd4f089146789482ff5713eff090e6f28aa8e6666425274ff66a5c7e"
+    },
+    {
+      "path": "audio/tts_turns/turn_06_B.mp3",
+      "sha256": "7a05b101674ecd10391c2d7d68d4f30e7ddfeebce5dfee61beeefaea77b5a745"
+    },
+    {
+      "path": "audio/tts_turns/turn_07_A.mp3",
+      "sha256": "17a869962dc84a0d525b58458f79be54c069b97a3194057f0b7e87df699e0114"
+    },
+    {
+      "path": "audio/tts_turns/turn_08_B.mp3",
+      "sha256": "a8a6b6a94dbff83b99e530433e2d066c9d4f3d188674f8fadf55b86f9423c2d9"
+    },
+    {
+      "path": "audio/tts_turns/turn_09_A.mp3",
+      "sha256": "50ac27862510f29e46b6d7c5fd27a17403fc1ed3f8476c2d8361d243de395dd0"
+    },
+    {
+      "path": "audio/tts_turns/turn_10_B.mp3",
+      "sha256": "223e1b8f0e9b9b1dd55f40227902da4b9d73ac2ad11052229832ba7673d58f9f"
+    }
+  ],
+  "isolated_A_B_overlap_samples_above_one_LSB": 0,
+  "dialogue_minus_A_plus_B_max_abs": 0.0,
+  "A_acoustic": {
+    "autocorrelation_f0_median_hz": 105.26315789473684,
+    "voiced_windows": 433,
+    "L_minus_R_RMS_db": 4.082400628068589
+  },
+  "B_acoustic": {
+    "autocorrelation_f0_median_hz": 210.52631578947367,
+    "voiced_windows": 386,
+    "L_minus_R_RMS_db": -4.082398782709277
+  },
+  "mix_to_dialogue_lag_samples_48k": 144,
+  "mix_to_dialogue_lag_s": 0.003,
+  "joint_source_mix_fit_gains": [
+    1.7802679095746812,
+    1.7886951243508105
+  ],
+  "joint_source_mix_correlation": 0.997082761807178,
+  "joint_fit_residual_dbfs": -41.398900092915945,
+  "body_windows": [
+    {
+      "start_s": 0,
+      "speech_active_fraction_20ms_minus40dBFS": 0.654,
+      "active_dialogue_over_bed_rms_db": 12.542654155174978
+    },
+    {
+      "start_s": 10,
+      "speech_active_fraction_20ms_minus40dBFS": 0.538,
+      "active_dialogue_over_bed_rms_db": 13.281909190461551
+    },
+    {
+      "start_s": 20,
+      "speech_active_fraction_20ms_minus40dBFS": 0.536,
+      "active_dialogue_over_bed_rms_db": 13.339801897933617
+    },
+    {
+      "start_s": 30,
+      "speech_active_fraction_20ms_minus40dBFS": 0.584,
+      "active_dialogue_over_bed_rms_db": 13.369045440926662
+    },
+    {
+      "start_s": 40,
+      "speech_active_fraction_20ms_minus40dBFS": 0.594,
+      "active_dialogue_over_bed_rms_db": 10.108196710359804
+    },
+    {
+      "start_s": 50,
+      "speech_active_fraction_20ms_minus40dBFS": 0.494,
+      "active_dialogue_over_bed_rms_db": 10.975280802449392
+    }
+  ],
+  "max_original_word_telemetry_to_locked_timeline_drift_s": 7.105427357601002e-15,
+  "limitations": "No human listened. RMS margins and autocorrelation pitch are numeric estimates, not subjective intelligibility. Lag search6-sample granularity. No production rebuild or TTS.",
+  "declared_turn_dialogue_over_committed_bed_rms_db": 10.417058705736933,
+  "declared_turn_coverage_fraction": 0.85555
+}

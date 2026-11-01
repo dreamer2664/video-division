@@ -1,5 +1,7 @@
 # VIDEO DIVISION
 
+**Current creative target:** read `DIRECTIVE-2026-11-01-house-look.md` first. House reference: `videos/team-b/grade-v06/` MARK FIVE. Prior portrait/vector/reference-format targets are withdrawn; their audits remain historical. Every new film must pass the house-look gate in `specs/60s-video.md`. Teams retain independent production workflows, not separate visual standards.
+
 Manager B runs this repository. Two teams produce complete videos independently.
 
 | team | approach | how it makes pictures |
