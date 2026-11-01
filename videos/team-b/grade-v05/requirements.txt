@@ -1,0 +1,5 @@
+# Pinned toolchain for grade-v05 exact reproduction (ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers)
+numpy==2.3.5
+scipy==1.17.1
+Pillow==12.3.0
+# Optional (only if regenerating raw TTS outside audit mode): edge-tts==7.3.1

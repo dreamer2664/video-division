@@ -1,0 +1,902 @@
+{
+  "engine": "edge-tts",
+  "voice": "en-US-ChristopherNeural",
+  "rate": "-12%",
+  "pitch": "-4Hz",
+  "lines": [
+    {
+      "id": "01",
+      "rel_mp3": "audio/tts_lines/line_01.mp3",
+      "sha256": "7f3c3a30c7c71e30df5c3ca4f3ff711cffe66396a105bba10f084ff3c1de56d8",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-12%",
+      "pitch": "-4Hz",
+      "text": "At two seventeen in the morning, the old stone lock on the Blackwater has only one rule.",
+      "raw_dur_s": 6.504,
+      "first_word_offset_s": 0.107,
+      "last_word_end_s": 5.519,
+      "trim_in_s": 0.057,
+      "trim_out_s": 5.679,
+      "timeline_speech_start_s": 0.36,
+      "timeline_speech_end_s": 5.772,
+      "timeline_clip_start_s": 0.31,
+      "words_raw": [
+        {
+          "start": 0.107,
+          "end": 0.348,
+          "text": "At"
+        },
+        {
+          "start": 0.362,
+          "end": 0.604,
+          "text": "two"
+        },
+        {
+          "start": 0.618,
+          "end": 1.286,
+          "text": "seventeen"
+        },
+        {
+          "start": 1.3,
+          "end": 1.357,
+          "text": "in"
+        },
+        {
+          "start": 1.371,
+          "end": 1.428,
+          "text": "the"
+        },
+        {
+          "start": 1.442,
+          "end": 1.882,
+          "text": "morning"
+        },
+        {
+          "start": 2.181,
+          "end": 2.308,
+          "text": "the"
+        },
+        {
+          "start": 2.323,
+          "end": 2.578,
+          "text": "old"
+        },
+        {
+          "start": 2.593,
+          "end": 3.005,
+          "text": "stone"
+        },
+        {
+          "start": 3.019,
+          "end": 3.345,
+          "text": "lock"
+        },
+        {
+          "start": 3.36,
+          "end": 3.459,
+          "text": "on"
+        },
+        {
+          "start": 3.473,
+          "end": 3.558,
+          "text": "the"
+        },
+        {
+          "start": 3.573,
+          "end": 4.226,
+          "text": "Blackwater"
+        },
+        {
+          "start": 4.24,
+          "end": 4.496,
+          "text": "has"
+        },
+        {
+          "start": 4.51,
+          "end": 4.752,
+          "text": "only"
+        },
+        {
+          "start": 4.766,
+          "end": 5.078,
+          "text": "one"
+        },
+        {
+          "start": 5.093,
+          "end": 5.519,
+          "text": "rule"
+        }
+      ]
+    },
+    {
+      "id": "02",
+      "rel_mp3": "audio/tts_lines/line_02.mp3",
+      "sha256": "54a7eeb9837228a516f04b8e23b14a04d087f509148d5e2ff9caca33ba338a31",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-12%",
+      "pitch": "-4Hz",
+      "text": "Never open the sluice if the rain reaches Mark Four.",
+      "raw_dur_s": 4.344,
+      "first_word_offset_s": 0.107,
+      "last_word_end_s": 3.36,
+      "trim_in_s": 0.057,
+      "trim_out_s": 3.52,
+      "timeline_speech_start_s": 6.152,
+      "timeline_speech_end_s": 9.405,
+      "timeline_clip_start_s": 6.102,
+      "words_raw": [
+        {
+          "start": 0.107,
+          "end": 0.561,
+          "text": "Never"
+        },
+        {
+          "start": 0.576,
+          "end": 0.831,
+          "text": "open"
+        },
+        {
+          "start": 0.845,
+          "end": 0.931,
+          "text": "the"
+        },
+        {
+          "start": 0.945,
+          "end": 1.456,
+          "text": "sluice"
+        },
+        {
+          "start": 1.47,
+          "end": 1.612,
+          "text": "if"
+        },
+        {
+          "start": 1.627,
+          "end": 1.726,
+          "text": "the"
+        },
+        {
+          "start": 1.74,
+          "end": 2.081,
+          "text": "rain"
+        },
+        {
+          "start": 2.095,
+          "end": 2.522,
+          "text": "reaches"
+        },
+        {
+          "start": 2.536,
+          "end": 2.862,
+          "text": "Mark"
+        },
+        {
+          "start": 2.877,
+          "end": 3.36,
+          "text": "Four"
+        }
+      ]
+    },
+    {
+      "id": "03",
+      "rel_mp3": "audio/tts_lines/line_03.mp3",
+      "sha256": "54757f6b7000e1a186d213b715d1a6a38ccaff4a718c4781bf0dcee2c8aa3a08",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-12%",
+      "pitch": "-4Hz",
+      "text": "For forty years, a night keeper has logged the water every fifteen minutes.",
+      "raw_dur_s": 5.88,
+      "first_word_offset_s": 0.107,
+      "last_word_end_s": 4.894,
+      "trim_in_s": 0.057,
+      "trim_out_s": 5.054,
+      "timeline_speech_start_s": 9.825,
+      "timeline_speech_end_s": 14.612,
+      "timeline_clip_start_s": 9.775,
+      "words_raw": [
+        {
+          "start": 0.107,
+          "end": 0.348,
+          "text": "For"
+        },
+        {
+          "start": 0.362,
+          "end": 0.732,
+          "text": "forty"
+        },
+        {
+          "start": 0.746,
+          "end": 1.215,
+          "text": "years"
+        },
+        {
+          "start": 1.456,
+          "end": 1.513,
+          "text": "a"
+        },
+        {
+          "start": 1.527,
+          "end": 1.854,
+          "text": "night"
+        },
+        {
+          "start": 1.868,
+          "end": 2.28,
+          "text": "keeper"
+        },
+        {
+          "start": 2.294,
+          "end": 2.507,
+          "text": "has"
+        },
+        {
+          "start": 2.522,
+          "end": 2.877,
+          "text": "logged"
+        },
+        {
+          "start": 2.891,
+          "end": 2.99,
+          "text": "the"
+        },
+        {
+          "start": 3.005,
+          "end": 3.473,
+          "text": "water"
+        },
+        {
+          "start": 3.487,
+          "end": 3.757,
+          "text": "every"
+        },
+        {
+          "start": 3.772,
+          "end": 4.311,
+          "text": "fifteen"
+        },
+        {
+          "start": 4.326,
+          "end": 4.894,
+          "text": "minutes"
+        }
+      ]
+    },
+    {
+      "id": "04",
+      "rel_mp3": "audio/tts_lines/line_04.mp3",
+      "sha256": "b12d5be9208bcdf0ea1594918b75b089f014c94daac2dbd5c3f31c92e19b1424",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-12%",
+      "pitch": "-4Hz",
+      "text": "One forty-five: Mark Two. Two o'clock: Mark Three.",
+      "raw_dur_s": 6.288,
+      "first_word_offset_s": 0.107,
+      "last_word_end_s": 5.298,
+      "trim_in_s": 0.057,
+      "trim_out_s": 5.458,
+      "timeline_speech_start_s": 14.992,
+      "timeline_speech_end_s": 20.183,
+      "timeline_clip_start_s": 14.942,
+      "words_raw": [
+        {
+          "start": 0.107,
+          "end": 0.448,
+          "text": "One"
+        },
+        {
+          "start": 0.462,
+          "end": 1.3,
+          "text": "forty-five"
+        },
+        {
+          "start": 1.485,
+          "end": 1.854,
+          "text": "Mark"
+        },
+        {
+          "start": 1.868,
+          "end": 2.323,
+          "text": "Two"
+        },
+        {
+          "start": 3.324,
+          "end": 3.608,
+          "text": "Two"
+        },
+        {
+          "start": 3.622,
+          "end": 4.233,
+          "text": "o'clock"
+        },
+        {
+          "start": 4.389,
+          "end": 4.773,
+          "text": "Mark"
+        },
+        {
+          "start": 4.787,
+          "end": 5.298,
+          "text": "Three"
+        }
+      ]
+    },
+    {
+      "id": "05",
+      "rel_mp3": "audio/tts_lines/line_05.mp3",
+      "sha256": "da8059d6c1e4b4f670fbfea7be3f58c997e6c6cbcd4df29d88dc46daedf4a2fc",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-12%",
+      "pitch": "-4Hz",
+      "text": "Outside, four inches of cold rain fall in twenty minutes. Yet the gauge stops moving.",
+      "raw_dur_s": 7.896,
+      "first_word_offset_s": 0.107,
+      "last_word_end_s": 6.903,
+      "trim_in_s": 0.057,
+      "trim_out_s": 7.063,
+      "timeline_speech_start_s": 20.603,
+      "timeline_speech_end_s": 27.399,
+      "timeline_clip_start_s": 20.553,
+      "words_raw": [
+        {
+          "start": 0.107,
+          "end": 0.831,
+          "text": "Outside"
+        },
+        {
+          "start": 1.087,
+          "end": 1.272,
+          "text": "four"
+        },
+        {
+          "start": 1.286,
+          "end": 1.698,
+          "text": "inches"
+        },
+        {
+          "start": 1.712,
+          "end": 1.84,
+          "text": "of"
+        },
+        {
+          "start": 1.854,
+          "end": 2.209,
+          "text": "cold"
+        },
+        {
+          "start": 2.223,
+          "end": 2.593,
+          "text": "rain"
+        },
+        {
+          "start": 2.607,
+          "end": 3.033,
+          "text": "fall"
+        },
+        {
+          "start": 3.047,
+          "end": 3.175,
+          "text": "in"
+        },
+        {
+          "start": 3.189,
+          "end": 3.516,
+          "text": "twenty"
+        },
+        {
+          "start": 3.53,
+          "end": 4.141,
+          "text": "minutes"
+        },
+        {
+          "start": 5.128,
+          "end": 5.355,
+          "text": "Yet"
+        },
+        {
+          "start": 5.369,
+          "end": 5.497,
+          "text": "the"
+        },
+        {
+          "start": 5.511,
+          "end": 5.895,
+          "text": "gauge"
+        },
+        {
+          "start": 5.909,
+          "end": 6.364,
+          "text": "stops"
+        },
+        {
+          "start": 6.378,
+          "end": 6.903,
+          "text": "moving"
+        }
+      ]
+    },
+    {
+      "id": "06",
+      "rel_mp3": "audio/tts_lines/line_06.mp3",
+      "sha256": "b602cdb86d086b90bec0eeee0d126afa9a561125119e79e702c371da1526b1b3",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-12%",
+      "pitch": "-4Hz",
+      "text": "Three millimeters below the red line. Still as dark glass.",
+      "raw_dur_s": 6.216,
+      "first_word_offset_s": 0.107,
+      "last_word_end_s": 5.241,
+      "trim_in_s": 0.057,
+      "trim_out_s": 5.401,
+      "timeline_speech_start_s": 27.799,
+      "timeline_speech_end_s": 32.933,
+      "timeline_clip_start_s": 27.749,
+      "words_raw": [
+        {
+          "start": 0.107,
+          "end": 0.476,
+          "text": "Three"
+        },
+        {
+          "start": 0.49,
+          "end": 1.186,
+          "text": "millimeters"
+        },
+        {
+          "start": 1.201,
+          "end": 1.598,
+          "text": "below"
+        },
+        {
+          "start": 1.613,
+          "end": 1.755,
+          "text": "the"
+        },
+        {
+          "start": 1.769,
+          "end": 2.053,
+          "text": "red"
+        },
+        {
+          "start": 2.067,
+          "end": 2.536,
+          "text": "line"
+        },
+        {
+          "start": 3.523,
+          "end": 4.062,
+          "text": "Still"
+        },
+        {
+          "start": 4.077,
+          "end": 4.233,
+          "text": "as"
+        },
+        {
+          "start": 4.247,
+          "end": 4.531,
+          "text": "dark"
+        },
+        {
+          "start": 4.545,
+          "end": 5.241,
+          "text": "glass"
+        }
+      ]
+    },
+    {
+      "id": "07",
+      "rel_mp3": "audio/tts_lines/line_07.mp3",
+      "sha256": "d594f3ddbf50ff27812ddd663cbfc4bd100e7ba01b30fb656b1def1d9cf64b6c",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-12%",
+      "pitch": "-4Hz",
+      "text": "So you carry the lantern out onto the catwalk to check for a jammed float.",
+      "raw_dur_s": 5.376,
+      "first_word_offset_s": 0.107,
+      "last_word_end_s": 4.397,
+      "trim_in_s": 0.057,
+      "trim_out_s": 4.557,
+      "timeline_speech_start_s": 33.373,
+      "timeline_speech_end_s": 37.663,
+      "timeline_clip_start_s": 33.323,
+      "words_raw": [
+        {
+          "start": 0.107,
+          "end": 0.334,
+          "text": "So"
+        },
+        {
+          "start": 0.348,
+          "end": 0.547,
+          "text": "you"
+        },
+        {
+          "start": 0.561,
+          "end": 0.888,
+          "text": "carry"
+        },
+        {
+          "start": 0.902,
+          "end": 1.03,
+          "text": "the"
+        },
+        {
+          "start": 1.044,
+          "end": 1.485,
+          "text": "lantern"
+        },
+        {
+          "start": 1.499,
+          "end": 1.712,
+          "text": "out"
+        },
+        {
+          "start": 1.726,
+          "end": 1.939,
+          "text": "onto"
+        },
+        {
+          "start": 1.953,
+          "end": 2.067,
+          "text": "the"
+        },
+        {
+          "start": 2.081,
+          "end": 2.692,
+          "text": "catwalk"
+        },
+        {
+          "start": 2.706,
+          "end": 2.806,
+          "text": "to"
+        },
+        {
+          "start": 2.82,
+          "end": 3.189,
+          "text": "check"
+        },
+        {
+          "start": 3.203,
+          "end": 3.374,
+          "text": "for"
+        },
+        {
+          "start": 3.388,
+          "end": 3.459,
+          "text": "a"
+        },
+        {
+          "start": 3.473,
+          "end": 3.871,
+          "text": "jammed"
+        },
+        {
+          "start": 3.885,
+          "end": 4.397,
+          "text": "float"
+        }
+      ]
+    },
+    {
+      "id": "08",
+      "rel_mp3": "audio/tts_lines/line_08.mp3",
+      "sha256": "feddd487320b2895953fda2400415e300c9d06b71db7665375793982dc19cbe0",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-12%",
+      "pitch": "-4Hz",
+      "text": "Your light hits the wet stone wall. And you see the empty bolt holes.",
+      "raw_dur_s": 6.48,
+      "first_word_offset_s": 0.107,
+      "last_word_end_s": 5.497,
+      "trim_in_s": 0.057,
+      "trim_out_s": 5.657,
+      "timeline_speech_start_s": 38.083,
+      "timeline_speech_end_s": 43.473,
+      "timeline_clip_start_s": 38.033,
+      "words_raw": [
+        {
+          "start": 0.107,
+          "end": 0.362,
+          "text": "Your"
+        },
+        {
+          "start": 0.377,
+          "end": 0.661,
+          "text": "light"
+        },
+        {
+          "start": 0.675,
+          "end": 0.973,
+          "text": "hits"
+        },
+        {
+          "start": 0.988,
+          "end": 1.115,
+          "text": "the"
+        },
+        {
+          "start": 1.13,
+          "end": 1.357,
+          "text": "wet"
+        },
+        {
+          "start": 1.371,
+          "end": 1.826,
+          "text": "stone"
+        },
+        {
+          "start": 1.84,
+          "end": 2.309,
+          "text": "wall"
+        },
+        {
+          "start": 3.295,
+          "end": 3.494,
+          "text": "And"
+        },
+        {
+          "start": 3.509,
+          "end": 3.636,
+          "text": "you"
+        },
+        {
+          "start": 3.651,
+          "end": 3.949,
+          "text": "see"
+        },
+        {
+          "start": 3.963,
+          "end": 4.091,
+          "text": "the"
+        },
+        {
+          "start": 4.105,
+          "end": 4.545,
+          "text": "empty"
+        },
+        {
+          "start": 4.56,
+          "end": 4.858,
+          "text": "bolt"
+        },
+        {
+          "start": 4.872,
+          "end": 5.497,
+          "text": "holes"
+        }
+      ]
+    },
+    {
+      "id": "09",
+      "rel_mp3": "audio/tts_lines/line_09.mp3",
+      "sha256": "9326184187a4a9aa70cb4ef519d8a521f1ca128e63e17420bc8416dcba631ded",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-12%",
+      "pitch": "-4Hz",
+      "text": "Someone unbolted Mark Four, and moved the brass plate two feet higher.",
+      "raw_dur_s": 5.76,
+      "first_word_offset_s": 0.107,
+      "last_word_end_s": 4.78,
+      "trim_in_s": 0.057,
+      "trim_out_s": 4.94,
+      "timeline_speech_start_s": 44.593,
+      "timeline_speech_end_s": 49.266,
+      "timeline_clip_start_s": 44.543,
+      "words_raw": [
+        {
+          "start": 0.107,
+          "end": 0.632,
+          "text": "Someone"
+        },
+        {
+          "start": 0.647,
+          "end": 1.243,
+          "text": "unbolted"
+        },
+        {
+          "start": 1.257,
+          "end": 1.57,
+          "text": "Mark"
+        },
+        {
+          "start": 1.584,
+          "end": 1.982,
+          "text": "Four"
+        },
+        {
+          "start": 2.266,
+          "end": 2.38,
+          "text": "and"
+        },
+        {
+          "start": 2.394,
+          "end": 2.72,
+          "text": "moved"
+        },
+        {
+          "start": 2.735,
+          "end": 2.834,
+          "text": "the"
+        },
+        {
+          "start": 2.848,
+          "end": 3.246,
+          "text": "brass"
+        },
+        {
+          "start": 3.26,
+          "end": 3.615,
+          "text": "plate"
+        },
+        {
+          "start": 3.63,
+          "end": 3.914,
+          "text": "two"
+        },
+        {
+          "start": 3.928,
+          "end": 4.198,
+          "text": "feet"
+        },
+        {
+          "start": 4.212,
+          "end": 4.78,
+          "text": "higher"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "rel_mp3": "audio/tts_lines/line_10.mp3",
+      "sha256": "3cdb7ff39f7a0a4e6b6785b5f8511b5c54f059398864d3e22a2948b2578a3241",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-12%",
+      "pitch": "-4Hz",
+      "text": "Behind you, the lamp in the keeper's booth clicks off.",
+      "raw_dur_s": 4.512,
+      "first_word_offset_s": 0.107,
+      "last_word_end_s": 3.516,
+      "trim_in_s": 0.057,
+      "trim_out_s": 3.676,
+      "timeline_speech_start_s": 49.726,
+      "timeline_speech_end_s": 53.135,
+      "timeline_clip_start_s": 49.676,
+      "words_raw": [
+        {
+          "start": 0.107,
+          "end": 0.604,
+          "text": "Behind"
+        },
+        {
+          "start": 0.618,
+          "end": 0.845,
+          "text": "you"
+        },
+        {
+          "start": 1.059,
+          "end": 1.186,
+          "text": "the"
+        },
+        {
+          "start": 1.201,
+          "end": 1.556,
+          "text": "lamp"
+        },
+        {
+          "start": 1.57,
+          "end": 1.655,
+          "text": "in"
+        },
+        {
+          "start": 1.669,
+          "end": 1.755,
+          "text": "the"
+        },
+        {
+          "start": 1.769,
+          "end": 2.266,
+          "text": "keeper's"
+        },
+        {
+          "start": 2.28,
+          "end": 2.607,
+          "text": "booth"
+        },
+        {
+          "start": 2.621,
+          "end": 3.005,
+          "text": "clicks"
+        },
+        {
+          "start": 3.019,
+          "end": 3.516,
+          "text": "off"
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "rel_mp3": "audio/tts_lines/line_11.mp3",
+      "sha256": "f0b3970ea78d39acac9ecaad3f493633dd1699c36e12cb9fabe3e54ff1eda8bd",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-12%",
+      "pitch": "-4Hz",
+      "text": "The river never stopped rising. The sluice gate behind you is already open.",
+      "raw_dur_s": 6.672,
+      "first_word_offset_s": 0.107,
+      "last_word_end_s": 5.696,
+      "trim_in_s": 0.057,
+      "trim_out_s": 5.856,
+      "timeline_speech_start_s": 53.555,
+      "timeline_speech_end_s": 59.144,
+      "timeline_clip_start_s": 53.505,
+      "words_raw": [
+        {
+          "start": 0.107,
+          "end": 0.277,
+          "text": "The"
+        },
+        {
+          "start": 0.291,
+          "end": 0.618,
+          "text": "river"
+        },
+        {
+          "start": 0.632,
+          "end": 0.988,
+          "text": "never"
+        },
+        {
+          "start": 1.002,
+          "end": 1.428,
+          "text": "stopped"
+        },
+        {
+          "start": 1.442,
+          "end": 2.067,
+          "text": "rising"
+        },
+        {
+          "start": 3.054,
+          "end": 3.224,
+          "text": "The"
+        },
+        {
+          "start": 3.239,
+          "end": 3.651,
+          "text": "sluice"
+        },
+        {
+          "start": 3.665,
+          "end": 3.935,
+          "text": "gate"
+        },
+        {
+          "start": 3.949,
+          "end": 4.389,
+          "text": "behind"
+        },
+        {
+          "start": 4.403,
+          "end": 4.56,
+          "text": "you"
+        },
+        {
+          "start": 4.574,
+          "end": 4.73,
+          "text": "is"
+        },
+        {
+          "start": 4.744,
+          "end": 5.185,
+          "text": "already"
+        },
+        {
+          "start": 5.199,
+          "end": 5.696,
+          "text": "open"
+        }
+      ]
+    }
+  ]
+}
