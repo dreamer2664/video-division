@@ -1,0 +1,13 @@
+{
+  "name": "Roger - Laid-Back, Casual, Resonant",
+  "voice_id": "CwhRBWXzGAHq8TQ4Fs17",
+  "category": "premade",
+  "labels": {
+    "gender": "male",
+    "age": "middle_aged",
+    "descriptive": "classy",
+    "language": "en",
+    "use_case": "conversational",
+    "accent": "american"
+  }
+}
