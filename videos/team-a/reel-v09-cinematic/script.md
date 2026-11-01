@@ -22,7 +22,7 @@ Now the arrivals balance.
 At six, the wake-up call connects to the unlet room.  
 No one is left at reception to hear who answers.
 
-The spoken script may be tightened after measuring the specified voice and pauses; that change must be committed before picture generation. The story must retain the counted escalation, the unlet-room wake-up call, the uncalled lift, the physical footprints, and the ending.
+The committed narration stem measures 53.260 s with 124 Edge word events; the last spoken word ends at 52.270 s. The pre-reveal gap from “four” to “Two guests” is 2.706 s. The remaining time is an intentional weather/telephone landing rather than sped-up speech. The script matches the committed word-event text.
 
 ## Picture and sound plan — final timing to follow measured speech
 
@@ -39,4 +39,8 @@ All pictures will be original, generated as **photographic** 16:9 hotel location
 9. A wet footprint behind the reception desk, the open ledger and lamp in the background. A low sub hit carries the silent reveal.
 10. Return to an empty reception as the wake-up call connects; the lamp remains on and rain continues. Hold the landing long enough for it to register.
 
-The film will use one autonomously selected prescribed deep voice, `en-US-ChristopherNeural`, rate −12%, pitch −4 Hz; a new original low bed, rain and story-specific dry sound; committed stem and word events; word-level 2–5-word captions; and a documented offline render.
+### Measured edit targets
+
+After measuring the committed voice: exterior 0–3.9 s; wall-frame lobby 3.9–9.6; clerk and ledger 9.6–14.1; wake-up handset 14.1–19.7; closed unlet room 19.7–22.9; handset ring 22.9–25.1; lift lobby 25.1–29.6; empty car 29.6–32.0; footprint 32.0–34.6; ledger and held pause 34.6–39.0; unseen arrival 39.0–45.4; connected wake-up call 45.4–52.8; empty-lobby weather landing 52.8–60.0. All edit boundaries will be quantized to 30 fps; cutbacks to an earlier physical location are intentional. The wall frame remains available without captions as evidence.
+
+The film uses one autonomously selected prescribed deep voice, `en-US-ChristopherNeural`, rate −12%, pitch −4 Hz; a new original low bed, rain and story-specific dry sound; committed stem and word events; word-level 2–5-word captions; and a documented offline render.
