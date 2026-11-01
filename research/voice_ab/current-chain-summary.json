@@ -1,0 +1,57 @@
+{
+  "file": "current-chain-edge.mp3",
+  "duration_s": 9.408027210884354,
+  "analysis_sample_rate_hz": 22050,
+  "speech_gate_dbfs": -49.18736917514508,
+  "speech_active_s_est": 5.886621315192744,
+  "speech_span_s_est": 8.211337868480726,
+  "f0": {
+    "method": "windowed autocorrelation, 40 ms frames / 10 ms hop; 65\u2013500 Hz",
+    "voiced_frames": 451,
+    "voiced_ratio_of_frames": 0.4802981895633653,
+    "mean_hz": 115.12363549018258,
+    "std_hz": 36.54760008708772,
+    "std_derivative_hz_per_s": 244.07017957194049,
+    "std_derivative_semitones_per_s": 37.003211641101075,
+    "std_semitones": 4.531721475932373
+  },
+  "hnr_autocorrelation_proxy_db_mean": 1.76273541084573,
+  "speech_rate_est": {
+    "syllabic_nuclei": 24,
+    "syllables_per_s_active": 4.077041602465331,
+    "words_per_min_approx": 157.8209652567225,
+    "assumed_syllables_per_word": 1.55
+  },
+  "pauses": {
+    "count_ge_120ms": 2,
+    "gap_seconds": [
+      1.0875283446712019,
+      1.0875283446712019
+    ],
+    "mean_s": 1.0875283446712019,
+    "median_s": 1.0875283446712019,
+    "p90_s": 1.0875283446712019,
+    "max_s": 1.0875283446712019
+  },
+  "energy": {
+    "rms_dbfs_active_mean": -22.304182037347825,
+    "rms_db_std_active": 8.400827855687888
+  },
+  "spectrum": {
+    "centroid_hz_active_mean": 2179.5789016810104,
+    "centroid_hz_active_std": 1898.9428386294587,
+    "rolloff85_hz_active_mean": 3608.782358977754,
+    "rolloff85_hz_active_std": 2952.095485109888
+  },
+  "monotone_score_0_to_100": 21.977921509760034,
+  "score_definition": "weighted inverse of F0 spread, F0-slope spread, active RMS-dB spread, centroid spread, and rolloff spread; higher is flatter; heuristic, not human naturalness.",
+  "limits": [
+    "No ASR or transcript; syllables are RMS-envelope peak estimates and word rate assumes 1.55 syllables/word.",
+    "Energy gate can mistake music/noise for speech or miss quiet speech.",
+    "Autocorrelation can octave-error, especially on creaky, breathy, noisy, or polyphonic audio.",
+    "HNR is an autocorrelation periodicity proxy, not Praat's calibrated HNR.",
+    "Prosody metrics measure acoustic variation, not beauty, acting, intelligibility, or listener preference."
+  ],
+  "text_characters": 106,
+  "text": "It's two fourteen in the morning. There is one smart speaker in this flat. It has never been told my name."
+}
