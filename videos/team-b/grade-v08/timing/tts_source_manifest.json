@@ -1,0 +1,979 @@
+{
+  "turns": [
+    {
+      "turn": "01",
+      "speaker": "A",
+      "rel_mp3": "audio/tts_turns/turn_01_A.mp3",
+      "sha256": "a7b003da11b72f18cd812781b4f2805a18ea8630f97645028462eb3b85860f69",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-11%",
+      "pitch": "-5Hz",
+      "text": "Three fourteen, thirty-seven minutes after Vault Six flooded inside the dam, and the gorge is full.",
+      "raw_dur_s": 7.416,
+      "first_word_offset_s": 0.106,
+      "last_word_end_s": 6.441,
+      "trim_in_s": 0.076,
+      "trim_out_s": 6.521,
+      "net_dur_s": 6.445,
+      "words_raw": [
+        {
+          "text": "Three",
+          "start": 0.106,
+          "end": 0.443
+        },
+        {
+          "text": "fourteen",
+          "start": 0.457,
+          "end": 1.159
+        },
+        {
+          "text": "thirty-seven",
+          "start": 1.426,
+          "end": 2.058
+        },
+        {
+          "text": "minutes",
+          "start": 2.072,
+          "end": 2.423
+        },
+        {
+          "text": "after",
+          "start": 2.438,
+          "end": 2.733
+        },
+        {
+          "text": "Vault",
+          "start": 2.747,
+          "end": 3.042
+        },
+        {
+          "text": "Six",
+          "start": 3.056,
+          "end": 3.435
+        },
+        {
+          "text": "flooded",
+          "start": 3.449,
+          "end": 3.828
+        },
+        {
+          "text": "inside",
+          "start": 3.842,
+          "end": 4.348
+        },
+        {
+          "text": "the",
+          "start": 4.362,
+          "end": 4.446
+        },
+        {
+          "text": "dam",
+          "start": 4.46,
+          "end": 4.867
+        },
+        {
+          "text": "and",
+          "start": 5.176,
+          "end": 5.274
+        },
+        {
+          "text": "the",
+          "start": 5.289,
+          "end": 5.387
+        },
+        {
+          "text": "gorge",
+          "start": 5.401,
+          "end": 5.78
+        },
+        {
+          "text": "is",
+          "start": 5.794,
+          "end": 5.934
+        },
+        {
+          "text": "full",
+          "start": 5.949,
+          "end": 6.441
+        }
+      ],
+      "timeline_start_s": 0.42,
+      "timeline_end_s": 6.865
+    },
+    {
+      "turn": "02",
+      "speaker": "B",
+      "rel_mp3": "audio/tts_turns/turn_02_B.mp3",
+      "sha256": "bfe54517bc54adefec15de76dc70026af33f89ab1c96fbaf813d9edf318bfd70",
+      "voice": "en-GB-SoniaNeural",
+      "rate": "+4%",
+      "pitch": "+4Hz",
+      "text": "Lowgate levee, two miles downstream, every house is empty, and black water is across the rail yard.",
+      "raw_dur_s": 6.48,
+      "first_word_offset_s": 0.11,
+      "last_word_end_s": 6.132,
+      "trim_in_s": 0.08,
+      "trim_out_s": 6.212,
+      "net_dur_s": 6.132,
+      "words_raw": [
+        {
+          "text": "Lowgate",
+          "start": 0.11,
+          "end": 0.627
+        },
+        {
+          "text": "levee",
+          "start": 0.639,
+          "end": 1.096
+        },
+        {
+          "text": "two",
+          "start": 1.336,
+          "end": 1.516
+        },
+        {
+          "text": "miles",
+          "start": 1.528,
+          "end": 1.828
+        },
+        {
+          "text": "downstream",
+          "start": 1.841,
+          "end": 2.478
+        },
+        {
+          "text": "every",
+          "start": 2.73,
+          "end": 2.922
+        },
+        {
+          "text": "house",
+          "start": 2.935,
+          "end": 3.223
+        },
+        {
+          "text": "is",
+          "start": 3.235,
+          "end": 3.343
+        },
+        {
+          "text": "empty",
+          "start": 3.355,
+          "end": 3.752
+        },
+        {
+          "text": "and",
+          "start": 4.016,
+          "end": 4.136
+        },
+        {
+          "text": "black",
+          "start": 4.149,
+          "end": 4.425
+        },
+        {
+          "text": "water",
+          "start": 4.437,
+          "end": 4.834
+        },
+        {
+          "text": "is",
+          "start": 4.846,
+          "end": 5.002
+        },
+        {
+          "text": "across",
+          "start": 5.014,
+          "end": 5.351
+        },
+        {
+          "text": "the",
+          "start": 5.362,
+          "end": 5.458
+        },
+        {
+          "text": "rail",
+          "start": 5.471,
+          "end": 5.699
+        },
+        {
+          "text": "yard",
+          "start": 5.711,
+          "end": 6.132
+        }
+      ],
+      "timeline_start_s": 7.59,
+      "timeline_end_s": 13.722
+    },
+    {
+      "turn": "03",
+      "speaker": "A",
+      "rel_mp3": "audio/tts_turns/turn_03_A.mp3",
+      "sha256": "125436681a52629568e437b783438b2536740705d1040039c5c1cdfa73c9fd5d",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-11%",
+      "pitch": "-5Hz",
+      "text": "All four spillway gates are wide open, and the canyon crest is passing the railway bridge now.",
+      "raw_dur_s": 7.032,
+      "first_word_offset_s": 0.106,
+      "last_word_end_s": 6.061,
+      "trim_in_s": 0.076,
+      "trim_out_s": 6.141,
+      "net_dur_s": 6.065,
+      "words_raw": [
+        {
+          "text": "All",
+          "start": 0.106,
+          "end": 0.429
+        },
+        {
+          "text": "four",
+          "start": 0.443,
+          "end": 0.78
+        },
+        {
+          "text": "spillway",
+          "start": 0.794,
+          "end": 1.328
+        },
+        {
+          "text": "gates",
+          "start": 1.342,
+          "end": 1.707
+        },
+        {
+          "text": "are",
+          "start": 1.721,
+          "end": 1.875
+        },
+        {
+          "text": "wide",
+          "start": 1.89,
+          "end": 2.269
+        },
+        {
+          "text": "open",
+          "start": 2.283,
+          "end": 2.662
+        },
+        {
+          "text": "and",
+          "start": 2.929,
+          "end": 3.027
+        },
+        {
+          "text": "the",
+          "start": 3.042,
+          "end": 3.126
+        },
+        {
+          "text": "canyon",
+          "start": 3.14,
+          "end": 3.604
+        },
+        {
+          "text": "crest",
+          "start": 3.617,
+          "end": 4.038
+        },
+        {
+          "text": "is",
+          "start": 4.053,
+          "end": 4.165
+        },
+        {
+          "text": "passing",
+          "start": 4.179,
+          "end": 4.657
+        },
+        {
+          "text": "the",
+          "start": 4.671,
+          "end": 4.769
+        },
+        {
+          "text": "railway",
+          "start": 4.783,
+          "end": 5.247
+        },
+        {
+          "text": "bridge",
+          "start": 5.261,
+          "end": 5.612
+        },
+        {
+          "text": "now",
+          "start": 5.626,
+          "end": 6.061
+        }
+      ],
+      "timeline_start_s": 14.447,
+      "timeline_end_s": 20.512
+    },
+    {
+      "turn": "04",
+      "speaker": "B",
+      "rel_mp3": "audio/tts_turns/turn_04_B.mp3",
+      "sha256": "b4b80d7075c1aed56cf58c29ab5f5292ba44c84956dae828bf093fafcefd223e",
+      "voice": "en-GB-SoniaNeural",
+      "rate": "+4%",
+      "pitch": "+4Hz",
+      "text": "White water is hitting the steel girders on the bridge, and backing slow water down Main Street.",
+      "raw_dur_s": 5.568,
+      "first_word_offset_s": 0.134,
+      "last_word_end_s": 5.218,
+      "trim_in_s": 0.104,
+      "trim_out_s": 5.298,
+      "net_dur_s": 5.194,
+      "words_raw": [
+        {
+          "text": "White",
+          "start": 0.134,
+          "end": 0.434
+        },
+        {
+          "text": "water",
+          "start": 0.447,
+          "end": 0.904
+        },
+        {
+          "text": "is",
+          "start": 0.915,
+          "end": 1.095
+        },
+        {
+          "text": "hitting",
+          "start": 1.108,
+          "end": 1.384
+        },
+        {
+          "text": "the",
+          "start": 1.396,
+          "end": 1.492
+        },
+        {
+          "text": "steel",
+          "start": 1.504,
+          "end": 1.816
+        },
+        {
+          "text": "girders",
+          "start": 1.829,
+          "end": 2.202
+        },
+        {
+          "text": "on",
+          "start": 2.213,
+          "end": 2.309
+        },
+        {
+          "text": "the",
+          "start": 2.322,
+          "end": 2.394
+        },
+        {
+          "text": "bridge",
+          "start": 2.406,
+          "end": 2.779
+        },
+        {
+          "text": "and",
+          "start": 3.067,
+          "end": 3.175
+        },
+        {
+          "text": "backing",
+          "start": 3.187,
+          "end": 3.572
+        },
+        {
+          "text": "slow",
+          "start": 3.584,
+          "end": 3.848
+        },
+        {
+          "text": "water",
+          "start": 3.86,
+          "end": 4.185
+        },
+        {
+          "text": "down",
+          "start": 4.197,
+          "end": 4.437
+        },
+        {
+          "text": "Main Street",
+          "start": 4.449,
+          "end": 5.218
+        }
+      ],
+      "timeline_start_s": 21.237,
+      "timeline_end_s": 26.431
+    },
+    {
+      "turn": "05",
+      "speaker": "A",
+      "rel_mp3": "audio/tts_turns/turn_05_A.mp3",
+      "sha256": "ae113b11811a563819fdbb96aa49b15427f96c4f370840e28bf2f06e128d59f0",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-11%",
+      "pitch": "-5Hz",
+      "text": "Marks One through Five are on the dam, Six was the vault, where is Mark Seven?",
+      "raw_dur_s": 6.096,
+      "first_word_offset_s": 0.106,
+      "last_word_end_s": 5.107,
+      "trim_in_s": 0.076,
+      "trim_out_s": 5.187,
+      "net_dur_s": 5.111,
+      "words_raw": [
+        {
+          "text": "Marks",
+          "start": 0.106,
+          "end": 0.527
+        },
+        {
+          "text": "One",
+          "start": 0.542,
+          "end": 0.795
+        },
+        {
+          "text": "through",
+          "start": 0.808,
+          "end": 1.047
+        },
+        {
+          "text": "Five",
+          "start": 1.061,
+          "end": 1.482
+        },
+        {
+          "text": "are",
+          "start": 1.497,
+          "end": 1.637
+        },
+        {
+          "text": "on",
+          "start": 1.651,
+          "end": 1.777
+        },
+        {
+          "text": "the",
+          "start": 1.792,
+          "end": 1.89
+        },
+        {
+          "text": "dam",
+          "start": 1.904,
+          "end": 2.311
+        },
+        {
+          "text": "Six",
+          "start": 2.592,
+          "end": 2.943
+        },
+        {
+          "text": "was",
+          "start": 2.957,
+          "end": 3.126
+        },
+        {
+          "text": "the",
+          "start": 3.14,
+          "end": 3.224
+        },
+        {
+          "text": "vault",
+          "start": 3.238,
+          "end": 3.673
+        },
+        {
+          "text": "where",
+          "start": 3.94,
+          "end": 4.151
+        },
+        {
+          "text": "is",
+          "start": 4.165,
+          "end": 4.291
+        },
+        {
+          "text": "Mark",
+          "start": 4.306,
+          "end": 4.587
+        },
+        {
+          "text": "Seven",
+          "start": 4.601,
+          "end": 5.107
+        }
+      ],
+      "timeline_start_s": 27.156,
+      "timeline_end_s": 32.267
+    },
+    {
+      "turn": "06",
+      "speaker": "B",
+      "rel_mp3": "audio/tts_turns/turn_06_B.mp3",
+      "sha256": "16d06714dbc20fabc2ef5848b14dc38fd3288416c98b0230e028d4e951b8e6d6",
+      "voice": "en-GB-SoniaNeural",
+      "rate": "+4%",
+      "pitch": "+4Hz",
+      "text": "Not on the dam, they stenciled Mark Seven on the iron streetlamp in the town square.",
+      "raw_dur_s": 5.208,
+      "first_word_offset_s": 0.122,
+      "last_word_end_s": 4.87,
+      "trim_in_s": 0.092,
+      "trim_out_s": 4.95,
+      "net_dur_s": 4.858,
+      "words_raw": [
+        {
+          "text": "Not",
+          "start": 0.122,
+          "end": 0.374
+        },
+        {
+          "text": "on",
+          "start": 0.387,
+          "end": 0.495
+        },
+        {
+          "text": "the",
+          "start": 0.507,
+          "end": 0.603
+        },
+        {
+          "text": "dam",
+          "start": 0.615,
+          "end": 1.0
+        },
+        {
+          "text": "they",
+          "start": 1.276,
+          "end": 1.396
+        },
+        {
+          "text": "stenciled",
+          "start": 1.408,
+          "end": 1.973
+        },
+        {
+          "text": "Mark",
+          "start": 1.985,
+          "end": 2.273
+        },
+        {
+          "text": "Seven",
+          "start": 2.286,
+          "end": 2.719
+        },
+        {
+          "text": "on",
+          "start": 2.73,
+          "end": 2.862
+        },
+        {
+          "text": "the",
+          "start": 2.874,
+          "end": 2.994
+        },
+        {
+          "text": "iron",
+          "start": 3.007,
+          "end": 3.307
+        },
+        {
+          "text": "streetlamp",
+          "start": 3.319,
+          "end": 3.92
+        },
+        {
+          "text": "in",
+          "start": 3.932,
+          "end": 4.028
+        },
+        {
+          "text": "the",
+          "start": 4.04,
+          "end": 4.124
+        },
+        {
+          "text": "town",
+          "start": 4.137,
+          "end": 4.437
+        },
+        {
+          "text": "square",
+          "start": 4.449,
+          "end": 4.87
+        }
+      ],
+      "timeline_start_s": 32.992,
+      "timeline_end_s": 37.85
+    },
+    {
+      "turn": "07",
+      "speaker": "A",
+      "rel_mp3": "audio/tts_turns/turn_07_A.mp3",
+      "sha256": "28ea9060675f4671a95bc1ae0e5fdaf42281ca7fd854a913733a6fcca763d722",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-11%",
+      "pitch": "-5Hz",
+      "text": "Tell me where the water is on that post.",
+      "raw_dur_s": 3.336,
+      "first_word_offset_s": 0.106,
+      "last_word_end_s": 2.368,
+      "trim_in_s": 0.076,
+      "trim_out_s": 2.448,
+      "net_dur_s": 2.372,
+      "words_raw": [
+        {
+          "text": "Tell",
+          "start": 0.106,
+          "end": 0.359
+        },
+        {
+          "text": "me",
+          "start": 0.373,
+          "end": 0.499
+        },
+        {
+          "text": "where",
+          "start": 0.513,
+          "end": 0.667
+        },
+        {
+          "text": "the",
+          "start": 0.682,
+          "end": 0.794
+        },
+        {
+          "text": "water",
+          "start": 0.808,
+          "end": 1.201
+        },
+        {
+          "text": "is",
+          "start": 1.216,
+          "end": 1.37
+        },
+        {
+          "text": "on",
+          "start": 1.384,
+          "end": 1.524
+        },
+        {
+          "text": "that",
+          "start": 1.539,
+          "end": 1.764
+        },
+        {
+          "text": "post",
+          "start": 1.778,
+          "end": 2.368
+        }
+      ],
+      "timeline_start_s": 38.575,
+      "timeline_end_s": 40.947
+    },
+    {
+      "turn": "08",
+      "speaker": "B",
+      "rel_mp3": "audio/tts_turns/turn_08_B.mp3",
+      "sha256": "fb541f0a4f8a8f599266041b0c0d790edda80b671d22be3420072321341a9972",
+      "voice": "en-GB-SoniaNeural",
+      "rate": "+4%",
+      "pitch": "+4Hz",
+      "text": "The amber lamp is still burning, and the river just stopped two inches below Mark Seven.",
+      "raw_dur_s": 5.064,
+      "first_word_offset_s": 0.134,
+      "last_word_end_s": 4.702,
+      "trim_in_s": 0.104,
+      "trim_out_s": 4.782,
+      "net_dur_s": 4.678,
+      "words_raw": [
+        {
+          "text": "The",
+          "start": 0.134,
+          "end": 0.266
+        },
+        {
+          "text": "amber",
+          "start": 0.278,
+          "end": 0.542
+        },
+        {
+          "text": "lamp",
+          "start": 0.555,
+          "end": 0.867
+        },
+        {
+          "text": "is",
+          "start": 0.879,
+          "end": 0.975
+        },
+        {
+          "text": "still",
+          "start": 0.988,
+          "end": 1.24
+        },
+        {
+          "text": "burning",
+          "start": 1.252,
+          "end": 1.697
+        },
+        {
+          "text": "and",
+          "start": 1.949,
+          "end": 2.033
+        },
+        {
+          "text": "the",
+          "start": 2.045,
+          "end": 2.141
+        },
+        {
+          "text": "river",
+          "start": 2.153,
+          "end": 2.478
+        },
+        {
+          "text": "just",
+          "start": 2.49,
+          "end": 2.706
+        },
+        {
+          "text": "stopped",
+          "start": 2.718,
+          "end": 3.115
+        },
+        {
+          "text": "two",
+          "start": 3.127,
+          "end": 3.319
+        },
+        {
+          "text": "inches",
+          "start": 3.331,
+          "end": 3.704
+        },
+        {
+          "text": "below",
+          "start": 3.716,
+          "end": 3.992
+        },
+        {
+          "text": "Mark",
+          "start": 4.004,
+          "end": 4.244
+        },
+        {
+          "text": "Seven",
+          "start": 4.257,
+          "end": 4.702
+        }
+      ],
+      "timeline_start_s": 41.672,
+      "timeline_end_s": 46.35
+    },
+    {
+      "turn": "09",
+      "speaker": "A",
+      "rel_mp3": "audio/tts_turns/turn_09_A.mp3",
+      "sha256": "c596db57d13a69b78161f3b4d81f8585c85198bb5128355b0162da86a0e8e970",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-11%",
+      "pitch": "-5Hz",
+      "text": "Drowning one concrete room inside the dam took two inches off a three-mile river.",
+      "raw_dur_s": 6.264,
+      "first_word_offset_s": 0.106,
+      "last_word_end_s": 5.289,
+      "trim_in_s": 0.076,
+      "trim_out_s": 5.369,
+      "net_dur_s": 5.293,
+      "words_raw": [
+        {
+          "text": "Drowning",
+          "start": 0.106,
+          "end": 0.626
+        },
+        {
+          "text": "one",
+          "start": 0.64,
+          "end": 0.893
+        },
+        {
+          "text": "concrete",
+          "start": 0.907,
+          "end": 1.525
+        },
+        {
+          "text": "room",
+          "start": 1.539,
+          "end": 1.848
+        },
+        {
+          "text": "inside",
+          "start": 1.862,
+          "end": 2.368
+        },
+        {
+          "text": "the",
+          "start": 2.381,
+          "end": 2.479
+        },
+        {
+          "text": "dam",
+          "start": 2.494,
+          "end": 2.873
+        },
+        {
+          "text": "took",
+          "start": 2.887,
+          "end": 3.182
+        },
+        {
+          "text": "two",
+          "start": 3.196,
+          "end": 3.477
+        },
+        {
+          "text": "inches",
+          "start": 3.491,
+          "end": 3.884
+        },
+        {
+          "text": "off",
+          "start": 3.898,
+          "end": 4.095
+        },
+        {
+          "text": "a",
+          "start": 4.109,
+          "end": 4.179
+        },
+        {
+          "text": "three-mile",
+          "start": 4.193,
+          "end": 4.811
+        },
+        {
+          "text": "river",
+          "start": 4.825,
+          "end": 5.289
+        }
+      ],
+      "timeline_start_s": 47.487,
+      "timeline_end_s": 52.78
+    },
+    {
+      "turn": "10",
+      "speaker": "B",
+      "rel_mp3": "audio/tts_turns/turn_10_B.mp3",
+      "sha256": "ce2745f3f2be1ce649d444a9b321092ac47b732bc182fc1fd302a19f85e3f4cd",
+      "voice": "en-GB-SoniaNeural",
+      "rate": "+4%",
+      "pitch": "+4Hz",
+      "text": "Four thousand people left their keys on the counter, and their town is still standing at Mark Seven.",
+      "raw_dur_s": 5.76,
+      "first_word_offset_s": 0.134,
+      "last_word_end_s": 5.399,
+      "trim_in_s": 0.104,
+      "trim_out_s": 5.479,
+      "net_dur_s": 5.375,
+      "words_raw": [
+        {
+          "text": "Four",
+          "start": 0.134,
+          "end": 0.362
+        },
+        {
+          "text": "thousand",
+          "start": 0.374,
+          "end": 0.807
+        },
+        {
+          "text": "people",
+          "start": 0.819,
+          "end": 1.204
+        },
+        {
+          "text": "left",
+          "start": 1.216,
+          "end": 1.468
+        },
+        {
+          "text": "their",
+          "start": 1.48,
+          "end": 1.6
+        },
+        {
+          "text": "keys",
+          "start": 1.613,
+          "end": 1.938
+        },
+        {
+          "text": "on",
+          "start": 1.949,
+          "end": 2.045
+        },
+        {
+          "text": "the",
+          "start": 2.057,
+          "end": 2.129
+        },
+        {
+          "text": "counter",
+          "start": 2.141,
+          "end": 2.634
+        },
+        {
+          "text": "and",
+          "start": 2.923,
+          "end": 3.043
+        },
+        {
+          "text": "their",
+          "start": 3.055,
+          "end": 3.187
+        },
+        {
+          "text": "town",
+          "start": 3.199,
+          "end": 3.608
+        },
+        {
+          "text": "is",
+          "start": 3.62,
+          "end": 3.728
+        },
+        {
+          "text": "still",
+          "start": 3.74,
+          "end": 3.992
+        },
+        {
+          "text": "standing",
+          "start": 4.004,
+          "end": 4.521
+        },
+        {
+          "text": "at",
+          "start": 4.533,
+          "end": 4.677
+        },
+        {
+          "text": "Mark",
+          "start": 4.689,
+          "end": 4.941
+        },
+        {
+          "text": "Seven",
+          "start": 4.954,
+          "end": 5.399
+        }
+      ],
+      "timeline_start_s": 53.505,
+      "timeline_end_s": 58.88
+    }
+  ]
+}

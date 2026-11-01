@@ -1,0 +1,353 @@
+[
+  {
+    "turn": "01",
+    "speaker": "A",
+    "start": 0.42,
+    "end": 2.737,
+    "word_count": 4,
+    "text": "Three fourteen thirty-seven minutes",
+    "cue": 1
+  },
+  {
+    "turn": "01",
+    "speaker": "A",
+    "start": 2.752,
+    "end": 4.142,
+    "word_count": 4,
+    "text": "after Vault Six flooded",
+    "cue": 2
+  },
+  {
+    "turn": "01",
+    "speaker": "A",
+    "start": 4.156,
+    "end": 5.588,
+    "word_count": 4,
+    "text": "inside the dam and",
+    "cue": 3
+  },
+  {
+    "turn": "01",
+    "speaker": "A",
+    "start": 5.603,
+    "end": 6.755,
+    "word_count": 4,
+    "text": "the gorge is full",
+    "cue": 4
+  },
+  {
+    "turn": "02",
+    "speaker": "B",
+    "start": 7.59,
+    "end": 9.308,
+    "word_count": 4,
+    "text": "Lowgate levee two miles",
+    "cue": 5
+  },
+  {
+    "turn": "02",
+    "speaker": "B",
+    "start": 9.321,
+    "end": 10.823,
+    "word_count": 4,
+    "text": "downstream every house is",
+    "cue": 6
+  },
+  {
+    "turn": "02",
+    "speaker": "B",
+    "start": 10.835,
+    "end": 12.314,
+    "word_count": 4,
+    "text": "empty and black water",
+    "cue": 7
+  },
+  {
+    "turn": "02",
+    "speaker": "B",
+    "start": 12.326,
+    "end": 13.612,
+    "word_count": 5,
+    "text": "is across the rail yard",
+    "cue": 8
+  },
+  {
+    "turn": "03",
+    "speaker": "A",
+    "start": 14.447,
+    "end": 16.048,
+    "word_count": 4,
+    "text": "All four spillway gates",
+    "cue": 9
+  },
+  {
+    "turn": "03",
+    "speaker": "A",
+    "start": 16.062,
+    "end": 17.368,
+    "word_count": 4,
+    "text": "are wide open and",
+    "cue": 10
+  },
+  {
+    "turn": "03",
+    "speaker": "A",
+    "start": 17.383,
+    "end": 18.506,
+    "word_count": 4,
+    "text": "the canyon crest is",
+    "cue": 11
+  },
+  {
+    "turn": "03",
+    "speaker": "A",
+    "start": 18.52,
+    "end": 20.402,
+    "word_count": 5,
+    "text": "passing the railway bridge now",
+    "cue": 12
+  },
+  {
+    "turn": "04",
+    "speaker": "B",
+    "start": 21.237,
+    "end": 22.487,
+    "word_count": 4,
+    "text": "White water is hitting",
+    "cue": 13
+  },
+  {
+    "turn": "04",
+    "speaker": "B",
+    "start": 22.499,
+    "end": 23.412,
+    "word_count": 4,
+    "text": "the steel girders on",
+    "cue": 14
+  },
+  {
+    "turn": "04",
+    "speaker": "B",
+    "start": 23.425,
+    "end": 24.675,
+    "word_count": 4,
+    "text": "the bridge and backing",
+    "cue": 15
+  },
+  {
+    "turn": "04",
+    "speaker": "B",
+    "start": 24.687,
+    "end": 26.321,
+    "word_count": 4,
+    "text": "slow water down Main Street",
+    "cue": 16
+  },
+  {
+    "turn": "05",
+    "speaker": "A",
+    "start": 27.156,
+    "end": 28.532,
+    "word_count": 4,
+    "text": "Marks One through Five",
+    "cue": 17
+  },
+  {
+    "turn": "05",
+    "speaker": "A",
+    "start": 28.547,
+    "end": 29.361,
+    "word_count": 4,
+    "text": "are on the dam",
+    "cue": 18
+  },
+  {
+    "turn": "05",
+    "speaker": "A",
+    "start": 29.642,
+    "end": 30.723,
+    "word_count": 4,
+    "text": "Six was the vault",
+    "cue": 19
+  },
+  {
+    "turn": "05",
+    "speaker": "A",
+    "start": 30.99,
+    "end": 32.157,
+    "word_count": 4,
+    "text": "where is Mark Seven",
+    "cue": 20
+  },
+  {
+    "turn": "06",
+    "speaker": "B",
+    "start": 32.992,
+    "end": 33.87,
+    "word_count": 4,
+    "text": "Not on the dam",
+    "cue": 21
+  },
+  {
+    "turn": "06",
+    "speaker": "B",
+    "start": 34.146,
+    "end": 35.589,
+    "word_count": 4,
+    "text": "they stenciled Mark Seven",
+    "cue": 22
+  },
+  {
+    "turn": "06",
+    "speaker": "B",
+    "start": 35.6,
+    "end": 36.79,
+    "word_count": 4,
+    "text": "on the iron streetlamp",
+    "cue": 23
+  },
+  {
+    "turn": "06",
+    "speaker": "B",
+    "start": 36.802,
+    "end": 37.74,
+    "word_count": 4,
+    "text": "in the town square",
+    "cue": 24
+  },
+  {
+    "turn": "07",
+    "speaker": "A",
+    "start": 38.575,
+    "end": 39.263,
+    "word_count": 4,
+    "text": "Tell me where the",
+    "cue": 25
+  },
+  {
+    "turn": "07",
+    "speaker": "A",
+    "start": 39.277,
+    "end": 40.837,
+    "word_count": 5,
+    "text": "water is on that post",
+    "cue": 26
+  },
+  {
+    "turn": "08",
+    "speaker": "B",
+    "start": 41.672,
+    "end": 42.513,
+    "word_count": 4,
+    "text": "The amber lamp is",
+    "cue": 27
+  },
+  {
+    "turn": "08",
+    "speaker": "B",
+    "start": 42.526,
+    "end": 43.679,
+    "word_count": 4,
+    "text": "still burning and the",
+    "cue": 28
+  },
+  {
+    "turn": "08",
+    "speaker": "B",
+    "start": 43.691,
+    "end": 44.857,
+    "word_count": 4,
+    "text": "river just stopped two",
+    "cue": 29
+  },
+  {
+    "turn": "08",
+    "speaker": "B",
+    "start": 44.869,
+    "end": 46.24,
+    "word_count": 4,
+    "text": "inches below Mark Seven",
+    "cue": 30
+  },
+  {
+    "turn": "09",
+    "speaker": "A",
+    "start": 47.487,
+    "end": 49.229,
+    "word_count": 4,
+    "text": "Drowning one concrete room",
+    "cue": 31
+  },
+  {
+    "turn": "09",
+    "speaker": "A",
+    "start": 49.243,
+    "end": 50.563,
+    "word_count": 4,
+    "text": "inside the dam took",
+    "cue": 32
+  },
+  {
+    "turn": "09",
+    "speaker": "A",
+    "start": 50.577,
+    "end": 51.476,
+    "word_count": 3,
+    "text": "two inches off",
+    "cue": 33
+  },
+  {
+    "turn": "09",
+    "speaker": "A",
+    "start": 51.49,
+    "end": 52.67,
+    "word_count": 3,
+    "text": "a three-mile river",
+    "cue": 34
+  },
+  {
+    "turn": "10",
+    "speaker": "B",
+    "start": 53.505,
+    "end": 54.839,
+    "word_count": 4,
+    "text": "Four thousand people left",
+    "cue": 35
+  },
+  {
+    "turn": "10",
+    "speaker": "B",
+    "start": 54.851,
+    "end": 55.5,
+    "word_count": 4,
+    "text": "their keys on the",
+    "cue": 36
+  },
+  {
+    "turn": "10",
+    "speaker": "B",
+    "start": 55.512,
+    "end": 56.979,
+    "word_count": 4,
+    "text": "counter and their town",
+    "cue": 37
+  },
+  {
+    "turn": "10",
+    "speaker": "B",
+    "start": 56.991,
+    "end": 57.892,
+    "word_count": 3,
+    "text": "is still standing",
+    "cue": 38
+  },
+  {
+    "turn": "10",
+    "speaker": "B",
+    "start": 57.904,
+    "end": 58.77,
+    "word_count": 3,
+    "text": "at Mark Seven",
+    "cue": 39
+  }
+]
