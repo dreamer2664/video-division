@@ -1,0 +1,196 @@
+{
+  "engine": "edge-tts",
+  "voice": "en-ZA-LukeNeural",
+  "condition": "neutral",
+  "rate": "+0%",
+  "pitch": "+0Hz",
+  "characters": 201,
+  "sha256": "8758574bd59609088ddfd800d33a953ac686f40b3f5153e9b9b763806be7b5c3",
+  "events": [
+    {
+      "text": "The",
+      "offset_ticks": 1000000,
+      "duration_ticks": 1000000
+    },
+    {
+      "text": "ledger",
+      "offset_ticks": 2125000,
+      "duration_ticks": 2500000
+    },
+    {
+      "text": "has",
+      "offset_ticks": 5000000,
+      "duration_ticks": 1000000
+    },
+    {
+      "text": "four",
+      "offset_ticks": 6250000,
+      "duration_ticks": 1500000
+    },
+    {
+      "text": "names",
+      "offset_ticks": 8125000,
+      "duration_ticks": 2875000
+    },
+    {
+      "text": "At",
+      "offset_ticks": 20750000,
+      "duration_ticks": 1375000
+    },
+    {
+      "text": "two",
+      "offset_ticks": 22750000,
+      "duration_ticks": 750000
+    },
+    {
+      "text": "fourteen",
+      "offset_ticks": 24000000,
+      "duration_ticks": 4750000
+    },
+    {
+      "text": "rain",
+      "offset_ticks": 32000000,
+      "duration_ticks": 2125000
+    },
+    {
+      "text": "rattles",
+      "offset_ticks": 34375000,
+      "duration_ticks": 3625000
+    },
+    {
+      "text": "the",
+      "offset_ticks": 38375000,
+      "duration_ticks": 625000
+    },
+    {
+      "text": "awning",
+      "offset_ticks": 39750000,
+      "duration_ticks": 3000000
+    },
+    {
+      "text": "The",
+      "offset_ticks": 51500000,
+      "duration_ticks": 875000
+    },
+    {
+      "text": "lobby",
+      "offset_ticks": 52750000,
+      "duration_ticks": 2250000
+    },
+    {
+      "text": "is",
+      "offset_ticks": 55000000,
+      "duration_ticks": 1125000
+    },
+    {
+      "text": "empty",
+      "offset_ticks": 56750000,
+      "duration_ticks": 3750000
+    },
+    {
+      "text": "yet",
+      "offset_ticks": 62875000,
+      "duration_ticks": 1625000
+    },
+    {
+      "text": "three",
+      "offset_ticks": 64875000,
+      "duration_ticks": 1750000
+    },
+    {
+      "text": "room",
+      "offset_ticks": 67125000,
+      "duration_ticks": 1875000
+    },
+    {
+      "text": "keys",
+      "offset_ticks": 69875000,
+      "duration_ticks": 2125000
+    },
+    {
+      "text": "are",
+      "offset_ticks": 72000000,
+      "duration_ticks": 500000
+    },
+    {
+      "text": "missing",
+      "offset_ticks": 72750000,
+      "duration_ticks": 3375000
+    },
+    {
+      "text": "A",
+      "offset_ticks": 85250000,
+      "duration_ticks": 875000
+    },
+    {
+      "text": "telephone",
+      "offset_ticks": 86875000,
+      "duration_ticks": 3875000
+    },
+    {
+      "text": "rings",
+      "offset_ticks": 91000000,
+      "duration_ticks": 2500000
+    },
+    {
+      "text": "from",
+      "offset_ticks": 93875000,
+      "duration_ticks": 1750000
+    },
+    {
+      "text": "upstairs",
+      "offset_ticks": 95750000,
+      "duration_ticks": 4625000
+    },
+    {
+      "text": "Who",
+      "offset_ticks": 110375000,
+      "duration_ticks": 1250000
+    },
+    {
+      "text": "is",
+      "offset_ticks": 111875000,
+      "duration_ticks": 1000000
+    },
+    {
+      "text": "calling",
+      "offset_ticks": 113375000,
+      "duration_ticks": 2375000
+    },
+    {
+      "text": "from",
+      "offset_ticks": 116125000,
+      "duration_ticks": 1875000
+    },
+    {
+      "text": "a",
+      "offset_ticks": 118000000,
+      "duration_ticks": 375000
+    },
+    {
+      "text": "room",
+      "offset_ticks": 119000000,
+      "duration_ticks": 2250000
+    },
+    {
+      "text": "that",
+      "offset_ticks": 121750000,
+      "duration_ticks": 1250000
+    },
+    {
+      "text": "was",
+      "offset_ticks": 123375000,
+      "duration_ticks": 1375000
+    },
+    {
+      "text": "never",
+      "offset_ticks": 125375000,
+      "duration_ticks": 2125000
+    },
+    {
+      "text": "let",
+      "offset_ticks": 127750000,
+      "duration_ticks": 2500000
+    }
+  ]
+}

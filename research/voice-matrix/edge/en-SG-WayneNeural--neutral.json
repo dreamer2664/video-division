@@ -1,0 +1,196 @@
+{
+  "engine": "edge-tts",
+  "voice": "en-SG-WayneNeural",
+  "condition": "neutral",
+  "rate": "+0%",
+  "pitch": "+0Hz",
+  "characters": 201,
+  "sha256": "3cbf17ec0144de689507ab9792dc2283b11e51b888a0f31f4f69c45b3f980ece",
+  "events": [
+    {
+      "text": "The",
+      "offset_ticks": 1000000,
+      "duration_ticks": 1250000
+    },
+    {
+      "text": "ledger",
+      "offset_ticks": 2375000,
+      "duration_ticks": 4125000
+    },
+    {
+      "text": "has",
+      "offset_ticks": 6625000,
+      "duration_ticks": 2500000
+    },
+    {
+      "text": "four",
+      "offset_ticks": 9250000,
+      "duration_ticks": 2500000
+    },
+    {
+      "text": "names",
+      "offset_ticks": 11875000,
+      "duration_ticks": 7125000
+    },
+    {
+      "text": "At",
+      "offset_ticks": 27750000,
+      "duration_ticks": 2250000
+    },
+    {
+      "text": "two",
+      "offset_ticks": 30125000,
+      "duration_ticks": 2125000
+    },
+    {
+      "text": "fourteen",
+      "offset_ticks": 32375000,
+      "duration_ticks": 7250000
+    },
+    {
+      "text": "rain",
+      "offset_ticks": 42000000,
+      "duration_ticks": 3125000
+    },
+    {
+      "text": "rattles",
+      "offset_ticks": 45250000,
+      "duration_ticks": 4375000
+    },
+    {
+      "text": "the",
+      "offset_ticks": 49750000,
+      "duration_ticks": 1250000
+    },
+    {
+      "text": "awning",
+      "offset_ticks": 51125000,
+      "duration_ticks": 5750000
+    },
+    {
+      "text": "The",
+      "offset_ticks": 65625000,
+      "duration_ticks": 1375000
+    },
+    {
+      "text": "lobby",
+      "offset_ticks": 67125000,
+      "duration_ticks": 3750000
+    },
+    {
+      "text": "is",
+      "offset_ticks": 71000000,
+      "duration_ticks": 2250000
+    },
+    {
+      "text": "empty",
+      "offset_ticks": 73375000,
+      "duration_ticks": 6625000
+    },
+    {
+      "text": "yet",
+      "offset_ticks": 81875000,
+      "duration_ticks": 3000000
+    },
+    {
+      "text": "three",
+      "offset_ticks": 85000000,
+      "duration_ticks": 2875000
+    },
+    {
+      "text": "room",
+      "offset_ticks": 88000000,
+      "duration_ticks": 2500000
+    },
+    {
+      "text": "keys",
+      "offset_ticks": 90625000,
+      "duration_ticks": 4250000
+    },
+    {
+      "text": "are",
+      "offset_ticks": 95000000,
+      "duration_ticks": 1250000
+    },
+    {
+      "text": "missing",
+      "offset_ticks": 96375000,
+      "duration_ticks": 6500000
+    },
+    {
+      "text": "A",
+      "offset_ticks": 111625000,
+      "duration_ticks": 1500000
+    },
+    {
+      "text": "telephone",
+      "offset_ticks": 113250000,
+      "duration_ticks": 5500000
+    },
+    {
+      "text": "rings",
+      "offset_ticks": 118875000,
+      "duration_ticks": 2875000
+    },
+    {
+      "text": "from",
+      "offset_ticks": 121875000,
+      "duration_ticks": 2125000
+    },
+    {
+      "text": "upstairs",
+      "offset_ticks": 124125000,
+      "duration_ticks": 9375000
+    },
+    {
+      "text": "Who",
+      "offset_ticks": 142250000,
+      "duration_ticks": 2375000
+    },
+    {
+      "text": "is",
+      "offset_ticks": 144750000,
+      "duration_ticks": 1750000
+    },
+    {
+      "text": "calling",
+      "offset_ticks": 146625000,
+      "duration_ticks": 3875000
+    },
+    {
+      "text": "from",
+      "offset_ticks": 150625000,
+      "duration_ticks": 2125000
+    },
+    {
+      "text": "a",
+      "offset_ticks": 152875000,
+      "duration_ticks": 375000
+    },
+    {
+      "text": "room",
+      "offset_ticks": 153375000,
+      "duration_ticks": 2875000
+    },
+    {
+      "text": "that",
+      "offset_ticks": 156375000,
+      "duration_ticks": 1875000
+    },
+    {
+      "text": "was",
+      "offset_ticks": 158375000,
+      "duration_ticks": 2250000
+    },
+    {
+      "text": "never",
+      "offset_ticks": 160750000,
+      "duration_ticks": 2750000
+    },
+    {
+      "text": "let",
+      "offset_ticks": 163625000,
+      "duration_ticks": 4750000
+    }
+  ]
+}

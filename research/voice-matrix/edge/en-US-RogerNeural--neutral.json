@@ -1,0 +1,196 @@
+{
+  "engine": "edge-tts",
+  "voice": "en-US-RogerNeural",
+  "condition": "neutral",
+  "rate": "+0%",
+  "pitch": "+0Hz",
+  "characters": 201,
+  "sha256": "f2871fd6831558b1f9881d70311dc2eadd2dbede1aab058c1a929896893c5e15",
+  "events": [
+    {
+      "text": "The",
+      "offset_ticks": 1000000,
+      "duration_ticks": 1750000
+    },
+    {
+      "text": "ledger",
+      "offset_ticks": 2875000,
+      "duration_ticks": 3375000
+    },
+    {
+      "text": "has",
+      "offset_ticks": 6375000,
+      "duration_ticks": 2250000
+    },
+    {
+      "text": "four",
+      "offset_ticks": 8750000,
+      "duration_ticks": 2500000
+    },
+    {
+      "text": "names",
+      "offset_ticks": 11375000,
+      "duration_ticks": 5750000
+    },
+    {
+      "text": "At",
+      "offset_ticks": 23650000,
+      "duration_ticks": 2250000
+    },
+    {
+      "text": "two",
+      "offset_ticks": 26025000,
+      "duration_ticks": 2250000
+    },
+    {
+      "text": "fourteen",
+      "offset_ticks": 28400000,
+      "duration_ticks": 6250000
+    },
+    {
+      "text": "rain",
+      "offset_ticks": 40400000,
+      "duration_ticks": 3250000
+    },
+    {
+      "text": "rattles",
+      "offset_ticks": 43775000,
+      "duration_ticks": 3375000
+    },
+    {
+      "text": "the",
+      "offset_ticks": 47275000,
+      "duration_ticks": 875000
+    },
+    {
+      "text": "awning",
+      "offset_ticks": 48275000,
+      "duration_ticks": 4625000
+    },
+    {
+      "text": "The",
+      "offset_ticks": 59425000,
+      "duration_ticks": 1500000
+    },
+    {
+      "text": "lobby",
+      "offset_ticks": 61050000,
+      "duration_ticks": 3750000
+    },
+    {
+      "text": "is",
+      "offset_ticks": 64925000,
+      "duration_ticks": 1500000
+    },
+    {
+      "text": "empty",
+      "offset_ticks": 66550000,
+      "duration_ticks": 3875000
+    },
+    {
+      "text": "yet",
+      "offset_ticks": 75175000,
+      "duration_ticks": 2000000
+    },
+    {
+      "text": "three",
+      "offset_ticks": 77300000,
+      "duration_ticks": 2750000
+    },
+    {
+      "text": "room",
+      "offset_ticks": 80175000,
+      "duration_ticks": 2875000
+    },
+    {
+      "text": "keys",
+      "offset_ticks": 83175000,
+      "duration_ticks": 3375000
+    },
+    {
+      "text": "are",
+      "offset_ticks": 86675000,
+      "duration_ticks": 750000
+    },
+    {
+      "text": "missing",
+      "offset_ticks": 87550000,
+      "duration_ticks": 5375000
+    },
+    {
+      "text": "A",
+      "offset_ticks": 99575000,
+      "duration_ticks": 1500000
+    },
+    {
+      "text": "telephone",
+      "offset_ticks": 101200000,
+      "duration_ticks": 5750000
+    },
+    {
+      "text": "rings",
+      "offset_ticks": 107075000,
+      "duration_ticks": 3375000
+    },
+    {
+      "text": "from",
+      "offset_ticks": 110575000,
+      "duration_ticks": 1625000
+    },
+    {
+      "text": "upstairs",
+      "offset_ticks": 112325000,
+      "duration_ticks": 7750000
+    },
+    {
+      "text": "Who",
+      "offset_ticks": 126600000,
+      "duration_ticks": 1625000
+    },
+    {
+      "text": "is",
+      "offset_ticks": 128350000,
+      "duration_ticks": 1500000
+    },
+    {
+      "text": "calling",
+      "offset_ticks": 129975000,
+      "duration_ticks": 3750000
+    },
+    {
+      "text": "from",
+      "offset_ticks": 133850000,
+      "duration_ticks": 1500000
+    },
+    {
+      "text": "a",
+      "offset_ticks": 135475000,
+      "duration_ticks": 625000
+    },
+    {
+      "text": "room",
+      "offset_ticks": 136225000,
+      "duration_ticks": 4000000
+    },
+    {
+      "text": "that",
+      "offset_ticks": 143475000,
+      "duration_ticks": 1250000
+    },
+    {
+      "text": "was",
+      "offset_ticks": 144850000,
+      "duration_ticks": 1625000
+    },
+    {
+      "text": "never",
+      "offset_ticks": 146600000,
+      "duration_ticks": 3375000
+    },
+    {
+      "text": "let",
+      "offset_ticks": 150100000,
+      "duration_ticks": 3500000
+    }
+  ]
+}
