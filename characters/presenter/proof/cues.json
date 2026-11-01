@@ -1,0 +1,713 @@
+{
+  "schema_version": 1,
+  "title": "Cold Battery, Honest Estimate",
+  "voice_first": true,
+  "voice": {
+    "engine": "ElevenLabs",
+    "model": "eleven_multilingual_v2",
+    "voice_name": "Brian",
+    "voice_id": "nPczCjzI2devNBz1zQrb",
+    "stability": 0.35,
+    "similarity_boost": 0.78,
+    "style": 0.18,
+    "speed": 0.95,
+    "alignment_file": "alignment-raw.json",
+    "audio_file": "voice.mp3"
+  },
+  "duration_seconds": 23.0,
+  "frame_rate": 30,
+  "resolution": [
+    1080,
+    1920
+  ],
+  "narration_text": "Why does your phone drop to one percent outside? The battery hasn't suddenly emptied. Cold slows the chemistry that moves charge, so the phone estimates less power is available. Here's the useful test: bring it inside and let it warm naturally. This tiny lab screen tracks the estimate, not the true stored energy. Sidekick, please stop trying to plug in the sun.",
+  "captions": [
+    {
+      "id": "cap_01",
+      "text": "Why does your",
+      "start": 0.0,
+      "end": 0.685,
+      "word_count": 3,
+      "word_indices": [
+        0,
+        3
+      ],
+      "word_times": [
+        {
+          "text": "Why",
+          "start": 0.0,
+          "end": 0.255
+        },
+        {
+          "text": "does",
+          "start": 0.325,
+          "end": 0.464
+        },
+        {
+          "text": "your",
+          "start": 0.499,
+          "end": 0.627
+        }
+      ]
+    },
+    {
+      "id": "cap_02",
+      "text": "phone drop to",
+      "start": 0.685,
+      "end": 1.788,
+      "word_count": 3,
+      "word_indices": [
+        3,
+        6
+      ],
+      "word_times": [
+        {
+          "text": "phone",
+          "start": 0.685,
+          "end": 0.975
+        },
+        {
+          "text": "drop",
+          "start": 1.022,
+          "end": 1.382
+        },
+        {
+          "text": "to",
+          "start": 1.509,
+          "end": 1.625
+        }
+      ]
+    },
+    {
+      "id": "cap_03",
+      "text": "one percent outside?",
+      "start": 1.788,
+      "end": 4.11,
+      "word_count": 3,
+      "word_indices": [
+        6,
+        9
+      ],
+      "word_times": [
+        {
+          "text": "one",
+          "start": 1.788,
+          "end": 2.078
+        },
+        {
+          "text": "percent",
+          "start": 2.136,
+          "end": 2.705
+        },
+        {
+          "text": "outside",
+          "start": 2.833,
+          "end": 3.587
+        }
+      ]
+    },
+    {
+      "id": "cap_04",
+      "text": "The battery hasn't",
+      "start": 4.11,
+      "end": 4.923,
+      "word_count": 3,
+      "word_indices": [
+        9,
+        12
+      ],
+      "word_times": [
+        {
+          "text": "The",
+          "start": 4.11,
+          "end": 4.226
+        },
+        {
+          "text": "battery",
+          "start": 4.284,
+          "end": 4.586
+        },
+        {
+          "text": "hasn't",
+          "start": 4.632,
+          "end": 4.888
+        }
+      ]
+    },
+    {
+      "id": "cap_05",
+      "text": "suddenly emptied.",
+      "start": 4.923,
+      "end": 6.118,
+      "word_count": 2,
+      "word_indices": [
+        12,
+        14
+      ],
+      "word_times": [
+        {
+          "text": "suddenly",
+          "start": 4.923,
+          "end": 5.259
+        },
+        {
+          "text": "emptied",
+          "start": 5.317,
+          "end": 5.654
+        }
+      ]
+    },
+    {
+      "id": "cap_06",
+      "text": "Cold slows the chemistry",
+      "start": 6.118,
+      "end": 7.488,
+      "word_count": 4,
+      "word_indices": [
+        14,
+        18
+      ],
+      "word_times": [
+        {
+          "text": "Cold",
+          "start": 6.118,
+          "end": 6.536
+        },
+        {
+          "text": "slows",
+          "start": 6.583,
+          "end": 6.873
+        },
+        {
+          "text": "the",
+          "start": 6.908,
+          "end": 6.978
+        },
+        {
+          "text": "chemistry",
+          "start": 7.012,
+          "end": 7.442
+        }
+      ]
+    },
+    {
+      "id": "cap_07",
+      "text": "that moves charge, so",
+      "start": 7.488,
+      "end": 8.916,
+      "word_count": 4,
+      "word_indices": [
+        18,
+        22
+      ],
+      "word_times": [
+        {
+          "text": "that",
+          "start": 7.488,
+          "end": 7.593
+        },
+        {
+          "text": "moves",
+          "start": 7.639,
+          "end": 7.848
+        },
+        {
+          "text": "charge",
+          "start": 7.895,
+          "end": 8.406
+        },
+        {
+          "text": "so",
+          "start": 8.719,
+          "end": 8.858
+        }
+      ]
+    },
+    {
+      "id": "cap_08",
+      "text": "the phone estimates less",
+      "start": 8.916,
+      "end": 10.321,
+      "word_count": 4,
+      "word_indices": [
+        22,
+        26
+      ],
+      "word_times": [
+        {
+          "text": "the",
+          "start": 8.916,
+          "end": 8.986
+        },
+        {
+          "text": "phone",
+          "start": 9.044,
+          "end": 9.369
+        },
+        {
+          "text": "estimates",
+          "start": 9.439,
+          "end": 9.973
+        },
+        {
+          "text": "less",
+          "start": 10.054,
+          "end": 10.263
+        }
+      ]
+    },
+    {
+      "id": "cap_09",
+      "text": "power is available.",
+      "start": 10.321,
+      "end": 11.61,
+      "word_count": 3,
+      "word_indices": [
+        26,
+        29
+      ],
+      "word_times": [
+        {
+          "text": "power",
+          "start": 10.321,
+          "end": 10.577
+        },
+        {
+          "text": "is",
+          "start": 10.612,
+          "end": 10.658
+        },
+        {
+          "text": "available",
+          "start": 10.693,
+          "end": 11.238
+        }
+      ]
+    },
+    {
+      "id": "cap_10",
+      "text": "Here's the useful test:",
+      "start": 11.61,
+      "end": 13.293,
+      "word_count": 4,
+      "word_indices": [
+        29,
+        33
+      ],
+      "word_times": [
+        {
+          "text": "Here's",
+          "start": 11.61,
+          "end": 11.877
+        },
+        {
+          "text": "the",
+          "start": 11.9,
+          "end": 11.97
+        },
+        {
+          "text": "useful",
+          "start": 12.051,
+          "end": 12.341
+        },
+        {
+          "text": "test",
+          "start": 12.399,
+          "end": 12.748
+        }
+      ]
+    },
+    {
+      "id": "cap_11",
+      "text": "bring it inside and",
+      "start": 13.293,
+      "end": 14.292,
+      "word_count": 4,
+      "word_indices": [
+        33,
+        37
+      ],
+      "word_times": [
+        {
+          "text": "bring",
+          "start": 13.293,
+          "end": 13.502
+        },
+        {
+          "text": "it",
+          "start": 13.549,
+          "end": 13.618
+        },
+        {
+          "text": "inside",
+          "start": 13.665,
+          "end": 14.141
+        },
+        {
+          "text": "and",
+          "start": 14.176,
+          "end": 14.245
+        }
+      ]
+    },
+    {
+      "id": "cap_12",
+      "text": "let it warm naturally.",
+      "start": 14.292,
+      "end": 15.871,
+      "word_count": 4,
+      "word_indices": [
+        37,
+        41
+      ],
+      "word_times": [
+        {
+          "text": "let",
+          "start": 14.292,
+          "end": 14.396
+        },
+        {
+          "text": "it",
+          "start": 14.443,
+          "end": 14.489
+        },
+        {
+          "text": "warm",
+          "start": 14.524,
+          "end": 14.698
+        },
+        {
+          "text": "naturally",
+          "start": 14.744,
+          "end": 15.209
+        }
+      ]
+    },
+    {
+      "id": "cap_13",
+      "text": "This tiny lab screen",
+      "start": 15.871,
+      "end": 17.136,
+      "word_count": 4,
+      "word_indices": [
+        41,
+        45
+      ],
+      "word_times": [
+        {
+          "text": "This",
+          "start": 15.871,
+          "end": 16.068
+        },
+        {
+          "text": "tiny",
+          "start": 16.138,
+          "end": 16.463
+        },
+        {
+          "text": "lab",
+          "start": 16.544,
+          "end": 16.776
+        },
+        {
+          "text": "screen",
+          "start": 16.834,
+          "end": 17.09
+        }
+      ]
+    },
+    {
+      "id": "cap_14",
+      "text": "tracks the estimate, not",
+      "start": 17.136,
+      "end": 18.611,
+      "word_count": 4,
+      "word_indices": [
+        45,
+        49
+      ],
+      "word_times": [
+        {
+          "text": "tracks",
+          "start": 17.136,
+          "end": 17.426
+        },
+        {
+          "text": "the",
+          "start": 17.45,
+          "end": 17.519
+        },
+        {
+          "text": "estimate",
+          "start": 17.6,
+          "end": 18.1
+        },
+        {
+          "text": "not",
+          "start": 18.344,
+          "end": 18.564
+        }
+      ]
+    },
+    {
+      "id": "cap_15",
+      "text": "the true stored energy.",
+      "start": 18.611,
+      "end": 20.329,
+      "word_count": 4,
+      "word_indices": [
+        49,
+        53
+      ],
+      "word_times": [
+        {
+          "text": "the",
+          "start": 18.611,
+          "end": 18.68
+        },
+        {
+          "text": "true",
+          "start": 18.715,
+          "end": 18.901
+        },
+        {
+          "text": "stored",
+          "start": 18.924,
+          "end": 19.168
+        },
+        {
+          "text": "energy",
+          "start": 19.203,
+          "end": 19.563
+        }
+      ]
+    },
+    {
+      "id": "cap_16",
+      "text": "Sidekick, please stop",
+      "start": 20.329,
+      "end": 21.478,
+      "word_count": 3,
+      "word_indices": [
+        53,
+        56
+      ],
+      "word_times": [
+        {
+          "text": "Sidekick",
+          "start": 20.329,
+          "end": 20.863
+        },
+        {
+          "text": "please",
+          "start": 20.921,
+          "end": 21.142
+        },
+        {
+          "text": "stop",
+          "start": 21.176,
+          "end": 21.42
+        }
+      ]
+    },
+    {
+      "id": "cap_17",
+      "text": "trying to plug",
+      "start": 21.478,
+      "end": 22.035,
+      "word_count": 3,
+      "word_indices": [
+        56,
+        59
+      ],
+      "word_times": [
+        {
+          "text": "trying",
+          "start": 21.478,
+          "end": 21.71
+        },
+        {
+          "text": "to",
+          "start": 21.734,
+          "end": 21.78
+        },
+        {
+          "text": "plug",
+          "start": 21.815,
+          "end": 21.989
+        }
+      ]
+    },
+    {
+      "id": "cap_18",
+      "text": "in the sun.",
+      "start": 22.035,
+      "end": 23.0,
+      "word_count": 3,
+      "word_indices": [
+        59,
+        62
+      ],
+      "word_times": [
+        {
+          "text": "in",
+          "start": 22.035,
+          "end": 22.082
+        },
+        {
+          "text": "the",
+          "start": 22.117,
+          "end": 22.186
+        },
+        {
+          "text": "sun",
+          "start": 22.221,
+          "end": 22.511
+        }
+      ]
+    }
+  ],
+  "status": [
+    {
+      "text": "FIELD NOTE · BATTERY IN COLD",
+      "step": 1,
+      "start": 0.0,
+      "end": 6.118,
+      "id": "status_01"
+    },
+    {
+      "text": "MECHANISM · CHARGE MOVES SLOWER",
+      "step": 1,
+      "start": 6.118,
+      "end": 11.61,
+      "id": "status_02"
+    },
+    {
+      "text": "STEP 2 · WARM IT NATURALLY",
+      "step": 2,
+      "start": 11.61,
+      "end": 15.871,
+      "id": "status_03"
+    },
+    {
+      "text": "CHECK · ESTIMATE ≠ STORED CHARGE",
+      "step": 2,
+      "start": 15.871,
+      "end": 20.329,
+      "id": "status_04"
+    },
+    {
+      "text": "PUNCHLINE · NO SUN CHARGING",
+      "step": 2,
+      "start": 20.329,
+      "end": 23.0,
+      "id": "status_05"
+    }
+  ],
+  "labels": [
+    {
+      "text": "FIELD NOTE",
+      "kind": "context",
+      "start": 0.0,
+      "end": 4.11,
+      "id": "label_01"
+    },
+    {
+      "text": "STEP 1",
+      "kind": "step",
+      "start": 4.11,
+      "end": 6.118,
+      "id": "label_02"
+    },
+    {
+      "text": "STEP 2",
+      "kind": "step",
+      "start": 11.61,
+      "end": 15.871,
+      "id": "label_03"
+    },
+    {
+      "text": "ILLUSTRATIVE SCREEN",
+      "kind": "evidence",
+      "start": 15.871,
+      "end": 20.329,
+      "id": "label_04"
+    },
+    {
+      "text": "MISTAKE",
+      "kind": "joke",
+      "start": 20.329,
+      "end": 23.0,
+      "id": "label_05"
+    }
+  ],
+  "motion": [
+    {
+      "actor": "sidekick",
+      "action": "squint",
+      "start": 1.788,
+      "end": 2.438,
+      "id": "motion_01"
+    },
+    {
+      "actor": "sidekick",
+      "action": "shiver",
+      "start": 6.118,
+      "end": 7.368,
+      "id": "motion_02"
+    },
+    {
+      "actor": "presenter",
+      "action": "nod",
+      "start": 6.118,
+      "end": 6.868,
+      "id": "motion_03"
+    },
+    {
+      "actor": "presenter",
+      "action": "open_palm",
+      "start": 11.61,
+      "end": 12.86,
+      "id": "motion_04"
+    },
+    {
+      "actor": "presenter",
+      "action": "point_screen",
+      "start": 15.871,
+      "end": 16.921,
+      "id": "motion_05"
+    },
+    {
+      "actor": "sidekick",
+      "action": "peek",
+      "start": 15.871,
+      "end": 16.971,
+      "id": "motion_06"
+    },
+    {
+      "actor": "presenter",
+      "action": "shrug",
+      "start": 20.329,
+      "end": 21.529,
+      "id": "motion_07"
+    },
+    {
+      "actor": "sidekick",
+      "action": "comic_recoil",
+      "start": 20.921,
+      "end": 22.021,
+      "id": "motion_08"
+    }
+  ],
+  "screenshot": [
+    {
+      "asset": "assets/battery-screen.png",
+      "layout": "evidence_card",
+      "illustrative": true,
+      "start": 15.871,
+      "end": 20.329,
+      "id": "screenshot_01"
+    }
+  ],
+  "source_note": "Apple Support, If your iPhone or iPad gets too hot or too cold: https://support.apple.com/en-us/118431"
+}

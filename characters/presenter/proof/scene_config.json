@@ -1,0 +1,46 @@
+{
+  "title": "Cold Battery, Honest Estimate",
+  "duration_seconds": 23.0,
+  "frame_rate": 30,
+  "resolution": [1080, 1920],
+  "voice": {
+    "engine": "ElevenLabs",
+    "model": "eleven_multilingual_v2",
+    "voice_name": "Brian",
+    "voice_id": "nPczCjzI2devNBz1zQrb",
+    "stability": 0.35,
+    "similarity_boost": 0.78,
+    "style": 0.18,
+    "speed": 0.95,
+    "alignment_file": "alignment-raw.json",
+    "audio_file": "voice.mp3"
+  },
+  "status": [
+    {"anchor": "Why does", "end_anchor": "Cold slows", "text": "FIELD NOTE · BATTERY IN COLD", "step": 1},
+    {"anchor": "Cold slows", "end_anchor": "Here's the useful test", "text": "MECHANISM · CHARGE MOVES SLOWER", "step": 1},
+    {"anchor": "Here's the useful test", "end_anchor": "This tiny lab screen", "text": "STEP 2 · WARM IT NATURALLY", "step": 2},
+    {"anchor": "This tiny lab screen", "end_anchor": "Sidekick", "text": "CHECK · ESTIMATE ≠ STORED CHARGE", "step": 2},
+    {"anchor": "Sidekick", "text": "PUNCHLINE · NO SUN CHARGING", "step": 2}
+  ],
+  "labels": [
+    {"anchor": "Why does", "end_anchor": "The battery", "text": "FIELD NOTE", "kind": "context"},
+    {"anchor": "The battery", "end_anchor": "Cold slows", "text": "STEP 1", "kind": "step"},
+    {"anchor": "Here's the useful test", "end_anchor": "This tiny lab screen", "text": "STEP 2", "kind": "step"},
+    {"anchor": "This tiny lab screen", "end_anchor": "Sidekick", "text": "ILLUSTRATIVE SCREEN", "kind": "evidence"},
+    {"anchor": "Sidekick", "text": "MISTAKE", "kind": "joke"}
+  ],
+  "motion": [
+    {"anchor": "one percent", "duration": 0.65, "actor": "sidekick", "action": "squint"},
+    {"anchor": "Cold slows", "duration": 1.25, "actor": "sidekick", "action": "shiver"},
+    {"anchor": "Cold slows", "duration": 0.75, "actor": "presenter", "action": "nod"},
+    {"anchor": "Here's the useful test", "duration": 1.25, "actor": "presenter", "action": "open_palm"},
+    {"anchor": "This tiny lab screen", "duration": 1.05, "actor": "presenter", "action": "point_screen"},
+    {"anchor": "This tiny lab screen", "duration": 1.10, "actor": "sidekick", "action": "peek"},
+    {"anchor": "Sidekick", "duration": 1.20, "actor": "presenter", "action": "shrug"},
+    {"anchor": "please stop", "duration": 1.10, "actor": "sidekick", "action": "comic_recoil"}
+  ],
+  "screenshot": [
+    {"anchor": "This tiny lab screen", "end_anchor": "Sidekick", "asset": "assets/battery-screen.png", "layout": "evidence_card", "illustrative": true}
+  ],
+  "source_note": "Apple Support, If your iPhone or iPad gets too hot or too cold: https://support.apple.com/en-us/118431"
+}

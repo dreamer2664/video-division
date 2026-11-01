@@ -1,0 +1,1 @@
+Why does your phone drop to one percent outside? The battery hasn't suddenly emptied. Cold slows the chemistry that moves charge, so the phone estimates less power is available. Here's the useful test: bring it inside and let it warm naturally. This tiny lab screen tracks the estimate, not the true stored energy. Sidekick, please stop trying to plug in the sun.
