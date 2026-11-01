@@ -1,0 +1,13 @@
+# Published House Look — applied before pictures
+
+Grade published `look/HOUSE-LOOK.md` and its SDK on `grade/house-look`, commit `90394d8411185519fdc360f4c0ea26d0dc3f2822`, via PR #12. The document's Git blob was `0086f132105007a8d1596e4f1df8a6787529f072` when read. I read it before generating any hotel production plate; it was not yet on `main` at the time of this addendum. Reference: https://github.com/dreamer2664/video-division/blob/90394d8411185519fdc360f4c0ea26d0dc3f2822/look/HOUSE-LOOK.md
+
+The initial plan is amended as follows:
+
+1. **Ten original photographs, ten shots**, with roughly 5–8 second holds and moving camera, rather than the earlier 13-cut provisional map. An empty chair and place carry the implied clerk; generated plates specify zero people, no legible invented lettering or watermarks. Exact script-to-shot boundaries are in the updated screenplay.
+2. The already-named **THE UNCOUNTED GUEST** wall frame is Shot 07 around 32–39.2 s, in the long pre-reveal silence. The architectural image has a one-point center, deep wet foreground and background, a single warm brass lamp against cool weather, and visible traces of an unseen guest.
+3. Every generated plate is visually inspected. Plates are normalized to 1920×1080 and use the house 33³ LUTs trilinearly, 500T red/amber halation, floating-point bicubic camera moves, slow directional drift, multi-plane storm where the weather is physically visible, soft window masks indoors, subtle temporal grain, and motivated warm practicals. This is a 2.5D animation of still plates, not live footage.
+4. The prescribed Christopher voice is committed losslessly alongside actual word boundaries; original rain, sub bed and close telephone/lift/footfall Foley are placed below it, with a smoothed active-speech duck and an intentional swell during the reveal pause. Keep the combined bed/foley 8–12 dB below speech on measured word spans before common mastering. Commit the ducked bed and exact offline gain mapping as well as the actual voice, rather than relying on `/tmp` or re-querying the cloud. Verify final AAC loudness and independently correlate the committed stem/master to the MP4; no human listening is implied.
+5. Lower-third condensed-sans captions use actual service word starts, 2–5 words per cue, white/amber `#F5D14E`, and crimson on the threat. They clear for the wordless ending. Preserve the exact frame/word-lock method and quantization in the final QA.
+
+House SDK functions/LUTs are first-party grade assets; any local copies retain attribution and their source commit. Film story, hotel photographs and sound remain original, and no grade frames or audio are copied into the production.

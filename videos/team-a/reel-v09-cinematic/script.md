@@ -24,23 +24,23 @@ No one is left at reception to hear who answers.
 
 The committed narration stem measures 53.260 s with 124 Edge word events; the last spoken word ends at 52.270 s. The pre-reveal gap from “four” to “Two guests” is 2.706 s. The remaining time is an intentional weather/telephone landing rather than sped-up speech. The script matches the committed word-event text.
 
-## Picture and sound plan — final timing to follow measured speech
+## Picture and sound plan — locked to measured speech
 
-All pictures will be original, generated as **photographic** 16:9 hotel locations and objects, not illustration or a dashboard. Use slow camera movement, 2.5D rain in weather-facing zones, localized lamp halation and a 33³ LUT. Frames will change on narrative beats, not at the prior UI cut cadence.
+Ten original 16:9 photo plates, zero people and no invented legible lettering: physical hotel locations and objects, not illustration or a dashboard. Use the published House Look's trilinear 33³ LUT, floating-point subpixel camera motion, two-depth rain through soft window masks, restrained lamp halation and temporal grain. The numerical boundaries below are multiples of 1/30 s.
 
-1. Exterior through the rain under a wet awning; the one brass reception lamp glows through glass. Rain and distant hotel hum.
-2. **Wall frame: THE FOURTH ARRIVAL / THE UNCOUNTED GUEST.** From the entrance, look across wet marble footprints into a dark-wood lobby; the solitary brass desk lamp anchors the reception on one side, an empty lift recedes behind it, and rain beads on the glass and awning. Strong foreground, middle and deep space. No person or overlay is needed for the clean wall frame.
-3. Over the night clerk's shoulder to the physical ledger and key rack under the single warm desk lamp; missing keys suggested without requiring AI-generated legible text. Pencil, damp paper and dark wood are tangible.
-4. The unlet-room wake-up request: close dark Bakelite reception handset and ledger in the same lamp pool; no fake readable graphics.
-5. An original hotel corridor and closed room door in cool window light; wet air and one motivated warm source, not an isolated object.
-6. The handset at reception as the call returns; close dry ring against room tone.
-7. From the lobby, the old lift opens unbidden. A restrained bell and motor creak emerge through rain.
-8. Empty lift car and threshold, with cool reflections and the desk lamp as a distant, motivated warm accent.
-9. A wet footprint behind the reception desk, the open ledger and lamp in the background. A low sub hit carries the silent reveal.
-10. Return to an empty reception as the wake-up call connects; the lamp remains on and rain continues. Hold the landing long enough for it to register.
+| Shot | Seconds | Photograph and sound |
+|---|---:|---|
+| 01 | 0.0–6.0 | The hotel's rain-beaten awning, cold exterior street and a warm brass lamp visible inside. Arrival; empty lobby. |
+| 02 | 6.0–11.5 | Entrance into a dark-wood reception, wet footprints on marble, storm on window glass. Keys are missing. |
+| 03 | 11.5–17.0 | Empty reception chair, open ledger and missing brass keys under one desk lamp. The count and wake-up list. |
+| 04 | 17.0–22.5 | Hotel corridor, one closed unlet door, rain through distant window and the desk lamp visible beyond. The call is scheduled, then canceled. |
+| 05 | 22.5–27.5 | Close physical handset on the reception desk, no readable invented lettering; the telephone rings and the lift answers. |
+| 06 | 27.5–32.0 | Empty open lift in the lobby, wet threshold and dark interior. The uncalled doors open on an empty car. |
+| 07 | 32.0–39.2 | **WALL FRAME — THE UNCOUNTED GUEST:** one-point architectural view of the lobby; wet footprints reach behind the reception desk; one warm brass lamp, deep lift, rain and reflections. A footprint appears and the ledger changes. Creak and thunder carry the pre-reveal pause. |
+| 08 | 39.2–45.2 | From behind the empty desk: wet trace, open ledger and lobby receding into cool storm light. Two guests, the clerk, and whoever stands behind him. |
+| 09 | 45.2–52.8 | The handset and ledger by the one brass lamp; the call connects and the reception is empty. |
+| 10 | 52.8–60.0 | Empty lobby and wet glass, the desk lamp still on; no caption. Rain and the telephone carry a held landing. |
 
-### Measured edit targets
-
-After measuring the committed voice: exterior 0–3.9 s; wall-frame lobby 3.9–9.6; clerk and ledger 9.6–14.1; wake-up handset 14.1–19.7; closed unlet room 19.7–22.9; handset ring 22.9–25.1; lift lobby 25.1–29.6; empty car 29.6–32.0; footprint 32.0–34.6; ledger and held pause 34.6–39.0; unseen arrival 39.0–45.4; connected wake-up call 45.4–52.8; empty-lobby weather landing 52.8–60.0. All edit boundaries will be quantized to 30 fps; cutbacks to an earlier physical location are intentional. The wall frame remains available without captions as evidence.
+The committed narration stem measures 53.260 s with 124 Edge word events; the last spoken word ends at 52.270 s. The pre-reveal gap from “four” to “Two guests” is 2.706 s. The ending holds on weather and telephone rather than speeding speech. The script matches the committed word-event text.
 
 The film uses one autonomously selected prescribed deep voice, `en-US-ChristopherNeural`, rate −12%, pitch −4 Hz; a new original low bed, rain and story-specific dry sound; committed stem and word events; word-level 2–5-word captions; and a documented offline render.
