@@ -1,18 +1,41 @@
 {
-  "voice_source_mp3": "audio/narration_source.mp3",
-  "voice_source_sha256": "b1067678d7badda3731c1bdd922960d55015e7c80468ddcfc3323755b2f9345a",
-  "narration_stem": "audio/narration_stem_48k.flac",
-  "narration_stem_sha256": "e4819d5ed6e6e2166040f963b0e63e12d603dece3d96741f17a664e417564e4a",
-  "bed_stem": "audio/bed_stem_48k.flac",
-  "bed_stem_sha256": "d6ea651500176062d4ab0f67c4f22f148d3195d274322b9c35fef50c47b51caf",
-  "mix": "audio/master_audio_48k.wav",
-  "mix_sha256": "257f79de296f9476158ce49a1674dca62a4d506aafb4b76cc29e50feca5ab369",
+  "source": "audio/master_audio_pre_loudnorm_48k.wav",
+  "source_sha256": "257f79de296f9476158ce49a1674dca62a4d506aafb4b76cc29e50feca5ab369",
+  "normalized_master": "audio/master_audio_48k.wav",
+  "normalized_master_sha256": "77d668bdc0690a76fc32256e9d95bb35deeac4a24bbb6215cd9285a1267a73aa",
   "sample_rate_hz": 48000,
   "channels": 2,
   "duration_s": 60.0,
-  "mix_peak_dbfs": -5.7477439054188215,
-  "narration_rms_dbfs": -24.6770163923737,
-  "bed_rms_dbfs": -30.072935919158923,
-  "sidechain_duck_db": -4.0,
-  "bed_generator_seed": 1101
+  "loudnorm_target": {
+    "I": -16.0,
+    "TP": -1.5,
+    "LRA": 11.0,
+    "linear": false
+  },
+  "loudnorm_pass1_json": {
+    "input_i": "-22.18",
+    "input_tp": "-5.75",
+    "input_lra": "5.10",
+    "input_thresh": "-32.25",
+    "output_i": "-16.36",
+    "output_tp": "-1.50",
+    "output_lra": "2.50",
+    "output_thresh": "-26.41",
+    "normalization_type": "dynamic",
+    "target_offset": "0.36"
+  },
+  "loudnorm_pass2_json": {
+    "input_i": "-22.18",
+    "input_tp": "-5.75",
+    "input_lra": "5.10",
+    "input_thresh": "-32.25",
+    "output_i": "-16.07",
+    "output_tp": "-1.50",
+    "output_lra": "2.50",
+    "output_thresh": "-26.11",
+    "normalization_type": "dynamic",
+    "target_offset": "0.07"
+  },
+  "loudnorm_pass2_filter": "loudnorm=I=-16.0:TP=-1.5:LRA=11.0:measured_I=-22.18:measured_TP=-5.75:measured_LRA=5.10:measured_thresh=-32.25:offset=0.36:linear=false:print_format=json,aresample=48000",
+  "picture_policy": "Not used by this audio build; remux uses -c:v copy."
 }

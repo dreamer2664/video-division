@@ -1,215 +1,92 @@
 # QA — CUT V10: TWO LIGHTS
 
-## Pre-render brief and visual gate (written before render)
+## Pre-render brief and visual gate
 
 - Deliverable: exactly 60.000 s, 1920×1080 landscape, 30/1 fps CFR, H.264/yuv420p, AAC 48 kHz stereo.
 - Story gate: one car enters at Junction 4 and is never shown leaving; eight synchronized camera feeds show the same pair of headlights; the operator's counted result remains **two**.
-- Image gate: generated photorealistic motorway/control-room plates only; no flat-vector sequence, no empty dark-field cutaway, no portrait material. Film the rain-glazed room, operator, tactile tally counter, and physical CRTs; screen imagery supports the room rather than replacing it.
-- House-look source: read the root directive and the available `videos/team-b/grade-v05/` `generate_luts.py`, all four 33³ `.cube` LUTs, `render_v05.py`, plates, `script.md`, and `QA.md`. `look/HOUSE-LOOK.md` is **not present in the checked-out `main` tree**; this source-availability limitation is recorded, not silently claimed as read. Continue with the root directive and the first-party grade-v05 reference implementation. Its approach is a 33³ trilinear LUT, filmic S-curve, cool nocturnal shadows / warm practical, photographic plates, parallax rain, halation, grain, and slow camera push.
-- **Planned wall-worthy hero frame, named before render:** `HERO-01 — TWO LIGHTS IN THE WINDOW`, at 00:56.700 (frame 1701). A real rain-glazed motorway-control room and its operator stay in focus; the previously established eight-feed anomaly resolves into a pair of headlights reflected in the window behind the operator. The physical amber desk practical is the only warm source. Full-frame photographic composition; no title card.
-- Voice locked: `edge-tts en-US-ChristopherNeural --rate=-12% --pitch=-4Hz`. Ominous sound bed; captions are 2–5-word groups timed to captured synthesizer WordBoundary telemetry.
-- No manager/director polling. The earlier baby-monitor cut is withdrawn and is not part of this deliverable.
+- Image gate: generated photorealistic motorway/control-room plates; no flat-vector sequence, empty dark-field cutaway, or portrait material. The photographed room, operator, and physical CRTs remain the subject.
+- House-look source: the root directive and available grade-v05 `generate_luts.py`, all four 33³ LUTs, `render_v05.py`, plates, `script.md`, and `QA.md` were studied. `look/HOUSE-LOOK.md` was absent from the checked-out `main` tree; QA records that limitation. The available reference implements a 33³ trilinear LUT, filmic S-curve, cold nocturnal shadows / warm practical, photographic plates, parallax rain, halation, grain, and slow camera push.
+- **Hero frame named before render:** `HERO-01 — TWO LIGHTS IN THE WINDOW`, 00:56.700 / frame 1701. The real rain-glazed control room and operator stay in focus; the earlier eight-feed anomaly resolves into headlights reflected in the window. Still: `stills/HERO-01-two-lights-in-the-window.png`.
+- Voice: `edge-tts en-US-ChristopherNeural --rate=-12% --pitch=-4Hz`. Ominous procedural bed. The narration stem and captured WordBoundary telemetry are committed; 28 captions are boundary-derived and each contains 2–5 words.
+- The earlier baby-monitor cut was withdrawn; it is not part of this deliverable.
 
-## Post-render evidence
+## Audio-only normalization correction — 2026-11-01
 
-- Reproducible offline render command: `python3 videos/team-b/cut-v10/render_v10.py` (requires Python dependencies in `requirements.txt`, `ffmpeg`, and `ffprobe`; no network call during render).
-- Rendered file: `video.mp4` (35393400 bytes; SHA-256 `898ebc313f1ed32a07f9449260fb67b8097769f9bfd6ae00c0bc16330c60a60e`).
-- Narration source: `audio/narration_source.mp3`; committed lossless stem `audio/narration_stem_48k.flac`; captured telemetry `timing/word_telemetry.json` (84 WordBoundary events); locked captions `timing/captions_locked.json` (28 cues, 2–5 words per cue, boundary-derived).
-- Audio: 48 kHz stereo AAC final; deterministic procedural bed `audio/bed_stem_48k.flac`; lossless mix `audio/master_audio_48k.wav`; voice RMS -24.68 dBFS, bed RMS -30.07 dBFS, mix peak -5.75 dBFS.
-- Planned hero captured at `stills/HERO-01-two-lights-in-the-window.png` (00:56.700 / frame 1701).
-- Structural gate: 60.000000 s; 1800 CFR frames; 1920×1080; h264 / yuv420p; AAC 48000 Hz stereo. PASS.
-- Black/freeze scan (`blackdetect` / `freezedetect`, 0.5 s threshold): 0 black events; 0 freeze events.
-- Human review disclosure: **no human listened**; audio verification is numeric/structural only.
+**Scope:** only the audio gain chain changed. `fix_audio_only.py` reran the two-pass EBU R128 `loudnorm` chain and remuxed the new AAC audio with FFmpeg `-c:v copy`. The picture was not rendered or re-encoded. Comparing decoded `framemd5` outputs before and after gives **1800/1800 identical frame hashes**; frame-hash-list SHA-256: `6a5195c0306db2242e1e8f1603da6b1ae0944a9d8487ce6d15743bf64b0dcae0`.
 
-### Pasted final `ffprobe` output
+- Original delivered audio measured: **−22.22 LUFS / −5.71 dBTP**.
+- Two-pass target: integrated loudness `I=-16.0`, true peak target `TP=-1.5 dBTP` (0.5 dB AAC safety margin under the `≤−1.0 dBTP` ceiling), `LRA=11`, dynamic mode because the available true-peak headroom does not permit a purely linear gain increase.
+- Pass 1 measured the locked pre-loudnorm WAV at `−22.18 LUFS / −5.75 dBTP`.
+- Pass 2 output JSON reports `−16.07 LUFS / −1.50 dBTP`.
+- **Decoded final AAC verification:** `−16.27 LUFS / −1.41 dBTP`, within `−16.0 ±0.5 LUFS` and below the `−1.0 dBTP` ceiling.
+- Silence scan on final remux (`silencedetect=n=-40dB:d=1.2`): **0 events**. Black/freeze scan on final remux (`blackdetect` and `freezedetect`, 0.5 s threshold): **0 black events; 0 freeze events**.
+- Reproducible audio-only command: `python3 videos/team-b/cut-v10/fix_audio_only.py`. It consumes `audio/master_audio_pre_loudnorm_48k.wav`, runs measured two-pass loudnorm, emits `audio/master_audio_48k.wav`, and remuxes without touching the video stream.
+- Original lossless stems and 60-second picture remain in place. The pre-loudnorm source WAV SHA-256 is `257f79de296f9476158ce49a1674dca62a4d506aafb4b76cc29e50feca5ab369`; normalized WAV SHA-256 is `77d668bdc0690a76fc32256e9d95bb35deeac4a24bbb6215cd9285a1267a73aa`.
+- Final MP4 SHA-256: `e093a55f941b72fc694b3f9c50bf3ce559307cc658c0f2161ed2ebfaad589403` (`35,395,888` bytes).
+
+### Loudnorm JSON — pass 1 (measurement)
 
 ```json
 {
-  "streams": [
-    {
-      "index": 0,
-      "codec_name": "h264",
-      "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
-      "profile": "High",
-      "codec_type": "video",
-      "codec_tag_string": "avc1",
-      "codec_tag": "0x31637661",
-      "width": 1920,
-      "height": 1080,
-      "coded_width": 1920,
-      "coded_height": 1080,
-      "closed_captions": 0,
-      "film_grain": 0,
-      "has_b_frames": 2,
-      "pix_fmt": "yuv420p",
-      "level": 41,
-      "chroma_location": "left",
-      "field_order": "progressive",
-      "refs": 1,
-      "is_avc": "true",
-      "nal_length_size": "4",
-      "id": "0x1",
-      "r_frame_rate": "30/1",
-      "avg_frame_rate": "30/1",
-      "time_base": "1/15360",
-      "start_pts": 0,
-      "start_time": "0.000000",
-      "duration_ts": 921600,
-      "duration": "60.000000",
-      "bit_rate": "4517069",
-      "bits_per_raw_sample": "8",
-      "nb_frames": "1800",
-      "extradata_size": 47,
-      "disposition": {
-        "default": 1,
-        "dub": 0,
-        "original": 0,
-        "comment": 0,
-        "lyrics": 0,
-        "karaoke": 0,
-        "forced": 0,
-        "hearing_impaired": 0,
-        "visual_impaired": 0,
-        "clean_effects": 0,
-        "attached_pic": 0,
-        "timed_thumbnails": 0,
-        "non_diegetic": 0,
-        "captions": 0,
-        "descriptions": 0,
-        "metadata": 0,
-        "dependent": 0,
-        "still_image": 0
-      },
-      "tags": {
-        "language": "und",
-        "handler_name": "VideoHandler",
-        "vendor_id": "[0][0][0][0]",
-        "encoder": "Lavc61.3.100 libx264"
-      }
-    },
-    {
-      "index": 1,
-      "codec_name": "aac",
-      "codec_long_name": "AAC (Advanced Audio Coding)",
-      "profile": "LC",
-      "codec_type": "audio",
-      "codec_tag_string": "mp4a",
-      "codec_tag": "0x6134706d",
-      "sample_fmt": "fltp",
-      "sample_rate": "48000",
-      "channels": 2,
-      "channel_layout": "stereo",
-      "bits_per_sample": 0,
-      "initial_padding": 0,
-      "id": "0x2",
-      "r_frame_rate": "0/0",
-      "avg_frame_rate": "0/0",
-      "time_base": "1/48000",
-      "start_pts": 0,
-      "start_time": "0.000000",
-      "duration_ts": 2880000,
-      "duration": "60.000000",
-      "bit_rate": "192981",
-      "nb_frames": "2814",
-      "extradata_size": 5,
-      "disposition": {
-        "default": 1,
-        "dub": 0,
-        "original": 0,
-        "comment": 0,
-        "lyrics": 0,
-        "karaoke": 0,
-        "forced": 0,
-        "hearing_impaired": 0,
-        "visual_impaired": 0,
-        "clean_effects": 0,
-        "attached_pic": 0,
-        "timed_thumbnails": 0,
-        "non_diegetic": 0,
-        "captions": 0,
-        "descriptions": 0,
-        "metadata": 0,
-        "dependent": 0,
-        "still_image": 0
-      },
-      "tags": {
-        "language": "und",
-        "handler_name": "SoundHandler",
-        "vendor_id": "[0][0][0][0]"
-      }
-    }
-  ],
-  "format": {
-    "filename": "/tmp/cut-v09/videos/team-b/cut-v10/video.mp4",
-    "nb_streams": 2,
-    "nb_programs": 0,
-    "nb_stream_groups": 0,
-    "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
-    "format_long_name": "QuickTime / MOV",
-    "start_time": "0.000000",
-    "duration": "60.000000",
-    "size": "35393400",
-    "bit_rate": "4719120",
-    "probe_score": 100,
-    "tags": {
-      "major_brand": "isom",
-      "minor_version": "512",
-      "compatible_brands": "isomiso2avc1mp41",
-      "encoder": "Lavf61.1.100"
-    }
-  }
+  "input_i": "-22.18",
+  "input_tp": "-5.75",
+  "input_lra": "5.10",
+  "input_thresh": "-32.25",
+  "output_i": "-16.36",
+  "output_tp": "-1.50",
+  "output_lra": "2.50",
+  "output_thresh": "-26.41",
+  "normalization_type": "dynamic",
+  "target_offset": "0.36"
 }
 ```
 
-### Structural scan log
+### Loudnorm JSON — pass 2 (normalized PCM master)
 
-```text
-Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/tmp/cut-v09/videos/team-b/cut-v10/video.mp4':
-  Metadata:
-    major_brand     : isom
-    minor_version   : 512
-    compatible_brands: isomiso2avc1mp41
-    encoder         : Lavf61.1.100
-  Duration: 00:01:00.00, start: 0.000000, bitrate: 4719 kb/s
-  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080, 4517 kb/s, 30 fps, 30 tbr, 15360 tbn (default)
-      Metadata:
-        handler_name    : VideoHandler
-        vendor_id       : [0][0][0][0]
-        encoder         : Lavc61.3.100 libx264
-  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 192 kb/s (default)
-      Metadata:
-        handler_name    : SoundHandler
-        vendor_id       : [0][0][0][0]
-Stream mapping:
-  Stream #0:0 -> #0:0 (h264 (native) -> wrapped_avframe (native))
-Press [q] to stop, [?] for help
-Output #0, null, to 'pipe:':
-  Metadata:
-    major_brand     : isom
-    minor_version   : 512
-    compatible_brands: isomiso2avc1mp41
-    encoder         : Lavf61.1.100
-  Stream #0:0(und): Video: wrapped_avframe, yuv420p(progressive), 1920x1080, q=2-31, 200 kb/s, 30 fps, 30 tbn (default)
-      Metadata:
-        handler_name    : VideoHandler
-        vendor_id       : [0][0][0][0]
-        encoder         : Lavc61.3.100 wrapped_avframe
-frame=   78 fps=0.0 q=-0.0 size=N/A time=00:00:02.60 bitrate=N/A speed=5.19x    
-frame=  168 fps=168 q=-0.0 size=N/A time=00:00:05.60 bitrate=N/A speed=5.59x    
-frame=  248 fps=165 q=-0.0 size=N/A time=00:00:08.26 bitrate=N/A speed= 5.5x    
-frame=  324 fps=162 q=-0.0 size=N/A time=00:00:10.80 bitrate=N/A speed=5.39x    
-frame=  445 fps=178 q=-0.0 size=N/A time=00:00:14.83 bitrate=N/A speed=5.93x    
-frame=  563 fps=187 q=-0.0 size=N/A time=00:00:18.76 bitrate=N/A speed=6.25x    
-frame=  695 fps=198 q=-0.0 size=N/A time=00:00:23.16 bitrate=N/A speed=6.61x    
-frame=  821 fps=205 q=-0.0 size=N/A time=00:00:27.36 bitrate=N/A speed=6.83x    
-frame=  936 fps=208 q=-0.0 size=N/A time=00:00:31.20 bitrate=N/A speed=6.93x    
-frame= 1031 fps=206 q=-0.0 size=N/A time=00:00:34.36 bitrate=N/A speed=6.87x    
-frame= 1117 fps=203 q=-0.0 size=N/A time=00:00:37.23 bitrate=N/A speed=6.76x    
-frame= 1233 fps=205 q=-0.0 size=N/A time=00:00:41.10 bitrate=N/A speed=6.84x    
-frame= 1353 fps=208 q=-0.0 size=N/A time=00:00:45.10 bitrate=N/A speed=6.93x    
-frame= 1471 fps=210 q=-0.0 size=N/A time=00:00:49.03 bitrate=N/A speed=   7x    
-frame= 1594 fps=212 q=-0.0 size=N/A time=00:00:53.13 bitrate=N/A speed=7.08x    
-frame= 1718 fps=215 q=-0.0 size=N/A time=00:00:57.26 bitrate=N/A speed=7.15x    
-[out#0/null @ 0x7479c40] video:773KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
-frame= 1800 fps=216 q=-0.0 Lsize=N/A time=00:01:00.00 bitrate=N/A speed=7.21x
+```json
+{
+  "input_i": "-22.18",
+  "input_tp": "-5.75",
+  "input_lra": "5.10",
+  "input_thresh": "-32.25",
+  "output_i": "-16.07",
+  "output_tp": "-1.50",
+  "output_lra": "2.50",
+  "output_thresh": "-26.11",
+  "normalization_type": "dynamic",
+  "target_offset": "0.07"
+}
 ```
+
+### Loudnorm JSON — decoded final MP4 AAC (verification)
+
+`input_i` and `input_tp` below are the measured delivered AAC values.
+
+```json
+{
+  "input_i": "-16.27",
+  "input_tp": "-1.41",
+  "input_lra": "4.60",
+  "input_thresh": "-26.31",
+  "output_i": "-16.15",
+  "output_tp": "-1.50",
+  "output_lra": "2.50",
+  "output_thresh": "-26.24",
+  "normalization_type": "dynamic",
+  "target_offset": "0.15"
+}
+```
+
+### Final `ffprobe` summary
+
+Full machine-readable output is committed at `audio/final_ffprobe.json`.
+
+```json
+{
+  "video": {"codec_name":"h264","width":1920,"height":1080,"r_frame_rate":"30/1","nb_frames":"1800","duration":"60.000000"},
+  "audio": {"codec_name":"aac","sample_rate":"48000","channels":2,"duration":"60.000000"},
+  "format": {"duration":"60.000000","size":"35395888"}
+}
+```
+
+Human review disclosure: **no human listened**; verification is numeric and structural only.
