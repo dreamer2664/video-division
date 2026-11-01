@@ -1,0 +1,721 @@
+{
+  "description": "Decoded actual master: interior glyph pixels of non-initial cue words change from white to amber/crimson on the first telemetry-eligible frame; prior frame is sampled. Not a perceptual intelligibility test.",
+  "eligible": 89,
+  "pass": 89,
+  "failures": [],
+  "median_blue_drop": 163.238,
+  "checks": [
+    {
+      "word": "two",
+      "frame": 16,
+      "before": 246.06908212560387,
+      "after": 79.97294685990339,
+      "blue_drop": 166.096,
+      "passes": true
+    },
+    {
+      "word": "fourteen",
+      "frame": 25,
+      "before": 246.18504672897197,
+      "after": 81.27206645898235,
+      "blue_drop": 164.913,
+      "passes": true
+    },
+    {
+      "word": "hotel",
+      "frame": 57,
+      "before": 245.8466734211415,
+      "after": 82.25194191151638,
+      "blue_drop": 163.595,
+      "passes": true
+    },
+    {
+      "word": "records",
+      "frame": 74,
+      "before": 245.31821454283659,
+      "after": 81.47300215982722,
+      "blue_drop": 163.845,
+      "passes": true
+    },
+    {
+      "word": "an",
+      "frame": 88,
+      "before": 246.04813218390805,
+      "after": 80.02658045977012,
+      "blue_drop": 166.022,
+      "passes": true
+    },
+    {
+      "word": "arrival",
+      "frame": 92,
+      "before": 245.44349030470914,
+      "after": 81.32770083102493,
+      "blue_drop": 164.116,
+      "passes": true
+    },
+    {
+      "word": "lobby",
+      "frame": 125,
+      "before": 245.15384615384616,
+      "after": 81.71033653846153,
+      "blue_drop": 163.444,
+      "passes": true
+    },
+    {
+      "word": "is",
+      "frame": 141,
+      "before": 246.4260700389105,
+      "after": 81.95428015564202,
+      "blue_drop": 164.472,
+      "passes": true
+    },
+    {
+      "word": "empty",
+      "frame": 147,
+      "before": 244.80575930453682,
+      "after": 82.11518609073622,
+      "blue_drop": 162.691,
+      "passes": true
+    },
+    {
+      "word": "rattles",
+      "frame": 184,
+      "before": 246.73262629081776,
+      "after": 81.64303656154061,
+      "blue_drop": 165.09,
+      "passes": true
+    },
+    {
+      "word": "the",
+      "frame": 197,
+      "before": 245.07341907824224,
+      "after": 83.47159699892819,
+      "blue_drop": 161.602,
+      "passes": true
+    },
+    {
+      "word": "awning",
+      "frame": 202,
+      "before": 245.75512061902594,
+      "after": 81.27742375967227,
+      "blue_drop": 164.478,
+      "passes": true
+    },
+    {
+      "word": "footprints",
+      "frame": 235,
+      "before": 245.4305605141021,
+      "after": 81.88629061049625,
+      "blue_drop": 163.544,
+      "passes": true
+    },
+    {
+      "word": "cross",
+      "frame": 254,
+      "before": 244.5615780445969,
+      "after": 81.95471698113208,
+      "blue_drop": 162.607,
+      "passes": true
+    },
+    {
+      "word": "the",
+      "frame": 265,
+      "before": 245.78885316184352,
+      "after": 80.86870310825294,
+      "blue_drop": 164.92,
+      "passes": true
+    },
+    {
+      "word": "marble",
+      "frame": 268,
+      "before": 245.5902997806483,
+      "after": 81.50280282719962,
+      "blue_drop": 164.087,
+      "passes": true
+    },
+    {
+      "word": "room",
+      "frame": 302,
+      "before": 245.8533611981888,
+      "after": 81.75269940787182,
+      "blue_drop": 164.101,
+      "passes": true
+    },
+    {
+      "word": "keys",
+      "frame": 312,
+      "before": 244.87406576980567,
+      "after": 81.59304932735427,
+      "blue_drop": 163.281,
+      "passes": true
+    },
+    {
+      "word": "are",
+      "frame": 324,
+      "before": 245.29651162790697,
+      "after": 82.46918604651162,
+      "blue_drop": 162.827,
+      "passes": true
+    },
+    {
+      "word": "missing",
+      "frame": 328,
+      "before": 245.5029313232831,
+      "after": 81.99706867671692,
+      "blue_drop": 163.506,
+      "passes": true
+    },
+    {
+      "word": "ledger",
+      "frame": 358,
+      "before": 244.7656792100347,
+      "after": 81.19855884707766,
+      "blue_drop": 163.567,
+      "passes": true
+    },
+    {
+      "word": "says",
+      "frame": 371,
+      "before": 242.93505976095616,
+      "after": 82.15099601593626,
+      "blue_drop": 160.784,
+      "passes": true
+    },
+    {
+      "word": "three",
+      "frame": 383,
+      "before": 242.94970920287375,
+      "after": 82.26240164214848,
+      "blue_drop": 160.687,
+      "passes": true
+    },
+    {
+      "word": "arrivals",
+      "frame": 393,
+      "before": 243.93475682087782,
+      "after": 82.55871886120997,
+      "blue_drop": 161.376,
+      "passes": true
+    },
+    {
+      "word": "night",
+      "frame": 430,
+      "before": 243.29635449402892,
+      "after": 81.53865493400377,
+      "blue_drop": 161.758,
+      "passes": true
+    },
+    {
+      "word": "clerk",
+      "frame": 441,
+      "before": 243.641713091922,
+      "after": 81.41713091922006,
+      "blue_drop": 162.225,
+      "passes": true
+    },
+    {
+      "word": "checks",
+      "frame": 453,
+      "before": 243.49791308617728,
+      "after": 80.93665602749816,
+      "blue_drop": 162.561,
+      "passes": true
+    },
+    {
+      "word": "wake-up",
+      "frame": 468,
+      "before": 243.40993788819875,
+      "after": 81.81066609552367,
+      "blue_drop": 161.599,
+      "passes": true
+    },
+    {
+      "word": "list",
+      "frame": 482,
+      "before": 242.80954852101712,
+      "after": 82.72029060716139,
+      "blue_drop": 160.089,
+      "passes": true
+    },
+    {
+      "word": "call",
+      "frame": 510,
+      "before": 243.38457899716178,
+      "after": 80.8561967833491,
+      "blue_drop": 162.528,
+      "passes": true
+    },
+    {
+      "word": "is",
+      "frame": 522,
+      "before": 245.1614785992218,
+      "after": 82.11186770428016,
+      "blue_drop": 163.05,
+      "passes": true
+    },
+    {
+      "word": "set",
+      "frame": 527,
+      "before": 245.33986928104576,
+      "after": 80.9673202614379,
+      "blue_drop": 164.373,
+      "passes": true
+    },
+    {
+      "word": "for",
+      "frame": 535,
+      "before": 245.65770491803278,
+      "after": 82.59868852459016,
+      "blue_drop": 163.059,
+      "passes": true
+    },
+    {
+      "word": "four",
+      "frame": 551,
+      "before": 246.01417811253876,
+      "after": 81.75631369073992,
+      "blue_drop": 164.258,
+      "passes": true
+    },
+    {
+      "word": "hundred",
+      "frame": 560,
+      "before": 245.15919282511211,
+      "after": 81.70260905014268,
+      "blue_drop": 163.457,
+      "passes": true
+    },
+    {
+      "word": "and",
+      "frame": 569,
+      "before": 245.00775547445255,
+      "after": 81.3029197080292,
+      "blue_drop": 163.705,
+      "passes": true
+    },
+    {
+      "word": "eight",
+      "frame": 574,
+      "before": 245.51765447667086,
+      "after": 81.88020176544767,
+      "blue_drop": 163.637,
+      "passes": true
+    },
+    {
+      "word": "room",
+      "frame": 604,
+      "before": 245.10344827586206,
+      "after": 82.37199582027168,
+      "blue_drop": 162.731,
+      "passes": true
+    },
+    {
+      "word": "has",
+      "frame": 611,
+      "before": 244.99951361867704,
+      "after": 81.8579766536965,
+      "blue_drop": 163.142,
+      "passes": true
+    },
+    {
+      "word": "been",
+      "frame": 628,
+      "before": 245.6382529059528,
+      "after": 81.57872490313491,
+      "blue_drop": 164.06,
+      "passes": true
+    },
+    {
+      "word": "let",
+      "frame": 634,
+      "before": 244.92797427652732,
+      "after": 81.96012861736334,
+      "blue_drop": 162.968,
+      "passes": true
+    },
+    {
+      "word": "cancels",
+      "frame": 659,
+      "before": 245.14630187804312,
+      "after": 82.17992116856017,
+      "blue_drop": 162.966,
+      "passes": true
+    },
+    {
+      "word": "it",
+      "frame": 676,
+      "before": 243.09471365638765,
+      "after": 81.82819383259911,
+      "blue_drop": 161.267,
+      "passes": true
+    },
+    {
+      "word": "telephone",
+      "frame": 696,
+      "before": 243.53441435225116,
+      "after": 81.41969984474729,
+      "blue_drop": 162.115,
+      "passes": true
+    },
+    {
+      "word": "rings",
+      "frame": 716,
+      "before": 245.0826057756884,
+      "after": 81.32471457353928,
+      "blue_drop": 163.758,
+      "passes": true
+    },
+    {
+      "word": "anyway",
+      "frame": 728,
+      "before": 243.77288368891948,
+      "after": 81.97086487726543,
+      "blue_drop": 161.802,
+      "passes": true
+    },
+    {
+      "word": "upstairs",
+      "frame": 762,
+      "before": 244.29888209238558,
+      "after": 81.62117696688462,
+      "blue_drop": 162.678,
+      "passes": true
+    },
+    {
+      "word": "lift",
+      "frame": 796,
+      "before": 243.689776733255,
+      "after": 81.53466509988249,
+      "blue_drop": 162.155,
+      "passes": true
+    },
+    {
+      "word": "answers",
+      "frame": 806,
+      "before": 244.09955517898752,
+      "after": 81.6846007201864,
+      "blue_drop": 162.415,
+      "passes": true
+    },
+    {
+      "word": "no",
+      "frame": 837,
+      "before": 246.27163120567377,
+      "after": 81.87659574468086,
+      "blue_drop": 164.395,
+      "passes": true
+    },
+    {
+      "word": "one",
+      "frame": 846,
+      "before": 245.03969022265247,
+      "after": 82.48160696999032,
+      "blue_drop": 162.558,
+      "passes": true
+    },
+    {
+      "word": "a",
+      "frame": 865,
+      "before": 246.50678733031674,
+      "after": 82.06938159879337,
+      "blue_drop": 164.437,
+      "passes": true
+    },
+    {
+      "word": "button",
+      "frame": 867,
+      "before": 245.72186119053808,
+      "after": 82.00727839875228,
+      "blue_drop": 163.715,
+      "passes": true
+    },
+    {
+      "word": "doors",
+      "frame": 897,
+      "before": 245.00789141414143,
+      "after": 81.76957070707071,
+      "blue_drop": 163.238,
+      "passes": true
+    },
+    {
+      "word": "open",
+      "frame": 911,
+      "before": 245.2439706396365,
+      "after": 81.57567284166376,
+      "blue_drop": 163.668,
+      "passes": true
+    },
+    {
+      "word": "on",
+      "frame": 921,
+      "before": 246.55248226950354,
+      "after": 81.42127659574469,
+      "blue_drop": 165.131,
+      "passes": true
+    },
+    {
+      "word": "an",
+      "frame": 926,
+      "before": 245.54956896551724,
+      "after": 83.98922413793103,
+      "blue_drop": 161.56,
+      "passes": true
+    },
+    {
+      "word": "car",
+      "frame": 940,
+      "before": 244.97714285714287,
+      "after": 82.71485714285714,
+      "blue_drop": 162.262,
+      "passes": true
+    },
+    {
+      "word": "footprint",
+      "frame": 967,
+      "before": 245.64038423053833,
+      "after": 81.36561937162297,
+      "blue_drop": 164.275,
+      "passes": true
+    },
+    {
+      "word": "stops",
+      "frame": 983,
+      "before": 245.22361647361646,
+      "after": 80.97361647361647,
+      "blue_drop": 164.25,
+      "passes": true
+    },
+    {
+      "word": "the",
+      "frame": 1000,
+      "before": 243.02893890675242,
+      "after": 81.88049303322616,
+      "blue_drop": 161.148,
+      "passes": true
+    },
+    {
+      "word": "desk",
+      "frame": 1003,
+      "before": 244.8394210889042,
+      "after": 82.2801516195727,
+      "blue_drop": 162.559,
+      "passes": true
+    },
+    {
+      "word": "ledger",
+      "frame": 1034,
+      "before": 245.78089137977048,
+      "after": 81.61729383506805,
+      "blue_drop": 164.164,
+      "passes": true
+    },
+    {
+      "word": "changes",
+      "frame": 1046,
+      "before": 245.32555282555282,
+      "after": 82.2487714987715,
+      "blue_drop": 163.077,
+      "passes": true
+    },
+    {
+      "word": "to",
+      "frame": 1061,
+      "before": 245.80507706255668,
+      "after": 81.20580235720762,
+      "blue_drop": 164.599,
+      "passes": true
+    },
+    {
+      "word": "four",
+      "frame": 1066,
+      "before": 245.70431034482758,
+      "after": 81.26896551724138,
+      "blue_drop": 164.435,
+      "passes": true
+    },
+    {
+      "word": "guests",
+      "frame": 1171,
+      "before": 245.11867852604828,
+      "after": 81.93443456162643,
+      "blue_drop": 163.184,
+      "passes": true
+    },
+    {
+      "word": "clerk",
+      "frame": 1199,
+      "before": 244.7128412537917,
+      "after": 82.61678463094034,
+      "blue_drop": 162.096,
+      "passes": true
+    },
+    {
+      "word": "whoever",
+      "frame": 1225,
+      "before": 244.49714648065947,
+      "after": 60.07989854153456,
+      "blue_drop": 184.417,
+      "passes": true
+    },
+    {
+      "word": "is",
+      "frame": 1239,
+      "before": 245.34241245136187,
+      "after": 59.61770428015564,
+      "blue_drop": 185.725,
+      "passes": true
+    },
+    {
+      "word": "behind",
+      "frame": 1259,
+      "before": 245.54315689079638,
+      "after": 60.4687649022413,
+      "blue_drop": 185.074,
+      "passes": true
+    },
+    {
+      "word": "him",
+      "frame": 1271,
+      "before": 245.75020990764065,
+      "after": 60.26238455079765,
+      "blue_drop": 185.488,
+      "passes": true
+    },
+    {
+      "word": "the",
+      "frame": 1301,
+      "before": 245.89389067524115,
+      "after": 80.90568060021437,
+      "blue_drop": 164.988,
+      "passes": true
+    },
+    {
+      "word": "arrivals",
+      "frame": 1304,
+      "before": 245.27095375722544,
+      "after": 81.94894026974951,
+      "blue_drop": 163.322,
+      "passes": true
+    },
+    {
+      "word": "balance",
+      "frame": 1324,
+      "before": 245.81297461488393,
+      "after": 81.56042525493599,
+      "blue_drop": 164.253,
+      "passes": true
+    },
+    {
+      "word": "six",
+      "frame": 1361,
+      "before": 245.43545508625817,
+      "after": 82.4479476502082,
+      "blue_drop": 162.988,
+      "passes": true
+    },
+    {
+      "word": "wake-up",
+      "frame": 1389,
+      "before": 244.67873206254015,
+      "after": 81.43264082244592,
+      "blue_drop": 163.246,
+      "passes": true
+    },
+    {
+      "word": "call",
+      "frame": 1403,
+      "before": 245.01229895931883,
+      "after": 82.92667928098392,
+      "blue_drop": 162.086,
+      "passes": true
+    },
+    {
+      "word": "connects",
+      "frame": 1413,
+      "before": 244.45540647198106,
+      "after": 82.16988950276243,
+      "blue_drop": 162.286,
+      "passes": true
+    },
+    {
+      "word": "to",
+      "frame": 1427,
+      "before": 245.18585675430643,
+      "after": 82.6844968268359,
+      "blue_drop": 162.501,
+      "passes": true
+    },
+    {
+      "word": "unlet",
+      "frame": 1436,
+      "before": 245.05350491026076,
+      "after": 81.37690484253302,
+      "blue_drop": 163.677,
+      "passes": true
+    },
+    {
+      "word": "room",
+      "frame": 1450,
+      "before": 243.93353783231083,
+      "after": 81.99965916837083,
+      "blue_drop": 161.934,
+      "passes": true
+    },
+    {
+      "word": "one",
+      "frame": 1478,
+      "before": 243.96369796708615,
+      "after": 82.09002904162634,
+      "blue_drop": 161.874,
+      "passes": true
+    },
+    {
+      "word": "is",
+      "frame": 1483,
+      "before": 244.62451361867704,
+      "after": 81.05933852140078,
+      "blue_drop": 163.565,
+      "passes": true
+    },
+    {
+      "word": "left",
+      "frame": 1488,
+      "before": 243.33229974160207,
+      "after": 81.1937984496124,
+      "blue_drop": 162.139,
+      "passes": true
+    },
+    {
+      "word": "reception",
+      "frame": 1503,
+      "before": 244.29743780170813,
+      "after": 82.26735982176012,
+      "blue_drop": 162.03,
+      "passes": true
+    },
+    {
+      "word": "to",
+      "frame": 1521,
+      "before": 242.58023572076155,
+      "after": 82.74524025385313,
+      "blue_drop": 159.835,
+      "passes": true
+    },
+    {
+      "word": "who",
+      "frame": 1533,
+      "before": 244.23193760262726,
+      "after": 81.89819376026273,
+      "blue_drop": 162.334,
+      "passes": true
+    },
+    {
+      "word": "answers",
+      "frame": 1537,
+      "before": 244.0842397099595,
+      "after": 81.27319257837492,
+      "blue_drop": 162.811,
+      "passes": true
+    }
+  ]
+}
