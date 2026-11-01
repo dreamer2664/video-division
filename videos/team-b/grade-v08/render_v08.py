@@ -1,0 +1,465 @@
+#!/usr/bin/env python3
+"""
+Memory-lean (<240 MB RAM) 1080p30 House-Look cinema renderer for MARK SEVEN (videos/team-b/grade-v08).
+
+Applies four 500T film-emulsion 33x33x33 .cube 3D LUTs (black_floor=0.004 power-toe crush + steep midtone
+S-curve + highlight shoulder), dual-sigma 500T red-amber halation back-scatter ([1.00, 0.38, 0.08]),
+continuous sub-pixel BICUBIC camera motion, 2-plane parallax canyon storm rain + wind-driven valley mist,
+subtle 2600K streetlamp shimmer, and 39 strict 3-5 word WordBoundary-locked captions.
+"""
+
+import gc
+import hashlib
+import json
+import math
+import os
+import subprocess
+import numpy as np
+from PIL import Image, ImageDraw, ImageFilter, ImageFont
+from scipy.io import wavfile
+
+W, H = 1920, 1080
+FPS = 30
+TOTAL_FRAMES = 1800
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+PLATES_DIR = os.path.join(HERE, "plates")
+LUTS_DIR = os.path.join(HERE, "luts")
+TIMING_DIR = os.path.join(HERE, "timing")
+AUDIO_DIR = os.path.join(HERE, "audio")
+STILLS_DIR = os.path.join(HERE, "stills")
+OUT_MP4 = os.path.join(HERE, "video.mp4")
+CLIPS_DIR = "/tmp/grade_v08_build/clips"
+MASTER_WAV = "/tmp/grade_v08_build/master_audio_48k.wav"
+
+
+def find_font(candidates: list[str]) -> str:
+    for p in candidates:
+        if os.path.exists(p):
+            return p
+    raise FileNotFoundError(f"None of {candidates} found")
+
+
+def load_cube_lut(path: str) -> np.ndarray:
+    rows = []
+    size = 33
+    with open(path, "r", encoding="utf-8") as f:
+        for line in f:
+            s = line.strip()
+            if not s or s.startswith("#") or s.startswith("TITLE") or s.startswith("DOMAIN"):
+                continue
+            if s.startswith("LUT_3D_SIZE"):
+                size = int(s.split()[1])
+                continue
+            parts = s.split()
+            if len(parts) == 3:
+                rows.append((float(parts[0]), float(parts[1]), float(parts[2])))
+    arr = np.array(rows, dtype=np.float32).reshape((size, size, size, 3))
+    return np.transpose(arr, (2, 1, 0, 3)).copy()
+
+
+def apply_lut_trilinear(img01: np.ndarray, lut: np.ndarray) -> np.ndarray:
+    n = lut.shape[0] - 1
+    scaled = np.clip(img01, 0.0, 1.0) * np.float32(n)
+    idx0 = np.clip(np.floor(scaled).astype(np.int32), 0, n - 1)
+    idx1 = idx0 + 1
+    fr = (scaled - idx0).astype(np.float32)
+
+    r0, g0, b0 = idx0[:, :, 0], idx0[:, :, 1], idx0[:, :, 2]
+    r1, g1, b1 = idx1[:, :, 0], idx1[:, :, 1], idx1[:, :, 2]
+    dr, dg, db = fr[:, :, 0:1], fr[:, :, 1:2], fr[:, :, 2:3]
+
+    c00 = lut[r0, g0, b0] * (1.0 - dr) + lut[r1, g0, b0] * dr
+    c01 = lut[r0, g0, b1] * (1.0 - dr) + lut[r1, g0, b1] * dr
+    c10 = lut[r0, g1, b0] * (1.0 - dr) + lut[r1, g1, b0] * dr
+    c11 = lut[r0, g1, b1] * (1.0 - dr) + lut[r1, g1, b1] * dr
+
+    c0 = c00 * (1.0 - dg) + c10 * dg
+    c1 = c01 * (1.0 - dg) + c11 * dg
+    return np.clip(c0 * (1.0 - db) + c1 * db, 0.0, 1.0).astype(np.float32)
+
+
+def apply_halation_bloom(img01: np.ndarray, threshold: float = 0.68, strength: float = 0.25) -> np.ndarray:
+    luma = 0.2126 * img01[:, :, 0] + 0.7152 * img01[:, :, 1] + 0.0722 * img01[:, :, 2]
+    hi = np.clip((luma - threshold) / max(1.0 - threshold, 1e-4), 0.0, 1.0) ** 1.35
+    hi_u8 = Image.fromarray((hi * 255.0 + 0.5).astype(np.uint8))
+
+    tight = np.array(hi_u8.filter(ImageFilter.GaussianBlur(radius=6.5)), dtype=np.float32) / 255.0
+    wide = np.array(hi_u8.filter(ImageFilter.GaussianBlur(radius=24.0)), dtype=np.float32) / 255.0
+    scatter = (0.62 * tight + 0.38 * wide) * np.float32(strength)
+
+    tint = np.array([1.00, 0.38, 0.08], dtype=np.float32)[None, None, :]
+    bloom = np.clip(scatter[:, :, None] * tint, 0.0, 0.65)
+    return np.clip(1.0 - (1.0 - img01) * (1.0 - bloom), 0.0, 1.0).astype(np.float32)
+
+
+def build_rain_tile(seed: int, density: float, length: int, angle_deg: float, blur_r: float) -> np.ndarray:
+    tw, th = 2240, 1360
+    rng = np.random.default_rng(seed)
+    canvas = Image.new("L", (tw, th), 0)
+    draw = ImageDraw.Draw(canvas)
+    rad = math.radians(angle_deg)
+    dx = math.sin(rad) * length
+    dy = math.cos(rad) * length
+    for _ in range(int(tw * th * density)):
+        x0 = rng.uniform(-80, tw + 80)
+        y0 = rng.uniform(-80, th + 80)
+        bright = int(rng.uniform(95, 245))
+        width = 1 if rng.random() < 0.78 else 2
+        for ox in (-tw, 0, tw):
+            for oy in (-th, 0, th):
+                sx, sy = x0 + ox, y0 + oy
+                if -length <= sx <= tw + length and -length <= sy <= th + length:
+                    draw.line([(sx, sy), (sx + dx, sy + dy)], fill=bright, width=width)
+    if blur_r > 0:
+        canvas = canvas.filter(ImageFilter.GaussianBlur(blur_r))
+    return np.array(canvas, dtype=np.float32) / 255.0
+
+
+def build_mist_tile(seed: int = 918, tw: int = 2240, th: int = 1360) -> np.ndarray:
+    rng = np.random.default_rng(seed)
+    coarse = rng.uniform(0.0, 1.0, (th // 32, tw // 32)).astype(np.float32)
+    pil_m = Image.fromarray((coarse * 255.0).astype(np.uint8)).resize((tw, th), Image.Resampling.BICUBIC)
+    pil_m = pil_m.filter(ImageFilter.GaussianBlur(radius=38.0))
+    arr = np.array(pil_m, dtype=np.float32) / 255.0
+    return np.clip((arr - 0.41) * 1.9, 0.0, 1.0)
+
+
+def tokenize_cue(text: str, speaker: str) -> list[tuple[str, str]]:
+    base_role = "ivory" if speaker == "A" else "ice"
+    out = []
+    for w in text.split():
+        clean = w.upper().strip(".,?!;:")
+        if clean in ("SEVEN", "FLOODED", "STOPPED", "DROWNING", "SIX"):
+            out.append((w, "crimson"))
+        elif clean in ("MARK", "VAULT", "LOWGATE", "TWO", "INCHES", "AMBER", "TOWN", "STANDING"):
+            out.append((w, "amber"))
+        else:
+            out.append((w, base_role))
+    return out
+
+
+def render_caption_overlay(text: str, speaker: str) -> tuple:
+    font_main = ImageFont.truetype(find_font([
+        "/usr/share/fonts/opentype/inter/InterDisplay-Bold.otf",
+        "/usr/share/fonts/opentype/inter/Inter-Bold.otf",
+        "/usr/share/fonts/truetype/liberation2/LiberationSans-Bold.ttf",
+    ]), 52)
+    font_tag = ImageFont.truetype(find_font([
+        "/usr/share/fonts/opentype/inter/Inter-SemiBold.otf",
+        "/usr/share/fonts/truetype/liberation2/LiberationSans-Bold.ttf",
+    ]), 21)
+
+    COLORS = {
+        "ivory": (244, 245, 248),
+        "ice": (232, 244, 255),
+        "amber": (245, 209, 78),   # #F5D14E House Amber
+        "crimson": (234, 68, 60),  # #EA443C Threat / Benchmark Crimson
+    }
+
+    tokens = tokenize_cue(text, speaker)
+    dummy = ImageDraw.Draw(Image.new("RGBA", (10, 10)))
+    space_w = dummy.textlength(" ", font=font_main)
+    widths = [dummy.textlength(t, font=font_main) for t, _ in tokens]
+    text_w = sum(widths) + space_w * max(0, len(tokens) - 1)
+
+    tag_str = "CREST · " if speaker == "A" else "LEVEE · "
+    tag_col = (245, 209, 78, 238) if speaker == "A" else (98, 212, 255, 238)
+    tag_w = dummy.textlength(tag_str, font=font_tag) + 8
+
+    pad_x = 32
+    box_w = int(math.ceil(tag_w + text_w + pad_x * 2))
+    box_h = 92
+    patch = Image.new("RGBA", (box_w + 24, box_h + 24), (0, 0, 0, 0))
+    d = ImageDraw.Draw(patch)
+
+    bg_col = (6, 8, 14, 212) if speaker == "A" else (5, 11, 20, 212)
+    bdr_col = (245, 209, 78, 70) if speaker == "A" else (98, 212, 255, 74)
+    d.rounded_rectangle([12, 12, 12 + box_w, 12 + box_h], radius=15, fill=bg_col, outline=bdr_col, width=1)
+
+    if speaker == "A":
+        d.rounded_rectangle([12, 24, 17, 12 + box_h - 12], radius=2, fill=(245, 209, 78, 242))
+    else:
+        d.rounded_rectangle([12 + box_w - 5, 24, 12 + box_w, 12 + box_h - 12], radius=2, fill=(98, 212, 255, 242))
+
+    cur_x = 12 + pad_x
+    d.text((cur_x, 45), tag_str.strip(), font=font_tag, fill=tag_col, stroke_width=2, stroke_fill=(3, 6, 12, 230))
+    cur_x += tag_w
+
+    text_y = 25
+    for (txt, role), w_px in zip(tokens, widths):
+        col = COLORS[role]
+        d.text((cur_x, text_y + 3), txt, font=font_main, fill=(0, 0, 0, 225), stroke_width=5, stroke_fill=(3, 5, 10, 225))
+        d.text((cur_x, text_y), txt, font=font_main, fill=(*col, 255), stroke_width=3, stroke_fill=(4, 7, 13, 245))
+        cur_x += w_px + space_w
+
+    arr = np.array(patch, dtype=np.float32) / 255.0
+    pan_shift = -88 if speaker == "A" else +88
+    x0 = max(28, min(W - arr.shape[1] - 28, (W - arr.shape[1]) // 2 + pan_shift))
+    y0 = 910
+    return x0, y0, arr
+
+
+def render_title_card() -> tuple:
+    f_title = ImageFont.truetype(find_font([
+        "/usr/share/fonts/opentype/ebgaramond/EBGaramond12-Regular.otf",
+        "/usr/share/fonts/opentype/ebgaramond/EBGaramond08-Regular.otf",
+        "/usr/share/fonts/truetype/liberation2/LiberationSerif-Bold.ttf",
+    ]), 48)
+    f_sub = ImageFont.truetype(find_font([
+        "/usr/share/fonts/opentype/inter/Inter-SemiBold.otf",
+        "/usr/share/fonts/truetype/liberation2/LiberationSans-Bold.ttf",
+    ]), 17)
+
+    patch = Image.new("RGBA", (720, 130), (0, 0, 0, 0))
+    d = ImageDraw.Draw(patch)
+    d.text((8, 10), "M A R K   S E V E N", font=f_title, fill=(244, 242, 236, 244), stroke_width=2, stroke_fill=(4, 7, 13, 195))
+    d.line([(10, 74), (452, 74)], fill=(245, 209, 78, 195), width=2)
+    d.text((10, 86), "03:14 AM   ·   LOWGATE GORGE & DAM RELAY", font=f_sub, fill=(245, 209, 78, 235), stroke_width=2, stroke_fill=(4, 7, 13, 195))
+    arr = np.array(patch, dtype=np.float32) / 255.0
+    return 86, 66, arr
+
+
+# (lut_stem, z0, z1, px0, px1, py0, py1, rain_amt, mist_amt, halation_amt)
+SHOT_SPECS = {
+    "01": ("valley_obsidian_500t", 1.000, 1.074,  0.000, -0.008,  0.006, -0.006, 0.30, 0.12, 0.25),
+    "02": ("gorge_cyan_6500k",     1.008, 1.076, -0.010,  0.010,  0.004, -0.004, 0.24, 0.09, 0.24),
+    "03": ("spillway_storm_7000k", 1.000, 1.080,  0.008, -0.008,  0.008, -0.008, 0.34, 0.15, 0.25),
+    "04": ("spillway_storm_7000k", 1.010, 1.082,  0.012, -0.010,  0.006, -0.006, 0.34, 0.14, 0.26),
+    "05": ("valley_obsidian_500t", 1.006, 1.076,  0.000,  0.000,  0.014, -0.012, 0.28, 0.11, 0.24),
+    "06": ("lowgate_sodium_2600k", 1.000, 1.078,  0.000,  0.000,  0.006, -0.008, 0.22, 0.09, 0.26),
+    "07": ("gorge_cyan_6500k",     1.000, 1.072,  0.000,  0.000,  0.006, -0.006, 0.20, 0.06, 0.24),
+    "08": ("valley_obsidian_500t", 1.066, 1.000,  0.000,  0.000, -0.006,  0.006, 0.18, 0.10, 0.28),  # Signature Wall-Frame!
+    "09": ("spillway_storm_7000k", 1.005, 1.074, -0.012,  0.012,  0.005, -0.005, 0.16, 0.14, 0.24),
+    "10": ("lowgate_sodium_2600k", 1.068, 1.000,  0.006, -0.006, -0.006,  0.006, 0.11, 0.12, 0.26),
+}
+
+
+def main() -> None:
+    os.makedirs(STILLS_DIR, exist_ok=True)
+    os.makedirs(CLIPS_DIR, exist_ok=True)
+
+    tl = json.load(open(os.path.join(TIMING_DIR, "timeline_locked.json")))
+    shots = tl["shots"]
+    cues = tl["cues"]
+
+    luts = {
+        name: load_cube_lut(os.path.join(LUTS_DIR, f"{name}.cube"))
+        for name in ("valley_obsidian_500t", "gorge_cyan_6500k", "spillway_storm_7000k", "lowgate_sodium_2600k")
+    }
+
+    rain_diag_far = build_rain_tile(seed=911, density=0.00058, length=48, angle_deg=12.5, blur_r=0.7)
+    rain_diag_near = build_rain_tile(seed=912, density=0.00024, length=90, angle_deg=14.0, blur_r=1.15)
+    mist_tile = build_mist_tile(seed=918)
+    tw, th = rain_diag_far.shape[1], rain_diag_far.shape[0]
+    rain_col = np.array([0.66, 0.82, 0.98], dtype=np.float32)
+    mist_col = np.array([0.52, 0.70, 0.88], dtype=np.float32)
+
+    caption_patches = []
+    for c in cues:
+        x0, y0, rgba = render_caption_overlay(c["text"], c["speaker"])
+        caption_patches.append({
+            "start": c["start"],
+            "end": c["end"],
+            "speaker": c["speaker"],
+            "x0": x0,
+            "y0": y0,
+            "rgb": rgba[:, :, :3].copy(),
+            "alpha": rgba[:, :, 3:4].copy(),
+        })
+
+    title_x0, title_y0, title_rgba = render_title_card()
+
+    still_targets = {
+        70:   "01_cliff_dam_overlook.png",
+        690:  "02_viaduct_flood_boil.png",
+        1185: "03_mark_seven_waterline_macro.png",
+        1335: "04_main_street_mark_seven.png",
+        1510: "05_three_mile_gorge_panorama.png",
+    }
+
+    clip_paths = []
+    cur_start_frame = 0
+
+    for s in shots:
+        sid = s["shot"]
+        n_frames = s["frames"]
+        s_frame = cur_start_frame
+        e_frame = s_frame + n_frames
+        cur_start_frame = e_frame
+
+        lut_name, z0, z1, px0, px1, py0, py1, rain_amt, mist_amt, hal_amt = SHOT_SPECS[sid]
+        pil_src = Image.open(os.path.join(PLATES_DIR, f"shot_{sid}.jpg")).convert("RGB")
+        if pil_src.size != (W, H):
+            pil_src = pil_src.resize((W, H), Image.Resampling.LANCZOS)
+        raw_arr = np.array(pil_src, dtype=np.float32) / np.float32(255.0)
+        del pil_src
+
+        halo = None
+        if sid == "08":
+            yy, xx = np.mgrid[0:H, 0:W].astype(np.float32)
+            halo = (
+                np.exp(-(((xx - 960.0) / 88.0) ** 2 + ((yy - 210.0) / 88.0) ** 2))
+                + 0.65 * np.exp(-(((xx - 960.0) / 72.0) ** 2 + ((yy - 820.0) / 220.0) ** 2))
+            ).astype(np.float32)
+            del xx, yy
+
+        graded = apply_lut_trilinear(raw_arr, luts[lut_name])
+        graded = apply_halation_bloom(graded, threshold=0.68, strength=hal_amt)
+        pil_single = Image.fromarray((graded * 255.0 + 0.5).astype(np.uint8))
+        del raw_arr, graded
+        gc.collect()
+
+        clip_path = os.path.join(CLIPS_DIR, f"clip_{sid}.mp4")
+        clip_paths.append(clip_path)
+
+        ff_clip = [
+            "ffmpeg", "-y", "-hide_banner", "-loglevel", "error",
+            "-f", "rawvideo", "-vcodec", "rawvideo",
+            "-s", f"{W}x{H}", "-pix_fmt", "rgb24", "-r", str(FPS),
+            "-i", "-",
+            "-vf", "noise=alls=4:allf=t+u",
+            "-c:v", "libx264", "-preset", "fast", "-crf", "14",
+            "-x264-params", "rc-lookahead=12:threads=2",
+            "-pix_fmt", "yuv420p", "-r", str(FPS),
+            clip_path,
+        ]
+        proc = subprocess.Popen(ff_clip, stdin=subprocess.PIPE)
+
+        for f_idx in range(s_frame, e_frame):
+            t = f_idx / FPS
+            u = (f_idx - s_frame) / max(n_frames - 1, 1)
+            u_smooth = 0.35 * (0.5 - 0.5 * math.cos(math.pi * u)) + 0.65 * u
+
+            zoom = z0 + (z1 - z0) * u_smooth
+            px = px0 + (px1 - px0) * u_smooth
+            py = py0 + (py1 - py0) * u_smooth
+
+            cw, ch = W / zoom, H / zoom
+            cx, cy = (W * 0.5) + px * W, (H * 0.5) + py * H
+            bx0 = max(0.0, min(W - cw, cx - cw * 0.5))
+            by0 = max(0.0, min(H - ch, cy - ch * 0.5))
+
+            moved = pil_single.transform((W, H), Image.Transform.EXTENT, (bx0, by0, bx0 + cw, by0 + ch), Image.Resampling.BICUBIC)
+            frame = np.array(moved, dtype=np.float32) * np.float32(1.0 / 255.0)
+
+            if sid == "08" and halo is not None:
+                p = np.float32(0.032 + 0.014 * math.sin(t * 4.8))
+                frame[:, :, 0] += halo * (p * np.float32(1.18))
+                frame[:, :, 1] += halo * (p * np.float32(0.62))
+
+            if mist_amt > 0.0:
+                mx = int((f_idx * 9) % (tw - W))
+                my = int((f_idx * 2) % (th - H))
+                mv = mist_tile[my:my + H, mx:mx + W] * np.float32(mist_amt)
+                np.clip(frame, 0.0, 1.0, out=frame)
+                frame = np.float32(1.0) - (np.float32(1.0) - frame) * (np.float32(1.0) - mv[:, :, None] * mist_col)
+
+            if rain_amt > 0.0:
+                ox1 = int((f_idx * 18) % (tw - W))
+                oy1 = int((-f_idx * 56) % (th - H))
+                ox2 = int((f_idx * 31 + 290) % (tw - W))
+                oy2 = int((-f_idx * 94 + 160) % (th - H))
+                rt = (rain_diag_far[oy1:oy1 + H, ox1:ox1 + W] * np.float32(0.64) + rain_diag_near[oy2:oy2 + H, ox2:ox2 + W] * np.float32(0.88)) * np.float32(rain_amt)
+                np.clip(frame, 0.0, 1.0, out=frame)
+                frame = np.float32(1.0) - (np.float32(1.0) - frame) * (np.float32(1.0) - rt[:, :, None] * rain_col)
+
+            np.clip(frame, 0.0, 1.0, out=frame)
+
+            # Save clean uncaptioned Wall-Frame gallery print on Shot 08 @ frame 1398 (46.600 s)!
+            if sid == "08" and f_idx == 1398:
+                p_u8 = (frame * np.float32(255.0) + np.float32(0.5)).astype(np.uint8)
+                Image.fromarray(p_u8).save(os.path.join(STILLS_DIR, "wall_frame_mark_seven_clean.png"))
+
+            if 0.55 <= t <= 3.65:
+                t_alpha = np.float32(min(1.0, (t - 0.55) / 0.45, (3.65 - t) / 0.55))
+                th_p, tw_p = title_rgba.shape[0], title_rgba.shape[1]
+                a_t = title_rgba[:, :, 3:4] * t_alpha
+                roi = frame[title_y0:title_y0 + th_p, title_x0:title_x0 + tw_p]
+                frame[title_y0:title_y0 + th_p, title_x0:title_x0 + tw_p] = roi * (np.float32(1.0) - a_t) + title_rgba[:, :, :3] * a_t
+
+            for cp in caption_patches:
+                if cp["start"] - 0.02 <= t <= cp["end"] + 0.03:
+                    c_alpha = np.float32(max(0.0, min(1.0, (t - (cp["start"] - 0.02)) / 0.055, ((cp["end"] + 0.03) - t) / 0.065)))
+                    ch_p, cw_p = cp["rgb"].shape[0], cp["rgb"].shape[1]
+                    x0, y0 = cp["x0"], cp["y0"]
+                    a_c = cp["alpha"] * c_alpha
+                    roi = frame[y0:y0 + ch_p, x0:x0 + cw_p]
+                    frame[y0:y0 + ch_p, x0:x0 + cw_p] = roi * (np.float32(1.0) - a_c) + cp["rgb"] * a_c
+                    break
+
+            if t < 0.26:
+                frame *= np.float32(max(0.05, t / 0.26))
+            elif t > 59.72:
+                frame *= np.float32(max(0.05, (60.0 - t) / 0.28))
+
+            out_u8 = (np.clip(frame, 0.0, 1.0) * np.float32(255.0) + np.float32(0.5)).astype(np.uint8)
+            proc.stdin.write(out_u8.tobytes())
+
+            if f_idx in still_targets:
+                Image.fromarray(out_u8).save(os.path.join(STILLS_DIR, still_targets[f_idx]))
+
+        proc.stdin.close()
+        rc = proc.wait()
+        if rc != 0:
+            raise RuntimeError(f"Shot {sid} ffmpeg failed with {rc}")
+        print(f"  Completed Shot {sid} ({n_frames}f -> {clip_path})", flush=True)
+
+        del pil_single
+        if halo is not None:
+            del halo
+        gc.collect()
+
+    concat_txt = os.path.join(CLIPS_DIR, "concat.txt")
+    with open(concat_txt, "w", encoding="utf-8") as f:
+        for cp in clip_paths:
+            f.write(f"file '{cp}'\n")
+
+    print(f"Muxing final 60.000s master -> {OUT_MP4}...", flush=True)
+    subprocess.run(
+        [
+            "ffmpeg", "-y", "-hide_banner", "-loglevel", "error",
+            "-f", "concat", "-safe", "0", "-i", concat_txt,
+            "-i", MASTER_WAV,
+            "-map", "0:v:0", "-map", "1:a:0",
+            "-c:v", "libx264", "-preset", "medium", "-crf", "22",
+            "-maxrate", "4000k", "-bufsize", "8000k",
+            "-x264-params", "rc-lookahead=18:threads=2",
+            "-pix_fmt", "yuv420p", "-profile:v", "high", "-level", "4.1",
+            "-r", str(FPS), "-vsync", "cfr",
+            "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-ac", "2",
+            "-movflags", "+faststart",
+            OUT_MP4,
+        ],
+        check=True,
+    )
+
+    gmap_path = os.path.join(AUDIO_DIR, "gain_mapping.json")
+    gmap = json.load(open(gmap_path))
+    dec_wav = "/tmp/grade_v08_build/_mp4_dec.wav"
+    subprocess.run(
+        ["ffmpeg", "-y", "-hide_banner", "-loglevel", "error", "-i", OUT_MP4, "-vn", "-ar", "48000", "-ac", "2", "-c:a", "pcm_s16le", dec_wav],
+        check=True,
+    )
+    _, m_pcm = wavfile.read(MASTER_WAV)
+    _, d_pcm = wavfile.read(dec_wav)
+    os.remove(dec_wav)
+    n = min(len(m_pcm), len(d_pcm))
+    corr_mp4 = float(np.corrcoef(m_pcm[:n].ravel().astype(float), d_pcm[:n].ravel().astype(float))[0, 1])
+    res_db = float(20.0 * np.log10(np.sqrt(np.mean(((m_pcm[:n].astype(float) - d_pcm[:n].astype(float)) / 32768.0) ** 2)) + 1e-12))
+    lr_corr = float(np.corrcoef(d_pcm[:, 0].astype(float), d_pcm[:, 1].astype(float))[0, 1])
+
+    for i, w in enumerate(gmap["body_windows_10s"]):
+        i0, i1 = i * 10 * 48000, (i + 1) * 10 * 48000
+        w["mp4_mix_rms_dbfs"] = round(float(20.0 * np.log10(np.sqrt(np.mean((d_pcm[i0:i1].astype(float) / 32768.0) ** 2)) + 1e-12)), 2)
+
+    gmap["delivered_mp4_sha256"] = hashlib.sha256(open(OUT_MP4, "rb").read()).hexdigest()
+    gmap["mp4_stereo_LR_correlation"] = round(lr_corr, 4)
+    gmap["master_to_mp4_aac_correlation_r"] = round(corr_mp4, 6)
+    gmap["master_to_mp4_aac_residual_dbfs"] = round(res_db, 2)
+    json.dump(gmap, open(gmap_path, "w"), indent=2)
+    print(f"Successfully rendered {OUT_MP4} (r={corr_mp4:.6f}, LR_corr={lr_corr:.4f})", flush=True)
+
+
+if __name__ == "__main__":
+    main()

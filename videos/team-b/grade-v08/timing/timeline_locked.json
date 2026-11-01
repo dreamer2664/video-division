@@ -1,0 +1,1482 @@
+{
+  "fps": 30,
+  "total_frames": 1800,
+  "duration_s": 60.0,
+  "shots": [
+    {
+      "shot": "01",
+      "frames": 216,
+      "start_frame": 0,
+      "end_frame": 216,
+      "start_s": 0.0,
+      "end_s": 7.2,
+      "lut": "valley_obsidian_500t"
+    },
+    {
+      "shot": "02",
+      "frames": 206,
+      "start_frame": 216,
+      "end_frame": 422,
+      "start_s": 7.2,
+      "end_s": 14.067,
+      "lut": "gorge_cyan_6500k"
+    },
+    {
+      "shot": "03",
+      "frames": 204,
+      "start_frame": 422,
+      "end_frame": 626,
+      "start_s": 14.067,
+      "end_s": 20.867,
+      "lut": "spillway_storm_7000k"
+    },
+    {
+      "shot": "04",
+      "frames": 178,
+      "start_frame": 626,
+      "end_frame": 804,
+      "start_s": 20.867,
+      "end_s": 26.8,
+      "lut": "spillway_storm_7000k"
+    },
+    {
+      "shot": "05",
+      "frames": 175,
+      "start_frame": 804,
+      "end_frame": 979,
+      "start_s": 26.8,
+      "end_s": 32.633,
+      "lut": "valley_obsidian_500t"
+    },
+    {
+      "shot": "06",
+      "frames": 167,
+      "start_frame": 979,
+      "end_frame": 1146,
+      "start_s": 32.633,
+      "end_s": 38.2,
+      "lut": "lowgate_sodium_2600k"
+    },
+    {
+      "shot": "07",
+      "frames": 93,
+      "start_frame": 1146,
+      "end_frame": 1239,
+      "start_s": 38.2,
+      "end_s": 41.3,
+      "lut": "gorge_cyan_6500k"
+    },
+    {
+      "shot": "08",
+      "frames": 174,
+      "start_frame": 1239,
+      "end_frame": 1413,
+      "start_s": 41.3,
+      "end_s": 47.1,
+      "lut": "valley_obsidian_500t"
+    },
+    {
+      "shot": "09",
+      "frames": 181,
+      "start_frame": 1413,
+      "end_frame": 1594,
+      "start_s": 47.1,
+      "end_s": 53.133,
+      "lut": "spillway_storm_7000k"
+    },
+    {
+      "shot": "10",
+      "frames": 206,
+      "start_frame": 1594,
+      "end_frame": 1800,
+      "start_s": 53.133,
+      "end_s": 60.0,
+      "lut": "lowgate_sodium_2600k"
+    }
+  ],
+  "turns": [
+    {
+      "turn": "01",
+      "speaker": "A",
+      "voice": "en-US-ChristopherNeural",
+      "start": 0.44,
+      "end": 6.885,
+      "text": "Three fourteen, thirty-seven minutes after Vault Six flooded inside the dam, and the gorge is full.",
+      "words": [
+        {
+          "turn": "01",
+          "text": "Three",
+          "start": 0.44,
+          "end": 0.777
+        },
+        {
+          "turn": "01",
+          "text": "fourteen",
+          "start": 0.791,
+          "end": 1.493
+        },
+        {
+          "turn": "01",
+          "text": "thirty-seven",
+          "start": 1.76,
+          "end": 2.392
+        },
+        {
+          "turn": "01",
+          "text": "minutes",
+          "start": 2.406,
+          "end": 2.757
+        },
+        {
+          "turn": "01",
+          "text": "after",
+          "start": 2.772,
+          "end": 3.067
+        },
+        {
+          "turn": "01",
+          "text": "Vault",
+          "start": 3.081,
+          "end": 3.376
+        },
+        {
+          "turn": "01",
+          "text": "Six",
+          "start": 3.39,
+          "end": 3.769
+        },
+        {
+          "turn": "01",
+          "text": "flooded",
+          "start": 3.783,
+          "end": 4.162
+        },
+        {
+          "turn": "01",
+          "text": "inside",
+          "start": 4.176,
+          "end": 4.682
+        },
+        {
+          "turn": "01",
+          "text": "the",
+          "start": 4.696,
+          "end": 4.78
+        },
+        {
+          "turn": "01",
+          "text": "dam",
+          "start": 4.794,
+          "end": 5.201
+        },
+        {
+          "turn": "01",
+          "text": "and",
+          "start": 5.51,
+          "end": 5.608
+        },
+        {
+          "turn": "01",
+          "text": "the",
+          "start": 5.623,
+          "end": 5.721
+        },
+        {
+          "turn": "01",
+          "text": "gorge",
+          "start": 5.735,
+          "end": 6.114
+        },
+        {
+          "turn": "01",
+          "text": "is",
+          "start": 6.128,
+          "end": 6.268
+        },
+        {
+          "turn": "01",
+          "text": "full",
+          "start": 6.283,
+          "end": 6.775
+        }
+      ]
+    },
+    {
+      "turn": "02",
+      "speaker": "B",
+      "voice": "en-GB-SoniaNeural",
+      "start": 7.64,
+      "end": 13.772,
+      "text": "Lowgate levee, two miles downstream, every house is empty, and black water is across the rail yard.",
+      "words": [
+        {
+          "turn": "02",
+          "text": "Lowgate",
+          "start": 7.64,
+          "end": 8.157
+        },
+        {
+          "turn": "02",
+          "text": "levee",
+          "start": 8.169,
+          "end": 8.626
+        },
+        {
+          "turn": "02",
+          "text": "two",
+          "start": 8.866,
+          "end": 9.046
+        },
+        {
+          "turn": "02",
+          "text": "miles",
+          "start": 9.058,
+          "end": 9.358
+        },
+        {
+          "turn": "02",
+          "text": "downstream",
+          "start": 9.371,
+          "end": 10.008
+        },
+        {
+          "turn": "02",
+          "text": "every",
+          "start": 10.26,
+          "end": 10.452
+        },
+        {
+          "turn": "02",
+          "text": "house",
+          "start": 10.465,
+          "end": 10.753
+        },
+        {
+          "turn": "02",
+          "text": "is",
+          "start": 10.765,
+          "end": 10.873
+        },
+        {
+          "turn": "02",
+          "text": "empty",
+          "start": 10.885,
+          "end": 11.282
+        },
+        {
+          "turn": "02",
+          "text": "and",
+          "start": 11.546,
+          "end": 11.666
+        },
+        {
+          "turn": "02",
+          "text": "black",
+          "start": 11.679,
+          "end": 11.955
+        },
+        {
+          "turn": "02",
+          "text": "water",
+          "start": 11.967,
+          "end": 12.364
+        },
+        {
+          "turn": "02",
+          "text": "is",
+          "start": 12.376,
+          "end": 12.532
+        },
+        {
+          "turn": "02",
+          "text": "across",
+          "start": 12.544,
+          "end": 12.881
+        },
+        {
+          "turn": "02",
+          "text": "the",
+          "start": 12.892,
+          "end": 12.988
+        },
+        {
+          "turn": "02",
+          "text": "rail",
+          "start": 13.001,
+          "end": 13.229
+        },
+        {
+          "turn": "02",
+          "text": "yard",
+          "start": 13.241,
+          "end": 13.662
+        }
+      ]
+    },
+    {
+      "turn": "03",
+      "speaker": "A",
+      "voice": "en-US-ChristopherNeural",
+      "start": 14.527,
+      "end": 20.592,
+      "text": "All four spillway gates are wide open, and the canyon crest is passing the railway bridge now.",
+      "words": [
+        {
+          "turn": "03",
+          "text": "All",
+          "start": 14.527,
+          "end": 14.85
+        },
+        {
+          "turn": "03",
+          "text": "four",
+          "start": 14.864,
+          "end": 15.201
+        },
+        {
+          "turn": "03",
+          "text": "spillway",
+          "start": 15.215,
+          "end": 15.749
+        },
+        {
+          "turn": "03",
+          "text": "gates",
+          "start": 15.763,
+          "end": 16.128
+        },
+        {
+          "turn": "03",
+          "text": "are",
+          "start": 16.142,
+          "end": 16.296
+        },
+        {
+          "turn": "03",
+          "text": "wide",
+          "start": 16.311,
+          "end": 16.69
+        },
+        {
+          "turn": "03",
+          "text": "open",
+          "start": 16.704,
+          "end": 17.083
+        },
+        {
+          "turn": "03",
+          "text": "and",
+          "start": 17.35,
+          "end": 17.448
+        },
+        {
+          "turn": "03",
+          "text": "the",
+          "start": 17.463,
+          "end": 17.547
+        },
+        {
+          "turn": "03",
+          "text": "canyon",
+          "start": 17.561,
+          "end": 18.025
+        },
+        {
+          "turn": "03",
+          "text": "crest",
+          "start": 18.038,
+          "end": 18.459
+        },
+        {
+          "turn": "03",
+          "text": "is",
+          "start": 18.474,
+          "end": 18.586
+        },
+        {
+          "turn": "03",
+          "text": "passing",
+          "start": 18.6,
+          "end": 19.078
+        },
+        {
+          "turn": "03",
+          "text": "the",
+          "start": 19.092,
+          "end": 19.19
+        },
+        {
+          "turn": "03",
+          "text": "railway",
+          "start": 19.204,
+          "end": 19.668
+        },
+        {
+          "turn": "03",
+          "text": "bridge",
+          "start": 19.682,
+          "end": 20.033
+        },
+        {
+          "turn": "03",
+          "text": "now",
+          "start": 20.047,
+          "end": 20.482
+        }
+      ]
+    },
+    {
+      "turn": "04",
+      "speaker": "B",
+      "voice": "en-GB-SoniaNeural",
+      "start": 21.347,
+      "end": 26.541,
+      "text": "White water is hitting the steel girders on the bridge, and backing slow water down Main Street.",
+      "words": [
+        {
+          "turn": "04",
+          "text": "White",
+          "start": 21.347,
+          "end": 21.647
+        },
+        {
+          "turn": "04",
+          "text": "water",
+          "start": 21.66,
+          "end": 22.117
+        },
+        {
+          "turn": "04",
+          "text": "is",
+          "start": 22.128,
+          "end": 22.308
+        },
+        {
+          "turn": "04",
+          "text": "hitting",
+          "start": 22.321,
+          "end": 22.597
+        },
+        {
+          "turn": "04",
+          "text": "the",
+          "start": 22.609,
+          "end": 22.705
+        },
+        {
+          "turn": "04",
+          "text": "steel",
+          "start": 22.717,
+          "end": 23.029
+        },
+        {
+          "turn": "04",
+          "text": "girders",
+          "start": 23.042,
+          "end": 23.415
+        },
+        {
+          "turn": "04",
+          "text": "on",
+          "start": 23.426,
+          "end": 23.522
+        },
+        {
+          "turn": "04",
+          "text": "the",
+          "start": 23.535,
+          "end": 23.607
+        },
+        {
+          "turn": "04",
+          "text": "bridge",
+          "start": 23.619,
+          "end": 23.992
+        },
+        {
+          "turn": "04",
+          "text": "and",
+          "start": 24.28,
+          "end": 24.388
+        },
+        {
+          "turn": "04",
+          "text": "backing",
+          "start": 24.4,
+          "end": 24.785
+        },
+        {
+          "turn": "04",
+          "text": "slow",
+          "start": 24.797,
+          "end": 25.061
+        },
+        {
+          "turn": "04",
+          "text": "water",
+          "start": 25.073,
+          "end": 25.398
+        },
+        {
+          "turn": "04",
+          "text": "down",
+          "start": 25.41,
+          "end": 25.65
+        },
+        {
+          "turn": "04",
+          "text": "Main Street",
+          "start": 25.662,
+          "end": 26.431
+        }
+      ]
+    },
+    {
+      "turn": "05",
+      "speaker": "A",
+      "voice": "en-US-ChristopherNeural",
+      "start": 27.296,
+      "end": 32.407,
+      "text": "Marks One through Five are on the dam, Six was the vault, where is Mark Seven?",
+      "words": [
+        {
+          "turn": "05",
+          "text": "Marks",
+          "start": 27.296,
+          "end": 27.717
+        },
+        {
+          "turn": "05",
+          "text": "One",
+          "start": 27.732,
+          "end": 27.985
+        },
+        {
+          "turn": "05",
+          "text": "through",
+          "start": 27.998,
+          "end": 28.237
+        },
+        {
+          "turn": "05",
+          "text": "Five",
+          "start": 28.251,
+          "end": 28.672
+        },
+        {
+          "turn": "05",
+          "text": "are",
+          "start": 28.687,
+          "end": 28.827
+        },
+        {
+          "turn": "05",
+          "text": "on",
+          "start": 28.841,
+          "end": 28.967
+        },
+        {
+          "turn": "05",
+          "text": "the",
+          "start": 28.982,
+          "end": 29.08
+        },
+        {
+          "turn": "05",
+          "text": "dam",
+          "start": 29.094,
+          "end": 29.501
+        },
+        {
+          "turn": "05",
+          "text": "Six",
+          "start": 29.782,
+          "end": 30.133
+        },
+        {
+          "turn": "05",
+          "text": "was",
+          "start": 30.147,
+          "end": 30.316
+        },
+        {
+          "turn": "05",
+          "text": "the",
+          "start": 30.33,
+          "end": 30.414
+        },
+        {
+          "turn": "05",
+          "text": "vault",
+          "start": 30.428,
+          "end": 30.863
+        },
+        {
+          "turn": "05",
+          "text": "where",
+          "start": 31.13,
+          "end": 31.341
+        },
+        {
+          "turn": "05",
+          "text": "is",
+          "start": 31.355,
+          "end": 31.481
+        },
+        {
+          "turn": "05",
+          "text": "Mark",
+          "start": 31.496,
+          "end": 31.777
+        },
+        {
+          "turn": "05",
+          "text": "Seven",
+          "start": 31.791,
+          "end": 32.297
+        }
+      ]
+    },
+    {
+      "turn": "06",
+      "speaker": "B",
+      "voice": "en-GB-SoniaNeural",
+      "start": 33.162,
+      "end": 38.02,
+      "text": "Not on the dam, they stenciled Mark Seven on the iron streetlamp in the town square.",
+      "words": [
+        {
+          "turn": "06",
+          "text": "Not",
+          "start": 33.162,
+          "end": 33.414
+        },
+        {
+          "turn": "06",
+          "text": "on",
+          "start": 33.427,
+          "end": 33.535
+        },
+        {
+          "turn": "06",
+          "text": "the",
+          "start": 33.547,
+          "end": 33.643
+        },
+        {
+          "turn": "06",
+          "text": "dam",
+          "start": 33.655,
+          "end": 34.04
+        },
+        {
+          "turn": "06",
+          "text": "they",
+          "start": 34.316,
+          "end": 34.436
+        },
+        {
+          "turn": "06",
+          "text": "stenciled",
+          "start": 34.448,
+          "end": 35.013
+        },
+        {
+          "turn": "06",
+          "text": "Mark",
+          "start": 35.025,
+          "end": 35.313
+        },
+        {
+          "turn": "06",
+          "text": "Seven",
+          "start": 35.326,
+          "end": 35.759
+        },
+        {
+          "turn": "06",
+          "text": "on",
+          "start": 35.77,
+          "end": 35.902
+        },
+        {
+          "turn": "06",
+          "text": "the",
+          "start": 35.914,
+          "end": 36.034
+        },
+        {
+          "turn": "06",
+          "text": "iron",
+          "start": 36.047,
+          "end": 36.347
+        },
+        {
+          "turn": "06",
+          "text": "streetlamp",
+          "start": 36.359,
+          "end": 36.96
+        },
+        {
+          "turn": "06",
+          "text": "in",
+          "start": 36.972,
+          "end": 37.068
+        },
+        {
+          "turn": "06",
+          "text": "the",
+          "start": 37.08,
+          "end": 37.164
+        },
+        {
+          "turn": "06",
+          "text": "town",
+          "start": 37.177,
+          "end": 37.477
+        },
+        {
+          "turn": "06",
+          "text": "square",
+          "start": 37.489,
+          "end": 37.91
+        }
+      ]
+    },
+    {
+      "turn": "07",
+      "speaker": "A",
+      "voice": "en-US-ChristopherNeural",
+      "start": 38.775,
+      "end": 41.147,
+      "text": "Tell me where the water is on that post.",
+      "words": [
+        {
+          "turn": "07",
+          "text": "Tell",
+          "start": 38.775,
+          "end": 39.028
+        },
+        {
+          "turn": "07",
+          "text": "me",
+          "start": 39.042,
+          "end": 39.168
+        },
+        {
+          "turn": "07",
+          "text": "where",
+          "start": 39.182,
+          "end": 39.336
+        },
+        {
+          "turn": "07",
+          "text": "the",
+          "start": 39.351,
+          "end": 39.463
+        },
+        {
+          "turn": "07",
+          "text": "water",
+          "start": 39.477,
+          "end": 39.87
+        },
+        {
+          "turn": "07",
+          "text": "is",
+          "start": 39.885,
+          "end": 40.039
+        },
+        {
+          "turn": "07",
+          "text": "on",
+          "start": 40.053,
+          "end": 40.193
+        },
+        {
+          "turn": "07",
+          "text": "that",
+          "start": 40.208,
+          "end": 40.433
+        },
+        {
+          "turn": "07",
+          "text": "post",
+          "start": 40.447,
+          "end": 41.037
+        }
+      ]
+    },
+    {
+      "turn": "08",
+      "speaker": "B",
+      "voice": "en-GB-SoniaNeural",
+      "start": 41.902,
+      "end": 46.58,
+      "text": "The amber lamp is still burning, and the river just stopped two inches below Mark Seven.",
+      "words": [
+        {
+          "turn": "08",
+          "text": "The",
+          "start": 41.902,
+          "end": 42.034
+        },
+        {
+          "turn": "08",
+          "text": "amber",
+          "start": 42.046,
+          "end": 42.31
+        },
+        {
+          "turn": "08",
+          "text": "lamp",
+          "start": 42.323,
+          "end": 42.635
+        },
+        {
+          "turn": "08",
+          "text": "is",
+          "start": 42.647,
+          "end": 42.743
+        },
+        {
+          "turn": "08",
+          "text": "still",
+          "start": 42.756,
+          "end": 43.008
+        },
+        {
+          "turn": "08",
+          "text": "burning",
+          "start": 43.02,
+          "end": 43.465
+        },
+        {
+          "turn": "08",
+          "text": "and",
+          "start": 43.717,
+          "end": 43.801
+        },
+        {
+          "turn": "08",
+          "text": "the",
+          "start": 43.813,
+          "end": 43.909
+        },
+        {
+          "turn": "08",
+          "text": "river",
+          "start": 43.921,
+          "end": 44.246
+        },
+        {
+          "turn": "08",
+          "text": "just",
+          "start": 44.258,
+          "end": 44.474
+        },
+        {
+          "turn": "08",
+          "text": "stopped",
+          "start": 44.486,
+          "end": 44.883
+        },
+        {
+          "turn": "08",
+          "text": "two",
+          "start": 44.895,
+          "end": 45.087
+        },
+        {
+          "turn": "08",
+          "text": "inches",
+          "start": 45.099,
+          "end": 45.472
+        },
+        {
+          "turn": "08",
+          "text": "below",
+          "start": 45.484,
+          "end": 45.76
+        },
+        {
+          "turn": "08",
+          "text": "Mark",
+          "start": 45.772,
+          "end": 46.012
+        },
+        {
+          "turn": "08",
+          "text": "Seven",
+          "start": 46.025,
+          "end": 46.47
+        }
+      ]
+    },
+    {
+      "turn": "09",
+      "speaker": "A",
+      "voice": "en-US-ChristopherNeural",
+      "start": 47.497,
+      "end": 52.79,
+      "text": "Drowning one concrete room inside the dam took two inches off a three-mile river.",
+      "words": [
+        {
+          "turn": "09",
+          "text": "Drowning",
+          "start": 47.497,
+          "end": 48.017
+        },
+        {
+          "turn": "09",
+          "text": "one",
+          "start": 48.031,
+          "end": 48.284
+        },
+        {
+          "turn": "09",
+          "text": "concrete",
+          "start": 48.298,
+          "end": 48.916
+        },
+        {
+          "turn": "09",
+          "text": "room",
+          "start": 48.93,
+          "end": 49.239
+        },
+        {
+          "turn": "09",
+          "text": "inside",
+          "start": 49.253,
+          "end": 49.759
+        },
+        {
+          "turn": "09",
+          "text": "the",
+          "start": 49.772,
+          "end": 49.87
+        },
+        {
+          "turn": "09",
+          "text": "dam",
+          "start": 49.885,
+          "end": 50.264
+        },
+        {
+          "turn": "09",
+          "text": "took",
+          "start": 50.278,
+          "end": 50.573
+        },
+        {
+          "turn": "09",
+          "text": "two",
+          "start": 50.587,
+          "end": 50.868
+        },
+        {
+          "turn": "09",
+          "text": "inches",
+          "start": 50.882,
+          "end": 51.275
+        },
+        {
+          "turn": "09",
+          "text": "off",
+          "start": 51.289,
+          "end": 51.486
+        },
+        {
+          "turn": "09",
+          "text": "a",
+          "start": 51.5,
+          "end": 51.57
+        },
+        {
+          "turn": "09",
+          "text": "three-mile",
+          "start": 51.584,
+          "end": 52.202
+        },
+        {
+          "turn": "09",
+          "text": "river",
+          "start": 52.216,
+          "end": 52.68
+        }
+      ]
+    },
+    {
+      "turn": "10",
+      "speaker": "B",
+      "voice": "en-GB-SoniaNeural",
+      "start": 53.545,
+      "end": 58.92,
+      "text": "Four thousand people left their keys on the counter, and their town is still standing at Mark Seven.",
+      "words": [
+        {
+          "turn": "10",
+          "text": "Four",
+          "start": 53.545,
+          "end": 53.773
+        },
+        {
+          "turn": "10",
+          "text": "thousand",
+          "start": 53.785,
+          "end": 54.218
+        },
+        {
+          "turn": "10",
+          "text": "people",
+          "start": 54.23,
+          "end": 54.615
+        },
+        {
+          "turn": "10",
+          "text": "left",
+          "start": 54.627,
+          "end": 54.879
+        },
+        {
+          "turn": "10",
+          "text": "their",
+          "start": 54.891,
+          "end": 55.011
+        },
+        {
+          "turn": "10",
+          "text": "keys",
+          "start": 55.024,
+          "end": 55.349
+        },
+        {
+          "turn": "10",
+          "text": "on",
+          "start": 55.36,
+          "end": 55.456
+        },
+        {
+          "turn": "10",
+          "text": "the",
+          "start": 55.468,
+          "end": 55.54
+        },
+        {
+          "turn": "10",
+          "text": "counter",
+          "start": 55.552,
+          "end": 56.045
+        },
+        {
+          "turn": "10",
+          "text": "and",
+          "start": 56.334,
+          "end": 56.454
+        },
+        {
+          "turn": "10",
+          "text": "their",
+          "start": 56.466,
+          "end": 56.598
+        },
+        {
+          "turn": "10",
+          "text": "town",
+          "start": 56.61,
+          "end": 57.019
+        },
+        {
+          "turn": "10",
+          "text": "is",
+          "start": 57.031,
+          "end": 57.139
+        },
+        {
+          "turn": "10",
+          "text": "still",
+          "start": 57.151,
+          "end": 57.403
+        },
+        {
+          "turn": "10",
+          "text": "standing",
+          "start": 57.415,
+          "end": 57.932
+        },
+        {
+          "turn": "10",
+          "text": "at",
+          "start": 57.944,
+          "end": 58.088
+        },
+        {
+          "turn": "10",
+          "text": "Mark",
+          "start": 58.1,
+          "end": 58.352
+        },
+        {
+          "turn": "10",
+          "text": "Seven",
+          "start": 58.365,
+          "end": 58.81
+        }
+      ]
+    }
+  ],
+  "cues": [
+    {
+      "turn": "01",
+      "speaker": "A",
+      "start": 0.44,
+      "end": 2.757,
+      "word_count": 4,
+      "text": "Three fourteen thirty-seven minutes",
+      "cue": 1
+    },
+    {
+      "turn": "01",
+      "speaker": "A",
+      "start": 2.772,
+      "end": 4.162,
+      "word_count": 4,
+      "text": "after Vault Six flooded",
+      "cue": 2
+    },
+    {
+      "turn": "01",
+      "speaker": "A",
+      "start": 4.176,
+      "end": 5.608,
+      "word_count": 4,
+      "text": "inside the dam and",
+      "cue": 3
+    },
+    {
+      "turn": "01",
+      "speaker": "A",
+      "start": 5.623,
+      "end": 6.775,
+      "word_count": 4,
+      "text": "the gorge is full",
+      "cue": 4
+    },
+    {
+      "turn": "02",
+      "speaker": "B",
+      "start": 7.64,
+      "end": 9.358,
+      "word_count": 4,
+      "text": "Lowgate levee two miles",
+      "cue": 5
+    },
+    {
+      "turn": "02",
+      "speaker": "B",
+      "start": 9.371,
+      "end": 10.873,
+      "word_count": 4,
+      "text": "downstream every house is",
+      "cue": 6
+    },
+    {
+      "turn": "02",
+      "speaker": "B",
+      "start": 10.885,
+      "end": 12.364,
+      "word_count": 4,
+      "text": "empty and black water",
+      "cue": 7
+    },
+    {
+      "turn": "02",
+      "speaker": "B",
+      "start": 12.376,
+      "end": 13.662,
+      "word_count": 5,
+      "text": "is across the rail yard",
+      "cue": 8
+    },
+    {
+      "turn": "03",
+      "speaker": "A",
+      "start": 14.527,
+      "end": 16.128,
+      "word_count": 4,
+      "text": "All four spillway gates",
+      "cue": 9
+    },
+    {
+      "turn": "03",
+      "speaker": "A",
+      "start": 16.142,
+      "end": 17.448,
+      "word_count": 4,
+      "text": "are wide open and",
+      "cue": 10
+    },
+    {
+      "turn": "03",
+      "speaker": "A",
+      "start": 17.463,
+      "end": 18.586,
+      "word_count": 4,
+      "text": "the canyon crest is",
+      "cue": 11
+    },
+    {
+      "turn": "03",
+      "speaker": "A",
+      "start": 18.6,
+      "end": 20.482,
+      "word_count": 5,
+      "text": "passing the railway bridge now",
+      "cue": 12
+    },
+    {
+      "turn": "04",
+      "speaker": "B",
+      "start": 21.347,
+      "end": 22.597,
+      "word_count": 4,
+      "text": "White water is hitting",
+      "cue": 13
+    },
+    {
+      "turn": "04",
+      "speaker": "B",
+      "start": 22.609,
+      "end": 23.522,
+      "word_count": 4,
+      "text": "the steel girders on",
+      "cue": 14
+    },
+    {
+      "turn": "04",
+      "speaker": "B",
+      "start": 23.535,
+      "end": 24.785,
+      "word_count": 4,
+      "text": "the bridge and backing",
+      "cue": 15
+    },
+    {
+      "turn": "04",
+      "speaker": "B",
+      "start": 24.797,
+      "end": 26.431,
+      "word_count": 4,
+      "text": "slow water down Main Street",
+      "cue": 16
+    },
+    {
+      "turn": "05",
+      "speaker": "A",
+      "start": 27.296,
+      "end": 28.672,
+      "word_count": 4,
+      "text": "Marks One through Five",
+      "cue": 17
+    },
+    {
+      "turn": "05",
+      "speaker": "A",
+      "start": 28.687,
+      "end": 29.501,
+      "word_count": 4,
+      "text": "are on the dam",
+      "cue": 18
+    },
+    {
+      "turn": "05",
+      "speaker": "A",
+      "start": 29.782,
+      "end": 30.863,
+      "word_count": 4,
+      "text": "Six was the vault",
+      "cue": 19
+    },
+    {
+      "turn": "05",
+      "speaker": "A",
+      "start": 31.13,
+      "end": 32.297,
+      "word_count": 4,
+      "text": "where is Mark Seven",
+      "cue": 20
+    },
+    {
+      "turn": "06",
+      "speaker": "B",
+      "start": 33.162,
+      "end": 34.04,
+      "word_count": 4,
+      "text": "Not on the dam",
+      "cue": 21
+    },
+    {
+      "turn": "06",
+      "speaker": "B",
+      "start": 34.316,
+      "end": 35.759,
+      "word_count": 4,
+      "text": "they stenciled Mark Seven",
+      "cue": 22
+    },
+    {
+      "turn": "06",
+      "speaker": "B",
+      "start": 35.77,
+      "end": 36.96,
+      "word_count": 4,
+      "text": "on the iron streetlamp",
+      "cue": 23
+    },
+    {
+      "turn": "06",
+      "speaker": "B",
+      "start": 36.972,
+      "end": 37.91,
+      "word_count": 4,
+      "text": "in the town square",
+      "cue": 24
+    },
+    {
+      "turn": "07",
+      "speaker": "A",
+      "start": 38.775,
+      "end": 39.463,
+      "word_count": 4,
+      "text": "Tell me where the",
+      "cue": 25
+    },
+    {
+      "turn": "07",
+      "speaker": "A",
+      "start": 39.477,
+      "end": 41.037,
+      "word_count": 5,
+      "text": "water is on that post",
+      "cue": 26
+    },
+    {
+      "turn": "08",
+      "speaker": "B",
+      "start": 41.902,
+      "end": 42.743,
+      "word_count": 4,
+      "text": "The amber lamp is",
+      "cue": 27
+    },
+    {
+      "turn": "08",
+      "speaker": "B",
+      "start": 42.756,
+      "end": 43.909,
+      "word_count": 4,
+      "text": "still burning and the",
+      "cue": 28
+    },
+    {
+      "turn": "08",
+      "speaker": "B",
+      "start": 43.921,
+      "end": 45.087,
+      "word_count": 4,
+      "text": "river just stopped two",
+      "cue": 29
+    },
+    {
+      "turn": "08",
+      "speaker": "B",
+      "start": 45.099,
+      "end": 46.47,
+      "word_count": 4,
+      "text": "inches below Mark Seven",
+      "cue": 30
+    },
+    {
+      "turn": "09",
+      "speaker": "A",
+      "start": 47.497,
+      "end": 49.239,
+      "word_count": 4,
+      "text": "Drowning one concrete room",
+      "cue": 31
+    },
+    {
+      "turn": "09",
+      "speaker": "A",
+      "start": 49.253,
+      "end": 50.573,
+      "word_count": 4,
+      "text": "inside the dam took",
+      "cue": 32
+    },
+    {
+      "turn": "09",
+      "speaker": "A",
+      "start": 50.587,
+      "end": 51.486,
+      "word_count": 3,
+      "text": "two inches off",
+      "cue": 33
+    },
+    {
+      "turn": "09",
+      "speaker": "A",
+      "start": 51.5,
+      "end": 52.68,
+      "word_count": 3,
+      "text": "a three-mile river",
+      "cue": 34
+    },
+    {
+      "turn": "10",
+      "speaker": "B",
+      "start": 53.545,
+      "end": 54.879,
+      "word_count": 4,
+      "text": "Four thousand people left",
+      "cue": 35
+    },
+    {
+      "turn": "10",
+      "speaker": "B",
+      "start": 54.891,
+      "end": 55.54,
+      "word_count": 4,
+      "text": "their keys on the",
+      "cue": 36
+    },
+    {
+      "turn": "10",
+      "speaker": "B",
+      "start": 55.552,
+      "end": 57.019,
+      "word_count": 4,
+      "text": "counter and their town",
+      "cue": 37
+    },
+    {
+      "turn": "10",
+      "speaker": "B",
+      "start": 57.031,
+      "end": 57.932,
+      "word_count": 3,
+      "text": "is still standing",
+      "cue": 38
+    },
+    {
+      "turn": "10",
+      "speaker": "B",
+      "start": 57.944,
+      "end": 58.81,
+      "word_count": 3,
+      "text": "at Mark Seven",
+      "cue": 39
+    }
+  ]
+}
