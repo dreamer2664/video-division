@@ -10,5 +10,11 @@
     "head": "bdffeaca1d81e2bd96758a21474f3349622676eb",
     "verdict": "REJECT",
     "comment": "https://github.com/dreamer2664/video-division/pull/10#issuecomment-6557725210"
+  },
+  {
+    "pr": 13,
+    "head": "f0032130e5fac0cdd4841dc6db69a533042b8561",
+    "verdict": "REJECT",
+    "comment": "https://github.com/dreamer2664/video-division/pull/13#issuecomment-6557772149"
   }
 ]

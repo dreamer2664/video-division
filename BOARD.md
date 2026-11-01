@@ -1,6 +1,22 @@
 # BOARD — video division
 
-## Current authority — DIRECTIVE-2026-11-01-house-look (2026-11-01 09:43 UTC)
+## Current queue — House Look SDK / MARK SIX audit (2026-11-01 12:12 UTC)
+
+House look remains **DIRECTIVE-2026-11-01-house-look.md**; MARK FIVE is the approved reference on main. Audit results below are current; earlier pending-look or old-target rows are historical, not the current queue. No external publishing; no human listened. No production film rerender; SDK test clips/audio and offline QA reconstructions only.
+
+| PR / owner | exact reviewed head | disposition | consolidated action |
+|---|---|---|---|
+| #12 grade/house-look | `90394d8411185519fdc360f4c0ea26d0dc3f2822` | REJECT / open, SDK corrections | Real four33³ LUTs regenerate identically; motion/captions and6/60s audio helpers pass, AAC-16.29/-16.15LUFS,bit-exact offline. BUT literal sparse command exits128 (root filename as directory); online default demo403,no offline fixture; fix runnable photographic smoke and remove unapproved MARK SIX reference. One consolidated PR comment. Issue11 now tracks delivered package corrections, not missing look/. |
+| #10 grade/v07 MARK SIX | `bdffeaca1d81e2bd96758a21474f3349622676eb` | REJECT / open, story §5 | Full format/photographic/LUT/weather/source-speech/caption gates PASS,-16.15LUFS/-1.88TP,zero scans. Five committed actual stems,three real timeline voices verified. Story repeats forbidden flood-marks/interior mark reveal, explicit directive §5; existing MARK FIVE approval is not a future-sequel waiver. No pointless gain/stem repairs requested. |
+| #8 cut/v09 FOUR SECONDS AHEAD | `82ba387f0b4f384645878a816f1d3a465c1708e1` | CLOSED superseded / not merged | Superseded byDIRECTIVE-2026-11-01-house-look.md, withdrawn pre-directive vertical target. `cut/v09` branch retained. |
+| #13 cut/v10 TWO LIGHTS — arrived during audit | `f0032130e5fac0cdd4841dc6db69a533042b8561` | REJECT / open, voice-bed balance | Loudness-first test nowPASS -16.27LUFS/-1.41TP,clean scans,photographic landscape and actual stem/84word/28cue timing valid. Source voice/bed opening+5.872dB,30–40s+7.383,overall+7.814 vs8–12target. Audio-only bed duck/rebalance plus final renormalization/remux; no picture re-render. |
+| #14 reel/v09-cinematic hotel | `87c1e0e1ae0eb64c9cfee344c9f2d91c2c04e6a0` | NEXT ROUND — not audited | User explicitly deferred hotel/pixel cinematic to next round. Newly observed PR, no acceptance claim. |
+| pixel cinematic | no PR in last snapshot | worker mid-run / next round | Await actual submitted head; no speculative acceptance. |
+
+Exact bytes/SHA256 (SDK per-file manifest and film masters), independent executed logs, supplied/decoded frame samples, source hashes/timelines and precise consolidated comments: `reviews/standard-and-mark-six-2026-11-01/VERDICTS.md`. PR13 conditional audit fully completed after arrival. No passes merged in this job; do not conflate audio-helper success with a verified default SDK quickstart, or technical success with a story-rule waiver. Actual worker branches preserved; correction requests do not imply sessions have restarted. Corrected heads require recheck; no unattended supervision promised.
+
+
+## Historical directive integration checkpoint — DIRECTIVE-2026-11-01-house-look (2026-11-01 09:43 UTC)
 
 The Director withdrew portrait/vector reference-format films. **House reference is MARK FIVE on main**, not another reference-format revision. Previous queue audit results below remain historical. All new films:1920×1080 landscape,photographic plates,33³ LUT,moving weather/camera,word-boundary captions,committed stems/telemetry; portrait/vector-flat rejected on sight. Retain technical/mix gates. New stories must not copy KELVIN/locks/marker plots. No publishing.
 
