@@ -22,7 +22,7 @@ def ass_stamp(cs):
     h,cs=divmod(cs,360000);m,cs=divmod(cs,6000);s,cs=divmod(cs,100)
     return f'{h}:{m:02}:{s:02}.{cs:02}'
 def build(ass):
-    words=json.loads((ROOT/'assets/word_timings.json').read_text())['words']
+    words=json.loads((ROOT/'timing/word_timings.json').read_text())['words']
     assert [i for a,b in GROUPS for i in range(a,b+1)]==list(range(len(words)))
     assert all(2<=b-a+1<=5 for a,b in GROUPS)
     cues=[]
@@ -42,15 +42,15 @@ WrapStyle: 2
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Caption,Anton,68,&H004ED1F5,&H00F4F5F7,&H00080705,&H90000000,0,0,0,0,100,100,0.3,0,1,4,2,2,180,180,125,1
+Style: Caption,Anton,54,&H004ED1F5,&H00F4F5F7,&H00080705,&H90000000,0,0,0,0,100,100,0.3,0,1,4,2,2,180,180,125,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 '''
     font=str(ROOT/'assets/Anton-Regular.ttf');lines=[]
     for c in cues:
-        a,b=c['a'],c['b'];size=68
-        while size>48 and ImageFont.truetype(font,size).getlength(c['text'])>1400:size-=2
+        a,b=c['a'],c['b'];size=54
+        while size>44 and ImageFont.truetype(font,size).getlength(c['text'])>1400:size-=2
         assert ImageFont.truetype(font,size).getlength(c['text'])<=1400
         targets=[math.floor(words[i]['start']*100+1e-8) for i in range(a,b+1)]
         end=round(c['end']*100);assert all(targets[j+1]>targets[j] for j in range(len(targets)-1)) and end>targets[-1]

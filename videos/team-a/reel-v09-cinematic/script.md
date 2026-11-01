@@ -15,14 +15,14 @@ He cancels it.
 The telephone rings anyway.  
 From upstairs, the lift answers, though no one pressed a button.  
 Its doors open on an empty car.  
-A footprint appears behind the desk.  
+A footprint stops at the desk.  
 The ledger changes to four.  
 Two guests, the clerk, and whoever is standing behind him.  
 Now the arrivals balance.  
 At six, the wake-up call connects to the unlet room.  
 No one is left at reception to hear who answers.
 
-The committed narration stem measures 53.260 s with 124 Edge word events; the last spoken word ends at 52.270 s. The pre-reveal gap from “four” to “Two guests” is 2.706 s. The remaining time is an intentional weather/telephone landing rather than sped-up speech. The script matches the committed word-event text.
+The committed narration stem measures 52.924 s with 124 Edge word events; the last spoken word ends at 51.934 s. The pre-reveal gap from “four” to “Two guests” is 2.683 s. The remaining time is an intentional weather/telephone landing rather than sped-up speech. The script matches the committed word-event text.
 
 ## Picture and sound plan — locked to measured speech
 
@@ -36,11 +36,11 @@ Ten original 16:9 photo plates, zero people and no invented legible lettering: p
 | 04 | 17.0–22.5 | Hotel corridor, one closed unlet door, rain through distant window and the desk lamp visible beyond. The call is scheduled, then canceled. |
 | 05 | 22.5–27.5 | Close physical handset on the reception desk, no readable invented lettering; the telephone rings and the lift answers. |
 | 06 | 27.5–32.0 | Empty open lift in the lobby, wet threshold and dark interior. The uncalled doors open on an empty car. |
-| 07 | 32.0–39.2 | **WALL FRAME — THE UNCOUNTED GUEST:** one-point architectural view of the lobby; wet footprints reach behind the reception desk; one warm brass lamp, deep lift, rain and reflections. A footprint appears and the ledger changes. Creak and thunder carry the pre-reveal pause. |
-| 08 | 39.2–45.2 | From behind the empty desk: wet trace, open ledger and lobby receding into cool storm light. Two guests, the clerk, and whoever stands behind him. |
+| 07 | 32.0–39.2 | **WALL FRAME — THE UNCOUNTED GUEST:** one-point architectural view of the lobby; wet footprints cross the floor toward the desk and lift; one warm brass lamp, deep lift, rain and reflections. A footprint stops and the ledger changes. Creak and thunder carry the pre-reveal pause. |
+| 08 | 39.2–45.2 | An empty reception desk and a wet trace, with the lobby receding into cool storm light. Two guests, the clerk, and whoever stands behind him. |
 | 09 | 45.2–52.8 | The handset and ledger by the one brass lamp; the call connects and the reception is empty. |
 | 10 | 52.8–60.0 | Empty lobby and wet glass, the desk lamp still on; no caption. Rain and the telephone carry a held landing. |
 
-The committed narration stem measures 53.260 s with 124 Edge word events; the last spoken word ends at 52.270 s. The pre-reveal gap from “four” to “Two guests” is 2.706 s. The ending holds on weather and telephone rather than speeding speech. The script matches the committed word-event text.
+The committed narration stem measures 52.924 s with 124 Edge word events; the last spoken word ends at 51.934 s. The pre-reveal gap from “four” to “Two guests” is 2.683 s. The ending holds on weather and telephone rather than speeding speech. The script matches the committed word-event text.
 
 The film uses one autonomously selected prescribed deep voice, `en-US-ChristopherNeural`, rate −12%, pitch −4 Hz; a new original low bed, rain and story-specific dry sound; committed stem and word events; word-level 2–5-word captions; and a documented offline render.
