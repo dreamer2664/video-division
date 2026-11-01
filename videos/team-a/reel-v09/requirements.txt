@@ -1,0 +1,5 @@
+numpy==2.3.5
+Pillow==12.3.0
+scipy==1.17.1  # required for independent narration audit, not the renderer
+# Optional only for regenerating the committed narration stem:
+# edge-tts==7.3.1
