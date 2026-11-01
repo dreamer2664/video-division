@@ -4,12 +4,13 @@ An original 60-second fictional hospital handover horror. `video.mp4` is the 108
 
 ## Render offline
 
-Requirements: Python 3.10+, NumPy and Pillow (`python3 -m pip install -r requirements.txt`), and FFmpeg/ffprobe with libx264, libass, drawtext/FreeType, AAC and FLAC. From this directory:
+Requirements: Python 3.11+, NumPy and Pillow for rendering, SciPy for the independent narration audit (`python3 -m pip install -r requirements.txt`), and FFmpeg/ffprobe with libx264, libass, drawtext/FreeType, AAC and FLAC. From this directory:
 
 ```bash
 ./render.sh
 ./verify.sh
 ./check_timing.py
+./audit_narration.py
 ```
 
 The render builds original vector illustrations and a mathematically receding corridor, aligns subtitles to committed TTS word boundaries, synthesizes all music and effects from oscillators and seeded noise, normalizes the mix, and encodes both MP4s. It uses the committed offline narration FLAC and bundled typeface; no reference media or network is needed. Intermediate files are written to `/tmp` and cleaned afterward; `KEEP_TEMP=1 ./render.sh` retains the temporary mix analysis. Outputs overwrite the two MP4s and regenerate `captions.srt`. Pillow, FFmpeg and encoder version differences can change bytes even with identical source/timings.
