@@ -1,0 +1,73 @@
+{
+  "sentence": "The ledger has four names.",
+  "gap_s": 0.1,
+  "concatenated_pcm_duration_s": 9.187,
+  "note": "Same text and matched RMS; different engines retain their original sentence context. Piper boundary estimated from energy valley. No human listening test has been performed.",
+  "samples": [
+    {
+      "sample": "A",
+      "description": "current house Christopher \u221212%/\u22124 Hz",
+      "source": "voice-matrix/edge/en-US-ChristopherNeural--v10.mp3",
+      "source_in": 0.067,
+      "source_out": 2.039,
+      "duration": 1.972,
+      "reel_start": 0,
+      "reel_end": 1.972,
+      "target_rms_dbfs": -21,
+      "achieved_rms_dbfs": -21.0,
+      "peak_dbfs": -4.99
+    },
+    {
+      "sample": "B",
+      "description": "Edge Andrew Multilingual neutral",
+      "source": "voice-matrix/edge/en-US-AndrewMultilingualNeural--neutral.mp3",
+      "source_in": 0.06,
+      "source_out": 1.638,
+      "duration": 1.577,
+      "reel_start": 2.072,
+      "reel_end": 3.65,
+      "target_rms_dbfs": -21,
+      "achieved_rms_dbfs": -21.0,
+      "peak_dbfs": -7.11
+    },
+    {
+      "sample": "C",
+      "description": "Edge Brian Multilingual neutral",
+      "source": "voice-matrix/edge/en-US-BrianMultilingualNeural--neutral.mp3",
+      "source_in": 0.035,
+      "source_out": 1.775,
+      "duration": 1.74,
+      "reel_start": 3.75,
+      "reel_end": 5.49,
+      "target_rms_dbfs": -21,
+      "achieved_rms_dbfs": -21.0,
+      "peak_dbfs": -4.79
+    },
+    {
+      "sample": "D",
+      "description": "Piper Joe length scale 1.12",
+      "source": "voice-matrix/piper/joe--slow.flac",
+      "source_in": 0,
+      "source_out": 1.78,
+      "duration": 1.78,
+      "reel_start": 5.59,
+      "reel_end": 7.37,
+      "target_rms_dbfs": -21,
+      "achieved_rms_dbfs": -21.0,
+      "peak_dbfs": -1.09
+    },
+    {
+      "sample": "E",
+      "description": "ElevenLabs Roger multilingual v2",
+      "source": "voice-matrix/eleven/roger_multilingual_v2.mp3",
+      "source_in": 0,
+      "source_out": 1.717,
+      "duration": 1.717,
+      "reel_start": 7.47,
+      "reel_end": 9.187,
+      "target_rms_dbfs": -21,
+      "achieved_rms_dbfs": -21.0,
+      "peak_dbfs": -2.6
+    }
+  ]
+}

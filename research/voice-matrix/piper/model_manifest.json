@@ -1,0 +1,10 @@
+{
+  "model": "en_US-joe-medium",
+  "model_url": "https://huggingface.co/rhasspy/piper-voices/resolve/main/en/en_US/joe/medium/en_US-joe-medium.onnx",
+  "config_url": "https://huggingface.co/rhasspy/piper-voices/resolve/main/en/en_US/joe/medium/en_US-joe-medium.onnx.json",
+  "model_sha256": "58afce0321b8d9c46d7cdf9c16500cc55a793b4220212dba6b70fb788b3baf06",
+  "config_sha256": "3d6d5410b3795cb1950595247ef8f06190719e6fdbfa3a2356d8ec368e1aad33",
+  "model_bytes": 63201294,
+  "sample_rate_hz": 22050,
+  "license_note": "Model card says Joe dataset CC0; voice was finetuned from Lessac, so research and commercial/redistribution licensing must be reviewed independently. The installed current Piper runtime is GPL-3.0."
+}

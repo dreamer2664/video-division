@@ -1,0 +1,7 @@
+scene,region,lapvar_before,lapvar_after,acutance_proxy_before,acutance_proxy_after,contrast_std_before,contrast_std_after,background_contrast_less_than_foreground_after
+awning,foreground,732.9,984.226,40.782,43.1,45.313,46.007,True
+awning,background,165.146,62.375,20.085,14.689,35.015,29.474,True
+ledger,foreground,354.846,528.082,24.262,26.629,72.276,72.682,True
+ledger,background,56.579,22.64,11.845,9.49,37.013,32.823,True
+reception,foreground,250.777,372.278,19.414,21.624,40.292,40.797,True
+reception,background,108.615,40.927,16.6,11.544,31.67,27.326,True

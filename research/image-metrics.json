@@ -1,0 +1,125 @@
+[
+  {
+    "scene": "awning",
+    "source": "shot_01.jpg",
+    "native": "1376x768",
+    "output": "1920x1080",
+    "foreground_roi": [
+      0.03,
+      0.72,
+      0.41,
+      0.97
+    ],
+    "background_roi": [
+      0.0,
+      0.25,
+      0.22,
+      0.66
+    ],
+    "foreground": {
+      "laplacian_variance_before": 732.900390625,
+      "laplacian_variance_after": 984.2257690429688,
+      "edge_acutance_proxy_before": 40.78157424926758,
+      "edge_acutance_proxy_after": 43.10047149658203,
+      "contrast_std_before": 45.312713623046875,
+      "contrast_std_after": 46.00662612915039,
+      "pixels": 197100
+    },
+    "background": {
+      "laplacian_variance_before": 165.14578247070312,
+      "laplacian_variance_after": 62.37482452392578,
+      "edge_acutance_proxy_before": 20.084911346435547,
+      "edge_acutance_proxy_after": 14.688639640808105,
+      "contrast_std_before": 35.0152702331543,
+      "contrast_std_after": 29.474323272705078,
+      "pixels": 186524
+    },
+    "background_contrast_below_foreground_before": true,
+    "background_contrast_below_foreground_after": true,
+    "source_sha256": "5661382c463ede33c89830f88775e8f55e4212fdd2e6eb7291408bc2f6f9a2f1",
+    "before_sha256": "c7c00a7fecd2ecdfa65ce69560b5ca880472e919d020ad23d67e0f26d9a79e48",
+    "after_sha256": "c673af1e898723ce2bc99d6c7fe5c76c3f01dc977843864d90fd078998070258"
+  },
+  {
+    "scene": "ledger",
+    "source": "shot_03.jpg",
+    "native": "1376x768",
+    "output": "1920x1080",
+    "foreground_roi": [
+      0.15,
+      0.68,
+      0.76,
+      0.95
+    ],
+    "background_roi": [
+      0.57,
+      0.1,
+      0.91,
+      0.38
+    ],
+    "foreground": {
+      "laplacian_variance_before": 354.84552001953125,
+      "laplacian_variance_after": 528.08203125,
+      "edge_acutance_proxy_before": 24.262351989746094,
+      "edge_acutance_proxy_after": 26.62920570373535,
+      "contrast_std_before": 72.27629852294922,
+      "contrast_std_after": 72.68229675292969,
+      "pixels": 341932
+    },
+    "background": {
+      "laplacian_variance_before": 56.57854080200195,
+      "laplacian_variance_after": 22.640426635742188,
+      "edge_acutance_proxy_before": 11.844547271728516,
+      "edge_acutance_proxy_after": 9.489690780639648,
+      "contrast_std_before": 37.01250457763672,
+      "contrast_std_after": 32.82328796386719,
+      "pixels": 197206
+    },
+    "background_contrast_below_foreground_before": true,
+    "background_contrast_below_foreground_after": true,
+    "source_sha256": "03a0b602cafb8d472caed83ac04bbb541bc2ecc802cdf0ff964f7d1c8e64a5e6",
+    "before_sha256": "ed787cc695fd4b1ee8720afc4f61d302a8c3adafa17c05e8cbb8455c80e3a196",
+    "after_sha256": "23fa2b934bc55497300db47afa3a6c3ef018431bc2268eb5f877b9733344de80"
+  },
+  {
+    "scene": "reception",
+    "source": "shot_07_wall.jpg",
+    "native": "1376x768",
+    "output": "1920x1080",
+    "foreground_roi": [
+      0.28,
+      0.74,
+      0.66,
+      0.98
+    ],
+    "background_roi": [
+      0.43,
+      0.22,
+      0.56,
+      0.57
+    ],
+    "foreground": {
+      "laplacian_variance_before": 250.7766876220703,
+      "laplacian_variance_after": 372.27764892578125,
+      "edge_acutance_proxy_before": 19.41379165649414,
+      "edge_acutance_proxy_after": 21.624486923217773,
+      "contrast_std_before": 40.29244613647461,
+      "contrast_std_after": 40.79724884033203,
+      "pixels": 189070
+    },
+    "background": {
+      "laplacian_variance_before": 108.61466979980469,
+      "laplacian_variance_after": 40.92710494995117,
+      "edge_acutance_proxy_before": 16.599624633789062,
+      "edge_acutance_proxy_after": 11.543721199035645,
+      "contrast_std_before": 31.6698055267334,
+      "contrast_std_after": 27.325899124145508,
+      "pixels": 94500
+    },
+    "background_contrast_below_foreground_before": true,
+    "background_contrast_below_foreground_after": true,
+    "source_sha256": "be49594a9dcb892b3ac25689b7a7c39efbdca328437e2323adf42e6bc7a532dc",
+    "before_sha256": "7c204ccc2598fe3c936da1080006e94a0c3f3f5a6e33517c4ff02b24ac5a2355",
+    "after_sha256": "fb99098ca454d7ab60e561bfffb8fa4812566aa1262aada0b2f66eda29d7020b"
+  }
+]
