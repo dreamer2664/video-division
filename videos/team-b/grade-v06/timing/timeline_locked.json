@@ -1,0 +1,1310 @@
+{
+  "shots": [
+    {
+      "id": "01",
+      "start_frame": 0,
+      "end_frame": 210,
+      "frames": 210,
+      "start_s": 0.0,
+      "end_s": 7.0,
+      "dur_s": 7.0
+    },
+    {
+      "id": "02",
+      "start_frame": 210,
+      "end_frame": 472,
+      "frames": 262,
+      "start_s": 7.0,
+      "end_s": 15.733,
+      "dur_s": 8.733
+    },
+    {
+      "id": "03",
+      "start_frame": 472,
+      "end_frame": 656,
+      "frames": 184,
+      "start_s": 15.733,
+      "end_s": 21.867,
+      "dur_s": 6.133
+    },
+    {
+      "id": "04",
+      "start_frame": 656,
+      "end_frame": 806,
+      "frames": 150,
+      "start_s": 21.867,
+      "end_s": 26.867,
+      "dur_s": 5.0
+    },
+    {
+      "id": "05",
+      "start_frame": 806,
+      "end_frame": 944,
+      "frames": 138,
+      "start_s": 26.867,
+      "end_s": 31.467,
+      "dur_s": 4.6
+    },
+    {
+      "id": "06",
+      "start_frame": 944,
+      "end_frame": 1066,
+      "frames": 122,
+      "start_s": 31.467,
+      "end_s": 35.533,
+      "dur_s": 4.067
+    },
+    {
+      "id": "07",
+      "start_frame": 1066,
+      "end_frame": 1263,
+      "frames": 197,
+      "start_s": 35.533,
+      "end_s": 42.1,
+      "dur_s": 6.567
+    },
+    {
+      "id": "08",
+      "start_frame": 1263,
+      "end_frame": 1420,
+      "frames": 157,
+      "start_s": 42.1,
+      "end_s": 47.333,
+      "dur_s": 5.233
+    },
+    {
+      "id": "09",
+      "start_frame": 1420,
+      "end_frame": 1517,
+      "frames": 97,
+      "start_s": 47.333,
+      "end_s": 50.567,
+      "dur_s": 3.233
+    },
+    {
+      "id": "10",
+      "start_frame": 1517,
+      "end_frame": 1800,
+      "frames": 283,
+      "start_s": 50.567,
+      "end_s": 60.0,
+      "dur_s": 9.433
+    }
+  ],
+  "turns": [
+    {
+      "turn": "01",
+      "speaker": "A",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-11%",
+      "pitch": "-5Hz",
+      "text": "At two twenty-four, seven minutes after the upper lock breached, the copper wall phone rings. A line dead since nineteen eighty-nine.",
+      "first_w_raw": 0.106,
+      "last_w_raw": 9.635,
+      "start": 0.4,
+      "end": 9.929,
+      "dur": 9.529,
+      "words": [
+        {
+          "turn": "01",
+          "speaker": "A",
+          "idx": 0,
+          "text": "At",
+          "start": 0.4,
+          "end": 0.667
+        },
+        {
+          "turn": "01",
+          "speaker": "A",
+          "idx": 1,
+          "text": "two",
+          "start": 0.681,
+          "end": 0.92
+        },
+        {
+          "turn": "01",
+          "speaker": "A",
+          "idx": 2,
+          "text": "twenty-four",
+          "start": 0.934,
+          "end": 1.692
+        },
+        {
+          "turn": "01",
+          "speaker": "A",
+          "idx": 3,
+          "text": "seven",
+          "start": 1.973,
+          "end": 2.395
+        },
+        {
+          "turn": "01",
+          "speaker": "A",
+          "idx": 4,
+          "text": "minutes",
+          "start": 2.409,
+          "end": 2.774
+        },
+        {
+          "turn": "01",
+          "speaker": "A",
+          "idx": 5,
+          "text": "after",
+          "start": 2.788,
+          "end": 3.083
+        },
+        {
+          "turn": "01",
+          "speaker": "A",
+          "idx": 6,
+          "text": "the",
+          "start": 3.097,
+          "end": 3.209
+        },
+        {
+          "turn": "01",
+          "speaker": "A",
+          "idx": 7,
+          "text": "upper",
+          "start": 3.223,
+          "end": 3.532
+        },
+        {
+          "turn": "01",
+          "speaker": "A",
+          "idx": 8,
+          "text": "lock",
+          "start": 3.546,
+          "end": 3.883
+        },
+        {
+          "turn": "01",
+          "speaker": "A",
+          "idx": 9,
+          "text": "breached",
+          "start": 3.897,
+          "end": 4.431
+        },
+        {
+          "turn": "01",
+          "speaker": "A",
+          "idx": 10,
+          "text": "the",
+          "start": 4.642,
+          "end": 4.768
+        },
+        {
+          "turn": "01",
+          "speaker": "A",
+          "idx": 11,
+          "text": "copper",
+          "start": 4.782,
+          "end": 5.204
+        },
+        {
+          "turn": "01",
+          "speaker": "A",
+          "idx": 12,
+          "text": "wall",
+          "start": 5.218,
+          "end": 5.498
+        },
+        {
+          "turn": "01",
+          "speaker": "A",
+          "idx": 13,
+          "text": "phone",
+          "start": 5.513,
+          "end": 5.878
+        },
+        {
+          "turn": "01",
+          "speaker": "A",
+          "idx": 14,
+          "text": "rings",
+          "start": 5.892,
+          "end": 6.482
+        },
+        {
+          "turn": "01",
+          "speaker": "A",
+          "idx": 15,
+          "text": "A",
+          "start": 7.457,
+          "end": 7.583
+        },
+        {
+          "turn": "01",
+          "speaker": "A",
+          "idx": 16,
+          "text": "line",
+          "start": 7.597,
+          "end": 7.977
+        },
+        {
+          "turn": "01",
+          "speaker": "A",
+          "idx": 17,
+          "text": "dead",
+          "start": 7.991,
+          "end": 8.37
+        },
+        {
+          "turn": "01",
+          "speaker": "A",
+          "idx": 18,
+          "text": "since",
+          "start": 8.384,
+          "end": 8.707
+        },
+        {
+          "turn": "01",
+          "speaker": "A",
+          "idx": 19,
+          "text": "nineteen",
+          "start": 8.721,
+          "end": 9.198
+        },
+        {
+          "turn": "01",
+          "speaker": "A",
+          "idx": 20,
+          "text": "eighty-nine",
+          "start": 9.213,
+          "end": 9.929
+        }
+      ]
+    },
+    {
+      "turn": "02",
+      "speaker": "B",
+      "voice": "en-GB-SoniaNeural",
+      "rate": "+4%",
+      "pitch": "+2Hz",
+      "text": "Lower Tower, come in. Confirm your water is still below Mark Five.",
+      "first_w_raw": 0.11,
+      "last_w_raw": 4.749,
+      "start": 10.749,
+      "end": 15.388,
+      "dur": 4.639,
+      "words": [
+        {
+          "turn": "02",
+          "speaker": "B",
+          "idx": 0,
+          "text": "Lower",
+          "start": 10.749,
+          "end": 11.074
+        },
+        {
+          "turn": "02",
+          "speaker": "B",
+          "idx": 1,
+          "text": "Tower",
+          "start": 11.086,
+          "end": 11.578
+        },
+        {
+          "turn": "02",
+          "speaker": "B",
+          "idx": 2,
+          "text": "come",
+          "start": 11.807,
+          "end": 11.999
+        },
+        {
+          "turn": "02",
+          "speaker": "B",
+          "idx": 3,
+          "text": "in",
+          "start": 12.011,
+          "end": 12.3
+        },
+        {
+          "turn": "02",
+          "speaker": "B",
+          "idx": 4,
+          "text": "Confirm",
+          "start": 12.648,
+          "end": 13.14
+        },
+        {
+          "turn": "02",
+          "speaker": "B",
+          "idx": 5,
+          "text": "your",
+          "start": 13.152,
+          "end": 13.261
+        },
+        {
+          "turn": "02",
+          "speaker": "B",
+          "idx": 6,
+          "text": "water",
+          "start": 13.273,
+          "end": 13.777
+        },
+        {
+          "turn": "02",
+          "speaker": "B",
+          "idx": 7,
+          "text": "is",
+          "start": 13.79,
+          "end": 13.958
+        },
+        {
+          "turn": "02",
+          "speaker": "B",
+          "idx": 8,
+          "text": "still",
+          "start": 13.97,
+          "end": 14.222
+        },
+        {
+          "turn": "02",
+          "speaker": "B",
+          "idx": 9,
+          "text": "below",
+          "start": 14.234,
+          "end": 14.547
+        },
+        {
+          "turn": "02",
+          "speaker": "B",
+          "idx": 10,
+          "text": "Mark",
+          "start": 14.559,
+          "end": 14.835
+        },
+        {
+          "turn": "02",
+          "speaker": "B",
+          "idx": 11,
+          "text": "Five",
+          "start": 14.847,
+          "end": 15.388
+        }
+      ]
+    },
+    {
+      "turn": "03",
+      "speaker": "A",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-11%",
+      "pitch": "-5Hz",
+      "text": "I check the spillway wall outside. Four inches below the red five.",
+      "first_w_raw": 0.106,
+      "last_w_raw": 5.562,
+      "start": 16.068,
+      "end": 21.524,
+      "dur": 5.456,
+      "words": [
+        {
+          "turn": "03",
+          "speaker": "A",
+          "idx": 0,
+          "text": "I",
+          "start": 16.068,
+          "end": 16.265
+        },
+        {
+          "turn": "03",
+          "speaker": "A",
+          "idx": 1,
+          "text": "check",
+          "start": 16.279,
+          "end": 16.602
+        },
+        {
+          "turn": "03",
+          "speaker": "A",
+          "idx": 2,
+          "text": "the",
+          "start": 16.616,
+          "end": 16.728
+        },
+        {
+          "turn": "03",
+          "speaker": "A",
+          "idx": 3,
+          "text": "spillway",
+          "start": 16.742,
+          "end": 17.276
+        },
+        {
+          "turn": "03",
+          "speaker": "A",
+          "idx": 4,
+          "text": "wall",
+          "start": 17.29,
+          "end": 17.627
+        },
+        {
+          "turn": "03",
+          "speaker": "A",
+          "idx": 5,
+          "text": "outside",
+          "start": 17.641,
+          "end": 18.372
+        },
+        {
+          "turn": "03",
+          "speaker": "A",
+          "idx": 6,
+          "text": "Four",
+          "start": 19.347,
+          "end": 19.614
+        },
+        {
+          "turn": "03",
+          "speaker": "A",
+          "idx": 7,
+          "text": "inches",
+          "start": 19.628,
+          "end": 20.063
+        },
+        {
+          "turn": "03",
+          "speaker": "A",
+          "idx": 8,
+          "text": "below",
+          "start": 20.077,
+          "end": 20.47
+        },
+        {
+          "turn": "03",
+          "speaker": "A",
+          "idx": 9,
+          "text": "the",
+          "start": 20.484,
+          "end": 20.625
+        },
+        {
+          "turn": "03",
+          "speaker": "A",
+          "idx": 10,
+          "text": "red",
+          "start": 20.639,
+          "end": 20.892
+        },
+        {
+          "turn": "03",
+          "speaker": "A",
+          "idx": 11,
+          "text": "five",
+          "start": 20.906,
+          "end": 21.524
+        }
+      ]
+    },
+    {
+      "turn": "04",
+      "speaker": "B",
+      "voice": "en-GB-SoniaNeural",
+      "rate": "+4%",
+      "pitch": "+2Hz",
+      "text": "Good. Whatever you hear on the roof, do not draw the spillway pins.",
+      "first_w_raw": 0.1,
+      "last_w_raw": 4.435,
+      "start": 22.204,
+      "end": 26.539,
+      "dur": 4.335,
+      "words": [
+        {
+          "turn": "04",
+          "speaker": "B",
+          "idx": 0,
+          "text": "Good",
+          "start": 22.204,
+          "end": 22.684
+        },
+        {
+          "turn": "04",
+          "speaker": "B",
+          "idx": 1,
+          "text": "Whatever",
+          "start": 23.066,
+          "end": 23.474
+        },
+        {
+          "turn": "04",
+          "speaker": "B",
+          "idx": 2,
+          "text": "you",
+          "start": 23.486,
+          "end": 23.654
+        },
+        {
+          "turn": "04",
+          "speaker": "B",
+          "idx": 3,
+          "text": "hear",
+          "start": 23.666,
+          "end": 23.895
+        },
+        {
+          "turn": "04",
+          "speaker": "B",
+          "idx": 4,
+          "text": "on",
+          "start": 23.907,
+          "end": 24.027
+        },
+        {
+          "turn": "04",
+          "speaker": "B",
+          "idx": 5,
+          "text": "the",
+          "start": 24.039,
+          "end": 24.123
+        },
+        {
+          "turn": "04",
+          "speaker": "B",
+          "idx": 6,
+          "text": "roof",
+          "start": 24.135,
+          "end": 24.544
+        },
+        {
+          "turn": "04",
+          "speaker": "B",
+          "idx": 7,
+          "text": "do",
+          "start": 24.796,
+          "end": 24.916
+        },
+        {
+          "turn": "04",
+          "speaker": "B",
+          "idx": 8,
+          "text": "not",
+          "start": 24.929,
+          "end": 25.169
+        },
+        {
+          "turn": "04",
+          "speaker": "B",
+          "idx": 9,
+          "text": "draw",
+          "start": 25.181,
+          "end": 25.433
+        },
+        {
+          "turn": "04",
+          "speaker": "B",
+          "idx": 10,
+          "text": "the",
+          "start": 25.445,
+          "end": 25.553
+        },
+        {
+          "turn": "04",
+          "speaker": "B",
+          "idx": 11,
+          "text": "spillway",
+          "start": 25.566,
+          "end": 25.998
+        },
+        {
+          "turn": "04",
+          "speaker": "B",
+          "idx": 12,
+          "text": "pins",
+          "start": 26.01,
+          "end": 26.539
+        }
+      ]
+    },
+    {
+      "turn": "05",
+      "speaker": "A",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-11%",
+      "pitch": "-5Hz",
+      "text": "Wait. How do you know something is walking on the roof?",
+      "first_w_raw": 0.106,
+      "last_w_raw": 4.073,
+      "start": 27.159,
+      "end": 31.126,
+      "dur": 3.967,
+      "words": [
+        {
+          "turn": "05",
+          "speaker": "A",
+          "idx": 0,
+          "text": "Wait",
+          "start": 27.159,
+          "end": 27.735
+        },
+        {
+          "turn": "05",
+          "speaker": "A",
+          "idx": 1,
+          "text": "How",
+          "start": 28.696,
+          "end": 28.907
+        },
+        {
+          "turn": "05",
+          "speaker": "A",
+          "idx": 2,
+          "text": "do",
+          "start": 28.921,
+          "end": 29.005
+        },
+        {
+          "turn": "05",
+          "speaker": "A",
+          "idx": 3,
+          "text": "you",
+          "start": 29.019,
+          "end": 29.132
+        },
+        {
+          "turn": "05",
+          "speaker": "A",
+          "idx": 4,
+          "text": "know",
+          "start": 29.146,
+          "end": 29.342
+        },
+        {
+          "turn": "05",
+          "speaker": "A",
+          "idx": 5,
+          "text": "something",
+          "start": 29.356,
+          "end": 29.806
+        },
+        {
+          "turn": "05",
+          "speaker": "A",
+          "idx": 6,
+          "text": "is",
+          "start": 29.82,
+          "end": 29.932
+        },
+        {
+          "turn": "05",
+          "speaker": "A",
+          "idx": 7,
+          "text": "walking",
+          "start": 29.946,
+          "end": 30.396
+        },
+        {
+          "turn": "05",
+          "speaker": "A",
+          "idx": 8,
+          "text": "on",
+          "start": 30.41,
+          "end": 30.522
+        },
+        {
+          "turn": "05",
+          "speaker": "A",
+          "idx": 9,
+          "text": "the",
+          "start": 30.536,
+          "end": 30.62
+        },
+        {
+          "turn": "05",
+          "speaker": "A",
+          "idx": 10,
+          "text": "roof",
+          "start": 30.634,
+          "end": 31.126
+        }
+      ]
+    },
+    {
+      "turn": "06",
+      "speaker": "B",
+      "voice": "en-GB-SoniaNeural",
+      "rate": "+4%",
+      "pitch": "+2Hz",
+      "text": "Follow the copper telephone wire down beneath your window sill.",
+      "first_w_raw": 0.122,
+      "last_w_raw": 3.512,
+      "start": 31.806,
+      "end": 35.196,
+      "dur": 3.39,
+      "words": [
+        {
+          "turn": "06",
+          "speaker": "B",
+          "idx": 0,
+          "text": "Follow",
+          "start": 31.806,
+          "end": 32.191
+        },
+        {
+          "turn": "06",
+          "speaker": "B",
+          "idx": 1,
+          "text": "the",
+          "start": 32.203,
+          "end": 32.335
+        },
+        {
+          "turn": "06",
+          "speaker": "B",
+          "idx": 2,
+          "text": "copper",
+          "start": 32.347,
+          "end": 32.66
+        },
+        {
+          "turn": "06",
+          "speaker": "B",
+          "idx": 3,
+          "text": "telephone",
+          "start": 32.672,
+          "end": 33.188
+        },
+        {
+          "turn": "06",
+          "speaker": "B",
+          "idx": 4,
+          "text": "wire",
+          "start": 33.2,
+          "end": 33.525
+        },
+        {
+          "turn": "06",
+          "speaker": "B",
+          "idx": 5,
+          "text": "down",
+          "start": 33.537,
+          "end": 33.909
+        },
+        {
+          "turn": "06",
+          "speaker": "B",
+          "idx": 6,
+          "text": "beneath",
+          "start": 33.921,
+          "end": 34.282
+        },
+        {
+          "turn": "06",
+          "speaker": "B",
+          "idx": 7,
+          "text": "your",
+          "start": 34.294,
+          "end": 34.39
+        },
+        {
+          "turn": "06",
+          "speaker": "B",
+          "idx": 8,
+          "text": "window",
+          "start": 34.402,
+          "end": 34.763
+        },
+        {
+          "turn": "06",
+          "speaker": "B",
+          "idx": 9,
+          "text": "sill",
+          "start": 34.775,
+          "end": 35.196
+        }
+      ]
+    },
+    {
+      "turn": "07",
+      "speaker": "A",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-11%",
+      "pitch": "-5Hz",
+      "text": "My lamp hits the wet stone floor. The wire is cut clean through.",
+      "first_w_raw": 0.106,
+      "last_w_raw": 5.393,
+      "start": 35.876,
+      "end": 41.163,
+      "dur": 5.287,
+      "words": [
+        {
+          "turn": "07",
+          "speaker": "A",
+          "idx": 0,
+          "text": "My",
+          "start": 35.876,
+          "end": 36.087
+        },
+        {
+          "turn": "07",
+          "speaker": "A",
+          "idx": 1,
+          "text": "lamp",
+          "start": 36.101,
+          "end": 36.48
+        },
+        {
+          "turn": "07",
+          "speaker": "A",
+          "idx": 2,
+          "text": "hits",
+          "start": 36.494,
+          "end": 36.817
+        },
+        {
+          "turn": "07",
+          "speaker": "A",
+          "idx": 3,
+          "text": "the",
+          "start": 36.831,
+          "end": 36.958
+        },
+        {
+          "turn": "07",
+          "speaker": "A",
+          "idx": 4,
+          "text": "wet",
+          "start": 36.972,
+          "end": 37.182
+        },
+        {
+          "turn": "07",
+          "speaker": "A",
+          "idx": 5,
+          "text": "stone",
+          "start": 37.196,
+          "end": 37.618
+        },
+        {
+          "turn": "07",
+          "speaker": "A",
+          "idx": 6,
+          "text": "floor",
+          "start": 37.632,
+          "end": 38.18
+        },
+        {
+          "turn": "07",
+          "speaker": "A",
+          "idx": 7,
+          "text": "The",
+          "start": 39.155,
+          "end": 39.309
+        },
+        {
+          "turn": "07",
+          "speaker": "A",
+          "idx": 8,
+          "text": "wire",
+          "start": 39.323,
+          "end": 39.773
+        },
+        {
+          "turn": "07",
+          "speaker": "A",
+          "idx": 9,
+          "text": "is",
+          "start": 39.787,
+          "end": 39.955
+        },
+        {
+          "turn": "07",
+          "speaker": "A",
+          "idx": 10,
+          "text": "cut",
+          "start": 39.969,
+          "end": 40.278
+        },
+        {
+          "turn": "07",
+          "speaker": "A",
+          "idx": 11,
+          "text": "clean",
+          "start": 40.292,
+          "end": 40.672
+        },
+        {
+          "turn": "07",
+          "speaker": "A",
+          "idx": 12,
+          "text": "through",
+          "start": 40.686,
+          "end": 41.163
+        }
+      ]
+    },
+    {
+      "turn": "08",
+      "speaker": "B",
+      "voice": "en-GB-SoniaNeural",
+      "rate": "+4%",
+      "pitch": "+2Hz",
+      "text": "I'm not calling from Basin Control. I'm on your roof, clipped to the stub. And Mark Five wasn't painted to measure the river.",
+      "first_w_raw": 0.134,
+      "last_w_raw": 7.861,
+      "start": 42.443,
+      "end": 50.17,
+      "dur": 7.727,
+      "words": [
+        {
+          "turn": "08",
+          "speaker": "B",
+          "idx": 0,
+          "text": "I'm",
+          "start": 42.443,
+          "end": 42.599
+        },
+        {
+          "turn": "08",
+          "speaker": "B",
+          "idx": 1,
+          "text": "not",
+          "start": 42.611,
+          "end": 42.852
+        },
+        {
+          "turn": "08",
+          "speaker": "B",
+          "idx": 2,
+          "text": "calling",
+          "start": 42.864,
+          "end": 43.321
+        },
+        {
+          "turn": "08",
+          "speaker": "B",
+          "idx": 3,
+          "text": "from",
+          "start": 43.333,
+          "end": 43.537
+        },
+        {
+          "turn": "08",
+          "speaker": "B",
+          "idx": 4,
+          "text": "Basin",
+          "start": 43.549,
+          "end": 43.946
+        },
+        {
+          "turn": "08",
+          "speaker": "B",
+          "idx": 5,
+          "text": "Control",
+          "start": 43.958,
+          "end": 44.546
+        },
+        {
+          "turn": "08",
+          "speaker": "B",
+          "idx": 6,
+          "text": "I'm",
+          "start": 44.929,
+          "end": 45.109
+        },
+        {
+          "turn": "08",
+          "speaker": "B",
+          "idx": 7,
+          "text": "on",
+          "start": 45.121,
+          "end": 45.266
+        },
+        {
+          "turn": "08",
+          "speaker": "B",
+          "idx": 8,
+          "text": "your",
+          "start": 45.278,
+          "end": 45.398
+        },
+        {
+          "turn": "08",
+          "speaker": "B",
+          "idx": 9,
+          "text": "roof",
+          "start": 45.41,
+          "end": 45.903
+        },
+        {
+          "turn": "08",
+          "speaker": "B",
+          "idx": 10,
+          "text": "clipped",
+          "start": 46.143,
+          "end": 46.492
+        },
+        {
+          "turn": "08",
+          "speaker": "B",
+          "idx": 11,
+          "text": "to",
+          "start": 46.504,
+          "end": 46.588
+        },
+        {
+          "turn": "08",
+          "speaker": "B",
+          "idx": 12,
+          "text": "the",
+          "start": 46.6,
+          "end": 46.696
+        },
+        {
+          "turn": "08",
+          "speaker": "B",
+          "idx": 13,
+          "text": "stub",
+          "start": 46.708,
+          "end": 47.129
+        },
+        {
+          "turn": "08",
+          "speaker": "B",
+          "idx": 14,
+          "text": "And",
+          "start": 47.513,
+          "end": 47.646
+        },
+        {
+          "turn": "08",
+          "speaker": "B",
+          "idx": 15,
+          "text": "Mark",
+          "start": 47.658,
+          "end": 47.946
+        },
+        {
+          "turn": "08",
+          "speaker": "B",
+          "idx": 16,
+          "text": "Five",
+          "start": 47.958,
+          "end": 48.403
+        },
+        {
+          "turn": "08",
+          "speaker": "B",
+          "idx": 17,
+          "text": "wasn't",
+          "start": 48.415,
+          "end": 48.739
+        },
+        {
+          "turn": "08",
+          "speaker": "B",
+          "idx": 18,
+          "text": "painted",
+          "start": 48.751,
+          "end": 49.196
+        },
+        {
+          "turn": "08",
+          "speaker": "B",
+          "idx": 19,
+          "text": "to",
+          "start": 49.208,
+          "end": 49.304
+        },
+        {
+          "turn": "08",
+          "speaker": "B",
+          "idx": 20,
+          "text": "measure",
+          "start": 49.316,
+          "end": 49.617
+        },
+        {
+          "turn": "08",
+          "speaker": "B",
+          "idx": 21,
+          "text": "the",
+          "start": 49.629,
+          "end": 49.737
+        },
+        {
+          "turn": "08",
+          "speaker": "B",
+          "idx": 22,
+          "text": "river",
+          "start": 49.749,
+          "end": 50.17
+        }
+      ]
+    },
+    {
+      "turn": "09",
+      "speaker": "A",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-11%",
+      "pitch": "-5Hz",
+      "text": "I raise the lamp. Mark Five is stenciled across the ceiling.",
+      "first_w_raw": 0.106,
+      "last_w_raw": 5.042,
+      "start": 50.95,
+      "end": 55.886,
+      "dur": 4.936,
+      "words": [
+        {
+          "turn": "09",
+          "speaker": "A",
+          "idx": 0,
+          "text": "I",
+          "start": 50.95,
+          "end": 51.161
+        },
+        {
+          "turn": "09",
+          "speaker": "A",
+          "idx": 1,
+          "text": "raise",
+          "start": 51.175,
+          "end": 51.568
+        },
+        {
+          "turn": "09",
+          "speaker": "A",
+          "idx": 2,
+          "text": "the",
+          "start": 51.582,
+          "end": 51.709
+        },
+        {
+          "turn": "09",
+          "speaker": "A",
+          "idx": 3,
+          "text": "lamp",
+          "start": 51.723,
+          "end": 52.256
+        },
+        {
+          "turn": "09",
+          "speaker": "A",
+          "idx": 4,
+          "text": "Mark",
+          "start": 53.232,
+          "end": 53.625
+        },
+        {
+          "turn": "09",
+          "speaker": "A",
+          "idx": 5,
+          "text": "Five",
+          "start": 53.639,
+          "end": 54.06
+        },
+        {
+          "turn": "09",
+          "speaker": "A",
+          "idx": 6,
+          "text": "is",
+          "start": 54.074,
+          "end": 54.201
+        },
+        {
+          "turn": "09",
+          "speaker": "A",
+          "idx": 7,
+          "text": "stenciled",
+          "start": 54.215,
+          "end": 54.706
+        },
+        {
+          "turn": "09",
+          "speaker": "A",
+          "idx": 8,
+          "text": "across",
+          "start": 54.72,
+          "end": 55.156
+        },
+        {
+          "turn": "09",
+          "speaker": "A",
+          "idx": 9,
+          "text": "the",
+          "start": 55.17,
+          "end": 55.296
+        },
+        {
+          "turn": "09",
+          "speaker": "A",
+          "idx": 10,
+          "text": "ceiling",
+          "start": 55.31,
+          "end": 55.886
+        }
+      ]
+    },
+    {
+      "turn": "10",
+      "speaker": "B",
+      "voice": "en-GB-SoniaNeural",
+      "rate": "+4%",
+      "pitch": "+2Hz",
+      "text": "It marks how high your tower fills.",
+      "first_w_raw": 0.134,
+      "last_w_raw": 2.201,
+      "start": 56.766,
+      "end": 58.833,
+      "dur": 2.067,
+      "words": [
+        {
+          "turn": "10",
+          "speaker": "B",
+          "idx": 0,
+          "text": "It",
+          "start": 56.766,
+          "end": 56.934
+        },
+        {
+          "turn": "10",
+          "speaker": "B",
+          "idx": 1,
+          "text": "marks",
+          "start": 56.946,
+          "end": 57.319
+        },
+        {
+          "turn": "10",
+          "speaker": "B",
+          "idx": 2,
+          "text": "how",
+          "start": 57.331,
+          "end": 57.499
+        },
+        {
+          "turn": "10",
+          "speaker": "B",
+          "idx": 3,
+          "text": "high",
+          "start": 57.511,
+          "end": 57.752
+        },
+        {
+          "turn": "10",
+          "speaker": "B",
+          "idx": 4,
+          "text": "your",
+          "start": 57.764,
+          "end": 57.92
+        },
+        {
+          "turn": "10",
+          "speaker": "B",
+          "idx": 5,
+          "text": "tower",
+          "start": 57.932,
+          "end": 58.281
+        },
+        {
+          "turn": "10",
+          "speaker": "B",
+          "idx": 6,
+          "text": "fills",
+          "start": 58.293,
+          "end": 58.833
+        }
+      ]
+    }
+  ]
+}
