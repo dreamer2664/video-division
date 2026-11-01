@@ -1,0 +1,1424 @@
+{
+  "turns": [
+    {
+      "turn": "01",
+      "speaker": "A",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-10%",
+      "pitch": "-6Hz",
+      "start": 0.4,
+      "end": 6.581,
+      "gap_after": 0.62,
+      "text": "Two thirty-seven, Vault Six is empty, and this tape reel starts when water reaches the glass.",
+      "words": [
+        {
+          "text": "Two",
+          "start": 0.4,
+          "end": 0.664
+        },
+        {
+          "text": "thirty-seven",
+          "start": 0.678,
+          "end": 1.47
+        },
+        {
+          "text": "Vault",
+          "start": 1.72,
+          "end": 1.983
+        },
+        {
+          "text": "Six",
+          "start": 1.997,
+          "end": 2.414
+        },
+        {
+          "text": "is",
+          "start": 2.428,
+          "end": 2.636
+        },
+        {
+          "text": "empty",
+          "start": 2.65,
+          "end": 3.095
+        },
+        {
+          "text": "and",
+          "start": 3.317,
+          "end": 3.483
+        },
+        {
+          "text": "this",
+          "start": 3.497,
+          "end": 3.72
+        },
+        {
+          "text": "tape",
+          "start": 3.733,
+          "end": 4.025
+        },
+        {
+          "text": "reel",
+          "start": 4.039,
+          "end": 4.331
+        },
+        {
+          "text": "starts",
+          "start": 4.345,
+          "end": 4.789
+        },
+        {
+          "text": "when",
+          "start": 4.803,
+          "end": 4.983
+        },
+        {
+          "text": "water",
+          "start": 4.997,
+          "end": 5.386
+        },
+        {
+          "text": "reaches",
+          "start": 5.4,
+          "end": 5.803
+        },
+        {
+          "text": "the",
+          "start": 5.817,
+          "end": 5.914
+        },
+        {
+          "text": "glass",
+          "start": 5.928,
+          "end": 6.581
+        }
+      ]
+    },
+    {
+      "turn": "02",
+      "speaker": "B",
+      "voice": "en-GB-SoniaNeural",
+      "rate": "+5%",
+      "pitch": "+4Hz",
+      "start": 7.201,
+      "end": 11.915,
+      "gap_after": 0.58,
+      "text": "Vault Six, why is a tape answering, and why is your wall phone swinging off the hook?",
+      "words": [
+        {
+          "text": "Vault",
+          "start": 7.201,
+          "end": 7.511
+        },
+        {
+          "text": "Six",
+          "start": 7.522,
+          "end": 7.975
+        },
+        {
+          "text": "why",
+          "start": 8.225,
+          "end": 8.427
+        },
+        {
+          "text": "is",
+          "start": 8.439,
+          "end": 8.57
+        },
+        {
+          "text": "a",
+          "start": 8.582,
+          "end": 8.641
+        },
+        {
+          "text": "tape",
+          "start": 8.653,
+          "end": 8.927
+        },
+        {
+          "text": "answering",
+          "start": 8.939,
+          "end": 9.463
+        },
+        {
+          "text": "and",
+          "start": 9.713,
+          "end": 9.82
+        },
+        {
+          "text": "why",
+          "start": 9.832,
+          "end": 10.022
+        },
+        {
+          "text": "is",
+          "start": 10.034,
+          "end": 10.165
+        },
+        {
+          "text": "your",
+          "start": 10.177,
+          "end": 10.272
+        },
+        {
+          "text": "wall",
+          "start": 10.284,
+          "end": 10.534
+        },
+        {
+          "text": "phone",
+          "start": 10.546,
+          "end": 10.891
+        },
+        {
+          "text": "swinging",
+          "start": 10.903,
+          "end": 11.237
+        },
+        {
+          "text": "off",
+          "start": 11.249,
+          "end": 11.38
+        },
+        {
+          "text": "the",
+          "start": 11.391,
+          "end": 11.463
+        },
+        {
+          "text": "hook",
+          "start": 11.475,
+          "end": 11.915
+        }
+      ]
+    },
+    {
+      "turn": "03",
+      "speaker": "C",
+      "voice": "en-IE-ConnorNeural",
+      "rate": "+2%",
+      "pitch": "+6Hz",
+      "start": 12.495,
+      "end": 18.083,
+      "gap_after": 0.58,
+      "text": "Barge Six on the ceiling horn, I hear you through the empty room, three chairs and nobody inside.",
+      "words": [
+        {
+          "text": "Barge",
+          "start": 12.495,
+          "end": 12.838
+        },
+        {
+          "text": "Six",
+          "start": 12.875,
+          "end": 13.169
+        },
+        {
+          "text": "on",
+          "start": 13.169,
+          "end": 13.267
+        },
+        {
+          "text": "the",
+          "start": 13.292,
+          "end": 13.353
+        },
+        {
+          "text": "ceiling",
+          "start": 13.39,
+          "end": 13.733
+        },
+        {
+          "text": "horn",
+          "start": 13.745,
+          "end": 14.149
+        },
+        {
+          "text": "I",
+          "start": 14.394,
+          "end": 14.505
+        },
+        {
+          "text": "hear",
+          "start": 14.542,
+          "end": 14.701
+        },
+        {
+          "text": "you",
+          "start": 14.762,
+          "end": 14.823
+        },
+        {
+          "text": "through",
+          "start": 14.86,
+          "end": 15.068
+        },
+        {
+          "text": "the",
+          "start": 15.068,
+          "end": 15.167
+        },
+        {
+          "text": "empty",
+          "start": 15.24,
+          "end": 15.497
+        },
+        {
+          "text": "room",
+          "start": 15.559,
+          "end": 16.0
+        },
+        {
+          "text": "three",
+          "start": 16.245,
+          "end": 16.466
+        },
+        {
+          "text": "chairs",
+          "start": 16.539,
+          "end": 16.944
+        },
+        {
+          "text": "and",
+          "start": 17.005,
+          "end": 17.103
+        },
+        {
+          "text": "nobody",
+          "start": 17.115,
+          "end": 17.52
+        },
+        {
+          "text": "inside",
+          "start": 17.569,
+          "end": 18.083
+        }
+      ]
+    },
+    {
+      "turn": "04",
+      "speaker": "B",
+      "voice": "en-GB-SoniaNeural",
+      "rate": "+5%",
+      "pitch": "+4Hz",
+      "start": 18.663,
+      "end": 23.735,
+      "gap_after": 0.58,
+      "text": "Barge, sweep your searchlight up the dam wall and confirm water is still below Mark Six.",
+      "words": [
+        {
+          "text": "Barge",
+          "start": 18.663,
+          "end": 19.115
+        },
+        {
+          "text": "sweep",
+          "start": 19.365,
+          "end": 19.663
+        },
+        {
+          "text": "your",
+          "start": 19.675,
+          "end": 19.794
+        },
+        {
+          "text": "searchlight",
+          "start": 19.806,
+          "end": 20.365
+        },
+        {
+          "text": "up",
+          "start": 20.377,
+          "end": 20.508
+        },
+        {
+          "text": "the",
+          "start": 20.52,
+          "end": 20.615
+        },
+        {
+          "text": "dam",
+          "start": 20.627,
+          "end": 20.877
+        },
+        {
+          "text": "wall",
+          "start": 20.889,
+          "end": 21.223
+        },
+        {
+          "text": "and",
+          "start": 21.235,
+          "end": 21.354
+        },
+        {
+          "text": "confirm",
+          "start": 21.365,
+          "end": 21.794
+        },
+        {
+          "text": "water",
+          "start": 21.806,
+          "end": 22.223
+        },
+        {
+          "text": "is",
+          "start": 22.235,
+          "end": 22.389
+        },
+        {
+          "text": "still",
+          "start": 22.401,
+          "end": 22.651
+        },
+        {
+          "text": "below",
+          "start": 22.663,
+          "end": 22.949
+        },
+        {
+          "text": "Mark",
+          "start": 22.961,
+          "end": 23.211
+        },
+        {
+          "text": "Six",
+          "start": 23.223,
+          "end": 23.735
+        }
+      ]
+    },
+    {
+      "turn": "05",
+      "speaker": "C",
+      "voice": "en-IE-ConnorNeural",
+      "rate": "+2%",
+      "pitch": "+6Hz",
+      "start": 24.315,
+      "end": 29.18,
+      "gap_after": 0.6,
+      "text": "Five red marks on the concrete are underwater, and there is no Mark Six painted outside.",
+      "words": [
+        {
+          "text": "Five",
+          "start": 24.315,
+          "end": 24.658
+        },
+        {
+          "text": "red",
+          "start": 24.658,
+          "end": 24.891
+        },
+        {
+          "text": "marks",
+          "start": 24.903,
+          "end": 25.21
+        },
+        {
+          "text": "on",
+          "start": 25.21,
+          "end": 25.308
+        },
+        {
+          "text": "the",
+          "start": 25.344,
+          "end": 25.381
+        },
+        {
+          "text": "concrete",
+          "start": 25.43,
+          "end": 25.945
+        },
+        {
+          "text": "are",
+          "start": 25.994,
+          "end": 26.141
+        },
+        {
+          "text": "underwater",
+          "start": 26.178,
+          "end": 26.778
+        },
+        {
+          "text": "and",
+          "start": 27.109,
+          "end": 27.195
+        },
+        {
+          "text": "there",
+          "start": 27.219,
+          "end": 27.293
+        },
+        {
+          "text": "is",
+          "start": 27.342,
+          "end": 27.452
+        },
+        {
+          "text": "no",
+          "start": 27.477,
+          "end": 27.636
+        },
+        {
+          "text": "Mark",
+          "start": 27.673,
+          "end": 27.955
+        },
+        {
+          "text": "Six",
+          "start": 27.992,
+          "end": 28.249
+        },
+        {
+          "text": "painted",
+          "start": 28.273,
+          "end": 28.617
+        },
+        {
+          "text": "outside",
+          "start": 28.666,
+          "end": 29.18
+        }
+      ]
+    },
+    {
+      "turn": "06",
+      "speaker": "A",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-10%",
+      "pitch": "-6Hz",
+      "start": 29.78,
+      "end": 34.169,
+      "gap_after": 0.58,
+      "text": "If you hear this tape over the room mic, stop looking for a sixth gate.",
+      "words": [
+        {
+          "text": "If",
+          "start": 29.78,
+          "end": 29.961
+        },
+        {
+          "text": "you",
+          "start": 29.975,
+          "end": 30.113
+        },
+        {
+          "text": "hear",
+          "start": 30.127,
+          "end": 30.391
+        },
+        {
+          "text": "this",
+          "start": 30.405,
+          "end": 30.613
+        },
+        {
+          "text": "tape",
+          "start": 30.627,
+          "end": 30.933
+        },
+        {
+          "text": "over",
+          "start": 30.947,
+          "end": 31.155
+        },
+        {
+          "text": "the",
+          "start": 31.169,
+          "end": 31.28
+        },
+        {
+          "text": "room",
+          "start": 31.294,
+          "end": 31.572
+        },
+        {
+          "text": "mic",
+          "start": 31.586,
+          "end": 31.933
+        },
+        {
+          "text": "stop",
+          "start": 32.224,
+          "end": 32.655
+        },
+        {
+          "text": "looking",
+          "start": 32.669,
+          "end": 33.016
+        },
+        {
+          "text": "for",
+          "start": 33.03,
+          "end": 33.224
+        },
+        {
+          "text": "a",
+          "start": 33.238,
+          "end": 33.308
+        },
+        {
+          "text": "sixth",
+          "start": 33.322,
+          "end": 33.724
+        },
+        {
+          "text": "gate",
+          "start": 33.738,
+          "end": 34.169
+        }
+      ]
+    },
+    {
+      "turn": "07",
+      "speaker": "B",
+      "voice": "en-GB-SoniaNeural",
+      "rate": "+5%",
+      "pitch": "+4Hz",
+      "start": 34.749,
+      "end": 37.94,
+      "gap_after": 0.58,
+      "text": "Then why leave three storm lamps burning in an empty room?",
+      "words": [
+        {
+          "text": "Then",
+          "start": 34.749,
+          "end": 34.987
+        },
+        {
+          "text": "why",
+          "start": 34.999,
+          "end": 35.154
+        },
+        {
+          "text": "leave",
+          "start": 35.166,
+          "end": 35.547
+        },
+        {
+          "text": "three",
+          "start": 35.559,
+          "end": 35.832
+        },
+        {
+          "text": "storm",
+          "start": 35.844,
+          "end": 36.201
+        },
+        {
+          "text": "lamps",
+          "start": 36.213,
+          "end": 36.606
+        },
+        {
+          "text": "burning",
+          "start": 36.618,
+          "end": 37.035
+        },
+        {
+          "text": "in",
+          "start": 37.047,
+          "end": 37.118
+        },
+        {
+          "text": "an",
+          "start": 37.13,
+          "end": 37.225
+        },
+        {
+          "text": "empty",
+          "start": 37.237,
+          "end": 37.511
+        },
+        {
+          "text": "room",
+          "start": 37.523,
+          "end": 37.94
+        }
+      ]
+    },
+    {
+      "turn": "08",
+      "speaker": "C",
+      "voice": "en-IE-ConnorNeural",
+      "rate": "+2%",
+      "pitch": "+6Hz",
+      "start": 38.52,
+      "end": 43.569,
+      "gap_after": 1.2,
+      "text": "Wait, through the glass, Mark Six is stenciled inside, behind the three empty chairs.",
+      "words": [
+        {
+          "text": "Wait",
+          "start": 38.52,
+          "end": 38.875
+        },
+        {
+          "text": "through",
+          "start": 39.096,
+          "end": 39.329
+        },
+        {
+          "text": "the",
+          "start": 39.341,
+          "end": 39.439
+        },
+        {
+          "text": "glass",
+          "start": 39.5,
+          "end": 39.905
+        },
+        {
+          "text": "Mark",
+          "start": 40.138,
+          "end": 40.42
+        },
+        {
+          "text": "Six",
+          "start": 40.456,
+          "end": 40.738
+        },
+        {
+          "text": "is",
+          "start": 40.738,
+          "end": 40.849
+        },
+        {
+          "text": "stenciled",
+          "start": 40.849,
+          "end": 41.326
+        },
+        {
+          "text": "inside",
+          "start": 41.339,
+          "end": 41.841
+        },
+        {
+          "text": "behind",
+          "start": 42.074,
+          "end": 42.417
+        },
+        {
+          "text": "the",
+          "start": 42.442,
+          "end": 42.503
+        },
+        {
+          "text": "three",
+          "start": 42.552,
+          "end": 42.809
+        },
+        {
+          "text": "empty",
+          "start": 42.858,
+          "end": 43.103
+        },
+        {
+          "text": "chairs",
+          "start": 43.165,
+          "end": 43.569
+        }
+      ]
+    },
+    {
+      "turn": "09",
+      "speaker": "A",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-10%",
+      "pitch": "-6Hz",
+      "start": 44.769,
+      "end": 49.852,
+      "gap_after": 0.58,
+      "text": "Vault Six isn't a control room, it's the surge chamber we flood to save the town.",
+      "words": [
+        {
+          "text": "Vault",
+          "start": 44.769,
+          "end": 45.116
+        },
+        {
+          "text": "Six",
+          "start": 45.13,
+          "end": 45.533
+        },
+        {
+          "text": "isn't",
+          "start": 45.547,
+          "end": 45.797
+        },
+        {
+          "text": "a",
+          "start": 45.811,
+          "end": 45.866
+        },
+        {
+          "text": "control",
+          "start": 45.88,
+          "end": 46.38
+        },
+        {
+          "text": "room",
+          "start": 46.394,
+          "end": 46.672
+        },
+        {
+          "text": "it's",
+          "start": 47.033,
+          "end": 47.172
+        },
+        {
+          "text": "the",
+          "start": 47.186,
+          "end": 47.325
+        },
+        {
+          "text": "surge",
+          "start": 47.338,
+          "end": 47.755
+        },
+        {
+          "text": "chamber",
+          "start": 47.769,
+          "end": 48.186
+        },
+        {
+          "text": "we",
+          "start": 48.2,
+          "end": 48.338
+        },
+        {
+          "text": "flood",
+          "start": 48.352,
+          "end": 48.741
+        },
+        {
+          "text": "to",
+          "start": 48.755,
+          "end": 48.852
+        },
+        {
+          "text": "save",
+          "start": 48.866,
+          "end": 49.227
+        },
+        {
+          "text": "the",
+          "start": 49.241,
+          "end": 49.325
+        },
+        {
+          "text": "town",
+          "start": 49.338,
+          "end": 49.852
+        }
+      ]
+    },
+    {
+      "turn": "10",
+      "speaker": "C",
+      "voice": "en-IE-ConnorNeural",
+      "rate": "+2%",
+      "pitch": "+6Hz",
+      "start": 50.432,
+      "end": 52.062,
+      "gap_after": 0.54,
+      "text": "The window bolts just fired.",
+      "words": [
+        {
+          "text": "The",
+          "start": 50.432,
+          "end": 50.518
+        },
+        {
+          "text": "window",
+          "start": 50.555,
+          "end": 50.873
+        },
+        {
+          "text": "bolts",
+          "start": 50.898,
+          "end": 51.302
+        },
+        {
+          "text": "just",
+          "start": 51.376,
+          "end": 51.633
+        },
+        {
+          "text": "fired",
+          "start": 51.658,
+          "end": 52.062
+        }
+      ]
+    },
+    {
+      "turn": "11",
+      "speaker": "B",
+      "voice": "en-GB-SoniaNeural",
+      "rate": "+5%",
+      "pitch": "+4Hz",
+      "start": 52.602,
+      "end": 55.554,
+      "gap_after": 0.68,
+      "text": "Cut the line, the river is coming through the glass.",
+      "words": [
+        {
+          "text": "Cut",
+          "start": 52.602,
+          "end": 52.888
+        },
+        {
+          "text": "the",
+          "start": 52.9,
+          "end": 53.007
+        },
+        {
+          "text": "line",
+          "start": 53.019,
+          "end": 53.423
+        },
+        {
+          "text": "the",
+          "start": 53.685,
+          "end": 53.792
+        },
+        {
+          "text": "river",
+          "start": 53.804,
+          "end": 54.161
+        },
+        {
+          "text": "is",
+          "start": 54.173,
+          "end": 54.328
+        },
+        {
+          "text": "coming",
+          "start": 54.34,
+          "end": 54.661
+        },
+        {
+          "text": "through",
+          "start": 54.673,
+          "end": 54.876
+        },
+        {
+          "text": "the",
+          "start": 54.888,
+          "end": 54.983
+        },
+        {
+          "text": "glass",
+          "start": 54.995,
+          "end": 55.554
+        }
+      ]
+    },
+    {
+      "turn": "12",
+      "speaker": "A",
+      "voice": "en-US-ChristopherNeural",
+      "rate": "-10%",
+      "pitch": "-6Hz",
+      "start": 56.234,
+      "end": 58.776,
+      "gap_after": 0.0,
+      "text": "Nobody stays in the room at Mark Six.",
+      "words": [
+        {
+          "text": "Nobody",
+          "start": 56.234,
+          "end": 56.734
+        },
+        {
+          "text": "stays",
+          "start": 56.748,
+          "end": 57.192
+        },
+        {
+          "text": "in",
+          "start": 57.206,
+          "end": 57.276
+        },
+        {
+          "text": "the",
+          "start": 57.29,
+          "end": 57.373
+        },
+        {
+          "text": "room",
+          "start": 57.387,
+          "end": 57.692
+        },
+        {
+          "text": "at",
+          "start": 57.706,
+          "end": 57.817
+        },
+        {
+          "text": "Mark",
+          "start": 57.831,
+          "end": 58.137
+        },
+        {
+          "text": "Six",
+          "start": 58.151,
+          "end": 58.776
+        }
+      ]
+    }
+  ],
+  "shots": [
+    {
+      "shot": "01",
+      "start": 0.0,
+      "end": 6.9,
+      "frames": 207,
+      "lut": "vault_slate_4300k.cube",
+      "motion": "push_in",
+      "rain": "interior_window"
+    },
+    {
+      "shot": "02",
+      "start": 6.9,
+      "end": 12.2,
+      "frames": 159,
+      "lut": "copper_cord_cyan.cube",
+      "motion": "drift_left",
+      "rain": "interior_glint"
+    },
+    {
+      "shot": "03",
+      "start": 12.2,
+      "end": 18.4,
+      "frames": 186,
+      "lut": "copper_cord_cyan.cube",
+      "motion": "tilt_up",
+      "rain": "caustic_mist"
+    },
+    {
+      "shot": "04",
+      "start": 18.4,
+      "end": 24.0,
+      "frames": 168,
+      "lut": "surge_breach_7000k.cube",
+      "motion": "push_in",
+      "rain": "heavy_storm"
+    },
+    {
+      "shot": "05",
+      "start": 24.0,
+      "end": 29.5,
+      "frames": 165,
+      "lut": "surge_breach_7000k.cube",
+      "motion": "drift_right",
+      "rain": "heavy_storm"
+    },
+    {
+      "shot": "06",
+      "start": 29.5,
+      "end": 34.467,
+      "frames": 149,
+      "lut": "amber_oxide_reel.cube",
+      "motion": "push_in",
+      "rain": "interior_glint"
+    },
+    {
+      "shot": "07",
+      "start": 34.467,
+      "end": 38.233,
+      "frames": 113,
+      "lut": "vault_slate_4300k.cube",
+      "motion": "pull_back",
+      "rain": "interior_window"
+    },
+    {
+      "shot": "08",
+      "start": 38.233,
+      "end": 44.3,
+      "frames": 182,
+      "lut": "surge_breach_7000k.cube",
+      "motion": "push_in",
+      "rain": "heavy_storm"
+    },
+    {
+      "shot": "09",
+      "start": 44.3,
+      "end": 52.333,
+      "frames": 241,
+      "lut": "amber_oxide_reel.cube",
+      "motion": "drift_left",
+      "rain": "interior_spray"
+    },
+    {
+      "shot": "10",
+      "start": 52.333,
+      "end": 60.0,
+      "frames": 230,
+      "lut": "vault_slate_4300k.cube",
+      "motion": "pull_back",
+      "rain": "interior_spray"
+    }
+  ],
+  "cues": [
+    {
+      "id": 1,
+      "turn": "01",
+      "speaker": "A",
+      "shot": "01",
+      "start": 0.4,
+      "end": 1.47,
+      "text": "2:37 AM,"
+    },
+    {
+      "id": 2,
+      "turn": "01",
+      "speaker": "A",
+      "shot": "01",
+      "start": 1.72,
+      "end": 3.095,
+      "text": "Vault Six is empty,"
+    },
+    {
+      "id": 3,
+      "turn": "01",
+      "speaker": "A",
+      "shot": "01",
+      "start": 3.317,
+      "end": 4.789,
+      "text": "and this tape reel starts"
+    },
+    {
+      "id": 4,
+      "turn": "01",
+      "speaker": "A",
+      "shot": "01",
+      "start": 4.803,
+      "end": 6.581,
+      "text": "when water reaches the glass."
+    },
+    {
+      "id": 5,
+      "turn": "02",
+      "speaker": "B",
+      "shot": "02",
+      "start": 7.201,
+      "end": 8.57,
+      "text": "Vault Six, why is"
+    },
+    {
+      "id": 6,
+      "turn": "02",
+      "speaker": "B",
+      "shot": "02",
+      "start": 8.582,
+      "end": 9.463,
+      "text": "a tape answering,"
+    },
+    {
+      "id": 7,
+      "turn": "02",
+      "speaker": "B",
+      "shot": "02",
+      "start": 9.713,
+      "end": 10.891,
+      "text": "and why is your wall phone"
+    },
+    {
+      "id": 8,
+      "turn": "02",
+      "speaker": "B",
+      "shot": "02",
+      "start": 10.903,
+      "end": 11.915,
+      "text": "swinging off the hook?"
+    },
+    {
+      "id": 9,
+      "turn": "03",
+      "speaker": "C",
+      "shot": "03",
+      "start": 12.495,
+      "end": 14.149,
+      "text": "Barge Six on the ceiling horn,"
+    },
+    {
+      "id": 10,
+      "turn": "03",
+      "speaker": "C",
+      "shot": "03",
+      "start": 14.394,
+      "end": 15.068,
+      "text": "I hear you through"
+    },
+    {
+      "id": 11,
+      "turn": "03",
+      "speaker": "C",
+      "shot": "03",
+      "start": 15.068,
+      "end": 16.0,
+      "text": "the empty room,"
+    },
+    {
+      "id": 12,
+      "turn": "03",
+      "speaker": "C",
+      "shot": "03",
+      "start": 16.245,
+      "end": 18.083,
+      "text": "three chairs and nobody inside."
+    },
+    {
+      "id": 13,
+      "turn": "04",
+      "speaker": "B",
+      "shot": "04",
+      "start": 18.663,
+      "end": 20.365,
+      "text": "Barge, sweep your searchlight"
+    },
+    {
+      "id": 14,
+      "turn": "04",
+      "speaker": "B",
+      "shot": "04",
+      "start": 20.377,
+      "end": 21.223,
+      "text": "up the dam wall"
+    },
+    {
+      "id": 15,
+      "turn": "04",
+      "speaker": "B",
+      "shot": "04",
+      "start": 21.235,
+      "end": 22.389,
+      "text": "and confirm water is"
+    },
+    {
+      "id": 16,
+      "turn": "04",
+      "speaker": "B",
+      "shot": "04",
+      "start": 22.401,
+      "end": 23.735,
+      "text": "still below MARK SIX."
+    },
+    {
+      "id": 17,
+      "turn": "05",
+      "speaker": "C",
+      "shot": "05",
+      "start": 24.315,
+      "end": 25.945,
+      "text": "Five red marks on the concrete"
+    },
+    {
+      "id": 18,
+      "turn": "05",
+      "speaker": "C",
+      "shot": "05",
+      "start": 25.994,
+      "end": 26.778,
+      "text": "are underwater,"
+    },
+    {
+      "id": 19,
+      "turn": "05",
+      "speaker": "C",
+      "shot": "05",
+      "start": 27.109,
+      "end": 27.636,
+      "text": "and there is no"
+    },
+    {
+      "id": 20,
+      "turn": "05",
+      "speaker": "C",
+      "shot": "05",
+      "start": 27.673,
+      "end": 29.18,
+      "text": "MARK SIX painted outside."
+    },
+    {
+      "id": 21,
+      "turn": "06",
+      "speaker": "A",
+      "shot": "06",
+      "start": 29.78,
+      "end": 30.933,
+      "text": "If you hear this tape"
+    },
+    {
+      "id": 22,
+      "turn": "06",
+      "speaker": "A",
+      "shot": "06",
+      "start": 30.947,
+      "end": 31.933,
+      "text": "over the room mic,"
+    },
+    {
+      "id": 23,
+      "turn": "06",
+      "speaker": "A",
+      "shot": "06",
+      "start": 32.224,
+      "end": 33.224,
+      "text": "stop looking for"
+    },
+    {
+      "id": 24,
+      "turn": "06",
+      "speaker": "A",
+      "shot": "06",
+      "start": 33.238,
+      "end": 34.169,
+      "text": "a sixth gate."
+    },
+    {
+      "id": 25,
+      "turn": "07",
+      "speaker": "B",
+      "shot": "07",
+      "start": 34.749,
+      "end": 35.547,
+      "text": "Then why leave"
+    },
+    {
+      "id": 26,
+      "turn": "07",
+      "speaker": "B",
+      "shot": "07",
+      "start": 35.559,
+      "end": 37.035,
+      "text": "three storm lamps burning"
+    },
+    {
+      "id": 27,
+      "turn": "07",
+      "speaker": "B",
+      "shot": "07",
+      "start": 37.047,
+      "end": 37.94,
+      "text": "in an empty room?"
+    },
+    {
+      "id": 28,
+      "turn": "08",
+      "speaker": "C",
+      "shot": "08",
+      "start": 38.52,
+      "end": 39.905,
+      "text": "Wait, through the glass,"
+    },
+    {
+      "id": 29,
+      "turn": "08",
+      "speaker": "C",
+      "shot": "08",
+      "start": 40.138,
+      "end": 41.841,
+      "text": "MARK SIX is stenciled inside,"
+    },
+    {
+      "id": 30,
+      "turn": "08",
+      "speaker": "C",
+      "shot": "08",
+      "start": 42.074,
+      "end": 43.569,
+      "text": "behind the three empty chairs."
+    },
+    {
+      "id": 31,
+      "turn": "09",
+      "speaker": "A",
+      "shot": "09",
+      "start": 44.769,
+      "end": 46.672,
+      "text": "Vault Six isn't a control room,"
+    },
+    {
+      "id": 32,
+      "turn": "09",
+      "speaker": "A",
+      "shot": "09",
+      "start": 47.033,
+      "end": 48.186,
+      "text": "it's the surge chamber"
+    },
+    {
+      "id": 33,
+      "turn": "09",
+      "speaker": "A",
+      "shot": "09",
+      "start": 48.2,
+      "end": 49.852,
+      "text": "we flood to save the town."
+    },
+    {
+      "id": 34,
+      "turn": "10",
+      "speaker": "C",
+      "shot": "09",
+      "start": 50.432,
+      "end": 51.302,
+      "text": "The window bolts"
+    },
+    {
+      "id": 35,
+      "turn": "10",
+      "speaker": "C",
+      "shot": "09",
+      "start": 51.376,
+      "end": 52.062,
+      "text": "just fired."
+    },
+    {
+      "id": 36,
+      "turn": "11",
+      "speaker": "B",
+      "shot": "10",
+      "start": 52.602,
+      "end": 53.423,
+      "text": "Cut the line,"
+    },
+    {
+      "id": 37,
+      "turn": "11",
+      "speaker": "B",
+      "shot": "10",
+      "start": 53.685,
+      "end": 54.328,
+      "text": "the river is"
+    },
+    {
+      "id": 38,
+      "turn": "11",
+      "speaker": "B",
+      "shot": "10",
+      "start": 54.34,
+      "end": 55.554,
+      "text": "coming through the glass."
+    },
+    {
+      "id": 39,
+      "turn": "12",
+      "speaker": "A",
+      "shot": "10",
+      "start": 56.234,
+      "end": 57.692,
+      "text": "Nobody stays in the room"
+    },
+    {
+      "id": 40,
+      "turn": "12",
+      "speaker": "A",
+      "shot": "10",
+      "start": 57.706,
+      "end": 58.776,
+      "text": "at MARK SIX."
+    }
+  ]
+}
