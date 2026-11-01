@@ -14,82 +14,98 @@
         {
           "text": "Two",
           "start": 0.4,
-          "end": 0.664
+          "end": 0.664,
+          "turn": "01"
         },
         {
           "text": "thirty-seven",
           "start": 0.678,
-          "end": 1.47
+          "end": 1.47,
+          "turn": "01"
         },
         {
           "text": "Vault",
           "start": 1.72,
-          "end": 1.983
+          "end": 1.983,
+          "turn": "01"
         },
         {
           "text": "Six",
           "start": 1.997,
-          "end": 2.414
+          "end": 2.414,
+          "turn": "01"
         },
         {
           "text": "is",
           "start": 2.428,
-          "end": 2.636
+          "end": 2.636,
+          "turn": "01"
         },
         {
           "text": "empty",
           "start": 2.65,
-          "end": 3.095
+          "end": 3.095,
+          "turn": "01"
         },
         {
           "text": "and",
           "start": 3.317,
-          "end": 3.483
+          "end": 3.483,
+          "turn": "01"
         },
         {
           "text": "this",
           "start": 3.497,
-          "end": 3.72
+          "end": 3.72,
+          "turn": "01"
         },
         {
           "text": "tape",
           "start": 3.733,
-          "end": 4.025
+          "end": 4.025,
+          "turn": "01"
         },
         {
           "text": "reel",
           "start": 4.039,
-          "end": 4.331
+          "end": 4.331,
+          "turn": "01"
         },
         {
           "text": "starts",
           "start": 4.345,
-          "end": 4.789
+          "end": 4.789,
+          "turn": "01"
         },
         {
           "text": "when",
           "start": 4.803,
-          "end": 4.983
+          "end": 4.983,
+          "turn": "01"
         },
         {
           "text": "water",
           "start": 4.997,
-          "end": 5.386
+          "end": 5.386,
+          "turn": "01"
         },
         {
           "text": "reaches",
           "start": 5.4,
-          "end": 5.803
+          "end": 5.803,
+          "turn": "01"
         },
         {
           "text": "the",
           "start": 5.817,
-          "end": 5.914
+          "end": 5.914,
+          "turn": "01"
         },
         {
           "text": "glass",
           "start": 5.928,
-          "end": 6.581
+          "end": 6.581,
+          "turn": "01"
         }
       ]
     },
@@ -107,87 +123,104 @@
         {
           "text": "Vault",
           "start": 7.201,
-          "end": 7.511
+          "end": 7.511,
+          "turn": "02"
         },
         {
           "text": "Six",
           "start": 7.522,
-          "end": 7.975
+          "end": 7.975,
+          "turn": "02"
         },
         {
           "text": "why",
           "start": 8.225,
-          "end": 8.427
+          "end": 8.427,
+          "turn": "02"
         },
         {
           "text": "is",
           "start": 8.439,
-          "end": 8.57
+          "end": 8.57,
+          "turn": "02"
         },
         {
           "text": "a",
           "start": 8.582,
-          "end": 8.641
+          "end": 8.641,
+          "turn": "02"
         },
         {
           "text": "tape",
           "start": 8.653,
-          "end": 8.927
+          "end": 8.927,
+          "turn": "02"
         },
         {
           "text": "answering",
           "start": 8.939,
-          "end": 9.463
+          "end": 9.463,
+          "turn": "02"
         },
         {
           "text": "and",
           "start": 9.713,
-          "end": 9.82
+          "end": 9.82,
+          "turn": "02"
         },
         {
           "text": "why",
           "start": 9.832,
-          "end": 10.022
+          "end": 10.022,
+          "turn": "02"
         },
         {
           "text": "is",
           "start": 10.034,
-          "end": 10.165
+          "end": 10.165,
+          "turn": "02"
         },
         {
           "text": "your",
           "start": 10.177,
-          "end": 10.272
+          "end": 10.272,
+          "turn": "02"
         },
         {
           "text": "wall",
           "start": 10.284,
-          "end": 10.534
+          "end": 10.534,
+          "turn": "02"
         },
         {
           "text": "phone",
           "start": 10.546,
-          "end": 10.891
+          "end": 10.891,
+          "turn": "02"
         },
         {
           "text": "swinging",
           "start": 10.903,
-          "end": 11.237
+          "end": 11.237,
+          "turn": "02"
         },
         {
           "text": "off",
           "start": 11.249,
-          "end": 11.38
+          "end": 11.38,
+          "turn": "02"
         },
         {
           "text": "the",
           "start": 11.391,
-          "end": 11.463
+          "end": 11.463,
+          "turn": "02"
         },
         {
           "text": "hook",
           "start": 11.475,
-          "end": 11.915
+          "end": 11.915,
+          "turn": "02"
         }
       ]
     },
@@ -205,92 +238,110 @@
         {
           "text": "Barge",
           "start": 12.495,
-          "end": 12.838
+          "end": 12.838,
+          "turn": "03"
         },
         {
           "text": "Six",
           "start": 12.875,
-          "end": 13.169
+          "end": 13.169,
+          "turn": "03"
         },
         {
           "text": "on",
           "start": 13.169,
-          "end": 13.267
+          "end": 13.267,
+          "turn": "03"
         },
         {
           "text": "the",
           "start": 13.292,
-          "end": 13.353
+          "end": 13.353,
+          "turn": "03"
         },
         {
           "text": "ceiling",
           "start": 13.39,
-          "end": 13.733
+          "end": 13.733,
+          "turn": "03"
         },
         {
           "text": "horn",
           "start": 13.745,
-          "end": 14.149
+          "end": 14.149,
+          "turn": "03"
         },
         {
           "text": "I",
           "start": 14.394,
-          "end": 14.505
+          "end": 14.505,
+          "turn": "03"
         },
         {
           "text": "hear",
           "start": 14.542,
-          "end": 14.701
+          "end": 14.701,
+          "turn": "03"
         },
         {
           "text": "you",
           "start": 14.762,
-          "end": 14.823
+          "end": 14.823,
+          "turn": "03"
         },
         {
           "text": "through",
           "start": 14.86,
-          "end": 15.068
+          "end": 15.068,
+          "turn": "03"
         },
         {
           "text": "the",
           "start": 15.068,
-          "end": 15.167
+          "end": 15.167,
+          "turn": "03"
         },
         {
           "text": "empty",
           "start": 15.24,
-          "end": 15.497
+          "end": 15.497,
+          "turn": "03"
         },
         {
           "text": "room",
           "start": 15.559,
-          "end": 16.0
+          "end": 16.0,
+          "turn": "03"
         },
         {
           "text": "three",
           "start": 16.245,
-          "end": 16.466
+          "end": 16.466,
+          "turn": "03"
         },
         {
           "text": "chairs",
           "start": 16.539,
-          "end": 16.944
+          "end": 16.944,
+          "turn": "03"
         },
         {
           "text": "and",
           "start": 17.005,
-          "end": 17.103
+          "end": 17.103,
+          "turn": "03"
         },
         {
           "text": "nobody",
           "start": 17.115,
-          "end": 17.52
+          "end": 17.52,
+          "turn": "03"
         },
         {
           "text": "inside",
           "start": 17.569,
-          "end": 18.083
+          "end": 18.083,
+          "turn": "03"
         }
       ]
     },
@@ -308,82 +359,98 @@
         {
           "text": "Barge",
           "start": 18.663,
-          "end": 19.115
+          "end": 19.115,
+          "turn": "04"
         },
         {
           "text": "sweep",
           "start": 19.365,
-          "end": 19.663
+          "end": 19.663,
+          "turn": "04"
         },
         {
           "text": "your",
           "start": 19.675,
-          "end": 19.794
+          "end": 19.794,
+          "turn": "04"
         },
         {
           "text": "searchlight",
           "start": 19.806,
-          "end": 20.365
+          "end": 20.365,
+          "turn": "04"
         },
         {
           "text": "up",
           "start": 20.377,
-          "end": 20.508
+          "end": 20.508,
+          "turn": "04"
         },
         {
           "text": "the",
           "start": 20.52,
-          "end": 20.615
+          "end": 20.615,
+          "turn": "04"
         },
         {
           "text": "dam",
           "start": 20.627,
-          "end": 20.877
+          "end": 20.877,
+          "turn": "04"
         },
         {
           "text": "wall",
           "start": 20.889,
-          "end": 21.223
+          "end": 21.223,
+          "turn": "04"
         },
         {
           "text": "and",
           "start": 21.235,
-          "end": 21.354
+          "end": 21.354,
+          "turn": "04"
         },
         {
           "text": "confirm",
           "start": 21.365,
-          "end": 21.794
+          "end": 21.794,
+          "turn": "04"
         },
         {
           "text": "water",
           "start": 21.806,
-          "end": 22.223
+          "end": 22.223,
+          "turn": "04"
         },
         {
           "text": "is",
           "start": 22.235,
-          "end": 22.389
+          "end": 22.389,
+          "turn": "04"
         },
         {
           "text": "still",
           "start": 22.401,
-          "end": 22.651
+          "end": 22.651,
+          "turn": "04"
         },
         {
           "text": "below",
           "start": 22.663,
-          "end": 22.949
+          "end": 22.949,
+          "turn": "04"
         },
         {
           "text": "Mark",
           "start": 22.961,
-          "end": 23.211
+          "end": 23.211,
+          "turn": "04"
         },
         {
           "text": "Six",
           "start": 23.223,
-          "end": 23.735
+          "end": 23.735,
+          "turn": "04"
         }
       ]
     },
@@ -401,82 +468,98 @@
         {
           "text": "Five",
           "start": 24.315,
-          "end": 24.658
+          "end": 24.658,
+          "turn": "05"
         },
         {
           "text": "red",
           "start": 24.658,
-          "end": 24.891
+          "end": 24.891,
+          "turn": "05"
         },
         {
           "text": "marks",
           "start": 24.903,
-          "end": 25.21
+          "end": 25.21,
+          "turn": "05"
         },
         {
           "text": "on",
           "start": 25.21,
-          "end": 25.308
+          "end": 25.308,
+          "turn": "05"
         },
         {
           "text": "the",
           "start": 25.344,
-          "end": 25.381
+          "end": 25.381,
+          "turn": "05"
         },
         {
           "text": "concrete",
           "start": 25.43,
-          "end": 25.945
+          "end": 25.945,
+          "turn": "05"
         },
         {
           "text": "are",
           "start": 25.994,
-          "end": 26.141
+          "end": 26.141,
+          "turn": "05"
         },
         {
           "text": "underwater",
           "start": 26.178,
-          "end": 26.778
+          "end": 26.778,
+          "turn": "05"
         },
         {
           "text": "and",
           "start": 27.109,
-          "end": 27.195
+          "end": 27.195,
+          "turn": "05"
         },
         {
           "text": "there",
           "start": 27.219,
-          "end": 27.293
+          "end": 27.293,
+          "turn": "05"
         },
         {
           "text": "is",
           "start": 27.342,
-          "end": 27.452
+          "end": 27.452,
+          "turn": "05"
         },
         {
           "text": "no",
           "start": 27.477,
-          "end": 27.636
+          "end": 27.636,
+          "turn": "05"
         },
         {
           "text": "Mark",
           "start": 27.673,
-          "end": 27.955
+          "end": 27.955,
+          "turn": "05"
         },
         {
           "text": "Six",
           "start": 27.992,
-          "end": 28.249
+          "end": 28.249,
+          "turn": "05"
         },
         {
           "text": "painted",
           "start": 28.273,
-          "end": 28.617
+          "end": 28.617,
+          "turn": "05"
         },
         {
           "text": "outside",
           "start": 28.666,
-          "end": 29.18
+          "end": 29.18,
+          "turn": "05"
         }
       ]
     },
@@ -494,77 +577,92 @@
         {
           "text": "If",
           "start": 29.78,
-          "end": 29.961
+          "end": 29.961,
+          "turn": "06"
         },
         {
           "text": "you",
           "start": 29.975,
-          "end": 30.113
+          "end": 30.113,
+          "turn": "06"
         },
         {
           "text": "hear",
           "start": 30.127,
-          "end": 30.391
+          "end": 30.391,
+          "turn": "06"
         },
         {
           "text": "this",
           "start": 30.405,
-          "end": 30.613
+          "end": 30.613,
+          "turn": "06"
         },
         {
           "text": "tape",
           "start": 30.627,
-          "end": 30.933
+          "end": 30.933,
+          "turn": "06"
         },
         {
           "text": "over",
           "start": 30.947,
-          "end": 31.155
+          "end": 31.155,
+          "turn": "06"
         },
         {
           "text": "the",
           "start": 31.169,
-          "end": 31.28
+          "end": 31.28,
+          "turn": "06"
         },
         {
           "text": "room",
           "start": 31.294,
-          "end": 31.572
+          "end": 31.572,
+          "turn": "06"
         },
         {
           "text": "mic",
           "start": 31.586,
-          "end": 31.933
+          "end": 31.933,
+          "turn": "06"
         },
         {
           "text": "stop",
           "start": 32.224,
-          "end": 32.655
+          "end": 32.655,
+          "turn": "06"
         },
         {
           "text": "looking",
           "start": 32.669,
-          "end": 33.016
+          "end": 33.016,
+          "turn": "06"
         },
         {
           "text": "for",
           "start": 33.03,
-          "end": 33.224
+          "end": 33.224,
+          "turn": "06"
         },
         {
           "text": "a",
           "start": 33.238,
-          "end": 33.308
+          "end": 33.308,
+          "turn": "06"
         },
         {
           "text": "sixth",
           "start": 33.322,
-          "end": 33.724
+          "end": 33.724,
+          "turn": "06"
         },
         {
           "text": "gate",
           "start": 33.738,
-          "end": 34.169
+          "end": 34.169,
+          "turn": "06"
         }
       ]
     },
@@ -582,57 +680,68 @@
         {
           "text": "Then",
           "start": 34.749,
-          "end": 34.987
+          "end": 34.987,
+          "turn": "07"
         },
         {
           "text": "why",
           "start": 34.999,
-          "end": 35.154
+          "end": 35.154,
+          "turn": "07"
         },
         {
           "text": "leave",
           "start": 35.166,
-          "end": 35.547
+          "end": 35.547,
+          "turn": "07"
         },
         {
           "text": "three",
           "start": 35.559,
-          "end": 35.832
+          "end": 35.832,
+          "turn": "07"
         },
         {
           "text": "storm",
           "start": 35.844,
-          "end": 36.201
+          "end": 36.201,
+          "turn": "07"
         },
         {
           "text": "lamps",
           "start": 36.213,
-          "end": 36.606
+          "end": 36.606,
+          "turn": "07"
         },
         {
           "text": "burning",
           "start": 36.618,
-          "end": 37.035
+          "end": 37.035,
+          "turn": "07"
         },
         {
           "text": "in",
           "start": 37.047,
-          "end": 37.118
+          "end": 37.118,
+          "turn": "07"
         },
         {
           "text": "an",
           "start": 37.13,
-          "end": 37.225
+          "end": 37.225,
+          "turn": "07"
         },
         {
           "text": "empty",
           "start": 37.237,
-          "end": 37.511
+          "end": 37.511,
+          "turn": "07"
         },
         {
           "text": "room",
           "start": 37.523,
-          "end": 37.94
+          "end": 37.94,
+          "turn": "07"
         }
       ]
     },
@@ -650,72 +759,86 @@
         {
           "text": "Wait",
           "start": 38.52,
-          "end": 38.875
+          "end": 38.875,
+          "turn": "08"
         },
         {
           "text": "through",
           "start": 39.096,
-          "end": 39.329
+          "end": 39.329,
+          "turn": "08"
         },
         {
           "text": "the",
           "start": 39.341,
-          "end": 39.439
+          "end": 39.439,
+          "turn": "08"
         },
         {
           "text": "glass",
           "start": 39.5,
-          "end": 39.905
+          "end": 39.905,
+          "turn": "08"
         },
         {
           "text": "Mark",
           "start": 40.138,
-          "end": 40.42
+          "end": 40.42,
+          "turn": "08"
         },
         {
           "text": "Six",
           "start": 40.456,
-          "end": 40.738
+          "end": 40.738,
+          "turn": "08"
         },
         {
           "text": "is",
           "start": 40.738,
-          "end": 40.849
+          "end": 40.849,
+          "turn": "08"
         },
         {
           "text": "stenciled",
           "start": 40.849,
-          "end": 41.326
+          "end": 41.326,
+          "turn": "08"
         },
         {
           "text": "inside",
           "start": 41.339,
-          "end": 41.841
+          "end": 41.841,
+          "turn": "08"
         },
         {
           "text": "behind",
           "start": 42.074,
-          "end": 42.417
+          "end": 42.417,
+          "turn": "08"
         },
         {
           "text": "the",
           "start": 42.442,
-          "end": 42.503
+          "end": 42.503,
+          "turn": "08"
         },
         {
           "text": "three",
           "start": 42.552,
-          "end": 42.809
+          "end": 42.809,
+          "turn": "08"
         },
         {
           "text": "empty",
           "start": 42.858,
-          "end": 43.103
+          "end": 43.103,
+          "turn": "08"
         },
         {
           "text": "chairs",
           "start": 43.165,
-          "end": 43.569
+          "end": 43.569,
+          "turn": "08"
         }
       ]
     },
@@ -733,82 +856,98 @@
         {
           "text": "Vault",
           "start": 44.769,
-          "end": 45.116
+          "end": 45.116,
+          "turn": "09"
         },
         {
           "text": "Six",
           "start": 45.13,
-          "end": 45.533
+          "end": 45.533,
+          "turn": "09"
         },
         {
           "text": "isn't",
           "start": 45.547,
-          "end": 45.797
+          "end": 45.797,
+          "turn": "09"
         },
         {
           "text": "a",
           "start": 45.811,
-          "end": 45.866
+          "end": 45.866,
+          "turn": "09"
         },
         {
           "text": "control",
           "start": 45.88,
-          "end": 46.38
+          "end": 46.38,
+          "turn": "09"
         },
         {
           "text": "room",
           "start": 46.394,
-          "end": 46.672
+          "end": 46.672,
+          "turn": "09"
         },
         {
           "text": "it's",
           "start": 47.033,
-          "end": 47.172
+          "end": 47.172,
+          "turn": "09"
         },
         {
           "text": "the",
           "start": 47.186,
-          "end": 47.325
+          "end": 47.325,
+          "turn": "09"
         },
         {
           "text": "surge",
           "start": 47.338,
-          "end": 47.755
+          "end": 47.755,
+          "turn": "09"
         },
         {
           "text": "chamber",
           "start": 47.769,
-          "end": 48.186
+          "end": 48.186,
+          "turn": "09"
         },
         {
           "text": "we",
           "start": 48.2,
-          "end": 48.338
+          "end": 48.338,
+          "turn": "09"
         },
         {
           "text": "flood",
           "start": 48.352,
-          "end": 48.741
+          "end": 48.741,
+          "turn": "09"
         },
         {
           "text": "to",
           "start": 48.755,
-          "end": 48.852
+          "end": 48.852,
+          "turn": "09"
         },
         {
           "text": "save",
           "start": 48.866,
-          "end": 49.227
+          "end": 49.227,
+          "turn": "09"
         },
         {
           "text": "the",
           "start": 49.241,
-          "end": 49.325
+          "end": 49.325,
+          "turn": "09"
         },
         {
           "text": "town",
           "start": 49.338,
-          "end": 49.852
+          "end": 49.852,
+          "turn": "09"
         }
       ]
     },
@@ -826,27 +965,32 @@
         {
           "text": "The",
           "start": 50.432,
-          "end": 50.518
+          "end": 50.518,
+          "turn": "10"
         },
         {
           "text": "window",
           "start": 50.555,
-          "end": 50.873
+          "end": 50.873,
+          "turn": "10"
         },
         {
           "text": "bolts",
           "start": 50.898,
-          "end": 51.302
+          "end": 51.302,
+          "turn": "10"
         },
         {
           "text": "just",
           "start": 51.376,
-          "end": 51.633
+          "end": 51.633,
+          "turn": "10"
         },
         {
           "text": "fired",
           "start": 51.658,
-          "end": 52.062
+          "end": 52.062,
+          "turn": "10"
         }
       ]
     },
@@ -864,52 +1008,62 @@
         {
           "text": "Cut",
           "start": 52.602,
-          "end": 52.888
+          "end": 52.888,
+          "turn": "11"
         },
         {
           "text": "the",
           "start": 52.9,
-          "end": 53.007
+          "end": 53.007,
+          "turn": "11"
         },
         {
           "text": "line",
           "start": 53.019,
-          "end": 53.423
+          "end": 53.423,
+          "turn": "11"
         },
         {
           "text": "the",
           "start": 53.685,
-          "end": 53.792
+          "end": 53.792,
+          "turn": "11"
         },
         {
           "text": "river",
           "start": 53.804,
-          "end": 54.161
+          "end": 54.161,
+          "turn": "11"
         },
         {
           "text": "is",
           "start": 54.173,
-          "end": 54.328
+          "end": 54.328,
+          "turn": "11"
         },
         {
           "text": "coming",
           "start": 54.34,
-          "end": 54.661
+          "end": 54.661,
+          "turn": "11"
         },
         {
           "text": "through",
           "start": 54.673,
-          "end": 54.876
+          "end": 54.876,
+          "turn": "11"
         },
         {
           "text": "the",
           "start": 54.888,
-          "end": 54.983
+          "end": 54.983,
+          "turn": "11"
         },
         {
           "text": "glass",
           "start": 54.995,
-          "end": 55.554
+          "end": 55.554,
+          "turn": "11"
         }
       ]
     },
@@ -927,42 +1081,50 @@
         {
           "text": "Nobody",
           "start": 56.234,
-          "end": 56.734
+          "end": 56.734,
+          "turn": "12"
         },
         {
           "text": "stays",
           "start": 56.748,
-          "end": 57.192
+          "end": 57.192,
+          "turn": "12"
         },
         {
           "text": "in",
           "start": 57.206,
-          "end": 57.276
+          "end": 57.276,
+          "turn": "12"
         },
         {
           "text": "the",
           "start": 57.29,
-          "end": 57.373
+          "end": 57.373,
+          "turn": "12"
         },
         {
           "text": "room",
           "start": 57.387,
-          "end": 57.692
+          "end": 57.692,
+          "turn": "12"
         },
         {
           "text": "at",
           "start": 57.706,
-          "end": 57.817
+          "end": 57.817,
+          "turn": "12"
         },
         {
           "text": "Mark",
           "start": 57.831,
-          "end": 58.137
+          "end": 58.137,
+          "turn": "12"
         },
         {
           "text": "Six",
           "start": 58.151,
-          "end": 58.776
+          "end": 58.776,
+          "turn": "12"
         }
       ]
     }
@@ -1061,364 +1223,382 @@
   ],
   "cues": [
     {
-      "id": 1,
       "turn": "01",
       "speaker": "A",
-      "shot": "01",
       "start": 0.4,
-      "end": 1.47,
-      "text": "2:37 AM,"
+      "end": 2.414,
+      "word_count": 4,
+      "text": "Two thirty-seven Vault Six",
+      "cue": 1
     },
     {
-      "id": 2,
       "turn": "01",
       "speaker": "A",
-      "shot": "01",
-      "start": 1.72,
-      "end": 3.095,
-      "text": "Vault Six is empty,"
+      "start": 2.428,
+      "end": 3.72,
+      "word_count": 4,
+      "text": "is empty and this",
+      "cue": 2
     },
     {
-      "id": 3,
       "turn": "01",
       "speaker": "A",
-      "shot": "01",
-      "start": 3.317,
-      "end": 4.789,
-      "text": "and this tape reel starts"
+      "start": 3.733,
+      "end": 4.983,
+      "word_count": 4,
+      "text": "tape reel starts when",
+      "cue": 3
     },
     {
-      "id": 4,
       "turn": "01",
       "speaker": "A",
-      "shot": "01",
-      "start": 4.803,
+      "start": 4.997,
       "end": 6.581,
-      "text": "when water reaches the glass."
+      "word_count": 4,
+      "text": "water reaches the glass",
+      "cue": 4
     },
     {
-      "id": 5,
       "turn": "02",
       "speaker": "B",
-      "shot": "02",
       "start": 7.201,
       "end": 8.57,
-      "text": "Vault Six, why is"
+      "word_count": 4,
+      "text": "Vault Six why is",
+      "cue": 5
     },
     {
-      "id": 6,
       "turn": "02",
       "speaker": "B",
-      "shot": "02",
       "start": 8.582,
-      "end": 9.463,
-      "text": "a tape answering,"
+      "end": 9.82,
+      "word_count": 4,
+      "text": "a tape answering and",
+      "cue": 6
     },
     {
-      "id": 7,
       "turn": "02",
       "speaker": "B",
-      "shot": "02",
-      "start": 9.713,
-      "end": 10.891,
-      "text": "and why is your wall phone"
+      "start": 9.832,
+      "end": 10.534,
+      "word_count": 4,
+      "text": "why is your wall",
+      "cue": 7
     },
     {
-      "id": 8,
       "turn": "02",
       "speaker": "B",
-      "shot": "02",
-      "start": 10.903,
+      "start": 10.546,
       "end": 11.915,
-      "text": "swinging off the hook?"
+      "word_count": 5,
+      "text": "phone swinging off the hook",
+      "cue": 8
     },
     {
-      "id": 9,
       "turn": "03",
       "speaker": "C",
-      "shot": "03",
       "start": 12.495,
-      "end": 14.149,
-      "text": "Barge Six on the ceiling horn,"
+      "end": 13.353,
+      "word_count": 4,
+      "text": "Barge Six on the",
+      "cue": 9
     },
     {
-      "id": 10,
       "turn": "03",
       "speaker": "C",
-      "shot": "03",
-      "start": 14.394,
-      "end": 15.068,
-      "text": "I hear you through"
+      "start": 13.39,
+      "end": 14.701,
+      "word_count": 4,
+      "text": "ceiling horn I hear",
+      "cue": 10
     },
     {
-      "id": 11,
       "turn": "03",
       "speaker": "C",
-      "shot": "03",
-      "start": 15.068,
-      "end": 16.0,
-      "text": "the empty room,"
+      "start": 14.762,
+      "end": 15.497,
+      "word_count": 4,
+      "text": "you through the empty",
+      "cue": 11
     },
     {
-      "id": 12,
       "turn": "03",
       "speaker": "C",
-      "shot": "03",
-      "start": 16.245,
+      "start": 15.559,
+      "end": 16.944,
+      "word_count": 3,
+      "text": "room three chairs",
+      "cue": 12
+    },
+    {
+      "turn": "03",
+      "speaker": "C",
+      "start": 17.005,
       "end": 18.083,
-      "text": "three chairs and nobody inside."
+      "word_count": 3,
+      "text": "and nobody inside",
+      "cue": 13
     },
     {
-      "id": 13,
       "turn": "04",
       "speaker": "B",
-      "shot": "04",
       "start": 18.663,
       "end": 20.365,
-      "text": "Barge, sweep your searchlight"
+      "word_count": 4,
+      "text": "Barge sweep your searchlight",
+      "cue": 14
     },
     {
-      "id": 14,
       "turn": "04",
       "speaker": "B",
-      "shot": "04",
       "start": 20.377,
       "end": 21.223,
-      "text": "up the dam wall"
+      "word_count": 4,
+      "text": "up the dam wall",
+      "cue": 15
     },
     {
-      "id": 15,
       "turn": "04",
       "speaker": "B",
-      "shot": "04",
       "start": 21.235,
       "end": 22.389,
-      "text": "and confirm water is"
+      "word_count": 4,
+      "text": "and confirm water is",
+      "cue": 16
     },
     {
-      "id": 16,
       "turn": "04",
       "speaker": "B",
-      "shot": "04",
       "start": 22.401,
       "end": 23.735,
-      "text": "still below MARK SIX."
+      "word_count": 4,
+      "text": "still below Mark Six",
+      "cue": 17
     },
     {
-      "id": 17,
       "turn": "05",
       "speaker": "C",
-      "shot": "05",
       "start": 24.315,
-      "end": 25.945,
-      "text": "Five red marks on the concrete"
+      "end": 25.308,
+      "word_count": 4,
+      "text": "Five red marks on",
+      "cue": 18
     },
     {
-      "id": 18,
       "turn": "05",
       "speaker": "C",
-      "shot": "05",
-      "start": 25.994,
+      "start": 25.344,
       "end": 26.778,
-      "text": "are underwater,"
+      "word_count": 4,
+      "text": "the concrete are underwater",
+      "cue": 19
     },
     {
-      "id": 19,
       "turn": "05",
       "speaker": "C",
-      "shot": "05",
       "start": 27.109,
       "end": 27.636,
-      "text": "and there is no"
+      "word_count": 4,
+      "text": "and there is no",
+      "cue": 20
     },
     {
-      "id": 20,
       "turn": "05",
       "speaker": "C",
-      "shot": "05",
       "start": 27.673,
       "end": 29.18,
-      "text": "MARK SIX painted outside."
+      "word_count": 4,
+      "text": "Mark Six painted outside",
+      "cue": 21
     },
     {
-      "id": 21,
       "turn": "06",
       "speaker": "A",
-      "shot": "06",
       "start": 29.78,
-      "end": 30.933,
-      "text": "If you hear this tape"
+      "end": 30.613,
+      "word_count": 4,
+      "text": "If you hear this",
+      "cue": 22
     },
     {
-      "id": 22,
       "turn": "06",
       "speaker": "A",
-      "shot": "06",
-      "start": 30.947,
-      "end": 31.933,
-      "text": "over the room mic,"
+      "start": 30.627,
+      "end": 31.572,
+      "word_count": 4,
+      "text": "tape over the room",
+      "cue": 23
     },
     {
-      "id": 23,
       "turn": "06",
       "speaker": "A",
-      "shot": "06",
-      "start": 32.224,
-      "end": 33.224,
-      "text": "stop looking for"
+      "start": 31.586,
+      "end": 33.016,
+      "word_count": 3,
+      "text": "mic stop looking",
+      "cue": 24
     },
     {
-      "id": 24,
       "turn": "06",
       "speaker": "A",
-      "shot": "06",
-      "start": 33.238,
+      "start": 33.03,
       "end": 34.169,
-      "text": "a sixth gate."
+      "word_count": 4,
+      "text": "for a sixth gate",
+      "cue": 25
     },
     {
-      "id": 25,
       "turn": "07",
       "speaker": "B",
-      "shot": "07",
       "start": 34.749,
-      "end": 35.547,
-      "text": "Then why leave"
+      "end": 35.832,
+      "word_count": 4,
+      "text": "Then why leave three",
+      "cue": 26
     },
     {
-      "id": 26,
       "turn": "07",
       "speaker": "B",
-      "shot": "07",
-      "start": 35.559,
+      "start": 35.844,
       "end": 37.035,
-      "text": "three storm lamps burning"
+      "word_count": 3,
+      "text": "storm lamps burning",
+      "cue": 27
     },
     {
-      "id": 27,
       "turn": "07",
       "speaker": "B",
-      "shot": "07",
       "start": 37.047,
       "end": 37.94,
-      "text": "in an empty room?"
+      "word_count": 4,
+      "text": "in an empty room",
+      "cue": 28
     },
     {
-      "id": 28,
       "turn": "08",
       "speaker": "C",
-      "shot": "08",
       "start": 38.52,
       "end": 39.905,
-      "text": "Wait, through the glass,"
+      "word_count": 4,
+      "text": "Wait through the glass",
+      "cue": 29
     },
     {
-      "id": 29,
       "turn": "08",
       "speaker": "C",
-      "shot": "08",
       "start": 40.138,
-      "end": 41.841,
-      "text": "MARK SIX is stenciled inside,"
+      "end": 41.326,
+      "word_count": 4,
+      "text": "Mark Six is stenciled",
+      "cue": 30
     },
     {
-      "id": 30,
       "turn": "08",
       "speaker": "C",
-      "shot": "08",
-      "start": 42.074,
+      "start": 41.339,
+      "end": 42.503,
+      "word_count": 3,
+      "text": "inside behind the",
+      "cue": 31
+    },
+    {
+      "turn": "08",
+      "speaker": "C",
+      "start": 42.552,
       "end": 43.569,
-      "text": "behind the three empty chairs."
+      "word_count": 3,
+      "text": "three empty chairs",
+      "cue": 32
     },
     {
-      "id": 31,
       "turn": "09",
       "speaker": "A",
-      "shot": "09",
       "start": 44.769,
-      "end": 46.672,
-      "text": "Vault Six isn't a control room,"
+      "end": 45.866,
+      "word_count": 4,
+      "text": "Vault Six isn't a",
+      "cue": 33
     },
     {
-      "id": 32,
       "turn": "09",
       "speaker": "A",
-      "shot": "09",
-      "start": 47.033,
-      "end": 48.186,
-      "text": "it's the surge chamber"
+      "start": 45.88,
+      "end": 47.325,
+      "word_count": 4,
+      "text": "control room it's the",
+      "cue": 34
     },
     {
-      "id": 33,
       "turn": "09",
       "speaker": "A",
-      "shot": "09",
-      "start": 48.2,
+      "start": 47.338,
+      "end": 48.741,
+      "word_count": 4,
+      "text": "surge chamber we flood",
+      "cue": 35
+    },
+    {
+      "turn": "09",
+      "speaker": "A",
+      "start": 48.755,
       "end": 49.852,
-      "text": "we flood to save the town."
+      "word_count": 4,
+      "text": "to save the town",
+      "cue": 36
     },
     {
-      "id": 34,
       "turn": "10",
       "speaker": "C",
-      "shot": "09",
       "start": 50.432,
-      "end": 51.302,
-      "text": "The window bolts"
-    },
-    {
-      "id": 35,
-      "turn": "10",
-      "speaker": "C",
-      "shot": "09",
-      "start": 51.376,
       "end": 52.062,
-      "text": "just fired."
+      "word_count": 5,
+      "text": "The window bolts just fired",
+      "cue": 37
     },
     {
-      "id": 36,
       "turn": "11",
       "speaker": "B",
-      "shot": "10",
       "start": 52.602,
-      "end": 53.423,
-      "text": "Cut the line,"
+      "end": 53.792,
+      "word_count": 4,
+      "text": "Cut the line the",
+      "cue": 38
     },
     {
-      "id": 37,
       "turn": "11",
       "speaker": "B",
-      "shot": "10",
-      "start": 53.685,
-      "end": 54.328,
-      "text": "the river is"
+      "start": 53.804,
+      "end": 54.661,
+      "word_count": 3,
+      "text": "river is coming",
+      "cue": 39
     },
     {
-      "id": 38,
       "turn": "11",
       "speaker": "B",
-      "shot": "10",
-      "start": 54.34,
+      "start": 54.673,
       "end": 55.554,
-      "text": "coming through the glass."
+      "word_count": 3,
+      "text": "through the glass",
+      "cue": 40
     },
     {
-      "id": 39,
       "turn": "12",
       "speaker": "A",
-      "shot": "10",
       "start": 56.234,
-      "end": 57.692,
-      "text": "Nobody stays in the room"
+      "end": 57.373,
+      "word_count": 4,
+      "text": "Nobody stays in the",
+      "cue": 41
     },
     {
-      "id": 40,
       "turn": "12",
       "speaker": "A",
-      "shot": "10",
-      "start": 57.706,
+      "start": 57.387,
       "end": 58.776,
-      "text": "at MARK SIX."
+      "word_count": 4,
+      "text": "room at Mark Six",
+      "cue": 42
     }
   ]
 }

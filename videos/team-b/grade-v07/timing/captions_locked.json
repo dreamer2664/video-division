@@ -1,0 +1,380 @@
+[
+  {
+    "turn": "01",
+    "speaker": "A",
+    "start": 0.4,
+    "end": 2.414,
+    "word_count": 4,
+    "text": "Two thirty-seven Vault Six",
+    "cue": 1
+  },
+  {
+    "turn": "01",
+    "speaker": "A",
+    "start": 2.428,
+    "end": 3.72,
+    "word_count": 4,
+    "text": "is empty and this",
+    "cue": 2
+  },
+  {
+    "turn": "01",
+    "speaker": "A",
+    "start": 3.733,
+    "end": 4.983,
+    "word_count": 4,
+    "text": "tape reel starts when",
+    "cue": 3
+  },
+  {
+    "turn": "01",
+    "speaker": "A",
+    "start": 4.997,
+    "end": 6.581,
+    "word_count": 4,
+    "text": "water reaches the glass",
+    "cue": 4
+  },
+  {
+    "turn": "02",
+    "speaker": "B",
+    "start": 7.201,
+    "end": 8.57,
+    "word_count": 4,
+    "text": "Vault Six why is",
+    "cue": 5
+  },
+  {
+    "turn": "02",
+    "speaker": "B",
+    "start": 8.582,
+    "end": 9.82,
+    "word_count": 4,
+    "text": "a tape answering and",
+    "cue": 6
+  },
+  {
+    "turn": "02",
+    "speaker": "B",
+    "start": 9.832,
+    "end": 10.534,
+    "word_count": 4,
+    "text": "why is your wall",
+    "cue": 7
+  },
+  {
+    "turn": "02",
+    "speaker": "B",
+    "start": 10.546,
+    "end": 11.915,
+    "word_count": 5,
+    "text": "phone swinging off the hook",
+    "cue": 8
+  },
+  {
+    "turn": "03",
+    "speaker": "C",
+    "start": 12.495,
+    "end": 13.353,
+    "word_count": 4,
+    "text": "Barge Six on the",
+    "cue": 9
+  },
+  {
+    "turn": "03",
+    "speaker": "C",
+    "start": 13.39,
+    "end": 14.701,
+    "word_count": 4,
+    "text": "ceiling horn I hear",
+    "cue": 10
+  },
+  {
+    "turn": "03",
+    "speaker": "C",
+    "start": 14.762,
+    "end": 15.497,
+    "word_count": 4,
+    "text": "you through the empty",
+    "cue": 11
+  },
+  {
+    "turn": "03",
+    "speaker": "C",
+    "start": 15.559,
+    "end": 16.944,
+    "word_count": 3,
+    "text": "room three chairs",
+    "cue": 12
+  },
+  {
+    "turn": "03",
+    "speaker": "C",
+    "start": 17.005,
+    "end": 18.083,
+    "word_count": 3,
+    "text": "and nobody inside",
+    "cue": 13
+  },
+  {
+    "turn": "04",
+    "speaker": "B",
+    "start": 18.663,
+    "end": 20.365,
+    "word_count": 4,
+    "text": "Barge sweep your searchlight",
+    "cue": 14
+  },
+  {
+    "turn": "04",
+    "speaker": "B",
+    "start": 20.377,
+    "end": 21.223,
+    "word_count": 4,
+    "text": "up the dam wall",
+    "cue": 15
+  },
+  {
+    "turn": "04",
+    "speaker": "B",
+    "start": 21.235,
+    "end": 22.389,
+    "word_count": 4,
+    "text": "and confirm water is",
+    "cue": 16
+  },
+  {
+    "turn": "04",
+    "speaker": "B",
+    "start": 22.401,
+    "end": 23.735,
+    "word_count": 4,
+    "text": "still below Mark Six",
+    "cue": 17
+  },
+  {
+    "turn": "05",
+    "speaker": "C",
+    "start": 24.315,
+    "end": 25.308,
+    "word_count": 4,
+    "text": "Five red marks on",
+    "cue": 18
+  },
+  {
+    "turn": "05",
+    "speaker": "C",
+    "start": 25.344,
+    "end": 26.778,
+    "word_count": 4,
+    "text": "the concrete are underwater",
+    "cue": 19
+  },
+  {
+    "turn": "05",
+    "speaker": "C",
+    "start": 27.109,
+    "end": 27.636,
+    "word_count": 4,
+    "text": "and there is no",
+    "cue": 20
+  },
+  {
+    "turn": "05",
+    "speaker": "C",
+    "start": 27.673,
+    "end": 29.18,
+    "word_count": 4,
+    "text": "Mark Six painted outside",
+    "cue": 21
+  },
+  {
+    "turn": "06",
+    "speaker": "A",
+    "start": 29.78,
+    "end": 30.613,
+    "word_count": 4,
+    "text": "If you hear this",
+    "cue": 22
+  },
+  {
+    "turn": "06",
+    "speaker": "A",
+    "start": 30.627,
+    "end": 31.572,
+    "word_count": 4,
+    "text": "tape over the room",
+    "cue": 23
+  },
+  {
+    "turn": "06",
+    "speaker": "A",
+    "start": 31.586,
+    "end": 33.016,
+    "word_count": 3,
+    "text": "mic stop looking",
+    "cue": 24
+  },
+  {
+    "turn": "06",
+    "speaker": "A",
+    "start": 33.03,
+    "end": 34.169,
+    "word_count": 4,
+    "text": "for a sixth gate",
+    "cue": 25
+  },
+  {
+    "turn": "07",
+    "speaker": "B",
+    "start": 34.749,
+    "end": 35.832,
+    "word_count": 4,
+    "text": "Then why leave three",
+    "cue": 26
+  },
+  {
+    "turn": "07",
+    "speaker": "B",
+    "start": 35.844,
+    "end": 37.035,
+    "word_count": 3,
+    "text": "storm lamps burning",
+    "cue": 27
+  },
+  {
+    "turn": "07",
+    "speaker": "B",
+    "start": 37.047,
+    "end": 37.94,
+    "word_count": 4,
+    "text": "in an empty room",
+    "cue": 28
+  },
+  {
+    "turn": "08",
+    "speaker": "C",
+    "start": 38.52,
+    "end": 39.905,
+    "word_count": 4,
+    "text": "Wait through the glass",
+    "cue": 29
+  },
+  {
+    "turn": "08",
+    "speaker": "C",
+    "start": 40.138,
+    "end": 41.326,
+    "word_count": 4,
+    "text": "Mark Six is stenciled",
+    "cue": 30
+  },
+  {
+    "turn": "08",
+    "speaker": "C",
+    "start": 41.339,
+    "end": 42.503,
+    "word_count": 3,
+    "text": "inside behind the",
+    "cue": 31
+  },
+  {
+    "turn": "08",
+    "speaker": "C",
+    "start": 42.552,
+    "end": 43.569,
+    "word_count": 3,
+    "text": "three empty chairs",
+    "cue": 32
+  },
+  {
+    "turn": "09",
+    "speaker": "A",
+    "start": 44.769,
+    "end": 45.866,
+    "word_count": 4,
+    "text": "Vault Six isn't a",
+    "cue": 33
+  },
+  {
+    "turn": "09",
+    "speaker": "A",
+    "start": 45.88,
+    "end": 47.325,
+    "word_count": 4,
+    "text": "control room it's the",
+    "cue": 34
+  },
+  {
+    "turn": "09",
+    "speaker": "A",
+    "start": 47.338,
+    "end": 48.741,
+    "word_count": 4,
+    "text": "surge chamber we flood",
+    "cue": 35
+  },
+  {
+    "turn": "09",
+    "speaker": "A",
+    "start": 48.755,
+    "end": 49.852,
+    "word_count": 4,
+    "text": "to save the town",
+    "cue": 36
+  },
+  {
+    "turn": "10",
+    "speaker": "C",
+    "start": 50.432,
+    "end": 52.062,
+    "word_count": 5,
+    "text": "The window bolts just fired",
+    "cue": 37
+  },
+  {
+    "turn": "11",
+    "speaker": "B",
+    "start": 52.602,
+    "end": 53.792,
+    "word_count": 4,
+    "text": "Cut the line the",
+    "cue": 38
+  },
+  {
+    "turn": "11",
+    "speaker": "B",
+    "start": 53.804,
+    "end": 54.661,
+    "word_count": 3,
+    "text": "river is coming",
+    "cue": 39
+  },
+  {
+    "turn": "11",
+    "speaker": "B",
+    "start": 54.673,
+    "end": 55.554,
+    "word_count": 3,
+    "text": "through the glass",
+    "cue": 40
+  },
+  {
+    "turn": "12",
+    "speaker": "A",
+    "start": 56.234,
+    "end": 57.373,
+    "word_count": 4,
+    "text": "Nobody stays in the",
+    "cue": 41
+  },
+  {
+    "turn": "12",
+    "speaker": "A",
+    "start": 57.387,
+    "end": 58.776,
+    "word_count": 4,
+    "text": "room at Mark Six",
+    "cue": 42
+  }
+]

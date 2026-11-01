@@ -4,6 +4,13 @@
 
 ---
 
+## 0. Signature Wall-Frame Named Before Render (`DIRECTIVE-2026-11-01-house-look.md`)
+
+- **Named Wall-Frame:** **Shot 07 (`34.467–38.233 s`, exact frame `1090` @ `36.333 s` → `videos/team-b/grade-v07/stills/wall_frame_mark_six_clean.png`)**
+- **Why this frame belongs on a wall:** A dead-symmetrical subterranean architectural study inside **Vault Six** at `02:37 AM`—three burning `2600K` brass storm lanterns cast warm `500T` red-amber halation pools across a wet black-slate console and mirror in rising dark floodwater before **three empty steel chairs**, framed by brutalist granite piers while `6500K` torrential storm rain and mist stream down the tall armored observation glass behind them. Graded through `luts/vault_slate_4300k.cube` (`black_floor = 0.004` power-toe shadow crush + steep `500T` midtone S-curve + highlight shoulder + dual-sigma `[1.00, 0.38, 0.08]` halation bloom) and exported clean prior to lower-third caption compositing.
+
+---
+
 ## 1. Durable Audio Provenance & Offline-First Reproduction
 
 From the start of the `v07` build, **all five timeline-aligned `48 kHz` stereo lossless FLAC stems**, all **twelve raw `edge-tts` turn MP3s**, `timing/tts_source_manifest.json`, `timing/timeline_locked.json`, and `audio/gain_mapping.json` are committed at durable paths inside `videos/team-b/grade-v07/`. Running `python3 videos/team-b/grade-v07/build_audio_v07.py` with `/tmp/grade_v07_build` absent executes **100% offline** (zero `edge-tts` calls, zero timing edits), reproducing `master_audio_48k.wav` bit-for-bit (`SHA256 cd260ea6100f3f796c69c5b2b1277be9991e8ebe13ecbf9c29cdb87359594209`), which matches the delivered `video.mp4` AAC stream at **`r = 0.998834`** (`-45.88 dBFS` AAC LC floor).
