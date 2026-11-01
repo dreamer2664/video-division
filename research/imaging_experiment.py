@@ -36,8 +36,21 @@ def stat_before_after(before,after,roi):
     def grad(g):
         x=cv2.Sobel(g,cv2.CV_32F,1,0,ksize=3);y=cv2.Sobel(g,cv2.CV_32F,0,1,ksize=3);return cv2.magnitude(x,y)/8
     gb,ga=grad(b),grad(a);edge=gb>=np.percentile(gb,80)
+    # Fixed baseline edges: mean normal derivative / 4px local edge contrast.
+    # A scene-based acutance proxy in inverse pixels, NOT ISO slanted-edge MTF/acutance.
+    gx=cv2.Sobel(b,cv2.CV_32F,1,0,ksize=3)/8;gy=cv2.Sobel(b,cv2.CV_32F,0,1,ksize=3)/8
+    nx=gx/np.maximum(gb,1e-6);ny=gy/np.maximum(gb,1e-6);yy,xx=np.mgrid[:b.shape[0],:b.shape[1]].astype(np.float32)
+    def contrast(g):
+        plus=cv2.remap(g,xx+2*nx,yy+2*ny,cv2.INTER_LINEAR,borderMode=cv2.BORDER_REFLECT)
+        minus=cv2.remap(g,xx-2*nx,yy-2*ny,cv2.INTER_LINEAR,borderMode=cv2.BORDER_REFLECT)
+        return np.abs(plus-minus)
+    cb=contrast(b);ca=contrast(a);sel=edge&(gb>5)&(cb>10)
+    agx=cv2.Sobel(a,cv2.CV_32F,1,0,ksize=3)/8;agy=cv2.Sobel(a,cv2.CV_32F,0,1,ksize=3)/8
+    anormal=np.abs(agx*nx+agy*ny)
     return {'laplacian_variance_before':lap_b,'laplacian_variance_after':lap_a,
-            'edge_acutance_proxy_before':float(gb[edge].mean()),'edge_acutance_proxy_after':float(ga[edge].mean()),
+            'edge_gradient_before':float(gb[edge].mean()),'edge_gradient_after':float(ga[edge].mean()),
+            'edge_acutance_before_per_pixel':float((gb[sel]/cb[sel]).mean()),
+            'edge_acutance_after_per_pixel':float((anormal[sel]/np.maximum(ca[sel],10)).mean()),'edge_samples':int(sel.sum()),
             'contrast_std_before':float(b.std()),'contrast_std_after':float(a.std()),'pixels':int(b.size)}
 def main():
     rows=[]
@@ -70,8 +83,8 @@ def main():
         rows.append(data);print(s['name'],json.dumps(data,sort_keys=True),flush=True)
     (R/'image-metrics.json').write_text(json.dumps(rows,indent=2)+'\n')
     with (R/'image-metrics.csv').open('w',newline='') as f:
-        w=csv.writer(f);w.writerow(['scene','region','lapvar_before','lapvar_after','acutance_proxy_before','acutance_proxy_after','contrast_std_before','contrast_std_after','background_contrast_less_than_foreground_after'])
+        w=csv.writer(f);w.writerow(['scene','region','lapvar_before','lapvar_after','acutance_proxy_before_per_px','acutance_proxy_after_per_px','edge_gradient_before','edge_gradient_after','contrast_std_before','contrast_std_after','background_contrast_less_than_foreground_after'])
         for x in rows:
             for zone in ['foreground','background']:
-                d=x[zone];w.writerow([x['scene'],zone,*[round(d[k],3) for k in ['laplacian_variance_before','laplacian_variance_after','edge_acutance_proxy_before','edge_acutance_proxy_after','contrast_std_before','contrast_std_after']],x['background_contrast_below_foreground_after']])
+                d=x[zone];w.writerow([x['scene'],zone,*[round(d[k],4) for k in ['laplacian_variance_before','laplacian_variance_after','edge_acutance_before_per_pixel','edge_acutance_after_per_pixel','edge_gradient_before','edge_gradient_after','contrast_std_before','contrast_std_after']],x['background_contrast_below_foreground_after']])
 if __name__=='__main__':main()

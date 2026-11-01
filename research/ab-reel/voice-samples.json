@@ -15,6 +15,7 @@
       "reel_end": 1.972,
       "target_rms_dbfs": -21,
       "achieved_rms_dbfs": -21.0,
+      "decoded_mp3_rms_dbfs": -21.446,
       "peak_dbfs": -4.99
     },
     {
@@ -28,6 +29,7 @@
       "reel_end": 3.65,
       "target_rms_dbfs": -21,
       "achieved_rms_dbfs": -21.0,
+      "decoded_mp3_rms_dbfs": -21.446,
       "peak_dbfs": -7.11
     },
     {
@@ -41,6 +43,7 @@
       "reel_end": 5.49,
       "target_rms_dbfs": -21,
       "achieved_rms_dbfs": -21.0,
+      "decoded_mp3_rms_dbfs": -21.445,
       "peak_dbfs": -4.79
     },
     {
@@ -54,6 +57,7 @@
       "reel_end": 7.37,
       "target_rms_dbfs": -21,
       "achieved_rms_dbfs": -21.0,
+      "decoded_mp3_rms_dbfs": -21.445,
       "peak_dbfs": -1.09
     },
     {
@@ -67,6 +71,7 @@
       "reel_end": 9.187,
       "target_rms_dbfs": -21,
       "achieved_rms_dbfs": -21.0,
+      "decoded_mp3_rms_dbfs": -21.446,
       "peak_dbfs": -2.6
     }
   ]

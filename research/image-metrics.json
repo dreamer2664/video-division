@@ -19,8 +19,11 @@
     "foreground": {
       "laplacian_variance_before": 732.900390625,
       "laplacian_variance_after": 984.2257690429688,
-      "edge_acutance_proxy_before": 40.78157424926758,
-      "edge_acutance_proxy_after": 43.10047149658203,
+      "edge_gradient_before": 40.78157424926758,
+      "edge_gradient_after": 43.10047149658203,
+      "edge_acutance_before_per_pixel": 0.405178427696228,
+      "edge_acutance_after_per_pixel": 0.41533148288726807,
+      "edge_samples": 39307,
       "contrast_std_before": 45.312713623046875,
       "contrast_std_after": 46.00662612915039,
       "pixels": 197100
@@ -28,8 +31,11 @@
     "background": {
       "laplacian_variance_before": 165.14578247070312,
       "laplacian_variance_after": 62.37482452392578,
-      "edge_acutance_proxy_before": 20.084911346435547,
-      "edge_acutance_proxy_after": 14.688639640808105,
+      "edge_gradient_before": 20.084911346435547,
+      "edge_gradient_after": 14.688639640808105,
+      "edge_acutance_before_per_pixel": 0.34085264801979065,
+      "edge_acutance_after_per_pixel": 0.3267729878425598,
+      "edge_samples": 37053,
       "contrast_std_before": 35.0152702331543,
       "contrast_std_after": 29.474323272705078,
       "pixels": 186524
@@ -60,8 +66,11 @@
     "foreground": {
       "laplacian_variance_before": 354.84552001953125,
       "laplacian_variance_after": 528.08203125,
-      "edge_acutance_proxy_before": 24.262351989746094,
-      "edge_acutance_proxy_after": 26.62920570373535,
+      "edge_gradient_before": 24.262351989746094,
+      "edge_gradient_after": 26.62920570373535,
+      "edge_acutance_before_per_pixel": 0.4695342779159546,
+      "edge_acutance_after_per_pixel": 0.4961698353290558,
+      "edge_samples": 66009,
       "contrast_std_before": 72.27629852294922,
       "contrast_std_after": 72.68229675292969,
       "pixels": 341932
@@ -69,8 +78,11 @@
     "background": {
       "laplacian_variance_before": 56.57854080200195,
       "laplacian_variance_after": 22.640426635742188,
-      "edge_acutance_proxy_before": 11.844547271728516,
-      "edge_acutance_proxy_after": 9.489690780639648,
+      "edge_gradient_before": 11.844547271728516,
+      "edge_gradient_after": 9.489690780639648,
+      "edge_acutance_before_per_pixel": 0.29923975467681885,
+      "edge_acutance_after_per_pixel": 0.2836965024471283,
+      "edge_samples": 38988,
       "contrast_std_before": 37.01250457763672,
       "contrast_std_after": 32.82328796386719,
       "pixels": 197206
@@ -101,8 +113,11 @@
     "foreground": {
       "laplacian_variance_before": 250.7766876220703,
       "laplacian_variance_after": 372.27764892578125,
-      "edge_acutance_proxy_before": 19.41379165649414,
-      "edge_acutance_proxy_after": 21.624486923217773,
+      "edge_gradient_before": 19.41379165649414,
+      "edge_gradient_after": 21.624486923217773,
+      "edge_acutance_before_per_pixel": 0.47133100032806396,
+      "edge_acutance_after_per_pixel": 0.49280086159706116,
+      "edge_samples": 35963,
       "contrast_std_before": 40.29244613647461,
       "contrast_std_after": 40.79724884033203,
       "pixels": 189070
@@ -110,8 +125,11 @@
     "background": {
       "laplacian_variance_before": 108.61466979980469,
       "laplacian_variance_after": 40.92710494995117,
-      "edge_acutance_proxy_before": 16.599624633789062,
-      "edge_acutance_proxy_after": 11.543721199035645,
+      "edge_gradient_before": 16.599624633789062,
+      "edge_gradient_after": 11.543721199035645,
+      "edge_acutance_before_per_pixel": 0.39108529686927795,
+      "edge_acutance_after_per_pixel": 0.36645981669425964,
+      "edge_samples": 18554,
       "contrast_std_before": 31.6698055267334,
       "contrast_std_after": 27.325899124145508,
       "pixels": 94500

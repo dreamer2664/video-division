@@ -33,7 +33,8 @@ def main():
             rms=np.sqrt(np.mean(x*x));peak=np.max(np.abs(x));target=10**(-21/20);scale=min(.89/max(peak,1e-9),target/max(rms,1e-9));x=np.clip(x*scale,-1,1)
             pcm=np.round(x*32767).astype(np.int16);wav=Path(tmp)/f'{letter}.wav';wavfile.write(wav,SR,pcm)
             dest=A/f'voice-{letter}.mp3';subprocess.run(['ffmpeg','-v','error','-y','-i',str(wav),'-c:a','libmp3lame','-b:a','160k',str(dest)],check=True)
-            duration=len(x)/SR;rows.append({'sample':letter,'description':name,'source':str(path.relative_to(R)),'source_in':round(start,3),'source_out':round(end,3),'duration':round(duration,3),'reel_start':round(offset,3),'reel_end':round(offset+duration,3),'target_rms_dbfs':-21,'achieved_rms_dbfs':round(20*math.log10(np.sqrt(np.mean(x*x))),2),'peak_dbfs':round(20*math.log10(np.max(np.abs(x))),2)})
+            decoded=decode(dest).astype(np.float64);decoded_rms=20*math.log10(np.sqrt(np.mean(decoded*decoded)))
+            duration=len(x)/SR;rows.append({'sample':letter,'description':name,'source':str(path.relative_to(R)),'source_in':round(start,3),'source_out':round(end,3),'duration':round(duration,3),'reel_start':round(offset,3),'reel_end':round(offset+duration,3),'target_rms_dbfs':-21,'achieved_rms_dbfs':round(20*math.log10(np.sqrt(np.mean(x*x))),2),'decoded_mp3_rms_dbfs':round(decoded_rms,3),'peak_dbfs':round(20*math.log10(np.max(np.abs(x))),2)})
             parts.append(pcm);offset+=duration
             if letter!='E':parts.append(np.zeros(int(.10*SR),np.int16));offset+=.10
         mix=np.concatenate(parts);assert len(mix)/SR<=10, f'Exceeds ten seconds: {len(mix)/SR}'
