@@ -1,0 +1,42 @@
+[
+  {
+    "pr": 3,
+    "action": "CLOSED_SUPERSEDED",
+    "head": "3930e2cdbeac07145b3118fba881fc5fc706e4c4",
+    "branch_preserved": "cut/v08",
+    "comment": "https://github.com/dreamer2664/video-division/pull/3#issuecomment-6556253759"
+  },
+  {
+    "pr": 7,
+    "action": "CLOSED_SUPERSEDED",
+    "head": "5d5cadb8b77d046de82094da01062c287678a660",
+    "branch_preserved": "pixel/v07",
+    "comment": "https://github.com/dreamer2664/video-division/pull/7#issuecomment-6556254304"
+  },
+  {
+    "pr": 6,
+    "action": "ACCEPT",
+    "head": "fedc25079c7bb79d9ade52ea9c95293fe3f58d86",
+    "comment": "https://github.com/dreamer2664/video-division/pull/6#issuecomment-6556254865",
+    "merge": {
+      "sha": "d759c9dc2b06bf0da15d47f116b35b0dad28cab9",
+      "merged": true,
+      "message": "Pull Request successfully merged"
+    }
+  },
+  {
+    "pr": 4,
+    "action": "REJECT_ON_SIGHT",
+    "comment": "https://github.com/dreamer2664/video-division/pull/4#issuecomment-6556255647"
+  },
+  {
+    "pr": 1,
+    "action": "ALREADY_MERGED_LOOK_DOCS_PENDING",
+    "comment": "https://github.com/dreamer2664/video-division/pull/1#issuecomment-6556255946"
+  },
+  {
+    "action": "LOOK_DOCS_TRACKED",
+    "issue": 11,
+    "url": "https://github.com/dreamer2664/video-division/issues/11"
+  }
+]

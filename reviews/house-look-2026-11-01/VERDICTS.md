@@ -44,3 +44,16 @@ GitHub confirms PR1 is already MERGED at1929efb via0a169f267982c74bede5f8421ad27
 ## Gates now enforced
 
 README and60s spec point to the directive and withdraw the720p/portrait/vector exceptions. All NEW films:1920×1080 landscape,photographic plates,33³ LUT,moving weather/camera,actual-word-boundary captions,committed speech stem+telemetry,8–12dB voice/bed target,-16±0.5LUFS,TP≤-1dBTP,AAC48kHz stereo,full scans. Portrait or vector-flat: reject on sight, cite directive, stop analysis. Preserve all historical audits/media; no external publishing.
+
+## Executed disposition / verification
+
+MARK FIVE own guarded merge: `d759c9dc2b06bf0da15d47f116b35b0dad28cab9`. Entire grade-v06 subtree (not just video) identical at accepted source, own merge and current main; see `main-and-look-verification.json`. Both withdrawn branch heads remain on origin.
+
+- 3: CLOSED_SUPERSEDED — https://github.com/dreamer2664/video-division/pull/3#issuecomment-6556253759
+- 7: CLOSED_SUPERSEDED — https://github.com/dreamer2664/video-division/pull/7#issuecomment-6556254304
+- 6: ACCEPT — https://github.com/dreamer2664/video-division/pull/6#issuecomment-6556254865
+- 4: REJECT_ON_SIGHT — https://github.com/dreamer2664/video-division/pull/4#issuecomment-6556255647
+- 1: ALREADY_MERGED_LOOK_DOCS_PENDING — https://github.com/dreamer2664/video-division/pull/1#issuecomment-6556255946
+- documentation: LOOK_DOCS_TRACKED — https://github.com/dreamer2664/video-division/issues/11
+
+Grade look/ documentation is tracked in issue #11 and still absent at the last fetch. No documentation audit is claimed before it exists. Main/readme/spec/BOARD now follow the Director, not the obsolete technical queue.
