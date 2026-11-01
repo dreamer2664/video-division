@@ -133,7 +133,7 @@ def camera_card(d,box,cam,frame_ms,prog_t,panel_font,large=False):
     d.text((x0+w*.04,y0+h*.03),label,font=font(panel_font,True),fill=AMBER if cam!=5 else RED)
     stamp=ts(frame_ms+4000)
     d.text((x1-w*.04,y0+h*.03),stamp,font=font(max(9,panel_font-3),False),fill=GREEN,anchor='ra')
-    ix0=x0+w*.045; iy0=y0+h*.17; ix1=x1-w*.045; iy1=y1-h*.15
+    ix0=x0+w*.045; iy0=y0+h*(.22 if h<100 else .17); ix1=x1-w*.045; iy1=y1-h*.15
     if cam==1: corridor(d,(ix0,iy0,ix1,iy1),prog_t)
     elif cam==2: stair(d,(ix0,iy0,ix1,iy1),prog_t)
     elif cam==3: lobby(d,(ix0,iy0,ix1,iy1),prog_t)
@@ -187,7 +187,7 @@ def compose(frame,orientation,bg):
             room_panel(d,(25,535,W-25,774),frame_ms,elapsed)
             if elapsed>=53.6:
                 # CAM 05 is an unconfigured, fifth view, first visible at its live appearance.
-                camera_card(d,(30,782,W-30,842),5,frame_ms,elapsed+4,13)
+                camera_card(d,(30,775,W-30,855),5,frame_ms,elapsed+4,13)
         # caption system sits below picture; one current word is amber-karaoke highlighted.
         cap=caption_at(elapsed)
         color=RED if cap in RED_CAPS else TEXT
@@ -207,7 +207,7 @@ def compose(frame,orientation,bg):
                 row=k//2; col=k%2; xx=gx+col*(cw+gap); yy=gy+row*(ch+10)
                 camera_card(d,(xx,yy,xx+cw,yy+ch),cam,frame_ms,elapsed+4,16)
             room_panel(d,(590,92,935,422),frame_ms,elapsed)
-            if elapsed>=53.6: camera_card(d,(590,432,935,490),5,frame_ms,elapsed+4,11)
+            if elapsed>=53.6: camera_card(d,(690,318,928,415),5,frame_ms,elapsed+4,11)
         cap=caption_at(elapsed); color=RED if cap in RED_CAPS else TEXT
         fitted_text(d,(W*.5,H*.89),cap,32,W*.9,color,True)
         d.text((W*.5,H*.955),'LIVE WALL CLOCK  /  FOUR-SECOND FORECAST',font=font(17,True),fill=(96,119,132),anchor='mm')
