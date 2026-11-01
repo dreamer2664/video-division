@@ -1,25 +1,25 @@
 shot,voice_start_s,voice_end_s,active_s,text,caption,voice,rate,pitch,tempo_adjustment
 1,0.1,2.476,2.376,"Two thirteen, eight seconds.",02:13:08.000,en-US-ChristopherNeural,-8%,-4Hz,none
 2,3.049,5.589,2.54,"Four cameras, one control room.",FOUR CAMERAS. ONE ROOM.,en-US-ChristopherNeural,-8%,-4Hz,none
-3,6.162,7.95,1.788,The wall clock is live.,WALL CLOCK: LIVE,en-US-ChristopherNeural,-8%,-4Hz,none
-4,8.523,11.062,2.539,Every feed runs four seconds ahead.,FEEDS: PLUS FOUR,en-US-ChristopherNeural,-8%,-4Hz,none
-5,11.635,12.806,1.171,Check it yourself.,CHECK IT YOURSELF,en-US-ChristopherNeural,-8%,-4Hz,none
-6,13.379,15.211,1.832,Corridor door is shut here.,CORRIDOR. DOOR SHUT.,en-US-ChristopherNeural,-8%,-4Hz,none
-7,15.784,17.626,1.843,Camera one shows it opening.,CAM ONE: IT OPENS,en-US-ChristopherNeural,-8%,-4Hz,none
-8,18.199,19.454,1.255,The guard waits.,THE GUARD WAITS,en-US-ChristopherNeural,-8%,-4Hz,none
-9,20.027,21.776,1.749,Now the door opens here.,NOW IT OPENS HERE,en-US-ChristopherNeural,-8%,-4Hz,none
-10,22.349,24.355,2.007,Exactly four seconds later.,FOUR SECONDS LATER,en-US-ChristopherNeural,-8%,-4Hz,none
-11,24.928,26.341,1.413,He writes it in the log.,OFFSET: PLUS FOUR,en-US-ChristopherNeural,-8%,-4Hz,none
-12,26.914,28.813,1.899,"Plus four, no drift.",NO DRIFT,en-US-ChristopherNeural,-8%,-4Hz,none
-13,29.386,30.93,1.544,No dropped frames.,NO DROPPED FRAMES,en-US-ChristopherNeural,-8%,-4Hz,none
+3,6.162,7.943,1.781,The wall clock is live.,WALL CLOCK: LIVE,en-US-ChristopherNeural,-8%,-4Hz,none
+4,8.516,11.055,2.539,Every feed runs four seconds ahead.,FEEDS: PLUS FOUR,en-US-ChristopherNeural,-8%,-4Hz,none
+5,11.628,12.804,1.176,Check it yourself.,CHECK IT YOURSELF,en-US-ChristopherNeural,-8%,-4Hz,none
+6,13.377,15.209,1.832,Corridor door is shut here.,CORRIDOR. DOOR SHUT.,en-US-ChristopherNeural,-8%,-4Hz,none
+7,15.782,17.625,1.843,Camera one shows it opening.,CAM ONE: IT OPENS,en-US-ChristopherNeural,-8%,-4Hz,none
+8,18.197,19.452,1.255,The guard waits.,THE GUARD WAITS,en-US-ChristopherNeural,-8%,-4Hz,none
+9,20.025,21.774,1.749,Now the door opens here.,NOW IT OPENS HERE,en-US-ChristopherNeural,-8%,-4Hz,none
+10,22.347,24.354,2.007,Exactly four seconds later.,FOUR SECONDS LATER,en-US-ChristopherNeural,-8%,-4Hz,none
+11,24.927,26.34,1.413,He writes it in the log.,OFFSET: PLUS FOUR,en-US-ChristopherNeural,-8%,-4Hz,none
+12,26.913,28.812,1.899,"Plus four, no drift.",NO DRIFT,en-US-ChristopherNeural,-8%,-4Hz,none
+13,29.385,30.93,1.545,No dropped frames.,NO DROPPED FRAMES,en-US-ChristopherNeural,-8%,-4Hz,none
 14,31.503,33.477,1.975,Camera four shows this room.,CAM FOUR: THIS ROOM,en-US-ChristopherNeural,-8%,-4Hz,none
 15,34.05,36.386,2.336,"Same sleeve, same hand.",SAME SLEEVE. SAME HAND.,en-US-ChristopherNeural,-8%,-4Hz,none
 16,36.959,38.401,1.442,Watch the timecode.,LOOK AT THE TIME,en-US-ChristopherNeural,-8%,-4Hz,none
 17,38.974,40.227,1.253,He hasn't moved.,IT HASN’T MOVED,en-US-ChristopherNeural,-8%,-4Hz,none
 18,40.8,41.86,1.06,Don't look away.,DON’T LOOK AWAY,en-US-ChristopherNeural,-8%,-4Hz,none
-19,43.2,44.407,1.207,Four seconds.,FOUR SECONDS. EXACT.,en-US-ChristopherNeural,-8%,-4Hz,none
+19,43.2,44.405,1.205,Four seconds.,FOUR SECONDS. EXACT.,en-US-ChristopherNeural,-8%,-4Hz,none
 20,45.6,48.71,3.11,Fifty-three point six: still closed.,HIS HAND ISN'T OPEN YET,en-US-ChristopherNeural,-8%,-4Hz,none
 21,49.6,51.744,2.144,Now. Open.,NOW. EXACTLY.,en-US-ChristopherNeural,-8%,-4Hz,none
-23,53.6,54.723,1.123,Feed five.,FEED FIVE: ONLINE,en-US-ChristopherNeural,-8%,-4Hz,none
-24,55.32,56.5,1.18,Four cameras.,THERE ARE FOUR CAMERAS,en-US-ChristopherNeural,-8%,-4Hz,none
+23,53.6,54.725,1.125,Feed five.,FEED FIVE: ONLINE,en-US-ChristopherNeural,-8%,-4Hz,none
+24,55.32,56.499,1.179,Four cameras.,THERE ARE FOUR CAMERAS,en-US-ChristopherNeural,-8%,-4Hz,none
 25,57.72,59.04,1.32,Someone behind.,WHO IS BEHIND HIM?,en-US-ChristopherNeural,-8%,-4Hz,none
