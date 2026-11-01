@@ -1,0 +1,79 @@
+{
+  "input": "TWO-LIGHTS-cut-v10.mp4",
+  "strength": 0.85,
+  "method_note": "Metrics are image-content-dependent proxies, not calibrated film-stock measurements.",
+  "frames": [
+    {
+      "frame": 1,
+      "source_seconds": 8.5,
+      "before_file": "frame-01-before.png",
+      "after_file": "frame-01-after.png",
+      "before": {
+        "grain_residual_sd_8bit": 6.528983032330871,
+        "grain_adjacent_correlation_x": 0.6649312376976013,
+        "grain_adjacent_correlation_y": 0.5609453916549683,
+        "highlight_bloom_width_px_heuristic": 21.0,
+        "edge_acutance_sobel_mean": 0.6295661330223083,
+        "luma_histogram_p95_minus_p05": 118.0000004475005,
+        "luma_histogram_sd_8bit": 44.28654098510742
+      },
+      "after": {
+        "grain_residual_sd_8bit": 6.79821141064167,
+        "grain_adjacent_correlation_x": 0.2898574769496918,
+        "grain_adjacent_correlation_y": 0.4625592827796936,
+        "highlight_bloom_width_px_heuristic": 17.0,
+        "edge_acutance_sobel_mean": 0.5587677359580994,
+        "luma_histogram_p95_minus_p05": 115.00000027008355,
+        "luma_histogram_sd_8bit": 41.14717102050781
+      }
+    },
+    {
+      "frame": 2,
+      "source_seconds": 27.0,
+      "before_file": "frame-02-before.png",
+      "after_file": "frame-02-after.png",
+      "before": {
+        "grain_residual_sd_8bit": 6.689457921311259,
+        "grain_adjacent_correlation_x": 0.7252290844917297,
+        "grain_adjacent_correlation_y": 0.580009937286377,
+        "highlight_bloom_width_px_heuristic": 24.0,
+        "edge_acutance_sobel_mean": 0.7295287847518921,
+        "luma_histogram_p95_minus_p05": 199.0000033378601,
+        "luma_histogram_sd_8bit": 66.34137725830078
+      },
+      "after": {
+        "grain_residual_sd_8bit": 8.303409442305565,
+        "grain_adjacent_correlation_x": 0.3936695158481598,
+        "grain_adjacent_correlation_y": 0.13064010441303253,
+        "highlight_bloom_width_px_heuristic": 27.0,
+        "edge_acutance_sobel_mean": 0.6501567959785461,
+        "luma_histogram_p95_minus_p05": 197.00000333832577,
+        "luma_histogram_sd_8bit": 62.090911865234375
+      }
+    },
+    {
+      "frame": 3,
+      "source_seconds": 46.0,
+      "before_file": "frame-03-before.png",
+      "after_file": "frame-03-after.png",
+      "before": {
+        "grain_residual_sd_8bit": 4.844965171068907,
+        "grain_adjacent_correlation_x": 0.7145598530769348,
+        "grain_adjacent_correlation_y": 0.5893309712409973,
+        "highlight_bloom_width_px_heuristic": 25.0,
+        "edge_acutance_sobel_mean": 0.5829641222953796,
+        "luma_histogram_p95_minus_p05": 214.0000023250468,
+        "luma_histogram_sd_8bit": 72.51423645019531
+      },
+      "after": {
+        "grain_residual_sd_8bit": 6.082382071763277,
+        "grain_adjacent_correlation_x": 0.20470120012760162,
+        "grain_adjacent_correlation_y": 0.3961339592933655,
+        "highlight_bloom_width_px_heuristic": 27.0,
+        "edge_acutance_sobel_mean": 0.5225350260734558,
+        "luma_histogram_p95_minus_p05": 207.00000238604844,
+        "luma_histogram_sd_8bit": 67.73422241210938
+      }
+    }
+  ]
+}

@@ -1,0 +1,403 @@
+{
+  "analysis": "baseline, as checked out 2026-11-01; FFmpeg mono 22.05kHz decode",
+  "reports": [
+    {
+      "file": "reel-v07",
+      "duration_s": 59.81569160997732,
+      "analysis_sample_rate_hz": 22050,
+      "speech_gate_dbfs": -48.016197174869774,
+      "speech_active_s_est": 38.751927437641726,
+      "speech_span_s_est": 58.47709750566893,
+      "f0": {
+        "method": "windowed autocorrelation, 40 ms frames / 10 ms hop; 65\u2013500 Hz",
+        "voiced_frames": 2927,
+        "voiced_ratio_of_frames": 0.48848464619492654,
+        "mean_hz": 121.45693603797416,
+        "std_hz": 58.37898679361806,
+        "std_derivative_hz_per_s": 313.7802439159347,
+        "std_derivative_semitones_per_s": 47.29184668575432,
+        "std_semitones": 5.5645072787174445
+      },
+      "hnr_autocorrelation_proxy_db_mean": 1.4642517896581173,
+      "speech_rate_est": {
+        "syllabic_nuclei": 165,
+        "syllables_per_s_active": 4.257852729145211,
+        "words_per_min_approx": 164.8201056443307,
+        "assumed_syllables_per_word": 1.55
+      },
+      "pauses": {
+        "count_ge_120ms": 29,
+        "gap_seconds": [
+          0.2693877551020408,
+          0.5786848072562358,
+          0.6086167800453515,
+          0.6285714285714286,
+          0.3292517006802721,
+          0.2594104308390023,
+          0.61859410430839,
+          0.5886621315192744,
+          0.5687074829931973,
+          0.61859410430839,
+          0.6385487528344671,
+          0.5886621315192744,
+          0.3791383219954648,
+          0.6285714285714286,
+          0.5786848072562358,
+          0.5886621315192744,
+          0.61859410430839,
+          0.21950113378684807,
+          0.61859410430839,
+          0.5886621315192744,
+          0.5786848072562358,
+          3.212698412698413,
+          0.5986394557823129,
+          0.61859410430839,
+          0.5886621315192744,
+          0.6784580498866213,
+          0.61859410430839,
+          0.5886621315192744,
+          0.2893424036281179
+        ],
+        "mean_s": 0.6306357025568848,
+        "median_s": 0.5886621315192744,
+        "p90_s": 0.6305668934240363,
+        "max_s": 3.212698412698413
+      },
+      "energy": {
+        "rms_dbfs_active_mean": -23.43607358365849,
+        "rms_db_std_active": 9.209319533798956
+      },
+      "spectrum": {
+        "centroid_hz_active_mean": 2029.206916853103,
+        "centroid_hz_active_std": 1715.6664895980007,
+        "rolloff85_hz_active_mean": 3454.094321253862,
+        "rolloff85_hz_active_std": 2806.8167090750953
+      },
+      "monotone_score_0_to_100": 15.05434979657384,
+      "score_definition": "weighted inverse of F0 spread, F0-slope spread, active RMS-dB spread, centroid spread, and rolloff spread; higher is flatter; heuristic, not human naturalness.",
+      "limits": [
+        "No ASR or transcript; syllables are RMS-envelope peak estimates and word rate assumes 1.55 syllables/word.",
+        "Energy gate can mistake music/noise for speech or miss quiet speech.",
+        "Autocorrelation can octave-error, especially on creaky, breathy, noisy, or polyphonic audio.",
+        "HNR is an autocorrelation periodicity proxy, not Praat's calibrated HNR.",
+        "Prosody metrics measure acoustic variation, not beauty, acting, intelligibility, or listener preference."
+      ],
+      "source_note": "isolated narration stem; origin/reel/v07"
+    },
+    {
+      "file": "reel-v08",
+      "duration_s": 59.22222222222222,
+      "analysis_sample_rate_hz": 22050,
+      "speech_gate_dbfs": -46.373642510251074,
+      "speech_active_s_est": 44.93786848072562,
+      "speech_span_s_est": 57.8485260770975,
+      "f0": {
+        "method": "windowed autocorrelation, 40 ms frames / 10 ms hop; 65\u2013500 Hz",
+        "voiced_frames": 3343,
+        "voiced_ratio_of_frames": 0.5635536075522589,
+        "mean_hz": 119.90360718375224,
+        "std_hz": 55.594313295552666,
+        "std_derivative_hz_per_s": 307.04608519704067,
+        "std_derivative_semitones_per_s": 46.026120158079216,
+        "std_semitones": 5.418365085682175
+      },
+      "hnr_autocorrelation_proxy_db_mean": 1.5221872870931845,
+      "speech_rate_est": {
+        "syllabic_nuclei": 205,
+        "syllables_per_s_active": 4.5618541094784435,
+        "words_per_min_approx": 176.58790101206876,
+        "assumed_syllables_per_word": 1.55
+      },
+      "pauses": {
+        "count_ge_120ms": 26,
+        "gap_seconds": [
+          0.23945578231292516,
+          0.3492063492063492,
+          0.33922902494331064,
+          0.35918367346938773,
+          0.3492063492063492,
+          0.35918367346938773,
+          0.4489795918367347,
+          0.20952380952380953,
+          0.33922902494331064,
+          0.35918367346938773,
+          0.3492063492063492,
+          0.35918367346938773,
+          0.2594104308390023,
+          0.13968253968253969,
+          0.35918367346938773,
+          0.3691609977324263,
+          0.33922902494331064,
+          0.3691609977324263,
+          3.222675736961451,
+          0.3492063492063492,
+          0.3492063492063492,
+          0.38911564625850337,
+          0.3492063492063492,
+          0.3292517006802721,
+          0.15963718820861678,
+          0.33922902494331064
+        ],
+        "mean_s": 0.43785103785103785,
+        "median_s": 0.3492063492063492,
+        "p90_s": 0.3791383219954648,
+        "max_s": 3.222675736961451
+      },
+      "energy": {
+        "rms_dbfs_active_mean": -22.43994837092981,
+        "rms_db_std_active": 7.824706377317763
+      },
+      "spectrum": {
+        "centroid_hz_active_mean": 2166.151064899935,
+        "centroid_hz_active_std": 1816.669098290892,
+        "rolloff85_hz_active_mean": 3587.3771382902696,
+        "rolloff85_hz_active_std": 2802.3401163670155
+      },
+      "monotone_score_0_to_100": 17.35627076120191,
+      "score_definition": "weighted inverse of F0 spread, F0-slope spread, active RMS-dB spread, centroid spread, and rolloff spread; higher is flatter; heuristic, not human naturalness.",
+      "limits": [
+        "No ASR or transcript; syllables are RMS-envelope peak estimates and word rate assumes 1.55 syllables/word.",
+        "Energy gate can mistake music/noise for speech or miss quiet speech.",
+        "Autocorrelation can octave-error, especially on creaky, breathy, noisy, or polyphonic audio.",
+        "HNR is an autocorrelation periodicity proxy, not Praat's calibrated HNR.",
+        "Prosody metrics measure acoustic variation, not beauty, acting, intelligibility, or listener preference."
+      ],
+      "source_note": "isolated narration stem; origin/reel/v08"
+    },
+    {
+      "file": "cut-v08",
+      "duration_s": 60.0,
+      "analysis_sample_rate_hz": 22050,
+      "speech_gate_dbfs": -49.44811747534031,
+      "speech_active_s_est": 25.252607709750567,
+      "speech_span_s_est": 58.616780045351476,
+      "f0": {
+        "method": "windowed autocorrelation, 40 ms frames / 10 ms hop; 65\u2013500 Hz",
+        "voiced_frames": 1717,
+        "voiced_ratio_of_frames": 0.28569051580698834,
+        "mean_hz": 127.50524406963251,
+        "std_hz": 64.07228394767766,
+        "std_derivative_hz_per_s": 447.803354298012,
+        "std_derivative_semitones_per_s": 53.572884961088064,
+        "std_semitones": 5.80049243036581
+      },
+      "hnr_autocorrelation_proxy_db_mean": 1.222250508356391,
+      "speech_rate_est": {
+        "syllabic_nuclei": 120,
+        "syllables_per_s_active": 4.751984483315973,
+        "words_per_min_approx": 183.94778645094087,
+        "assumed_syllables_per_word": 1.55
+      },
+      "pauses": {
+        "count_ge_120ms": 26,
+        "gap_seconds": [
+          1.4167800453514738,
+          1.0975056689342404,
+          1.7759637188208617,
+          1.5265306122448978,
+          1.346938775510204,
+          1.476643990929705,
+          0.14965986394557823,
+          1.326984126984127,
+          1.7659863945578231,
+          1.746031746031746,
+          1.4068027210884353,
+          0.14965986394557823,
+          1.3170068027210884,
+          1.4666666666666666,
+          0.9777777777777777,
+          1.7360544217687075,
+          1.107482993197279,
+          1.1473922902494331,
+          1.0476190476190477,
+          1.326984126984127,
+          1.9256235827664399,
+          0.9478458049886621,
+          1.0675736961451248,
+          1.1573696145124717,
+          1.4666666666666666,
+          1.107482993197279
+        ],
+        "mean_s": 1.2686551543694398,
+        "median_s": 1.326984126984127,
+        "p90_s": 1.7560090702947846,
+        "max_s": 1.9256235827664399
+      },
+      "energy": {
+        "rms_dbfs_active_mean": -23.451572900111387,
+        "rms_db_std_active": 8.70460965183984
+      },
+      "spectrum": {
+        "centroid_hz_active_mean": 2305.056845539713,
+        "centroid_hz_active_std": 1924.7474767576034,
+        "rolloff85_hz_active_mean": 3820.3952049276472,
+        "rolloff85_hz_active_std": 2917.631460273648
+      },
+      "monotone_score_0_to_100": 13.140410607962771,
+      "score_definition": "weighted inverse of F0 spread, F0-slope spread, active RMS-dB spread, centroid spread, and rolloff spread; higher is flatter; heuristic, not human naturalness.",
+      "limits": [
+        "No ASR or transcript; syllables are RMS-envelope peak estimates and word rate assumes 1.55 syllables/word.",
+        "Energy gate can mistake music/noise for speech or miss quiet speech.",
+        "Autocorrelation can octave-error, especially on creaky, breathy, noisy, or polyphonic audio.",
+        "HNR is an autocorrelation periodicity proxy, not Praat's calibrated HNR.",
+        "Prosody metrics measure acoustic variation, not beauty, acting, intelligibility, or listener preference."
+      ],
+      "source_note": "isolated narration stem; origin/cut/v08"
+    },
+    {
+      "file": "pixel-v06",
+      "duration_s": 60.01070294784581,
+      "analysis_sample_rate_hz": 22050,
+      "speech_gate_dbfs": -14.325155523178921,
+      "speech_active_s_est": 3.601814058956916,
+      "speech_span_s_est": 49.95646258503401,
+      "f0": {
+        "method": "windowed autocorrelation, 40 ms frames / 10 ms hop; 65\u2013500 Hz",
+        "voiced_frames": 102,
+        "voiced_ratio_of_frames": 0.016968890367659292,
+        "mean_hz": 291.1796561124249,
+        "std_hz": 187.27009098811197,
+        "std_derivative_hz_per_s": 563.2403505557693,
+        "std_derivative_semitones_per_s": 36.19164727432594,
+        "std_semitones": 15.441173900132968
+      },
+      "hnr_autocorrelation_proxy_db_mean": -0.30171024136055274,
+      "speech_rate_est": {
+        "syllabic_nuclei": 32,
+        "syllables_per_s_active": 8.884411986905063,
+        "words_per_min_approx": 343.91272207374436,
+        "assumed_syllables_per_word": 1.55
+      },
+      "pauses": {
+        "count_ge_120ms": 25,
+        "gap_seconds": [
+          3.202721088435374,
+          0.3292517006802721,
+          0.6784580498866213,
+          2.8535147392290248,
+          2.224943310657596,
+          1.965532879818594,
+          2.5043083900226755,
+          1.7959183673469388,
+          2.7337868480725622,
+          1.1573696145124717,
+          2.015419501133787,
+          0.6285714285714286,
+          0.6086167800453515,
+          2.0752834467120183,
+          0.6784580498866213,
+          1.7160997732426304,
+          2.6040816326530614,
+          3.691609977324263,
+          0.23945578231292516,
+          1.2471655328798186,
+          5.297959183673469,
+          3.5619047619047617,
+          1.7759637188208617,
+          0.4489795918367347,
+          0.19954648526077096
+        ],
+        "mean_s": 1.8493968253968252,
+        "median_s": 1.7959183673469388,
+        "p90_s": 3.418231292517007,
+        "max_s": 5.297959183673469
+      },
+      "energy": {
+        "rms_dbfs_active_mean": -10.856367472835625,
+        "rms_db_std_active": 2.4359407787293974
+      },
+      "spectrum": {
+        "centroid_hz_active_mean": 4066.0647601525093,
+        "centroid_hz_active_std": 2435.1273851095702,
+        "rolloff85_hz_active_mean": 6513.048335786011,
+        "rolloff85_hz_active_std": 2840.9757062618505
+      },
+      "monotone_score_0_to_100": 17.760364580345744,
+      "score_definition": "weighted inverse of F0 spread, F0-slope spread, active RMS-dB spread, centroid spread, and rolloff spread; higher is flatter; heuristic, not human naturalness.",
+      "limits": [
+        "No ASR or transcript; syllables are RMS-envelope peak estimates and word rate assumes 1.55 syllables/word.",
+        "Energy gate can mistake music/noise for speech or miss quiet speech.",
+        "Autocorrelation can octave-error, especially on creaky, breathy, noisy, or polyphonic audio.",
+        "HNR is an autocorrelation periodicity proxy, not Praat's calibrated HNR.",
+        "Prosody metrics measure acoustic variation, not beauty, acting, intelligibility, or listener preference."
+      ],
+      "source_note": "NOT an isolated stem: mono downmix of embedded full film mix; origin/pixel/v06"
+    },
+    {
+      "file": "grade-MARK-FOUR",
+      "duration_s": 60.0,
+      "analysis_sample_rate_hz": 22050,
+      "speech_gate_dbfs": -46.980141344406185,
+      "speech_active_s_est": 44.44897959183673,
+      "speech_span_s_est": 58.676643990929705,
+      "f0": {
+        "method": "windowed autocorrelation, 40 ms frames / 10 ms hop; 65\u2013500 Hz",
+        "voiced_frames": 3281,
+        "voiced_ratio_of_frames": 0.5459234608985025,
+        "mean_hz": 119.73866307453692,
+        "std_hz": 52.48457916616168,
+        "std_derivative_hz_per_s": 335.3561464085917,
+        "std_derivative_semitones_per_s": 48.655315072240185,
+        "std_semitones": 5.2069194321803876
+      },
+      "hnr_autocorrelation_proxy_db_mean": 1.4327623264491893,
+      "speech_rate_est": {
+        "syllabic_nuclei": 184,
+        "syllables_per_s_active": 4.139577594123049,
+        "words_per_min_approx": 160.24171332089222,
+        "assumed_syllables_per_word": 1.55
+      },
+      "pauses": {
+        "count_ge_120ms": 22,
+        "gap_seconds": [
+          0.27936507936507937,
+          0.4888888888888889,
+          0.5487528344671202,
+          0.16961451247165532,
+          0.4489795918367347,
+          0.16961451247165532,
+          1.0775510204081633,
+          0.1895691609977324,
+          0.5287981859410431,
+          0.2594104308390023,
+          1.0675736961451248,
+          0.5188208616780046,
+          1.0476190476190477,
+          0.5587301587301587,
+          0.508843537414966,
+          1.0975056689342404,
+          1.2072562358276644,
+          0.2494331065759637,
+          0.5886621315192744,
+          0.20952380952380953,
+          0.5587301587301587,
+          1.0975056689342404
+        ],
+        "mean_s": 0.585034013605442,
+        "median_s": 0.5238095238095238,
+        "p90_s": 1.0955102040816327,
+        "max_s": 1.2072562358276644
+      },
+      "energy": {
+        "rms_dbfs_active_mean": -20.16535495763103,
+        "rms_db_std_active": 8.90269998735421
+      },
+      "spectrum": {
+        "centroid_hz_active_mean": 2161.521200351831,
+        "centroid_hz_active_std": 1740.7222881871835,
+        "rolloff85_hz_active_mean": 3679.441978377525,
+        "rolloff85_hz_active_std": 2769.177895445457
+      },
+      "monotone_score_0_to_100": 17.801004992981007,
+      "score_definition": "weighted inverse of F0 spread, F0-slope spread, active RMS-dB spread, centroid spread, and rolloff spread; higher is flatter; heuristic, not human naturalness.",
+      "limits": [
+        "No ASR or transcript; syllables are RMS-envelope peak estimates and word rate assumes 1.55 syllables/word.",
+        "Energy gate can mistake music/noise for speech or miss quiet speech.",
+        "Autocorrelation can octave-error, especially on creaky, breathy, noisy, or polyphonic audio.",
+        "HNR is an autocorrelation periodicity proxy, not Praat's calibrated HNR.",
+        "Prosody metrics measure acoustic variation, not beauty, acting, intelligibility, or listener preference."
+      ],
+      "source_note": "isolated narration stem; origin/grade/v05 MARK FOUR"
+    }
+  ]
+}

@@ -63,3 +63,18 @@ Round limit: **1500 text characters maximum.** Reserve characters before each PO
 
 **Total reserved this round (tally): 432 / 1,500.** Four synthesis calls at 108 chars each; every attempted synthesis counted per division rule. Remaining: 1,068 characters. No API key committed or logged.
 
+---
+
+## cut
+
+# ElevenLabs request ledger — 2026-11-01
+
+**Hard cap this round:** 1,200 text characters total. **Used:** 0. **Remaining:** 1,200.
+
+No ElevenLabs request was sent — the API key was not available in cut's execution context, so the request was deliberately not attempted and no credential appears anywhere in the tree. Planned A/B payload was 106 characters (held, unsent). Cut's contribution this round is offline measurement, not synthesis: `research/voices-cut.md`, `tools/voice_quality.py`, `tools/film_emulate.py` and the stem tracks in `research/voice_ab/`.
+
+## Calls sent
+
+| # | Timestamp | Text characters | Request/result | Budget used |
+|---|---|---:|---|---:|
+| — | — | — | **None** | 0 / 1,200 |
