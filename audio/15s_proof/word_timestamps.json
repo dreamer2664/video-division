@@ -1,0 +1,110 @@
+{
+  "script": "What if I never slept again? I stayed awake for you, hour by hour. One counter. One number that never stops.",
+  "words": [
+    {
+      "word": "What",
+      "start": 0.0,
+      "end": 0.197
+    },
+    {
+      "word": "if",
+      "start": 0.232,
+      "end": 0.302
+    },
+    {
+      "word": "I",
+      "start": 0.372,
+      "end": 0.395
+    },
+    {
+      "word": "never",
+      "start": 0.546,
+      "end": 0.801
+    },
+    {
+      "word": "slept",
+      "start": 0.871,
+      "end": 1.138
+    },
+    {
+      "word": "again?",
+      "start": 1.184,
+      "end": 1.683
+    },
+    {
+      "word": "I",
+      "start": 2.38,
+      "end": 2.45
+    },
+    {
+      "word": "stayed",
+      "start": 2.566,
+      "end": 2.81
+    },
+    {
+      "word": "awake",
+      "start": 2.844,
+      "end": 3.309
+    },
+    {
+      "word": "for",
+      "start": 3.379,
+      "end": 3.541
+    },
+    {
+      "word": "you,",
+      "start": 3.599,
+      "end": 3.947
+    },
+    {
+      "word": "hour",
+      "start": 4.005,
+      "end": 4.284
+    },
+    {
+      "word": "by",
+      "start": 4.342,
+      "end": 4.516
+    },
+    {
+      "word": "hour.",
+      "start": 4.563,
+      "end": 4.992
+    },
+    {
+      "word": "One",
+      "start": 5.271,
+      "end": 5.503
+    },
+    {
+      "word": "counter.",
+      "start": 5.561,
+      "end": 6.118
+    },
+    {
+      "word": "One",
+      "start": 6.293,
+      "end": 6.478
+    },
+    {
+      "word": "number",
+      "start": 6.525,
+      "end": 6.734
+    },
+    {
+      "word": "that",
+      "start": 6.792,
+      "end": 6.92
+    },
+    {
+      "word": "never",
+      "start": 7.036,
+      "end": 7.291
+    },
+    {
+      "word": "stops.",
+      "start": 7.349,
+      "end": 8.127
+    }
+  ]
+}
