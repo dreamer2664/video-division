@@ -2,13 +2,36 @@
 
 ## Measured deliverables
 
-- Vertical master: **60.000000 s**, 1080×1920, 30/1 fps, H.264, yuv420p, MP4 faststart; 37,718,527 bytes.
-- Landscape derivative: **60.000000 s**, 1920×1080, 30/1 fps, H.264, yuv420p, MP4 faststart; 5,858,586 bytes. It keeps the vertical picture centered over an expanded, softened night-scene background.
+- Vertical master: **60.000000 s**, 1080×1920, 30/1 fps, H.264, yuv420p, MP4 faststart; 37,717,528 bytes.
+- Landscape derivative: **60.000000 s**, 1920×1080, 30/1 fps, H.264, yuv420p, MP4 faststart; 5,861,026 bytes. It keeps the vertical picture centered over an expanded, softened night-scene background.
 - Master audio: AAC, 48,000 Hz, stereo; integrated loudness **−15.97 LUFS**, true peak **−1.94 dBTP**, LRA 3.70 LU. Target is within −16 LUFS ±0.5; true peak is below −1 dBTP.
 - Narration stem: 60.000000 s PCM S16LE, 24,000 Hz, mono; 104 spoken words over 45.30 seconds of active speech, computed pace **137.8 wpm**. The remaining stem duration contains deliberate cue gaps; the score remains under them.
 - Mix balance: narration active 100 ms-window RMS median −19.13 dBFS; original score stem RMS −34.70 dBFS with the render's +3.52 dB bed gain (−31.18 dBFS), approximately **12.0 dB below** active narration by RMS. This is a stem RMS comparison, not a psychoacoustic LUFS measurement.
 - `silencedetect=noise=-50dB:d=0.5` on the master returned no silence events. Vertical master `blackdetect=d=0.5:pix_th=0.02,freezedetect=n=-50dB:d=0.5` returned no black/freeze events. First and final second were checked at 0.2 s and 59.8 s; both show active illustrated content and captions.
-- The same strict whole-frame freeze detector reports intervals in the **landscape derivative** because its softened side-fill occupies most of the frame and moves only subtly. The centered portrait program remains animated and captioned throughout; these are global-frame detector hits from the derivative's low-motion side-fill, not repeated/frozen portrait frames. No black events were reported.
+- Reproduced the reviewed landscape event with `freezedetect=n=-60dB:d=0.5`: full-frame `video-landscape.mp4` reports `freeze_start=25.866667`, `freeze_end=26.400000` (0.533333 s). This is the near-freeze false positive in the softened side-fill, not the centered portrait program. Reproducible active-program check: `crop=608:1080:656:0,format=gray,freezedetect=n=-60dB:d=0.5` on the same file reports **no freeze intervals** over the full 60 s. The crop is exactly the 608×1080 foreground picture centered by `render.sh`; conversion to grayscale removes chroma-only changes, so this is a conservative check of luminance motion in the actual program. No black events were reported.
+
+### Landscape freeze interval: reproducible evidence
+
+FFmpeg 7.0.2-static, full landscape frame:
+
+```bash
+ffmpeg -hide_banner -i video-landscape.mp4 -vf 'freezedetect=n=-60dB:d=0.5' -an -f null -
+```
+
+```text
+lavfi.freezedetect.freeze_start: 25.866667
+lavfi.freezedetect.freeze_end: 26.400000
+```
+
+Same decode, grayscale foreground crop only (the exact 608×1080 centered portrait picture):
+
+```bash
+ffmpeg -hide_banner -i video-landscape.mp4 -vf 'crop=608:1080:656:0,format=gray,freezedetect=n=-60dB:d=0.5' -an -f null -
+```
+
+```text
+(no freeze_start or freeze_end events in the 60.000 s active-picture crop)
+```
 - Three evidence stills are in `stills/`: 01 at 2.4 s, 02 at 21.6 s, 03 at 45.6 s. Captions are burned in; no voice-over text is omitted. No separate SRT is needed.
 - The generated score and two diegetic effects are original Python synthesis (`project/sound.py`); no reference audio, footage, frames, photos, stock, or third-party music is used. The radiator tick and crib groan are the two reported sounds that happen; the third/latch is deliberately not sounded.
 - Reproduction: `FFMPEG=/path/to/ffmpeg ./render.sh` exited 0 on the committed sources and narration stem. The render (picture generation + mix + landscape export + stills) took about 300 seconds in this sandbox. Picture and score intermediates are written under `/tmp/cut-v08-build`.
@@ -26,7 +49,7 @@ codec_name=aac
 codec_type=audio
 r_frame_rate=0/0
 duration=60.000000
-size=37718527
+size=37717528
 ```
 
 ## ffprobe output — landscape derivative
@@ -42,7 +65,7 @@ codec_name=aac
 codec_type=audio
 r_frame_rate=0/0
 duration=60.000000
-size=5858586
+size=5861026
 ```
 
 ## Narration-stem probe
@@ -83,7 +106,7 @@ I chose **Microsoft Edge TTS, `en-US-ChristopherNeural`, `--rate=-12% --pitch=-4
 
 ## Caption and speech timelines
 
-The caption window is the 2.4-second shot/cut grid. Speech start/end are measured from the committed narration stem's generated cue CSV; cues begin about 0.12 s after each shot, except the twist line, which is delayed to preserve the 1.25 s pre-twist pause. Karaoke word tint advances proportionally through the actual measured speech segment. The twist starts at 45.6 s (76%).
+The picture cuts on a 2.4-second grid. Speech start/end are measured from the committed narration stem's generated cue CSV; cues begin about 0.12 s after each shot, except the twist line, which is delayed to preserve the pre-twist pause. Caption 20 remains burned in across the cut through frame time 48.033333 s (voice ends 48.050125 s); caption 21 begins at 48.066667 s. Karaoke tint is **proportional**, not exact word sync: no word-level forced aligner or per-word timing marks are in the project, so the highlight advances evenly across the caption phrase over the measured speech segment. It is a broad pacing cue, not a claim about the instant each word is spoken. The twist starts at 45.6 s (76%).
 
 | # | Caption window | Burned-in caption | Speech segment | Spoken narration |
 |---:|:---:|---|:---:|---|
@@ -106,8 +129,8 @@ The caption window is the 2.4-second shot/cut grid. Speech start/end are measure
 | 17 | 00:38.4–00:40.8 | THEIR THUMB COVERS GLASS | 00:38.52–00:40.69 | Their thumb covers the glass. |
 | 18 | 00:40.8–00:43.2 | PARENT STANDS OUTSIDE | 00:40.92–00:42.67 | The parent stands outside. |
 | 19 | 00:43.2–00:45.6 | LENS FACES THE CHILD | 00:43.32–00:44.63 | Lens faces her. |
-| 20 | 00:45.6–00:48.0 | VOICE ISN'T INSIDE | 00:45.88–00:48.05 | But the voice isn't inside. |
-| 21 | 00:48.0–00:50.4 | BESIDE THE REFLECTION | 00:48.12–00:50.29 | It stands by the reflection. |
+| 20 | 00:45.6–00:48.0667 (caption bridges the cut) | VOICE ISN'T INSIDE | 00:45.876875–00:48.050125 | But the voice isn't inside. |
+| 21 | 00:48.0667–00:50.4 | BESIDE THE REFLECTION | 00:48.12–00:50.29325 | It stands by the reflection. |
 | 22 | 00:50.4–00:52.8 | ON THIS SIDE OF GLASS | 00:50.52–00:52.69 | On this side of glass. |
 | 23 | 00:52.8–00:55.2 | NOT THE CHILD'S SIDE | 00:52.92–00:54.66 | Not the child's side. |
 | 24 | 00:55.2–00:57.6 | REACH FOR THE PLUG | 00:55.32–00:57.49 | Parent reaches for the plug. |

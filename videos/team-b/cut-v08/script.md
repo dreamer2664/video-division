@@ -10,7 +10,7 @@ At two thirteen a.m. The parent checks the monitor. The baby sleeps. Count what 
 
 ## Timed shot list / captions
 
-Hard cuts every 2.4 seconds. Each shot is a slow eased 1.00→1.06 push-in with one animated detail (light, waveform, breath, cursor, or reflection). Caption phrases are the complete story beats; emphasis is word-timed karaoke highlighting, not a static paragraph card. Narration is segmented to the same cue grid so caption timing can be verified against each synthesized segment. A 1.25-second bed-only pause precedes the 76% turn. The segment timeline is committed as `project/voice_cues.csv`.
+Hard cuts every 2.4 seconds. Each shot is a slow eased 1.00→1.06 push-in with one animated detail (light, waveform, breath, cursor, or reflection). Caption phrases are the complete story beats; a proportional karaoke tint advances through each phrase over its measured speech cue. It is not exact word sync: the build has no word-level forced aligner or per-word timestamps. Narration is segmented to the cue grid so caption windows can be checked against each synthesized segment. A 1.25-second bed-only pause precedes the 76% turn. The segment timeline is committed as `project/voice_cues.csv`.
 
 | Shot | Time | Picture / one moving detail | Caption (2–5 words) | Narration segment |
 |---:|:---:|---|---|---|
@@ -33,8 +33,8 @@ Hard cuts every 2.4 seconds. Each shot is a slow eased 1.00→1.06 push-in with 
 | 17 | 00:38.4–00:40.8 | Reflected thumb drifts over lens highlight | `THEIR THUMB COVERS GLASS` | Their thumb covers the glass. |
 | 18 | 00:40.8–00:43.2 | Split view: sleeping child / parent outside | `PARENT STANDS OUTSIDE` | The parent stands outside. |
 | 19 | 00:43.2–00:45.6 | Lens remains on child; waveform recedes, then pauses | `LENS FACES THE CHILD` | Lens faces her. **[pause after this line]** |
-| 20 | 00:45.6–00:48 | Reflection occupies screen; red pulse begins | `VOICE ISN'T INSIDE` | But the voice isn't inside. |
-| 21 | 00:48–00:50.4 | Parent silhouette resolves beside the glass | `BESIDE THE REFLECTION` | It stands by the reflection. |
+| 20 | 00:45.6–00:48.0 | Reflection occupies screen; red pulse begins; caption bridges cut by 2 frames | `VOICE ISN'T INSIDE` (through 00:48.0667) | But the voice isn't inside (ends 00:48.050125). |
+| 21 | 00:48.0–00:50.4 | Parent silhouette resolves beside the glass | `BESIDE THE REFLECTION` (from 00:48.0667) | It stands by the reflection. |
 | 22 | 00:50.4–00:52.8 | Lens boundary glows; parent side turns amber | `ON THIS SIDE OF GLASS` | On this side of glass. |
 | 23 | 00:52.8–00:55.2 | Child remains still; blue boundary stays in room | `NOT THE CHILD'S SIDE` | Not the child's side. |
 | 24 | 00:55.2–00:57.6 | Parent reaches toward plug; one tiny spark | `REACH FOR THE PLUG` | Parent reaches for the plug. |

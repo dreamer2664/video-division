@@ -261,7 +261,9 @@ def main():
    a=np.asarray(frame).copy(); delta=5.0*math.sin(4*math.pi*t)
    roi=a[350:1450,330:780].astype(np.float32); a[350:1450,330:780]=np.clip(roi+delta,0,255).astype(np.uint8)
    frame=Image.fromarray(a,'RGB')
-  draw_caption(frame,i,t,cues)
+  # Keep cue 20's burn-in through its measured voice end (48.050125 s): two extra 30 fps frames.
+  caption_i=19 if i==20 and t<cues[19][1] else i
+  draw_caption(frame,caption_i,t,cues)
   draw_recording_marker(frame,local)
   # Fine, restrained deterministic night-vision sensor noise, never a static/noisy stock texture.
   if n%2==0:
