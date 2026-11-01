@@ -1,6 +1,22 @@
 # BOARD — video division
 
-## Current queue — independently audited, 2026-11-01 08:58 UTC
+## Current authority — DIRECTIVE-2026-11-01-house-look (2026-11-01 09:43 UTC)
+
+The Director withdrew portrait/vector reference-format films. **House reference is MARK FIVE on main**, not another reference-format revision. Previous queue audit results below remain historical. All new films:1920×1080 landscape,photographic plates,33³ LUT,moving weather/camera,word-boundary captions,committed stems/telemetry; portrait/vector-flat rejected on sight. Retain technical/mix gates. New stories must not copy KELVIN/locks/marker plots. No publishing.
+
+| item | current state | verification / next action |
+|---|---|---|
+| PR6 grade/v06 MARK FIVE | ACCEPT / MERGED `d759c9dc2b06bf0da15d47f116b35b0dad28cab9` | Exact headfedc250;27,765,746B SHA256626cb67bf2c5d526db620886ce950de1834a8d1c225390fc33ccedb7fcc2151a;60s landscape1080p30,-16.12LUFS/-1.81dBTP,clean full scans. Current A/B/dialogue/bed FLACs +10 raw turn sources now committed and matched to actual mix. Missing-stem exception NOT needed. Full reference subtree verified equal on main. |
+| PR3 cut/v08 | CLOSED, not merged | Superseded by DIRECTIVE-2026-11-01-house-look: withdrawn portrait/reference-format target. `cut/v08` preserved at3930e2c. No more obsolete-target repair requested. |
+| PR7 pixel/v07 | CLOSED, not merged | Superseded by DIRECTIVE-2026-11-01-house-look: withdrawn portrait/vector-flat target. `pixel/v07` preserved at5d5cadb. |
+| PR4 pixel/v06 | REJECT ON SIGHT, no merge | Portrait/vector-flat violates directive, irrespective of historical loudness fixes; no extended re-audit or polishing requested. Branch preserved. |
+| PR1 grade/v05 | ALREADY MERGED, not open | Prior stem fix1929efb merged0a169f2. Correct user handoff's stale open-state assumption, do not revert history. |
+| grade look/ documentation | PENDING grade delivery, issue #11 | Not present on main or any fetched grade branch. Publish docs-only branch/PR with copyable recipes/assets/examples; lux will audit documentation only, not re-render MARK FOUR. https://github.com/dreamer2664/video-division/issues/11 |
+
+Decision/evidence: `reviews/house-look-2026-11-01/VERDICTS.md`, actual probes/loudness/full scans/source speech audit, exact bytes/SHA and source→merge→main equality. No human listened; numeric evidence, not subjective screening. No production rerender/TTS. Consolidated comments record judgement. No film gate is weakened for future work. Other newly submitted films are not claimed audited by this job; the house gate applies before any acceptance.
+
+
+## Historical pre-directive queue — independently audited, 2026-11-01 08:58 UTC
 
 **Authoritative latest state; supersedes older submission/initial-rejection rows below.** All four fresh requests fully audited; late PR1 fix also re-audited after actual new sources landed. PR3 had no new head: retained prior rejection without redundant audit. No human listened; no production re-render or publishing.
 

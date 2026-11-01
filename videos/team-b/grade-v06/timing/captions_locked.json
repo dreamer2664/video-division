@@ -1,0 +1,838 @@
+[
+  {
+    "cue": 1,
+    "turn": "01",
+    "speaker": "A",
+    "start": 0.4,
+    "end": 1.692,
+    "dur": 1.292,
+    "word_count": 3,
+    "plain": "At 2:24 AM,",
+    "spoken_words": "At two twenty-four",
+    "tokens": [
+      [
+        "At",
+        "ivory"
+      ],
+      [
+        "2:24 AM,",
+        "amber"
+      ]
+    ]
+  },
+  {
+    "cue": 2,
+    "turn": "01",
+    "speaker": "A",
+    "start": 1.973,
+    "end": 3.083,
+    "dur": 1.11,
+    "word_count": 3,
+    "plain": "seven minutes after",
+    "spoken_words": "seven minutes after",
+    "tokens": [
+      [
+        "seven minutes",
+        "amber"
+      ],
+      [
+        "after",
+        "ivory"
+      ]
+    ]
+  },
+  {
+    "cue": 3,
+    "turn": "01",
+    "speaker": "A",
+    "start": 3.097,
+    "end": 4.431,
+    "dur": 1.334,
+    "word_count": 4,
+    "plain": "the upper lock breached,",
+    "spoken_words": "the upper lock breached",
+    "tokens": [
+      [
+        "the upper lock",
+        "ivory"
+      ],
+      [
+        "breached,",
+        "amber"
+      ]
+    ]
+  },
+  {
+    "cue": 4,
+    "turn": "01",
+    "speaker": "A",
+    "start": 4.642,
+    "end": 6.482,
+    "dur": 1.84,
+    "word_count": 5,
+    "plain": "the copper wall phone rings.",
+    "spoken_words": "the copper wall phone rings",
+    "tokens": [
+      [
+        "the copper",
+        "ivory"
+      ],
+      [
+        "wall phone rings.",
+        "amber"
+      ]
+    ]
+  },
+  {
+    "cue": 5,
+    "turn": "01",
+    "speaker": "A",
+    "start": 7.457,
+    "end": 8.37,
+    "dur": 0.913,
+    "word_count": 3,
+    "plain": "A line dead",
+    "spoken_words": "A line dead",
+    "tokens": [
+      [
+        "A line",
+        "ivory"
+      ],
+      [
+        "dead",
+        "amber"
+      ]
+    ]
+  },
+  {
+    "cue": 6,
+    "turn": "01",
+    "speaker": "A",
+    "start": 8.384,
+    "end": 9.929,
+    "dur": 1.545,
+    "word_count": 2,
+    "plain": "since 1989.",
+    "spoken_words": "since nineteen eighty-nine",
+    "tokens": [
+      [
+        "since",
+        "ivory"
+      ],
+      [
+        "1989.",
+        "amber"
+      ]
+    ]
+  },
+  {
+    "cue": 7,
+    "turn": "02",
+    "speaker": "B",
+    "start": 10.749,
+    "end": 12.3,
+    "dur": 1.551,
+    "word_count": 4,
+    "plain": "Lower Tower, come in.",
+    "spoken_words": "Lower Tower come in",
+    "tokens": [
+      [
+        "Lower Tower,",
+        "cyan"
+      ],
+      [
+        "come in.",
+        "ice"
+      ]
+    ]
+  },
+  {
+    "cue": 8,
+    "turn": "02",
+    "speaker": "B",
+    "start": 12.648,
+    "end": 13.777,
+    "dur": 1.129,
+    "word_count": 3,
+    "plain": "Confirm your water",
+    "spoken_words": "Confirm your water",
+    "tokens": [
+      [
+        "Confirm",
+        "ice"
+      ],
+      [
+        "your water",
+        "cyan"
+      ]
+    ]
+  },
+  {
+    "cue": 9,
+    "turn": "02",
+    "speaker": "B",
+    "start": 13.79,
+    "end": 14.547,
+    "dur": 0.757,
+    "word_count": 3,
+    "plain": "is still below",
+    "spoken_words": "is still below",
+    "tokens": [
+      [
+        "is still",
+        "ice"
+      ],
+      [
+        "below",
+        "cyan"
+      ]
+    ]
+  },
+  {
+    "cue": 10,
+    "turn": "02",
+    "speaker": "B",
+    "start": 14.559,
+    "end": 15.388,
+    "dur": 0.829,
+    "word_count": 2,
+    "plain": "MARK FIVE.",
+    "spoken_words": "Mark Five",
+    "tokens": [
+      [
+        "MARK FIVE.",
+        "crimson"
+      ]
+    ]
+  },
+  {
+    "cue": 11,
+    "turn": "03",
+    "speaker": "A",
+    "start": 16.068,
+    "end": 16.728,
+    "dur": 0.66,
+    "word_count": 3,
+    "plain": "I check the",
+    "spoken_words": "I check the",
+    "tokens": [
+      [
+        "I check",
+        "ivory"
+      ],
+      [
+        "the",
+        "ivory"
+      ]
+    ]
+  },
+  {
+    "cue": 12,
+    "turn": "03",
+    "speaker": "A",
+    "start": 16.742,
+    "end": 18.372,
+    "dur": 1.63,
+    "word_count": 3,
+    "plain": "spillway wall outside.",
+    "spoken_words": "spillway wall outside",
+    "tokens": [
+      [
+        "spillway wall",
+        "amber"
+      ],
+      [
+        "outside.",
+        "ivory"
+      ]
+    ]
+  },
+  {
+    "cue": 13,
+    "turn": "03",
+    "speaker": "A",
+    "start": 19.347,
+    "end": 20.47,
+    "dur": 1.123,
+    "word_count": 3,
+    "plain": "Four inches below",
+    "spoken_words": "Four inches below",
+    "tokens": [
+      [
+        "Four inches",
+        "amber"
+      ],
+      [
+        "below",
+        "ivory"
+      ]
+    ]
+  },
+  {
+    "cue": 14,
+    "turn": "03",
+    "speaker": "A",
+    "start": 20.484,
+    "end": 21.524,
+    "dur": 1.04,
+    "word_count": 3,
+    "plain": "the red five.",
+    "spoken_words": "the red five",
+    "tokens": [
+      [
+        "the",
+        "ivory"
+      ],
+      [
+        "red five.",
+        "crimson"
+      ]
+    ]
+  },
+  {
+    "cue": 15,
+    "turn": "04",
+    "speaker": "B",
+    "start": 22.204,
+    "end": 23.895,
+    "dur": 1.691,
+    "word_count": 4,
+    "plain": "Good. Whatever you hear",
+    "spoken_words": "Good Whatever you hear",
+    "tokens": [
+      [
+        "Good. Whatever",
+        "ice"
+      ],
+      [
+        "you hear",
+        "cyan"
+      ]
+    ]
+  },
+  {
+    "cue": 16,
+    "turn": "04",
+    "speaker": "B",
+    "start": 23.907,
+    "end": 24.544,
+    "dur": 0.637,
+    "word_count": 3,
+    "plain": "on the roof,",
+    "spoken_words": "on the roof",
+    "tokens": [
+      [
+        "on",
+        "ice"
+      ],
+      [
+        "the roof,",
+        "cyan"
+      ]
+    ]
+  },
+  {
+    "cue": 17,
+    "turn": "04",
+    "speaker": "B",
+    "start": 24.796,
+    "end": 25.433,
+    "dur": 0.637,
+    "word_count": 3,
+    "plain": "do not draw",
+    "spoken_words": "do not draw",
+    "tokens": [
+      [
+        "do not",
+        "crimson"
+      ],
+      [
+        "draw",
+        "crimson"
+      ]
+    ]
+  },
+  {
+    "cue": 18,
+    "turn": "04",
+    "speaker": "B",
+    "start": 25.445,
+    "end": 26.539,
+    "dur": 1.094,
+    "word_count": 3,
+    "plain": "the spillway pins.",
+    "spoken_words": "the spillway pins",
+    "tokens": [
+      [
+        "the",
+        "ice"
+      ],
+      [
+        "spillway pins.",
+        "cyan"
+      ]
+    ]
+  },
+  {
+    "cue": 19,
+    "turn": "05",
+    "speaker": "A",
+    "start": 27.159,
+    "end": 29.342,
+    "dur": 2.183,
+    "word_count": 5,
+    "plain": "Wait. How do you know",
+    "spoken_words": "Wait How do you know",
+    "tokens": [
+      [
+        "Wait.",
+        "amber"
+      ],
+      [
+        "How do you know",
+        "ivory"
+      ]
+    ]
+  },
+  {
+    "cue": 20,
+    "turn": "05",
+    "speaker": "A",
+    "start": 29.356,
+    "end": 30.396,
+    "dur": 1.04,
+    "word_count": 3,
+    "plain": "something is walking",
+    "spoken_words": "something is walking",
+    "tokens": [
+      [
+        "something",
+        "amber"
+      ],
+      [
+        "is walking",
+        "ivory"
+      ]
+    ]
+  },
+  {
+    "cue": 21,
+    "turn": "05",
+    "speaker": "A",
+    "start": 30.41,
+    "end": 31.126,
+    "dur": 0.716,
+    "word_count": 3,
+    "plain": "on the roof?",
+    "spoken_words": "on the roof",
+    "tokens": [
+      [
+        "on",
+        "ivory"
+      ],
+      [
+        "the roof?",
+        "amber"
+      ]
+    ]
+  },
+  {
+    "cue": 22,
+    "turn": "06",
+    "speaker": "B",
+    "start": 31.806,
+    "end": 32.66,
+    "dur": 0.854,
+    "word_count": 3,
+    "plain": "Follow the copper",
+    "spoken_words": "Follow the copper",
+    "tokens": [
+      [
+        "Follow",
+        "ice"
+      ],
+      [
+        "the copper",
+        "cyan"
+      ]
+    ]
+  },
+  {
+    "cue": 23,
+    "turn": "06",
+    "speaker": "B",
+    "start": 32.672,
+    "end": 33.909,
+    "dur": 1.237,
+    "word_count": 3,
+    "plain": "telephone wire down",
+    "spoken_words": "telephone wire down",
+    "tokens": [
+      [
+        "telephone wire",
+        "cyan"
+      ],
+      [
+        "down",
+        "ice"
+      ]
+    ]
+  },
+  {
+    "cue": 24,
+    "turn": "06",
+    "speaker": "B",
+    "start": 33.921,
+    "end": 35.196,
+    "dur": 1.275,
+    "word_count": 4,
+    "plain": "beneath your window sill.",
+    "spoken_words": "beneath your window sill",
+    "tokens": [
+      [
+        "beneath your",
+        "ice"
+      ],
+      [
+        "window sill.",
+        "cyan"
+      ]
+    ]
+  },
+  {
+    "cue": 25,
+    "turn": "07",
+    "speaker": "A",
+    "start": 35.876,
+    "end": 36.817,
+    "dur": 0.941,
+    "word_count": 3,
+    "plain": "My lamp hits",
+    "spoken_words": "My lamp hits",
+    "tokens": [
+      [
+        "My lamp",
+        "amber"
+      ],
+      [
+        "hits",
+        "ivory"
+      ]
+    ]
+  },
+  {
+    "cue": 26,
+    "turn": "07",
+    "speaker": "A",
+    "start": 36.831,
+    "end": 38.18,
+    "dur": 1.349,
+    "word_count": 4,
+    "plain": "the wet stone floor.",
+    "spoken_words": "the wet stone floor",
+    "tokens": [
+      [
+        "the wet",
+        "ivory"
+      ],
+      [
+        "stone floor.",
+        "amber"
+      ]
+    ]
+  },
+  {
+    "cue": 27,
+    "turn": "07",
+    "speaker": "A",
+    "start": 39.155,
+    "end": 39.955,
+    "dur": 0.8,
+    "word_count": 3,
+    "plain": "The wire is",
+    "spoken_words": "The wire is",
+    "tokens": [
+      [
+        "The wire",
+        "ivory"
+      ],
+      [
+        "is",
+        "ivory"
+      ]
+    ]
+  },
+  {
+    "cue": 28,
+    "turn": "07",
+    "speaker": "A",
+    "start": 39.969,
+    "end": 41.163,
+    "dur": 1.194,
+    "word_count": 3,
+    "plain": "cut clean through.",
+    "spoken_words": "cut clean through",
+    "tokens": [
+      [
+        "cut clean",
+        "crimson"
+      ],
+      [
+        "through.",
+        "crimson"
+      ]
+    ]
+  },
+  {
+    "cue": 29,
+    "turn": "08",
+    "speaker": "B",
+    "start": 42.443,
+    "end": 43.321,
+    "dur": 0.878,
+    "word_count": 3,
+    "plain": "I'm not calling",
+    "spoken_words": "I'm not calling",
+    "tokens": [
+      [
+        "I'm not",
+        "ice"
+      ],
+      [
+        "calling",
+        "cyan"
+      ]
+    ]
+  },
+  {
+    "cue": 30,
+    "turn": "08",
+    "speaker": "B",
+    "start": 43.333,
+    "end": 44.546,
+    "dur": 1.213,
+    "word_count": 3,
+    "plain": "from Basin Control.",
+    "spoken_words": "from Basin Control",
+    "tokens": [
+      [
+        "from",
+        "ice"
+      ],
+      [
+        "Basin Control.",
+        "crimson"
+      ]
+    ]
+  },
+  {
+    "cue": 31,
+    "turn": "08",
+    "speaker": "B",
+    "start": 44.929,
+    "end": 45.903,
+    "dur": 0.974,
+    "word_count": 4,
+    "plain": "I'm on your roof,",
+    "spoken_words": "I'm on your roof",
+    "tokens": [
+      [
+        "I'm on",
+        "ice"
+      ],
+      [
+        "your roof,",
+        "crimson"
+      ]
+    ]
+  },
+  {
+    "cue": 32,
+    "turn": "08",
+    "speaker": "B",
+    "start": 46.143,
+    "end": 47.129,
+    "dur": 0.986,
+    "word_count": 4,
+    "plain": "clipped to the stub.",
+    "spoken_words": "clipped to the stub",
+    "tokens": [
+      [
+        "clipped to",
+        "ice"
+      ],
+      [
+        "the stub.",
+        "cyan"
+      ]
+    ]
+  },
+  {
+    "cue": 33,
+    "turn": "08",
+    "speaker": "B",
+    "start": 47.513,
+    "end": 48.403,
+    "dur": 0.89,
+    "word_count": 3,
+    "plain": "And Mark Five",
+    "spoken_words": "And Mark Five",
+    "tokens": [
+      [
+        "And",
+        "ice"
+      ],
+      [
+        "Mark Five",
+        "crimson"
+      ]
+    ]
+  },
+  {
+    "cue": 34,
+    "turn": "08",
+    "speaker": "B",
+    "start": 48.415,
+    "end": 49.196,
+    "dur": 0.781,
+    "word_count": 2,
+    "plain": "wasn't painted",
+    "spoken_words": "wasn't painted",
+    "tokens": [
+      [
+        "wasn't",
+        "ice"
+      ],
+      [
+        "painted",
+        "cyan"
+      ]
+    ]
+  },
+  {
+    "cue": 35,
+    "turn": "08",
+    "speaker": "B",
+    "start": 49.208,
+    "end": 50.17,
+    "dur": 0.962,
+    "word_count": 4,
+    "plain": "to measure the river.",
+    "spoken_words": "to measure the river",
+    "tokens": [
+      [
+        "to measure",
+        "ice"
+      ],
+      [
+        "the river.",
+        "cyan"
+      ]
+    ]
+  },
+  {
+    "cue": 36,
+    "turn": "09",
+    "speaker": "A",
+    "start": 50.95,
+    "end": 52.256,
+    "dur": 1.306,
+    "word_count": 4,
+    "plain": "I raise the lamp.",
+    "spoken_words": "I raise the lamp",
+    "tokens": [
+      [
+        "I raise",
+        "ivory"
+      ],
+      [
+        "the lamp.",
+        "amber"
+      ]
+    ]
+  },
+  {
+    "cue": 37,
+    "turn": "09",
+    "speaker": "A",
+    "start": 53.232,
+    "end": 54.706,
+    "dur": 1.474,
+    "word_count": 4,
+    "plain": "Mark Five is stenciled",
+    "spoken_words": "Mark Five is stenciled",
+    "tokens": [
+      [
+        "Mark Five",
+        "crimson"
+      ],
+      [
+        "is stenciled",
+        "ivory"
+      ]
+    ]
+  },
+  {
+    "cue": 38,
+    "turn": "09",
+    "speaker": "A",
+    "start": 54.72,
+    "end": 55.886,
+    "dur": 1.166,
+    "word_count": 3,
+    "plain": "across the ceiling.",
+    "spoken_words": "across the ceiling",
+    "tokens": [
+      [
+        "across",
+        "ivory"
+      ],
+      [
+        "the ceiling.",
+        "crimson"
+      ]
+    ]
+  },
+  {
+    "cue": 39,
+    "turn": "10",
+    "speaker": "B",
+    "start": 56.766,
+    "end": 57.752,
+    "dur": 0.986,
+    "word_count": 4,
+    "plain": "It marks how high",
+    "spoken_words": "It marks how high",
+    "tokens": [
+      [
+        "It marks",
+        "ice"
+      ],
+      [
+        "how high",
+        "crimson"
+      ]
+    ]
+  },
+  {
+    "cue": 40,
+    "turn": "10",
+    "speaker": "B",
+    "start": 57.764,
+    "end": 58.833,
+    "dur": 1.069,
+    "word_count": 3,
+    "plain": "your tower fills.",
+    "spoken_words": "your tower fills",
+    "tokens": [
+      [
+        "your tower",
+        "crimson"
+      ],
+      [
+        "fills.",
+        "crimson"
+      ]
+    ]
+  }
+]

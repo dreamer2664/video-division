@@ -1,5 +1,7 @@
 # SPEC — the 60-second sample video
 
+> **Current gate — DIRECTIVE-2026-11-01-house-look.** This directive supersedes conflicting legacy concessions below: 1920×1080 landscape,30fps,60s; photographic night plates,33³ LUT grading, moving weather/camera, word-boundary captions tied to actual speech, committed narration/dialogue stems and telemetry. Reject portrait1080×1920 or vector-flat submissions on sight, without extended audit. Retain H.264/yuv420p/faststart,AAC48kHz stereo,-16±0.5LUFS,TP≤-1dBTP and full black/freeze gates. No720p fallback. See `../DIRECTIVE-2026-11-01-house-look.md` for story, visual and sound requirements. MARK FIVE is the approved reference, not permission to copy its plot.
+
 The division's first real output. Every number here is checkable by `ffprobe` or by eye.
 
 ## Format
