@@ -1,0 +1,63 @@
+ffmpeg -hide_banner -nostats -i /home/user/cinematic-cut/videos/team-b/cut-v10/audio/narration_stem_48k.flac -af silencedetect=n=-40dB:d=0.3 -f null -
+Input #0, flac, from '/home/user/cinematic-cut/videos/team-b/cut-v10/audio/narration_stem_48k.flac':
+  Metadata:
+    encoder         : Lavf61.1.100
+  Duration: 00:01:00.00, start: 0.000000, bitrate: 177 kb/s
+  Stream #0:0: Audio: flac, 48000 Hz, stereo, s16
+Stream mapping:
+  Stream #0:0 -> #0:0 (flac (native) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, null, to 'pipe:':
+  Metadata:
+    encoder         : Lavf61.7.103
+  Stream #0:0: Audio: pcm_s16le, 48000 Hz, stereo, s16, 1536 kb/s
+      Metadata:
+        encoder         : Lavc61.19.101 pcm_s16le
+[silencedetect @ 0x7f4610001d00] silence_start: 0
+[silencedetect @ 0x7f4610001d00] silence_end: 0.530021 | silence_duration: 0.530021
+[silencedetect @ 0x7f4610001d00] silence_start: 3.890437
+[silencedetect @ 0x7f4610001d00] silence_end: 5.034167 | silence_duration: 1.143729
+[silencedetect @ 0x7f4610001d00] silence_start: 6.459687
+[silencedetect @ 0x7f4610001d00] silence_end: 7.544792 | silence_duration: 1.085104
+[silencedetect @ 0x7f4610001d00] silence_start: 9.502896
+[silencedetect @ 0x7f4610001d00] silence_end: 10.63225 | silence_duration: 1.129354
+[silencedetect @ 0x7f4610001d00] silence_start: 12.500312
+[silencedetect @ 0x7f4610001d00] silence_end: 13.593417 | silence_duration: 1.093104
+[silencedetect @ 0x7f4610001d00] silence_start: 13.990042
+[silencedetect @ 0x7f4610001d00] silence_end: 15.085 | silence_duration: 1.094958
+[silencedetect @ 0x7f4610001d00] silence_start: 15.900708
+[silencedetect @ 0x7f4610001d00] silence_end: 16.207792 | silence_duration: 0.307083
+[silencedetect @ 0x7f4610001d00] silence_start: 16.614812
+[silencedetect @ 0x7f4610001d00] silence_end: 17.714437 | silence_duration: 1.099625
+[silencedetect @ 0x7f4610001d00] silence_start: 18.560896
+[silencedetect @ 0x7f4610001d00] silence_end: 18.880646 | silence_duration: 0.31975
+[silencedetect @ 0x7f4610001d00] silence_start: 19.270396
+[silencedetect @ 0x7f4610001d00] silence_end: 20.373375 | silence_duration: 1.102979
+[silencedetect @ 0x7f4610001d00] silence_start: 21.920562
+[silencedetect @ 0x7f4610001d00] silence_end: 23.056875 | silence_duration: 1.136313
+[silencedetect @ 0x7f4610001d00] silence_start: 24.079354
+[silencedetect @ 0x7f4610001d00] silence_end: 25.227417 | silence_duration: 1.148062
+[silencedetect @ 0x7f4610001d00] silence_start: 28.964479
+[silencedetect @ 0x7f4610001d00] silence_end: 30.069208 | silence_duration: 1.104729
+[silencedetect @ 0x7f4610001d00] silence_start: 31.934146
+[silencedetect @ 0x7f4610001d00] silence_end: 33.0525 | silence_duration: 1.118354
+[silencedetect @ 0x7f4610001d00] silence_start: 34.230042
+[silencedetect @ 0x7f4610001d00] silence_end: 35.385771 | silence_duration: 1.155729
+[silencedetect @ 0x7f4610001d00] silence_start: 37.177083
+[silencedetect @ 0x7f4610001d00] silence_end: 38.289583 | silence_duration: 1.1125
+[silencedetect @ 0x7f4610001d00] silence_start: 39.701417
+[silencedetect @ 0x7f4610001d00] silence_end: 40.855875 | silence_duration: 1.154458
+[silencedetect @ 0x7f4610001d00] silence_start: 42.466875
+[silencedetect @ 0x7f4610001d00] silence_end: 43.586875 | silence_duration: 1.12
+[silencedetect @ 0x7f4610001d00] silence_start: 45.174813
+[silencedetect @ 0x7f4610001d00] silence_end: 46.300812 | silence_duration: 1.126
+[silencedetect @ 0x7f4610001d00] silence_start: 47.737313
+[silencedetect @ 0x7f4610001d00] silence_end: 48.846312 | silence_duration: 1.109
+[silencedetect @ 0x7f4610001d00] silence_start: 51.480062
+[silencedetect @ 0x7f4610001d00] silence_end: 52.586417 | silence_duration: 1.106354
+[silencedetect @ 0x7f4610001d00] silence_start: 53.709771
+[silencedetect @ 0x7f4610001d00] silence_end: 60 | silence_duration: 6.290229
+[out#0/null @ 0x55ebf8cf3f80] video:0KiB audio:11250KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+size=N/A time=00:01:00.00 bitrate=N/A speed=1.71e+03x    
+
+exit_status=0

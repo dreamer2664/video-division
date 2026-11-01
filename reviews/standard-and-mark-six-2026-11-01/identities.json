@@ -403,5 +403,190 @@
         "sha256": "71a443426d0bc89cdbcdeb55a7b31f60f4494bbcf1ea72342f8936b4d3c252c3"
       }
     ]
+  },
+  "PR13": {
+    "head": "f0032130e5fac0cdd4841dc6db69a533042b8561",
+    "files": [
+      {
+        "path": "videos/team-b/cut-v10/.gitignore",
+        "bytes": 13,
+        "sha256": "32dae3052f331ee34d628ef535709b301259a45df7c7522c4d35dcf49873f00b"
+      },
+      {
+        "path": "videos/team-b/cut-v10/QA.md",
+        "bytes": 5064,
+        "sha256": "0712ae9b7400de347c5515690aa51c26c34ef6fd71aadc7d4e930b2d8a64cc3d"
+      },
+      {
+        "path": "videos/team-b/cut-v10/README.md",
+        "bytes": 1090,
+        "sha256": "3c1a1053b553a719e2b89fefab6d7a4d9e6b1d123c0daabaddefe4dc9da454f9"
+      },
+      {
+        "path": "videos/team-b/cut-v10/audio/bed_stem_48k.flac",
+        "bytes": 6927392,
+        "sha256": "d6ea651500176062d4ab0f67c4f22f148d3195d274322b9c35fef50c47b51caf"
+      },
+      {
+        "path": "videos/team-b/cut-v10/audio/final_ffprobe.json",
+        "bytes": 4356,
+        "sha256": "b33514dc005fa92bcbf519fc2265ebb52f7c39733f7bc1a9e7c97badc3409351"
+      },
+      {
+        "path": "videos/team-b/cut-v10/audio/final_loudnorm_analysis.json",
+        "bytes": 263,
+        "sha256": "a2ba7ba7d6c2e117b238e199d8fa4e2b724bab605b637171ee0f2ca0a7cc213a"
+      },
+      {
+        "path": "videos/team-b/cut-v10/audio/gain_mapping.json",
+        "bytes": 1356,
+        "sha256": "b9d7d197c440368fbd7ab6a288797596647caf9d99565f65a3f7a611fc55099e"
+      },
+      {
+        "path": "videos/team-b/cut-v10/audio/master_audio_48k.wav",
+        "bytes": 11520078,
+        "sha256": "77d668bdc0690a76fc32256e9d95bb35deeac4a24bbb6215cd9285a1267a73aa"
+      },
+      {
+        "path": "videos/team-b/cut-v10/audio/master_audio_pre_loudnorm_48k.wav",
+        "bytes": 11520044,
+        "sha256": "257f79de296f9476158ce49a1674dca62a4d506aafb4b76cc29e50feca5ab369"
+      },
+      {
+        "path": "videos/team-b/cut-v10/audio/narration_source.mp3",
+        "bytes": 326304,
+        "sha256": "b1067678d7badda3731c1bdd922960d55015e7c80468ddcfc3323755b2f9345a"
+      },
+      {
+        "path": "videos/team-b/cut-v10/audio/narration_stem_48k.flac",
+        "bytes": 1328557,
+        "sha256": "e4819d5ed6e6e2166040f963b0e63e12d603dece3d96741f17a664e417564e4a"
+      },
+      {
+        "path": "videos/team-b/cut-v10/audio/narration_text.txt",
+        "bytes": 497,
+        "sha256": "ac208bcb525a7f6d95255f43df508f282b7337a6e85a1d3b7b0f04093d7e8db4"
+      },
+      {
+        "path": "videos/team-b/cut-v10/build_audio_v10.py",
+        "bytes": 3119,
+        "sha256": "4526d7a880bac91ed9e875eb9ed07229abf43b125680e29734bbe152888aa173"
+      },
+      {
+        "path": "videos/team-b/cut-v10/fix_audio_only.py",
+        "bytes": 2720,
+        "sha256": "3dd5f24af5fb5533644cb7ae618afaf834b72b15564a1b9fd6896952c9bfebb9"
+      },
+      {
+        "path": "videos/team-b/cut-v10/generate_luts.py",
+        "bytes": 6523,
+        "sha256": "e123d947dc68da04fd480798bd19f97f7038c9a7864770f495bfc99243af64c5"
+      },
+      {
+        "path": "videos/team-b/cut-v10/luts/amber_ledger.cube",
+        "bytes": 970457,
+        "sha256": "131e97ac8a5f6de63f9d493457882db399d96acfb04313a807a19ec022159f8e"
+      },
+      {
+        "path": "videos/team-b/cut-v10/luts/blackwater_slate.cube",
+        "bytes": 970461,
+        "sha256": "b3e166eb2dbe67e444f5197d1d1c86c773e2903dfc7f7f82b1271eb25e54d620"
+      },
+      {
+        "path": "videos/team-b/cut-v10/luts/mercury_stillness.cube",
+        "bytes": 970462,
+        "sha256": "1f7b735468f718c177263f6f475d6e0434dd628c8c78739b15bafb4a783a6643"
+      },
+      {
+        "path": "videos/team-b/cut-v10/luts/sluice_breach.cube",
+        "bytes": 970458,
+        "sha256": "f6808fef500c3c132192711e0673468f8c2019d7398f13912b7b20f410026826"
+      },
+      {
+        "path": "videos/team-b/cut-v10/plates/control_room_wide.png",
+        "bytes": 2323548,
+        "sha256": "752b52b319114f65081763ec8c7bcbdb469a677c17830b9789783a742387b718"
+      },
+      {
+        "path": "videos/team-b/cut-v10/plates/eight_feeds_exit_empty.png",
+        "bytes": 2397045,
+        "sha256": "7922d922c3644975a2726a5b354cb8b928bf544f8eeefa3948fe41cef3c492c9"
+      },
+      {
+        "path": "videos/team-b/cut-v10/plates/eight_feeds_wall.png",
+        "bytes": 2414130,
+        "sha256": "67d5a0d59f70472f9ac23a0ad7189513ff5ffe8b27f14189e4c03de6e9b845dc"
+      },
+      {
+        "path": "videos/team-b/cut-v10/plates/junction4_road.png",
+        "bytes": 2447729,
+        "sha256": "a5fc8781e4724fe83c726215b163ae794fb2dd03684261cd5b3ce9a081fa34e6"
+      },
+      {
+        "path": "videos/team-b/cut-v10/plates/operator_close.png",
+        "bytes": 2415722,
+        "sha256": "c65b39228e22c4a2b72c33fbae487fd2e935cc170a5321d23697280f2eae48bd"
+      },
+      {
+        "path": "videos/team-b/cut-v10/render_v10.py",
+        "bytes": 16011,
+        "sha256": "c5285e624c253820a4a3c6983c75a6f2772abdf189b7a1e1936be09e6b928926"
+      },
+      {
+        "path": "videos/team-b/cut-v10/requirements.txt",
+        "bytes": 128,
+        "sha256": "efd33412eac44a3aa40da0238e5f24d8cfa4f99a8e9fb3d1622adeedf86c8ece"
+      },
+      {
+        "path": "videos/team-b/cut-v10/script.md",
+        "bytes": 3024,
+        "sha256": "45c0db0f316d79a0b6feda813f4f19a10d980e426acc765782d1d4fe71de744d"
+      },
+      {
+        "path": "videos/team-b/cut-v10/stills/HERO-01-two-lights-in-the-window.png",
+        "bytes": 2316701,
+        "sha256": "8f4f599211e3bda4a3c15a8f2565023deaab344c4542a199dc1b58de8603f43e"
+      },
+      {
+        "path": "videos/team-b/cut-v10/stills/still-eight-feeds.png",
+        "bytes": 2465582,
+        "sha256": "b5ff253cf2c25d3f533ca1896391afe89128104b6613a30f18ec434c61659b12"
+      },
+      {
+        "path": "videos/team-b/cut-v10/stills/still-exit-empty.png",
+        "bytes": 2535659,
+        "sha256": "b7963bda4ffe449ac01bb80f3b4935696b33de63ca114452af5621eec82519b3"
+      },
+      {
+        "path": "videos/team-b/cut-v10/stills/still-junction4-entry.png",
+        "bytes": 2701993,
+        "sha256": "15383762f1cbd0336148f5d2f4e2bc4c34739d7f25e2237e967510dafb25931e"
+      },
+      {
+        "path": "videos/team-b/cut-v10/synthesize_voiceover.py",
+        "bytes": 2431,
+        "sha256": "513d61dbf977ae9700471daa487d864055d32aa8ed2cc980fd47fbb228f7f098"
+      },
+      {
+        "path": "videos/team-b/cut-v10/timing/captions_locked.json",
+        "bytes": 6992,
+        "sha256": "f523eb7b29270950baf4872a3ae0386b7af21c4cca67f326afcaac59bfd02d39"
+      },
+      {
+        "path": "videos/team-b/cut-v10/timing/word_telemetry.json",
+        "bytes": 13304,
+        "sha256": "fe9ed172ea27f3530e6d127b763fd2b82db310c9814b7207fe525da853347799"
+      },
+      {
+        "path": "videos/team-b/cut-v10/timing/word_telemetry_source.vtt",
+        "bytes": 3327,
+        "sha256": "b3d910f2afb4577190997a9d6c9ac4768968487fa7bb94bf613d348930d0570b"
+      },
+      {
+        "path": "videos/team-b/cut-v10/video.mp4",
+        "bytes": 35395888,
+        "sha256": "e093a55f941b72fc694b3f9c50bf3ce559307cc658c0f2161ed2ebfaad589403"
+      }
+    ]
   }
 }

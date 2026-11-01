@@ -1,0 +1,38 @@
+{
+  "head": "f0032130e5fac0cdd4841dc6db69a533042b8561",
+  "files": {
+    "video.mp4": {
+      "bytes": 35395888,
+      "sha256": "e093a55f941b72fc694b3f9c50bf3ce559307cc658c0f2161ed2ebfaad589403",
+      "atoms": [
+        [
+          "ftyp",
+          0,
+          32
+        ],
+        [
+          "moov",
+          32,
+          67460
+        ],
+        [
+          "free",
+          67492,
+          8
+        ],
+        [
+          "mdat",
+          67500,
+          35328388
+        ]
+      ]
+    }
+  },
+  "audio_assets": [
+    "videos/team-b/cut-v10/audio/bed_stem_48k.flac",
+    "videos/team-b/cut-v10/audio/master_audio_48k.wav",
+    "videos/team-b/cut-v10/audio/master_audio_pre_loudnorm_48k.wav",
+    "videos/team-b/cut-v10/audio/narration_source.mp3",
+    "videos/team-b/cut-v10/audio/narration_stem_48k.flac"
+  ]
+}

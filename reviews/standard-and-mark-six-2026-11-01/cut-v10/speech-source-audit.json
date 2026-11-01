@@ -1,0 +1,62 @@
+{
+  "head": "f0032130e5fac0cdd4841dc6db69a533042b8561",
+  "stem_duration_s": 60.0,
+  "verified_source_hashes": {
+    "source_text": "ac208bcb525a7f6d95255f43df508f282b7337a6e85a1d3b7b0f04093d7e8db4",
+    "source_mp3": "b1067678d7badda3731c1bdd922960d55015e7c80468ddcfc3323755b2f9345a"
+  },
+  "original_MP3_to_stem_lag_s": 0.3,
+  "stem_to_actual_final_mix_lag_s": 0.0,
+  "word_count": 84,
+  "cue_count": 28,
+  "cue_word_endpoint_drift_max_s": 0.0,
+  "all_word_indices_covered_once_in_order": true,
+  "first_word_s": 0.406833,
+  "last_word_end_s": 53.709083,
+  "actual_source_voice_over_bed_word_spans_db": 7.813685883932583,
+  "body_windows": [
+    {
+      "start": 0,
+      "speech_active_fraction_20ms_minus40dBFS": 0.544,
+      "source_voice_over_bed_on_word_intervals_db": 5.871513672293337,
+      "fitted_voice_above_mix_residual_db": 6.00931908033293,
+      "median_source_mix_1s_correlation": 0.8792888579021572
+    },
+    {
+      "start": 10,
+      "speech_active_fraction_20ms_minus40dBFS": 0.426,
+      "source_voice_over_bed_on_word_intervals_db": 8.709896763631555,
+      "fitted_voice_above_mix_residual_db": 7.211751914954158,
+      "median_source_mix_1s_correlation": 0.9149713583771546
+    },
+    {
+      "start": 20,
+      "speech_active_fraction_20ms_minus40dBFS": 0.51,
+      "source_voice_over_bed_on_word_intervals_db": 8.789592507022132,
+      "fitted_voice_above_mix_residual_db": 8.411554581817096,
+      "median_source_mix_1s_correlation": 0.9550337895588756
+    },
+    {
+      "start": 30,
+      "speech_active_fraction_20ms_minus40dBFS": 0.54,
+      "source_voice_over_bed_on_word_intervals_db": 7.383279526624721,
+      "fitted_voice_above_mix_residual_db": 7.184488733118995,
+      "median_source_mix_1s_correlation": 0.9276473886312377
+    },
+    {
+      "start": 40,
+      "speech_active_fraction_20ms_minus40dBFS": 0.49,
+      "source_voice_over_bed_on_word_intervals_db": 9.073458337932806,
+      "fitted_voice_above_mix_residual_db": 8.428163563534957,
+      "median_source_mix_1s_correlation": 0.9374447448895115
+    },
+    {
+      "start": 50,
+      "speech_active_fraction_20ms_minus40dBFS": 0.228,
+      "source_voice_over_bed_on_word_intervals_db": 8.650791160178732,
+      "fitted_voice_above_mix_residual_db": 6.62357542024672,
+      "median_source_mix_1s_correlation": 0.922877912811561
+    }
+  ],
+  "note": "No human listened; independent source/mix method includes codec/gain errors in residual, not isolated music LUFS or ASR. Silent6.29s ending assessed separately from body coverage."
+}

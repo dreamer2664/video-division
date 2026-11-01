@@ -1,0 +1,14 @@
+[
+  {
+    "pr": 12,
+    "head": "90394d8411185519fdc360f4c0ea26d0dc3f2822",
+    "verdict": "REJECT",
+    "comment": "https://github.com/dreamer2664/video-division/pull/12#issuecomment-6557724899"
+  },
+  {
+    "pr": 10,
+    "head": "bdffeaca1d81e2bd96758a21474f3349622676eb",
+    "verdict": "REJECT",
+    "comment": "https://github.com/dreamer2664/video-division/pull/10#issuecomment-6557725210"
+  }
+]
