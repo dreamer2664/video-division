@@ -16,8 +16,14 @@ Usage:
   to output/15s_counter.mp4
 """
 
-import json, os, subprocess, sys, math
+import json, os, subprocess, sys, math, shutil
 from PIL import Image, ImageDraw, ImageFont
+
+# Locate ffmpeg: explicit env, then PATH, then the static binary bundled in
+# the workspace (imageio's ffmpeg was removed from site-packages between runs).
+FFMPEG = os.environ.get("FFMPEG") or shutil.which("ffmpeg") or "/home/user/ffmpeg-static/ffmpeg"
+if not os.path.exists(FFMPEG):
+    sys.exit(f"ffmpeg not found at {FFMPEG} (set FFMPEG env or add ffmpeg to PATH)")
 
 FPS = 30
 W, H = 1080, 1920  # 1080 x 1920 portrait
@@ -184,7 +190,7 @@ def main():
     # use a single command that pads audio to `duration` via the apad filter.
     os.makedirs(os.path.dirname(out), exist_ok=True)
     vf_cmd = [
-        "ffmpeg", "-y", "-loglevel", "error",
+        FFMPEG, "-y", "-loglevel", "error",
         "-framerate", str(FPS),
         "-i", f"{frame_dir}/%05d.png",
         "-i", audio_in,
