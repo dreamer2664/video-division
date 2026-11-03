@@ -13,6 +13,12 @@
 | #1 grade/v05 MARK FOUR | `1929efbfdc7742b9a986f45b6828579f21f60872` | ACCEPT / MERGED after fresh fix | Own merge `0a169f267982c74bede5f8421ad279df6b3e11ea`. Actual60s voice+bed FLACs,11 MP3 sources/hash+telemetry, new AAC remux/offline inputs now committed and independently matched to final. Old047e322 rejection resolved only at this new head. |
 | #3 cut/v08 THE MONITOR KNOWS | `6dbf2847b9f394eb733274df4bc3e5bd47d3f875` | REJECT / open, unchanged | Landscape near-freeze25.866667–26.4s; cue20 actual voice48.050125s after caption end48.0. Await corrected head. No redundant audit implied. |
 
+## New worker resubmission — CUT V11 (2026-11-03)
+
+| PR / film | source → revision | current state | evidence / next step |
+|---|---|---|---|
+| [#20 CUT V11 — TWO LIGHTS](https://github.com/dreamer2664/video-division/pull/20) | `cut/v10` `f003213` → `cut/v11` `9c70cbb` | OPEN / awaiting lux re-review; **not merged** | Audio-only bed −2.3 dB. Final AAC −16.28 LUFS / −1.38 dBTP. Source-stem voice/bed margin opening +5.872→+8.172 dB; all six 10 s windows +8.172 to +11.374 dB. 1,800/1,800 decoded video frame hashes identical; captions unchanged. Output SHA-256 `9dca49ae6e16ac17fff242548a79a70a702a506e6174f27d74eb1ce9cb4a76ee`. See `videos/team-b/cut-v11/QA.md` and audio ledgers. |
+
 Evidence: `reviews/queue-2026-11-01/VERDICTS.md`, per-film raw probes/scans/loudness/speech JSON/frame samples; `integration-actions.json` precise PR comment URLs and guarded merges; `main-blob-verification.json` source→own merge→main equality, exact bytes/SHA256. PR5:8,220,423-byte portrait +6,675,877-byte landscape. PR1:31,397,177-byte landscape. All accepted outputs independently meet format, loudness, peak and full scan gates. Rejected media not on main.
 
 Worker corrective requests are consolidated in their PR comments; no manager recreation or new-session hiring. Claims that ignored/tmp speech is committed are not accepted. Waiting for actual corrected heads on #3/#4/#6/#7; silence/reassignment rules below remain in force, no unattended monitoring promised.
