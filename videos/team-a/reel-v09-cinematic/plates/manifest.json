@@ -1,0 +1,97 @@
+{
+  "origin": "Arena image generation; 10 distinct photorealistic plates; generated after pre-picture house-look plan",
+  "normalization": "Offline renderer center-crops to 16:9 and LANCZOS-upsamples to 1920x1080 before LUT and motion.",
+  "image_generator_limit": "10 images reached; no replacement generation was available this turn.",
+  "plates": [
+    {
+      "path": "plates/shot_01.jpg",
+      "sha256": "5661382c463ede33c89830f88775e8f55e4212fdd2e6eb7291408bc2f6f9a2f1",
+      "source_dimensions": [
+        1376,
+        768
+      ],
+      "treatment": "selective exposure reduction for unintended extra practical lights"
+    },
+    {
+      "path": "plates/shot_02.jpg",
+      "sha256": "942a2f7cdec5fe36b7484bbb138ac514d2c1f2199ff7ed0de913a0fc696fefb1",
+      "source_dimensions": [
+        1376,
+        768
+      ],
+      "treatment": "selective exposure reduction for unintended extra practical lights"
+    },
+    {
+      "path": "plates/shot_03.jpg",
+      "sha256": "03a0b602cafb8d472caed83ac04bbb541bc2ecc802cdf0ff964f7d1c8e64a5e6",
+      "source_dimensions": [
+        1376,
+        768
+      ],
+      "treatment": "inpainted invented key-rack numbers and feathered shallow-focus treatment"
+    },
+    {
+      "path": "plates/shot_04.jpg",
+      "sha256": "e0e922485da82d6d8ead58bc9938d9fb170c132de400ec4bfcc66be92998eba5",
+      "source_dimensions": [
+        1376,
+        768
+      ],
+      "treatment": "selective exposure reduction for unintended extra practical lights"
+    },
+    {
+      "path": "plates/shot_05.jpg",
+      "sha256": "65c980224686aba4ac7c9a02ef8466264d92d63c54ad3486f1d51926c47b4858",
+      "source_dimensions": [
+        1376,
+        768
+      ],
+      "treatment": "none"
+    },
+    {
+      "path": "plates/shot_06.jpg",
+      "sha256": "5f1571dd1a5230353edc6dfb4442de8c8143d1758c779043685c86f68e7392c8",
+      "source_dimensions": [
+        1376,
+        768
+      ],
+      "treatment": "selective exposure reduction for unintended extra practical lights"
+    },
+    {
+      "path": "plates/shot_07_wall.jpg",
+      "sha256": "be49594a9dcb892b3ac25689b7a7c39efbdca328437e2323adf42e6bc7a532dc",
+      "source_dimensions": [
+        1376,
+        768
+      ],
+      "treatment": "none"
+    },
+    {
+      "path": "plates/shot_08.jpg",
+      "sha256": "6b5ef6b55f61fa05d5379ad7b37d52e1bde42bc5a562aaf6a852907f0e9ea8b3",
+      "source_dimensions": [
+        1376,
+        768
+      ],
+      "treatment": "none"
+    },
+    {
+      "path": "plates/shot_09.jpg",
+      "sha256": "90c31d09bfa7b16bf7e335c02a95b45cb65dc3b33c39e7192dc86f2c3f56085d",
+      "source_dimensions": [
+        1376,
+        768
+      ],
+      "treatment": "selective exposure reduction for unintended extra practical lights"
+    },
+    {
+      "path": "plates/shot_10.jpg",
+      "sha256": "a36d100e2c83970a873551baf31de30961421fb12444eba98f555bf127fc6411",
+      "source_dimensions": [
+        1376,
+        768
+      ],
+      "treatment": "none"
+    }
+  ]
+}

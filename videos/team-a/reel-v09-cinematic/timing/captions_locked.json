@@ -1,0 +1,995 @@
+{
+  "fps": 30,
+  "method": "Direct comparison of frame presentation time against actual Edge word starts; active and previous words recolor at the first eligible 30fps frame, with no proportional timing or ASS centisecond rounding.",
+  "cues": [
+    {
+      "start_s": 0.25683333333333336,
+      "end_s": 1.7468333333333332,
+      "text": "At two fourteen,",
+      "words": [
+        {
+          "text": "At",
+          "start_s": 0.25683333333333336,
+          "end_s": 0.5125,
+          "first_eligible_frame": 8
+        },
+        {
+          "text": "two",
+          "start_s": 0.5267083333333333,
+          "end_s": 0.7965833333333333,
+          "first_eligible_frame": 16
+        },
+        {
+          "text": "fourteen",
+          "start_s": 0.8107916666666667,
+          "end_s": 1.5068333333333332,
+          "first_eligible_frame": 25
+        }
+      ]
+    },
+    {
+      "start_s": 1.7625,
+      "end_s": 3.95775,
+      "text": "the hotel records an arrival.",
+      "words": [
+        {
+          "text": "the",
+          "start_s": 1.7625,
+          "end_s": 1.8619166666666667,
+          "first_eligible_frame": 53
+        },
+        {
+          "text": "hotel",
+          "start_s": 1.8761249999999998,
+          "end_s": 2.4442916666666665,
+          "first_eligible_frame": 57
+        },
+        {
+          "text": "records",
+          "start_s": 2.4585416666666666,
+          "end_s": 2.9130833333333332,
+          "first_eligible_frame": 74
+        },
+        {
+          "text": "an",
+          "start_s": 2.9272916666666666,
+          "end_s": 3.026708333333333,
+          "first_eligible_frame": 88
+        },
+        {
+          "text": "arrival",
+          "start_s": 3.0409166666666665,
+          "end_s": 3.72275,
+          "first_eligible_frame": 92
+        }
+      ]
+    },
+    {
+      "start_s": 3.97275,
+      "end_s": 5.614000000000001,
+      "text": "The lobby is empty.",
+      "words": [
+        {
+          "text": "The",
+          "start_s": 3.97275,
+          "end_s": 4.143208333333334,
+          "first_eligible_frame": 120
+        },
+        {
+          "text": "lobby",
+          "start_s": 4.157416666666667,
+          "end_s": 4.654583333333334,
+          "first_eligible_frame": 125
+        },
+        {
+          "text": "is",
+          "start_s": 4.66875,
+          "end_s": 4.853416666666667,
+          "first_eligible_frame": 141
+        },
+        {
+          "text": "empty",
+          "start_s": 4.867625,
+          "end_s": 5.3790000000000004,
+          "first_eligible_frame": 147
+        }
+      ]
+    },
+    {
+      "start_s": 5.6290000000000004,
+      "end_s": 7.511708333333334,
+      "text": "Rain rattles the awning.",
+      "words": [
+        {
+          "text": "Rain",
+          "start_s": 5.6290000000000004,
+          "end_s": 6.0977500000000004,
+          "first_eligible_frame": 169
+        },
+        {
+          "text": "rattles",
+          "start_s": 6.111916666666667,
+          "end_s": 6.552250000000001,
+          "first_eligible_frame": 184
+        },
+        {
+          "text": "the",
+          "start_s": 6.5665000000000004,
+          "end_s": 6.694333333333334,
+          "first_eligible_frame": 197
+        },
+        {
+          "text": "awning",
+          "start_s": 6.708541666666667,
+          "end_s": 7.276708333333334,
+          "first_eligible_frame": 202
+        }
+      ]
+    },
+    {
+      "start_s": 7.526708333333334,
+      "end_s": 9.721916666666667,
+      "text": "Wet footprints cross the marble.",
+      "words": [
+        {
+          "text": "Wet",
+          "start_s": 7.526708333333334,
+          "end_s": 7.796583333333333,
+          "first_eligible_frame": 226
+        },
+        {
+          "text": "footprints",
+          "start_s": 7.810791666666667,
+          "end_s": 8.421583333333334,
+          "first_eligible_frame": 235
+        },
+        {
+          "text": "cross",
+          "start_s": 8.435791666666667,
+          "end_s": 8.805125,
+          "first_eligible_frame": 254
+        },
+        {
+          "text": "the",
+          "start_s": 8.819291666666667,
+          "end_s": 8.918708333333333,
+          "first_eligible_frame": 265
+        },
+        {
+          "text": "marble",
+          "start_s": 8.932958333333334,
+          "end_s": 9.486916666666668,
+          "first_eligible_frame": 268
+        }
+      ]
+    },
+    {
+      "start_s": 9.736916666666668,
+      "end_s": 11.73325,
+      "text": "Two room keys are missing.",
+      "words": [
+        {
+          "text": "Two",
+          "start_s": 9.736916666666668,
+          "end_s": 10.035208333333333,
+          "first_eligible_frame": 293
+        },
+        {
+          "text": "room",
+          "start_s": 10.049416666666668,
+          "end_s": 10.361916666666668,
+          "first_eligible_frame": 302
+        },
+        {
+          "text": "keys",
+          "start_s": 10.376125,
+          "end_s": 10.773833333333334,
+          "first_eligible_frame": 312
+        },
+        {
+          "text": "are",
+          "start_s": 10.788041666666667,
+          "end_s": 10.915875,
+          "first_eligible_frame": 324
+        },
+        {
+          "text": "missing",
+          "start_s": 10.930083333333334,
+          "end_s": 11.49825,
+          "first_eligible_frame": 328
+        }
+      ]
+    },
+    {
+      "start_s": 11.74825,
+      "end_s": 14.142375,
+      "text": "The ledger says three arrivals.",
+      "words": [
+        {
+          "text": "The",
+          "start_s": 11.74825,
+          "end_s": 11.918708333333333,
+          "first_eligible_frame": 353
+        },
+        {
+          "text": "ledger",
+          "start_s": 11.932916666666667,
+          "end_s": 12.330625,
+          "first_eligible_frame": 358
+        },
+        {
+          "text": "says",
+          "start_s": 12.344875,
+          "end_s": 12.728416666666668,
+          "first_eligible_frame": 371
+        },
+        {
+          "text": "three",
+          "start_s": 12.742583333333334,
+          "end_s": 13.055083333333334,
+          "first_eligible_frame": 383
+        },
+        {
+          "text": "arrivals",
+          "start_s": 13.069291666666667,
+          "end_s": 13.907375,
+          "first_eligible_frame": 393
+        }
+      ]
+    },
+    {
+      "start_s": 14.157375,
+      "end_s": 15.449208333333333,
+      "text": "The night clerk checks",
+      "words": [
+        {
+          "text": "The",
+          "start_s": 14.157375,
+          "end_s": 14.313625,
+          "first_eligible_frame": 425
+        },
+        {
+          "text": "night",
+          "start_s": 14.327833333333334,
+          "end_s": 14.668750000000001,
+          "first_eligible_frame": 430
+        },
+        {
+          "text": "clerk",
+          "start_s": 14.682958333333334,
+          "end_s": 15.0665,
+          "first_eligible_frame": 441
+        },
+        {
+          "text": "checks",
+          "start_s": 15.080666666666668,
+          "end_s": 15.450000000000001,
+          "first_eligible_frame": 453
+        }
+      ]
+    },
+    {
+      "start_s": 15.464208333333334,
+      "end_s": 16.807166666666664,
+      "text": "the wake-up list.",
+      "words": [
+        {
+          "text": "the",
+          "start_s": 15.464208333333334,
+          "end_s": 15.577833333333334,
+          "first_eligible_frame": 464
+        },
+        {
+          "text": "wake-up",
+          "start_s": 15.592041666666667,
+          "end_s": 16.032375,
+          "first_eligible_frame": 468
+        },
+        {
+          "text": "list",
+          "start_s": 16.046583333333334,
+          "end_s": 16.572166666666664,
+          "first_eligible_frame": 482
+        }
+      ]
+    },
+    {
+      "start_s": 16.822166666666664,
+      "end_s": 18.02875,
+      "text": "A call is set for",
+      "words": [
+        {
+          "text": "A",
+          "start_s": 16.822166666666664,
+          "end_s": 16.964208333333332,
+          "first_eligible_frame": 505
+        },
+        {
+          "text": "call",
+          "start_s": 16.978416666666664,
+          "end_s": 17.376125,
+          "first_eligible_frame": 510
+        },
+        {
+          "text": "is",
+          "start_s": 17.39033333333333,
+          "end_s": 17.532375,
+          "first_eligible_frame": 522
+        },
+        {
+          "text": "set",
+          "start_s": 17.54658333333333,
+          "end_s": 17.802249999999997,
+          "first_eligible_frame": 527
+        },
+        {
+          "text": "for",
+          "start_s": 17.816458333333333,
+          "end_s": 18.029541666666667,
+          "first_eligible_frame": 535
+        }
+      ]
+    },
+    {
+      "start_s": 18.04375,
+      "end_s": 19.741791666666664,
+      "text": "room four hundred and eight.",
+      "words": [
+        {
+          "text": "room",
+          "start_s": 18.04375,
+          "end_s": 18.32783333333333,
+          "first_eligible_frame": 542
+        },
+        {
+          "text": "four",
+          "start_s": 18.342041666666667,
+          "end_s": 18.64033333333333,
+          "first_eligible_frame": 551
+        },
+        {
+          "text": "hundred",
+          "start_s": 18.654541666666667,
+          "end_s": 18.938625,
+          "first_eligible_frame": 560
+        },
+        {
+          "text": "and",
+          "start_s": 18.95283333333333,
+          "end_s": 19.094875,
+          "first_eligible_frame": 569
+        },
+        {
+          "text": "eight",
+          "start_s": 19.10908333333333,
+          "end_s": 19.506791666666665,
+          "first_eligible_frame": 574
+        }
+      ]
+    },
+    {
+      "start_s": 19.756791666666665,
+      "end_s": 20.565666666666665,
+      "text": "That room has",
+      "words": [
+        {
+          "text": "That",
+          "start_s": 19.756791666666665,
+          "end_s": 20.097708333333333,
+          "first_eligible_frame": 593
+        },
+        {
+          "text": "room",
+          "start_s": 20.111916666666666,
+          "end_s": 20.339208333333332,
+          "first_eligible_frame": 604
+        },
+        {
+          "text": "has",
+          "start_s": 20.353375,
+          "end_s": 20.566458333333333,
+          "first_eligible_frame": 611
+        }
+      ]
+    },
+    {
+      "start_s": 20.580666666666666,
+      "end_s": 21.710541666666664,
+      "text": "never been let.",
+      "words": [
+        {
+          "text": "never",
+          "start_s": 20.580666666666666,
+          "end_s": 20.893166666666666,
+          "first_eligible_frame": 618
+        },
+        {
+          "text": "been",
+          "start_s": 20.907375,
+          "end_s": 21.10625,
+          "first_eligible_frame": 628
+        },
+        {
+          "text": "let",
+          "start_s": 21.120416666666664,
+          "end_s": 21.475541666666665,
+          "first_eligible_frame": 634
+        }
+      ]
+    },
+    {
+      "start_s": 21.725541666666665,
+      "end_s": 22.99745833333333,
+      "text": "He cancels it.",
+      "words": [
+        {
+          "text": "He",
+          "start_s": 21.725541666666665,
+          "end_s": 21.924416666666666,
+          "first_eligible_frame": 652
+        },
+        {
+          "text": "cancels",
+          "start_s": 21.938625,
+          "end_s": 22.492583333333332,
+          "first_eligible_frame": 659
+        },
+        {
+          "text": "it",
+          "start_s": 22.506791666666665,
+          "end_s": 22.76245833333333,
+          "first_eligible_frame": 676
+        }
+      ]
+    },
+    {
+      "start_s": 23.01245833333333,
+      "end_s": 25.108249999999998,
+      "text": "The telephone rings anyway.",
+      "words": [
+        {
+          "text": "The",
+          "start_s": 23.01245833333333,
+          "end_s": 23.182916666666664,
+          "first_eligible_frame": 691
+        },
+        {
+          "text": "telephone",
+          "start_s": 23.197125,
+          "end_s": 23.836333333333332,
+          "first_eligible_frame": 696
+        },
+        {
+          "text": "rings",
+          "start_s": 23.850541666666665,
+          "end_s": 24.24825,
+          "first_eligible_frame": 716
+        },
+        {
+          "text": "anyway",
+          "start_s": 24.26245833333333,
+          "end_s": 24.87325,
+          "first_eligible_frame": 728
+        }
+      ]
+    },
+    {
+      "start_s": 25.12325,
+      "end_s": 26.358249999999998,
+      "text": "From upstairs,",
+      "words": [
+        {
+          "text": "From",
+          "start_s": 25.12325,
+          "end_s": 25.378916666666665,
+          "first_eligible_frame": 754
+        },
+        {
+          "text": "upstairs",
+          "start_s": 25.393124999999998,
+          "end_s": 26.174374999999998,
+          "first_eligible_frame": 762
+        }
+      ]
+    },
+    {
+      "start_s": 26.37325,
+      "end_s": 27.665041666666664,
+      "text": "the lift answers,",
+      "words": [
+        {
+          "text": "the",
+          "start_s": 26.37325,
+          "end_s": 26.515291666666666,
+          "first_eligible_frame": 792
+        },
+        {
+          "text": "lift",
+          "start_s": 26.5295,
+          "end_s": 26.827791666666666,
+          "first_eligible_frame": 796
+        },
+        {
+          "text": "answers",
+          "start_s": 26.842,
+          "end_s": 27.467,
+          "first_eligible_frame": 806
+        }
+      ]
+    },
+    {
+      "start_s": 27.680041666666664,
+      "end_s": 28.389499999999998,
+      "text": "though no one",
+      "words": [
+        {
+          "text": "though",
+          "start_s": 27.680041666666664,
+          "end_s": 27.864708333333333,
+          "first_eligible_frame": 831
+        },
+        {
+          "text": "no",
+          "start_s": 27.878916666666665,
+          "end_s": 28.163,
+          "first_eligible_frame": 837
+        },
+        {
+          "text": "one",
+          "start_s": 28.177208333333333,
+          "end_s": 28.390291666666666,
+          "first_eligible_frame": 846
+        }
+      ]
+    },
+    {
+      "start_s": 28.4045,
+      "end_s": 29.605416666666663,
+      "text": "pressed a button.",
+      "words": [
+        {
+          "text": "pressed",
+          "start_s": 28.4045,
+          "end_s": 28.788041666666665,
+          "first_eligible_frame": 853
+        },
+        {
+          "text": "a",
+          "start_s": 28.802208333333333,
+          "end_s": 28.859041666666666,
+          "first_eligible_frame": 865
+        },
+        {
+          "text": "button",
+          "start_s": 28.87325,
+          "end_s": 29.370416666666664,
+          "first_eligible_frame": 867
+        }
+      ]
+    },
+    {
+      "start_s": 29.620416666666664,
+      "end_s": 30.96908333333333,
+      "text": "Its doors open on an",
+      "words": [
+        {
+          "text": "Its",
+          "start_s": 29.620416666666664,
+          "end_s": 29.87608333333333,
+          "first_eligible_frame": 889
+        },
+        {
+          "text": "doors",
+          "start_s": 29.89033333333333,
+          "end_s": 30.330666666666666,
+          "first_eligible_frame": 897
+        },
+        {
+          "text": "open",
+          "start_s": 30.344875,
+          "end_s": 30.67158333333333,
+          "first_eligible_frame": 911
+        },
+        {
+          "text": "on",
+          "start_s": 30.685791666666667,
+          "end_s": 30.82783333333333,
+          "first_eligible_frame": 921
+        },
+        {
+          "text": "an",
+          "start_s": 30.842041666666667,
+          "end_s": 30.969875,
+          "first_eligible_frame": 926
+        }
+      ]
+    },
+    {
+      "start_s": 30.98408333333333,
+      "end_s": 32.05716666666667,
+      "text": "empty car.",
+      "words": [
+        {
+          "text": "empty",
+          "start_s": 30.98408333333333,
+          "end_s": 31.29658333333333,
+          "first_eligible_frame": 930
+        },
+        {
+          "text": "car",
+          "start_s": 31.310791666666667,
+          "end_s": 31.822166666666664,
+          "first_eligible_frame": 940
+        }
+      ]
+    },
+    {
+      "start_s": 32.07216666666667,
+      "end_s": 33.19354166666666,
+      "text": "A footprint stops",
+      "words": [
+        {
+          "text": "A",
+          "start_s": 32.07216666666667,
+          "end_s": 32.199999999999996,
+          "first_eligible_frame": 963
+        },
+        {
+          "text": "footprint",
+          "start_s": 32.21420833333333,
+          "end_s": 32.72558333333333,
+          "first_eligible_frame": 967
+        },
+        {
+          "text": "stops",
+          "start_s": 32.73979166666666,
+          "end_s": 33.19433333333333,
+          "first_eligible_frame": 983
+        }
+      ]
+    },
+    {
+      "start_s": 33.20854166666666,
+      "end_s": 34.253166666666665,
+      "text": "at the desk.",
+      "words": [
+        {
+          "text": "at",
+          "start_s": 33.20854166666666,
+          "end_s": 33.293749999999996,
+          "first_eligible_frame": 997
+        },
+        {
+          "text": "the",
+          "start_s": 33.30795833333333,
+          "end_s": 33.407375,
+          "first_eligible_frame": 1000
+        },
+        {
+          "text": "desk",
+          "start_s": 33.42158333333333,
+          "end_s": 34.018166666666666,
+          "first_eligible_frame": 1003
+        }
+      ]
+    },
+    {
+      "start_s": 34.268166666666666,
+      "end_s": 36.297916666666666,
+      "text": "The ledger changes to four.",
+      "words": [
+        {
+          "text": "The",
+          "start_s": 34.268166666666666,
+          "end_s": 34.438625,
+          "first_eligible_frame": 1029
+        },
+        {
+          "text": "ledger",
+          "start_s": 34.45283333333333,
+          "end_s": 34.82216666666667,
+          "first_eligible_frame": 1034
+        },
+        {
+          "text": "changes",
+          "start_s": 34.836375,
+          "end_s": 35.34775,
+          "first_eligible_frame": 1046
+        },
+        {
+          "text": "to",
+          "start_s": 35.361916666666666,
+          "end_s": 35.48975,
+          "first_eligible_frame": 1061
+        },
+        {
+          "text": "four",
+          "start_s": 35.50395833333333,
+          "end_s": 36.057916666666664,
+          "first_eligible_frame": 1066
+        }
+      ]
+    },
+    {
+      "start_s": 38.74041666666667,
+      "end_s": 39.77654166666667,
+      "text": "Two guests,",
+      "words": [
+        {
+          "text": "Two",
+          "start_s": 38.74041666666667,
+          "end_s": 39.01029166666667,
+          "first_eligible_frame": 1163
+        },
+        {
+          "text": "guests",
+          "start_s": 39.0245,
+          "end_s": 39.592666666666666,
+          "first_eligible_frame": 1171
+        }
+      ]
+    },
+    {
+      "start_s": 39.79154166666667,
+      "end_s": 40.64233333333333,
+      "text": "the clerk,",
+      "words": [
+        {
+          "text": "the",
+          "start_s": 39.79154166666667,
+          "end_s": 39.919375,
+          "first_eligible_frame": 1194
+        },
+        {
+          "text": "clerk",
+          "start_s": 39.93358333333333,
+          "end_s": 40.40233333333333,
+          "first_eligible_frame": 1199
+        }
+      ]
+    },
+    {
+      "start_s": 40.658,
+      "end_s": 41.43845833333334,
+      "text": "and whoever is",
+      "words": [
+        {
+          "text": "and",
+          "start_s": 40.658,
+          "end_s": 40.785833333333336,
+          "first_eligible_frame": 1220
+        },
+        {
+          "text": "whoever",
+          "start_s": 40.800041666666665,
+          "end_s": 41.283,
+          "first_eligible_frame": 1225
+        },
+        {
+          "text": "is",
+          "start_s": 41.29720833333334,
+          "end_s": 41.43925,
+          "first_eligible_frame": 1239
+        }
+      ]
+    },
+    {
+      "start_s": 41.45345833333334,
+      "end_s": 42.895833333333336,
+      "text": "standing behind him.",
+      "words": [
+        {
+          "text": "standing",
+          "start_s": 41.45345833333334,
+          "end_s": 41.936416666666666,
+          "first_eligible_frame": 1244
+        },
+        {
+          "text": "behind",
+          "start_s": 41.950625,
+          "end_s": 42.348333333333336,
+          "first_eligible_frame": 1259
+        },
+        {
+          "text": "him",
+          "start_s": 42.362541666666665,
+          "end_s": 42.660833333333336,
+          "first_eligible_frame": 1271
+        }
+      ]
+    },
+    {
+      "start_s": 42.910833333333336,
+      "end_s": 45.077625,
+      "text": "Now the arrivals balance.",
+      "words": [
+        {
+          "text": "Now",
+          "start_s": 42.910833333333336,
+          "end_s": 43.32275,
+          "first_eligible_frame": 1288
+        },
+        {
+          "text": "the",
+          "start_s": 43.336958333333335,
+          "end_s": 43.450583333333334,
+          "first_eligible_frame": 1301
+        },
+        {
+          "text": "arrivals",
+          "start_s": 43.46479166666667,
+          "end_s": 44.08979166666667,
+          "first_eligible_frame": 1304
+        },
+        {
+          "text": "balance",
+          "start_s": 44.104,
+          "end_s": 44.842625,
+          "first_eligible_frame": 1324
+        }
+      ]
+    },
+    {
+      "start_s": 45.092625,
+      "end_s": 46.114583333333336,
+      "text": "At six,",
+      "words": [
+        {
+          "text": "At",
+          "start_s": 45.092625,
+          "end_s": 45.31991666666667,
+          "first_eligible_frame": 1353
+        },
+        {
+          "text": "six",
+          "start_s": 45.334125,
+          "end_s": 45.930708333333335,
+          "first_eligible_frame": 1361
+        }
+      ]
+    },
+    {
+      "start_s": 46.129583333333336,
+      "end_s": 47.677083333333336,
+      "text": "the wake-up call connects to",
+      "words": [
+        {
+          "text": "the",
+          "start_s": 46.129583333333336,
+          "end_s": 46.25741666666667,
+          "first_eligible_frame": 1384
+        },
+        {
+          "text": "wake-up",
+          "start_s": 46.271625,
+          "end_s": 46.740375,
+          "first_eligible_frame": 1389
+        },
+        {
+          "text": "call",
+          "start_s": 46.754583333333336,
+          "end_s": 47.067083333333336,
+          "first_eligible_frame": 1403
+        },
+        {
+          "text": "connects",
+          "start_s": 47.081291666666665,
+          "end_s": 47.550041666666665,
+          "first_eligible_frame": 1413
+        },
+        {
+          "text": "to",
+          "start_s": 47.56420833333333,
+          "end_s": 47.67783333333333,
+          "first_eligible_frame": 1427
+        }
+      ]
+    },
+    {
+      "start_s": 47.692083333333336,
+      "end_s": 48.921416666666666,
+      "text": "the unlet room.",
+      "words": [
+        {
+          "text": "the",
+          "start_s": 47.692083333333336,
+          "end_s": 47.81991666666667,
+          "first_eligible_frame": 1431
+        },
+        {
+          "text": "unlet",
+          "start_s": 47.834125,
+          "end_s": 48.28866666666667,
+          "first_eligible_frame": 1436
+        },
+        {
+          "text": "room",
+          "start_s": 48.302875,
+          "end_s": 48.686416666666666,
+          "first_eligible_frame": 1450
+        }
+      ]
+    },
+    {
+      "start_s": 48.936416666666666,
+      "end_s": 49.92995833333333,
+      "text": "No one is left",
+      "words": [
+        {
+          "text": "No",
+          "start_s": 48.936416666666666,
+          "end_s": 49.2205,
+          "first_eligible_frame": 1469
+        },
+        {
+          "text": "one",
+          "start_s": 49.23470833333333,
+          "end_s": 49.405166666666666,
+          "first_eligible_frame": 1478
+        },
+        {
+          "text": "is",
+          "start_s": 49.419375,
+          "end_s": 49.575625,
+          "first_eligible_frame": 1483
+        },
+        {
+          "text": "left",
+          "start_s": 49.58983333333333,
+          "end_s": 49.93075,
+          "first_eligible_frame": 1488
+        }
+      ]
+    },
+    {
+      "start_s": 49.94495833333333,
+      "end_s": 50.753791666666665,
+      "text": "at reception to",
+      "words": [
+        {
+          "text": "at",
+          "start_s": 49.94495833333333,
+          "end_s": 50.05858333333333,
+          "first_eligible_frame": 1499
+        },
+        {
+          "text": "reception",
+          "start_s": 50.07279166666667,
+          "end_s": 50.655166666666666,
+          "first_eligible_frame": 1503
+        },
+        {
+          "text": "to",
+          "start_s": 50.669375,
+          "end_s": 50.754583333333336,
+          "first_eligible_frame": 1521
+        }
+      ]
+    },
+    {
+      "start_s": 50.768791666666665,
+      "end_s": 52.48354166666667,
+      "text": "hear who answers.",
+      "words": [
+        {
+          "text": "hear",
+          "start_s": 50.768791666666665,
+          "end_s": 51.067083333333336,
+          "first_eligible_frame": 1524
+        },
+        {
+          "text": "who",
+          "start_s": 51.081291666666665,
+          "end_s": 51.209125,
+          "first_eligible_frame": 1533
+        },
+        {
+          "text": "answers",
+          "start_s": 51.223333333333336,
+          "end_s": 51.93354166666667,
+          "first_eligible_frame": 1537
+        }
+      ]
+    }
+  ]
+}

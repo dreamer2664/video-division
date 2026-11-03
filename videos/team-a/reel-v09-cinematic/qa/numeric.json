@@ -1,0 +1,21 @@
+{
+  "video_sha256": "3cd0eda74cfb4a605fc7a95b781958b050899a869261182a91f5b02e93fcffc4",
+  "video_bytes": 32762154,
+  "master_audio_sha256": "2fffd1820b9ebc2a4a2b35f8ee954137b3b305e3824921d866bff72f8e853bb6",
+  "master_to_decoded_aac_pearson_L_R": [
+    0.9993037690037766,
+    0.9993000603350609
+  ],
+  "aac_samples": 2880512,
+  "master_samples": 2880000,
+  "voice_above_combined_bed_active_db": 10.500001022605353,
+  "cue_count": 35,
+  "word_count": 124,
+  "first_frame_error_seconds_max": 0.033291666666670494,
+  "all_scheduled_within_one_frame": true,
+  "pixel_word_transitions_tested": 89,
+  "pixel_word_transitions_passed": 89,
+  "loudnorm_input_i": "-16.28",
+  "loudnorm_input_tp": "-2.15",
+  "no_human_listened_or_continuously_watched": true
+}
