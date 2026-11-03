@@ -1,5 +1,7 @@
 # Ten-second voice check and image pairs
 
+> **Blind-listening handoff:** Give the listener [`blind-listen.html`](blind-listen.html) and, if separate files are useful, `voice-A.mp3` through `voice-E.mp3`. The HTML embeds the audio and works offline. Do **not** show the listener this README or the research reports before recording their verdict: the answer key below reveals the identities.
+
 ## Voices: one sentence, five sources
 
 Play `five-voices-under-10s.mp3` (9.216 seconds); the same sentence is **“The ledger has four names.”** Or play `voice-A.mp3` through `voice-E.mp3` separately. Each excerpt is cut from the longer measured passage, and each was level-matched to −21 dBFS RMS before MP3 encoding; decoded sample RMS is −21.445 to −21.446 dBFS. No music or special EQ. There is 0.10 s between samples. Piper's endpoint is an energy-valley estimate, whereas Edge/Eleven use boundary telemetry. A single sentence and fixed playback order are **not** a statistically valid preference test.
