@@ -1,6 +1,21 @@
 # BOARD — video division
 
-## Current queue — House Look SDK / MARK SIX audit (2026-11-01 12:12 UTC)
+## Current queue — PR14 hotel accepted (2026-11-03 15:21 UTC)
+
+| item | current status | evidence / next action |
+|---|---|---|
+| PR14 reel/v09-cinematic THE FOURTH ARRIVAL | ACCEPT / MERGED | Exactd913dffd1e3c52436290920f9ea1f3239b86d45c; own merge660ba5e121a56cd8a30a23faf41f5c046ed162d3.32,762,154B SHA2563cd0eda74cfb4a605fc7a95b781958b050899a869261182a91f5b02e93fcffc4. Actual-16.28LUFS/-2.15dBTP,clean full scans,source voice/bed all6windows8.973–11.587dB.124word/35cue timing,89/89 decoded noninitial-word glyph transitions;bit-exact offline PCM rebuilt and actual AAC matched. Full project subtree identical through source→merge→main. |
+| PR13 cut/v10 / pending v11 | REJECTION RETAINED; audio-only re-review when v11 lands | User ordered v11 opening voice/bed+8–12dB and final-16±0.5LUFS/TP≤-1dBTP verification. Picture/captions alreadyPASS: DO NOT reopen them. No v11 branch/PR in post-merge check. |
+| PR8 cut/v09 | CLOSED superseded, unchanged | Closure stands; preserve branch,no merge. |
+| PR12 SDK / PR10 MARK SIX | prior REJECTIONS retained | No fresh-head audit requested here; existing specific comments remain. |
+| PR15 grade/v08 | observed, outside this PR14 job | Not claimed audited or accepted. |
+
+Author reel received an exact-head acceptance comment with limitations and raw evidence. Details/bytes/SHA manifests, actual source/caption measurements, cleanup proof, author comment, main verification and delivery receipts: `reviews/pr14-2026-11-03/`. Source resolution1376×768 upscaled to1080p,2.5D implied prop action and imperfect lamp/set continuity explicitly disclosed. No human listened/continuous screening; no external publishing or production picture rerender.
+
+Workspace cleanup BEFORE review confirmed84,048,896allocated bytes<120,000,000: historical evidence retained,source copies compressed/hash-deduplicated,own duplicate checkouts/test renders/caches purged. Original dirty historical root checkout untouched. Review clones/builds in/tmp are purged after durable pushes; final footprint separately recorded. Pushes authenticated successfully,no credential blocker.
+
+
+## Historical SDK / MARK SIX queue checkpoint (2026-11-01 12:12 UTC)
 
 House look remains **DIRECTIVE-2026-11-01-house-look.md**; MARK FIVE is the approved reference on main. Audit results below are current; earlier pending-look or old-target rows are historical, not the current queue. No external publishing; no human listened. No production film rerender; SDK test clips/audio and offline QA reconstructions only.
 

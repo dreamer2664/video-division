@@ -1,0 +1,13 @@
+{
+  "pr": 14,
+  "audited_head": "d913dffd1e3c52436290920f9ea1f3239b86d45c",
+  "author": "reel",
+  "author_status_comment": "https://github.com/dreamer2664/video-division/pull/14#issuecomment-6607677296",
+  "comment_id": 6607677296,
+  "verdict": "ACCEPT",
+  "merge": {
+    "sha": "660ba5e121a56cd8a30a23faf41f5c046ed162d3",
+    "merged": true,
+    "message": "Pull Request successfully merged"
+  }
+}

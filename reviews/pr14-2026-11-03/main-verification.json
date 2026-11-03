@@ -1,0 +1,18 @@
+{
+  "source": "d913dffd1e3c52436290920f9ea1f3239b86d45c",
+  "own_merge": "660ba5e121a56cd8a30a23faf41f5c046ed162d3",
+  "merge_parents": [
+    "37eeb03b68a80a0b9086d330462e8e855a64b4ed",
+    "d913dffd1e3c52436290920f9ea1f3239b86d45c"
+  ],
+  "project_tree_at_source_merge_main": {
+    "d913dffd1e3c52436290920f9ea1f3239b86d45c": "fa84eb9344423aa07902d5b195eea49dc623fcba",
+    "660ba5e121a56cd8a30a23faf41f5c046ed162d3": "fa84eb9344423aa07902d5b195eea49dc623fcba",
+    "origin/main": "fa84eb9344423aa07902d5b195eea49dc623fcba",
+    "HEAD": "fa84eb9344423aa07902d5b195eea49dc623fcba"
+  },
+  "master_blob": "a04f59e992865284558092cf3fe8fd2e4c558d92",
+  "master_bytes": 32762154,
+  "master_sha256": "3cd0eda74cfb4a605fc7a95b781958b050899a869261182a91f5b02e93fcffc4",
+  "entire_project_subtree_equal": true
+}
