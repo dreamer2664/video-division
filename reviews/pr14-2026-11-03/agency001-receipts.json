@@ -1,0 +1,30 @@
+[
+  {
+    "pr": 14,
+    "status": "MERGED",
+    "message": "[MANAGER-B] lux \u00b7 decision \u00b7 PR14 MERGED \u00b7 reel: THE FOURTH ARRIVAL @d913dff ACCEPTED and merged660ba5e121a56cd8a30a23faf41f5c046ed162d3.32762154B SHA2563cd0eda74cfb4a605fc7a95b781958b050899a869261182a91f5b02e93fcffc4. -16.28LUFS/-2.15TP,clean scans; all6source voice/bed windows8.973-11.587dB; exact offline PCM,89/89 decoded word transitions. Author acceptance https://github.com/dreamer2664/video-division/pull/14#issuecomment-6607677296 . Full project source/merge/main equality verified. Cleanup BEFORE review84048896bytes<120MB,evidence+sources retained. Evidence+BOARD pushed main2ccc7c0 reviews/pr14-2026-11-03. No human listened; no external publishing.",
+    "receipt": {
+      "id": "n2STtmvvuMwq",
+      "time": 1793719372,
+      "expires": 1793762572,
+      "event": "message",
+      "topic": "agency001",
+      "title": "lux PR14 MERGED",
+      "message": "[MANAGER-B] lux \u00b7 decision \u00b7 PR14 MERGED \u00b7 reel: THE FOURTH ARRIVAL @d913dff ACCEPTED and merged660ba5e121a56cd8a30a23faf41f5c046ed162d3.32762154B SHA2563cd0eda74cfb4a605fc7a95b781958b050899a869261182a91f5b02e93fcffc4. -16.28LUFS/-2.15TP,clean scans; all6source voice/bed windows8.973-11.587dB; exact offline PCM,89/89 decoded word transitions. Author acceptance https://github.com/dreamer2664/video-division/pull/14#issuecomment-6607677296 . Full project source/merge/main equality verified. Cleanup BEFORE review84048896bytes<120MB,evidence+sources retained. Evidence+BOARD pushed main2ccc7c0 reviews/pr14-2026-11-03. No human listened; no external publishing."
+    }
+  },
+  {
+    "pr": 13,
+    "status": "REJECTION RETAINED",
+    "message": "[MANAGER-B] lux \u00b7 decision \u00b7 PR13 REJECTION RETAINED \u00b7 cut: user ordered v11 AUDIO-ONLY correction. Keep rejection until opening source voice/bed+8-12dB and final-16+/-0.5LUFS/TP<=-1dBTP independently pass. Picture and captions already accepted: DO NOT reopen them. No cut/v11 PR in final queue check. PR8 remains CLOSED superseded,branch preserved. Evidence+BOARD pushed main2ccc7c0 reviews/pr14-2026-11-03. No human listened; no external publishing.",
+    "receipt": {
+      "id": "wEjB6xLcaIRy",
+      "time": 1793719372,
+      "expires": 1793762572,
+      "event": "message",
+      "topic": "agency001",
+      "title": "lux PR13 REJECTION RETAINED",
+      "message": "[MANAGER-B] lux \u00b7 decision \u00b7 PR13 REJECTION RETAINED \u00b7 cut: user ordered v11 AUDIO-ONLY correction. Keep rejection until opening source voice/bed+8-12dB and final-16+/-0.5LUFS/TP<=-1dBTP independently pass. Picture and captions already accepted: DO NOT reopen them. No cut/v11 PR in final queue check. PR8 remains CLOSED superseded,branch preserved. Evidence+BOARD pushed main2ccc7c0 reviews/pr14-2026-11-03. No human listened; no external publishing."
+    }
+  }
+]

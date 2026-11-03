@@ -1,0 +1,10 @@
+{
+  "timestamp_utc": "2026-11-03T15:22:52.392415+00:00",
+  "allocated_workspace_bytes": 100086272,
+  "apparent_workspace_bytes": 98719194,
+  "under120_decimal_MB": true,
+  "historical_reviews_preserved": true,
+  "source_archives_hash_verified": true,
+  "temporary_git_clones_builds": "under/tmp;purged after final remote verification",
+  "no_push_blocker": true
+}
