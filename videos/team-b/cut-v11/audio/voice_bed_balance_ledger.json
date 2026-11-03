@@ -1,0 +1,289 @@
+{
+  "version": "cut/v11 audio-only correction",
+  "source_cut_v10_commit": "f0032130e5fac0cdd4841dc6db69a533042b8561",
+  "input_video_sha256": "e093a55f941b72fc694b3f9c50bf3ce559307cc658c0f2161ed2ebfaad589403",
+  "input_premaster_sha256": "257f79de296f9476158ce49a1674dca62a4d506aafb4b76cc29e50feca5ab369",
+  "input_voice_stem_sha256": "e4819d5ed6e6e2166040f963b0e63e12d603dece3d96741f17a664e417564e4a",
+  "input_bed_stem_sha256": "d6ea651500176062d4ab0f67c4f22f148d3195d274322b9c35fef50c47b51caf",
+  "caption_source_sha256_unchanged": "f523eb7b29270950baf4872a3ae0386b7af21c4cca67f326afcaac59bfd02d39",
+  "fitted_original_mix_gains": {
+    "voice_linear": 0.9399607960413803,
+    "bed_linear": 0.7682595513767442,
+    "voice_db": -0.537805192217826,
+    "bed_db": -2.2898406335519885,
+    "residual_rms_dbfs": -45.046038495017775
+  },
+  "correction": {
+    "component": "bed only",
+    "gain_db": -2.3,
+    "linear_gain": 0.7673614893618189,
+    "reason": "move opening +5.872 dB voice/bed margin into the +8 to +12 dB target; also clear the other below-target 30\u201340 s window"
+  },
+  "voice_bed_balance": {
+    "method": "Direct RMS ratio of committed separated narration/bed stems, sampled only over union of WordBoundary word intervals, six 10-second bins; telemetry start/end shifted +0.300 s to match placed narration stem.",
+    "word_interval_shift_s": 0.3,
+    "correction": "attenuate bed only; narration stem unchanged",
+    "bed_gain_db": -2.3,
+    "bed_linear_gain": 0.7673614893618189,
+    "overall_active_speech_margin_before_db": 7.813675146336941,
+    "overall_active_speech_margin_after_db": 10.113675028071928,
+    "windows": [
+      {
+        "window_s": [
+          0,
+          10
+        ],
+        "speech_mask_samples": 321812,
+        "voice_rms_dbfs": -22.6717736724636,
+        "bed_rms_before_dbfs": -28.543325892480574,
+        "bed_rms_after_dbfs": -30.843325772351253,
+        "margin_before_db": 5.871552220017086,
+        "margin_after_db": 8.171552099887833
+      },
+      {
+        "window_s": [
+          10,
+          20
+        ],
+        "speech_mask_samples": 244093,
+        "voice_rms_dbfs": -22.5028109323977,
+        "bed_rms_before_dbfs": -31.212615708601824,
+        "bed_rms_after_dbfs": -33.51261552796368,
+        "margin_before_db": 8.709804776204322,
+        "margin_after_db": 11.009804595566282
+      },
+      {
+        "window_s": [
+          20,
+          30
+        ],
+        "speech_mask_samples": 293098,
+        "voice_rms_dbfs": -22.40325504955844,
+        "bed_rms_before_dbfs": -31.19257742761358,
+        "bed_rms_after_dbfs": -33.492577325266005,
+        "margin_before_db": 8.789322378055342,
+        "margin_after_db": 11.089322275707861
+      },
+      {
+        "window_s": [
+          30,
+          40
+        ],
+        "speech_mask_samples": 319164,
+        "voice_rms_dbfs": -21.929099523364457,
+        "bed_rms_before_dbfs": -29.312488953726017,
+        "bed_rms_after_dbfs": -31.61248885492604,
+        "margin_before_db": 7.3833894303617145,
+        "margin_after_db": 9.68338933156181
+      },
+      {
+        "window_s": [
+          40,
+          50
+        ],
+        "speech_mask_samples": 293777,
+        "voice_rms_dbfs": -22.00291134187807,
+        "bed_rms_before_dbfs": -31.076448060512078,
+        "bed_rms_after_dbfs": -33.37644795964311,
+        "margin_before_db": 9.073536718634205,
+        "margin_after_db": 11.373536617765332
+      },
+      {
+        "window_s": [
+          50,
+          60
+        ],
+        "speech_mask_samples": 126898,
+        "voice_rms_dbfs": -22.240640499097644,
+        "bed_rms_before_dbfs": -30.891580681601845,
+        "bed_rms_after_dbfs": -33.19158053956041,
+        "margin_before_db": 8.650940182504392,
+        "margin_after_db": 10.95094004046305
+      }
+    ],
+    "all_windows_inside_8_to_12_db": true
+  },
+  "loudnorm_target": {
+    "I": -16.0,
+    "TP": -1.5,
+    "LRA": 11.0,
+    "linear": false
+  },
+  "loudnorm_pass1_json": {
+    "input_i": "-22.18",
+    "input_tp": "-5.80",
+    "input_lra": "5.20",
+    "input_thresh": "-32.49",
+    "output_i": "-16.26",
+    "output_tp": "-1.50",
+    "output_lra": "2.80",
+    "output_thresh": "-26.62",
+    "normalization_type": "dynamic",
+    "target_offset": "0.26"
+  },
+  "loudnorm_pass2_json": {
+    "input_i": "-22.18",
+    "input_tp": "-5.80",
+    "input_lra": "5.20",
+    "input_thresh": "-32.49",
+    "output_i": "-16.05",
+    "output_tp": "-1.50",
+    "output_lra": "2.60",
+    "output_thresh": "-26.40",
+    "normalization_type": "dynamic",
+    "target_offset": "0.05"
+  },
+  "loudnorm_pass2_filter": "loudnorm=I=-16.0:TP=-1.5:LRA=11.0:measured_I=-22.18:measured_TP=-5.80:measured_LRA=5.20:measured_thresh=-32.49:offset=0.26:linear=false:print_format=json,aresample=48000",
+  "final_decoded_aac_loudnorm_json": {
+    "input_i": "-16.28",
+    "input_tp": "-1.38",
+    "input_lra": "4.90",
+    "input_thresh": "-26.59",
+    "output_i": "-16.19",
+    "output_tp": "-1.50",
+    "output_lra": "2.70",
+    "output_thresh": "-26.56",
+    "normalization_type": "dynamic",
+    "target_offset": "0.19"
+  },
+  "final_probe": {
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "profile": "High",
+        "codec_type": "video",
+        "codec_tag_string": "avc1",
+        "codec_tag": "0x31637661",
+        "width": 1920,
+        "height": 1080,
+        "coded_width": 1920,
+        "coded_height": 1080,
+        "closed_captions": 0,
+        "film_grain": 0,
+        "has_b_frames": 2,
+        "pix_fmt": "yuv420p",
+        "level": 41,
+        "chroma_location": "left",
+        "field_order": "progressive",
+        "refs": 1,
+        "is_avc": "true",
+        "nal_length_size": "4",
+        "id": "0x1",
+        "r_frame_rate": "30/1",
+        "avg_frame_rate": "30/1",
+        "time_base": "1/15360",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 921600,
+        "duration": "60.000000",
+        "bit_rate": "4517069",
+        "bits_per_raw_sample": "8",
+        "nb_frames": "1800",
+        "extradata_size": 47,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "VideoHandler",
+          "vendor_id": "[0][0][0][0]",
+          "encoder": "Lavc61.3.100 libx264"
+        }
+      },
+      {
+        "index": 1,
+        "codec_name": "aac",
+        "codec_long_name": "AAC (Advanced Audio Coding)",
+        "profile": "LC",
+        "codec_type": "audio",
+        "codec_tag_string": "mp4a",
+        "codec_tag": "0x6134706d",
+        "sample_fmt": "fltp",
+        "sample_rate": "48000",
+        "channels": 2,
+        "channel_layout": "stereo",
+        "bits_per_sample": 0,
+        "initial_padding": 0,
+        "id": "0x2",
+        "r_frame_rate": "0/0",
+        "avg_frame_rate": "0/0",
+        "time_base": "1/48000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 2880000,
+        "duration": "60.000000",
+        "bit_rate": "193165",
+        "nb_frames": "2814",
+        "extradata_size": 5,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "SoundHandler",
+          "vendor_id": "[0][0][0][0]"
+        }
+      }
+    ],
+    "format": {
+      "filename": "videos/team-b/cut-v11/video.mp4",
+      "nb_streams": 2,
+      "nb_programs": 0,
+      "nb_stream_groups": 0,
+      "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+      "format_long_name": "QuickTime / MOV",
+      "start_time": "0.000000",
+      "duration": "60.000000",
+      "size": "35394784",
+      "bit_rate": "4719304",
+      "probe_score": 100,
+      "tags": {
+        "major_brand": "isom",
+        "minor_version": "512",
+        "compatible_brands": "isomiso2avc1mp41",
+        "encoder": "Lavf61.7.103"
+      }
+    }
+  },
+  "video_frame_hashes_identical": 1800,
+  "output_video_sha256": "9dca49ae6e16ac17fff242548a79a70a702a506e6174f27d74eb1ce9cb4a76ee",
+  "picture_policy": "The v10 H.264 video stream is stream-copied; 1800/1800 decoded frame hashes match. Captions are baked into those same unchanged video frames."
+}
