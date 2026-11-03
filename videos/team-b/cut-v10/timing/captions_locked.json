@@ -1,0 +1,451 @@
+[
+  {
+    "start": 0.406833,
+    "end": 1.727833,
+    "text": "At two seventeen,",
+    "words": [
+      "At",
+      "two",
+      "seventeen,"
+    ],
+    "first_word_index": 0,
+    "source_event_indices": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "start": 1.997708,
+    "end": 2.8926239999999996,
+    "text": "a car enters",
+    "words": [
+      "a",
+      "car",
+      "enters"
+    ],
+    "first_word_index": 3,
+    "source_event_indices": [
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "start": 2.906833,
+    "end": 5.342582999999999,
+    "text": "Junction Four. Rain",
+    "words": [
+      "Junction",
+      "Four.",
+      "Rain"
+    ],
+    "first_word_index": 6,
+    "source_event_indices": [
+      6,
+      7,
+      8
+    ]
+  },
+  {
+    "start": 5.356833,
+    "end": 6.464791,
+    "text": "hides the plate.",
+    "words": [
+      "hides",
+      "the",
+      "plate."
+    ],
+    "first_word_index": 9,
+    "source_event_indices": [
+      9,
+      10,
+      11
+    ]
+  },
+  {
+    "start": 7.444875,
+    "end": 8.652291,
+    "text": "Eight feeds share",
+    "words": [
+      "Eight",
+      "feeds",
+      "share"
+    ],
+    "first_word_index": 12,
+    "source_event_indices": [
+      12,
+      13,
+      14
+    ]
+  },
+  {
+    "start": 8.666458,
+    "end": 10.697749,
+    "text": "one clock. The",
+    "words": [
+      "one",
+      "clock.",
+      "The"
+    ],
+    "first_word_index": 15,
+    "source_event_indices": [
+      15,
+      16,
+      17
+    ]
+  },
+  {
+    "start": 10.711916,
+    "end": 12.515916,
+    "text": "operator counts headlights.",
+    "words": [
+      "operator",
+      "counts",
+      "headlights."
+    ],
+    "first_word_index": 18,
+    "source_event_indices": [
+      18,
+      19,
+      20
+    ]
+  },
+  {
+    "start": 13.496041,
+    "end": 15.811375,
+    "text": "Two. Camera one:",
+    "words": [
+      "Two.",
+      "Camera",
+      "one:"
+    ],
+    "first_word_index": 21,
+    "source_event_indices": [
+      21,
+      22,
+      23
+    ]
+  },
+  {
+    "start": 16.109666,
+    "end": 18.439207,
+    "text": "two. Camera two:",
+    "words": [
+      "two.",
+      "Camera",
+      "two:"
+    ],
+    "first_word_index": 24,
+    "source_event_indices": [
+      24,
+      25,
+      26
+    ]
+  },
+  {
+    "start": 18.794333,
+    "end": 21.194875,
+    "text": "two. Camera three:",
+    "words": [
+      "two.",
+      "Camera",
+      "three:"
+    ],
+    "first_word_index": 27,
+    "source_event_indices": [
+      27,
+      28,
+      29
+    ]
+  },
+  {
+    "start": 21.464791,
+    "end": 23.552833,
+    "text": "two. The clocks",
+    "words": [
+      "two.",
+      "The",
+      "clocks"
+    ],
+    "first_word_index": 30,
+    "source_event_indices": [
+      30,
+      31,
+      32
+    ]
+  },
+  {
+    "start": 23.567041,
+    "end": 25.655124,
+    "text": "agree. The car",
+    "words": [
+      "agree.",
+      "The",
+      "car"
+    ],
+    "first_word_index": 33,
+    "source_event_indices": [
+      33,
+      34,
+      35
+    ]
+  },
+  {
+    "start": 25.669333,
+    "end": 27.146624,
+    "text": "moves between views;",
+    "words": [
+      "moves",
+      "between",
+      "views;"
+    ],
+    "first_word_index": 36,
+    "source_event_indices": [
+      36,
+      37,
+      38
+    ]
+  },
+  {
+    "start": 27.402291,
+    "end": 28.183541,
+    "text": "the number never",
+    "words": [
+      "the",
+      "number",
+      "never"
+    ],
+    "first_word_index": 39,
+    "source_event_indices": [
+      39,
+      40,
+      41
+    ]
+  },
+  {
+    "start": 28.19775,
+    "end": 30.740332000000002,
+    "text": "changes. Camera eight",
+    "words": [
+      "changes.",
+      "Camera",
+      "eight"
+    ],
+    "first_word_index": 42,
+    "source_event_indices": [
+      42,
+      43,
+      44
+    ]
+  },
+  {
+    "start": 30.754541,
+    "end": 31.961916000000002,
+    "text": "watches the exit.",
+    "words": [
+      "watches",
+      "the",
+      "exit."
+    ],
+    "first_word_index": 45,
+    "source_event_indices": [
+      45,
+      46,
+      47
+    ]
+  },
+  {
+    "start": 32.942040999999996,
+    "end": 33.765916,
+    "text": "The road is",
+    "words": [
+      "The",
+      "road",
+      "is"
+    ],
+    "first_word_index": 48,
+    "source_event_indices": [
+      48,
+      49
+    ]
+  },
+  {
+    "start": 33.780125,
+    "end": 35.953416,
+    "text": "empty. Its clock",
+    "words": [
+      "empty.",
+      "Its",
+      "clock"
+    ],
+    "first_word_index": 51,
+    "source_event_indices": [
+      50,
+      51,
+      52
+    ]
+  },
+  {
+    "start": 35.967625,
+    "end": 37.203416,
+    "text": "has not advanced.",
+    "words": [
+      "has",
+      "not",
+      "advanced."
+    ],
+    "first_word_index": 54,
+    "source_event_indices": [
+      53,
+      54,
+      55
+    ]
+  },
+  {
+    "start": 38.183541,
+    "end": 39.106790999999994,
+    "text": "He rewinds the",
+    "words": [
+      "He",
+      "rewinds",
+      "the"
+    ],
+    "first_word_index": 57,
+    "source_event_indices": [
+      56,
+      57,
+      58
+    ]
+  },
+  {
+    "start": 39.121041,
+    "end": 41.436375,
+    "text": "entry. Two lights",
+    "words": [
+      "entry.",
+      "Two",
+      "lights"
+    ],
+    "first_word_index": 60,
+    "source_event_indices": [
+      59,
+      60,
+      61
+    ]
+  },
+  {
+    "start": 41.450582999999995,
+    "end": 42.4875,
+    "text": "cross the line.",
+    "words": [
+      "cross",
+      "the",
+      "line."
+    ],
+    "first_word_index": 63,
+    "source_event_indices": [
+      62,
+      63,
+      64
+    ]
+  },
+  {
+    "start": 43.467625,
+    "end": 44.192040999999996,
+    "text": "He checks the",
+    "words": [
+      "He",
+      "checks",
+      "the"
+    ],
+    "first_word_index": 66,
+    "source_event_indices": [
+      65,
+      66,
+      67
+    ]
+  },
+  {
+    "start": 44.20625,
+    "end": 46.493165999999995,
+    "text": "room glass. Two",
+    "words": [
+      "room",
+      "glass.",
+      "Two"
+    ],
+    "first_word_index": 69,
+    "source_event_indices": [
+      68,
+      69,
+      70
+    ]
+  },
+  {
+    "start": 46.507374999999996,
+    "end": 47.757416,
+    "text": "lights stare back.",
+    "words": [
+      "lights",
+      "stare",
+      "back."
+    ],
+    "first_word_index": 72,
+    "source_event_indices": [
+      71,
+      72,
+      73
+    ]
+  },
+  {
+    "start": 48.7375,
+    "end": 50.030125,
+    "text": "Junction Four still",
+    "words": [
+      "Junction",
+      "Four",
+      "still"
+    ],
+    "first_word_index": 75,
+    "source_event_indices": [
+      74,
+      75,
+      76
+    ]
+  },
+  {
+    "start": 50.044332999999995,
+    "end": 50.967583,
+    "text": "shows the car",
+    "words": [
+      "shows",
+      "the",
+      "car"
+    ],
+    "first_word_index": 78,
+    "source_event_indices": [
+      77,
+      78,
+      79
+    ]
+  },
+  {
+    "start": 50.981832999999995,
+    "end": 53.709083,
+    "text": "entering. It never leaves.",
+    "words": [
+      "entering.",
+      "It",
+      "never",
+      "leaves."
+    ],
+    "first_word_index": 81,
+    "source_event_indices": [
+      80,
+      81,
+      82,
+      83
+    ]
+  }
+]

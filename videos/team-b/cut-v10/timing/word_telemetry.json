@@ -1,0 +1,600 @@
+{
+  "voice": "en-US-ChristopherNeural",
+  "rate": "-12%",
+  "pitch": "-4Hz",
+  "boundary_mode": "WordBoundary",
+  "source_text": "audio/narration_text.txt",
+  "source_text_sha256": "ac208bcb525a7f6d95255f43df508f282b7337a6e85a1d3b7b0f04093d7e8db4",
+  "source_mp3": "audio/narration_source.mp3",
+  "source_mp3_sha256": "b1067678d7badda3731c1bdd922960d55015e7c80468ddcfc3323755b2f9345a",
+  "words": [
+    {
+      "text": "At",
+      "offset_100ns": 1068330,
+      "duration_100ns": 2556660,
+      "start_s": 0.106833,
+      "end_s": 0.362499
+    },
+    {
+      "text": "two",
+      "offset_100ns": 3767080,
+      "duration_100ns": 2414580,
+      "start_s": 0.376708,
+      "end_s": 0.618166
+    },
+    {
+      "text": "seventeen",
+      "offset_100ns": 6323750,
+      "duration_100ns": 7954580,
+      "start_s": 0.632375,
+      "end_s": 1.427833
+    },
+    {
+      "text": "a",
+      "offset_100ns": 16977080,
+      "duration_100ns": 852080,
+      "start_s": 1.697708,
+      "end_s": 1.782916
+    },
+    {
+      "text": "car",
+      "offset_100ns": 17971660,
+      "duration_100ns": 4119160,
+      "start_s": 1.797166,
+      "end_s": 2.209082
+    },
+    {
+      "text": "enters",
+      "offset_100ns": 22232910,
+      "duration_100ns": 3693330,
+      "start_s": 2.223291,
+      "end_s": 2.592624
+    },
+    {
+      "text": "Junction",
+      "offset_100ns": 26068330,
+      "duration_100ns": 4971660,
+      "start_s": 2.606833,
+      "end_s": 3.103999
+    },
+    {
+      "text": "Four",
+      "offset_100ns": 31181660,
+      "duration_100ns": 5113750,
+      "start_s": 3.118166,
+      "end_s": 3.629541
+    },
+    {
+      "text": "Rain",
+      "offset_100ns": 46164580,
+      "duration_100ns": 4261250,
+      "start_s": 4.616458,
+      "end_s": 5.042583
+    },
+    {
+      "text": "hides",
+      "offset_100ns": 50568330,
+      "duration_100ns": 4403330,
+      "start_s": 5.056833,
+      "end_s": 5.497166
+    },
+    {
+      "text": "the",
+      "offset_100ns": 55113750,
+      "duration_100ns": 1136250,
+      "start_s": 5.511375,
+      "end_s": 5.625
+    },
+    {
+      "text": "plate",
+      "offset_100ns": 56392080,
+      "duration_100ns": 5255830,
+      "start_s": 5.639208,
+      "end_s": 6.164791
+    },
+    {
+      "text": "Eight",
+      "offset_100ns": 71448750,
+      "duration_100ns": 2698750,
+      "start_s": 7.144875,
+      "end_s": 7.41475
+    },
+    {
+      "text": "feeds",
+      "offset_100ns": 74289580,
+      "duration_100ns": 4403330,
+      "start_s": 7.428958,
+      "end_s": 7.869291
+    },
+    {
+      "text": "share",
+      "offset_100ns": 78835410,
+      "duration_100ns": 4687500,
+      "start_s": 7.883541,
+      "end_s": 8.352291
+    },
+    {
+      "text": "one",
+      "offset_100ns": 83664580,
+      "duration_100ns": 2556660,
+      "start_s": 8.366458,
+      "end_s": 8.622124
+    },
+    {
+      "text": "clock",
+      "offset_100ns": 86363750,
+      "duration_100ns": 5965830,
+      "start_s": 8.636375,
+      "end_s": 9.232958
+    },
+    {
+      "text": "The",
+      "offset_100ns": 102130830,
+      "duration_100ns": 1846660,
+      "start_s": 10.213083,
+      "end_s": 10.397749
+    },
+    {
+      "text": "operator",
+      "offset_100ns": 104119160,
+      "duration_100ns": 5965830,
+      "start_s": 10.411916,
+      "end_s": 11.008499
+    },
+    {
+      "text": "counts",
+      "offset_100ns": 110227080,
+      "duration_100ns": 3835410,
+      "start_s": 11.022708,
+      "end_s": 11.406249
+    },
+    {
+      "text": "headlights",
+      "offset_100ns": 114204580,
+      "duration_100ns": 7954580,
+      "start_s": 11.420458,
+      "end_s": 12.215916
+    },
+    {
+      "text": "Two",
+      "offset_100ns": 131960410,
+      "duration_100ns": 5113750,
+      "start_s": 13.196041,
+      "end_s": 13.707416
+    },
+    {
+      "text": "Camera",
+      "offset_100ns": 146875000,
+      "duration_100ns": 4545410,
+      "start_s": 14.6875,
+      "end_s": 15.142041
+    },
+    {
+      "text": "one",
+      "offset_100ns": 151562500,
+      "duration_100ns": 3551250,
+      "start_s": 15.15625,
+      "end_s": 15.511375
+    },
+    {
+      "text": "two",
+      "offset_100ns": 158096660,
+      "duration_100ns": 5113750,
+      "start_s": 15.809666,
+      "end_s": 16.321041
+    },
+    {
+      "text": "Camera",
+      "offset_100ns": 173153330,
+      "duration_100ns": 4687500,
+      "start_s": 17.315333,
+      "end_s": 17.784083
+    },
+    {
+      "text": "two",
+      "offset_100ns": 177982910,
+      "duration_100ns": 3409160,
+      "start_s": 17.798291,
+      "end_s": 18.139207
+    },
+    {
+      "text": "two",
+      "offset_100ns": 184943330,
+      "duration_100ns": 4829580,
+      "start_s": 18.494333,
+      "end_s": 18.977291
+    },
+    {
+      "text": "Camera",
+      "offset_100ns": 199715830,
+      "duration_100ns": 4829580,
+      "start_s": 19.971583,
+      "end_s": 20.454541
+    },
+    {
+      "text": "three",
+      "offset_100ns": 204687500,
+      "duration_100ns": 4261250,
+      "start_s": 20.46875,
+      "end_s": 20.894875
+    },
+    {
+      "text": "two",
+      "offset_100ns": 211647910,
+      "duration_100ns": 4687500,
+      "start_s": 21.164791,
+      "end_s": 21.633541
+    },
+    {
+      "text": "The",
+      "offset_100ns": 226278330,
+      "duration_100ns": 1704580,
+      "start_s": 22.627833,
+      "end_s": 22.798291
+    },
+    {
+      "text": "clocks",
+      "offset_100ns": 228125000,
+      "duration_100ns": 4403330,
+      "start_s": 22.8125,
+      "end_s": 23.252833
+    },
+    {
+      "text": "agree",
+      "offset_100ns": 232670410,
+      "duration_100ns": 5539580,
+      "start_s": 23.267041,
+      "end_s": 23.820999
+    },
+    {
+      "text": "The",
+      "offset_100ns": 248011250,
+      "duration_100ns": 1704580,
+      "start_s": 24.801125,
+      "end_s": 24.971583
+    },
+    {
+      "text": "car",
+      "offset_100ns": 249857910,
+      "duration_100ns": 3693330,
+      "start_s": 24.985791,
+      "end_s": 25.355124
+    },
+    {
+      "text": "moves",
+      "offset_100ns": 253693330,
+      "duration_100ns": 4545410,
+      "start_s": 25.369333,
+      "end_s": 25.823874
+    },
+    {
+      "text": "between",
+      "offset_100ns": 258380830,
+      "duration_100ns": 4687500,
+      "start_s": 25.838083,
+      "end_s": 26.306833
+    },
+    {
+      "text": "views",
+      "offset_100ns": 263210410,
+      "duration_100ns": 5255830,
+      "start_s": 26.321041,
+      "end_s": 26.846624
+    },
+    {
+      "text": "the",
+      "offset_100ns": 271022910,
+      "duration_100ns": 1136250,
+      "start_s": 27.102291,
+      "end_s": 27.215916
+    },
+    {
+      "text": "number",
+      "offset_100ns": 272301250,
+      "duration_100ns": 3267080,
+      "start_s": 27.230125,
+      "end_s": 27.556833
+    },
+    {
+      "text": "never",
+      "offset_100ns": 275710410,
+      "duration_100ns": 3125000,
+      "start_s": 27.571041,
+      "end_s": 27.883541
+    },
+    {
+      "text": "changes",
+      "offset_100ns": 278977500,
+      "duration_100ns": 7812500,
+      "start_s": 27.89775,
+      "end_s": 28.679
+    },
+    {
+      "text": "Camera",
+      "offset_100ns": 296590830,
+      "duration_100ns": 4687500,
+      "start_s": 29.659083,
+      "end_s": 30.127833
+    },
+    {
+      "text": "eight",
+      "offset_100ns": 301420410,
+      "duration_100ns": 2982910,
+      "start_s": 30.142041,
+      "end_s": 30.440332
+    },
+    {
+      "text": "watches",
+      "offset_100ns": 304545410,
+      "duration_100ns": 4829580,
+      "start_s": 30.454541,
+      "end_s": 30.937499
+    },
+    {
+      "text": "the",
+      "offset_100ns": 309517080,
+      "duration_100ns": 852080,
+      "start_s": 30.951708,
+      "end_s": 31.036916
+    },
+    {
+      "text": "exit",
+      "offset_100ns": 310511250,
+      "duration_100ns": 6107910,
+      "start_s": 31.051125,
+      "end_s": 31.661916
+    },
+    {
+      "text": "The road",
+      "offset_100ns": 326420410,
+      "duration_100ns": 5823749,
+      "start_s": 32.642041,
+      "end_s": 33.2244159
+    },
+    {
+      "text": "is",
+      "offset_100ns": 332386250,
+      "duration_100ns": 2272910,
+      "start_s": 33.238625,
+      "end_s": 33.465916
+    },
+    {
+      "text": "empty",
+      "offset_100ns": 334801250,
+      "duration_100ns": 5113750,
+      "start_s": 33.480125,
+      "end_s": 33.9915
+    },
+    {
+      "text": "Its",
+      "offset_100ns": 349715830,
+      "duration_100ns": 2556660,
+      "start_s": 34.971583,
+      "end_s": 35.227249
+    },
+    {
+      "text": "clock",
+      "offset_100ns": 352415000,
+      "duration_100ns": 4119160,
+      "start_s": 35.2415,
+      "end_s": 35.653416
+    },
+    {
+      "text": "has",
+      "offset_100ns": 356676250,
+      "duration_100ns": 1846660,
+      "start_s": 35.667625,
+      "end_s": 35.852291
+    },
+    {
+      "text": "not",
+      "offset_100ns": 358665000,
+      "duration_100ns": 2556660,
+      "start_s": 35.8665,
+      "end_s": 36.122166
+    },
+    {
+      "text": "advanced",
+      "offset_100ns": 361363750,
+      "duration_100ns": 7670410,
+      "start_s": 36.136375,
+      "end_s": 36.903416
+    },
+    {
+      "text": "He",
+      "offset_100ns": 378835410,
+      "duration_100ns": 2130830,
+      "start_s": 37.883541,
+      "end_s": 38.096624
+    },
+    {
+      "text": "rewinds",
+      "offset_100ns": 381107910,
+      "duration_100ns": 5965830,
+      "start_s": 38.110791,
+      "end_s": 38.707374
+    },
+    {
+      "text": "the",
+      "offset_100ns": 387215830,
+      "duration_100ns": 852080,
+      "start_s": 38.721583,
+      "end_s": 38.806791
+    },
+    {
+      "text": "entry",
+      "offset_100ns": 388210410,
+      "duration_100ns": 6534160,
+      "start_s": 38.821041,
+      "end_s": 39.474457
+    },
+    {
+      "text": "Two",
+      "offset_100ns": 404545410,
+      "duration_100ns": 3125000,
+      "start_s": 40.454541,
+      "end_s": 40.767041
+    },
+    {
+      "text": "lights",
+      "offset_100ns": 407812500,
+      "duration_100ns": 3551250,
+      "start_s": 40.78125,
+      "end_s": 41.136375
+    },
+    {
+      "text": "cross",
+      "offset_100ns": 411505830,
+      "duration_100ns": 3693330,
+      "start_s": 41.150583,
+      "end_s": 41.519916
+    },
+    {
+      "text": "the",
+      "offset_100ns": 415340830,
+      "duration_100ns": 1278330,
+      "start_s": 41.534083,
+      "end_s": 41.661916
+    },
+    {
+      "text": "line",
+      "offset_100ns": 416761250,
+      "duration_100ns": 5113750,
+      "start_s": 41.676125,
+      "end_s": 42.1875
+    },
+    {
+      "text": "He",
+      "offset_100ns": 431676250,
+      "duration_100ns": 1846660,
+      "start_s": 43.167625,
+      "end_s": 43.352291
+    },
+    {
+      "text": "checks",
+      "offset_100ns": 433665000,
+      "duration_100ns": 3977080,
+      "start_s": 43.3665,
+      "end_s": 43.764208
+    },
+    {
+      "text": "the",
+      "offset_100ns": 437784160,
+      "duration_100ns": 1136250,
+      "start_s": 43.778416,
+      "end_s": 43.892041
+    },
+    {
+      "text": "room",
+      "offset_100ns": 439062500,
+      "duration_100ns": 2840830,
+      "start_s": 43.90625,
+      "end_s": 44.190333
+    },
+    {
+      "text": "glass",
+      "offset_100ns": 442045410,
+      "duration_100ns": 7102080,
+      "start_s": 44.204541,
+      "end_s": 44.914749
+    },
+    {
+      "text": "Two",
+      "offset_100ns": 458948750,
+      "duration_100ns": 2982910,
+      "start_s": 45.894875,
+      "end_s": 46.193166
+    },
+    {
+      "text": "lights",
+      "offset_100ns": 462073750,
+      "duration_100ns": 3693330,
+      "start_s": 46.207375,
+      "end_s": 46.576708
+    },
+    {
+      "text": "stare",
+      "offset_100ns": 465909160,
+      "duration_100ns": 3409160,
+      "start_s": 46.590916,
+      "end_s": 46.931832
+    },
+    {
+      "text": "back",
+      "offset_100ns": 469460410,
+      "duration_100ns": 5113750,
+      "start_s": 46.946041,
+      "end_s": 47.457416
+    },
+    {
+      "text": "Junction",
+      "offset_100ns": 484375000,
+      "duration_100ns": 5539580,
+      "start_s": 48.4375,
+      "end_s": 48.991458
+    },
+    {
+      "text": "Four",
+      "offset_100ns": 490056660,
+      "duration_100ns": 3551250,
+      "start_s": 49.005666,
+      "end_s": 49.360791
+    },
+    {
+      "text": "still",
+      "offset_100ns": 493750000,
+      "duration_100ns": 3551250,
+      "start_s": 49.375,
+      "end_s": 49.730125
+    },
+    {
+      "text": "shows",
+      "offset_100ns": 497443330,
+      "duration_100ns": 3835410,
+      "start_s": 49.744333,
+      "end_s": 50.127874
+    },
+    {
+      "text": "the",
+      "offset_100ns": 501420410,
+      "duration_100ns": 1136250,
+      "start_s": 50.142041,
+      "end_s": 50.255666
+    },
+    {
+      "text": "car",
+      "offset_100ns": 502698750,
+      "duration_100ns": 3977080,
+      "start_s": 50.269875,
+      "end_s": 50.667583
+    },
+    {
+      "text": "entering",
+      "offset_100ns": 506818330,
+      "duration_100ns": 5255830,
+      "start_s": 50.681833,
+      "end_s": 51.207416
+    },
+    {
+      "text": "It",
+      "offset_100ns": 521875000,
+      "duration_100ns": 1846660,
+      "start_s": 52.1875,
+      "end_s": 52.372166
+    },
+    {
+      "text": "never",
+      "offset_100ns": 523863750,
+      "duration_100ns": 3693330,
+      "start_s": 52.386375,
+      "end_s": 52.755708
+    },
+    {
+      "text": "leaves",
+      "offset_100ns": 527698750,
+      "duration_100ns": 6392080,
+      "start_s": 52.769875,
+      "end_s": 53.409083
+    }
+  ]
+}
