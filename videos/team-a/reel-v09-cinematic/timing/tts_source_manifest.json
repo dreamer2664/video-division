@@ -1,0 +1,105 @@
+{
+  "engine": "edge-tts==7.3.1",
+  "voice": "en-US-ChristopherNeural",
+  "rate": "-12%",
+  "pitch": "-4Hz",
+  "note": "The committed processed FLAC was derived from these exact raw TTS streams, with quiet-only gap edits and the documented house EQ. The renderer never calls TTS.",
+  "processed_stem_sha256": "09c2c624ea76d48e5543ce8e3fc32659e91dc62107672113e8b181b1f1eae81a",
+  "processed_word_timings_sha256": "7cceee1023dc41aed8841ac4ff89a601f4c00ecaca7c8123c7dfe546c98e1435",
+  "raw": {
+    "audio/tts_lines/post.json": "70a88208d0529cdb88dc40153d4341928bfd810ecd22f25c5e7e624d629eb5a4",
+    "audio/tts_lines/post.mp3": "cfc4e908b4d6f4f85d68869cdeb79168ac8300bf40183e7673b00be9a96f2e1c",
+    "audio/tts_lines/pre.json": "9fcbb38319cffb42df751670a9b245c6ee4e5f9c36ae321e9f15cfde603e9ae2",
+    "audio/tts_lines/pre.mp3": "b2395c82dd2708630eb4cc12ba685c684d5349bb23da2afb72b353daba1c79b3"
+  },
+  "eq": "highpass=f=75,lowpass=f=8000,equalizer=f=128:t=q:w=1:g=1.8,equalizer=f=330:t=q:w=1:g=-2.2,equalizer=f=2900:t=q:w=1:g=2.4",
+  "quiet_cuts_pre": [
+    [
+      177492,
+      212864,
+      -103.36015969762929
+    ],
+    [
+      292364,
+      327410,
+      -105.6564671789867
+    ],
+    [
+      418500,
+      453546,
+      -90.53445875361925
+    ],
+    [
+      559636,
+      594682,
+      -103.79904967111369
+    ],
+    [
+      691226,
+      726272,
+      -105.07338496939227
+    ],
+    [
+      841910,
+      876954,
+      -95.16630775258902
+    ],
+    [
+      1004864,
+      1039910,
+      -90.25995137574287
+    ],
+    [
+      1180772,
+      1215818,
+      -91.0063709341016
+    ],
+    [
+      1310318,
+      1345364,
+      -104.72748813148472
+    ],
+    [
+      1407136,
+      1442182,
+      -93.50538392531934
+    ],
+    [
+      1543500,
+      1578546,
+      -104.82804481206351
+    ],
+    [
+      1794410,
+      1829454,
+      -93.63831461553926
+    ],
+    [
+      1947138,
+      1982182,
+      -91.34934434203372
+    ],
+    [
+      2087590,
+      2122636,
+      -103.80458900935879
+    ]
+  ],
+  "quiet_cuts_post": [
+    [
+      199308,
+      234682,
+      -100.99571636357467
+    ],
+    [
+      339408,
+      374454,
+      -104.44870880978664
+    ],
+    [
+      558956,
+      594000,
+      -105.59719026825326
+    ]
+  ]
+}
