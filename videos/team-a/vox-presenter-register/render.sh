@@ -8,6 +8,7 @@ python3 "$P/build_cues.py" \
   --alignment "$P/proof/alignment-raw.json" \
   --config "$P/proof/scene_config.json" \
   --out "$P/proof/cues.json"
+python3 "$P/proof/export_vtt.py"
 blender --background --python "$P/build_rig.py" -- \
   --cues "$P/proof/cues.json" \
   --audio "$P/proof/voice.mp3" \
@@ -19,6 +20,7 @@ python3 "$P/proof/render_proof.py" \
   --out "$P/proof/video-silent.mp4" \
   --preview-dir "$P/proof/stills"
 python3 "$P/proof/assemble.py"
+python3 "$P/proof/verify_vtt.py"
 mkdir -p videos/team-a/vox-presenter-register/stills
 cp "$P/proof/stills/frame_0000_00.00s.jpg" videos/team-a/vox-presenter-register/stills/01-opening.jpg
 cp "$P/proof/stills/frame_0495_16.50s.jpg" videos/team-a/vox-presenter-register/stills/02-schematic-insert.jpg

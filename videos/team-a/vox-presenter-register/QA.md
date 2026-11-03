@@ -6,7 +6,7 @@ This is the **23-second format-system proof requested by Manager A**, not a 60-s
 
 ## Media verification
 
-Reproduced in this checkout with Blender **4.3.2** and FFmpeg **7.1.5** via `render.sh`. The video master is H.264/yuv420p, 1080×1920, 30 fps, 23.000 s, 690 video frames, 48 kHz stereo AAC, 9,332,096 bytes. Captions are burned in; cue timings are additionally retained as JSON. No blackdetect events were reported. Decoded video frame hashes: **690 unique / 690, zero consecutive exact duplicates**.
+Reproduced in this checkout with Blender **4.3.2** and FFmpeg **7.1.5** via `render.sh`. The video master is H.264/yuv420p, 1080×1920, 30 fps, 23.000 s, 690 video frames, 48 kHz stereo AAC, 9,332,096 bytes. Captions are burned in; the matching sidecar is `captions.vtt`, with source timings in the aligned JSON cue sheet. No blackdetect events were reported. Decoded video frame hashes: **690 unique / 690, zero consecutive exact duplicates**.
 
 ### `ffprobe` (run verbatim)
 
@@ -72,3 +72,32 @@ Final MP4 SHA-256: `20cc3f12b24ef9a5677fe443ccf1e7aa6b61488dfbb09c934863953e501f
 - Narration fact check: [Apple Support — If your iPhone or iPad gets too hot or too cold](https://support.apple.com/en-us/118431). The script says cold can affect temporary performance; the schematic explicitly disclaims measurements.
 - Voice: ElevenLabs paid TTS, this single round logged in `research/ELEVENLABS-LEDGER.md`.
 - Characters, scene art and schematic UI: original procedural drawings/geometry by this task; no third-party visual assets or music.
+
+## WebVTT sidecar and cue-by-still audit
+
+`captions.vtt` is a sidecar export of the same 18 word-aligned cues already burned into `video.mp4`. `verify_vtt.py` checks cue IDs, exact text, every start/end rounded to the nearest millisecond, the 2–5-word rule and the final 23.000 s boundary. Result: **PASS, 18/18**. This cleanup workspace has no `ffprobe` binary; the final MP4 duration/codec probe recorded above is the committed pre-purge measurement.
+
+The three still checks only cover their sampled moments. `N/S` means that still is not a sample of that cue (not a claimed visual pass or a failure). For every cue, the VTT/JSON timing check is PASS; visual confirmation is PASS only at the three sampled cue moments.
+
+| Cue | Time (s) | Caption | VTT ↔ cue JSON | Still 01 · opening (0.000s) | Still 02 · insert (16.500s) | Still 03 · punchline (21.500s) |
+|---|---:|---|---|---|---|---|
+| cap_01 | 0.000–0.685 | Why does your | **PASS** | PASS | N/S | N/S |
+| cap_02 | 0.685–1.788 | phone drop to | **PASS** | N/S | N/S | N/S |
+| cap_03 | 1.788–4.110 | one percent outside? | **PASS** | N/S | N/S | N/S |
+| cap_04 | 4.110–4.923 | The battery hasn't | **PASS** | N/S | N/S | N/S |
+| cap_05 | 4.923–6.118 | suddenly emptied. | **PASS** | N/S | N/S | N/S |
+| cap_06 | 6.118–7.488 | Cold slows the chemistry | **PASS** | N/S | N/S | N/S |
+| cap_07 | 7.488–8.916 | that moves charge, so | **PASS** | N/S | N/S | N/S |
+| cap_08 | 8.916–10.321 | the phone estimates less | **PASS** | N/S | N/S | N/S |
+| cap_09 | 10.321–11.610 | power is available. | **PASS** | N/S | N/S | N/S |
+| cap_10 | 11.610–13.293 | Here's the useful test: | **PASS** | N/S | N/S | N/S |
+| cap_11 | 13.293–14.292 | bring it inside and | **PASS** | N/S | N/S | N/S |
+| cap_12 | 14.292–15.871 | let it warm naturally. | **PASS** | N/S | N/S | N/S |
+| cap_13 | 15.871–17.136 | This tiny lab screen | **PASS** | N/S | PASS | N/S |
+| cap_14 | 17.136–18.611 | tracks the estimate, not | **PASS** | N/S | N/S | N/S |
+| cap_15 | 18.611–20.329 | the true stored energy. | **PASS** | N/S | N/S | N/S |
+| cap_16 | 20.329–21.478 | Sidekick, please stop | **PASS** | N/S | N/S | N/S |
+| cap_17 | 21.478–22.035 | trying to plug | **PASS** | N/S | N/S | PASS |
+| cap_18 | 22.035–23.000 | in the sun. | **PASS** | N/S | N/S | N/S |
+
+Still-result summary: **3/3 sampled cue/still comparisons PASS** — cap_01 “Why does your”, cap_13 “This tiny lab screen”, cap_17 “trying to plug”. The other 15 cues are timing-checked against the aligned cue JSON and VTT but are not visible in these three stills, so their still cells are N/S.
