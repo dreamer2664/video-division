@@ -1,0 +1,54 @@
+{
+  "source_pre_loudnorm": "../cut-v10/audio/master_audio_pre_loudnorm_48k.wav",
+  "source_pre_loudnorm_sha256": "257f79de296f9476158ce49a1674dca62a4d506aafb4b76cc29e50feca5ab369",
+  "v11_pre_loudnorm": "audio/master_audio_pre_loudnorm_48k.wav",
+  "v11_pre_loudnorm_sha256": "cb48732c2972dd827ac5896eeadde1ea9a71384c5604d0ef73df5626abe068a3",
+  "normalized_master": "audio/master_audio_48k.wav",
+  "normalized_master_sha256": "b6ad12ca1dddf3b93408059f555a11536fce33f0c75dc3909adad027bf07600c",
+  "bed_attenuation_db": -2.3,
+  "loudnorm_target": {
+    "I": -16.0,
+    "TP": -1.5,
+    "LRA": 11.0,
+    "linear": false
+  },
+  "loudnorm_pass1_json": {
+    "input_i": "-22.18",
+    "input_tp": "-5.80",
+    "input_lra": "5.20",
+    "input_thresh": "-32.49",
+    "output_i": "-16.26",
+    "output_tp": "-1.50",
+    "output_lra": "2.80",
+    "output_thresh": "-26.62",
+    "normalization_type": "dynamic",
+    "target_offset": "0.26"
+  },
+  "loudnorm_pass2_json": {
+    "input_i": "-22.18",
+    "input_tp": "-5.80",
+    "input_lra": "5.20",
+    "input_thresh": "-32.49",
+    "output_i": "-16.05",
+    "output_tp": "-1.50",
+    "output_lra": "2.60",
+    "output_thresh": "-26.40",
+    "normalization_type": "dynamic",
+    "target_offset": "0.05"
+  },
+  "loudnorm_pass2_filter": "loudnorm=I=-16.0:TP=-1.5:LRA=11.0:measured_I=-22.18:measured_TP=-5.80:measured_LRA=5.20:measured_thresh=-32.49:offset=0.26:linear=false:print_format=json,aresample=48000",
+  "final_decoded_aac_loudnorm_json": {
+    "input_i": "-16.28",
+    "input_tp": "-1.38",
+    "input_lra": "4.90",
+    "input_thresh": "-26.59",
+    "output_i": "-16.19",
+    "output_tp": "-1.50",
+    "output_lra": "2.70",
+    "output_thresh": "-26.56",
+    "normalization_type": "dynamic",
+    "target_offset": "0.19"
+  },
+  "final_video_sha256": "9dca49ae6e16ac17fff242548a79a70a702a506e6174f27d74eb1ce9cb4a76ee",
+  "picture_policy": "The v10 H.264 video stream is stream-copied; 1800/1800 decoded frame hashes match. Captions are baked into those same unchanged video frames."
+}
