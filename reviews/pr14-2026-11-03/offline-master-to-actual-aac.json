@@ -1,0 +1,9 @@
+{
+  "master_samples": 2880000,
+  "aac_samples": 2880512,
+  "master_to_actual_AAC_correlation_L_R": [
+    0.9993037690037766,
+    0.9993000603350609
+  ],
+  "note": "Decoded AAC padding512 samples not part of60s stream. Numeric match, no listening."
+}

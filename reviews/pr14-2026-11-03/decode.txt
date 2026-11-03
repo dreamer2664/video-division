@@ -1,0 +1,3 @@
+$ ffmpeg -v error -i /tmp/lux-pr14/videos/team-a/reel-v09-cinematic/video.mp4 -f null -
+
+exit_status=0

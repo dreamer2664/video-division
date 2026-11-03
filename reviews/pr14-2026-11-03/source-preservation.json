@@ -1,0 +1,7 @@
+{
+  "archive": "sources/pr14-reel-hotel-sources.tar.gz",
+  "archive_bytes": 15695992,
+  "archive_sha256": "5042a28cfa77709d97768bd4d68cdaf53026222ee8ce23ed9effff0ea2cc7a8c",
+  "all_non_video_project_files_preserved_and_verified": true,
+  "movie_output": "retained durably in audited PR/main with exact SHA256 manifest; redundant local movie deleted at close"
+}

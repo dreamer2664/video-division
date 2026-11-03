@@ -1,0 +1,9 @@
+{
+  "timestamp_utc": "2026-11-03T15:12:41.106600+00:00",
+  "allocated_workspace_bytes": 84048896,
+  "under_120_decimal_MB": true,
+  "before_review": true,
+  "reviews_evidence": "all historical evidence merged into video-division/reviews; no differing versions lost",
+  "sources": "unique sources retained in sources/review-sources.tar.gz or verified canonical paths; manifest maps890 original files",
+  "cleanup": "deleted duplicate manager audit checkouts, demo intermediates, obsolete comparison MP4s, caches; preserved original dirty video-division checkout"
+}

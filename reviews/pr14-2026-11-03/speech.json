@@ -1,0 +1,54 @@
+{
+  "stem_duration_s": 52.924416666666666,
+  "source_and_processed_hashes_verified": true,
+  "mix_lag_samples_48k": 0,
+  "word_count": 124,
+  "cue_count": 35,
+  "cue_word_span_translation_max_drift_s": 0.0,
+  "max_first_eligible_frame_delay_s": 0.033291666666670494,
+  "word_count_range_per_cue": [
+    2,
+    5
+  ],
+  "source_voice_over_bed_word_spans_dB": 10.500001108267124,
+  "windows": [
+    {
+      "start_s": 0,
+      "20ms_activity_fraction_above_minus40dBFS": 0.66,
+      "source_voice_minus_bed_word_spans_dB": 10.125590121508294
+    },
+    {
+      "start_s": 10,
+      "20ms_activity_fraction_above_minus40dBFS": 0.722,
+      "source_voice_minus_bed_word_spans_dB": 11.587249617284915
+    },
+    {
+      "start_s": 20,
+      "20ms_activity_fraction_above_minus40dBFS": 0.694,
+      "source_voice_minus_bed_word_spans_dB": 11.195215461473985
+    },
+    {
+      "start_s": 30,
+      "20ms_activity_fraction_above_minus40dBFS": 0.514,
+      "source_voice_minus_bed_word_spans_dB": 8.972604029197585
+    },
+    {
+      "start_s": 40,
+      "20ms_activity_fraction_above_minus40dBFS": 0.718,
+      "source_voice_minus_bed_word_spans_dB": 10.692705530972082
+    },
+    {
+      "start_s": 50,
+      "20ms_activity_fraction_above_minus40dBFS": 0.176,
+      "source_voice_minus_bed_word_spans_dB": 9.104160606487387
+    }
+  ],
+  "joint_source_and_bed_mix_fit_gains": [
+    1.6779800550255703,
+    1.9722493892319009
+  ],
+  "joint_source_and_bed_mix_fit_correlation": 0.9932926005134362,
+  "first_word_s": 0.25683333333333336,
+  "last_word_end_s": 51.93354166666667,
+  "note": "No human listened. Source-to-mix numeric/telemetry test, not lexical ASR or subjective intelligibility; silence tail assessed separately."
+}
