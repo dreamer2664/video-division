@@ -1,0 +1,11 @@
+{
+  "all124_word_spans_fit35_cues_within_one30fps_frame": true,
+  "max_cue_end_shortfall_s": 0.000791666666671631,
+  "cue_start_max_offset_s": 0.0,
+  "cue_end_hold_min_max_s": [
+    -0.000791666666671631,
+    0.5499999999999972
+  ],
+  "last_cue_clear_s": 52.48354166666667,
+  "note": "Ten cue ends are up to0.000792s before their source word end, below one frame. Other intentional end dwells up to0.55s are not called exact cue-end equality."
+}
